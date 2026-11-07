@@ -1,0 +1,19 @@
+# 环境与凭据（绝不提交）
+.env
+*.key
+secrets*
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# 测试与缓存
+pipeline/cache/
+.pytest_cache/
+*.log
+
+# 系统文件
+.DS_Store
+Thumbs.db

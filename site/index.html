@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-data-root="data/">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AI Insight · 每日 AI 前沿情报</title>
+  <meta name="description" content="每日自动抓取的 AI 前沿资讯：模型发布、模型新技术、强化学习（功能 / 性能 / 精度），中英双语概括与全文翻译。">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%232B4ACB'/%3E%3Cpath d='M7 22 L12 22 L12 17 L17 17 L17 12 L22 12 L22 7 L25 7' stroke='white' stroke-width='2.5' fill='none' stroke-linecap='square'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+
+  <header class="masthead">
+    <div class="wrap masthead-inner">
+      <div class="brand">
+        <div class="brand-name">
+          <svg class="mark" width="30" height="22" viewBox="0 0 30 22" aria-hidden="true">
+            <path d="M2 19 L9 19 L9 13.5 L16 13.5 L16 8 L23 8 L23 2.5 L28 2.5"
+                  stroke="currentColor" stroke-width="3" fill="none" stroke-linecap="square"/>
+          </svg>
+          AI INSIGHT
+        </div>
+        <div class="brand-sub" data-i18n="tagline">每日 AI 前沿情报 · 重点关注强化学习</div>
+      </div>
+      <div style="display:flex;align-items:center;gap:16px;">
+        <div class="masthead-meta" id="latest"></div>
+        <div class="lang-switch" data-lang-switch role="group" aria-label="Language / 语言">
+          <button type="button" data-lang="zh">中</button>
+          <button type="button" data-lang="en">EN</button>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <nav class="filterbar" aria-label="筛选">
+    <div class="wrap filterbar-inner">
+      <button type="button" class="cat-tab" data-cat="all"><span data-i18n="catAll">全部</span> <span class="n"></span></button>
+      <button type="button" class="cat-tab" data-cat="model-release"><span data-i18n="catModelRelease">模型发布</span> <span class="n"></span></button>
+      <button type="button" class="cat-tab" data-cat="rl"><span data-i18n="catRL">强化学习</span> <span class="n"></span></button>
+      <button type="button" class="cat-tab" data-cat="technique"><span data-i18n="catTechnique">新技术</span> <span class="n"></span></button>
+      <button type="button" class="cat-tab" data-cat="performance"><span data-i18n="catPerformance">性能评测</span> <span class="n"></span></button>
+      <div class="searchbox">
+        <input type="search" id="search" data-i18n-ph="searchPh" placeholder="搜索标题 / 摘要 / 标签…" aria-label="搜索">
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap journal" id="list">
+    <div class="loading">loading…</div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap cols">
+      <div>
+        <p data-i18n="footerSources"></p>
+        <p data-i18n="footerPowered"></p>
+      </div>
+      <div>
+        <p><a href="https://github.com/JunChen19/AiInsight" target="_blank" rel="noopener noreferrer">GitHub</a></p>
+        <p data-i18n="footerCopyright"></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/md.js"></script>
+  <script src="assets/lang.js"></script>
+  <script src="assets/app.js"></script>
+</body>
+</html>

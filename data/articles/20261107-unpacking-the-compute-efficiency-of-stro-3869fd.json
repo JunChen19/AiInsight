@@ -1,0 +1,26 @@
+{
+  "id": "20261107-unpacking-the-compute-efficiency-of-stro-3869fd",
+  "url": "https://arxiv.org/abs/2611.08453v1",
+  "title_en": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+  "title_zh": "解析强到弱OPD与GRPO的计算效率对比",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.08453v1",
+  "published": "2026-11-05T18:47:05Z",
+  "fetched_at": "2026-11-07T09:29:05Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "on-policy-distillation",
+    "grpo",
+    "compute-efficiency",
+    "multi-teacher",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "This paper systematically compares on-policy distillation (OPD) with reverse-KL against Group Relative Policy Optimization (GRPO) in terms of held-out accuracy per training FLOP across task difficulty, model sizes, domains, and optimization choices. With an external post-trained teacher, OPD generally underperforms GRPO at matched settings and often causes response-length inflation. However, when the teacher is the student's own GRPO checkpoint, OPD recovers that checkpoint's math accuracy with 50x fewer distillation FLOPs than GRPO requires. This efficiency holds for a larger student, on code, and in a second model family. Multi-teacher OPD consolidates per-domain GRPO experts into a single student matching each expert's accuracy, with distillation costing only 5.2% (2 domains) and 8.0% (more domains) of total compute.",
+  "summary_zh": "本文系统比较了基于反向KL的在线策略蒸馏（OPD）与组相对策略优化（GRPO）在任务难度、学生与教师规模、领域及优化选择等维度下，以训练FLOPs衡量的留出准确率。当教师为外部后训练模型时，OPD在同等设置下通常不如GRPO，且常出现回复长度膨胀。但当教师为学生自身的GRPO检查点时，OPD在数学任务上以比GRPO少50倍的蒸馏FLOPs恢复该检查点的准确率，该高效性在更大规模学生、代码任务及第二个模型家族中均成立。多教师OPD可将各领域GRPO专家整合为单一学生，匹配各专家准确率，蒸馏阶段仅占总计算量的5.2%（2个领域）和8.0%（更多领域）。",
+  "content_en": "On-policy distillation (OPD) trains a student on its own rollouts under a frozen teacher's per-token supervision. Does this dense signal reduce the training FLOPs needed to reach a target accuracy compared with reinforcement learning? We systematically compare vanilla reverse-KL OPD with Group Relative Policy Optimization (GRPO) across task difficulty, student and teacher size, domain, and optimization choices, measuring held-out accuracy against training FLOPs. With an external post-trained teacher, OPD generally loses to GRPO in accuracy per training FLOP at matched settings, even when the teacher is further trained with GRPO, and often suffers response-length inflation. Yet a different teacher changes the picture: when the teacher is the student's own GRPO checkpoint, OPD recovers that checkpoint's accuracy on math with $50\\times$ fewer distillation FLOPs than GRPO needs to reach the same accuracy. Following the same teacher setting, we consistently observe this high efficiency with a larger student, on code, and in a second model family. On a single domain, however, the GRPO checkpoint is already the desired model, so distilling it adds to total compute. Across domains, separate GRPO checkpoints hold different capabilities, and no single checkpoint serves every domain. Multi-teacher OPD (DeepSeek-AI, 2026) consolidates per-domain GRPO experts into a single student that matches each expert's accuracy, with the distillation stage costing only 5.2% (on 2 domains) and 8.0% (o",
+  "content_zh": "On-policy distillation (OPD) 在冻结教师的逐 token 监督下，用学生自身的 rollout 对其进行训练。与强化学习相比，这种稠密信号是否能减少达到目标精度所需的训练 FLOPs？我们系统地比较了 vanilla reverse-KL OPD 与 Group Relative Policy Optimization (GRPO)，涵盖任务难度、学生与教师规模、领域以及优化选择，并以留出精度对训练 FLOPs 进行衡量。在使用外部后训练教师时，OPD 在匹配设置下的每训练 FLOP 精度上通常不如 GRPO，即使教师进一步用 GRPO 训练也是如此，并且常常出现响应长度膨胀。然而，不同的教师会改变这一局面：当教师是学生自身的 GRPO checkpoint 时，OPD 在数学任务上以比 GRPO 达到相同精度所需少 $50\\times$ 的蒸馏 FLOPs 恢复了该 checkpoint 的精度。遵循相同的教师设置，我们在更大的学生、代码任务以及第二个模型家族中一致观察到这种高效率。然而在单一领域上，GRPO checkpoint 已经是所需模型，因此对其蒸馏会增加总计算量。跨领域时，不同的 GRPO checkpoint 持有不同的能力，没有任何单一 checkpoint 能服务于所有领域。Multi-teacher OPD (DeepSeek-AI, 2026) 将各领域的 GRPO 专家整合为单个学生，使其匹配每个专家的精度，蒸馏阶段仅花费 5.2%（在 2 个领域上）和 8.0%（在 o",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

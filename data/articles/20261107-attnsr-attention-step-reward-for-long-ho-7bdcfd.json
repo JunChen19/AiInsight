@@ -1,0 +1,26 @@
+{
+  "id": "20261107-attnsr-attention-step-reward-for-long-ho-7bdcfd",
+  "url": "https://arxiv.org/abs/2611.07932v1",
+  "title_en": "AttnSR: Attention Step Reward for Long-Horizon Agentic RL",
+  "title_zh": "AttnSR：面向长程智能体强化学习的注意力步骤奖励",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.07932v1",
+  "published": "2026-11-05T12:37:19Z",
+  "fetched_at": "2026-11-07T09:28:58Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "agent",
+    "reward-model",
+    "attention",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "AttnSR is a step-level reward augmentation method for long-horizon LLM agents that derives reward allocations from policy attention during training replay, eliminating the need for a separate reward model or extra rollouts. It traces backward through the policy model's attention graph to estimate the relevance of earlier steps to the final response, with the terminal step (relative to a running baseline) determining whether rewards reinforce or penalize selected steps. In a Qwen2.5-7B-Instruct study on ALFWorld, AttnSR raised final held-out success from 91.2% to 97.1% over PPO, and ablation shows the benefit depends on reward assignment rather than simple accumulation. AttnSR also improved ScienceWorld at every checkpoint while cutting environment interactions by 29.9%.",
+  "summary_zh": "AttnSR 是一种面向长程 LLM 智能体的步骤级奖励增强方法，它从训练回放中提取的策略注意力来分配奖励，无需单独训练奖励模型或额外 rollout。该方法通过反向追踪策略模型的注意力图来估计早期步骤与最终响应的相关性，并以终端步骤（相对于运行基线）决定这些奖励是强化还是惩罚所选步骤。在 Qwen2.5-7B-Instruct 的受控研究中，AttnSR 在 ALFWorld 上所有评估检查点均优于 PPO 基线，将最终留出成功率从 91.2% 提升至 97.1%；消融实验表明收益取决于中间奖励的分配方式，而非步骤奖励的简单累积。AttnSR 在 ScienceWorld 的每个检查点也有提升，同时将环境交互减少 29.9%。",
+  "content_en": "Long-horizon LLM agents make multi-step decisions, yet outcome-reward-only reinforcement learning provides little direct supervision for individual steps. We introduce AttnSR, a step-level reward augmentation method that derives reward allocations from policy attention extracted during training replay, without a separately trained reward model or additional rollouts. AttnSR traces backward through the policy model attention graph to estimate the relevance of earlier steps to the final response. The terminal step, measured relative to a running baseline, determines whether these rewards reinforce or penalize the selected steps. In a controlled Qwen2.5-7B-Instruct study, AttnSR consistently outperforms the PPO baseline across all evaluated checkpoints on ALFWorld, raising final held-out success from 91.2% to 97.1%. The ablation experiment shows that the benefit depends on how intermediate rewards are assigned, rather than simple accumulation of step rewards over time. AttnSR also improves ScienceWorld at every checkpoint while cutting environment interactions by 29.9%. These results support policy attention as a practical prior for step-level reward allocation in long-horizon agentic RL. Code is available at https://github.com/fairyshine/AttnSR .",
+  "content_zh": "长程 LLM 智能体需要做出多步决策，而仅以结果奖励为依据的强化学习难以为各个步骤提供直接监督。我们提出 AttnSR，一种步骤级奖励增强方法，它从训练回放过程中提取的策略注意力中推导奖励分配，无需单独训练奖励模型，也无需额外 rollout。AttnSR 沿策略模型的注意力图反向追溯，以估计较早步骤与最终响应的相关性。终端步骤相对于滑动基线进行度量，并据此决定这些奖励是强化还是惩罚所选步骤。在一项受控的 Qwen2.5-7B-Instruct 研究中，AttnSR 在 ALFWorld 上于所有评估检查点均持续优于 PPO 基线，将最终留出集成功率从 91.2% 提升至 97.1%。消融实验表明，收益取决于中间奖励的分配方式，而非步骤奖励随时间的简单累积。AttnSR 在 ScienceWorld 上于每个检查点也均有提升，同时将环境交互次数减少 29.9%。这些结果支持将策略注意力作为长程智能体强化学习中步骤级奖励分配的实用先验。代码见 https://github.com/fairyshine/AttnSR 。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,68 @@
+[
+  {
+    "id": "20261107-thinking-machines-releases-inkling-2-sma-63ec4a",
+    "url": "https://www.marktechpost.com/2026/11/05/thinking-machines-inkling-2-small-release/",
+    "title_en": "Thinking Machines Releases Inkling 2 Small, a 594B MoE With 17B Active",
+    "title_zh": "Thinking Machines 发布 Inkling 2 Small：594B MoE 模型，激活参数 17B",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-06T04:25:07Z",
+    "fetched_at": "2026-11-07T09:29:24Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "moe",
+      "model-release",
+      "multimodal",
+      "benchmark",
+      "rl"
+    ],
+    "image": "images/20261107-thinking-machines-releases-inkling-2-sma-63ec4a.jpg",
+    "summary_en": "Thinking Machines Lab released Inkling 2 Small, a sparse Mixture-of-Experts model with 594B total and 17B active parameters, supporting text and image input with variable reasoning effort. It uses a 48-layer decoder-only transformer routing each token to 8 of 384 experts, a 292M-parameter vision encoder, and 1M-token context. Pretraining ran in four phases totaling over 12T tokens, followed by a joint RL run of 1,075 steps and 17M+ rollouts on 2,048 GPUs. It scores 31 on the Artificial Analysis Intelligence Index (up from 13 for Inkling Small), achieves 86.3% on SWE-Bench Pro v2 (Hard), but only 13.1% on Terminal-Bench 4.0. The model is available on Tinker for fine-tuning and inference, with Apache 2.0 weights planned after safety testing.",
+    "summary_zh": "Thinking Machines Lab 发布了 Inkling 2 Small，这是一个稀疏混合专家（MoE）模型，总参数 594B，激活参数 17B，支持文本和图像输入，并支持可变推理努力。它采用 48 层仅解码器 Transformer，每个 token 路由到 384 个专家中的 8 个，配备 292M 参数的视觉编码器，上下文长度 1M token。预训练分四个阶段，总计超过 12T token，随后在 2,048 块 GPU 上进行联合强化学习（RL），共 1,075 步、超过 1700 万次 rollout。在 Artificial Analysis 智能指数上得分为 31（前代 Inkling Small 为 13），在 SWE-Bench Pro v2（Hard）上达到 86.3%，但在 Terminal-Bench 4.0 上仅 13.1%。该模型已在 Tinker 上提供微调和推理，计划在安全测试后以 Apache 2.0 许可证开放权重。",
+    "norm_url": "https://www.marktechpost.com/2026/11/05/thinking-machines-inkling-2-small-release"
+  },
+  {
+    "id": "20261107-unpacking-the-compute-efficiency-of-stro-3869fd",
+    "url": "https://arxiv.org/abs/2611.08453v1",
+    "title_en": "Unpacking the Compute Efficiency of Strong-to-Weak OPD against GRPO",
+    "title_zh": "解析强到弱OPD与GRPO的计算效率对比",
+    "source_name": "arXiv",
+    "published": "2026-11-05T18:47:05Z",
+    "fetched_at": "2026-11-07T09:29:05Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "on-policy-distillation",
+      "grpo",
+      "compute-efficiency",
+      "multi-teacher",
+      "llm"
+    ],
+    "image": null,
+    "summary_en": "This paper systematically compares on-policy distillation (OPD) with reverse-KL against Group Relative Policy Optimization (GRPO) in terms of held-out accuracy per training FLOP across task difficulty, model sizes, domains, and optimization choices. With an external post-trained teacher, OPD generally underperforms GRPO at matched settings and often causes response-length inflation. However, when the teacher is the student's own GRPO checkpoint, OPD recovers that checkpoint's math accuracy with 50x fewer distillation FLOPs than GRPO requires. This efficiency holds for a larger student, on code, and in a second model family. Multi-teacher OPD consolidates per-domain GRPO experts into a single student matching each expert's accuracy, with distillation costing only 5.2% (2 domains) and 8.0% (more domains) of total compute.",
+    "summary_zh": "本文系统比较了基于反向KL的在线策略蒸馏（OPD）与组相对策略优化（GRPO）在任务难度、学生与教师规模、领域及优化选择等维度下，以训练FLOPs衡量的留出准确率。当教师为外部后训练模型时，OPD在同等设置下通常不如GRPO，且常出现回复长度膨胀。但当教师为学生自身的GRPO检查点时，OPD在数学任务上以比GRPO少50倍的蒸馏FLOPs恢复该检查点的准确率，该高效性在更大规模学生、代码任务及第二个模型家族中均成立。多教师OPD可将各领域GRPO专家整合为单一学生，匹配各专家准确率，蒸馏阶段仅占总计算量的5.2%（2个领域）和8.0%（更多领域）。",
+    "norm_url": "https://arxiv.org/abs/2611.08453v1"
+  },
+  {
+    "id": "20261107-attnsr-attention-step-reward-for-long-ho-7bdcfd",
+    "url": "https://arxiv.org/abs/2611.07932v1",
+    "title_en": "AttnSR: Attention Step Reward for Long-Horizon Agentic RL",
+    "title_zh": "AttnSR：面向长程智能体强化学习的注意力步骤奖励",
+    "source_name": "arXiv",
+    "published": "2026-11-05T12:37:19Z",
+    "fetched_at": "2026-11-07T09:28:58Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "agent",
+      "reward-model",
+      "attention",
+      "llm"
+    ],
+    "image": null,
+    "summary_en": "AttnSR is a step-level reward augmentation method for long-horizon LLM agents that derives reward allocations from policy attention during training replay, eliminating the need for a separate reward model or extra rollouts. It traces backward through the policy model's attention graph to estimate the relevance of earlier steps to the final response, with the terminal step (relative to a running baseline) determining whether rewards reinforce or penalize selected steps. In a Qwen2.5-7B-Instruct study on ALFWorld, AttnSR raised final held-out success from 91.2% to 97.1% over PPO, and ablation shows the benefit depends on reward assignment rather than simple accumulation. AttnSR also improved ScienceWorld at every checkpoint while cutting environment interactions by 29.9%.",
+    "summary_zh": "AttnSR 是一种面向长程 LLM 智能体的步骤级奖励增强方法，它从训练回放中提取的策略注意力来分配奖励，无需单独训练奖励模型或额外 rollout。该方法通过反向追踪策略模型的注意力图来估计早期步骤与最终响应的相关性，并以终端步骤（相对于运行基线）决定这些奖励是强化还是惩罚所选步骤。在 Qwen2.5-7B-Instruct 的受控研究中，AttnSR 在 ALFWorld 上所有评估检查点均优于 PPO 基线，将最终留出成功率从 91.2% 提升至 97.1%；消融实验表明收益取决于中间奖励的分配方式，而非步骤奖励的简单累积。AttnSR 在 ScienceWorld 的每个检查点也有提升，同时将环境交互减少 29.9%。",
+    "norm_url": "https://arxiv.org/abs/2611.07932v1"
+  }
+]
