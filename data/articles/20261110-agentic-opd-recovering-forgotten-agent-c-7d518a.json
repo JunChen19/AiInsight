@@ -1,0 +1,26 @@
+{
+  "id": "20261110-agentic-opd-recovering-forgotten-agent-c-7d518a",
+  "url": "https://arxiv.org/abs/2611.12799v1",
+  "title_en": "Agentic-OPD: Recovering Forgotten Agent Capabilities via On-Policy Distillation for Agentic Tasks",
+  "title_zh": "Agentic-OPD：通过在线策略蒸馏恢复智能体任务中遗忘的智能体能力",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.12799v1",
+  "published": "2026-11-09T18:07:42Z",
+  "fetched_at": "2026-11-10T11:41:51Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "on-policy-distillation",
+    "agentic-tasks",
+    "grpo",
+    "checkpoint-reuse",
+    "llm-agents"
+  ],
+  "image": null,
+  "summary_en": "The paper shows that standard GRPO training of LLM agents discards checkpoints that collectively solve more problems than the best-validation checkpoint alone. These discarded checkpoints form a free teacher pool that on-policy distillation (OPD) can mine to recover lost coverage. Agentic-OPD treats the best-validation checkpoint as the student and all saved checkpoints as frozen teachers, using the student's evolving capability gaps to guide teacher selection (HCN, Highest Coverage Next, which picks teachers by weighted coverage of the student's unsolved problems) and supervision filtering (LAD, Locality-Aware Distillation, which restricts transfer to failed student rollouts on problems where the teacher performs better). Experiments span five agentic task domains and 24 benchmarks.",
+  "summary_zh": "论文指出，在 LLM 智能体的标准 GRPO 训练中，仅保留最佳验证检查点会丢弃其他检查点，而后者合起来解决的问题远超单一最佳检查点，因此这些被丢弃的检查点构成了无需额外训练成本的教师池，可借助在线策略蒸馏（OPD）挖掘以恢复丢失的覆盖能力。Agentic-OPD 将最佳验证检查点作为学生模型、所有已保存检查点作为冻结教师候选，利用学生不断变化的能力缺口同时指导教师选择与监督过滤：HCN（Highest Coverage Next）策略按对学生未解决问题的加权覆盖率动态选择教师，LAD（Locality-Aware Distillation）模块将迁移限制在学生失败且教师表现更好的问题的 rollout 上。实验覆盖五个智能体任务领域和 24 个基准与任务。",
+  "content_en": "Reinforcement learning is now the mainstream paradigm for training LLMs on agentic tasks, yet standard practice keeps only the best-validation checkpoint and discards the rest. We show that this is lossy: in GRPO training of LLM agents, the best-validation checkpoint fails on problems that earlier checkpoints from the same run had already solved, and the union of problems solved across checkpoints far exceeds any single one. The discarded checkpoints thus form a teacher pool obtained at no additional training cost, which on-policy distillation (OPD) can mine to recover the lost coverage. Mining this pool raises two challenges: i) which checkpoint to distill from, as no checkpoint dominates the others and complementarity to the student is problem-specific; ii) where to trust it, as even a well-chosen teacher is only locally superior, so indiscriminate distillation overwrites behavior the student has already mastered. We propose Agentic-OPD, which treats the best-validation checkpoint as the student and all saved checkpoints as frozen teacher candidates, using the student's evolving capability gaps to guide both teacher selection and supervision filtering: the HCN policy (Highest Coverage Next) dynamically selects teachers by weighted coverage of the student's unsolved problems, while the LAD module (Locality-Aware Distillation) confines transfer to failed student rollouts on problems where the teacher performs better. Across five agentic task domains and 24 benchmarks and task",
+  "content_zh": "强化学习现已成为在智能体任务上训练LLM的主流范式，然而标准做法仅保留验证集表现最佳的检查点，而将其余检查点丢弃。我们表明这种做法是有损的：在LLM智能体的GRPO训练中，验证集表现最佳的检查点会在同一次运行中较早检查点已经解决的问题上失败，而跨检查点所解决问题的并集远超任何单一检查点。因此，被丢弃的检查点形成了一个无需额外训练成本即可获得的教师池，在线策略蒸馏（OPD）可以从中挖掘以恢复丢失的覆盖范围。挖掘该池带来两个挑战：i）从哪个检查点进行蒸馏，因为没有检查点能支配其他检查点，且与学生的互补性因问题而异；ii）在何处信任它，因为即使是精心选择的教师也仅在局部更优，因此不加区分地蒸馏会覆盖学生已经掌握的行为。我们提出Agentic-OPD，它将验证集表现最佳的检查点作为学生，并将所有保存的检查点作为冻结的教师候选，利用学生不断变化的能力差距来指导教师选择和监督过滤：HCN策略（Highest Coverage Next）通过学生对未解决问题的加权覆盖率动态选择教师，而LAD模块（Locality-Aware Distillation）将迁移限制在学生失败的学生 rollout 上，且仅限于教师表现更好的问题。跨越五个智能体任务领域以及24个基准和任务",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261110-llm-anthropic-0-31-be126b",
+  "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+  "title_en": "llm-anthropic 0.31",
+  "title_zh": "llm-anthropic 0.31 版本更新：支持 Anthropic Fable 5.2 与 Mythos 5.2 模型",
+  "source_name": "Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
+  "published": "2026-11-09T23:58:46Z",
+  "fetched_at": "2026-11-10T11:42:27Z",
+  "type": "blog",
+  "category": "model-release",
+  "tags": [
+    "llm",
+    "anthropic",
+    "model-release",
+    "plugin",
+    "pricing"
+  ],
+  "image": "images/20261110-llm-anthropic-0-31-be126b.jpg",
+  "summary_en": "Anthropic released Fable 5.2 and Mythos 5.2, with Fable 5.2 currently ranked first on Artificial Analysis. The llm-anthropic plugin version 0.31 adds support for these models, allowing prompts to be run via the llm CLI. Testing across five reasoning levels (low, medium, high, xhigh, max) revealed that the max level failed to return an image due to running out of tokens after 128,000 thinking tokens, a bug also seen in Opus 5.5 but new to the Fable series. Pricing is $8/million input and $40/million output, a 20% discount from Fable 5.1's $10/$50.",
+  "summary_zh": "Anthropic 发布了 Fable 5.2 和 Mythos 5.2，其中 Fable 5.2 目前在 Artificial Analysis 上排名第一。llm-anthropic 插件 0.31 版本新增了对这些模型的支持，可通过 llm 命令行工具运行提示。在五个推理级别（low、medium、high、xhigh、max）的测试中，max 级别因在 128,000 个思考 token 后耗尽 token 而未能返回图像，该问题在 Opus 5.5 中也曾出现，但对 Fable 系列是新问题。定价为每百万输入 token 8 美元、输出 token 40 美元，较 Fable 5.1 的 10/50 美元打了 20% 折扣。",
+  "content_en": "9th November 2026\n\nAnthropic released Fable 5.2 and Mythos 5.2 today. Fable 5.2 is currently ranked first on Artificial Analysis. Anthropic say it \"solved two open problems in the physics of black holes\", so clearly their internal benchmarks have become more ambitious!\n\nI've added the new models to `llm-anthropic`, so you can now run prompts through Fable 5.2 like this:\n\n```\nuv tool install llm\nllm install llm-anthropic\nllm keys set anthropic\n# paste key here\nllm -m claude-fable-5.2 \"Generate an SVG of a pelican riding a bicycle\"\n```\nI ran pelicans at all five reasoning levels - `low`, `medium`, `high`, `xhigh`, and `max`. You can see them all here - here's the best result I got, from `xhigh`:\n\n`max` failed to return an image at all, running out of tokens after spending 128,000 thinking about them. That's the same bug that I saw with Opus 5.5 - but it's new for the Fable series, both Fable 5 and Fable 5.1 returned max effort pelicans just fine.\n\nIt's priced at $8/million input and $40/million output, which is a 20% discount on the previous Fable 5.1 ($10/$50).\n\nI also used Fable 5.2 to help identify the source of a mysterious beep.\n\n## Recent articles\n\n- Locating the source of a mysterious beep with Claude - 9th November 2026\n- Hide your slop PR descriptions behind \\<details>\\<summary> - 9th November 2026\n- Qwen 3.8 27B on my laptop can interpret model weights, too - 3rd November 2026\n- The U.S. Census Bureau and “Super Intelligence” - 2nd November 2026",
+  "content_zh": "2026年11月9日\n\nAnthropic 今天发布了 Fable 5.2 和 Mythos 5.2。Fable 5.2 目前在 Artificial Analysis 上排名第一。Anthropic 称它“解决了黑洞物理学中的两个未解难题”，显然他们的内部基准测试变得更有野心了！\n\n我已将新模型添加到 `llm-anthropic` 中，所以你现在可以像这样通过 Fable 5.2 运行提示词：\n\n```\nuv tool install llm\nllm install llm-anthropic\nllm keys set anthropic\n# paste key here\nllm -m claude-fable-5.2 \"Generate an SVG of a pelican riding a bicycle\"\n```\n我在全部五个推理级别上运行了鹈鹕测试——`low`、`medium`、`high`、`xhigh` 和 `max`。你可以在这里看到全部结果——以下是我得到的最佳结果，来自 `xhigh`：\n\n`max` 完全未能返回图像，在花了 128,000 个 token 思考它们之后耗尽了 token。这与我之前在 Opus 5.5 上看到的 bug 相同——但对 Fable 系列来说是新问题，Fable 5 和 Fable 5.1 都能正常返回 max 努力级别的鹈鹕。\n\n其定价为每百万输入 token $8、每百万输出 token $40，相比上一代 Fable 5.1（$10/$50）打了 20% 的折扣。\n\n我还用 Fable 5.2 帮助定位了一个神秘哔声的来源。\n\n## 近期文章\n\n- 用 Claude 定位一个神秘哔声的来源 - 2026年11月9日\n- 把你的垃圾 PR 描述藏在 \\<details>\\<summary> 后面 - 2026年11月9日\n- 我笔记本电脑上的 Qwen 3.8 27B 也能解释模型权重 - 2026年11月3日\n- 美国人口普查局与“超级智能” - 2026年11月2日",
+  "content_note": "fulltext",
+  "translation_failed": false
+}

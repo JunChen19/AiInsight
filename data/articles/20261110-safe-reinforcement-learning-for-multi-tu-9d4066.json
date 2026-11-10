@@ -1,0 +1,26 @@
+{
+  "id": "20261110-safe-reinforcement-learning-for-multi-tu-9d4066",
+  "url": "https://arxiv.org/abs/2611.12728v1",
+  "title_en": "Safe Reinforcement Learning for Multi-Turn Clinical Agents: When Dense Rewards Beat Outcome Rewards",
+  "title_zh": "安全强化学习用于多轮临床智能体：密集奖励何时优于结果奖励",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.12728v1",
+  "published": "2026-11-09T17:14:40Z",
+  "fetched_at": "2026-11-10T11:42:11Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "clinical-agents",
+    "reward-design",
+    "multi-turn",
+    "safety"
+  ],
+  "image": null,
+  "summary_en": "The paper studies reinforcement learning with verifiable rewards for multi-turn clinical agents that must decide what information to request, when to stop, and which action to take. It introduces three controlled environments: medication refill triage, acute diagnostic work-up, and dosing titration, each with hidden states, query costs, and deterministic verifiers. Outcome-only group relative policy optimization often improves aggregate reward but causes undesirable procedures like premature commitment and one-question collapse, and fails on rare high-risk cases. In diagnostics, dense credit for uncertainty-reducing questions improves held-out value and moderate-case support across three seeds without high-risk collapse, while separating exploration from exploitation further increases high-risk support at the cost of excessive information gathering on low-acuity cases. Optimal process credit strength is task-dependent, and after supervised warmup, RL raises aggregate reward by trimming questions but degrades high-risk performance.",
+  "summary_zh": "本文研究了基于可验证奖励的强化学习在多轮临床智能体中的应用，这些智能体需决定请求哪些信息、何时停止收集证据以及采取何种行动。作者引入了三个受控环境：药物续方分诊、急性诊断检查和剂量滴定，每个环境均包含隐藏临床状态、查询成本、精确自适应预言机和确定性结果验证器。仅使用结果奖励的组相对策略优化（GRPO）通常能提升总体奖励，但会产生不良流程，如过早承诺、单问题崩溃以及在罕见高风险病例上失败。在诊断任务中，对降低不确定性的问题分配密集信用，相比仅结果强化学习，在三个训练种子下均提升了留出价值和中等病例支持度，且未出现仅结果训练中的高风险种子崩溃。将探索与利用分离进一步提升了最佳检查点的高风险支持度，但代价是在低 acuity 病例上过度收集信息。额外实验表明，过程信用的最优强度取决于任务；在已进行谨慎信息收集的监督预热后，强化学习通过削减问题提升总体奖励，但会降低高风险性能。",
+  "content_en": "Reinforcement learning with verifiable rewards is increasingly used to improve language model reasoning, yet its effects on sequential decision procedures remain poorly understood. We study this problem in clinical multi-turn agents that must decide what information to request, when to stop gathering evidence, and which action to take. We introduce three controlled environments: medication refill triage, acute diagnostic work-up, and dosing titration, each with hidden clinical states, query costs, exact adaptive oracles, and deterministic outcome verifiers. Across these tasks, outcome-only group relative policy optimization often improves aggregate reward while producing undesirable procedures, including premature commitment, one-question collapse, and failures on rare high-risk cases. In diagnostics, assigning dense credit to questions that reduce uncertainty improves held-out value and moderate-case support across three training seeds relative to outcome-only reinforcement learning, without the high-risk seed collapse observed under outcome-only training. Separating exploration from exploitation further increases high-risk support at its best checkpoint, but at the cost of excessive information gathering on low-acuity cases. Additional experiments show that the optimal strength of process credit is task-dependent; that after a supervised warmup that already gathers carefully, reinforcement learning raises aggregate reward by trimming questions while degrading high-risk perf",
+  "content_zh": "使用可验证奖励的强化学习正越来越多地用于改进语言模型推理，但其对序列决策过程的影响仍鲜为人知。我们在临床多轮智能体中研究这一问题，这类智能体必须决定请求哪些信息、何时停止收集证据以及采取哪项行动。我们引入了三个受控环境：药物续方分诊、急性诊断检查和剂量滴定，每个环境都具有隐藏的临床状态、查询成本、精确的自适应预言机和确定性的结果验证器。在这些任务中，仅基于结果的分组相对策略优化往往能提高总体奖励，却会产生不良流程，包括过早承诺、单问题坍缩以及在罕见高风险病例上的失败。在诊断任务中，与仅基于结果的强化学习相比，对降低不确定性的问题分配密集信用，可在三个训练种子下改善留出价值和中等病例支持，且未出现仅基于结果训练中观察到的高风险种子坍缩。将探索与利用分离，在其最佳检查点进一步提高了高风险支持，但代价是在低急症病例上过度收集信息。额外实验表明，过程信用的最优强度取决于任务；在已经谨慎收集信息的监督预热之后，强化学习通过削减问题来提高总体奖励，却降低了高风险性能。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

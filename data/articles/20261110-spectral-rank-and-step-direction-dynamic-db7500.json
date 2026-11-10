@@ -1,0 +1,26 @@
+{
+  "id": "20261110-spectral-rank-and-step-direction-dynamic-db7500",
+  "url": "https://arxiv.org/abs/2611.11752v1",
+  "title_en": "Spectral Rank and Step-Direction Dynamics in Language-Model Post-Training",
+  "title_zh": "语言模型后训练中的谱秩与步方向动力学",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.11752v1",
+  "published": "2026-11-09T01:43:20Z",
+  "fetched_at": "2026-11-10T11:42:34Z",
+  "type": "paper",
+  "category": "technique",
+  "tags": [
+    "post-training",
+    "spectral-analysis",
+    "rlvr",
+    "ppo",
+    "grpo"
+  ],
+  "image": null,
+  "summary_en": "The paper reconciles conflicting observations about weight updates in language-model post-training: nearly full-rank updates versus low stable-rank changes. For singular values decaying as σ_i ∝ i^{-α} with 0 < α ≤ 1/2, it proves that stable rank becomes negligible relative to fixed-energy rank as dimension grows. Full SVDs of OLMo-2-7B updates confirm this: three PPO attention updates have stable ranks of 9.6–18.3 but require 532–1,222 singular components to capture 80% of energy. Consecutive checkpoint-displacement cosines from full-model inner products show all 131 adjacent pairs across nine RLVR stages have negative cosines on native checkpoint grids, including PPO and GRPO trajectories. Supervised fine-tuning comparisons across four model families show configuration-dependent alignment, including negative late-training cosines for Mistral and FP32 Llama. A controlled OLMo-2-1B study with three paired seeds and a 2,048-token response cap compares group-relative advantages against a learned critic with GAE, finding at matched 60-rollout windows that late-training metrics differ.",
+  "summary_zh": "该论文调和了语言模型后训练中权重更新的矛盾观察：近乎满秩的更新与低稳定秩变化。对于奇异值按 σ_i ∝ i^{-α}（0 < α ≤ 1/2）衰减的情况，证明随着维度增加，稳定秩相对于固定能量秩变得可忽略。对OLMo-2-7B更新的完整奇异值分解证实了这种分离：三个PPO注意力更新的稳定秩为9.6–18.3，但需要532–1,222个奇异分量才能捕获80%的能量。通过全模型内积计算连续检查点位移余弦，发现在九个RLVR阶段的全部131个相邻对在其原生检查点网格上均具有负余弦，包括PPO和GRPO轨迹。四个模型家族的监督微调比较显示配置相关的对齐，包括Mistral和FP32 Llama在训练后期的负余弦。一项受控的OLMo-2-1B研究使用三个配对种子和2,048个token的响应上限，比较了组相对优势与使用GAE的学习评论家，发现在匹配的60次rollout窗口下，训练后期的指标存在差异。",
+  "content_en": "Language-model post-training modifies weights through cumulative updates and successive displacements, yet existing studies report seemingly conflicting spectral properties: nearly full-rank updates and low stable-rank changes. We show these observations are compatible and characterize update directions during training. For singular values following $σ_i \\propto i^{-α}$ with $0 < α\\leq 1/2$, we prove that stable rank becomes negligible relative to fixed-energy rank as dimension increases. Full singular value decompositions of selected OLMo-2-7B updates confirm this separation: three proximal policy optimization (PPO) attention updates have stable ranks of 9.6-18.3 but require 532-1,222 singular components to capture 80% of their energy. We next compute consecutive checkpoint-displacement cosines from full-model inner products. Across nine publicly released reinforcement learning from verifiable rewards (RLVR) stages, all 131 adjacent pairs have negative cosines on their native checkpoint grids, including PPO and Group Relative Policy Optimization (GRPO) trajectories. Supervised fine-tuning comparisons across four model families show configuration-dependent alignment, including negative late-training cosines for Mistral and FP32 Llama. Finally, a controlled OLMo-2-1B study with three paired seeds and a 2,048-token response cap compares group-relative advantages against a learned critic with generalized advantage estimation (GAE). At matched 60-rollout windows, late-training me",
+  "content_zh": "语言模型后训练通过累积更新和相继位移来修改权重，然而现有研究报告了看似矛盾的谱特性：近乎满秩的更新与较低的稳定秩变化。我们证明这些观察结果是相容的，并刻画了训练过程中的更新方向。对于遵循 $σ_i \\propto i^{-α}$（其中 $0 < α\\leq 1/2$）的奇异值，我们证明随着维度增加，稳定秩相对于固定能量秩变得可忽略不计。对选定的 OLMo-2-7B 更新进行完整奇异值分解证实了这种分离：三个近端策略优化（PPO）注意力更新的稳定秩为 9.6-18.3，但需要 532-1,222 个奇异分量才能捕获其 80% 的能量。接下来，我们从全模型内积计算连续检查点位移余弦。在九个公开发布的基于可验证奖励的强化学习（RLVR）阶段中，所有 131 个相邻对在其原生检查点网格上均具有负余弦，包括 PPO 和组相对策略优化（GRPO）轨迹。跨四个模型家族的监督微调比较显示出配置相关的对齐，包括 Mistral 和 FP32 Llama 在训练后期的负余弦。最后，一项使用三个配对种子和 2,048 token 响应上限的受控 OLMo-2-1B 研究，将组相对优势与使用广义优势估计（GAE）的学习评论家进行了比较。在匹配的 60 次 rollout 窗口下，训练后期 me",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

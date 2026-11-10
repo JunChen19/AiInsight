@@ -1,0 +1,26 @@
+{
+  "id": "20261110-anthropic-launches-new-claude-fable-and-c301a0",
+  "url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+  "title_en": "Anthropic launches new Claude Fable and Mythos 5.2 models",
+  "title_zh": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2 模型",
+  "source_name": "The Verge AI",
+  "source_url": "https://www.theverge.com/ai-artificial-intelligence/1030005/anthropic-claude-fable-mythos-5-2",
+  "published": "2026-11-09T19:00:00Z",
+  "fetched_at": "2026-11-10T11:41:37Z",
+  "type": "blog",
+  "category": "model-release",
+  "tags": [
+    "model-release",
+    "llm",
+    "coding",
+    "reasoning",
+    "agent"
+  ],
+  "image": "images/20261110-anthropic-launches-new-claude-fable-and-c301a0.jpg",
+  "summary_en": "Anthropic announced two new models, Claude Fable 5.2 and Claude Mythos 5.2, claiming improvements in coding, reasoning, and vision, and faster output generation than their 5.1 predecessors. Fable 5.2 is designed for challenging software engineering, can orchestrate agent teams, and tackle long-running projects; during prerelease testing, the models helped complete otherwise-infeasible software migrations, designed three working electronic devices from scratch, solved two open problems in black hole physics, made substantial progress on robotics evaluations, and formalized the proof of Fermat's Last Theorem in 30 hours. Fable 5.2 is available today, while Mythos 5.2 is initially restricted to vetted organizations. The 5.2 models follow the September release of Fable 5.1 and Mythos 5.1.",
+  "summary_zh": "Anthropic 发布两款新模型 Claude Fable 5.2 和 Claude Mythos 5.2，宣称在编码、推理和视觉方面有所提升，且输出速度比 5.1 版本更快。Fable 5.2 擅长解决具有挑战性的软件工程问题，能协调智能体团队并处理长期项目；在预发布测试中，这些模型帮助完成了原本不可行的软件迁移、从零设计了三款可工作的电子设备、解决了黑洞物理中的两个开放问题、在机器人评估上取得实质性进展，并在 30 小时内形式化了费马大定理的证明。Fable 5.2 今日起可用，而 Mythos 5.2 初期仅限经过审核的组织使用。5.2 模型紧随 9 月发布的 Fable 5.1 和 Mythos 5.1 之后推出。",
+  "content_en": "Anthropic is announcing two new models today: Claude Fable 5.2 and Claude Mythos 5.2, which it says are designed to take on “daunting” technical challenges. The company claims the new models show improvements in coding, reasoning, and vision, and can generate outputs faster than the 5.1 versions of the Fable and Mythos models.\n\n# Anthropic launches new Claude Fable and Mythos 5.2 models\n\nClaude Fable 5.2 is designed to take on big technical challenges, and it’s available today.\n\nClaude Fable 5.2 is good at challenging software engineering problems, Anthropic says, and can orchestrate agent teams and tackle long-running projects. The new model has also solved some complex scientific problems, including two open theoretical physics problems.\n\nDuring prerelease testing, the two models have “helped our engineers complete otherwise-infeasible software migrations, designed three working electronic devices from scratch, solved two open problems in the physics of black holes, made substantial progress on robotics evaluations, and formalized the proof of Fermat’s Last Theorem in 30 hours,” Anthropic says.\n\nClaude Fable 5.2 is launching today. As for Claude Mythos 5.2, only vetted organizations will have access to start. The new 5.2 models follow the release of Claude Fable 5.1 and Claude Mythos 5.1 in September.\n\n**Follow topics and authors**from this story to see more like this in your personalized homepage feed and to receive email updates.",
+  "content_zh": "Anthropic 今日宣布推出两款新模型：Claude Fable 5.2 和 Claude Mythos 5.2，称其旨在应对“艰巨的”技术挑战。该公司声称，新模型在编码、推理和视觉方面均有提升，并且生成输出的速度快于 Fable 和 Mythos 模型的 5.1 版本。\n\n# Anthropic 发布全新 Claude Fable 和 Mythos 5.2 模型\n\nClaude Fable 5.2 旨在应对重大技术挑战，今日即可使用。\n\nAnthropic 表示，Claude Fable 5.2 擅长处理具有挑战性的软件工程问题，能够编排智能体团队并攻克长期运行的项目。该新模型还解决了一些复杂的科学问题，包括两个开放的理论物理问题。\n\n在预发布测试期间，这两款模型“帮助我们的工程师完成了原本无法实现的软件迁移，从零设计了三个可工作的电子设备，解决了黑洞物理学中的两个开放问题，在机器人评估方面取得了实质性进展，并在 30 小时内形式化证明了费马大定理，”Anthropic 表示。\n\nClaude Fable 5.2 于今日发布。至于 Claude Mythos 5.2，仅经过审核的组织才能率先使用。这两款新的 5.2 模型紧随 9 月发布的 Claude Fable 5.1 和 Claude Mythos 5.1 之后推出。\n\n**关注本报道的话题和作者**，即可在个性化首页信息流中看到更多类似内容，并接收邮件更新。",
+  "content_note": "fulltext",
+  "translation_failed": false
+}

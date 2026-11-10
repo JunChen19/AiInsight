@@ -1,0 +1,26 @@
+{
+  "id": "20261110-agentopsd-turn-level-credit-assignment-v-6089c6",
+  "url": "https://arxiv.org/abs/2611.12587v1",
+  "title_en": "AgentOPSD: Turn-Level Credit Assignment via Recursive Belief Revision",
+  "title_zh": "AgentOPSD：通过递归信念修正的回合级信用分配",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.12587v1",
+  "published": "2026-11-09T15:40:43Z",
+  "fetched_at": "2026-11-10T11:41:43Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "credit-assignment",
+    "self-distillation",
+    "llm",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "AgentOPSD introduces a critic-free reinforcement learning scheme that assigns credit recursively at each interaction turn, addressing the coarse granularity of trajectory-level advantage in multi-turn tasks. Within a turn, token-level log-probability gaps between a skill-conditioned self-teacher and the student are summed and used as evidence in a recursive Bayesian update in log-odds space, producing bounded, sign-preserving multipliers that reallocate outcome-derived advantage across turns. On ALFWorld with Qwen2.5-3B and Qwen2.5-7B backbones, it consistently outperforms GRPO and self-distillation baselines, achieving 89.1% success at 7B scale. Ablations show gains stem from aggregating evidence at turn boundaries and history-dependent belief revision, not from local gaps alone.",
+  "summary_zh": "AgentOPSD 提出一种无评论家的强化学习方案，在每个交互回合递归地分配信用，解决了多轮任务中轨迹级优势粒度过粗的问题。在每个回合内，将技能条件自教师与学生之间的 token 级对数概率差求和，作为证据在 log-odds 空间中进行递归贝叶斯更新，产生有界且保持符号的乘数，从而将结果衍生的优势重新分配到各回合。在 ALFWorld 上使用 Qwen2.5-3B 和 Qwen2.5-7B 作为策略骨干，该方法持续优于 GRPO 和自蒸馏基线，在 7B 规模达到 89.1% 的成功率。消融实验表明增益来自回合边界处的证据聚合以及依赖历史的信念修正，而非局部差距本身。",
+  "content_en": "Reinforcement learning with verifiable rewards ordinarily spreads a single advantage over a whole trajectory, a granularity too coarse to isolate the few decisions on which success in a long, multi-turn interaction actually turns. Privileged self-distillation supplies denser supervision, but it leaves unanswered how a set of local teacher-student discrepancies should be converted into credit along a sequence. We introduce AgentOPSD, a critic-free scheme that assigns credit recursively, one interaction turn at a time. Inside a turn, the token-level log-probability gaps between a skill-conditioned self-teacher and the student are summed, and that sum acts as evidence in a recursive Bayesian update carried out in log-odds space; the resulting revisions reallocate the outcome-derived advantage across turns through a multiplier that is bounded and preserves its sign. With Qwen2.5-3B and Qwen2.5-7B as policy backbones on ALFWorld, the method improves consistently on GRPO and on self-distillation baselines, and attains 89.1% success at the 7B scale. Ablations attribute the gain to aggregating evidence at turn boundaries and to making the belief revision depend on history, rather than to the local gap by itself.",
+  "content_zh": "带可验证奖励的强化学习通常将单一优势分摊到整条轨迹上，这种粒度过于粗糙，无法分离出长程多轮交互中真正决定成败的少数决策。特权自蒸馏提供了更密集的监督，但它未回答一个问题：一组局部的教师-学生差异应如何沿序列转换为信用分配。我们提出 AgentOPSD，一种无评论家的方案，以交互轮次为单位递归地分配信用。在一轮内部，将技能条件化的自教师与学生之间的 token 级对数概率差求和，该和作为证据参与在对数几率空间中进行的递归贝叶斯更新；由此产生的修正通过一个有界且保持符号的乘数，将结果导出的优势在各轮之间重新分配。以 Qwen2.5-3B 和 Qwen2.5-7B 作为策略骨干，在 ALFWorld 上，该方法在 GRPO 和自蒸馏基线上均取得一致提升，并在 7B 规模下达到 89.1% 的成功率。消融实验将增益归因于在轮次边界聚合证据以及使信念修正依赖于历史，而非局部差异本身。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

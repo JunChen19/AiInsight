@@ -1,0 +1,26 @@
+{
+  "id": "20261110-simulation-aided-reinforcement-learning-d74ae1",
+  "url": "https://arxiv.org/abs/2611.12643v1",
+  "title_en": "Simulation-aided Reinforcement Learning with Control Variates",
+  "title_zh": "基于控制变量的模拟辅助强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.12643v1",
+  "published": "2026-11-09T16:18:50Z",
+  "fetched_at": "2026-11-10T11:41:57Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "simulation",
+    "control-variates",
+    "actor-critic",
+    "offline-rl"
+  ],
+  "image": null,
+  "summary_en": "The paper addresses the problem of using simulators to augment real-world data in reinforcement learning, where naive mixing can degrade performance due to simulator bias. It proposes a conservative simulation-aided learning method based on control variates, where simulated data is used only to reduce variance without directly shaping the learning target. The approach is developed for policy evaluation, integrated into an actor-critic framework for policy improvement, and extended to offline RL. Experiments on MuJoCo benchmarks show improvements over standard simulation mixing approaches.",
+  "summary_zh": "本文针对强化学习中使用模拟器增强真实数据时，因模拟器偏差导致性能下降的问题，提出了一种基于控制变量（control variates）的保守模拟辅助学习方法。该方法仅利用模拟数据降低学习过程中的方差，而不直接塑造学习目标。作者首先在策略评估中开发了该方法，然后将其集成到演员-评论家（actor-critic）框架中以实现策略改进，并扩展到离线强化学习场景。在多个 MuJoCo 基准任务上的实验表明，该方法优于标准的模拟混合方法。",
+  "content_en": "Reinforcement Learning (RL) algorithms often rely on data collected from a target environment, which can be expensive and noisy. Although simulators can generate large amounts of additional data, standard simulation mixing approaches, which directly combine simulated and real experience, can degrade performance due to simulator inaccuracies, especially when they bias the solution away from the optimal policy. We propose a conservative simulation-aided learning method based on control variates, where simulated data is used solely to reduce variance in the learning process rather than directly shaping the learning target. We develop our approach for Policy-Evaluation, which is a fundamental building block of RL algorithms. Then we combine it within the actor-critic framework towards policy improvement, as well as extend it towards offline RL scenarios. Experiments on multiple MuJoCo benchmark tasks demonstrate improvements over standard simulation mixing approaches, highlighting control variates as an effective tool for simulation-aided reinforcement learning.",
+  "content_zh": "强化学习（RL）算法通常依赖从目标环境中收集的数据，而这类数据的获取成本高且噪声大。尽管模拟器能够生成大量额外数据，但标准的模拟混合方法——即直接将模拟经验与真实经验相结合——可能因模拟器的不准确性而降低性能，尤其是当这种不准确性使解偏离最优策略时。我们提出了一种基于控制变量的保守模拟辅助学习方法，其中模拟数据仅用于降低学习过程中的方差，而非直接塑造学习目标。我们针对策略评估（Policy-Evaluation）开发了该方法，而策略评估是RL算法的基本构建模块。随后，我们将其结合到actor-critic框架中以实现策略改进，并将其扩展至离线RL场景。在多个MuJoCo基准任务上的实验表明，该方法相较于标准模拟混合方法有所改进，凸显了控制变量作为模拟辅助强化学习有效工具的价值。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
