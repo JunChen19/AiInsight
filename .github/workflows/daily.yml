@@ -21,6 +21,7 @@ env:
 jobs:
   digest-and-deploy:
     runs-on: ubuntu-latest
+    environment: aisite    # 读取 aisite environment 中的 DEEPSEEK_API_KEY
     timeout-minutes: 25
     steps:
       - name: Checkout
