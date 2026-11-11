@@ -1,0 +1,42 @@
+name: Republish site
+
+# 手动触发：不重新抓取，只把仓库中现有的 data/ 重新构建并发布到 Pages。
+# 用途：Daily digest 运行成功但 Pages 部署环节瞬时失败时，一键补救。
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  republish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Assemble site
+        run: |
+          mkdir -p publish
+          cp -r site/* publish/
+          cp -r data publish/data
+          touch publish/.nojekyll
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: publish
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v4

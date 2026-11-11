@@ -81,4 +81,5 @@ DEEPSEEK_API_KEY=你的key python main.py
 - **Actions 运行失败，日志提示缺少 DEEPSEEK_API_KEY**：第 1 步的 Secret 名称拼写是否完全一致
 - **网站 404**：确认第 2 步 Source 选的是 GitHub Actions，且已成功运行过一次工作流
 - **某天没更新**：看 Actions 日志；单个新闻源失败属正常（自动跳过），全部失败才需要排查
+- **抓取成功但网站没更新**（日志出现 "No artifacts named github-pages were found"）：GitHub Pages 部署接口的瞬时故障。打开 Actions → **Republish site** → Run workflow 一键重新发布，无需重新抓取
 - **想重抓某篇文章**：删掉 `data/articles/` 对应 JSON 并从 `data/index.json` 移除条目，下次运行会重新遇到它

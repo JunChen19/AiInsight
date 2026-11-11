@@ -2,7 +2,7 @@ name: Daily digest
 
 on:
   schedule:
-    - cron: "30 22 * * *"   # UTC 22:30 = 北京时间 06:30（Actions 可能有几分钟延迟）
+    - cron: "0 21 * * *"   # UTC 21:00 = 北京时间 05:00（GitHub 定时任务有排队延迟，提前量给足）
   workflow_dispatch:          # 支持手动触发
 
 # 同一时间只允许一个实例，避免重复抓取
