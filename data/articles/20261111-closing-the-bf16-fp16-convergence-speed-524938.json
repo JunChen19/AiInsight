@@ -1,0 +1,26 @@
+{
+  "id": "20261111-closing-the-bf16-fp16-convergence-speed-524938",
+  "url": "https://arxiv.org/abs/2611.13545v1",
+  "title_en": "Closing the BF16-FP16 Convergence Speed Gap in RL Post-Training with Stochastic Rounding",
+  "title_zh": "通过随机舍入缩小RL后训练中BF16与FP16的收敛速度差距",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.13545v1",
+  "published": "2026-11-10T04:07:19Z",
+  "fetched_at": "2026-11-11T12:20:42Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "bf16",
+    "fp16",
+    "stochastic-rounding",
+    "mixed-precision"
+  ],
+  "image": null,
+  "summary_en": "The article identifies that in reinforcement learning with verifiable rewards (RLVR), BF16 mixed-precision training converges more slowly than FP16 at the same learning rate due to \"weight sticking\": small updates to FP32 shadow weights often leave BF16 weights unchanged after round-to-nearest quantization. Raising the BF16 learning rate can match FP16's convergence speed but increases KL divergence from the reference model. The authors propose applying stochastic rounding when quantizing FP32 shadow weights to BF16, which matches FP16's convergence speed across models and datasets while reducing KL divergence compared to BF16 with a larger learning rate, and retains BF16's wider dynamic range without needing loss scaling.",
+  "summary_zh": "文章指出，在带可验证奖励的强化学习（RLVR）中，相同学习率下BF16混合精度训练比FP16收敛更慢，原因是“权重粘滞”：FP32影子权重经最近舍入量化为BF16时，微小更新常无法改变BF16权重。提高BF16学习率可匹配FP16收敛速度，但会增大与参考模型的KL散度。作者提出在将FP32影子权重量化为BF16时采用随机舍入，从而在不同模型和数据集上匹配FP16的收敛速度，同时相比使用更大学习率的BF16训练降低KL散度，并保留BF16更宽的动态范围且无需损失缩放。",
+  "content_en": "BF16 is widely used to pretrain large language models because it has the same dynamic range as FP32 and converges similarly to FP32 training. However, in reinforcement learning with verifiable rewards, where learning rates are typically low, we find that standard mixed-precision BF16 training converges more slowly than FP16 training at the same learning rate. We attribute this gap to weight sticking: when FP32 shadow weights are quantized to BF16 using round-to-nearest, small updates often leave the BF16 weights used for rollout generation and training unchanged. Consequently, several optimizer steps may be needed before updates to the shadow weights are reflected in the BF16 weights. Raising the BF16 learning rate reduces weight sticking and matches FP16's convergence speed, but it also increases the KL divergence from the reference model. We instead apply stochastic rounding when quantizing the FP32 shadow weights to BF16. This approach matches FP16's convergence speed across different models and datasets while reducing the KL divergence relative to BF16 training with a larger learning rate. Unlike FP16, it keeps BF16's wider dynamic range and needs no loss scaling.",
+  "content_zh": "BF16 被广泛用于大语言模型的预训练，因为它具有与 FP32 相同的动态范围，并且收敛行为与 FP32 训练相似。然而，在带可验证奖励的强化学习中，学习率通常较低，我们发现标准混合精度 BF16 训练在相同学习率下比 FP16 训练收敛得更慢。我们将这一差距归因于权重粘滞：当 FP32 影子权重使用就近舍入量化为 BF16 时，小幅更新往往不会改变用于 rollout 生成和训练的 BF16 权重。因此，可能需要经过若干优化器步数，影子权重的更新才会反映到 BF16 权重中。提高 BF16 学习率可以减少权重粘滞并匹配 FP16 的收敛速度，但也会增大与参考模型之间的 KL 散度。我们改为在将 FP32 影子权重量化为 BF16 时应用随机舍入。该方法在不同模型和数据集上都能匹配 FP16 的收敛速度，同时相对于使用更大学习率的 BF16 训练降低了 KL 散度。与 FP16 不同，它保留了 BF16 更宽的动态范围，并且不需要损失缩放。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

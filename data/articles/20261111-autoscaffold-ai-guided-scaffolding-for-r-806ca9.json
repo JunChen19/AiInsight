@@ -1,0 +1,26 @@
+{
+  "id": "20261111-autoscaffold-ai-guided-scaffolding-for-r-806ca9",
+  "url": "https://arxiv.org/abs/2611.14515v1",
+  "title_en": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+  "title_zh": "AutoScaffold：AI引导的脚手架用于语言模型强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.14515v1",
+  "published": "2026-11-10T18:58:46Z",
+  "fetched_at": "2026-11-11T12:20:48Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "scaffolding",
+    "llm",
+    "benchmark",
+    "gpu-kernel"
+  ],
+  "image": null,
+  "summary_en": "AutoScaffold is an AI-for-AI framework that converts a student model's training experience into adaptive scaffolds for reinforcement learning with verifiable rewards (RLVR). A frozen teacher periodically examines the student's experience, diagnoses bottlenecks, and designs two types of scaffolds: shared strategies for task classes and hints for individual hard tasks, adjusting support as the student learns. Scaffolds are removed at evaluation. Applied to ALFWorld, search-based QA, mathematical reasoning, and GPU kernel generation, students trained with AutoScaffold outperform RL baselines without scaffolds, gaining 7.2 points in ALFWorld success, 4.0 points in average QA exact match, and up to 5.0 points in GPU kernel generation for tasks with correct kernels faster than PyTorch reference.",
+  "summary_zh": "AutoScaffold 是一个 AI-for-AI 框架，可将学生模型的训练经验转化为自适应脚手架，用于带可验证奖励的强化学习（RLVR）。一个冻结的教师模型定期检查学生经验、诊断瓶颈，并设计两种形式的脚手架：跨任务类别的共享策略和针对单个困难任务的提示，并根据学生学习进度调整支持内容和数量。评估时移除脚手架。在 ALFWorld、基于搜索的问答、数学推理和 GPU 内核生成四个领域应用后，无脚手架评估时，使用 AutoScaffold 训练的学生均优于相应 RL 基线：ALFWorld 成功率提升 7.2 分，问答平均精确匹配提升 4.0 分，GPU 内核生成中正确内核且运行快于 PyTorch 参考的任务比例最高提升 5.0 分。",
+  "content_en": "Reinforcement learning with verifiable rewards (RLVR) produces rich training experience, yet outcome rewards reduce each attempt to a single number and leave most of this information unused. Training-time scaffolds, such as strategies or hints added to the prompt during training, offer a natural way to turn this information into guidance, but their design and adaptation are largely left to humans and tailored to specific domains. We introduce AutoScaffold, a unified AI-for-AI framework that turns a student's training experience into adaptive scaffolds, with minimal domain-specific information and no human intervention during training. A frozen teacher periodically examines this experience, diagnoses bottlenecks, and designs scaffolds in two forms: (i) strategies shared across a class of tasks and (ii) hints for individual hard tasks, adjusting the content and amount of support as the student learns. The scaffolds are removed at evaluation. We apply the same framework to ALFWorld, search-based QA, mathematical reasoning, and GPU kernel generation. When evaluated without scaffolds, students trained with AutoScaffold outperform those trained with the corresponding RL baselines in all four domains, with gains of 7.2 points in ALFWorld success and 4.0 points in average QA exact match. On GPU kernel generation, AutoScaffold increases the fraction of tasks with a correct kernel that runs faster than the PyTorch reference by up to 5.0 points. On math, our student surpasses QuestA's r",
+  "content_zh": "带可验证奖励的强化学习（RLVR）能产生丰富的训练经验，但结果奖励将每次尝试简化为一个单一数字，使其中大部分信息未被利用。训练时脚手架——例如训练期间添加到提示中的策略或提示——提供了一种自然的方式，将这些信息转化为指导，但其设计与调整在很大程度上仍由人工完成，并针对特定领域量身定制。我们提出 AutoScaffold，一个统一的 AI-for-AI 框架，它将学生的训练经验转化为自适应脚手架，仅需极少的领域特定信息，且训练期间无需人工干预。一个冻结的教师模型定期检查这些经验，诊断瓶颈，并以两种形式设计脚手架：(i) 在一类任务间共享的策略，以及 (ii) 针对个别困难任务的提示，随着学生的学习进展调整支持的内容和数量。评估时移除脚手架。我们将同一框架应用于 ALFWorld、基于搜索的问答、数学推理和 GPU 内核生成。在无脚手架的情况下进行评估时，使用 AutoScaffold 训练的学生在全部四个领域均优于使用相应 RL 基线训练的学生，在 ALFWorld 成功率上提升 7.2 分，在问答平均精确匹配上提升 4.0 分。在 GPU 内核生成上，AutoScaffold 将生成正确内核且运行速度超过 PyTorch 参考实现的任务比例最多提升 5.0 分。在数学方面，我们的学生超越了 QuestA 的 r",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

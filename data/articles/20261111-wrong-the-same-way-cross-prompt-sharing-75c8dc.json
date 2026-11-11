@@ -1,0 +1,26 @@
+{
+  "id": "20261111-wrong-the-same-way-cross-prompt-sharing-75c8dc",
+  "url": "https://arxiv.org/abs/2611.13218v1",
+  "title_en": "Wrong the Same Way: Cross-Prompt Sharing Both Suppresses and Amplifies Reward Hacking in RLVR",
+  "title_zh": "同样的错误：跨提示共享在RLVR中既抑制又放大奖励黑客行为",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.13218v1",
+  "published": "2026-11-09T20:39:36Z",
+  "fetched_at": "2026-11-11T12:20:59Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlvr",
+    "reward-hacking",
+    "reinforcement-learning",
+    "verifier",
+    "parameter-sharing"
+  ],
+  "image": null,
+  "summary_en": "The paper studies how reinforcement learning with verifiable rewards (RLVR) interacts with an imperfect verifier, specifically whether reward hacking is inherited from the base model or amplified by RL. Using a controlled environment where the entire response distribution can be computed exactly, the authors vary the universality of a leak (fraction of prompts accepting the same wrong response) and the verifier's false-positive rate. They find that at the KL-regularized optimum, RLVR acts as a filter that reweights the accepted set without altering its composition, so the hack rate is inherited exactly. With parameter sharing, prompts that accept a wrong answer push it up and those that reject it push it down, leading to suppression of low-universality leaks and amplification of high-universality leaks. This effect is consistent across Adam, SGD, and sampled GRPO, though whether the hack rate crosses the base rate depends on step size; independent per-prompt copies remove the dependence.",
+  "summary_zh": "本文研究了带有可验证奖励的强化学习（RLVR）与不完美验证器交互的两种观点：奖励黑客行为是从基模型继承的还是被RL放大的。在一个可以精确计算整个响应分布的小型受控环境中，作者变化泄漏的普遍性（接受相同错误响应的提示比例）和验证器的静态假阳性率。发现在KL正则化最优下，RLVR充当过滤器，对接受集重新加权而不改变其组成，因此黑客率被精确继承。在参数共享下，接受错误答案的提示会通过基线将其概率推高，拒绝的提示则将其推低，导致低普遍性泄漏被抑制到基率以下，而高普遍性泄漏被放大。在Adam、SGD和采样的GRPO下，高普遍性时的黑客率最终高于低普遍性时，但两端是否跨越基率取决于步长；独立的每提示副本消除了这种依赖。",
+  "content_en": "Two accounts of how reinforcement learning with verifiable rewards (RLVR) interacts with an imperfect verifier coexist: in one, reward hacking is inherited from the base model; in the other, RL amplifies it. We study both in a controlled environment small enough to compute the entire response distribution exactly. We vary the universality of a leak, or the fraction of prompts that accept the same wrong response, and the verifier's static false-positive rate. At its KL-regularized optimum, RLVR acts as a filter that reweights the accepted set without altering its composition, so the hack rate is inherited exactly. Taking that as a null model, a known decomposition writes the drift from it as a sum over prompts of covariances between reward and the empirical tangent kernel. The terms from other prompts vanish without parameter sharing. With sharing, every prompt that accepts a wrong answer pushes it up and every prompt that rejects it pushes it down through the baseline, in proportion to the model's probability of producing it there. A shared-parameter policy thus drives a leak that few prompts accept below the base rate and amplifies one that most prompts accept. At every convergent learning rate under Adam, SGD, and sampled GRPO, hacking ends higher at high universality than at low, but whether either end crosses the base rate depends on the step size. Independent per-prompt copies remove the dependence. The direction of this push depends on neither the verifier's error rate",
+  "content_zh": "关于带可验证奖励的强化学习（RLVR）如何与不完美的验证器相互作用，存在两种并存的解释：一种认为奖励黑客行为继承自基座模型；另一种认为 RL 会放大它。我们在一个足够小、可以精确计算整个响应分布的可控环境中对两者进行研究。我们改变泄漏的普遍性（即接受同一错误响应的提示所占比例）以及验证器的静态假阳性率。在其 KL 正则化最优解处，RLVR 充当一个过滤器，对接受集重新加权而不改变其组成，因此黑客率被精确继承。以此作为零模型，一个已知的分解将偏离它的漂移写成逐提示的奖励与经验切核之间的协方差之和。在无参数共享的情况下，来自其他提示的项会消失。在有共享的情况下，每一个接受错误答案的提示都会通过基线将其推高，每一个拒绝它的提示都会将其推低，推高或推低的幅度与模型在该提示处产生该答案的概率成正比。因此，共享参数策略会将少数提示接受的泄漏压低到基率以下，并放大大多数提示接受的泄漏。在 Adam、SGD 和采样的 GRPO 下，对于每一个收敛的学习率，高普遍性下的黑客行为最终都高于低普遍性下，但两端是否越过基率取决于步长。独立的逐提示副本消除了这种依赖。这种推动的方向既不取决于验证器的错误率",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

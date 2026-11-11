@@ -1,0 +1,26 @@
+{
+  "id": "20261111-recurrent-modular-structure-in-spiking-n-875368",
+  "url": "https://arxiv.org/abs/2611.14262v1",
+  "title_en": "Recurrent Modular Structure in Spiking Neural Network Reinforcement Learning",
+  "title_zh": "脉冲神经网络强化学习中的循环模块化结构",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.14262v1",
+  "published": "2026-11-10T16:09:19Z",
+  "fetched_at": "2026-11-11T12:21:10Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "spiking-neural-networks",
+    "reinforcement-learning",
+    "modularity",
+    "stdp",
+    "cartpole"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces Community Recurrent Spiking Neural Networks (CoRe SNNs), a class of recurrent networks partitioned into fixed-role communities: a controller community receives stimuli, each action has its own community, and latent communities carry internal state. Spiking activity is a walk between communities, and the action is the community reached. All learning is local and three-factor. Three regimes for obtaining communities are compared: dynamic modularity with a new learning rule Map-STDP, partial modularity via stochastic block model initialization, and full modularity via sealing. On CartPole with three spiking neuron models, Map-STDP improves learning over the same network without it, matches full modularity on two of three models, and makes the spike walk more compressible. Replacing the feed-forward actor of a TD-STDP actor-critic with recurrent action communities improves performance.",
+  "summary_zh": "本文提出了社区循环脉冲神经网络（CoRe SNNs），这是一类划分为固定角色社区的循环网络：控制社区接收刺激，每个动作有各自的社区，潜在社区携带内部状态。脉冲活动是社区间的游走，动作是游走到达的社区。所有学习都是局部的三因子学习。比较了三种获得社区的方式：动态模块化（引入新学习规则Map-STDP在学习中鼓励模块结构）、部分模块化（通过随机块模型初始化部分强制）和完全模块化（通过密封完全强制）。在CartPole上，使用三种脉冲神经元模型，Map-STDP相比无此规则的相同网络提升了学习效果，在三种模型中的两种上匹配完全模块化（密封社区），并使观察到的脉冲游走更具可压缩性。将TD-STDP演员-评论家中的前馈演员替换为循环动作社区，性能优于前馈版本。",
+  "content_en": "Biological neural circuits are both modular and recurrent, with dense communities sparsely linked to one another. Spiking neural networks (SNNs) for reinforcement learning are usually feed-forward, and it is unclear how to obtain functional modules in a recurrent SNN or what they buy. In this work, we introduce a class of spiking networks, called Community Recurrent SNNs (CoRe SNNs): recurrent networks partitioned into communities with fixed roles. A controller community receives the stimulus, each action has its own community, and latent communities carry internal state. Spiking activity is then a walk between communities, and the action is the community the walk reaches. All learning is local and three-factor, and the recurrent communities are closer to cortical microcircuits than a feed-forward actor. We compare three regimes for obtaining the communities: dynamic modularity, in which a new learning rule we introduce, Map-STDP, encourages modular structure during learning; partial modularity, in which a stochastic block model (SBM) initialization enforces it partly; and full modularity, in which sealing enforces it fully. On CartPole, across three spiking neuron models, Map-STDP improves learning over the same network without it matches full modularity (sealed communities) on two of the three models, and makes the observed spike walk more compressible. Replacing the feed-forward actor of a TD-STDP actor-critic with recurrent action communities improves on the feed-forward",
+  "content_zh": "生物神经回路既具有模块化结构又具有递归性，密集的社区之间稀疏连接。用于强化学习的脉冲神经网络（SNN）通常是前馈的，而在递归SNN中如何获得功能模块以及这些模块有何益处尚不清楚。在本工作中，我们引入了一类脉冲网络，称为社区递归SNN（CoRe SNN）：将递归网络划分为具有固定角色的社区。一个控制器社区接收刺激，每个动作拥有自己的社区，潜在社区携带内部状态。脉冲活动因此成为社区之间的游走，而动作则是游走所到达的社区。所有学习都是局部的且为三因子规则，递归社区比前馈actor更接近皮层微回路。我们比较了三种获得社区的方式：动态模块化，其中我们引入的新学习规则Map-STDP在学习过程中促进模块化结构；部分模块化，其中随机块模型（SBM）初始化部分地强制实现模块化；以及完全模块化，其中密封完全强制实现模块化。在CartPole上，跨三种脉冲神经元模型，Map-STDP相较于不带该规则的相同网络改善了学习，在三种模型中的两种上达到与完全模块化（密封社区）相当的效果，并使观察到的脉冲游走更具可压缩性。将TD-STDP actor-critic的前馈actor替换为递归动作社区，相较于前馈版本有所改善",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

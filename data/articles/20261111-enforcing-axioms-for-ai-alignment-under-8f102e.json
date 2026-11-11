@@ -1,0 +1,26 @@
+{
+  "id": "20261111-enforcing-axioms-for-ai-alignment-under-8f102e",
+  "url": "https://arxiv.org/abs/2611.13369v1",
+  "title_en": "Enforcing Axioms for AI Alignment under Loss-Based Rules",
+  "title_zh": "基于损失规则的AI对齐中公理约束的实施",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.13369v1",
+  "published": "2026-11-09T23:44:36Z",
+  "fetched_at": "2026-11-11T12:21:16Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "ai-alignment",
+    "reward-model",
+    "pareto-optimality",
+    "rlhf",
+    "constitutional-ai"
+  ],
+  "image": null,
+  "summary_en": "The paper investigates whether Pareto optimality (PO) can be recovered in loss-based reward model training for AI alignment, where principles act as voters represented as linear directions in an embedding space. It shows that PO can fail for polynomial reward models of any fixed degree and one-hidden-layer ReLU MLPs of any fixed width d≥2 with finite parameter bounds. However, PO can be recovered for linear rewards under suitable assumptions in an idealized setting with uniform comparison directions and equal comparison lengths. These results suggest dataset design as a way to enforce PO in constitutional-style alignment while retaining loss-based training.",
+  "summary_zh": "本文研究在基于损失训练的奖励模型中能否恢复帕累托最优性（PO），其中原则作为投票者表示为嵌入空间中的线性方向。研究表明，对于任意固定次数的多项式奖励模型和任意固定宽度 d≥2 的单隐藏层 ReLU 多层感知机（MLP），在有限参数界下 PO 仍可能失效。然而，在理想化设置中，当比较方向均匀且比较长度相等时，线性奖励的基于损失训练可以恢复 PO。这些结果启发了通过数据集设计在宪法式对齐中实施 PO，同时保留基于损失的训练。",
+  "content_en": "Many alignment methods, most notably reinforcement learning from human feedback (RLHF), train reward models by minimizing a loss on pairwise comparisons of model responses. Inspired by principle-guided methods such as Constitutional AI, we treat each principle as a voter that compares responses according to that principle, for example, preferring the more helpful or less toxic response. We represent these voters as linear directions in a fixed embedding space, a simplifying assumption motivated by the Linear Representation Hypothesis. In this linear social choice model, Ge et al. (2024) showed that an optimal linear reward model can violate Pareto optimality (PO): From the principles-as-voters lens, this means a response A can be less helpful and more toxic than B, yet still receive a higher reward. We ask whether richer reward models or changes to comparison data can recover PO within loss-based training. We show that PO can still fail for polynomials of any fixed degree and one-hidden-layer ReLU multilayer perceptrons (MLPs) of any fixed width $ d\\ge 2 $ with suitable finite parameter bounds. We then recover PO for loss-based training of linear rewards under suitable assumptions in an idealized setting with uniform comparison directions and equal comparison lengths. These results motivate dataset design as an approach to recovering PO in constitutional-style alignment while retaining loss-based training.",
+  "content_zh": "许多对齐方法，尤其是基于人类反馈的强化学习（RLHF），通过最小化模型响应成对比较上的损失来训练奖励模型。受 Constitutional AI 等原则引导方法的启发，我们将每条原则视为一个投票者，该投票者依据该原则比较响应，例如偏好更有帮助或毒性更低的响应。我们将这些投票者表示为固定嵌入空间中的线性方向，这一简化假设受到线性表示假说的启发。在该线性社会选择模型中，Ge 等人（2024）证明，一个最优线性奖励模型可能违反帕累托最优性（PO）：从“原则即投票者”的视角来看，这意味着响应 A 可能比 B 更有害且更无帮助，却仍然获得更高的奖励。我们探究更丰富的奖励模型或对比较数据的改变能否在基于损失的训练中恢复 PO。我们证明，对于任意固定次数的多项式以及任意固定宽度 $ d\\ge 2 $ 的单隐藏层 ReLU 多层感知机（MLP），在适当的有限参数界下，PO 仍可能失效。随后，我们在具有均匀比较方向和相等比较长度的理想化设置中，在适当假设下为线性奖励的基于损失训练恢复了 PO。这些结果启发了将数据集设计作为在宪法式对齐中恢复 PO 同时保留基于损失训练的一种方法。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

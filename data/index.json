@@ -1,5 +1,71 @@
 [
   {
+    "id": "20261111-mbzuai-s-ifm-releases-pan-2-an-open-29b-770e74",
+    "url": "https://www.marktechpost.com/2026/11/10/ifm-pan-2-open-world-model/",
+    "title_en": "MBZUAI’s IFM Releases PAN 2, an Open 29B World Model for Physical AI",
+    "title_zh": "MBZUAI的IFM发布PAN 2：一个开放的29B物理AI世界模型",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-11T07:38:57Z",
+    "fetched_at": "2026-11-11T12:20:37Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "world-model",
+      "model-release",
+      "diffusion-transformer",
+      "physical-ai",
+      "benchmark"
+    ],
+    "image": "images/20261111-mbzuai-s-ifm-releases-pan-2-an-open-29b-770e74.jpg",
+    "summary_en": "MBZUAI's Institute of Foundation Models (IFM) released PAN 2, an open 29B-parameter world model for physical AI that simulates scene outcomes from text actions as video. It uses a two-stage architecture: an LLM planner (e.g., Kimi K3) generates structured JSON world states, and a 29B MMDiT diffusion transformer predicts video latents, conditioned by a frozen Qwen3.5-9B encoder. PAN 2 leads 6 tested models on full-plan completion (34.0% vs 32.5% for MiniMax-H3) but trails on single actions and human preference (Elo 1595 vs 1620). Weights, training and inference code are Apache 2.0; it runs on data-center GPUs with each worker holding the full model in BF16.",
+    "summary_zh": "MBZUAI的基础模型研究所（IFM）发布了PAN 2，一个开放的29B参数物理AI世界模型，可根据文本动作将场景变化模拟为视频。它采用两阶段架构：LLM规划器（如Kimi K3）生成结构化JSON世界状态，29B的MMDiT扩散Transformer预测视频潜变量，并由冻结的Qwen3.5-9B编码器条件化。PAN 2在6个测试模型的全计划完成率上领先（34.0% vs MiniMax-H3的32.5%），但在单动作和人类偏好上落后（Elo 1595 vs 1620）。权重、训练和推理代码均以Apache 2.0发布；运行于数据中心GPU，每个工作节点以BF16加载完整模型。",
+    "norm_url": "https://www.marktechpost.com/2026/11/10/ifm-pan-2-open-world-model"
+  },
+  {
+    "id": "20261111-autoscaffold-ai-guided-scaffolding-for-r-806ca9",
+    "url": "https://arxiv.org/abs/2611.14515v1",
+    "title_en": "AutoScaffold: AI-Guided Scaffolding for Reinforcement Learning of Language Models",
+    "title_zh": "AutoScaffold：AI引导的脚手架用于语言模型强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-10T18:58:46Z",
+    "fetched_at": "2026-11-11T12:20:48Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "scaffolding",
+      "llm",
+      "benchmark",
+      "gpu-kernel"
+    ],
+    "image": null,
+    "summary_en": "AutoScaffold is an AI-for-AI framework that converts a student model's training experience into adaptive scaffolds for reinforcement learning with verifiable rewards (RLVR). A frozen teacher periodically examines the student's experience, diagnoses bottlenecks, and designs two types of scaffolds: shared strategies for task classes and hints for individual hard tasks, adjusting support as the student learns. Scaffolds are removed at evaluation. Applied to ALFWorld, search-based QA, mathematical reasoning, and GPU kernel generation, students trained with AutoScaffold outperform RL baselines without scaffolds, gaining 7.2 points in ALFWorld success, 4.0 points in average QA exact match, and up to 5.0 points in GPU kernel generation for tasks with correct kernels faster than PyTorch reference.",
+    "summary_zh": "AutoScaffold 是一个 AI-for-AI 框架，可将学生模型的训练经验转化为自适应脚手架，用于带可验证奖励的强化学习（RLVR）。一个冻结的教师模型定期检查学生经验、诊断瓶颈，并设计两种形式的脚手架：跨任务类别的共享策略和针对单个困难任务的提示，并根据学生学习进度调整支持内容和数量。评估时移除脚手架。在 ALFWorld、基于搜索的问答、数学推理和 GPU 内核生成四个领域应用后，无脚手架评估时，使用 AutoScaffold 训练的学生均优于相应 RL 基线：ALFWorld 成功率提升 7.2 分，问答平均精确匹配提升 4.0 分，GPU 内核生成中正确内核且运行快于 PyTorch 参考的任务比例最高提升 5.0 分。",
+    "norm_url": "https://arxiv.org/abs/2611.14515v1"
+  },
+  {
+    "id": "20261111-recurrent-modular-structure-in-spiking-n-875368",
+    "url": "https://arxiv.org/abs/2611.14262v1",
+    "title_en": "Recurrent Modular Structure in Spiking Neural Network Reinforcement Learning",
+    "title_zh": "脉冲神经网络强化学习中的循环模块化结构",
+    "source_name": "arXiv",
+    "published": "2026-11-10T16:09:19Z",
+    "fetched_at": "2026-11-11T12:21:10Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "spiking-neural-networks",
+      "reinforcement-learning",
+      "modularity",
+      "stdp",
+      "cartpole"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces Community Recurrent Spiking Neural Networks (CoRe SNNs), a class of recurrent networks partitioned into fixed-role communities: a controller community receives stimuli, each action has its own community, and latent communities carry internal state. Spiking activity is a walk between communities, and the action is the community reached. All learning is local and three-factor. Three regimes for obtaining communities are compared: dynamic modularity with a new learning rule Map-STDP, partial modularity via stochastic block model initialization, and full modularity via sealing. On CartPole with three spiking neuron models, Map-STDP improves learning over the same network without it, matches full modularity on two of three models, and makes the spike walk more compressible. Replacing the feed-forward actor of a TD-STDP actor-critic with recurrent action communities improves performance.",
+    "summary_zh": "本文提出了社区循环脉冲神经网络（CoRe SNNs），这是一类划分为固定角色社区的循环网络：控制社区接收刺激，每个动作有各自的社区，潜在社区携带内部状态。脉冲活动是社区间的游走，动作是游走到达的社区。所有学习都是局部的三因子学习。比较了三种获得社区的方式：动态模块化（引入新学习规则Map-STDP在学习中鼓励模块结构）、部分模块化（通过随机块模型初始化部分强制）和完全模块化（通过密封完全强制）。在CartPole上，使用三种脉冲神经元模型，Map-STDP相比无此规则的相同网络提升了学习效果，在三种模型中的两种上匹配完全模块化（密封社区），并使观察到的脉冲游走更具可压缩性。将TD-STDP演员-评论家中的前馈演员替换为循环动作社区，性能优于前馈版本。",
+    "norm_url": "https://arxiv.org/abs/2611.14262v1"
+  },
+  {
     "id": "20261111-anthropic-launches-claude-fable-5-2-and-a42a4c",
     "url": "https://www.marktechpost.com/2026/11/10/anthropic-claude-fable-5-2-mythos-5-2-release/",
     "title_en": "Anthropic Launches Claude Fable 5.2 and Mythos 5.2: Same Model, Different Safeguards",
@@ -20,6 +86,50 @@
     "summary_en": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2, which are the same underlying frontier model with different safeguard levels. Fable 5.2 includes classifiers blocking high-risk cybersecurity and most research biology tasks, while Mythos 5.2 removes these blocks for verified users. The model features a 1M-token context window and 128K max output, and outperforms Opus 5.5 on most benchmarks, e.g., 49.1% on FrontierCode 2.0 and 69.9% on FrontierSWE v2, at roughly half the cost per task. It is available via hosted API only, priced at $8/$40 per million input/output tokens, with a 2.5x fast mode.",
     "summary_zh": "Anthropic 发布了 Claude Fable 5.2 和 Claude Mythos 5.2，二者是同一底层前沿模型，但安全防护级别不同。Fable 5.2 包含分类器，可阻止高风险网络安全任务和大多数研究生物学任务；Mythos 5.2 则移除了这些限制，仅对通过验证计划的用户开放。该模型具有 100 万 token 上下文窗口和 128K 最大输出，在大多数基准测试中超越 Opus 5.5，例如 FrontierCode 2.0 得分 49.1%，FrontierSWE v2 得分 69.9%，且每任务成本约为后者一半。仅通过托管 API 提供，定价为每百万输入/输出 token 8/40 美元，并提供 2.5 倍速快速模式。",
     "norm_url": "https://www.marktechpost.com/2026/11/10/anthropic-claude-fable-5-2-mythos-5-2-release"
+  },
+  {
+    "id": "20261111-margin-guided-token-credit-for-reinforce-8dee6b",
+    "url": "https://arxiv.org/abs/2611.14015v1",
+    "title_en": "Margin-Guided Token Credit for Reinforcement Learning with Verifiable Rewards",
+    "title_zh": "基于边际引导的令牌信用分配用于可验证奖励的强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-10T12:51:43Z",
+    "fetched_at": "2026-11-11T12:20:22Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "credit-assignment",
+      "grpo",
+      "language-model",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes MCPO (Margin-Credit Policy Optimization), a method for reinforcement learning with verifiable rewards that redistributes token-level credit based on model hesitation, measured by the top-2 margin of the next-token distribution. Unlike GRPO, which assigns equal credit to all tokens, MCPO uses two fixed thresholds to map the margin to a score and spreads the advantage across tokens while preserving the mean. The method requires no extra model evaluation or batch statistics. Training MiniCPM5-2B-Base with LoRA for 200 steps on 2,048 DAPO-Math problems and evaluating on six competition-math benchmarks, MCPO outperforms GRPO by 6.55 points of macro avg@32 on average (95% CI [4.1, 9.0]) across five data seeds, with a Qwen3-4B-Base replication showing +4.75 points on all three seeds. Gains are largest on problems GRPO solves inconsistently and increase with k in pass@k, reaching 13.8 points at pass@32; MCPO models also produce two to three times longer answers, and longer answers correlate with higher scores, though the two effects are not separated.",
+    "summary_zh": "本文提出MCPO（Margin-Credit Policy Optimization），一种用于可验证奖励强化学习的方法，根据模型犹豫程度（通过下一令牌分布的前二边际衡量）重新分配令牌级信用。与GRPO对所有令牌等量分配奖励不同，MCPO使用两个固定阈值将边际映射为分数，并在保持均值不变的情况下将优势分散到各令牌上。该方法无需额外模型评估或批次统计。在2,048个DAPO-Math问题上使用LoRA训练MiniCPM5-2B-Base 200步，并在六个竞赛数学基准上评估，MCPO在五个数据种子上平均比GRPO基线高6.55个百分点的macro avg@32（95%置信区间[4.1, 9.0]），Qwen3-4B-Base复现实验在三个种子上均提升（+4.75）。增益在GRPO仅部分解决的问题上最大，并随pass@k中的k增长，在pass@32时达到13.8个百分点；MCPO模型生成的答案长度是原来的两到三倍，且答案更长的运行得分更高，但实验未区分这两种效应。",
+    "norm_url": "https://arxiv.org/abs/2611.14015v1"
+  },
+  {
+    "id": "20261111-truer-test-time-reward-correction-using-872689",
+    "url": "https://arxiv.org/abs/2611.13714v1",
+    "title_en": "TRUER: Test-Time Reward Correction Using an Error-Aware Rectifier for Reinforcement Learning",
+    "title_zh": "TRUER：使用错误感知整流器进行测试时奖励校正的强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-10T08:08:43Z",
+    "fetched_at": "2026-11-11T12:20:53Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "test-time-adaptation",
+      "reward-model",
+      "language-model",
+      "majority-voting"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces TRUER, a framework for test-time reinforcement learning that addresses the issue of majority voting reinforcing incorrect solutions. It trains a reward rectifier using a limited labeled source set, focusing on cases where consensus and correctness disagree (incorrect majorities and correct minorities). The rectifier is then frozen and used to correct rewards during test-time adaptation. TRUER consistently outperforms naive TTRL in both reward accuracy and model performance across all evaluated configurations.",
+    "summary_zh": "本文提出TRUER框架，用于测试时强化学习，解决多数投票可能强化错误解的问题。它利用有限的标注源集训练一个奖励整流器，重点关注共识与正确性不一致的情况（错误多数和正确少数）。随后冻结整流器，在测试时适应过程中校正奖励。在所有评估配置中，TRUER在奖励准确性和模型性能上均持续优于朴素TTRL。",
+    "norm_url": "https://arxiv.org/abs/2611.13714v1"
   },
   {
     "id": "20261110-introducing-our-smallest-most-efficient-ab36ea",
@@ -66,6 +176,28 @@
     "norm_url": "https://www.marktechpost.com/2026/11/09/meta-muse-ember-small-agent-model"
   },
   {
+    "id": "20261111-closing-the-bf16-fp16-convergence-speed-524938",
+    "url": "https://arxiv.org/abs/2611.13545v1",
+    "title_en": "Closing the BF16-FP16 Convergence Speed Gap in RL Post-Training with Stochastic Rounding",
+    "title_zh": "通过随机舍入缩小RL后训练中BF16与FP16的收敛速度差距",
+    "source_name": "arXiv",
+    "published": "2026-11-10T04:07:19Z",
+    "fetched_at": "2026-11-11T12:20:42Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "bf16",
+      "fp16",
+      "stochastic-rounding",
+      "mixed-precision"
+    ],
+    "image": null,
+    "summary_en": "The article identifies that in reinforcement learning with verifiable rewards (RLVR), BF16 mixed-precision training converges more slowly than FP16 at the same learning rate due to \"weight sticking\": small updates to FP32 shadow weights often leave BF16 weights unchanged after round-to-nearest quantization. Raising the BF16 learning rate can match FP16's convergence speed but increases KL divergence from the reference model. The authors propose applying stochastic rounding when quantizing FP32 shadow weights to BF16, which matches FP16's convergence speed across models and datasets while reducing KL divergence compared to BF16 with a larger learning rate, and retains BF16's wider dynamic range without needing loss scaling.",
+    "summary_zh": "文章指出，在带可验证奖励的强化学习（RLVR）中，相同学习率下BF16混合精度训练比FP16收敛更慢，原因是“权重粘滞”：FP32影子权重经最近舍入量化为BF16时，微小更新常无法改变BF16权重。提高BF16学习率可匹配FP16收敛速度，但会增大与参考模型的KL散度。作者提出在将FP32影子权重量化为BF16时采用随机舍入，从而在不同模型和数据集上匹配FP16的收敛速度，同时相比使用更大学习率的BF16训练降低KL散度，并保留BF16更宽的动态范围且无需损失缩放。",
+    "norm_url": "https://arxiv.org/abs/2611.13545v1"
+  },
+  {
     "id": "20261110-llm-anthropic-0-31-be126b",
     "url": "https://simonwillison.net/2026/Nov/9/llm-anthropic/",
     "title_en": "llm-anthropic 0.31",
@@ -86,6 +218,72 @@
     "summary_en": "Anthropic released Fable 5.2 and Mythos 5.2, with Fable 5.2 currently ranked first on Artificial Analysis. The llm-anthropic plugin version 0.31 adds support for these models, allowing prompts to be run via the llm CLI. Testing across five reasoning levels (low, medium, high, xhigh, max) revealed that the max level failed to return an image due to running out of tokens after 128,000 thinking tokens, a bug also seen in Opus 5.5 but new to the Fable series. Pricing is $8/million input and $40/million output, a 20% discount from Fable 5.1's $10/$50.",
     "summary_zh": "Anthropic 发布了 Fable 5.2 和 Mythos 5.2，其中 Fable 5.2 目前在 Artificial Analysis 上排名第一。llm-anthropic 插件 0.31 版本新增了对这些模型的支持，可通过 llm 命令行工具运行提示。在五个推理级别（low、medium、high、xhigh、max）的测试中，max 级别因在 128,000 个思考 token 后耗尽 token 而未能返回图像，该问题在 Opus 5.5 中也曾出现，但对 Fable 系列是新问题。定价为每百万输入 token 8 美元、输出 token 40 美元，较 Fable 5.1 的 10/50 美元打了 20% 折扣。",
     "norm_url": "https://simonwillison.net/2026/Nov/9/llm-anthropic"
+  },
+  {
+    "id": "20261111-enforcing-axioms-for-ai-alignment-under-8f102e",
+    "url": "https://arxiv.org/abs/2611.13369v1",
+    "title_en": "Enforcing Axioms for AI Alignment under Loss-Based Rules",
+    "title_zh": "基于损失规则的AI对齐中公理约束的实施",
+    "source_name": "arXiv",
+    "published": "2026-11-09T23:44:36Z",
+    "fetched_at": "2026-11-11T12:21:16Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "ai-alignment",
+      "reward-model",
+      "pareto-optimality",
+      "rlhf",
+      "constitutional-ai"
+    ],
+    "image": null,
+    "summary_en": "The paper investigates whether Pareto optimality (PO) can be recovered in loss-based reward model training for AI alignment, where principles act as voters represented as linear directions in an embedding space. It shows that PO can fail for polynomial reward models of any fixed degree and one-hidden-layer ReLU MLPs of any fixed width d≥2 with finite parameter bounds. However, PO can be recovered for linear rewards under suitable assumptions in an idealized setting with uniform comparison directions and equal comparison lengths. These results suggest dataset design as a way to enforce PO in constitutional-style alignment while retaining loss-based training.",
+    "summary_zh": "本文研究在基于损失训练的奖励模型中能否恢复帕累托最优性（PO），其中原则作为投票者表示为嵌入空间中的线性方向。研究表明，对于任意固定次数的多项式奖励模型和任意固定宽度 d≥2 的单隐藏层 ReLU 多层感知机（MLP），在有限参数界下 PO 仍可能失效。然而，在理想化设置中，当比较方向均匀且比较长度相等时，线性奖励的基于损失训练可以恢复 PO。这些结果启发了通过数据集设计在宪法式对齐中实施 PO，同时保留基于损失的训练。",
+    "norm_url": "https://arxiv.org/abs/2611.13369v1"
+  },
+  {
+    "id": "20261111-wrong-the-same-way-cross-prompt-sharing-75c8dc",
+    "url": "https://arxiv.org/abs/2611.13218v1",
+    "title_en": "Wrong the Same Way: Cross-Prompt Sharing Both Suppresses and Amplifies Reward Hacking in RLVR",
+    "title_zh": "同样的错误：跨提示共享在RLVR中既抑制又放大奖励黑客行为",
+    "source_name": "arXiv",
+    "published": "2026-11-09T20:39:36Z",
+    "fetched_at": "2026-11-11T12:20:59Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rlvr",
+      "reward-hacking",
+      "reinforcement-learning",
+      "verifier",
+      "parameter-sharing"
+    ],
+    "image": null,
+    "summary_en": "The paper studies how reinforcement learning with verifiable rewards (RLVR) interacts with an imperfect verifier, specifically whether reward hacking is inherited from the base model or amplified by RL. Using a controlled environment where the entire response distribution can be computed exactly, the authors vary the universality of a leak (fraction of prompts accepting the same wrong response) and the verifier's false-positive rate. They find that at the KL-regularized optimum, RLVR acts as a filter that reweights the accepted set without altering its composition, so the hack rate is inherited exactly. With parameter sharing, prompts that accept a wrong answer push it up and those that reject it push it down, leading to suppression of low-universality leaks and amplification of high-universality leaks. This effect is consistent across Adam, SGD, and sampled GRPO, though whether the hack rate crosses the base rate depends on step size; independent per-prompt copies remove the dependence.",
+    "summary_zh": "本文研究了带有可验证奖励的强化学习（RLVR）与不完美验证器交互的两种观点：奖励黑客行为是从基模型继承的还是被RL放大的。在一个可以精确计算整个响应分布的小型受控环境中，作者变化泄漏的普遍性（接受相同错误响应的提示比例）和验证器的静态假阳性率。发现在KL正则化最优下，RLVR充当过滤器，对接受集重新加权而不改变其组成，因此黑客率被精确继承。在参数共享下，接受错误答案的提示会通过基线将其概率推高，拒绝的提示则将其推低，导致低普遍性泄漏被抑制到基率以下，而高普遍性泄漏被放大。在Adam、SGD和采样的GRPO下，高普遍性时的黑客率最终高于低普遍性时，但两端是否跨越基率取决于步长；独立的每提示副本消除了这种依赖。",
+    "norm_url": "https://arxiv.org/abs/2611.13218v1"
+  },
+  {
+    "id": "20261111-building-world-models-from-intrinsic-mot-730b39",
+    "url": "https://arxiv.org/abs/2611.13113v1",
+    "title_en": "Building World Models from Intrinsic Motivation",
+    "title_zh": "从内在动机构建世界模型",
+    "source_name": "arXiv",
+    "published": "2026-11-09T19:02:32Z",
+    "fetched_at": "2026-11-11T12:21:04Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "intrinsic-motivation",
+      "world-models",
+      "model-based-rl",
+      "representation-learning",
+      "zero-shot-transfer"
+    ],
+    "image": null,
+    "summary_en": "This study integrates 24 intrinsic objectives (curiosity, entropy, competency) into a model-based RL framework to learn world models without extrinsic rewards. Using three representation-learning strategies (observation reconstruction, latent prediction, redundancy reduction), they evaluate zero-shot, few-shot, and multi-task control in locomotion, manipulation, and open-ended games. Curiosity-driven exploration with observation reconstruction yields the strongest aggregate profile, though the best individual pairing is task-dependent. In compositional vision tasks, intrinsic motivation from episodic and lifelong novelty—complementing the world model's recurrent state—achieves the best zero-shot transfer and few-shot performance.",
+    "summary_zh": "本研究将24种内在动机目标（好奇心、熵、能力）集成到基于模型的强化学习框架中，以在无外部奖励下学习世界模型。采用三种表示学习策略（观测重建、潜在预测、冗余减少），在运动、操作和开放式游戏中评估零样本、少样本和多任务控制。好奇心驱动探索结合观测重建获得最强的综合表现，但最佳个体组合取决于任务。在组合视觉任务中，来自情景和终身新颖性的内在动机——作为世界模型通用循环状态的补充记忆——实现了最佳的零样本迁移和少样本性能。",
+    "norm_url": "https://arxiv.org/abs/2611.13113v1"
   },
   {
     "id": "20261110-anthropic-launches-new-claude-fable-and-c301a0",

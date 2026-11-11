@@ -1,0 +1,26 @@
+{
+  "id": "20261111-truer-test-time-reward-correction-using-872689",
+  "url": "https://arxiv.org/abs/2611.13714v1",
+  "title_en": "TRUER: Test-Time Reward Correction Using an Error-Aware Rectifier for Reinforcement Learning",
+  "title_zh": "TRUER：使用错误感知整流器进行测试时奖励校正的强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.13714v1",
+  "published": "2026-11-10T08:08:43Z",
+  "fetched_at": "2026-11-11T12:20:53Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "test-time-adaptation",
+    "reward-model",
+    "language-model",
+    "majority-voting"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces TRUER, a framework for test-time reinforcement learning that addresses the issue of majority voting reinforcing incorrect solutions. It trains a reward rectifier using a limited labeled source set, focusing on cases where consensus and correctness disagree (incorrect majorities and correct minorities). The rectifier is then frozen and used to correct rewards during test-time adaptation. TRUER consistently outperforms naive TTRL in both reward accuracy and model performance across all evaluated configurations.",
+  "summary_zh": "本文提出TRUER框架，用于测试时强化学习，解决多数投票可能强化错误解的问题。它利用有限的标注源集训练一个奖励整流器，重点关注共识与正确性不一致的情况（错误多数和正确少数）。随后冻结整流器，在测试时适应过程中校正奖励。在所有评估配置中，TRUER在奖励准确性和模型性能上均持续优于朴素TTRL。",
+  "content_en": "Test-time reinforcement learning enables language models to adapt using rewards derived from their own answers. However, majority voting can reinforce incorrect solutions even when correct alternatives are available. Our training audit shows that false positives (incorrect responses receiving positive rewards) dominate reward errors. We focus on a practical regime where ground-truth rewards are difficult to obtain at scale, while a limited labeled source set is available. We introduce TRUER, a framework that uses limited supervision to train a reward rectifier that distinguishes correctness from consensus. To achieve this goal, we train the rectifier with an emphasis on incorrect majorities and correct minorities, targeting cases where consensus and correctness disagree. After that, we freeze the rectifier and use it to correct rewards during subsequent test-time adaptation. By improving reward accuracy and thereby model performance, TRUER consistently outperforms naive TTRL in both metrics across all evaluated configurations.",
+  "content_zh": "测试时强化学习使语言模型能够利用从自身答案中获得的奖励进行自适应。然而，多数投票可能会强化错误答案，即使存在正确答案。我们的训练审计表明，假阳性（错误回答获得正奖励）在奖励错误中占主导地位。我们关注一个实际场景：在大规模获取真实奖励困难，但存在有限的标注源集。我们引入TRUER，一个利用有限监督训练奖励校正器的框架，该校正器区分正确性与共识。为实现这一目标，我们训练校正器时重点关注错误多数和正确少数，针对共识与正确性不一致的情况。之后，我们冻结校正器，并在后续测试时自适应过程中用它来校正奖励。通过提高奖励准确性进而提升模型性能，TRUER在所有评估配置中在两项指标上均持续优于朴素TTRL。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

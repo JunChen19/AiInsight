@@ -1,0 +1,26 @@
+{
+  "id": "20261111-margin-guided-token-credit-for-reinforce-8dee6b",
+  "url": "https://arxiv.org/abs/2611.14015v1",
+  "title_en": "Margin-Guided Token Credit for Reinforcement Learning with Verifiable Rewards",
+  "title_zh": "基于边际引导的令牌信用分配用于可验证奖励的强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.14015v1",
+  "published": "2026-11-10T12:51:43Z",
+  "fetched_at": "2026-11-11T12:20:22Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "credit-assignment",
+    "grpo",
+    "language-model",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes MCPO (Margin-Credit Policy Optimization), a method for reinforcement learning with verifiable rewards that redistributes token-level credit based on model hesitation, measured by the top-2 margin of the next-token distribution. Unlike GRPO, which assigns equal credit to all tokens, MCPO uses two fixed thresholds to map the margin to a score and spreads the advantage across tokens while preserving the mean. The method requires no extra model evaluation or batch statistics. Training MiniCPM5-2B-Base with LoRA for 200 steps on 2,048 DAPO-Math problems and evaluating on six competition-math benchmarks, MCPO outperforms GRPO by 6.55 points of macro avg@32 on average (95% CI [4.1, 9.0]) across five data seeds, with a Qwen3-4B-Base replication showing +4.75 points on all three seeds. Gains are largest on problems GRPO solves inconsistently and increase with k in pass@k, reaching 13.8 points at pass@32; MCPO models also produce two to three times longer answers, and longer answers correlate with higher scores, though the two effects are not separated.",
+  "summary_zh": "本文提出MCPO（Margin-Credit Policy Optimization），一种用于可验证奖励强化学习的方法，根据模型犹豫程度（通过下一令牌分布的前二边际衡量）重新分配令牌级信用。与GRPO对所有令牌等量分配奖励不同，MCPO使用两个固定阈值将边际映射为分数，并在保持均值不变的情况下将优势分散到各令牌上。该方法无需额外模型评估或批次统计。在2,048个DAPO-Math问题上使用LoRA训练MiniCPM5-2B-Base 200步，并在六个竞赛数学基准上评估，MCPO在五个数据种子上平均比GRPO基线高6.55个百分点的macro avg@32（95%置信区间[4.1, 9.0]），Qwen3-4B-Base复现实验在三个种子上均提升（+4.75）。增益在GRPO仅部分解决的问题上最大，并随pass@k中的k增长，在pass@32时达到13.8个百分点；MCPO模型生成的答案长度是原来的两到三倍，且答案更长的运行得分更高，但实验未区分这两种效应。",
+  "content_en": "In reinforcement learning with verifiable rewards, a language model is rewarded for a correct final answer, and GRPO passes that reward to every token of the solution in equal measure. We instead place the credit where the model hesitated, in a method we call MCPO (Margin-Credit Policy Optimization). We measure hesitation by the top-2 margin $M=p_1-p_2$ of the policy's next-token distribution, map it to a score with two fixed thresholds, and spread each solution's advantage over its tokens so that the mean stays unchanged. The margin is read from a forward pass the trainer already performs, so the method needs no extra model evaluation and no batch statistics. We train MiniCPM5-2B-Base with LoRA for 200 steps on 2,048 DAPO-Math problems and evaluate on six competition-math benchmarks. MCPO beats an unmodified GRPO baseline for all five data seeds, by 6.55 points of macro avg@32 on average (95\\% CI $[4.1, 9.0]$), and a Qwen3-4B-Base replication improves for all three seeds ($+4.75$). The gain is largest on problems that GRPO solves only some of the time and grows with $k$ in pass@$k$, reaching 13.8 points at pass@32. MCPO models also write two to three times longer answers, and runs that write longer score higher; our experiments do not separate the two effects.",
+  "content_zh": "在带可验证奖励的强化学习中，语言模型因最终答案正确而获得奖励，而 GRPO 将该奖励等量地分配给解答的每一个 token。我们则把信用放在模型犹豫之处，这种方法我们称为 MCPO（Margin-Credit Policy Optimization）。我们通过策略下一 token 分布的前二 margin $M=p_1-p_2$ 来衡量犹豫，用两个固定阈值将其映射为一个分数，并将每个解答的优势分摊到其各个 token 上，使均值保持不变。该 margin 读取自训练器本就会执行的一次前向传播，因此该方法无需额外的模型评估，也无需批次统计量。我们使用 LoRA 在 2,048 道 DAPO-Math 问题上训练 MiniCPM5-2B-Base 200 步，并在六个竞赛数学基准上评估。MCPO 在全部五个数据种子上均优于未修改的 GRPO 基线，macro avg@32 平均提升 6.55 分（95\\% CI $[4.1, 9.0]$），Qwen3-4B-Base 复现实验在全部三个种子上均有提升（$+4.75$）。增益在 GRPO 仅能部分解出的问题上最大，并随 pass@$k$ 中的 $k$ 增大而增长，在 pass@32 时达到 13.8 分。MCPO 模型写出的答案也长两到三倍，且写得更长的运行得分更高；我们的实验未能区分这两种效应。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
