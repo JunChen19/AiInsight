@@ -1,0 +1,26 @@
+{
+  "id": "20261111-rail-representation-aligned-imitation-le-41a936",
+  "url": "https://arxiv.org/abs/2611.12251v1",
+  "title_en": "RAIL: Representation-Aligned Imitation Learning for Student-Compatible Teacher Policies",
+  "title_zh": "RAIL：面向学生兼容教师策略的表示对齐模仿学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.12251v1",
+  "published": "2026-11-09T11:41:49Z",
+  "fetched_at": "2026-11-11T02:02:18Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "imitation-learning",
+    "reinforcement-learning",
+    "representation-learning",
+    "teacher-student",
+    "contrastive-learning"
+  ],
+  "image": null,
+  "summary_en": "Reinforcement learning from raw sensory inputs is challenging due to high-dimensional observations and sparse rewards. A common approach is to train a teacher policy with privileged state information and distill it into a student policy that acts from raw inputs, but this creates an irreducible imitation gap when the teacher relies on unavailable information. The authors introduce Representation-Aligned Imitation Learning (RAIL), which learns a shared latent representation across teacher and student observations using contrastive learning and trains the teacher policy directly in this space, constraining it to behaviors reproducible from student observations. RAIL substantially reduces the imitation gap while preserving task performance, outperforms strong baselines without reward modification or post-hoc student fine-tuning, and surpasses direct reinforcement learning from raw observations. The learned representations also enable zero-shot transfer to new tasks through teacher-only training.",
+  "summary_zh": "从原始感官输入（如图像或车载传感器）进行强化学习（RL）面临高维观测和稀疏奖励的挑战。常见策略是先训练一个能访问特权状态信息的教师策略，再将其蒸馏为仅从原始输入行动的学生策略。然而，当教师依赖学生不可用的信息时，精确模仿可能无法实现，产生不可消除的模仿差距。现有方法通常通过仔细的奖励塑造或教师训练后对学生策略进行额外强化学习来缓解这种不匹配。为此，作者提出表示对齐模仿学习（RAIL），在教师训练本身解决该不匹配问题。RAIL 使用对比学习学习教师和学生观测共享的潜在表示，并直接在该空间中训练教师策略。由于教师策略被约束在该共享空间上操作，它学习的行为可从学生观测中复现，从而在保持任务性能的同时大幅减少模仿差距。在多个环境中，RAIL 无需修改奖励或事后微调学生，即优于强基线，并超越直接从原始观测进行强化学习。学习到的表示还通过仅教师训练实现了对新任务的零样本迁移。",
+  "content_en": "Reinforcement learning (RL) from raw sensory inputs such as images or onboard sensors can be challenging due to high-dimensional observations and sparse rewards. A common strategy is to train a teacher policy with access to privileged state information and then distill it into a student policy that acts from raw inputs alone. However, when the teacher relies on information unavailable to the student, exact imitation may be impossible, creating an irreducible imitation gap. Existing approaches typically mitigate this mismatch through careful reward shaping or additional reinforcement learning on the student policy after the teacher has been trained. Instead, we introduce Representation-Aligned Imitation Learning (RAIL), which addresses the mismatch during teacher training itself. RAIL learns a latent representation shared across teacher and student observations using contrastive learning, and trains the teacher policy directly in this space. Because the teacher policy is constrained to operate on this shared space, it learns behaviors that are reproducible from student observations. This substantially reduces the imitation gap while preserving task performance. Across multiple environments, RAIL outperforms strong baselines without reward modification or post-hoc student fine-tuning, and surpasses direct reinforcement learning from raw observations. The learned representations further enable zero-shot transfer to new tasks through teacher-only training. Project site: https://m",
+  "content_zh": "从图像或机载传感器等原始感官输入进行强化学习（RL）可能具有挑战性，原因在于高维观测和稀疏奖励。一种常见策略是先训练一个能够访问特权状态信息的教师策略，然后将其蒸馏为一个仅从原始输入执行动作的学生策略。然而，当教师依赖学生无法获得的信息时，精确模仿可能无法实现，从而产生不可消除的模仿差距。现有方法通常通过精心的奖励塑造或在教师训练完成后对学生策略进行额外强化学习来缓解这种不匹配。相反，我们引入了表示对齐模仿学习（RAIL），它在教师训练本身期间解决这种不匹配。RAIL 使用对比学习学习一个在教师和学生观测之间共享的潜在表示，并直接在该空间中训练教师策略。由于教师策略被约束在该共享空间上运行，它学习到的行为可以从学生观测中重现。这在保持任务性能的同时大幅减少了模仿差距。在多个环境中，RAIL 无需修改奖励或事后对学生进行微调即优于强基线，并超越了从原始观测进行直接强化学习。学习到的表示进一步通过仅教师训练实现对新任务的零样本迁移。项目网站：https://m",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

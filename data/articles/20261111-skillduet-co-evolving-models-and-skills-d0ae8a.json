@@ -1,0 +1,26 @@
+{
+  "id": "20261111-skillduet-co-evolving-models-and-skills-d0ae8a",
+  "url": "https://arxiv.org/abs/2611.12109v1",
+  "title_en": "SkillDuet: Co-Evolving Models and Skills through Response Feedback",
+  "title_zh": "SkillDuet：通过响应反馈实现模型与技能协同进化",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.12109v1",
+  "published": "2026-11-09T09:23:26Z",
+  "fetched_at": "2026-11-11T02:01:41Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "skill-evolution",
+    "llm",
+    "benchmark",
+    "response-feedback"
+  ],
+  "image": null,
+  "summary_en": "SkillDuet is a framework that coordinates parameter updates and skill evolution in LLMs through response feedback. Skills extracted from on-policy trajectories guide parameter updates via OPD at every step. A response-based score called Strength ranks candidate skills by the magnitude of shift they induce in the current model's responses, and top-scoring skills are periodically consolidated into a persistent global skill set (Global). The updated model and Global jointly guide subsequent interactions, generating experience for further updates. With Qwen3-4B, SkillDuet achieves 98.57% success rate on ALFWorld and 92.97% on WebShop, outperforming the SEED-API baseline by 2.86 and 5.47 percentage points, respectively.",
+  "summary_zh": "SkillDuet 是一个通过响应反馈协调参数更新与技能进化的框架。从在线策略轨迹中提取的技能通过 OPD 在每一步指导参数更新。基于响应的评分 Strength 根据技能对当前模型响应引起的偏移幅度对候选技能进行排序，得分最高的技能定期整合到持久的全局技能集（Global）中。更新后的模型与 Global 共同指导后续交互，生成用于进一步参数和技能更新的经验。在 Qwen3-4B 上，SkillDuet 在 ALFWorld 上达到 98.57% 的成功率，在 WebShop 上达到 92.97%，分别超过匹配的 SEED-API 基线 2.86 和 5.47 个百分点。",
+  "content_en": "During reinforcement learning, experience can be both internalized in LLM parameters and retained externally as reusable textual skills. Parameter updates alter the model's behavior and the interaction experience from which new skills are extracted. These skills, in turn, guide the model's subsequent interactions and parameter updates. As the model's capabilities evolve, previously beneficial skills may become redundant or detrimental. We present SkillDuet, a framework that coordinates parameter updates and skill evolution through model response feedback. Skills extracted from on-policy trajectories guide parameter updates through OPD at every step. A response-based score, Strength, ranks candidate skills by the magnitude of the shift they induce in the current model's responses, and the highest-scoring skills are periodically consolidated into a persistent global skill set (Global). The updated model and Global jointly guide subsequent interactions, generating experience for further parameter and skill updates. With Qwen3-4B, SkillDuet achieves success rates of 98.57% on ALFWorld and 92.97% on WebShop, exceeding the matched SEED-API baseline by 2.86 and 5.47 percentage points, respectively. Ablations show that response-based skill selection and Global consolidation improve task performance. Further experiments show that the benefits of retained skills depend on both their content and their compatibility with the model. SkillDuet provides a concrete mechanism for model-skill",
+  "content_zh": "在强化学习过程中，经验既可以内化到 LLM 参数中，也可以作为可复用的文本技能保留在外部。参数更新会改变模型的行为以及从中提取新技能的交互经验。这些技能反过来又指导模型后续的交互和参数更新。随着模型能力的发展，先前有益的技能可能变得冗余或有害。我们提出 SkillDuet，一个通过模型响应反馈来协调参数更新与技能演化的框架。从 on-policy 轨迹中提取的技能在每一步通过 OPD 指导参数更新。一种基于响应的评分 Strength 根据候选技能对当前模型响应所引发偏移的幅度对其进行排序，得分最高的技能会被定期整合到一个持久的全局技能集（Global）中。更新后的模型与 Global 共同指导后续交互，为进一步的参数和技能更新生成经验。在 Qwen3-4B 上，SkillDuet 在 ALFWorld 上达到 98.57% 的成功率，在 WebShop 上达到 92.97%，分别超过匹配的 SEED-API 基线 2.86 和 5.47 个百分点。消融实验表明，基于响应的技能选择和 Global 整合能够提升任务性能。进一步实验表明，保留技能的收益取决于其内容及其与模型的兼容性。SkillDuet 为模型-技能",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

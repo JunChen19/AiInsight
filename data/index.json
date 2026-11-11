@@ -1,5 +1,27 @@
 [
   {
+    "id": "20261111-anthropic-launches-claude-fable-5-2-and-a42a4c",
+    "url": "https://www.marktechpost.com/2026/11/10/anthropic-claude-fable-5-2-mythos-5-2-release/",
+    "title_en": "Anthropic Launches Claude Fable 5.2 and Mythos 5.2: Same Model, Different Safeguards",
+    "title_zh": "Anthropic 发布 Claude Fable 5.2 与 Mythos 5.2：同一模型，不同安全防护",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-10T14:59:09Z",
+    "fetched_at": "2026-11-11T02:01:29Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "llm",
+      "benchmark",
+      "safety",
+      "api"
+    ],
+    "image": "images/20261111-anthropic-launches-claude-fable-5-2-and-a42a4c.jpg",
+    "summary_en": "Anthropic released Claude Fable 5.2 and Claude Mythos 5.2, which are the same underlying frontier model with different safeguard levels. Fable 5.2 includes classifiers blocking high-risk cybersecurity and most research biology tasks, while Mythos 5.2 removes these blocks for verified users. The model features a 1M-token context window and 128K max output, and outperforms Opus 5.5 on most benchmarks, e.g., 49.1% on FrontierCode 2.0 and 69.9% on FrontierSWE v2, at roughly half the cost per task. It is available via hosted API only, priced at $8/$40 per million input/output tokens, with a 2.5x fast mode.",
+    "summary_zh": "Anthropic 发布了 Claude Fable 5.2 和 Claude Mythos 5.2，二者是同一底层前沿模型，但安全防护级别不同。Fable 5.2 包含分类器，可阻止高风险网络安全任务和大多数研究生物学任务；Mythos 5.2 则移除了这些限制，仅对通过验证计划的用户开放。该模型具有 100 万 token 上下文窗口和 128K 最大输出，在大多数基准测试中超越 Opus 5.5，例如 FrontierCode 2.0 得分 49.1%，FrontierSWE v2 得分 69.9%，且每任务成本约为后者一半。仅通过托管 API 提供，定价为每百万输入/输出 token 8/40 美元，并提供 2.5 倍速快速模式。",
+    "norm_url": "https://www.marktechpost.com/2026/11/10/anthropic-claude-fable-5-2-mythos-5-2-release"
+  },
+  {
     "id": "20261110-introducing-our-smallest-most-efficient-ab36ea",
     "url": "https://simonwillison.net/2026/Nov/10/muse-ember/",
     "title_en": "Introducing Our Smallest, Most Efficient Model: Muse Ember",
@@ -20,6 +42,28 @@
     "summary_en": "Meta AI released Muse Ember, its smallest and most efficient model for complex reasoning execution and repetitive agent tasks like tool calls, coding subtasks, routing, extraction, and long document parsing. It is priced at $0.10 per million input tokens and $0.50 per million output tokens for shorter prompts, matching GPT-6 Luna and Claude Haiku 5.5, but with different long-prompt thresholds: Ember's price increases after 200k tokens, while Luna's after 272k and Haiku's after 100k. On the Artificial Analysis Intelligence Index vs. Cost per Task chart, Muse Ember sits on the Pareto frontier, meaning no model scores higher for less cost per task. It offers six reasoning levels (minimal to max), and its output quality is comparable to Muse Wonder, which costs 40 times more.",
     "summary_zh": "Meta AI 发布了其最小、最高效的模型 Muse Ember，专为复杂推理执行和代理重复性任务（如工具调用、编码子任务、路由、提取和长文档解析）设计。对于较短提示，其定价为每百万输入 token 0.10 美元、每百万输出 token 0.50 美元，与 GPT-6 Luna 和 Claude Haiku 5.5 相同，但长提示阈值不同：Ember 在 20 万 token 后涨价，Luna 在 27.2 万后，Haiku 在 10 万后。在 Artificial Analysis 的智能指数与每任务成本图表上，Muse Ember 位于帕累托前沿，意味着没有模型能以更低成本获得更高分数。它提供六个推理级别（从 minimal 到 max），输出质量与价格为其 40 倍的 Muse Wonder 相当。",
     "norm_url": "https://simonwillison.net/2026/Nov/10/muse-ember"
+  },
+  {
+    "id": "20261111-meta-releases-muse-ember-a-1m-context-mo-147307",
+    "url": "https://www.marktechpost.com/2026/11/09/meta-muse-ember-small-agent-model/",
+    "title_en": "Meta Releases Muse Ember, a 1M-Context Model for High-Volume Agent Work",
+    "title_zh": "Meta 发布 Muse Ember：面向高并发 Agent 任务的 100 万上下文模型",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-10T06:36:10Z",
+    "fetched_at": "2026-11-11T02:01:57Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "agent",
+      "multimodal",
+      "benchmark",
+      "meta"
+    ],
+    "image": "images/20261111-meta-releases-muse-ember-a-1m-context-mo-147307.jpg",
+    "summary_en": "Meta Superintelligence Labs released Muse Ember, a hosted multimodal reasoning model for high-volume agent subtasks like tool calls, coding, routing, and long document parsing. It features a 1M-token context window and up to 512K output tokens, accepts text, images, audio, and video, and is the first model trained using Meta's largest model, Muse Wonder Full. On the Artificial Analysis Intelligence Index, it scores 36, tying Claude Haiku 5.5 at max effort, while costing about $0.136 per task versus Haiku's $0.411. It excels on agent benchmarks (37.8 on AutomationBench-AA) but lags on mergeable code (27.2 on FrontierCode 2.0-AA).",
+    "summary_zh": "Meta Superintelligence Labs 发布了 Muse Ember，这是一个托管的多模态推理模型，专为高并发 Agent 子任务（如工具调用、编码、路由和长文档解析）设计。它支持 100 万 token 上下文窗口和最多 512K 输出 token，可原生处理文本、图像、音频和视频，并且是首个使用 Meta 最大模型 Muse Wonder Full 训练而成的模型。在 Artificial Analysis 智能指数上，它以最大推理努力得分 36，与 Claude Haiku 5.5 持平，但每任务成本约为 0.136 美元，而 Haiku 为 0.411 美元。它在 Agent 基准测试中表现突出（AutomationBench-AA 得分 37.8），但在可合并代码任务上落后（FrontierCode 2.0-AA 得分 27.2）。",
+    "norm_url": "https://www.marktechpost.com/2026/11/09/meta-muse-ember-small-agent-model"
   },
   {
     "id": "20261110-llm-anthropic-0-31-be126b",
@@ -174,6 +218,160 @@
     "summary_en": "AgentOPSD introduces a critic-free reinforcement learning scheme that assigns credit recursively at each interaction turn, addressing the coarse granularity of trajectory-level advantage in multi-turn tasks. Within a turn, token-level log-probability gaps between a skill-conditioned self-teacher and the student are summed and used as evidence in a recursive Bayesian update in log-odds space, producing bounded, sign-preserving multipliers that reallocate outcome-derived advantage across turns. On ALFWorld with Qwen2.5-3B and Qwen2.5-7B backbones, it consistently outperforms GRPO and self-distillation baselines, achieving 89.1% success at 7B scale. Ablations show gains stem from aggregating evidence at turn boundaries and history-dependent belief revision, not from local gaps alone.",
     "summary_zh": "AgentOPSD 提出一种无评论家的强化学习方案，在每个交互回合递归地分配信用，解决了多轮任务中轨迹级优势粒度过粗的问题。在每个回合内，将技能条件自教师与学生之间的 token 级对数概率差求和，作为证据在 log-odds 空间中进行递归贝叶斯更新，产生有界且保持符号的乘数，从而将结果衍生的优势重新分配到各回合。在 ALFWorld 上使用 Qwen2.5-3B 和 Qwen2.5-7B 作为策略骨干，该方法持续优于 GRPO 和自蒸馏基线，在 7B 规模达到 89.1% 的成功率。消融实验表明增益来自回合边界处的证据聚合以及依赖历史的信念修正，而非局部差距本身。",
     "norm_url": "https://arxiv.org/abs/2611.12587v1"
+  },
+  {
+    "id": "20261111-rail-representation-aligned-imitation-le-41a936",
+    "url": "https://arxiv.org/abs/2611.12251v1",
+    "title_en": "RAIL: Representation-Aligned Imitation Learning for Student-Compatible Teacher Policies",
+    "title_zh": "RAIL：面向学生兼容教师策略的表示对齐模仿学习",
+    "source_name": "arXiv",
+    "published": "2026-11-09T11:41:49Z",
+    "fetched_at": "2026-11-11T02:02:18Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "imitation-learning",
+      "reinforcement-learning",
+      "representation-learning",
+      "teacher-student",
+      "contrastive-learning"
+    ],
+    "image": null,
+    "summary_en": "Reinforcement learning from raw sensory inputs is challenging due to high-dimensional observations and sparse rewards. A common approach is to train a teacher policy with privileged state information and distill it into a student policy that acts from raw inputs, but this creates an irreducible imitation gap when the teacher relies on unavailable information. The authors introduce Representation-Aligned Imitation Learning (RAIL), which learns a shared latent representation across teacher and student observations using contrastive learning and trains the teacher policy directly in this space, constraining it to behaviors reproducible from student observations. RAIL substantially reduces the imitation gap while preserving task performance, outperforms strong baselines without reward modification or post-hoc student fine-tuning, and surpasses direct reinforcement learning from raw observations. The learned representations also enable zero-shot transfer to new tasks through teacher-only training.",
+    "summary_zh": "从原始感官输入（如图像或车载传感器）进行强化学习（RL）面临高维观测和稀疏奖励的挑战。常见策略是先训练一个能访问特权状态信息的教师策略，再将其蒸馏为仅从原始输入行动的学生策略。然而，当教师依赖学生不可用的信息时，精确模仿可能无法实现，产生不可消除的模仿差距。现有方法通常通过仔细的奖励塑造或教师训练后对学生策略进行额外强化学习来缓解这种不匹配。为此，作者提出表示对齐模仿学习（RAIL），在教师训练本身解决该不匹配问题。RAIL 使用对比学习学习教师和学生观测共享的潜在表示，并直接在该空间中训练教师策略。由于教师策略被约束在该共享空间上操作，它学习的行为可从学生观测中复现，从而在保持任务性能的同时大幅减少模仿差距。在多个环境中，RAIL 无需修改奖励或事后微调学生，即优于强基线，并超越直接从原始观测进行强化学习。学习到的表示还通过仅教师训练实现了对新任务的零样本迁移。",
+    "norm_url": "https://arxiv.org/abs/2611.12251v1"
+  },
+  {
+    "id": "20261111-skillduet-co-evolving-models-and-skills-d0ae8a",
+    "url": "https://arxiv.org/abs/2611.12109v1",
+    "title_en": "SkillDuet: Co-Evolving Models and Skills through Response Feedback",
+    "title_zh": "SkillDuet：通过响应反馈实现模型与技能协同进化",
+    "source_name": "arXiv",
+    "published": "2026-11-09T09:23:26Z",
+    "fetched_at": "2026-11-11T02:01:41Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "skill-evolution",
+      "llm",
+      "benchmark",
+      "response-feedback"
+    ],
+    "image": null,
+    "summary_en": "SkillDuet is a framework that coordinates parameter updates and skill evolution in LLMs through response feedback. Skills extracted from on-policy trajectories guide parameter updates via OPD at every step. A response-based score called Strength ranks candidate skills by the magnitude of shift they induce in the current model's responses, and top-scoring skills are periodically consolidated into a persistent global skill set (Global). The updated model and Global jointly guide subsequent interactions, generating experience for further updates. With Qwen3-4B, SkillDuet achieves 98.57% success rate on ALFWorld and 92.97% on WebShop, outperforming the SEED-API baseline by 2.86 and 5.47 percentage points, respectively.",
+    "summary_zh": "SkillDuet 是一个通过响应反馈协调参数更新与技能进化的框架。从在线策略轨迹中提取的技能通过 OPD 在每一步指导参数更新。基于响应的评分 Strength 根据技能对当前模型响应引起的偏移幅度对候选技能进行排序，得分最高的技能定期整合到持久的全局技能集（Global）中。更新后的模型与 Global 共同指导后续交互，生成用于进一步参数和技能更新的经验。在 Qwen3-4B 上，SkillDuet 在 ALFWorld 上达到 98.57% 的成功率，在 WebShop 上达到 92.97%，分别超过匹配的 SEED-API 基线 2.86 和 5.47 个百分点。",
+    "norm_url": "https://arxiv.org/abs/2611.12109v1"
+  },
+  {
+    "id": "20261111-zero-search-reinforcement-learning-for-s-1b70fe",
+    "url": "https://arxiv.org/abs/2611.12088v1",
+    "title_en": "Zero-Search Reinforcement Learning for Slay the Spire 2 with Failure-Driven Restarts",
+    "title_zh": "Slay the Spire 2 零搜索强化学习：基于失败驱动的重启训练",
+    "source_name": "arXiv",
+    "published": "2026-11-09T09:05:55Z",
+    "fetched_at": "2026-11-11T02:02:11Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "slay-the-spire-2",
+      "transformer",
+      "curriculum-learning",
+      "game-ai"
+    ],
+    "image": null,
+    "summary_en": "This work trains agents for Slay the Spire 2 (STS2) using a 6.6M-parameter entity transformer that selects every action in a single forward pass without lookahead or search. Training and evaluation run the game's compiled assembly (v0.107.1) in a headless .NET host that deterministically replays runs from seed and actions, enabling a failure-driven curriculum that restarts episodes from visited states in proportion to where full runs are lost. On 12,800 held-out Ascension 10 games, released policies win 8.05% averaged across five characters (Ironclad 15.6%, Regent 12.5%), versus 0.55% for AlphaSpire's search-free networks; longer training raised Ironclad from 12.4% to 15.6% and Defect from 3.0% to 8.1%. At Ascension 0 the policies win 80.2%, matching Spire Mentor's reported 80.3%, though Mentor leads by 5-8 points from A4 upward and edges out 8.8% vs 8.2% on 2,000 A10 games while our policies need 21-27 ms per decision on one CPU core. GPT-6 Astra at maximum reasoning won none of 11 A10 games through the text interface.",
+    "summary_zh": "该工作为《Slay the Spire 2》(STS2) 训练智能体，使用 6.6M 参数的实体 transformer，每次决策仅需一次前向传播，不做前瞻或搜索。训练与评估在无头 .NET 宿主中运行游戏编译程序集 (v0.107.1)，宿主可依据种子与动作精确重放对局，从而支持失败驱动的课程学习：按完整对局失败位置的比例从已访问状态重启训练回合。在 12,800 局留出的 Ascension 10 (A10) 对局上，发布策略在五个角色上平均胜率 8.05%（Ironclad 15.6%，Regent 12.5%），而 AlphaSpire 无搜索网络仅 0.55%；延长 A10 训练使 Ironclad 从 12.4% 提升至 15.6%，Defect 从 3.0% 提升至 8.1%。在 Ascension 0 下策略胜率 80.2%，与树搜索智能体 Spire Mentor 报告的 80.3% 持平，但 Mentor 从 A4 起领先 5-8 个百分点，并在同一 2,000 局 A10 对局中以 8.8% 对 8.2% 略胜，而本策略单 CPU 核心每次决策需 21-27 ms。GPT-6 Astra 在最大推理下通过文本接口在 11 局 A10 对局中一局未胜。",
+    "norm_url": "https://arxiv.org/abs/2611.12088v1"
+  },
+  {
+    "id": "20261111-firegate-bounding-behaviour-change-befor-473f0c",
+    "url": "https://arxiv.org/abs/2611.11979v1",
+    "title_en": "FireGate: Bounding Behaviour Change Before Training in Continual RL Fine-Tuning",
+    "title_zh": "FireGate：在持续强化学习微调中于训练前限定行为变化",
+    "source_name": "arXiv",
+    "published": "2026-11-09T07:04:59Z",
+    "fetched_at": "2026-11-11T02:01:35Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "continual-learning",
+      "reinforcement-learning",
+      "fine-tuning",
+      "forgetting",
+      "lora"
+    ],
+    "image": null,
+    "summary_en": "FireGate bounds behavior change before training in continual reinforcement learning fine-tuning. It places each task's update (e.g., a new LoRA) behind a gate—a classifier on frozen lower layers—that decides per prompt whether to apply the update. On any prompt distribution, bounded behavior scores change by at most the gate's firing rate, calibrated on unlabeled prompts with a PAC guarantee. On RL streams of up to five tasks, gated training changes only 3.3% of held-out chat responses versus 91.8% for ungated training, while retaining earlier tasks.",
+    "summary_zh": "FireGate 在持续强化学习微调中于训练前限定行为变化。它将每个任务的更新（如新的 LoRA）置于一个门控之后，该门控是基于模型冻结低层分类器的，对每个提示决定是否应用更新。在任何提示分布上，有界行为分数的变化至多等于门控的触发率，该触发率在未标记提示上校准并提供 PAC 保证。在多达五个任务的强化学习流上，门控训练仅改变 3.3% 的保留聊天响应，而无门控训练改变 91.8%，同时保留先前任务。",
+    "norm_url": "https://arxiv.org/abs/2611.11979v1"
+  },
+  {
+    "id": "20261111-constrained-variational-policy-optimizat-fc28e7",
+    "url": "https://arxiv.org/abs/2611.11936v1",
+    "title_en": "Constrained Variational Policy Optimization for Hybrid Action Spaces",
+    "title_zh": "混合动作空间的约束变分策略优化",
+    "source_name": "arXiv",
+    "published": "2026-11-09T06:07:41Z",
+    "fetched_at": "2026-11-11T02:02:24Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "hybrid-action-spaces",
+      "constrained-optimization",
+      "policy-optimization",
+      "variational-inference"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces Hybrid Constrained Variational Policy Optimization (H-CVPO), extending the constrained variational policy optimization framework to hybrid action spaces. Under boundedness and strict feasibility, the constrained E-step has zero duality gap and yields a closed-form joint target distribution via exponential reward-cost reweighting when the dual optimum is at positive temperature. Using exact hybrid KL decomposition, a factorized M-step fits both discrete and conditional-continuous policy components under separate trust regions. Theoretical results include fixed-reference surrogate improvement and conditional reward-cost bounds for exact updates, and existence of a dual minimizer for approximate updates. Ablations show cost-aware reweighting is crucial for constraint control.",
+    "summary_zh": "本文提出了混合约束变分策略优化（H-CVPO），将约束变分策略优化框架扩展到混合动作空间。在有界性和严格可行性下，约束E步具有零对偶间隙，并且当对偶最优在正温度下达到时，通过指数奖励-成本重加权得到混合动作上的闭式联合目标分布。利用精确的混合KL分解，因子化M步在分离的离散和条件连续信任区域下拟合两个策略组件。对于精确更新，证明了固定参考代理改进和条件奖励-成本界；对于近似更新，建立了对偶最小化子的存在性。消融实验表明成本感知重加权对约束控制至关重要。",
+    "norm_url": "https://arxiv.org/abs/2611.11936v1"
+  },
+  {
+    "id": "20261111-an-evaluation-of-tabular-foundation-mode-9935cf",
+    "url": "https://arxiv.org/abs/2611.11921v1",
+    "title_en": "An Evaluation of Tabular Foundation Models as Training-Free World Models",
+    "title_zh": "表格基础模型作为免训练世界模型的评估",
+    "source_name": "arXiv",
+    "published": "2026-11-09T05:48:40Z",
+    "fetched_at": "2026-11-11T02:02:04Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "world-model",
+      "tabular-foundation-model",
+      "in-context-learning",
+      "reinforcement-learning",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "This paper evaluates whether a pretrained tabular foundation model (TabFM) can serve as a training-free dynamics model for world modeling by framing next-state prediction as in-context regression over transition pairs. Across synthetic dynamical systems and robot locomotion benchmarks, TabFM outperforms LSTM and MLP models trained from scratch on limited transitions in almost all settings, and is the most accurate among regressors fitted to the same data on locomotion, though a Gaussian process is better on smooth low-dimensional systems. However, models trained on the full dataset remain substantially better on most systems. In autoregressive rollouts, TabFM's accuracy depends strongly on context length: short context degrades to a trivial baseline, while long context improves substantially and even exceeds a trained LSTM on one locomotion task. Inference is about three orders of magnitude slower than an LSTM, leading to the conclusion that training-free priors are useful when data are scarce and enough context is available, but are not yet a substitute for trained world models.",
+    "summary_zh": "本文评估了预训练表格基础模型（TabFM）能否作为免训练的动力学模型用于世界建模，方法是将下一状态预测构建为基于转移对的上下文回归。在合成动力系统和机器人运动基准上，TabFM在几乎所有设置中都比从零训练的LSTM和MLP模型更准确（使用相同的有限转移数据），并且在拟合相同数据的回归器中，在运动任务上最准确，但在平滑低维系统上高斯过程更优。然而，在大多数系统上，使用完整数据集训练的模型仍然明显更好。在自回归多步展开中，TabFM的准确性强烈依赖于上下文长度：短上下文时其展开迅速退化到平凡基线的水平，而长上下文时则显著提升，并在一个运动任务上超过了训练的LSTM。推理速度也比LSTM慢约三个数量级。总体而言，当前状态下，免训练先验在数据稀缺且上下文充足时是有用的预测器，但尚不能替代训练好的世界模型。",
+    "norm_url": "https://arxiv.org/abs/2611.11921v1"
+  },
+  {
+    "id": "20261111-can-hindsight-critics-guide-delayed-acto-525fa2",
+    "url": "https://arxiv.org/abs/2611.11863v1",
+    "title_en": "Can Hindsight Critics Guide Delayed Actors?",
+    "title_zh": "Hindsight Critics 能否指导延迟行动者？",
+    "source_name": "arXiv",
+    "published": "2026-11-09T04:38:48Z",
+    "fetched_at": "2026-11-11T02:02:30Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "partial-observability",
+      "sensory-delay",
+      "soft-actor-critic",
+      "hindsight"
+    ],
+    "image": null,
+    "summary_en": "The paper investigates whether temporal misalignments caused by sensory delays in reinforcement learning can be mitigated during training using hindsight to recover aligned state-action transitions. It introduces Hindsight Critics, an asymmetric extension of Soft Actor-Critic for partially observable settings, where critics are trained on hindsight-aligned transitions while the actor learns from privileged value estimates despite only having delayed observations. Experiments on the DelayBench suite show that Hindsight Critics can partially compensate for observation delays without modifying the agent's observations during deployment, outperforming delay-aware and unaware baselines.",
+    "summary_zh": "本文探讨在强化学习中，能否通过利用事后信息恢复对齐的状态-动作转移，来缓解由感官延迟引起的时间错位问题。作者提出了 Hindsight Critics，这是 Soft Actor-Critic 在部分可观测条件下的非对称扩展：critics 在事后对齐的转移上训练，而 actor 则从由此产生的特权价值估计中学习，尽管它只能访问延迟的观测。在 DelayBench 测试集上的实验表明，Hindsight Critics 能够部分补偿观测延迟，且无需在部署时修改智能体的观测，优于延迟感知和延迟无感知的基线方法。",
+    "norm_url": "https://arxiv.org/abs/2611.11863v1"
   },
   {
     "id": "20261110-spectral-rank-and-step-direction-dynamic-db7500",

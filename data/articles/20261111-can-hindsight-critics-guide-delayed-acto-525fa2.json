@@ -1,0 +1,26 @@
+{
+  "id": "20261111-can-hindsight-critics-guide-delayed-acto-525fa2",
+  "url": "https://arxiv.org/abs/2611.11863v1",
+  "title_en": "Can Hindsight Critics Guide Delayed Actors?",
+  "title_zh": "Hindsight Critics 能否指导延迟行动者？",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.11863v1",
+  "published": "2026-11-09T04:38:48Z",
+  "fetched_at": "2026-11-11T02:02:30Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "partial-observability",
+    "sensory-delay",
+    "soft-actor-critic",
+    "hindsight"
+  ],
+  "image": null,
+  "summary_en": "The paper investigates whether temporal misalignments caused by sensory delays in reinforcement learning can be mitigated during training using hindsight to recover aligned state-action transitions. It introduces Hindsight Critics, an asymmetric extension of Soft Actor-Critic for partially observable settings, where critics are trained on hindsight-aligned transitions while the actor learns from privileged value estimates despite only having delayed observations. Experiments on the DelayBench suite show that Hindsight Critics can partially compensate for observation delays without modifying the agent's observations during deployment, outperforming delay-aware and unaware baselines.",
+  "summary_zh": "本文探讨在强化学习中，能否通过利用事后信息恢复对齐的状态-动作转移，来缓解由感官延迟引起的时间错位问题。作者提出了 Hindsight Critics，这是 Soft Actor-Critic 在部分可观测条件下的非对称扩展：critics 在事后对齐的转移上训练，而 actor 则从由此产生的特权价值估计中学习，尽管它只能访问延迟的观测。在 DelayBench 测试集上的实验表明，Hindsight Critics 能够部分补偿观测延迟，且无需在部署时修改智能体的观测，优于延迟感知和延迟无感知的基线方法。",
+  "content_en": "Sensory delays create temporal misalignments between the state of the environment and the observations available to an agent, turning Markovian control problems into partially observable ones. In this work, we inquire whether such misalignments can be mitigated during training by using hindsight to recover aligned state-action transitions. We introduce Hindsight Critics, an asymmetric extension of the Soft Actor-Critic for reinforcement learning under partial observability. The critics are trained on hindsight-aligned transitions whereas the actor learns from the resulting privileged value estimates despite only having access to delayed observations. Comparisons against delay-aware and unaware baselines on the DelayBench suite show that Hindsight Critics can partially compensate for observation delays without requiring modifications to the agent's observations during deployment.",
+  "content_zh": "感知延迟会造成环境状态与智能体可用观测之间的时间错位，使马尔可夫控制问题转变为部分可观测问题。在本工作中，我们探究是否可以通过在训练期间利用事后回溯来恢复对齐的状态-动作转移，从而缓解此类错位。我们提出了 Hindsight Critics，这是 Soft Actor-Critic 在部分可观测条件下强化学习中的一种非对称扩展。critics 在事后对齐的转移上进行训练，而 actor 则从由此得到的有特权价值估计中学习，尽管其只能访问延迟观测。在 DelayBench 套件上与延迟感知和延迟无感知基线进行的比较表明，Hindsight Critics 可以在部署期间无需修改智能体观测的情况下部分补偿观测延迟。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

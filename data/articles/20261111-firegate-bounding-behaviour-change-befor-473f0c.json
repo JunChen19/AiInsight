@@ -1,0 +1,26 @@
+{
+  "id": "20261111-firegate-bounding-behaviour-change-befor-473f0c",
+  "url": "https://arxiv.org/abs/2611.11979v1",
+  "title_en": "FireGate: Bounding Behaviour Change Before Training in Continual RL Fine-Tuning",
+  "title_zh": "FireGate：在持续强化学习微调中于训练前限定行为变化",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.11979v1",
+  "published": "2026-11-09T07:04:59Z",
+  "fetched_at": "2026-11-11T02:01:35Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "continual-learning",
+    "reinforcement-learning",
+    "fine-tuning",
+    "forgetting",
+    "lora"
+  ],
+  "image": null,
+  "summary_en": "FireGate bounds behavior change before training in continual reinforcement learning fine-tuning. It places each task's update (e.g., a new LoRA) behind a gate—a classifier on frozen lower layers—that decides per prompt whether to apply the update. On any prompt distribution, bounded behavior scores change by at most the gate's firing rate, calibrated on unlabeled prompts with a PAC guarantee. On RL streams of up to five tasks, gated training changes only 3.3% of held-out chat responses versus 91.8% for ungated training, while retaining earlier tasks.",
+  "summary_zh": "FireGate 在持续强化学习微调中于训练前限定行为变化。它将每个任务的更新（如新的 LoRA）置于一个门控之后，该门控是基于模型冻结低层分类器的，对每个提示决定是否应用更新。在任何提示分布上，有界行为分数的变化至多等于门控的触发率，该触发率在未标记提示上校准并提供 PAC 保证。在多达五个任务的强化学习流上，门控训练仅改变 3.3% 的保留聊天响应，而无门控训练改变 91.8%，同时保留先前任务。",
+  "content_en": "Fine-tuning a deployed language model on one task after another can change behaviour that should stay fixed, such as earlier skills, general chat or refusals. Today, such forgetting is found only after training, on the benchmarks someone chose to run. This work bounds, before training, how often its outputs change on chosen prompt distributions. FireGate places each task's update, such as a new LoRA, behind a gate, which is a classifier on the model's frozen lower layers that decides for each prompt whether the update is used. Where no gate fires, the model computes exactly what the old one computes. As a result, on any prompt distribution, every bounded behaviour score changes by at most the gates' firing rate there over a whole task stream. Calibrating each gate on unlabeled prompts of what must not change fixes that rate before training, with a PAC guarantee, whatever weights training produces. Forgetting is thus bounded by the gate's false-alarm rate, and its price is the gate's power: no update, gated or not, that changes as few protected outputs can change new-task outputs more often than the best test of that level tells new-task prompts from protected ones. On reinforcement-learning streams of up to five tasks, gated training keeps the earlier tasks and changes 3.3% of held-out chat responses, whereas ungated training changes 91.8%. Across seven models, the gain kept behind the gate follows its firing rate on new-task prompts, measured before training. The certificate",
+  "content_zh": "在已部署的语言模型上，针对一个又一个任务进行微调，可能会改变本应保持不变的行为，例如早先习得的技能、通用聊天或拒答行为。如今，这种遗忘只有在训练之后、在有人选择运行的基准测试上才会被发现。本工作则在训练之前，界定其输出在选定提示分布上发生变化的频率。FireGate 将每个任务的更新（例如一个新的 LoRA）置于一个门控之后，该门控是一个作用于模型冻结底层的分类器，对每个提示决定是否使用该更新。在门控未触发之处，模型的计算结果与旧模型完全相同。因此，在任何提示分布上，在整个任务流中，每个有界行为分数的变化至多等于门控在该分布上的触发率。用不可更改行为的无标签提示对每个门控进行校准，可在训练之前以 PAC 保证固定该触发率，无论训练产生何种权重。于是，遗忘被门控的误报率所界定，而其代价是门控的效力：任何更新，无论是否经过门控，只要其改变的受保护输出同样少，其改变新任务输出的频率就不可能超过在该水平上区分新任务提示与受保护提示的最佳检验。在最多包含五个任务的强化学习流上，门控训练保留了早先的任务，并且只改变了 3.3% 的留出聊天回复，而未门控训练改变了 91.8%。在七个模型上，门控后保留的增益跟随其在训练前测得的新任务提示上的触发率。该证书",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

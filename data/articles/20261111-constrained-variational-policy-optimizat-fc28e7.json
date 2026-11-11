@@ -1,0 +1,26 @@
+{
+  "id": "20261111-constrained-variational-policy-optimizat-fc28e7",
+  "url": "https://arxiv.org/abs/2611.11936v1",
+  "title_en": "Constrained Variational Policy Optimization for Hybrid Action Spaces",
+  "title_zh": "混合动作空间的约束变分策略优化",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.11936v1",
+  "published": "2026-11-09T06:07:41Z",
+  "fetched_at": "2026-11-11T02:02:24Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "hybrid-action-spaces",
+    "constrained-optimization",
+    "policy-optimization",
+    "variational-inference"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces Hybrid Constrained Variational Policy Optimization (H-CVPO), extending the constrained variational policy optimization framework to hybrid action spaces. Under boundedness and strict feasibility, the constrained E-step has zero duality gap and yields a closed-form joint target distribution via exponential reward-cost reweighting when the dual optimum is at positive temperature. Using exact hybrid KL decomposition, a factorized M-step fits both discrete and conditional-continuous policy components under separate trust regions. Theoretical results include fixed-reference surrogate improvement and conditional reward-cost bounds for exact updates, and existence of a dual minimizer for approximate updates. Ablations show cost-aware reweighting is crucial for constraint control.",
+  "summary_zh": "本文提出了混合约束变分策略优化（H-CVPO），将约束变分策略优化框架扩展到混合动作空间。在有界性和严格可行性下，约束E步具有零对偶间隙，并且当对偶最优在正温度下达到时，通过指数奖励-成本重加权得到混合动作上的闭式联合目标分布。利用精确的混合KL分解，因子化M步在分离的离散和条件连续信任区域下拟合两个策略组件。对于精确更新，证明了固定参考代理改进和条件奖励-成本界；对于近似更新，建立了对偶最小化子的存在性。消融实验表明成本感知重加权对约束控制至关重要。",
+  "content_en": "Constrained reinforcement learning in hybrid action spaces must coordinate discrete modes and mode-conditioned continuous controls under long-horizon cost constraints. Existing constrained hybrid-action methods typically optimize factorized policies directly in parameter space, whereas Constrained Variational Policy Optimization (CVPO) separates nonparametric improvement from parametric projection in its original continuous-action formulation. We introduce Hybrid Constrained Variational Policy Optimization (H-CVPO), extending this variational framework to hybrid action spaces. Under boundedness and strict feasibility, its constrained E-step has zero duality gap and, when the dual optimum is attained at positive temperature, yields a closed-form joint target distribution over hybrid actions through exponential reward-cost reweighting. Using the exact hybrid KL decomposition, we formulate a factorized M-step that fits both policy components to this target under separate discrete and conditional-continuous trust regions. For exact E/M updates, we prove fixed-reference surrogate improvement and conditional reward-cost bounds with a sufficient feasibility-margin condition. For approximate updates, we establish the existence of a dual minimizer under continuity on a compact domain and use residual-based admissibility to determine whether to project the target. Ablations identify cost-aware reweighting as an important contributor to constraint control. Extensive experiments in simul",
+  "content_zh": "在混合动作空间中的约束强化学习必须在长时程成本约束下协调离散模式与以模式为条件的连续控制。现有的约束混合动作方法通常直接在参数空间中优化因子化策略，而约束变分策略优化（Constrained Variational Policy Optimization, CVPO）在其最初的连续动作形式中将非参数改进与参数投影分离。我们提出混合约束变分策略优化（Hybrid Constrained Variational Policy Optimization, H-CVPO），将该变分框架扩展到混合动作空间。在有界性和严格可行性下，其约束E步具有零对偶间隙，并且当对偶最优在正温度下达到时，通过指数化的奖励-成本重加权，产生混合动作上的闭式联合目标分布。利用精确的混合KL分解，我们构建了一个因子化M步，在分离的离散信赖域和条件连续信赖域下，将两个策略分量拟合到该目标。对于精确的E/M更新，我们证明了固定参考代理改进以及带有充分可行性边际条件的条件奖励-成本界。对于近似更新，我们在紧域上的连续性下确立了对偶极小值点的存在性，并使用基于残差的可容许性来确定是否投影目标。消融实验表明，成本感知重加权是约束控制的重要贡献因素。在simul中的大量实验",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

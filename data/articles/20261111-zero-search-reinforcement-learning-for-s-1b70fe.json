@@ -1,0 +1,26 @@
+{
+  "id": "20261111-zero-search-reinforcement-learning-for-s-1b70fe",
+  "url": "https://arxiv.org/abs/2611.12088v1",
+  "title_en": "Zero-Search Reinforcement Learning for Slay the Spire 2 with Failure-Driven Restarts",
+  "title_zh": "Slay the Spire 2 零搜索强化学习：基于失败驱动的重启训练",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.12088v1",
+  "published": "2026-11-09T09:05:55Z",
+  "fetched_at": "2026-11-11T02:02:11Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "slay-the-spire-2",
+    "transformer",
+    "curriculum-learning",
+    "game-ai"
+  ],
+  "image": null,
+  "summary_en": "This work trains agents for Slay the Spire 2 (STS2) using a 6.6M-parameter entity transformer that selects every action in a single forward pass without lookahead or search. Training and evaluation run the game's compiled assembly (v0.107.1) in a headless .NET host that deterministically replays runs from seed and actions, enabling a failure-driven curriculum that restarts episodes from visited states in proportion to where full runs are lost. On 12,800 held-out Ascension 10 games, released policies win 8.05% averaged across five characters (Ironclad 15.6%, Regent 12.5%), versus 0.55% for AlphaSpire's search-free networks; longer training raised Ironclad from 12.4% to 15.6% and Defect from 3.0% to 8.1%. At Ascension 0 the policies win 80.2%, matching Spire Mentor's reported 80.3%, though Mentor leads by 5-8 points from A4 upward and edges out 8.8% vs 8.2% on 2,000 A10 games while our policies need 21-27 ms per decision on one CPU core. GPT-6 Astra at maximum reasoning won none of 11 A10 games through the text interface.",
+  "summary_zh": "该工作为《Slay the Spire 2》(STS2) 训练智能体，使用 6.6M 参数的实体 transformer，每次决策仅需一次前向传播，不做前瞻或搜索。训练与评估在无头 .NET 宿主中运行游戏编译程序集 (v0.107.1)，宿主可依据种子与动作精确重放对局，从而支持失败驱动的课程学习：按完整对局失败位置的比例从已访问状态重启训练回合。在 12,800 局留出的 Ascension 10 (A10) 对局上，发布策略在五个角色上平均胜率 8.05%（Ironclad 15.6%，Regent 12.5%），而 AlphaSpire 无搜索网络仅 0.55%；延长 A10 训练使 Ironclad 从 12.4% 提升至 15.6%，Defect 从 3.0% 提升至 8.1%。在 Ascension 0 下策略胜率 80.2%，与树搜索智能体 Spire Mentor 报告的 80.3% 持平，但 Mentor 从 A4 起领先 5-8 个百分点，并在同一 2,000 局 A10 对局中以 8.8% 对 8.2% 略胜，而本策略单 CPU 核心每次决策需 21-27 ms。GPT-6 Astra 在最大推理下通过文本接口在 11 局 A10 对局中一局未胜。",
+  "content_en": "Slay the Spire 2 (STS2) is a deck-building roguelike in which a winning run at the highest difficulty takes several hundred decisions, and most losses happen in late boss fights that a learner seldom reaches. We train agents that choose every action with one forward pass of a 6.6M-parameter entity transformer, without lookahead. Training and evaluation run the game's own compiled assembly (v0.107.1) in a headless .NET host. The host replays a run exactly from its seed and actions, so training episodes can restart from states the learner has visited, and a failure-driven curriculum allocates these restarts in proportion to where complete runs are lost. On 12,800 held-out games at Ascension 10 (A10), the released policies win 8.05% averaged over the five characters (Ironclad 15.6%, Regent 12.5%), and AlphaSpire's released networks used without search win 0.55% on a common panel. Longer A10 training raised Ironclad from 12.4% to 15.6% and Defect from 3.0% to 8.1% on these games. At Ascension 0 the released policies win 80.2%, level with the 80.3% that the tree-search agent Spire Mentor reports, while Mentor leads by 5 to 8 points from A4 upward. Run in our host on the same 2,000 A10 games, Mentor's search wins 8.8% against 8.2% for our policies, which need 21-27 ms per decision on one CPU core. GPT-6 Astra at maximum reasoning won none of 11 A10 games through our text interface. In a controlled study of 18 training runs from six random initializations, failure-driven allocation",
+  "content_zh": "杀戮尖塔2（STS2）是一款牌组构建类 roguelike 游戏，在最高难度下，一局获胜需要做出数百次决策，而大多数失败发生在后期 Boss 战中，学习者很少能到达那里。我们训练的智能体通过一次 6.6M 参数实体 transformer 的前向传播来选择每个动作，不进行前瞻搜索。训练和评估在无头 .NET 宿主中运行游戏自身编译的程序集（v0.107.1）。该宿主根据种子和动作精确重放一局游戏，因此训练回合可以从学习者已访问过的状态重新开始，而失败驱动的课程按完整对局失败的位置比例分配这些重启。在 Ascension 10（A10）的 12,800 局留出游戏中，发布的策略在五个角色上平均胜率为 8.05%（Ironclad 15.6%，Regent 12.5%），而 AlphaSpire 发布的网络在不使用搜索的情况下在共同面板上胜率为 0.55%。更长的 A10 训练将这些游戏上的 Ironclad 从 12.4% 提升到 15.6%，Defect 从 3.0% 提升到 8.1%。在 Ascension 0 下，发布的策略胜率为 80.2%，与树搜索智能体 Spire Mentor 报告的 80.3% 持平，而从 A4 开始 Mentor 领先 5 到 8 个百分点。在我们的宿主中运行同样的 2,000 局 A10 游戏，Mentor 的搜索胜率为 8.8%，而我们的策略为 8.2%，后者在单个 CPU 核心上每次决策需要 21-27 毫秒。GPT-6 Astra 在最大推理能力下通过我们的文本接口在 11 局 A10 游戏中一局未胜。在一项针对来自六个随机初始化的 18 次训练运行的对照研究中，失败驱动的分配",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

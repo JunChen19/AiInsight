@@ -1,0 +1,26 @@
+{
+  "id": "20261111-an-evaluation-of-tabular-foundation-mode-9935cf",
+  "url": "https://arxiv.org/abs/2611.11921v1",
+  "title_en": "An Evaluation of Tabular Foundation Models as Training-Free World Models",
+  "title_zh": "表格基础模型作为免训练世界模型的评估",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.11921v1",
+  "published": "2026-11-09T05:48:40Z",
+  "fetched_at": "2026-11-11T02:02:04Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "world-model",
+    "tabular-foundation-model",
+    "in-context-learning",
+    "reinforcement-learning",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "This paper evaluates whether a pretrained tabular foundation model (TabFM) can serve as a training-free dynamics model for world modeling by framing next-state prediction as in-context regression over transition pairs. Across synthetic dynamical systems and robot locomotion benchmarks, TabFM outperforms LSTM and MLP models trained from scratch on limited transitions in almost all settings, and is the most accurate among regressors fitted to the same data on locomotion, though a Gaussian process is better on smooth low-dimensional systems. However, models trained on the full dataset remain substantially better on most systems. In autoregressive rollouts, TabFM's accuracy depends strongly on context length: short context degrades to a trivial baseline, while long context improves substantially and even exceeds a trained LSTM on one locomotion task. Inference is about three orders of magnitude slower than an LSTM, leading to the conclusion that training-free priors are useful when data are scarce and enough context is available, but are not yet a substitute for trained world models.",
+  "summary_zh": "本文评估了预训练表格基础模型（TabFM）能否作为免训练的动力学模型用于世界建模，方法是将下一状态预测构建为基于转移对的上下文回归。在合成动力系统和机器人运动基准上，TabFM在几乎所有设置中都比从零训练的LSTM和MLP模型更准确（使用相同的有限转移数据），并且在拟合相同数据的回归器中，在运动任务上最准确，但在平滑低维系统上高斯过程更优。然而，在大多数系统上，使用完整数据集训练的模型仍然明显更好。在自回归多步展开中，TabFM的准确性强烈依赖于上下文长度：短上下文时其展开迅速退化到平凡基线的水平，而长上下文时则显著提升，并在一个运动任务上超过了训练的LSTM。推理速度也比LSTM慢约三个数量级。总体而言，当前状态下，免训练先验在数据稀缺且上下文充足时是有用的预测器，但尚不能替代训练好的世界模型。",
+  "content_en": "World models are widely considered to be a potential key component of model-based reinforcement learning and robot planning, but typically require task-specific training on substantial interaction data. We investigate whether a pretrained tabular foundation model (TabFM) can serve as a training-free dynamics model for world modeling by framing next-state prediction as in-context regression over transition pairs, and where such a model helps and where it breaks. Across synthetic dynamical systems and robot locomotion benchmarks, TabFM is more accurate than LSTM and MLP models trained from scratch on the same limited transitions in almost all settings, and among regressors fitted to the same data it is the most accurate on locomotion, while a Gaussian process is more accurate on smooth low-dimensional systems. However, models trained on the full dataset remain substantially better on most systems. When rolled out autoregressively over multiple steps, TabFM's accuracy depends strongly on how much context it is given. With a short context, its rollouts quickly degrade to the level of a trivial baseline, whereas with a long context they improve substantially and, on one locomotion task, exceed a trained LSTM. Inference is also about three orders of magnitude slower than an LSTM. Overall, in their current state, we find that training-free priors are useful as predictors when data are scarce and enough context is available, but they are not yet a substitute for trained world models",
+  "content_zh": "世界模型被广泛认为是基于模型的强化学习和机器人规划的一个潜在关键组成部分，但通常需要在大量交互数据上进行任务特定的训练。我们研究了预训练的表格基础模型（TabFM）能否通过将下一状态预测表述为对转移对的上下文内回归，来充当世界建模的免训练动力学模型，以及这种模型在何处有帮助、在何处失效。在合成动力系统和机器人运动基准上，TabFM 在几乎所有设置中都优于在相同有限转移数据上从零训练的 LSTM 和 MLP 模型；在拟合相同数据的回归器中，它在运动任务上最为准确，而高斯过程在平滑低维系统上更为准确。然而，在大多数系统上，在全量数据集上训练的模型仍然明显更好。当进行多步自回归展开时，TabFM 的准确性强烈依赖于所给定的上下文量。在短上下文下，其展开会迅速退化到平凡基线的水平；而在长上下文下，它们会显著改善，并在一个运动任务上超过训练过的 LSTM。推理速度也比 LSTM 慢约三个数量级。总体而言，在当前状态下，我们发现免训练先验在数据稀缺且上下文充足时作为预测器是有用的，但它们尚不能替代训练好的世界模型。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
