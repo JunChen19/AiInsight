@@ -1,5 +1,71 @@
 [
   {
+    "id": "20261112-google-launches-gemini-decisions-api-wit-a22ed1",
+    "url": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/",
+    "title_en": "Google Launches Gemini Decisions API With Gemini Decision 1 at $0.10/M Tokens",
+    "title_zh": "Google 发布 Gemini Decisions API 与 Gemini Decision 1，定价 $0.10/百万 tokens",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-11T21:21:42Z",
+    "fetched_at": "2026-11-12T02:10:33Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "api",
+      "calibration",
+      "multimodal",
+      "benchmark"
+    ],
+    "image": "images/20261112-google-launches-gemini-decisions-api-wit-a22ed1.jpg",
+    "summary_en": "Google launched the Gemini Decisions API powered by Gemini Decision 1, a specialized multimodal model that scores up to 1,000 typed questions against a shared input and returns calibrated probabilities without generating text. It supports yes/no, multiple-choice, and rubric scoring question types, with a 262,144-token context and 150-250 ms end-to-end latency. On Google's benchmarks, it leads 7 of 9 accuracy tests, achieves 92.2% on JevBench and the lowest calibration error (0.0250 ECE), but trails TypeSafe Jev 1.14 on When2Call (79.9% vs 82.0%) and costs more per token ($0.10 vs $0.042). Priced at $0.10 per 1M input tokens with zero output token billing, it is available via the Gemini Developer API (v1beta).",
+    "summary_zh": "Google 发布了由 Gemini Decision 1 驱动的 Gemini Decisions API，该专用多模态模型不生成文本，而是针对共享输入对最多 1,000 个结构化问题打分并返回校准概率。它支持是/否、多选和评分三种问题类型，上下文长度为 262,144 tokens，端到端延迟 150-250 毫秒。在 Google 的基准测试中，它在 9 项准确率测试中领先 7 项，JevBench 达到 92.2%，校准误差最低（ECE 0.0250），但在 When2Call 上落后于 TypeSafe Jev 1.14（79.9% vs 82.0%），且每 token 成本更高（$0.10 vs $0.042）。定价为每百万输入 tokens $0.10，输出 tokens 不计费，可通过 Gemini Developer API（v1beta）使用。",
+    "norm_url": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1"
+  },
+  {
+    "id": "20261112-alphagenome-2-deciphering-how-cells-read-d86af1",
+    "url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease/",
+    "title_en": "AlphaGenome 2: Deciphering how cells read DNA to better understand disease",
+    "title_zh": "AlphaGenome 2：解读细胞如何读取DNA以深入理解疾病",
+    "source_name": "Google DeepMind",
+    "published": "2026-11-11T15:00:15Z",
+    "fetched_at": "2026-11-12T02:10:17Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "genomics",
+      "single-cell",
+      "variant-effect-predictio",
+      "model-release",
+      "disease-genetics"
+    ],
+    "image": null,
+    "summary_en": "AlphaGenome 2 is a next-generation DNA sequence model that predicts how genetic variants affect specific human cell types by conditioning on cell type or state. Trained on over 107 million individual cell profiles across 68 tissues, it identifies nearly twice as many expression-changing variants as the previous model (30% vs. 16% causal variant recall on TenK10K). The model supports cross-modality imputation and generalizes to unseen cell states without retraining, enabling disease-relevant predictions such as the IBD-associated ETS2 variant in gut macrophages. It is available for non-commercial research via the AlphaGenome API and in private preview for commercial use.",
+    "summary_zh": "AlphaGenome 2 是新一代DNA序列模型，通过以细胞类型或状态为条件，预测遗传变异如何影响特定人类细胞类型。该模型在68种组织的超过1.07亿个单细胞图谱上训练，在TenK10K数据集上识别出的因果变异数量几乎是先前模型的两倍（30% vs. 16%）。它支持跨模态插补，并能泛化到未见过的细胞状态而无需重新训练，从而实现对疾病相关变异的预测，例如肠道巨噬细胞中与IBD相关的ETS2变异。该模型已通过AlphaGenome API面向非商业研究开放，商业研究可申请私有预览。",
+    "norm_url": "https://deepmind.google/blog/alphagenome-2-deciphering-how-cells-read-dna-to-better-understand-disease"
+  },
+  {
+    "id": "20261112-google-s-alphagenome-2-zooms-in-on-the-c-872573",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model",
+    "title_en": "Google’s AlphaGenome 2 zooms in on the cellular roots of disease",
+    "title_zh": "Google AlphaGenome 2 聚焦疾病细胞根源",
+    "source_name": "The Verge AI",
+    "published": "2026-11-11T15:00:00Z",
+    "fetched_at": "2026-11-12T02:09:56Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "genomics",
+      "ai-model",
+      "cell-biology",
+      "deepmind",
+      "gene-expression"
+    ],
+    "image": "images/20261112-google-s-alphagenome-2-zooms-in-on-the-c-872573.jpg",
+    "summary_en": "Google DeepMind has released AlphaGenome 2, an AI model that predicts how genetic variants affect individual cell types and states. Trained on over 100 million cell profiles across 68 tissues, it identifies nearly twice as many variants affecting gene expression as its predecessor, AlphaGenome. The model can generalize to new cell types without retraining and helps identify gaps in experimental data. It is available for non-commercial research via the AlphaGenome API, with a private preview for commercial use.",
+    "summary_zh": "Google DeepMind 发布了 AlphaGenome 2，这是一个能够预测遗传变异如何影响个体细胞类型和状态的 AI 模型。该模型在 68 种组织的超过 1 亿个细胞图谱上训练，识别出的影响基因表达的变异数量几乎是前代 AlphaGenome 的两倍。它无需重新训练即可泛化到新的细胞类型，并有助于发现实验数据中的空白。该模型通过 AlphaGenome API 供非商业研究使用，商业研究可申请有限私有预览。",
+    "norm_url": "https://www.theverge.com/ai-artificial-intelligence/1031524/google-deepmind-alphagenome-2-genetic-ai-model"
+  },
+  {
     "id": "20261111-mbzuai-s-ifm-releases-pan-2-an-open-29b-770e74",
     "url": "https://www.marktechpost.com/2026/11/10/ifm-pan-2-open-world-model/",
     "title_en": "MBZUAI’s IFM Releases PAN 2, an Open 29B World Model for Physical AI",
@@ -20,6 +86,72 @@
     "summary_en": "MBZUAI's Institute of Foundation Models (IFM) released PAN 2, an open 29B-parameter world model for physical AI that simulates scene outcomes from text actions as video. It uses a two-stage architecture: an LLM planner (e.g., Kimi K3) generates structured JSON world states, and a 29B MMDiT diffusion transformer predicts video latents, conditioned by a frozen Qwen3.5-9B encoder. PAN 2 leads 6 tested models on full-plan completion (34.0% vs 32.5% for MiniMax-H3) but trails on single actions and human preference (Elo 1595 vs 1620). Weights, training and inference code are Apache 2.0; it runs on data-center GPUs with each worker holding the full model in BF16.",
     "summary_zh": "MBZUAI的基础模型研究所（IFM）发布了PAN 2，一个开放的29B参数物理AI世界模型，可根据文本动作将场景变化模拟为视频。它采用两阶段架构：LLM规划器（如Kimi K3）生成结构化JSON世界状态，29B的MMDiT扩散Transformer预测视频潜变量，并由冻结的Qwen3.5-9B编码器条件化。PAN 2在6个测试模型的全计划完成率上领先（34.0% vs MiniMax-H3的32.5%），但在单动作和人类偏好上落后（Elo 1595 vs 1620）。权重、训练和推理代码均以Apache 2.0发布；运行于数据中心GPU，每个工作节点以BF16加载完整模型。",
     "norm_url": "https://www.marktechpost.com/2026/11/10/ifm-pan-2-open-world-model"
+  },
+  {
+    "id": "20261112-fish-audio-releases-live-3-a-full-duplex-ded737",
+    "url": "https://www.marktechpost.com/2026/11/10/fish-audio-live-3-full-duplex-voice-model/",
+    "title_en": "Fish Audio Releases Live 3, a Full-Duplex Voice Model That Reacts in 186 ms",
+    "title_zh": "Fish Audio 发布 Live 3 全双工语音模型，反应时间低至 186 毫秒",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-11T04:43:53Z",
+    "fetched_at": "2026-11-12T02:09:38Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "voice-model",
+      "full-duplex",
+      "model-release",
+      "real-time",
+      "turn-taking"
+    ],
+    "image": "images/20261112-fish-audio-releases-live-3-a-full-duplex-ded737.jpg",
+    "summary_en": "Fish Audio released Live 3, a full-duplex voice model for real-time voice agents that listens while speaking, enabling natural turn-taking without breaking calls. It moves conversational timing from hand-tuned pipeline rules into the speech model, trained on real human conversations to learn when to acknowledge, wait, respond, or stop. The model can decide to respond in as little as 186 ms for short reactions like 'mm-hmm', though full answer latency is not disclosed. Live 3 is available on the Fish Agent Platform, Fish Audio API, and on-premises, priced at $0.035 per minute (promotional until Dec 31, 2026, then $0.07), with English-only support and no published benchmark scores.",
+    "summary_zh": "Fish Audio 发布了 Live 3 全双工语音模型，专为实时语音代理设计，可在说话的同时保持聆听，实现自然的对话轮次切换。该模型将对话时序从手工调优的流水线规则转移到语音模型中，基于真实人类对话训练，学习何时确认、等待、回应或停止。对于“嗯哼”等简短反应，模型可在低至 186 毫秒内决定回应，但完整回复的延迟未公开。Live 3 已在 Fish Agent Platform、Fish Audio API 及企业本地部署中提供，促销价为每分钟 0.035 美元（至 2026 年 12 月 31 日，之后为 0.07 美元），目前仅支持英语，且未发布基准测试分数。",
+    "norm_url": "https://www.marktechpost.com/2026/11/10/fish-audio-live-3-full-duplex-voice-model"
+  },
+  {
+    "id": "20261112-meta-fair-releases-e-means-an-algorithm-834043",
+    "url": "https://www.marktechpost.com/2026/11/10/meta-fair-e-means-k-means-faiss/",
+    "title_en": "Meta FAIR Releases e-means: An Algorithm Beating k-means in 10x Fewer Epochs",
+    "title_zh": "Meta FAIR 发布 e-means：用 1/10 的 epoch 击败 k-means 的聚类算法",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-10T23:20:19Z",
+    "fetched_at": "2026-11-12T02:10:47Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "clustering",
+      "k-means",
+      "faiss",
+      "meta-fair",
+      "algorithm"
+    ],
+    "image": "images/20261112-meta-fair-releases-e-means-an-algorithm-834043.jpg",
+    "summary_en": "Meta FAIR released e-means, a mini-batch k-means algorithm that updates centroids using exponential moving averages (EMA), available in FAISS 1.16.0. It matches Lloyd's k-means 25-epoch loss in just 1.4 to 2.6 epochs, achieving 10-45x GPU and 8-15x CPU speedups (self-reported). The method uses fitted scaling laws to set batch size and step size, eliminating hyperparameter tuning, and includes dead-cluster revival and fused GPU kernels. Tested on up to 10 billion points and 16.7 million clusters, e-means also avoids local minima better than Lloyd's algorithm.",
+    "summary_zh": "Meta FAIR 发布了 e-means，一种使用指数移动平均（EMA）更新质心的小批量 k-means 算法，已集成在 FAISS 1.16.0 中。它仅需 1.4 到 2.6 个 epoch 就能达到 Lloyd's k-means 25 个 epoch 的损失，在 GPU 上实现 10-45 倍、CPU 上 8-15 倍的加速（自报告数据）。该方法通过拟合的缩放定律自动设置批量大小和步长，无需超参数调优，并包含死簇复活和融合 GPU 内核。在高达 100 亿个点和 1670 万个簇的数据上测试，e-means 也比 Lloyd 算法更能避免局部最优。",
+    "norm_url": "https://www.marktechpost.com/2026/11/10/meta-fair-e-means-k-means-faiss"
+  },
+  {
+    "id": "20261112-llm-gemini-0-36-0ea6a8",
+    "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+    "title_en": "llm-gemini 0.36",
+    "title_zh": "Gemini 4 Carbon 全面开放：性能、定价与创新应用",
+    "source_name": "Simon Willison",
+    "published": "2026-11-10T20:09:44Z",
+    "fetched_at": "2026-11-12T02:09:45Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "gemini",
+      "model-release",
+      "pricing",
+      "creative-coding",
+      "google"
+    ],
+    "image": "images/20261112-llm-gemini-0-36-0ea6a8.jpg",
+    "summary_en": "Google's Gemini 4 Carbon, initially available to a subset of cyber defenders two weeks ago, is now publicly released. It is Google's best Gemini model, priced at $2/million input and $10/million output tokens at launch, but will double to $4/$20 on December 1st. The model excels in creative coding tasks, as demonstrated by generating a Three.js animation of a mech in New York City and an open-world 3D game using Google's Antigravity IDE with /swarm feature, coordinating subagents for 3D asset modeling, game development, and audio integration.",
+    "summary_zh": "Google 的 Gemini 4 Carbon 在两周前仅向部分网络安全防御者开放，现已全面公开发布。这是 Google 迄今最好的 Gemini 模型，发布时定价为每百万输入 token 2 美元、每百万输出 token 10 美元，但将于 12 月 1 日翻倍至 4/20 美元。该模型在创意编码任务中表现出色，例如使用 Google Antigravity IDE 的 /swarm 功能生成 Three.js 动画和开放世界 3D 游戏，协调子代理进行 3D 资产建模、游戏开发和音频集成。",
+    "norm_url": "https://simonwillison.net/2026/Nov/10/llm-gemini"
   },
   {
     "id": "20261111-autoscaffold-ai-guided-scaffolding-for-r-806ca9",
@@ -66,6 +198,50 @@
     "norm_url": "https://arxiv.org/abs/2611.14262v1"
   },
   {
+    "id": "20261112-gemini-4-carbon-is-now-available-d5c32f",
+    "url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available/",
+    "title_en": "Gemini 4 Carbon is now available",
+    "title_zh": "Gemini 4 Carbon 正式发布",
+    "source_name": "Google DeepMind",
+    "published": "2026-11-10T16:03:47Z",
+    "fetched_at": "2026-11-12T02:09:23Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "cybersecurity",
+      "agentic-workflows",
+      "benchmark",
+      "llm"
+    ],
+    "image": "images/20261112-gemini-4-carbon-is-now-available-d5c32f.jpg",
+    "summary_en": "Google released Gemini 4 Carbon, its strongest model for cybersecurity and long-horizon agentic workflows, ranking #1 on CursorBench 4.0, Perplexity's WANDR, and Zapier's AutomationBench at over 2X lower cost per task than the next best external model. Carbon achieves 100% recall and 95% precision on Project Fortify's internal scanning and triage benchmark, and 0% prompt injection attack success rate on the Gray Swan IPI benchmark. It is available via API at $2 per million input tokens and $10 per million output tokens, and to Google AI Ultra subscribers in Antigravity, Gemini app, and AI Mode in Search.",
+    "summary_zh": "Google 发布 Gemini 4 Carbon，这是其在网络安全和长周期智能体工作流方面最强的模型，在 CursorBench 4.0、Perplexity 的 WANDR 和 Zapier 的 AutomationBench 上排名第一，每任务成本比次优外部模型低 2 倍以上。Carbon 在 Project Fortify 内部扫描和分类基准上达到 100% 召回率和 95% 精确率，在 Gray Swan IPI 基准上实现 0% 提示注入攻击成功率。该模型通过 API 提供，定价为每百万输入 token 2 美元、每百万输出 token 10 美元，并向 Google AI Ultra 订阅者开放 Antigravity、Gemini 应用和搜索 AI Mode。",
+    "norm_url": "https://deepmind.google/blog/gemini-4-carbon-is-now-available"
+  },
+  {
+    "id": "20261112-zyphra-releases-zonos3-mini-open-source-30fdd3",
+    "url": "https://www.marktechpost.com/2026/11/10/zyphra-zonos3-mini-open-source-tts/",
+    "title_en": "Zyphra Releases ZONOS3-Mini: Open-Source TTS With 100M Active Parameters",
+    "title_zh": "Zyphra 发布 ZONOS3-Mini：100M 激活参数的开源 TTS 模型",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-10T15:42:55Z",
+    "fetched_at": "2026-11-12T02:11:04Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "tts",
+      "moe",
+      "open-source",
+      "voice-cloning",
+      "benchmark"
+    ],
+    "image": "images/20261112-zyphra-releases-zonos3-mini-open-source-30fdd3.jpg",
+    "summary_en": "Zyphra released ZONOS3-Mini, an open-source text-to-speech model with a sparse Mixture of Experts architecture (800M total, 100M active parameters) under Apache 2.0. It supports zero-shot voice cloning and word-level delivery control, and runs on browsers via WebGPU, NVIDIA GPUs via SGLang-Omni, Apple Silicon via MLX, and CPU/CUDA/Metal/Vulkan via ggml. On Zyphra's self-reported ZTTS2-Eval benchmark, it ranks first among open models with a Capability Index of 66.2, achieving 80 ms median time to first audio on one H100 at 8 concurrent requests. However, all benchmarks are self-reported, and reference-clip cloning scores much lower (44.7) than speaker-embedding mode.",
+    "summary_zh": "Zyphra 发布了 ZONOS3-Mini，一个采用稀疏混合专家（MoE）架构的开源文本转语音模型，总参数 800M，激活参数约 100M，权重以 Apache 2.0 许可发布。该模型支持零样本语音克隆和词级表达控制，可通过 WebGPU 在浏览器中运行，也支持 NVIDIA GPU（SGLang-Omni）、Apple Silicon（MLX）以及 CPU/CUDA/Metal/Vulkan（ggml）等多种部署方式。在 Zyphra 自建的 ZTTS2-Eval 基准上，其能力指数为 66.2，在开源模型中排名第一；单张 H100 上 8 并发请求时首音频延迟中位数为 80 毫秒。但所有基准均由 Zyphra 自行运行，且参考音频克隆模式得分（44.7）远低于说话人嵌入模式。",
+    "norm_url": "https://www.marktechpost.com/2026/11/10/zyphra-zonos3-mini-open-source-tts"
+  },
+  {
     "id": "20261111-anthropic-launches-claude-fable-5-2-and-a42a4c",
     "url": "https://www.marktechpost.com/2026/11/10/anthropic-claude-fable-5-2-mythos-5-2-release/",
     "title_en": "Anthropic Launches Claude Fable 5.2 and Mythos 5.2: Same Model, Different Safeguards",
@@ -108,6 +284,28 @@
     "summary_en": "The paper proposes MCPO (Margin-Credit Policy Optimization), a method for reinforcement learning with verifiable rewards that redistributes token-level credit based on model hesitation, measured by the top-2 margin of the next-token distribution. Unlike GRPO, which assigns equal credit to all tokens, MCPO uses two fixed thresholds to map the margin to a score and spreads the advantage across tokens while preserving the mean. The method requires no extra model evaluation or batch statistics. Training MiniCPM5-2B-Base with LoRA for 200 steps on 2,048 DAPO-Math problems and evaluating on six competition-math benchmarks, MCPO outperforms GRPO by 6.55 points of macro avg@32 on average (95% CI [4.1, 9.0]) across five data seeds, with a Qwen3-4B-Base replication showing +4.75 points on all three seeds. Gains are largest on problems GRPO solves inconsistently and increase with k in pass@k, reaching 13.8 points at pass@32; MCPO models also produce two to three times longer answers, and longer answers correlate with higher scores, though the two effects are not separated.",
     "summary_zh": "本文提出MCPO（Margin-Credit Policy Optimization），一种用于可验证奖励强化学习的方法，根据模型犹豫程度（通过下一令牌分布的前二边际衡量）重新分配令牌级信用。与GRPO对所有令牌等量分配奖励不同，MCPO使用两个固定阈值将边际映射为分数，并在保持均值不变的情况下将优势分散到各令牌上。该方法无需额外模型评估或批次统计。在2,048个DAPO-Math问题上使用LoRA训练MiniCPM5-2B-Base 200步，并在六个竞赛数学基准上评估，MCPO在五个数据种子上平均比GRPO基线高6.55个百分点的macro avg@32（95%置信区间[4.1, 9.0]），Qwen3-4B-Base复现实验在三个种子上均提升（+4.75）。增益在GRPO仅部分解决的问题上最大，并随pass@k中的k增长，在pass@32时达到13.8个百分点；MCPO模型生成的答案长度是原来的两到三倍，且答案更长的运行得分更高，但实验未区分这两种效应。",
     "norm_url": "https://arxiv.org/abs/2611.14015v1"
+  },
+  {
+    "id": "20261112-introducing-alphaproof-code-a-breakthrou-07239e",
+    "url": "https://deepmind.google/blog/introducing-alphaproof-code/",
+    "title_en": "Introducing AlphaProof Code: a breakthrough in verifying complex software at depth",
+    "title_zh": "AlphaProof Code 发布：深度验证复杂软件的重大突破",
+    "source_name": "Google DeepMind",
+    "published": "2026-11-10T12:02:28Z",
+    "fetched_at": "2026-11-12T02:08:58Z",
+    "type": "blog",
+    "category": "rl",
+    "tags": [
+      "formal-verification",
+      "ai-agents",
+      "cryptographic-protocol",
+      "lean",
+      "security"
+    ],
+    "image": null,
+    "summary_en": "Google DeepMind introduced AlphaProof Code, a multi-LLM agentic framework for formal verification that combines human expertise with AI agents. The framework was used to formally verify the security properties of the actual code underlying the Signal cryptographic protocol, marking the first time AI has been used to formally verify a widely deployed cryptographic protocol at this depth. The agents generated over six million lines of Lean proofs, and human experts only needed to review 1% of the codebase. The verification took just four weeks, a task that historically takes expert teams years. When two real bugs were reintroduced, the system produced machine-checked proofs that the buggy versions were insecure.",
+    "summary_zh": "Google DeepMind 推出 AlphaProof Code，这是一个多 LLM 智能体框架，用于形式化验证，结合了人类专业知识和 AI 智能体。该框架被用于对 Signal 加密协议底层实际代码的安全属性进行形式化验证，这是首次使用 AI 对广泛部署的加密协议进行如此深度的形式化验证。智能体生成了超过六百万行 Lean 证明，人类专家仅需审查 1% 的代码库。验证过程仅耗时四周，而传统上专家团队需要数年时间。当重新引入两个真实漏洞时，系统生成了机器检查的证明，表明有漏洞的版本不安全。",
+    "norm_url": "https://deepmind.google/blog/introducing-alphaproof-code"
   },
   {
     "id": "20261111-truer-test-time-reward-correction-using-872689",

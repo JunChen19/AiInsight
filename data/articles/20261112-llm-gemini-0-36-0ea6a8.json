@@ -1,0 +1,26 @@
+{
+  "id": "20261112-llm-gemini-0-36-0ea6a8",
+  "url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+  "title_en": "llm-gemini 0.36",
+  "title_zh": "Gemini 4 Carbon 全面开放：性能、定价与创新应用",
+  "source_name": "Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Nov/10/llm-gemini/",
+  "published": "2026-11-10T20:09:44Z",
+  "fetched_at": "2026-11-12T02:09:45Z",
+  "type": "blog",
+  "category": "model-release",
+  "tags": [
+    "gemini",
+    "model-release",
+    "pricing",
+    "creative-coding",
+    "google"
+  ],
+  "image": "images/20261112-llm-gemini-0-36-0ea6a8.jpg",
+  "summary_en": "Google's Gemini 4 Carbon, initially available to a subset of cyber defenders two weeks ago, is now publicly released. It is Google's best Gemini model, priced at $2/million input and $10/million output tokens at launch, but will double to $4/$20 on December 1st. The model excels in creative coding tasks, as demonstrated by generating a Three.js animation of a mech in New York City and an open-world 3D game using Google's Antigravity IDE with /swarm feature, coordinating subagents for 3D asset modeling, game development, and audio integration.",
+  "summary_zh": "Google 的 Gemini 4 Carbon 在两周前仅向部分网络安全防御者开放，现已全面公开发布。这是 Google 迄今最好的 Gemini 模型，发布时定价为每百万输入 token 2 美元、每百万输出 token 10 美元，但将于 12 月 1 日翻倍至 4/20 美元。该模型在创意编码任务中表现出色，例如使用 Google Antigravity IDE 的 /swarm 功能生成 Three.js 动画和开放世界 3D 游戏，协调子代理进行 3D 资产建模、游戏开发和音频集成。",
+  "content_en": "10th November 2026\n\nGemini 4 Carbon was announced two weeks ago for \"a subset of cyber defenders\", but today it's available to everyone else.\n\nThis is Google's best ever Gemini, priced at $2/million input and $10/million output at launch (that's GPT-6.1 Sol / Claude Sonnet 5.5 prices) but scheduled to double in price to $4/$20 on December 1st (same as Opus 5.5).\n\nHere are three pelicans for the low, medium and high thinking efforts (it defaults to medium). This is the pelican I got for high:\n\nGemini pelicans have all been great for a while now, so I also tested it out using Google's Antigravity IDE with a prompt I first tried with Claude Fable 5.2 yesterday:\n\n`Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data`\n\n\nHere's the HTML result (I had to prompt \"build that into a standalone HTML file\" to get a version with no external dependencies). I then screen-captured that as a video:\n\n**Update**: Huh, just saw this on YouTube (and tweeted by Google CEO Sundar Pichai):\n\nUsing Google Antigravity’s /swarm feature, Carbon built an open-world 3D game where you explore Google’s Mountain View campus as a pelican riding a GBike — coordinating subagents to model 3D assets in Blender from Omni and Nano Banana references, build the browser game in Three.js with WebGL shaders, and pair procedural Web Audio sound effects with Lyria music.\n\n\nHere's the playable version in AI Studio.\n\n## Recent articles\n\n- Locating the source of a mysterious beep with Claude - 9th November 2026\n- Hide your slop PR descriptions behind \\<details>\\<summary> - 9th November 2026\n- Qwen 3.8 27B on my laptop can interpret model weights, too - 3rd November 2026\n- The U.S. Census Bureau and “Super Intelligence” - 2nd November 2026",
+  "content_zh": "2026年11月10日\n\nGemini 4 Carbon 两周前宣布面向“一部分网络防御者”开放，但今天它已向其他所有人开放。\n\n这是 Google 有史以来最好的 Gemini，发布时定价为每百万输入 $2、每百万输出 $10（与 GPT-6.1 Sol / Claude Sonnet 5.5 的价格相同），但计划于 12 月 1 日价格翻倍至 $4/$20（与 Opus 5.5 相同）。\n\n以下是低、中、高思考努力（默认中等）下的三只鹈鹕。这是我用高思考努力得到的鹈鹕：\n\nGemini 的鹈鹕已经有一段时间都很出色了，所以我还用 Google 的 Antigravity IDE 测试了它，使用的提示词是我昨天先在 Claude Fable 5.2 上试过的：\n\n`Make a three js animation where yonkers stands up as a big mech (cool stand up motion) and stomps around manhattan and queens and Brooklyn, use openstreetmap mapping data`\n\n\n这是 HTML 结果（我不得不提示“build that into a standalone HTML file”才得到一个没有外部依赖的版本）。然后我把那个录屏成了视频：\n\n**更新**：哈，刚在 YouTube 上看到这个（Google CEO Sundar Pichai 也发了推文）：\n\n使用 Google Antigravity 的 /swarm 功能，Carbon 构建了一个开放世界 3D 游戏，你在其中扮演一只骑着 GBike 的鹈鹕探索 Google 的 Mountain View 园区——它协调子代理根据 Omni 和 Nano Banana 参考在 Blender 中建模 3D 资产，用 Three.js 和 WebGL 着色器构建浏览器游戏，并将程序化 Web Audio 音效与 Lyria 音乐配对。\n\n\n这是 AI Studio 中的可玩版本。\n\n## 近期文章\n\n- 用 Claude 定位神秘哔声的来源 - 2026年11月9日\n- 把你的垃圾 PR 描述藏在 \\<details>\\<summary> 后面 - 2026年11月9日\n- 我笔记本电脑上的 Qwen 3.8 27B 也能解释模型权重 - 2026年11月3日\n- 美国人口普查局与“超级智能” - 2026年11月2日",
+  "content_note": "fulltext",
+  "translation_failed": false
+}
