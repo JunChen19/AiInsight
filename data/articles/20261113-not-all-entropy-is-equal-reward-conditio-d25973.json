@@ -1,0 +1,26 @@
+{
+  "id": "20261113-not-all-entropy-is-equal-reward-conditio-d25973",
+  "url": "https://arxiv.org/abs/2611.09448v1",
+  "title_en": "Not All Entropy Is Equal: Reward-Conditioned Entropy Allocation in Reinforcement Learning with Verifiable Rewards",
+  "title_zh": "并非所有熵都平等：可验证奖励强化学习中的奖励条件熵分配",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.09448v1",
+  "published": "2026-11-06T13:22:42Z",
+  "fetched_at": "2026-11-13T03:31:29Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "entropy",
+    "reward-model",
+    "llm",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces Reward-Conditioned Entropy Allocation (RCEA), a hierarchical diagnostic framework for reinforcement learning with verifiable rewards (RLVR) that separates complete-trajectory entropy from average token entropy, conditions uncertainty on verifier outcome and process validity, and measures correct-solution-mode retention. Controlled sweeps over six RLVR objectives at two model scales show that entropy trajectories do not induce a stable ordering of reasoning accuracy. Token entropy is higher for verifier-failed than successful trajectories, with paired analysis confidence intervals excluding equality at 10 of 12 endpoints. A local covariance approximation predicts the direction of adjacent-checkpoint entropy change in 95.5% of nonfailed transitions, and a reward-stratified endpoint proxy shows positive chosen-token covariance is more tail-concentrated within failed prefixes.",
+  "summary_zh": "本文提出了奖励条件熵分配（RCEA），一种分层诊断框架，用于可验证奖励强化学习（RLVR），将完整轨迹熵与平均令牌熵分离，根据验证器结果和过程有效性条件化不确定性，并测量正确解模式的保留。在两个模型规模上对六种RLVR目标进行控制扫描发现，熵轨迹不会导致推理准确性的稳定排序。验证器失败的轨迹的令牌熵高于成功轨迹，配对分析置信区间在12个端点中的10个排除相等。局部协方差近似在95.5%的非失败转换中预测了相邻检查点熵变化的方向，奖励分层端点代理进一步表明，正选择令牌协方差在失败前缀内更集中于尾部。",
+  "content_en": "Policy entropy is widely used to diagnose exploration and collapse in reinforcement learning with verifiable rewards (RLVR), yet its magnitude does not consistently track reasoning performance across optimization objectives. We argue that this ambiguity arises because global token entropy conflates uncertainty in successful and failed trajectories, diversity across correct solution strategies, and variation among realizations of the same strategy. We introduce \\textbf{Reward-Conditioned Entropy Allocation (RCEA)}, a hierarchical diagnostic framework that separates complete-trajectory entropy from average token entropy, conditions uncertainty on verifier outcome and process validity, measures correct-solution-mode retention, and connects these population-level quantities to local covariance-driven updates. In controlled sweeps over six RLVR objectives at two model scales, entropy trajectories do not induce a stable ordering of reasoning accuracy. Token entropy is higher for verifier-failed than successful trajectories under both broad separately aggregated estimates and a common-question paired analysis, whose confidence intervals exclude equality at 10 of 12 displayed endpoints. A local covariance approximation predicts the direction of adjacent-checkpoint entropy change in 95.5\\% of nonfailed transitions; a reward-stratified endpoint proxy further shows that positive chosen-token covariance is more tail-concentrated within failed prefixes. Every reportable trained endpoint e",
+  "content_zh": "策略熵被广泛用于诊断基于可验证奖励的强化学习（RLVR）中的探索与崩溃，然而其幅值在不同优化目标下并不能稳定地反映推理性能。我们认为，这种模糊性源于全局 token 熵混淆了成功与失败轨迹中的不确定性、正确解题策略之间的多样性，以及同一策略不同实现之间的差异。我们提出**奖励条件熵分配（Reward-Conditioned Entropy Allocation, RCEA）**，这是一个分层诊断框架，它将完整轨迹熵与平均 token 熵分离，将不确定性以验证器结果和过程有效性为条件，度量正确解模式的保留程度，并将这些群体层面的量与本地的协方差驱动更新联系起来。在两种模型规模下对六个 RLVR 目标进行的受控扫描中，熵轨迹并未诱导出推理准确率的稳定排序。在广泛分别聚合的估计和共同问题配对分析下，验证器失败轨迹的 token 熵均高于成功轨迹，后者的置信区间在 12 个展示端点中的 10 个上排除了相等性。局部协方差近似在 95.5% 的非失败转移中预测了相邻检查点熵变化的方向；按奖励分层的端点代理进一步表明，正的选择 token 协方差在失败前缀内更集中于尾部。每个可报告的已训练端点",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

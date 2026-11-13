@@ -1,0 +1,26 @@
+{
+  "id": "20261113-online-dense-reinforcement-learning-with-fd0b5d",
+  "url": "https://arxiv.org/abs/2610.39264v1",
+  "title_en": "Online Dense Reinforcement Learning with Planning-Grounding Agent for UI Navigation on Live IOS Apps",
+  "title_zh": "在线密集强化学习与规划接地代理：在实时iOS应用上进行UI导航",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.39264v1",
+  "published": "2026-10-29T03:17:33Z",
+  "fetched_at": "2026-11-13T03:41:33Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "ui-navigation",
+    "ios",
+    "ppo",
+    "llm-as-a-judge"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes an online reinforcement learning framework for training UI navigation agents directly on live iOS applications. It decouples the agent into a Planning agent and a UI Grounding model, and uses an LLM-as-a-Judge to provide dense step-level rewards plus a terminal reward. The agent is optimized with PPO and step-level advantage estimation, and a novel GiGPPO method improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories. An efficient infrastructure orchestrates hundreds of concurrent virtual iOS devices, and evaluations on UINavBench, iOSWorld, and AndroidWorld show substantial improvements over baselines.",
+  "summary_zh": "本文提出了一种在线强化学习框架，直接在实时iOS应用上训练UI导航代理。该框架将代理解耦为规划代理和UI接地模型，并利用LLM-as-a-Judge提供密集的步骤级奖励和终端奖励。代理使用PPO和步骤级优势估计进行优化，并引入了一种新颖的GiGPPO方法，通过利用并发轨迹中视觉相似状态的奖励信号来提高评论家稳定性。高效的基础设施可协调数百个并发虚拟iOS设备，在UINavBench、iOSWorld和AndroidWorld上的评估表明，该在线RL训练的代理显著优于基线。",
+  "content_en": "While frontier vision-language models demonstrate strong capabilities in user interface (UI) navigation, their high inference costs prohibit everyday use. Conversely, smaller models trained via supervised fine-tuning (SFT) or offline reinforcement learning often memorize static trajectories, leading to brittle execution and an inability to recover from errors. To address these limitations, we propose a novel online reinforcement learning framework that trains UI navigation agents directly on live iOS applications. Our framework decouples the agent into two specialized components: a Planning agent and a UI Grounding model. We rely on an LLM-as-a-Judge to provide comprehensive reward signals, combining dense, step-level feedback to evaluate intermediate progress with a terminal reward for overall task completion. To effectively leverage this dual reward structure, we optimize the agent using Proximal Policy Optimization (PPO) with step-level advantage estimation. Furthermore, we introduce GiGPPO, a novel neighbor-conditioned value estimation method that improves critic stability by leveraging reward signals from visually similar states across concurrent trajectories. To support this online training paradigm at scale, we introduce an efficient infrastructure that orchestrates hundreds of concurrent virtual iOS devices. Evaluations on rigorous benchmarks, including UINavBench, iOSWorld, and AndroidWorld, demonstrate that our online RL trained agents substantially outperform both",
+  "content_zh": "尽管前沿的视觉语言模型在用户界面（UI）导航方面展现出强大的能力，但其高昂的推理成本阻碍了日常使用。相反，通过监督微调（SFT）或离线强化学习训练的较小模型往往记忆静态轨迹，导致执行脆弱且无法从错误中恢复。为解决这些局限，我们提出了一种新颖的在线强化学习框架，直接在实时 iOS 应用上训练 UI 导航智能体。我们的框架将智能体解耦为两个专门组件：一个规划智能体和一个 UI Grounding 模型。我们依赖 LLM-as-a-Judge 提供全面的奖励信号，将用于评估中间进度的密集、步级反馈与用于整体任务完成的终端奖励相结合。为有效利用这种双重奖励结构，我们使用带有步级优势估计的近端策略优化（PPO）来优化智能体。此外，我们引入了 GiGPPO，一种新颖的邻居条件价值估计方法，通过利用并发轨迹中视觉相似状态的奖励信号来提高评论家稳定性。为大规模支持这种在线训练范式，我们引入了一种高效的基础设施，可编排数百个并发虚拟 iOS 设备。在严格基准（包括 UINavBench、iOSWorld 和 AndroidWorld）上的评估表明，我们在线强化学习训练的智能体显著优于",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

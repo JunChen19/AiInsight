@@ -1,0 +1,26 @@
+{
+  "id": "20261113-monotone-viability-learning-for-offline-e2966d",
+  "url": "https://arxiv.org/abs/2611.07616v1",
+  "title_en": "Monotone Viability Learning for Offline Safe Reinforcement Learning",
+  "title_zh": "单调可行性学习用于离线安全强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.07616v1",
+  "published": "2026-11-05T08:00:00Z",
+  "fetched_at": "2026-11-13T03:34:54Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "offline-rl",
+    "safe-rl",
+    "viability-learning",
+    "hj-reachability",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes Monotone Viability Learning (MoViL) for offline safe reinforcement learning, which learns viable sets from fixed data via monotone finite-horizon set recursion. The recursion preserves finite-horizon safety semantics and converges to the infinite-horizon viability kernel, while binary supervision avoids discount-induced numerical attenuation. Sufficient conditions are established for recovering behavior-supported viable subsets, and learned viability estimates certify actions at deployment. Experiments on Dubins car validate numerical accuracy, and evaluations on safe RL benchmarks show state-of-the-art reward-cost performance, with MoViL satisfying the average cost constraint on every task and achieving the lowest average cost among compared methods.",
+  "summary_zh": "本文提出单调可行性学习（MoViL），用于离线安全强化学习，通过单调有限时域集合递归从固定数据中学习可行集。该递归保持有限时域安全语义并收敛到无限时域可行性核，二值监督维持固定目标尺度，避免折扣引起的数值衰减。文章建立了恢复行为支持可行子集的充分条件，学习到的可行性估计用于部署时认证动作。Dubins车实验验证了学习可行集的数值精度，在安全强化学习基准上的评估展示了最先进的奖励-成本性能，MoViL在每个任务上满足平均成本约束，并在比较方法中达到最低平均成本。",
+  "content_en": "Offline safe reinforcement learning requires reliable long-horizon safety estimates from fixed data. Learning Hamilton-Jacobi (HJ) viability in this setting calls for semantic preservation, convergence, and numerical stability. To address these challenges, we propose Monotone Viability Learning (MoViL), which learns viable sets from offline transitions through monotone finite-horizon set recursion. The recursion preserves finite-horizon safety semantics and converges to the infinite-horizon viability kernel. Binary supervision maintains a fixed target scale across horizons, avoiding discount-induced numerical attenuation. We further establish sufficient conditions for recovering behavior-supported viable subsets. The learned viability estimates are used to certify actions at deployment. Dubins car experiments validate the numerical accuracy of the learned viable sets. Evaluations on safe RL benchmarks demonstrate state-of-the-art reward-cost performance. MoViL satisfies the average cost constraint on every task and achieves the lowest average cost among the compared methods. These results highlight MoViL's potential to extend long-horizon HJ viability analysis to safety-critical systems where reliable dynamics models are unavailable and online exploration is unsafe.",
+  "content_zh": "离线安全强化学习需要从固定数据中获得可靠的长时程安全估计。在此设定下学习 Hamilton-Jacobi (HJ) 可行性需要语义保持、收敛性和数值稳定性。为应对这些挑战，我们提出单调可行性学习（Monotone Viability Learning, MoViL），通过单调有限时程集合递归从离线转移中学习可行集。该递归保持有限时程安全语义，并收敛到无限时程可行性核。二元监督在各时程上保持固定的目标尺度，避免折扣引起的数值衰减。我们进一步建立了恢复行为支持的可行子集的充分条件。学习到的可行性估计用于在部署时认证动作。Dubins car 实验验证了所学可行集的数值精度。在安全 RL 基准上的评估展示了最先进的奖励-成本性能。MoViL 在每个任务上都满足平均成本约束，并在所比较的方法中实现了最低的平均成本。这些结果凸显了 MoViL 将长时程 HJ 可行性分析扩展到安全关键系统的潜力，这些系统缺乏可靠的动力学模型且在线探索不安全。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

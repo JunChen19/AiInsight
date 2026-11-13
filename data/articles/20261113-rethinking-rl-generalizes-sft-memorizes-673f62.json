@@ -1,0 +1,26 @@
+{
+  "id": "20261113-rethinking-rl-generalizes-sft-memorizes-673f62",
+  "url": "https://arxiv.org/abs/2611.14912v1",
+  "title_en": "Rethinking \"RL Generalizes, SFT Memorizes\": The Role of SFT Data",
+  "title_zh": "重新审视“RL泛化，SFT记忆”：SFT数据的作用",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.14912v1",
+  "published": "2026-11-11T02:10:24Z",
+  "fetched_at": "2026-11-13T03:35:29Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "sft",
+    "rl",
+    "generalization",
+    "data-mixture",
+    "qwen"
+  ],
+  "image": null,
+  "summary_en": "This paper re-examines the claim that reinforcement learning (RL) generalizes while supervised fine-tuning (SFT) memorizes, focusing on the role of SFT training data in Qwen2.5 and Qwen3 models. It finds that a carefully mixed SFT dataset substantially outperforms data generated solely by a larger model, and that matching the number of correct rollouts between SFT and RL greatly improves SFT generalization; matching the total rollout budget enables SFT to generalize as well as RL. Combining both factors allows SFT to generalize even better than RL. LLM annotations reveal that larger datasets cover more tail solution methods, which provide generalizable reasoning signals, and theoretical analysis of shallow transformers supports these empirical findings.",
+  "summary_zh": "本文重新审视“强化学习（RL）泛化、监督微调（SFT）记忆”的观点，聚焦于Qwen2.5和Qwen3系列模型中SFT训练数据的作用。研究发现，精心混合的SFT数据集显著优于仅由更大模型生成的数据；使SFT与RL的正确rollout数量匹配可大幅提升SFT泛化性，而匹配总rollout预算则使SFT泛化性与RL相当。结合这两个因素后，SFT的泛化性甚至优于RL。通过LLM标注发现，更大数据集覆盖更多尾部解法，这些尾部解法提供可泛化的推理信号；对浅层Transformer在RL和SFT下的训练动态理论分析支持了这些实证发现。",
+  "content_en": "Large language models trained with Reinforcement Learning (RL) with verifiable rewards exhibit strong reasoning ability and broad generalization, whereas models trained with Supervised Fine-Tuning (SFT) are often viewed as more prone to memorization and limited transfer. This paper rethinks this distinction through the lens of SFT training data on widely used Qwen2.5 and Qwen3 series models. First, we study the role of data source and show that it is critical: a carefully mixed SFT dataset substantially outperforms data generated solely by a larger model. Second, we study the role of data scale and show that matching the number of correct rollouts between SFT and RL greatly improves SFT generalization, while matching the total rollout budget enables SFT to generalize as well as RL. Combining these two factors further enables SFT to generalize even better than RL. Third, by using LLM annotations to characterize the solution methods in training rollouts, we show that larger datasets cover more tail methods and that these tail methods provide generalizable reasoning signals. Finally, we support these empirical findings theoretically by analyzing the training dynamics of shallow transformers under both RL and SFT.",
+  "content_zh": "使用可验证奖励的强化学习（RL）训练的大语言模型展现出强大的推理能力和广泛的泛化能力，而使用监督微调（SFT）训练的模型则常被视为更容易记忆且迁移能力有限。本文通过广泛使用的 Qwen2.5 和 Qwen3 系列模型上的 SFT 训练数据这一视角，重新审视这一区别。首先，我们研究了数据来源的作用，并表明其至关重要：精心混合的 SFT 数据集显著优于仅由更大模型生成的数据。其次，我们研究了数据规模的作用，并表明在 SFT 和 RL 之间匹配正确 rollout 的数量可大幅提升 SFT 的泛化能力，而匹配总 rollout 预算则使 SFT 能够泛化得与 RL 一样好。结合这两个因素进一步使 SFT 的泛化能力甚至优于 RL。第三，通过使用 LLM 标注来刻画训练 rollout 中的解题方法，我们表明更大的数据集覆盖了更多尾部方法，且这些尾部方法提供了可泛化的推理信号。最后，我们通过分析浅层 Transformer 在 RL 和 SFT 下的训练动态，从理论上支持了这些实证发现。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

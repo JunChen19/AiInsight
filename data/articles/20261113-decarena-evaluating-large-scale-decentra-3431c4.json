@@ -1,0 +1,26 @@
+{
+  "id": "20261113-decarena-evaluating-large-scale-decentra-3431c4",
+  "url": "https://arxiv.org/abs/2611.15521v1",
+  "title_en": "DecArena: Evaluating Large-Scale Decentralized Multi-Agent Collaboration",
+  "title_zh": "DecArena：评估大规模去中心化多智能体协作",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.15521v1",
+  "published": "2026-11-11T14:13:26Z",
+  "fetched_at": "2026-11-13T03:37:21Z",
+  "type": "paper",
+  "category": "technique",
+  "tags": [
+    "multi-agent",
+    "decentralized",
+    "benchmark",
+    "llm",
+    "reinforcement-learning"
+  ],
+  "image": null,
+  "summary_en": "DecArena is a new benchmark for decentralized multi-agent collaboration under graph-constrained communication, where agents can only interact with neighbors and must discover non-local resources. It features synthetic scalable distributed tool calling with over 100K tools. Experiments show that recent LLM agents struggle to discover relevant non-local resources and collaborate effectively, and standard reinforcement learning fails to reliably overcome this limitation. The authors propose GraphHarness, a baseline combining topology-aware warmup with self-improving LLM-based routing, which improves task success by 48.5, collaboration quality by 30.6, and reduces costs by 34.0 compared to baselines.",
+  "summary_zh": "DecArena 是一个用于评估图约束通信下去中心化多智能体协作的新基准，其中智能体只能与邻居交互，并需主动发现非本地资源。该基准包含超过 10 万个工具的合成可扩展分布式工具调用任务。实验表明，当前的 LLM 智能体难以发现相关的非本地资源并进行有效协作，且标准强化学习无法可靠克服这一局限。作者提出了 GraphHarness 基线，结合拓扑感知预热与基于 LLM 的自改进路由，相比基线将任务成功率提升 48.5、协作质量提升 30.6，同时降低成本 34.0。",
+  "content_en": "Emerging personal AI agents raise fundamental scalability and privacy concerns for centralized multi-agent systems (MASs), which rely on a global orchestrator with broad access to agents, resources, and communication. In decentralized environments, global visibility is unavailable. Agents need to proactively discover non-local resources (e.g. tools, skills), and collaborate with other agents to solve tasks. We study decentralized multi-agent collaboration under graph-constrained communication, a natural reflection of human structures. Each agent observes only its local state and can interact only with neighboring agents. We introduce a benchmark with synthetic scalable distributed tool calling with 100K+ tools. Our experiments reveal that recent LLM agents struggle to discover non-local relevant resources and collaborate in decentralized setting. Moreover, standard reinforcement learning fails to reliably overcome this limitation, suggesting that decentralized MAS needs more explicit harness mechanisms for effective collaboration, even using SOTA LLMs. We then present a strong baseline \\textbf{GraphHarness}, combining topology-aware warmup with self-improving LLM-based routing. Results show that GraphHarness substantially improves task success (+48.5) and produces higher quality collaboration (+30.6), while using fewer costs (+34.0) than baselines.",
+  "content_zh": "新兴的个人 AI 智能体对集中式多智能体系统（MAS）的可扩展性和隐私性提出了根本性挑战，因为这类系统依赖一个全局编排器，而该编排器能够广泛访问智能体、资源和通信。在去中心化环境中，全局可见性无法获得。智能体需要主动发现非本地资源（例如工具、技能），并与其他智能体协作以完成任务。我们研究图约束通信下的去中心化多智能体协作，这是对人类结构的一种自然反映。每个智能体只能观测到自身的局部状态，并且只能与相邻智能体交互。我们引入了一个基准，包含 10 万+ 工具的合成可扩展分布式工具调用。我们的实验表明，近期的 LLM 智能体难以发现非本地的相关资源，也难以在去中心化环境中进行协作。此外，标准强化学习无法可靠地克服这一局限，这表明去中心化 MAS 需要更明确的治理机制来实现有效协作，即使使用 SOTA LLM 也是如此。随后，我们提出了一个强基线 \\textbf{GraphHarness}，它将拓扑感知预热与基于 LLM 的自改进路由相结合。结果表明，与基线相比，GraphHarness 大幅提升了任务成功率（+48.5），并产生了更高质量的协作（+30.6），同时成本更低（+34.0）。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

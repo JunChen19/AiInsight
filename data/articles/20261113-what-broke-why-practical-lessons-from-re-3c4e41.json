@@ -1,0 +1,26 @@
+{
+  "id": "20261113-what-broke-why-practical-lessons-from-re-3c4e41",
+  "url": "https://arxiv.org/abs/2611.10844v1",
+  "title_en": "What Broke & Why: Practical Lessons from Reinforcement Learning Post-Training",
+  "title_zh": "什么坏了以及为什么：强化学习后训练中的实践教训",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.10844v1",
+  "published": "2026-11-07T16:43:27Z",
+  "fetched_at": "2026-11-13T03:31:45Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "post-training",
+    "language-models",
+    "grpo",
+    "practical-guide"
+  ],
+  "image": null,
+  "summary_en": "This book provides a practical introduction to reinforcement learning post-training for language models, focusing on what works, what fails, and why. It covers foundations, explains GRPO and the training loop step by step, and presents five training programs on math reasoning, search agents, training stability, mixture-of-experts models, and software engineering tasks. Each program details problems encountered, changes made, and lessons learned. The book also examines what RL changes inside a model and serves as a practical reference for reward design, evaluation, tool-using agents, debugging, reproducibility, rollout engines, and hardware.",
+  "summary_zh": "本书实用性地介绍了语言模型的强化学习后训练，聚焦于哪些方法有效、哪些失败以及原因。内容涵盖基础，逐步解释GRPO和训练循环，并呈现五个训练项目：数学推理、搜索智能体、训练稳定性、混合专家模型和软件工程任务。每个项目详述遇到的问题、所做的更改和吸取的教训。本书还探讨了强化学习在模型内部实际改变了什么，并作为奖励设计、评估、工具使用智能体、调试常见故障、可复现性、rollout引擎和硬件的实用参考。",
+  "content_en": "Reinforcement learning with verifiable rewards (RLVR) has become an important way to improve how language models reason, solve problems, and use tools. But getting it to work in practice is not always straightforward. Training can fail because a model receives no useful reward, learns to exploit the reward system, stops exploring, or appears to improve when the evaluation itself is misleading.\n  In this book, we give a practical introduction to reinforcement learning post-training for language models, focusing on what works, what fails, and why. We begin with the foundations of post-training, explain GRPO and the training loop step by step, and then follow five training programs covering math reasoning, search agents, training stability, mixture-of-experts models, and software engineering tasks. Each program shows the problems encountered, the changes made, and the lessons learned.\n  The book also examines what reinforcement learning actually changes inside a model. The remaining chapters provide a practical reference for reward design, evaluation, training tool-using agents, debugging common failures, reproducibility, rollout engines, and hardware. Written for researchers and practitioners working with open models, the book aims to help readers understand how to train models, recognize when something goes wrong, and decide what to try next.",
+  "content_zh": "带可验证奖励的强化学习（RLVR）已成为提升语言模型推理、问题求解和工具使用能力的重要途径。但在实践中让它奏效并不总是直截了当。训练可能失败，原因包括模型得不到有用的奖励、学会钻奖励系统的空子、停止探索，或者表面上在进步而评估本身具有误导性。\n  在本书中，我们对语言模型的强化学习后训练做了实用性的介绍，重点关注哪些做法有效、哪些会失败以及背后的原因。我们从后训练的基础讲起，逐步解释 GRPO 和训练循环，然后依次介绍五个训练项目，涵盖数学推理、搜索智能体、训练稳定性、混合专家模型和软件工程任务。每个项目都展示了遇到的问题、所做的改动以及得到的经验教训。\n  本书还考察了强化学习究竟在模型内部改变了什么。其余章节为奖励设计、评估、训练使用工具的智能体、调试常见故障、可复现性、rollout 引擎和硬件提供了实用参考。本书面向使用开放模型的研究人员和从业者，旨在帮助读者理解如何训练模型、识别何时出了问题，并决定下一步该尝试什么。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

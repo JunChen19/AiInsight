@@ -1,0 +1,26 @@
+{
+  "id": "20261113-the-surprising-effectiveness-of-deleting-bf81af",
+  "url": "https://arxiv.org/abs/2611.10866v1",
+  "title_en": "The Surprising Effectiveness of Deleting Weights in LLM Post-Training",
+  "title_zh": "删除权重在LLM后训练中的惊人有效性",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.10866v1",
+  "published": "2026-11-07T17:33:20Z",
+  "fetched_at": "2026-11-13T03:31:22Z",
+  "type": "paper",
+  "category": "technique",
+  "tags": [
+    "llm",
+    "post-training",
+    "weight-deletion",
+    "continual-learning",
+    "reinforcement-learning"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces Deletion Tuning, a method that zeroes fewer than 0.05% of a pretrained LLM's weights by learning a binary mask over the gate projection of transformer blocks, without other modifications. It matches full fine-tuning (FFT) at scale across three post-training regimes: reinforcement learning with verifiable rewards, supervised fine-tuning, and on-policy distillation. The trained mask is hundreds to thousands of times smaller than the FFT checkpoint, and Deletion Tuning forgets far less, addressing continual learning challenges. Under reinforcement learning, its prior-task accuracy stays near the base level while FFT, LoRA, and random sparse fine-tuning lose up to 5.4 points. Analysis using stable rank, spectrum drift, and principal-weight overlap shows Deletion Tuning is closest to FFT among the compared methods.",
+  "summary_zh": "本文提出Deletion Tuning方法，通过在学习Transformer块门投影上的二值掩码，将预训练LLM中不到0.05%的权重置零，无需其他修改。在大规模实验中，该方法在三种后训练范式（带可验证奖励的强化学习、监督微调、同策略蒸馏）下均达到与全参数微调（FFT）相当的性能。训练得到的掩码比FFT检查点小数百到数千倍，且Deletion Tuning的遗忘程度远低于其他方法，有助于解决持续学习中的核心挑战。在强化学习下，其先前任务准确率保持接近基座水平，而FFT、LoRA和随机稀疏微调则最多下降5.4个点。通过稳定秩、谱漂移和主权重重叠分析，Deletion Tuning在三种度量上均最接近FFT。",
+  "content_en": "How little of a pretrained large language model (LLM) has to change for it to acquire new capabilities? We find that zeroing fewer than 0.05% of its weights, with no other modification, matches full fine-tuning (FFT) at scale across three LLM post-training regimes: reinforcement learning with verifiable rewards, supervised fine-tuning, and on-policy distillation. Our method, Deletion Tuning, learns a binary mask over the gate projection of transformer blocks. Two practical advantages follow: the trained mask is hundreds to thousands of times smaller than the corresponding FFT checkpoint, and Deletion Tuning forgets far less, which addresses a central challenge in continual learning. Under reinforcement learning, its prior-task accuracy stays near the base level while FFT, LoRA, and random sparse fine-tuning lose up to 5.4 points. To understand why masking alone suffices, we analyze the geometry of the learned weight changes under reinforcement learning using stable rank, spectrum drift, and principal-weight overlap. Compared with LoRA and random sparse fine-tuning, Deletion Tuning is closest to FFT across the three measures.",
+  "content_zh": "预训练大语言模型（LLM）需要改变多少才能获得新能力？我们发现，在三种 LLM 后训练范式下——带可验证奖励的强化学习、监督微调和同策略蒸馏——将不到 0.05% 的权重置零、不做其他修改，就能在规模上匹配全量微调（FFT）。我们的方法 Deletion Tuning 学习 transformer 块门控投影上的一个二值掩码。由此带来两个实际优势：训练得到的掩码比对应的 FFT 检查点小数百到数千倍；并且 Deletion Tuning 的遗忘远少得多，这解决了持续学习中的一个核心挑战。在强化学习下，其先前任务的准确率保持在接近基座水平，而 FFT、LoRA 和随机稀疏微调最多损失 5.4 个点。为理解为何仅靠掩码就足够，我们使用稳定秩、谱漂移和主权重重叠来分析强化学习下所学权重变化的几何特性。与 LoRA 和随机稀疏微调相比，Deletion Tuning 在三项指标上都最接近 FFT。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

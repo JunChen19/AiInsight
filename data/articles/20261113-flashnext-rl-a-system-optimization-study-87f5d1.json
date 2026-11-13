@@ -1,0 +1,26 @@
+{
+  "id": "20261113-flashnext-rl-a-system-optimization-study-87f5d1",
+  "url": "https://arxiv.org/abs/2610.28998v1",
+  "title_en": "FlashNext-RL: A System Optimization Study for Long-Horizon Agentic RL of Qwen3.8-Flash-Next",
+  "title_zh": "FlashNext-RL：Qwen3.8-Flash-Next 长时程智能体强化学习系统优化研究",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.28998v1",
+  "published": "2026-10-20T23:53:09Z",
+  "fetched_at": "2026-11-13T03:42:50Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "system-optimization",
+    "long-context",
+    "agentic-ai",
+    "throughput"
+  ],
+  "image": null,
+  "summary_en": "FlashNext-RL is a model-specific RL training optimization framework built on prime-rl with vLLM for software engineering rollout generation, targeting long-horizon agentic RL for Qwen3.8-Flash-Next. It enables BF16 training of the full 48-layer model on a single 8xB200 node by freezing the first two layers, n-gram table, sparse-attention indexer, and multi-token prediction head, while optimizing host offload, gradient accumulation, and kernels for mixture-of-experts, sparse attention, and gated residual stream. In a full-model study, non-padding training throughput increased from ~395 tokens/s/GPU (32K-token config) to 4,438 tokens/s/GPU (131K-token config), and hardware matmul throughput rose from ~20 to 213 TFLOPs/GPU. A controlled cumulative study on an 8-layer model quantified individual optimization contributions. With three inference nodes, the system supports a live SWE RL run with 1,024 trainable rollouts and a 131,072-token context limit, averaging 22.4 minutes per iteration over steps 5-15.",
+  "summary_zh": "FlashNext-RL 是一个基于 prime-rl 的模型专用强化学习训练优化框架，使用 vLLM 进行软件工程（SWE）rollout 生成，面向 Qwen3.8-Flash-Next 的长时程智能体强化学习。它通过在单台 8xB200 节点上以 BF16 训练完整的 48 层模型（冻结前两层、n-gram 表、稀疏注意力索引器和多 token 预测头），并优化主机卸载、梯度累积以及混合专家（MoE）、稀疏注意力和门控残差流的核函数。在全模型研究中，非填充训练吞吐从约 395 tokens/s/GPU（32K token 配置）提升至 4,438 tokens/s/GPU（131K token 配置），硬件矩阵乘吞吐从约 20 TFLOPs/GPU 提升至 213 TFLOPs/GPU。在 8 层模型上的受控累积研究进一步量化了各项优化的贡献。结合三个推理节点，系统支持目标批次为 1,024 个可训练 rollout、上下文限制为 131,072 token 的实时 SWE RL 运行，在第 5-15 步平均每次迭代耗时 22.4 分钟。",
+  "content_en": "Long-horizon agentic reinforcement learning (RL) requires both efficient rollout generation and training on long sequences. However, the memory requirements and model-specific operators of Qwen3.8-Flash-Next make this difficult with existing open-source implementations. To resolve these limitations, we introduce FlashNext-RL, a model-specific RL training optimization framework based on prime-rl, with vLLM for software engineering (SWE) rollout generation. Our main focus is BF16 training of the full 48-layer model on a single 8xB200 node, with the first two layers, the n-gram table, the sparse-attention indexer and the multi-token prediction head frozen. We optimize host offload, gradient accumulation and the kernels for mixture-of-experts, sparse attention and the gated residual stream. In the full-model development study, non-padding training throughput increases from approximately 395 tokens/s/GPU in the initial 32K-token configuration to 4,438 tokens/s/GPU in the optimized 131K-token configuration, with hardware matmul throughput (aka without considering the cost of attention components) increasing from approximately 20 to 213 TFLOPs/GPU. A controlled cumulative study on an 8-layer model further quantifies the contributions of individual optimizations. Together with three inference nodes, the system supports a live SWE RL run with a target batch of 1,024 trainable rollouts and a 131,072-token context limit. Over steps 5-15, an iteration takes 22.4 minutes on average, with",
+  "content_zh": "长程智能体强化学习（RL）既需要高效的 rollout 生成，也需要在长序列上进行训练。然而，Qwen3.8-Flash-Next 的内存需求和模型专用算子使得现有开源实现难以应对。为解决这些限制，我们推出了 FlashNext-RL，这是一个基于 prime-rl 的模型专用 RL 训练优化框架，并使用 vLLM 进行软件工程（SWE）rollout 生成。我们的主要关注点是在单个 8xB200 节点上对完整的 48 层模型进行 BF16 训练，其中前两层、n-gram 表、稀疏注意力索引器和多 token 预测头被冻结。我们优化了主机卸载、梯度累积，以及混合专家、稀疏注意力和门控残差流的核函数。在全模型开发研究中，非填充训练吞吐量从初始 32K token 配置下的约 395 tokens/s/GPU 提升到优化后 131K token 配置下的 4,438 tokens/s/GPU，硬件 matmul 吞吐量（即不考虑注意力组件成本）从约 20 TFLOPs/GPU 提升到 213 TFLOPs/GPU。在 8 层模型上进行的受控累积研究进一步量化了各项单独优化的贡献。结合三个推理节点，该系统支持一次实时 SWE RL 运行，目标批次为 1,024 条可训练 rollout，上下文限制为 131,072 token。在第 5-15 步中，一次迭代平均耗时 22.4 分钟，同时",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261113-focus-active-critic-learning-for-long-ho-183f4f",
+  "url": "https://arxiv.org/abs/2610.35801v1",
+  "title_en": "FOCUS: Active Critic Learning for Long-Horizon Language Model Agents",
+  "title_zh": "FOCUS：面向长时程语言模型智能体的主动评论家学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.35801v1",
+  "published": "2026-10-26T17:34:47Z",
+  "fetched_at": "2026-11-13T03:43:01Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "critic-learning",
+    "long-horizon",
+    "credit-assignment",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "FOCUS is an RL method that addresses credit assignment in long-horizon language-model agents by using selective branching to actively train a critic network. The rollout controller samples continuations from states expected to most reduce the critic's estimation error, providing refined value estimates for TD(λ) advantage scoring and training targets for the critic. It supports long-horizon agentic RL via a modular context-management interface that decouples context management from rollout allocation. Experiments show FOCUS outperforms GRPO and VinePPO with matched per-step generation budgets on legal reasoning, deep search, and code localization benchmarks, improving held-out accuracy at Qwen3.5-9B scale by 7.2 points on BrowseComp-Plus (55.4 vs. 48.2) and by 4.1 points on DeonticBench (56.5 vs. 52.4).",
+  "summary_zh": "FOCUS 是一种强化学习方法，通过选择性分支主动训练评论家网络，以解决长时程语言模型智能体中的信用分配问题。其 rollout 控制器从预期最能降低评论家估计误差的状态采样延续，为 TD(λ) 优势评分提供精炼的价值估计，并为评论家提供训练目标。FOCUS 通过模块化上下文管理接口支持长时程智能体强化学习，将上下文管理与 rollout 分配解耦。实验表明，在每步生成预算匹配的情况下，FOCUS 在法律推理、深度搜索和代码定位基准上优于 GRPO 和 VinePPO，在 Qwen3.5-9B 规模下将留出准确率在 BrowseComp-Plus 上比最强基线提升 7.2 点（55.4 对 48.2），在 DeonticBench 上提升 4.1 点（56.5 对 52.4）。",
+  "content_en": "Sparse outcome rewards make it difficult for long-horizon language-model agents to assign credit to earlier actions. Learned critics provide value estimates for intermediate states, but these estimates can be inaccurate, while estimating intermediate values with repetitive continuation samples from points within a trajectory incurs substantial costs. To mitigate these issues, we introduce FOCUS, an RL method that uses selective branching to help the critic network learn its value estimator. The rollout controller facilitates active learning for the critic by sampling continuations from states that are expected to most reduce the critic's estimation error. These refined value estimates then score the segment between consecutive states with a TD($λ$) advantage, while the sampled evidence supplies training targets for the critic. FOCUS supports long-horizon agentic reinforcement learning through a modular context-management interface that decouples context management from rollout allocation. Our experiments show that using compaction-induced segment boundaries for value estimation and credit assignment, FOCUS outperforms GRPO and VinePPO with matched per-step generation budgets on legal reasoning, deep search, and code localization benchmarks, improving held-out accuracy at Qwen3.5-9B scale by 7.2 points over the strongest baseline on BrowseComp-Plus (55.4 vs. 48.2) and by 4.1 points on DeonticBench (56.5 vs. 52.4).",
+  "content_zh": "稀疏的结果奖励使长时程语言模型智能体难以将信用分配给较早的动作。学习到的评论家为中间状态提供价值估计，但这些估计可能不准确，而从轨迹内各点进行重复续写采样来估计中间价值会带来可观的成本。为缓解这些问题，我们提出 FOCUS，一种使用选择性分支来帮助评论家网络学习其价值估计器的强化学习方法。推出控制器通过从预期最能降低评论家估计误差的状态中采样续写，来促进评论家的主动学习。这些精炼后的价值估计随后用 TD($λ$) 优势对相邻状态之间的片段进行评分，而采样得到的证据为评论家提供训练目标。FOCUS 通过模块化上下文管理接口支持长时程智能体强化学习，该接口将上下文管理与推出分配解耦。我们的实验表明，使用压缩诱导的片段边界进行价值估计和信用分配时，在每步生成预算匹配的条件下，FOCUS 在法律推理、深度搜索和代码定位基准上优于 GRPO 和 VinePPO，在 Qwen3.5-9B 规模上将留出准确率相较最强基线在 BrowseComp-Plus 上提升 7.2 分（55.4 对 48.2），在 DeonticBench 上提升 4.1 分（56.5 对 52.4）。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

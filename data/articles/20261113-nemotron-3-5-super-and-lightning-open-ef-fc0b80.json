@@ -1,0 +1,26 @@
+{
+  "id": "20261113-nemotron-3-5-super-and-lightning-open-ef-fc0b80",
+  "url": "https://arxiv.org/abs/2610.38095v1",
+  "title_en": "Nemotron 3.5 Super and Lightning: Open, Efficient Mixture-of-Experts Hybrid Mamba-Transformer Models for Agentic AI",
+  "title_zh": "Nemotron 3.5 Super 与 Lightning：面向 Agentic AI 的开放高效混合专家 Hybrid Mamba-Transformer 模型",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.38095v1",
+  "published": "2026-10-28T00:28:08Z",
+  "fetched_at": "2026-11-13T03:40:51Z",
+  "type": "paper",
+  "category": "model-release",
+  "tags": [
+    "mixture-of-experts",
+    "mamba-transformer",
+    "agentic-ai",
+    "multimodal",
+    "model-release"
+  ],
+  "image": null,
+  "summary_en": "NVIDIA introduces Nemotron 3.5 Super and Lightning, open Mixture-of-Experts Hybrid Mamba-Transformer models for reasoning, long-context, and agentic workloads. Super is a 120B-parameter (12B active) multimodal model, while Lightning is a 30B-parameter (3B active) text model. Both use large-scale distillation, long-context training, and native speculative decoding; Super adds Indic continued pretraining and agentic software-engineering mid-training. A post-training pipeline with SFT, RLVR, RLHF, and multi-teacher on-policy distillation (MOPD) turns Super into a multimodal agent over text, images, video, and tools. Indic pretraining improves Indian-language benchmarks by up to 9.82 points, and Super reaches 51.78% on SWE-bench Pro, surpassing Nemotron 3 Ultra with ~4.6x fewer active parameters.",
+  "summary_zh": "NVIDIA 发布 Nemotron 3.5 Super 与 Lightning，这是面向推理、长上下文与智能体（agentic）工作负载的开放混合专家（MoE）Hybrid Mamba-Transformer 模型。Super 为 120B 参数、12B 激活的多模态模型，Lightning 为 30B 参数、3B 激活的文本模型。两者均结合大规模蒸馏、长上下文训练与原生推测解码；Super 额外加入 Indic 继续预训练和智能体软件工程中期训练。后训练流程涵盖监督微调、RLVR、RLHF，以及多教师在线策略蒸馏（MOPD），使 Super 成为可处理文本、图像、视频和工具环境的多模态智能体。Indic 预训练将印度语言基准提升最多 9.82 个百分点，Super 在 SWE-bench Pro 上达到 51.78%，以约 4.6 倍更少的激活参数超越 Nemotron 3 Ultra。",
+  "content_en": "We introduce Nemotron 3.5 Super and Nemotron 3.5 Lightning, open and efficient Mixture-of-Experts Hybrid Mamba-Transformer models designed for reasoning, long-context understanding, and agentic workloads. Super is a 120B-parameter, 12B-active multimodal model, while Lightning is a smaller 30B-parameter, 3B-active text model; both designed for efficient deployment. Both models combine large-scale distillation, long-context training, and native speculative decoding, while Super further incorporates Indic continued pretraining and agentic software-engineering mid-training. We develop a comprehensive post-training pipeline spanning supervised fine-tuning and reinforcement learning (RLVR and RLHF), complemented in Super by specialized teacher training and multi- teacher on-policy distillation (MOPD). This transforms Super from a text-only base model into a multimodal agent capable of reasoning over text, images, video, and interactive tool environments. We further explore test-time scaling through parallel agent execution and self-verification. Across training and deployment, we jointly optimize capability and efficiency. Indic continued pretraining improves Indian-language benchmarks by up to 9.82 percentage points, while agentic mid-training strengthens software-engineering capabilities and robustness across agent harnesses. The post-trained Super model achieves 51.78% on SWE-bench Pro, surpassing Nemotron 3 Ultra despite using approximately 4.6x fewer active parameters. Post-tr",
+  "content_zh": "我们推出 Nemotron 3.5 Super 和 Nemotron 3.5 Lightning，这是开放且高效的混合专家（Mixture-of-Experts）Hybrid Mamba-Transformer 模型，专为推理、长上下文理解和智能体工作负载而设计。Super 是一个 120B 参数、12B 激活的多模态模型，而 Lightning 是一个更小的 30B 参数、3B 激活的文本模型；两者均面向高效部署而设计。两个模型都结合了大规模蒸馏、长上下文训练和原生推测解码，而 Super 进一步融入了 Indic 继续预训练和智能体软件工程中期训练。我们开发了一套全面的后训练流水线，涵盖监督微调和强化学习（RLVR 和 RLHF），并在 Super 中辅以专门的教师训练和多教师同策略蒸馏（MOPD）。这将 Super 从纯文本基础模型转变为能够对文本、图像、视频和交互式工具环境进行推理的多模态智能体。我们进一步探索了通过并行智能体执行和自我验证实现的测试时扩展。在训练和部署过程中，我们联合优化能力与效率。Indic 继续预训练将印度语言基准提升最多 9.82 个百分点，而智能体中期训练增强了软件工程能力以及跨智能体框架的鲁棒性。经过后训练的 Super 模型在 SWE-bench Pro 上达到 51.78%，尽管使用的激活参数约少 4.6 倍，仍超越了 Nemotron 3 Ultra。后训练",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261113-jomoha-joint-model-harness-optimization-5ab9b7",
+  "url": "https://arxiv.org/abs/2611.11499v1",
+  "title_en": "JoMoHa: Joint Model--Harness Optimization with Reinforcement Learning",
+  "title_zh": "JoMoHa：基于强化学习的模型与执行框架联合优化",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.11499v1",
+  "published": "2026-11-08T16:58:39Z",
+  "fetched_at": "2026-11-13T03:34:45Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "language-agents",
+    "joint-optimization",
+    "recursive-self-improveme",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "JoMoHa is a framework that jointly trains an executable harness generation policy and a task execution policy via reinforcement learning to coordinate model and harness evolution. Naive alternating training causes progressive incompatibility between model and harness, degrading performance. JoMoHa outperforms weight-only and harness-only baselines, achieving the highest success rates on ALFWorld, WebShop, and DBBench, averaging 70.3% and reaching 97.0% on ALFWorld. It enables recursive self-improvement by learning both task execution and runtime improvement from generated trajectories.",
+  "summary_zh": "JoMoHa 是一个通过强化学习联合训练可执行执行框架生成策略和任务执行策略的框架，以协调模型与执行框架的演化。简单的交替训练会导致模型与执行框架之间逐渐不兼容，从而降低性能。JoMoHa 在 ALFWorld、WebShop 和 DBBench 上优于仅权重和仅执行框架的基线方法，平均成功率达到 70.3%，在 ALFWorld 上达到 97.0%。通过从自身生成的轨迹中同时学习任务执行和运行时改进，JoMoHa 实现了递归自我改进（RSI）。",
+  "content_en": "The performance of language agents depends jointly on model weights and the harness. Optimizing either alone can be constrained by the other component, limiting overall performance gains. Our analysis of naive alternating training reveals progressive incompatibility between the model and harness, which increasingly interferes with task execution and may also undermine model training, leading to performance degradation. To coordinate the evolution of models and harnesses, we introduce JoMoHa, to our knowledge the first framework to jointly train an executable harness generation policy and a task execution policy through reinforcement learning. JoMoHa outperforms the evaluated weight-only and harness-only baselines and achieves the highest success rates among the evaluated methods on ALFWorld, WebShop, and DBBench, averaging 70.3% and reaching 97.0% on ALFWorld. By learning both task execution and runtime improvement from its own generated trajectories, JoMoHa performs recursive self-improvement (RSI).",
+  "content_zh": "语言智能体的性能同时取决于模型权重和运行框架。单独优化任一组件都可能受到另一组件的制约，从而限制整体性能提升。我们对朴素交替训练的分析揭示了模型与运行框架之间逐渐加剧的不兼容性，这种不兼容性会日益干扰任务执行，还可能损害模型训练，导致性能下降。为协调模型与运行框架的协同演化，我们提出了 JoMoHa——据我们所知，这是首个通过强化学习联合训练可执行运行框架生成策略与任务执行策略的框架。JoMoHa 优于所评估的仅权重和仅运行框架基线，并在 ALFWorld、WebShop 和 DBBench 上取得所评估方法中最高的成功率，平均成功率达 70.3%，在 ALFWorld 上达到 97.0%。通过从自身生成的轨迹中同时学习任务执行和运行时改进，JoMoHa 实现了递归自我改进（RSI）。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261113-dataset-mismatch-matters-in-group-relati-fa027c",
+  "url": "https://arxiv.org/abs/2611.00586v1",
+  "title_en": "Dataset Mismatch Matters in Group Relative Policy Optimization for Reinforcement Learning from Verifiable Rewards",
+  "title_zh": "数据集不匹配在可验证奖励强化学习中的组相对策略优化中至关重要",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.00586v1",
+  "published": "2026-10-31T03:28:56Z",
+  "fetched_at": "2026-11-13T03:41:07Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlvr",
+    "grpo",
+    "dataset-mismatch",
+    "rollout-efficiency",
+    "math-reasoning"
+  ],
+  "image": null,
+  "summary_en": "The paper addresses the dataset mismatch problem in reinforcement learning from verifiable rewards (RLVR) using group relative policy optimization (GRPO), where source training data rarely matches target test data. It proposes learning-to-reweight rollout (L2RR), which incorporates target-side performance feedback from a small held-out target set without sharing target prompts. L2RR learns a discrete sampling distribution over source prompts via a bi-level objective that maximizes accuracy on the held-out target set while penalizing uninformative rollouts. Experiments on six math reasoning benchmarks and three model scales show that L2RR improves target-domain performance and increases rollout efficiency.",
+  "summary_zh": "本文针对可验证奖励强化学习（RLVR）中组相对策略优化（GRPO）面临的数据集不匹配问题，提出学习重加权 rollout（L2RR）方法。L2RR 利用来自小型保留目标集的有限聚合反馈（无需共享目标提示），通过双层目标学习源提示上的离散采样分布，以最大化目标集准确率并惩罚信息量低的 rollout。在六个数学推理基准和三种模型规模上的实验表明，L2RR 提升了目标域性能并提高了 rollout 效率。",
+  "content_en": "Recently, reinforcement learning from verifiable rewards (RLVR) is practically very important, where the leading approach is group relative policy optimization (GRPO) that typically faces a trade-off between rollout efficiency and downstream performance. To improve efficiency while preserving performance, existing selective rollout methods mainly exploit only source-side training dynamics to optimize the discrete distribution over source prompts. However, in practice, the source training dataset is rarely identically distributed to the target test dataset. When such a mismatch exists, due to legal or privacy constraints, it is usually not acceptable to share target prompts themselves with the RLVR trainer. Nevertheless, it is still possible for the target data owner to provide limited aggregated feedback from a small held-out target set without revealing target prompts or rollout traces. In this paper, we propose learning-to-reweight rollout (L2RR) that explicitly incorporates target-side performance feedback into GRPO. Specifically, L2RR learns a discrete sampling distribution over source prompts by optimizing a bi-level objective that maximizes accuracy on a held-out target dataset, while simultaneously penalizing rollouts that provide little incremental learning information. Empirical studies on six math reasoning benchmarks and three model scales show that L2RR improves target-domain performance and increases rollout efficiency.",
+  "content_zh": "近年来，基于可验证奖励的强化学习（RLVR）在实践中非常重要，其中主流方法是组相对策略优化（GRPO），但该方法通常面临 rollout 效率与下游性能之间的权衡。为了在保持性能的同时提升效率，现有的选择性 rollout 方法主要仅利用源侧训练动态来优化源提示上的离散分布。然而，在实践中，源训练数据集很少与目标测试数据集同分布。当存在这种不匹配时，由于法律或隐私限制，通常不可接受将目标提示本身共享给 RLVR 训练器。尽管如此，目标数据所有者仍然可以提供来自小型留出目标集的有限聚合反馈，而不暴露目标提示或 rollout 轨迹。在本文中，我们提出学习重加权 rollout（L2RR），将目标侧性能反馈显式地纳入 GRPO。具体而言，L2RR 通过优化一个双层目标来学习源提示上的离散采样分布，该目标最大化留出目标数据集上的准确率，同时惩罚提供少量增量学习信息的 rollout。在六个数学推理基准和三种模型规模上的实证研究表明，L2RR 提升了目标域性能并提高了 rollout 效率。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

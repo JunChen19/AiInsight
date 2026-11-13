@@ -1,0 +1,26 @@
+{
+  "id": "20261113-steerable-multi-objective-group-relative-db7888",
+  "url": "https://arxiv.org/abs/2611.09634v1",
+  "title_en": "Steerable Multi-Objective Group-Relative Preference Optimization with Jointly Trained Low-Rank Adapters",
+  "title_zh": "可操控多目标群相对偏好优化与联合训练低秩适配器",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.09634v1",
+  "published": "2026-11-06T15:50:32Z",
+  "fetched_at": "2026-11-13T03:31:40Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "preference-optimization",
+    "low-rank-adapters",
+    "multi-objective",
+    "parameter-efficient"
+  ],
+  "image": null,
+  "summary_en": "LambdaMix is a parameter-efficient method for learning a preference-conditioned family of policies using group-relative online reinforcement learning. It jointly trains one low-rank adapter per objective over a frozen base model, where a preference vector selects the adapter mixture and weights normalized rewards. A single training run supports changing preferences at inference without further optimization. Experiments on four models for helpfulness/harmlessness and math problem solving with instruction following show LambdaMix achieves higher hypervolume than conditioned and policy merging baselines, using fewer training completions and storing fewer adapter parameters than GRPO specialist policies. Varying adapter mixtures and objective weights together yields wider score ranges and higher coverage than varying either alone.",
+  "summary_zh": "LambdaMix 是一种参数高效的方法，利用群相对在线强化学习学习偏好条件化的策略族。它在冻结的基础模型上为每个目标联合训练一个低秩适配器，通过偏好向量选择适配器混合并加权归一化奖励。单次训练运行即可在推理时改变偏好而无需进一步优化。在四个模型上的有用性/无害性及数学问题求解并遵循指令的实验表明，LambdaMix 在所有四个模型上均比条件化和策略合并基线获得更高的超体积，且比 GRPO 专家策略使用更少的训练完成次数和存储更少的适配器参数。同时改变适配器混合和目标权重比单独改变任一者能获得更宽的分数范围和更高的覆盖率。",
+  "content_en": "Language model deployment often requires different trade-offs between competing objectives as user preferences change, yet standard post-training methods typically produce a single policy for a fixed objective weighting. We introduce LambdaMix, a new parameter efficient method for learning a preference conditioned family of policies with group-relative online reinforcement learning. LambdaMix jointly trains one low-rank adapter per objective over a frozen base model. One preference vector selects the adapter mixture that generates responses and weights the separately normalized rewards used to update the adapters. A single training run supports changing preferences at inference without further optimization. We experiment with four models on helpfulness and harmlessness and on solving math problems while following instructions. We also evaluate the two largest models on rewriting comments to preserve wording while reducing clues about personal attributes. On the first two tasks, LambdaMix achieves higher hypervolume than all evaluated conditioned and policy merging baselines across all four models. LambdaMix uses fewer training completions and stores fewer adapter parameters than a set of GRPO specialist policies. With architecture and initialization fixed, varying adapter mixtures and objective weights together gives wider score ranges and higher coverage than varying either alone.",
+  "content_zh": "语言模型部署往往需要在竞争性目标之间做出不同权衡，因为用户偏好会变化，而标准的后训练方法通常针对固定目标权重生成单一策略。我们提出 LambdaMix，这是一种新的参数高效方法，利用组相对在线强化学习来学习以偏好为条件的一组策略。LambdaMix 在冻结的基础模型上，为每个目标联合训练一个低秩适配器。一个偏好向量选择用于生成响应的适配器混合，并对分别归一化的奖励进行加权，这些奖励用于更新适配器。单次训练运行支持在推理时改变偏好而无需进一步优化。我们在有用性和无害性任务上，以及在遵循指令的同时解决数学问题任务上，对四个模型进行了实验。我们还评估了两个最大的模型在重写评论时的表现，要求在保留措辞的同时减少关于个人属性的线索。在前两个任务上，LambdaMix 在所有四个模型上都比所有评估过的条件方法和策略合并基线取得了更高的超体积。与一组 GRPO 专家策略相比，LambdaMix 使用的训练补全更少，存储的适配器参数也更少。在架构和初始化固定的情况下，同时改变适配器混合和目标权重比单独改变任一者能获得更宽的分数范围和更高的覆盖率。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

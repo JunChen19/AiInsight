@@ -1,0 +1,26 @@
+{
+  "id": "20261113-co-evolving-policy-and-reward-for-code-g-f485ab",
+  "url": "https://arxiv.org/abs/2610.26416v1",
+  "title_en": "Co-Evolving Policy and Reward for Code Generation: A Mechanistic Study of Single-Adapter Drift",
+  "title_zh": "代码生成中策略与奖励的协同演化：单适配器漂移的机制研究",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.26416v1",
+  "published": "2026-10-19T13:48:27Z",
+  "fetched_at": "2026-11-13T03:42:32Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "code-generation",
+    "reward-model",
+    "policy-drift",
+    "grpo"
+  ],
+  "image": null,
+  "summary_en": "The study investigates whether the Synergistic Policy and Reward Co-Evolving Framework (SPARK), which recycles training rollouts to co-train a policy and reward model, transfers effectively to code generation and whether execution-grounded reflection aids self-improvement. Using Qwen2.5-Coder-3B-Instruct, SPARK-style rollout recycling is compared with execution-only Group Relative Policy Optimization (GRPO). Results do not support either hypothesis: co-evolution improves training performance but gains do not generalize to held-out problems. Rollout recycling yields roughly 34x greater KL divergence from the reference policy than execution-only GRPO at the same training stage, and trained tokens per GRPO sequence fall from 185 to 86 as training pass rate increases while held-out performance declines or fails to sustain early gains. The authors characterize this as single-adapter policy drift, where shared trainable parameters increasingly depart from the reference policy.",
+  "summary_zh": "本研究探讨了最初为推理任务设计的协同策略与奖励协同演化框架（SPARK）是否能有效迁移到代码生成任务，以及基于执行反馈的反思是否能提供额外的自我改进来源。使用Qwen2.5-Coder-3B-Instruct，比较了SPARK风格的rollout回收与仅基于执行的组相对策略优化（GRPO）。结果不支持任一假设：协同演化提升了训练性能，但这些增益无法泛化到留出问题。在相同训练阶段，rollout回收产生的KL散度约为仅执行GRPO的34倍；随着训练通过率上升，每个GRPO序列的训练token数从185降至86，而留出性能下降或未能维持早期增益。作者将此现象称为单适配器策略漂移，即共享的可训练参数日益偏离参考策略。",
+  "content_en": "Reinforcement learning with verifiable rewards (RLVR) is particularly well suited to code generation because generated programs can be objectively evaluated through execution. Execution also provides behavioral information that can be reused as additional supervision. The Synergistic Policy and Reward Co-Evolving Framework (SPARK), originally proposed for reasoning tasks, exploits this idea by recycling training rollouts and their evaluation results to train a model not only to generate solutions but also to evaluate and improve them. We investigate whether this policy-reward co-evolution approach transfers effectively to code generation and whether execution-grounded reflection provides an additional source of self-improvement. We compare SPARK-style rollout recycling with execution-only Group Relative Policy Optimization (GRPO) using Qwen2.5-Coder-3B-Instruct. Our results do not support either hypothesis under the configuration tested. Although co-evolution improves training performance, these gains do not generalize to held-out problems. Compared at the same stage of training, rollout recycling produces roughly 34x greater KL divergence from the reference policy than execution-only GRPO. Over training, trained tokens per GRPO sequence fall from 185 to 86 as training pass rate increases, while held-out performance declines or fails to sustain early gains. We characterize these patterns as single-adapter policy drift: the shared trainable parameters increasingly depart from",
+  "content_zh": "带可验证奖励的强化学习（RLVR）特别适合代码生成，因为生成的程序可以通过执行进行客观评估。执行还提供了行为信息，这些信息可以作为额外的监督信号加以复用。协同策略与奖励共同演化框架（SPARK）最初是为推理任务提出的，它利用这一思想，通过回收训练 rollout 及其评估结果来训练模型，不仅生成解决方案，还能评估和改进解决方案。我们研究这种策略-奖励共同演化方法是否能有效迁移到代码生成，以及基于执行的反省是否提供了额外的自我改进来源。我们使用 Qwen2.5-Coder-3B-Instruct 比较了 SPARK 风格的 rollout 回收与仅基于执行的组相对策略优化（GRPO）。在测试的配置下，我们的结果不支持这两个假设中的任何一个。尽管共同演化提升了训练性能，但这些增益并不能泛化到留出问题。在训练的相同阶段进行比较，rollout 回收产生的与参考策略的 KL 散度大约比仅基于执行的 GRPO 大 34 倍。在训练过程中，随着训练通过率提高，每个 GRPO 序列的训练 token 数从 185 下降到 86，而留出性能下降或未能维持早期增益。我们将这些模式描述为单适配器策略漂移：共享的可训练参数越来越偏离",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

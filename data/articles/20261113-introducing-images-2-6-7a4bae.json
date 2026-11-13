@@ -1,0 +1,26 @@
+{
+  "id": "20261113-introducing-images-2-6-7a4bae",
+  "url": "https://openai.com/index/introducing-images-2-6",
+  "title_en": "Introducing Images 2.6",
+  "title_zh": "Introducing Images 2.6",
+  "source_name": "OpenAI",
+  "source_url": "https://openai.com/index/introducing-images-2-6",
+  "published": "2026-11-04T00:00:00Z",
+  "fetched_at": "2026-11-13T03:38:23Z",
+  "type": "blog",
+  "category": "model-release",
+  "tags": [
+    "image-generation",
+    "model-release",
+    "api",
+    "gif",
+    "editing"
+  ],
+  "image": null,
+  "summary_en": "Images 2.6 is a new image generation model that delivers faster image generation, GIF creation, more precise editing, and new API controls. It is available across ChatGPT, Codex, and the API. The update focuses on improving speed and editing precision while adding new capabilities like GIF creation and enhanced API controls.",
+  "summary_zh": "Images 2.6 是一个新的图像生成模型，提供更快的图像生成、GIF 创建、更精确的编辑以及新的 API 控制。它已在 ChatGPT、Codex 和 API 中可用。此次更新专注于提升速度和编辑精度，同时增加 GIF 创建和增强的 API 控制等新功能。",
+  "content_en": "Images 2.6 brings faster image generation, GIF creation, more precise editing, and new API controls across ChatGPT, Codex, and the API.",
+  "content_zh": "Images 2.6 在 ChatGPT、Codex 和 API 中带来更快的图像生成、GIF 创建、更精确的编辑以及新的 API 控制。",
+  "content_note": "fallback_snippet",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261113-grit-gradient-masking-for-visually-misgr-453e42",
+  "url": "https://arxiv.org/abs/2610.41629v1",
+  "title_en": "GRIT: Gradient Masking for Visually Misgrounded Tokens in Text-Rich Reasoning",
+  "title_zh": "GRIT: 用于文本丰富推理中视觉错误接地令牌的梯度掩码",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.41629v1",
+  "published": "2026-10-30T12:05:54Z",
+  "fetched_at": "2026-11-13T03:41:38Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlvr",
+    "vision-language-models",
+    "visual-grounding",
+    "gradient-masking",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper identifies a phenomenon called Correct-but-Visually-Misgrounded Reasoning (CVMR) in vision-language models (VLMs) trained with reinforcement learning with verifiable rewards (RLVR), where models produce correct final answers despite misperceiving visual information in intermediate steps. Standard RLVR rewards only final-answer correctness, thus reinforcing both grounded and misgrounded reasoning equally. Token-level analysis shows CVMR tokens have distinct attention patterns. To address this, the authors propose GRIT, a training framework that incorporates visual grounding into RLVR via gradient masking for visually misgrounded tokens. They also introduce GRIT-Bench, a benchmark for text-rich reasoning across text length and reasoning depth. Experiments show GRIT improves both reasoning accuracy and grounding fidelity over existing RLVR methods.",
+  "summary_zh": "本文揭示了视觉语言模型（VLM）在可验证奖励强化学习（RLVR）下出现的一种现象：正确但视觉错误接地的推理（CVMR），即模型在中间步骤中错误感知视觉信息却得出正确答案。标准RLVR仅奖励最终答案正确性，因此同等强化了正确接地和错误接地的推理。令牌级分析表明，CVMR令牌具有独特的注意力模式。基于此，作者提出GRIT训练框架，通过梯度掩码将视觉接地融入RLVR，以减轻CVMR的影响。此外，他们引入了GRIT-Bench基准，用于跨文本长度和推理深度的文本丰富推理系统评估。实验表明，GRIT在推理准确性和接地保真度上均优于现有RLVR方法。",
+  "content_en": "Reinforcement learning with verifiable rewards (RLVR) has recently been extended to vision-language models (VLMs), yet its effectiveness remains limited for text-rich reasoning tasks. We highlight a key factor contributing to this limitation: models frequently arrive at correct final answers despite misperceiving visual information during intermediate steps. We define this phenomenon as Correct-but-Visually-Misgrounded Reasoning (CVMR). Because standard RLVR rewards only final-answer correctness, it fails to differentiate between properly grounded and misgrounded reasoning, reinforcing both equally. Through token-level analysis, we reveal that CVMR tokens exhibit distinct attention patterns that differ systematically from well-grounded ones. Based on this observation, we propose GRIT, a training framework that incorporates visual grounding into RLVR to mitigate the impact of CVMR. Furthermore, to address the lack of text-rich reasoning benchmarks that allow for systematic evaluation across text length and reasoning depth, we introduce GRIT-Bench. Experiments demonstrate that GRIT significantly improves both reasoning accuracy and grounding fidelity over existing RLVR methods.",
+  "content_zh": "带有可验证奖励的强化学习（RLVR）近期已被扩展到视觉语言模型（VLMs），但其在文本密集型推理任务上的有效性仍然有限。我们指出导致这一局限的一个关键因素：模型在中间步骤中尽管对视觉信息产生了错误感知，却常常得出正确的最终答案。我们将这一现象定义为“正确但视觉依据错误推理”（Correct-but-Visually-Misgrounded Reasoning，CVMR）。由于标准 RLVR 仅奖励最终答案的正确性，它无法区分依据正确的推理与依据错误的推理，从而对两者给予同等强化。通过 token 级分析，我们揭示 CVMR token 表现出与依据正确的 token 系统性不同的独特注意力模式。基于这一观察，我们提出 GRIT，一个将视觉依据融入 RLVR 的训练框架，以减轻 CVMR 的影响。此外，为解决缺乏能够在文本长度和推理深度上进行系统性评估的文本密集型推理基准的问题，我们引入了 GRIT-Bench。实验表明，与现有 RLVR 方法相比，GRIT 显著提升了推理准确性和依据保真度。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

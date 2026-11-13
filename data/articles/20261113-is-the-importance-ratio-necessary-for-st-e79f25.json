@@ -1,0 +1,26 @@
+{
+  "id": "20261113-is-the-importance-ratio-necessary-for-st-e79f25",
+  "url": "https://arxiv.org/abs/2611.15404v1",
+  "title_en": "Is the Importance Ratio Necessary for Stable Reinforcement Learning in LLMs?",
+  "title_zh": "LLM强化学习稳定性：重要性比率是否必要？",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.15404v1",
+  "published": "2026-11-11T12:31:55Z",
+  "fetched_at": "2026-11-13T03:33:12Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "llm",
+    "policy-optimization",
+    "training-stability",
+    "importance-sampling"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes Likelihood-Gated Policy Optimization (LGPO), which eliminates the need to compute old-policy likelihoods for importance sampling ratios by enforcing a soft trust region constraint via likelihood-based gating. Experiments show that removing the importance sampling correction term does not harm training stability, while removing the trust region mechanism can lead to collapse. Ratio-based clipping can fail in fully on-policy training because the importance ratio stays at 1, never activating the constraint. Under standard settings where GRPO is stable, LGPO achieves comparable stability and peak performance while reducing training time by ~18% on average. In fully on-policy training where GRPO fails, LGPO remains stable.",
+  "summary_zh": "本文提出似然门控策略优化（LGPO），通过基于似然的门控机制施加软信任域约束，从而无需计算旧策略似然来构建重要性采样比率。实验表明，移除重要性采样校正项不会损害训练稳定性，而移除信任域机制则可能导致崩溃。基于比率的裁剪在全在线策略训练中可能失效，因为重要性比率保持为1，约束从未激活。在GRPO稳定的标准训练设置下，LGPO达到相当的训练稳定性和峰值性能，同时平均减少约18%的训练时间。在GRPO失败的全在线策略训练中，LGPO仍保持稳定。",
+  "content_en": "Reinforcement learning (RL) has become central to post-training large language models (LLMs). However, popular RL methods like GRPO incur non-negligible overhead by computing both old-policy and current-policy likelihoods to form importance sampling ratios. In this work, we propose Likelihood-Gated Policy Optimization (LGPO), which enforces a soft trust region constraint via likelihood-based gating, eliminating the need to compute old-policy likelihoods. Empirically, we show that removing the importance sampling correction term does not harm training stability, whereas removing the trust region mechanism can lead to collapse. Moreover, ratio-based clipping can fail in fully on-policy training: the importance ratio stays at 1, so the ratio-based trust region constraint never activates. Under standard training settings where GRPO is stable, LGPO achieves comparable training stability and peak performance while reducing training time by ~18% on average relative to a standard implementation that recomputes old-policy likelihoods. In fully on-policy training, where GRPO fails, LGPO remains stable, enabling more efficient and robust LLM RL post-training across training regimes.",
+  "content_zh": "强化学习（RL）已成为大语言模型（LLM）后训练的核心环节。然而，GRPO 等主流 RL 方法需要同时计算旧策略与当前策略的似然以构造重要性采样比率，由此带来不可忽视的开销。在本工作中，我们提出似然门控策略优化（Likelihood-Gated Policy Optimization，LGPO），通过基于似然的门控施加软信任域约束，从而无需计算旧策略似然。实验表明，移除重要性采样修正项不会损害训练稳定性，而移除信任域机制则可能导致训练崩溃。此外，基于比率的裁剪在完全同策略训练中可能失效：重要性比率始终为 1，基于比率的信任域约束永远不会被激活。在 GRPO 稳定的标准训练设置下，LGPO 取得了可比的训练稳定性和峰值性能，同时相对于重新计算旧策略似然的标准实现，平均减少约 18% 的训练时间。在 GRPO 失效的完全同策略训练中，LGPO 仍保持稳定，从而能够在不同训练范式下实现更高效、更稳健的 LLM RL 后训练。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

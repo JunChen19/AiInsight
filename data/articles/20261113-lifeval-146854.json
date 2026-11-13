@@ -1,0 +1,25 @@
+{
+  "id": "20261113-lifeval-146854",
+  "url": "https://openai.com/index/lifeval",
+  "title_en": "LifeVal",
+  "title_zh": "LifeVal：评估AI完成日常任务的基准",
+  "source_name": "OpenAI",
+  "source_url": "https://openai.com/index/lifeval",
+  "published": "2026-11-02T09:00:00Z",
+  "fetched_at": "2026-11-13T03:38:27Z",
+  "type": "blog",
+  "category": "performance",
+  "tags": [
+    "benchmark",
+    "evaluation",
+    "ai-assistant",
+    "real-world-tasks"
+  ],
+  "image": null,
+  "summary_en": "LifeVal is a new benchmark that measures how well AI assists people with everyday tasks such as finding childcare, managing finances, and handling government paperwork. It evaluates AI performance in real-world scenarios rather than traditional academic benchmarks. The benchmark aims to provide a standardized way to assess AI's practical utility in daily life.",
+  "summary_zh": "LifeVal是一个新基准，用于衡量AI在帮助人们完成日常任务（如寻找托儿服务、管理财务和处理政府文书）方面的表现。它评估AI在现实场景中的性能，而非传统学术基准。该基准旨在提供一种标准化方法来评估AI在日常生活中的实际效用。",
+  "content_en": "Introducing LifeVal, a benchmark measuring how well AI helps people complete everyday tasks, from finding childcare to managing finances and government paperwork.",
+  "content_zh": "隆重推出 LifeVal，这是一个衡量 AI 在多大程度上帮助人们完成日常任务的基准，涵盖从寻找托儿服务到管理财务和政府文书等各类事务。",
+  "content_note": "fallback_snippet",
+  "translation_failed": false
+}

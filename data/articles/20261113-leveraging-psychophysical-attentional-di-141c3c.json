@@ -1,0 +1,26 @@
+{
+  "id": "20261113-leveraging-psychophysical-attentional-di-141c3c",
+  "url": "https://arxiv.org/abs/2611.13477v1",
+  "title_en": "Leveraging Psychophysical Attentional Distribution for Gaze-Augmented Reward Modeling",
+  "title_zh": "利用心理物理注意力分布进行眼动增强的奖励建模",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.13477v1",
+  "published": "2026-11-10T02:36:14Z",
+  "fetched_at": "2026-11-13T03:32:06Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reward-model",
+    "eye-tracking",
+    "rlhf",
+    "attention",
+    "preference-learning"
+  ],
+  "image": null,
+  "summary_en": "This paper extends fixation-centric reward modeling by incorporating psychophysical findings on human letter recognition. It models visual attention as a spatially graded distribution centered on the current gaze location and integrates this representation into reward model training. The proposed gaze-augmented reward model achieves higher preference prediction accuracy than a baseline model. Qualitative results align with established findings on human attention during reading, suggesting the model captures cognitively meaningful aspects of attention allocation.",
+  "summary_zh": "本文扩展了以注视点为中心的奖励建模方法，结合人类字母识别的心理物理学发现，将视觉注意力建模为以当前注视位置为中心的空间分级分布，并将该表示融入奖励模型训练。实验表明，采用所提眼动分布训练的奖励模型在偏好预测准确率上优于基线模型。部分定性结果与阅读过程中人类注意力的已知发现一致，表明该模型可能捕捉到了注意力分配中具有认知意义的方面。",
+  "content_en": "Integrating human feedback into language models has gained increasing attention as a means to align model outputs with human preferences, with Reinforcement Learning from Human Feedback (RLHF) serving as a prominent framework for preference-based alignment. Recent studies have incorporated eye-tracking (ET) data as an additional supervisory signal for reward model training, grounding reward learning in human reading behavior. Building on this approach, we extend prior fixation-centric models by leveraging established findings from cognitive psychology on human letter recognition. Specifically, we model visual attention as a spatially graded distribution centered on the current gaze location and incorporate this representation into reward model training. Our results show that the reward model trained with the proposed gaze distribution achieves higher preference prediction accuracy than a baseline model. Moreover, some results from our experiments are qualitatively consistent with established findings on human attention during reading, suggesting that they potentially capture cognitively meaningful aspects of human attention allocation.",
+  "content_zh": "将人类反馈整合到语言模型中，作为使模型输出与人类偏好对齐的一种手段，已日益受到关注，其中基于人类反馈的强化学习（RLHF）是基于偏好对齐的一个突出框架。近期研究已将眼动追踪（ET）数据作为奖励模型训练的额外监督信号，使奖励学习建立在人类阅读行为的基础之上。在此方法的基础上，我们利用认知心理学关于人类字母识别的既有发现，扩展了先前以注视点为中心的模型。具体而言，我们将视觉注意力建模为以当前注视位置为中心的空间分级分布，并将这一表示纳入奖励模型训练。我们的结果表明，使用所提出的注视分布训练的奖励模型在偏好预测准确率上高于基线模型。此外，我们实验中的一些结果在定性上与关于人类阅读过程中注意力的既有发现相一致，这表明它们可能捕捉到了人类注意力分配中具有认知意义的方面。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

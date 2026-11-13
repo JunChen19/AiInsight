@@ -1,0 +1,26 @@
+{
+  "id": "20261113-bird-rl-scaling-agentic-reinforcement-le-a57d7b",
+  "url": "https://arxiv.org/abs/2610.29426v1",
+  "title_en": "BIRD-RL: Scaling Agentic Reinforcement Learning over Stateful Data-Centric Environments",
+  "title_zh": "BIRD-RL: 在状态化数据中心环境中扩展智能体强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.29426v1",
+  "published": "2026-10-21T08:50:39Z",
+  "fetched_at": "2026-11-13T03:42:43Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "agentic-rl",
+    "sql-debugging",
+    "benchmark",
+    "efficiency"
+  ],
+  "image": null,
+  "summary_en": "BIRD-RL introduces a four-stage agentic reinforcement learning curriculum for small language models that alternates between enhancing foundational agent reasoning and trajectory-adaptive on-policy exploration to avoid instability in end-to-end learning. It is driven by a Trajectory-scoped Persistent Execution Infrastructure that enables safe database replica reuse while preserving trajectory isolation, improving spatial RL efficiency by 12.8x without requiring Kubernetes. On the BIRD-CRITIC-SQLite benchmark, 7B and 14B models achieve success rates of 44.40% and 48.00%, respectively, showing competitive performance against strong proprietary model-based approaches.",
+  "summary_zh": "BIRD-RL 提出一种四阶段智能体强化学习课程，交替增强基础智能体推理和轨迹自适应同策略探索，以避免端到端学习的不稳定性。其核心是轨迹作用域持久执行基础设施，在保持轨迹隔离的同时安全复用数据库副本，将空间 RL 效率提升 12.8 倍，且无需 Kubernetes。在 BIRD-CRITIC-SQLite 基准上，7B 和 14B 模型分别达到 44.40% 和 48.00% 的成功率，与强专有模型方法相比具有竞争力。",
+  "content_en": "While agentic reinforcement learning (RL) has emerged as a promising paradigm for training small language models (SLMs), existing frameworks are predominantly tool-centric and struggle with data-centric environments. Specifically, applying tool-centric frameworks to stateful tasks like SQL debugging introduces severe spatial inefficiencies since proper environment isolation typically requires a separate database container per rollout. Naively reusing databases without tracking evolving states across multi-turn interactions causes trajectory contamination and cross-trajectory interference, which severely destabilizes policy updates. To overcome these bottlenecks, we introduce BIRD-RL, a novel four-stage agentic RL curriculum that alternately enhances foundational agent reasoning and trajectory-adaptive on-policy exploration to circumvent the instability inherently associated with direct end-to-end learning. Crucially, to support this curriculum, BIRD-RL is driven by a Trajectory-scoped Persistent Execution Infrastructure, which enables safe database replica reuse while preserving trajectory isolation. This design improves spatial RL efficiency by 12.8x, successfully enabling scalable agentic RL for complex data-centric tasks without needs of Kubernettes. Empirical evaluations on the BIRD-CRITIC-SQLite benchmark demonstrate that our 7B and 14B models achieve Success Rates of 44.40% and 48.00%, respectively, showing competitive performance against strong proprietary model-based",
+  "content_zh": "尽管智能体强化学习（RL）已成为训练小语言模型（SLM）的一种有前景的范式，但现有框架大多以工具为中心，难以应对以数据为中心的环境。具体而言，将以工具为中心的框架应用于 SQL 调试等有状态任务会引入严重的空间效率问题，因为恰当的环境隔离通常需要为每次 rollout 配备独立的数据库容器。若在多轮交互中不跟踪演化状态而直接复用数据库，会导致轨迹污染和跨轨迹干扰，从而严重破坏策略更新的稳定性。为克服这些瓶颈，我们提出 BIRD-RL，一种新颖的四阶段智能体 RL 课程，交替增强基础智能体推理与轨迹自适应的同策略探索，以规避直接端到端学习固有的不稳定性。关键在于，为支撑该课程，BIRD-RL 由轨迹作用域持久执行基础设施驱动，该基础设施支持安全的数据库副本复用，同时保持轨迹隔离。该设计将空间 RL 效率提升 12.8 倍，成功实现了面向复杂以数据为中心任务的可扩展智能体 RL，且无需 Kubernettes。在 BIRD-CRITIC-SQLite 基准上的实证评估表明，我们的 7B 和 14B 模型分别达到 44.40% 和 48.00% 的成功率，与强大的专有模型相比展现出有竞争力的性能",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

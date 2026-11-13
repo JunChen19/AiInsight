@@ -1,0 +1,26 @@
+{
+  "id": "20261113-sopo-socratic-guided-policy-optimization-0a7193",
+  "url": "https://arxiv.org/abs/2610.32212v2",
+  "title_en": "SOPO: Socratic Guided Policy Optimization for Span-Level Hallucination Detection",
+  "title_zh": "SOPO：苏格拉底引导的策略优化用于跨度级幻觉检测",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.32212v2",
+  "published": "2026-10-23T06:08:17Z",
+  "fetched_at": "2026-11-13T03:41:23Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "hallucination-detection",
+    "llm",
+    "reward-sparsity",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces Socratic Guided Policy Optimization (SOPO), a multi-turn reinforcement learning framework for span-level hallucination detection in LLMs. SOPO addresses localization ambiguity, reward sparsity, and length inflation by using a teacher model to provide indirect hints from ground truth during rollout, enabling better reasoning on hard examples. It also incorporates Turn-based Advantage Scaling to penalize verbosity. On RAGTruth, SOPO (4B) achieves state-of-the-art performance, surpassing proprietary models like GPT-5 and standard RL baselines, and outperforms GRPO on four out-of-domain benchmarks. Training and evaluation code for 1.7B and 4B models are released.",
+  "summary_zh": "本文提出了苏格拉底引导的策略优化（SOPO），一种用于大语言模型跨度级幻觉检测的多轮强化学习框架。SOPO通过教师模型在 rollout 过程中提供基于真实答案的间接提示，缓解了奖励稀疏性问题，使模型能对困难样本生成更有效的推理轨迹。同时引入基于轮次的优势缩放（Turn-based Advantage Scaling）来惩罚冗长偏好。在 RAGTruth 数据集上，SOPO（4B）取得了最先进性能，超越了 GPT-5 等领先专有模型和标准 RL 基线，并在四个域外基准上平均得分高于 GRPO。作者发布了 1.7B 和 4B 模型的训练与评估代码。",
+  "content_en": "Large Language Models (LLMs) have gained widespread adoption in various natural language processing tasks, but suffer from hallucination issues where they generate unfaithful or inconsistent content. While Reinforcement Learning with Verifiable Rewards (RLVR) has shown promising applications in reasoning tasks, its application to span-level hallucination detection is challenged by localization ambiguity, reward sparsity on hard examples, and uncontrolled length inflation. To address these issues, we introduce Socratic Guided Policy Optimization (SOPO), a multi-turn RL framework for robust hallucination detection. The key innovation of SOPO is a Socratic feedback mechanism, where a teacher model guides the reasoning trajectories during rollout by providing indirect hints inferred from the ground truth. This teacher-guided approach enables the model to generate more effective reasoning trajectories for hard examples, thus alleviating reward sparsity. Furthermore, we incorporate Turn-based Advantage Scaling to penalize verbosity bias, encouraging the model to develop efficient and autonomous reasoning capabilities. Empirical results on RAGTruth demonstrate that SOPO (4B) achieves state-of-the-art performance, surpassing leading proprietary models (e.g., GPT-5) and standard RL baselines, while obtaining higher reported mean scores than GRPO on four out-of-domain benchmarks, with mixed evidence against CAPO. We release our training and evaluation code alongside the 1.7B and 4B SOP",
+  "content_zh": "大型语言模型（LLMs）已在各类自然语言处理任务中得到广泛采用，但存在幻觉问题，即生成不忠实或不一致的内容。尽管带可验证奖励的强化学习（RLVR）在推理任务中已展现出有前景的应用，但其在跨度级幻觉检测中的应用仍面临定位歧义、困难样本上的奖励稀疏以及长度膨胀失控等挑战。为解决这些问题，我们提出了苏格拉底引导策略优化（Socratic Guided Policy Optimization, SOPO），一种用于稳健幻觉检测的多轮强化学习框架。SOPO 的核心创新在于苏格拉底式反馈机制：教师模型在 rollout 过程中通过提供从真实答案推断出的间接提示来引导推理轨迹。这种教师引导方法使模型能够为困难样本生成更有效的推理轨迹，从而缓解奖励稀疏问题。此外，我们引入了基于轮次的优势缩放（Turn-based Advantage Scaling）来惩罚冗长偏好，鼓励模型发展高效且自主的推理能力。在 RAGTruth 上的实证结果表明，SOPO（4B）达到了最先进的性能，超越了领先的专有模型（如 GPT-5）和标准强化学习基线，同时在四个域外基准上获得了比 GRPO 更高的报告平均分，与 CAPO 相比则证据不一。我们发布了训练和评估代码，以及 1.7B 和 4B 的 SOP",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

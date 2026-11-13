@@ -1,0 +1,26 @@
+{
+  "id": "20261113-interq-rl-interaction-aware-correction-o-1d7e31",
+  "url": "https://arxiv.org/abs/2610.35303v1",
+  "title_en": "InterQ-RL: Interaction-Aware Correction of Execution Mismatch in Quantized Agentic RL",
+  "title_zh": "InterQ-RL：量化智能体强化学习中的交互感知执行不匹配校正",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.35303v1",
+  "published": "2026-10-26T12:08:44Z",
+  "fetched_at": "2026-11-13T03:42:27Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "quantized-rl",
+    "agentic-rl",
+    "execution-mismatch",
+    "multi-turn",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "InterQ-RL addresses execution mismatch in quantized multi-turn agent reinforcement learning, where low-precision rollouts serve as the behavior policy and cause history-dependent divergence from the learner. It applies bounded execution-prefix correction over the state-reaching policy history, allocates correction strength across action segments by effective support under a fixed displacement budget, and requires no additional model forward pass. Evaluated on ALFWorld, WebShop, and ScienceWorld with dense and MoE backbones from 4B to 30B under W8A8-KV8 quantization, InterQ-RL achieves the strongest quantized endpoint, matching BF16 within 0.7 points and exceeding it in two settings.",
+  "summary_zh": "InterQ-RL 针对量化多轮智能体强化学习中的执行不匹配问题：低精度 rollout 作为行为策略，导致与学习器之间产生依赖历史的偏差。该方法在状态到达策略历史上施加有界执行前缀校正，在固定位移预算下按有效支持度分配各动作段的校正强度，且无需额外模型前向传播。在 ALFWorld、WebShop 和 ScienceWorld 上，使用 4B 到 30B 的稠密和 MoE 骨干网络，在 W8A8-KV8 量化下评估，InterQ-RL 取得了最强的量化端点结果，与 BF16 的差距在 0.7 分以内，并在两个设置中超过 BF16。",
+  "content_en": "Multi-turn agent reinforcement learning (RL) relies on long closed-loop rollouts, making generation and KV-cache costs a major bottleneck. Quantized rollout reduces these costs, but its low-precision executor also serves as the behavior policy and can induce execution mismatch with the learner. Existing quantized-RL methods are designed primarily for single-turn generation. They align the learner forward with quantized rollout or correct the current-token rollout-learner ratio, without modeling the policy history that produces each agent state. Even after quantization alignment, residual rollout-learner mismatch accumulates along the state-reaching policy history, so a current action may look locally aligned despite a mismatched history. We introduce InterQ-RL (Interaction-aware Quantized Reinforcement Learning) to correct this post-alignment mismatch. It applies bounded execution-prefix correction over the state-reaching policy history, allocates correction strength across action segments by effective support under a fixed displacement budget, and requires no additional model forward pass. We evaluate dense and mixture-of-experts (MoE) backbones from 4B to 30B on ALFWorld, WebShop, and ScienceWorld, with all quantized arms sharing the same rollout with 8-bit weights, activations, and KV cache (W8A8-KV8). Across four environment-backbone settings, InterQ-RL achieves the strongest quantized endpoint result, matching BF16 to within 0.7 points and exceeding it in two settings. I",
+  "content_zh": "多轮智能体强化学习（RL）依赖长闭环 rollout，这使得生成和 KV-cache 成本成为主要瓶颈。量化 rollout 可以降低这些成本，但其低精度执行器同时充当行为策略，可能引发与学习器之间的执行不匹配。现有的量化 RL 方法主要面向单轮生成设计。它们将学习器前向与量化 rollout 对齐，或校正当前 token 的 rollout-学习器比率，而未对产生每个智能体状态的政策历史进行建模。即使在量化对齐之后，残余的 rollout-学习器不匹配仍会沿着到达该状态的政策历史累积，因此当前动作可能在局部看似对齐，但历史却不匹配。我们提出 InterQ-RL（交互感知量化强化学习）来校正这种对齐后不匹配。它在到达状态的政策历史上施加有界执行前缀校正，在固定位移预算下按有效支撑度将校正强度分配到各动作段，且无需额外的模型前向传播。我们在 ALFWorld、WebShop 和 ScienceWorld 上评估了从 4B 到 30B 的稠密和混合专家（MoE）骨干模型，所有量化分支共享相同的 rollout，采用 8 位权重、激活和 KV cache（W8A8-KV8）。在四种环境-骨干设置中，InterQ-RL 取得了最强的量化端点结果，与 BF16 的差距在 0.7 分以内，并在两种设置中超过 BF16。I",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261113-knowledge-in-the-harness-reliability-in-ebe965",
+  "url": "https://arxiv.org/abs/2611.15268v1",
+  "title_en": "Knowledge in the Harness, Reliability in the Weights: Teacher-Free Co-Evolution of an LLM Agent",
+  "title_zh": "知识在技能中，可靠性在权重中：LLM智能体的无教师协同进化",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.15268v1",
+  "published": "2026-11-11T09:56:09Z",
+  "fetched_at": "2026-11-13T03:35:07Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "llm-agent",
+    "reinforcement-learning",
+    "grpo",
+    "lora",
+    "tau-bench"
+  ],
+  "image": null,
+  "summary_en": "The paper studies whether a small open model (Gemma 4 12B) can improve policy adherence and consistency from its own deployment logs without a stronger teacher. The agent reads domain policy from on-demand skills, and in each round, the base model diagnoses failed conversations and writes rules into skills, which are validated via code checks, counterexample self-review, paired retest, and a noise-calibrated gate. Reinforcement learning (GRPO) then trains a LoRA adapter on complete multi-turn tool-using conversations. On τ²-bench retail and airline domains, after two rounds, the agent improves by 12.5 and 19.5 pass^1 points and 18.4 and 22.0 pass^4 points over the starting point, and exceeds the benchmark's reference agent by 11.8 and 8.0 pass^1 points and 22.8 and 16.0 pass^4 points, closing most of the gap to three frontier models. A 2x2 ablation shows that rules rescue tasks the agent never solved and carry policy knowledge that RL alone does not.",
+  "summary_zh": "本文研究小型开源模型（Gemma 4 12B）能否仅凭自身部署日志和参考结果，在没有更强教师模型的情况下，同时提升策略遵循性和行为一致性。智能体从按需技能中读取领域策略，每轮部署系统处理新任务批次，基础模型诊断失败对话并将规则写入技能，规则需通过代码检查、反例自审、配对重测和噪声校准验证门。随后使用强化学习（GRPO）在完整多轮工具使用对话上训练LoRA适配器。在τ²-bench的零售和航空领域，经过两轮迭代，智能体相比起点分别提升12.5和19.5个pass^1点，以及18.4和22.0个pass^4点；同时超过基准参考智能体（将完整策略置于系统提示中）11.8和8.0个pass^1点，以及22.8和16.0个pass^4点，缩小了与三个前沿模型的大部分差距。2x2消融实验表明，规则能挽救智能体从未解决的任务，并携带强化学习无法单独获得的策略知识。",
+  "content_en": "Small open models suit private customer-service deployments but trail frontier models in two ways: they miss what the written policy requires in a given situation, and they act inconsistently on what they know. We study whether such a model can close both gaps from its own deployment logs and their reference outcomes, without a stronger teacher model. Our starting point is a Gemma 4 12B agent that reads its domain policy from on-demand skills rather than from its system prompt. In each round, the deployed system serves a fresh batch of tasks; the base model diagnoses failed conversations and writes rules into the skills, and a rule survives only if it passes code checks, counterexample self-review, a paired retest, and a noise-calibrated validation gate. Reinforcement learning (GRPO) then trains a LoRA adapter on complete multi-turn, tool-using conversations. On the retail and airline domains of $τ^2$-bench, without training or selecting on official tasks, the agent after two rounds improves on this starting point by 12.5 pass$^1$ points in retail and 19.5 in airline, and by 18.4 and 22.0 pass$^4$ points. It also exceeds the benchmark's reference agent, which runs the same model with the whole policy in its system prompt, by 11.8 and 8.0 pass$^1$ points and by 22.8 and 16.0 pass$^4$ points, closing most of the gap to three frontier models under the same protocol. A $2\\times2$ ablation shows that the rules rescue tasks the agent never solved and carry policy knowledge that RL",
+  "content_zh": "小型开放模型适合私有客服部署，但在两个方面落后于前沿模型：它们会遗漏书面政策在特定情境下所要求的内容，并且对已知内容的行为不一致。我们研究此类模型能否仅凭自身部署日志及其参考结果来弥合这两个差距，而无需更强的教师模型。我们的起点是一个 Gemma 4 12B 智能体，它从按需技能中读取领域政策，而非从系统提示中读取。每一轮中，部署系统处理一批新任务；基础模型诊断失败的对话并将规则写入技能中，而一条规则只有在通过代码检查、反例自审、配对重测和噪声校准验证门后才能保留。随后，强化学习（GRPO）在完整的多轮、使用工具的对话上训练一个 LoRA 适配器。在 $τ^2$-bench 的零售和航空领域，且未在官方任务上训练或选择的情况下，该智能体经过两轮后在起点基础上提升了 12.5 个 pass$^1$ 点和 19.5 个 pass$^1$ 点（零售和航空），以及 18.4 和 22.0 个 pass$^4$ 点。它还超过了基准的参考智能体——该智能体运行相同模型并将完整政策置于系统提示中——分别高出 11.8 和 8.0 个 pass$^1$ 点，以及 22.8 和 16.0 个 pass$^4$ 点，在相同协议下弥合了与三个前沿模型的大部分差距。一个 $2\\times2$ 消融实验表明，这些规则挽救了智能体从未解决的任务，并承载了 RL 所",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

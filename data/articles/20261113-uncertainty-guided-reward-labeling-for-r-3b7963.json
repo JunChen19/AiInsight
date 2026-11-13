@@ -1,0 +1,26 @@
+{
+  "id": "20261113-uncertainty-guided-reward-labeling-for-r-3b7963",
+  "url": "https://arxiv.org/abs/2611.11091v1",
+  "title_en": "Uncertainty-Guided Reward Labeling for Reinforcement Learning under Limited Feedback",
+  "title_zh": "有限反馈强化学习中的不确定性引导奖励标注（SURE）",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.11091v1",
+  "published": "2026-11-08T03:12:38Z",
+  "fetched_at": "2026-11-13T03:33:41Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "reward-labeling",
+    "uncertainty",
+    "successor-features",
+    "limited-feedback"
+  ],
+  "image": null,
+  "summary_en": "This paper studies reinforcement learning under limited feedback (RLLF) in the retained-label setting, where queried rewards can be stored and used to fit a reward model before policy learning. The authors bound the suboptimality of the learned policy in terms of offline RL error on a fixed dataset and reward-model uncertainty, showing that the limited labeling budget should be used to reduce reward uncertainty strategically. They propose Successor-Guided Uncertainty REduction (SURE), which uses successor features to select rewards that are both uncertain and associated with states from which high-valued states are reachable. SURE is formally derived from a bound-induced design objective, its exact one-step marginal gain is characterized, and empirically it reaches near full-feedback performance with few reward labels across a variety of settings.",
+  "summary_zh": "本文研究有限反馈强化学习（RLLF）中的保留标签设定：被查询的奖励可被存储并用于在策略学习前拟合奖励模型。作者将所学策略的次优性上界分解为两部分误差——固定离线数据集上的离线 RL 误差，以及奖励模型的不确定性——并据此指出有限的标注预算应被用于策略性地降低奖励不确定性。为此提出 Successor-Guided Uncertainty REduction（SURE）方法，利用后继特征（successor features）选择既具有不确定性、又与可到达高价值状态的状态相关联的奖励。作者从由界导出的设计目标形式化推导出 SURE，并刻画了其精确的单步边际增益；实验表明 SURE 在多种设定下仅用少量奖励标签即可达到接近全反馈的性能。",
+  "content_en": "In reinforcement learning from limited feedback (RLLF), only a small fraction of an offline dataset can be labeled with rewards, and the central question is which samples should be labeled to learn a high-performing policy from the resulting partially labeled dataset. Prior work formalized this as a reward-selection problem by focusing on the selection stage while treating downstream policy learning as a black box, in a regime where queried rewards are not retained for reward-model training. We instead study the retained-label setting, where queried rewards can be stored and used to fit a reward model before policy learning. We bound the suboptimality of the learned policy in terms of two sources of error: one arising from offline RL on a fixed, offline dataset, and the other from uncertainty in the reward model. Since reward selection cannot change the offline dataset, the limited labeling budget must be used to strategically reduce reward uncertainty. Motivated by RLLF's observation that useful rewards tend to keep the agent on high-return trajectories, we introduce Successor-Guided Uncertainty REduction (SURE), a novel method that uses successor features to select rewards that are both uncertain and associated with states from which high-valued states are reachable. We formally derive SURE from a bound-induced design objective and characterize its exact one-step marginal gain. Empirically, SURE reaches near full-feedback performance with few reward labels across a variety",
+  "content_zh": "在有限反馈强化学习（RLLF）中，离线数据集中只有一小部分可以被标注奖励，核心问题是应当标注哪些样本，以便从由此得到的部分标注数据集中学习到高性能策略。先前的工作将这一问题形式化为奖励选择问题，聚焦于选择阶段，同时将下游策略学习视为黑箱，其所处的设定中查询到的奖励不会被保留用于奖励模型训练。我们则研究保留标签设定，其中查询到的奖励可以被存储，并在策略学习之前用于拟合奖励模型。我们从两个误差来源界定了所学策略的次优性：一个来源于在固定的离线数据集上进行离线 RL，另一个来源于奖励模型中的不确定性。由于奖励选择无法改变离线数据集，有限的标注预算必须用于策略性地降低奖励不确定性。受 RLLF 观察的启发——有用的奖励往往使智能体保持在高校益轨迹上——我们提出了成功者引导的不确定性降低方法（Successor-Guided Uncertainty REduction，SURE），这是一种新方法，利用后继特征来选择既具有不确定性、又与可到达高价值状态的状态相关联的奖励。我们正式从界诱导的设计目标推导出 SURE，并刻画了其精确的一步边际增益。在实证上，SURE 在多种……",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

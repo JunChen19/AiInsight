@@ -1,0 +1,26 @@
+{
+  "id": "20261113-encoding-memory-in-world-models-with-tes-cd258c",
+  "url": "https://arxiv.org/abs/2611.09625v1",
+  "title_en": "Encoding Memory in World Models with Test-Time Model-Based Reinforcement Learning",
+  "title_zh": "基于测试时模型强化学习在世界模型中编码记忆",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.09625v1",
+  "published": "2026-11-06T15:45:54Z",
+  "fetched_at": "2026-11-13T03:31:55Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "model-based-rl",
+    "test-time-adaptation",
+    "memory",
+    "world-models",
+    "reinforcement-learning"
+  ],
+  "image": null,
+  "summary_en": "This paper introduces Test-Time Model-Based Reinforcement Learning (TT-MBRL) to address long-term memory in model-based RL. Instead of relying solely on architectural design, TT-MBRL uses gradient descent at test time to encode episode observations into world model parameters, creating a distinct world model per episode. It shows consistent improvements on a 2D variant of Memory Maze and achieves new state-of-the-art on the 3D Memory Maze benchmark. TT-MBRL also maintains strong performance on non-memory benchmarks like DeepMind Control and Atari 100k.",
+  "summary_zh": "本文提出测试时模型强化学习（TT-MBRL），通过测试时梯度下降将情节观察编码到世界模型参数中，为每个情节学习独特的世界模型，从而解决基于模型的强化学习中的长期记忆问题。在Memory Maze的二维简化版本上，TT-MBRL在不同世界模型架构下均表现出一致改进；在三维Memory Maze基准上达到新的最先进水平。此外，TT-MBRL在DeepMind Control和Atari 100k等非记忆基准上保持强劲性能。",
+  "content_en": "Model-based reinforcement learning (MBRL) approaches have demonstrated strong performance across diverse domains in recent years, learning accurate world models from agent trajectories. However, despite this progress, current approaches still struggle to surpass human performance on tasks that require long-term memory and planning. In this work, we address the problem of long-term memory in MBRL by moving beyond the commonly studied paradigm of architecture design. We introduce Test-Time Model-Based Reinforcement Learning (TT-MBRL), using gradient descent at test time to encode the memory of episode observations into world model parameters. This enables the agent to learn a distinct world model for each episode, improving memory capabilities compared to traditional approaches that solely rely on contextual memory. We first establish a proof of concept on a simplified two-dimensional variant of the Memory Maze environment, which we refer to as Memory Maze 2D, showing consistent improvements across different world model architectures. We then demonstrate the effectiveness of TT-MBRL in the 3D domain, achieving new state-of-the-art results on the Memory Maze benchmark. Finally, we show that TT-MBRL maintains strong performance on non-memory benchmarks such as DeepMind Control and Atari 100k.",
+  "content_zh": "基于模型的强化学习（MBRL）方法近年来在多个领域展现出强劲性能，能够从智能体轨迹中学习准确的世界模型。然而，尽管取得了这些进展，当前方法在需要长期记忆和规划的任务上仍难以超越人类表现。在本工作中，我们通过超越通常研究的架构设计范式，来解决 MBRL 中的长期记忆问题。我们提出了测试时基于模型的强化学习（TT-MBRL），在测试时使用梯度下降将情节观测的记忆编码到世界模型参数中。这使得智能体能够为每个情节学习一个独特的世界模型，与仅依赖上下文记忆的传统方法相比，提升了记忆能力。我们首先在 Memory Maze 环境的一个简化二维变体上建立概念验证，我们将其称为 Memory Maze 2D，展示了在不同世界模型架构上的一致改进。随后，我们在 3D 领域展示了 TT-MBRL 的有效性，在 Memory Maze 基准上取得了新的最先进结果。最后，我们表明 TT-MBRL 在非记忆基准（如 DeepMind Control 和 Atari 100k）上保持了强劲性能。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

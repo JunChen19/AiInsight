@@ -1,0 +1,26 @@
+{
+  "id": "20261113-jais-3-introducing-arabic-centric-agenti-168519",
+  "url": "https://arxiv.org/abs/2611.10224v1",
+  "title_en": "Jais 3: Introducing Arabic-centric Agentic AI",
+  "title_zh": "Jais 3：面向阿拉伯语的智能体AI模型系列发布",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.10224v1",
+  "published": "2026-11-06T21:11:05Z",
+  "fetched_at": "2026-11-13T03:31:16Z",
+  "type": "paper",
+  "category": "model-release",
+  "tags": [
+    "arabic-llm",
+    "agentic-ai",
+    "model-release",
+    "rlvr",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "Jais 3 is a family of six open, Arabic-centric agentic language models ranging from 0.9B to 375B parameters. Instead of pretraining from scratch, each model is adapted from the fully open K2 Horizon fleet via continual pretraining on Arabic data, followed by supervised fine-tuning (SFT), final token preference optimization (FTPO), and reinforcement learning with verifiable rewards (RLVR). The models are trained to plan multi-step tasks, call tools and MCP servers, operate a terminal, search the web, and edit PDFs, spreadsheets, and presentations, while communicating in Arabic. Jais 3 covers Modern Standard Arabic and major regional dialects, inherits a 512K-token context window (except the 0.9B model), and its 375B variant is claimed to be the largest open Arabic-centric language model to date. Evaluation uses fully generative assessment on audited Arabic benchmarks, where Jais 3 matches or outperforms comparable open-weight models on Arabic and agentic tasks.",
+  "summary_zh": "Jais 3 是一个包含六个开放、以阿拉伯语为中心的智能体语言模型系列，参数规模从 0.9B 到 375B。该系列并非从头预训练，而是基于完全开放的 K2 Horizon 模型族，通过持续预训练适配阿拉伯语，再经过监督微调（SFT）、最终 token 偏好优化（FTPO）和可验证奖励的强化学习（RLVR）训练而成。模型被训练用于规划多步任务、调用工具和 MCP 服务器、操作终端、搜索网页，以及读取、编辑和生成 PDF、电子表格和演示文件，同时用阿拉伯语与用户交流。Jais 3 覆盖现代标准阿拉伯语和主要地区方言，继承 K2 Horizon 的 512K token 上下文窗口（0.9B 模型除外），其 375B 版本据称是迄今最大的开放阿拉伯语中心语言模型。评估采用基于审计阿拉伯语基准的完全生成式评估，Jais 3 在阿拉伯语和智能体基准上匹配或超越同等规模的开源权重模型。",
+  "content_en": "We present Jais 3, a fleet of six open, Arabic-centric agentic language models ranging from 0.9B to 375B parameters. Jais 3 is built to complete tasks for Arabic speakers, not only to answer questions in plain text: it is trained to plan multi-step tasks, call tools and Model Context Protocol (MCP) servers, operate a terminal, search the web, and read, edit, and produce PDF, spreadsheet, and presentation files, while communicating with the user in Arabic. Instead of pretraining from scratch, we adapt each model of the fully open K2 Horizon fleet to Arabic through continual pretraining, followed by supervised fine-tuning (SFT), final token preference optimization (FTPO), and reinforcement learning with verifiable rewards (RLVR). We combine natural Arabic text with translated, transliterated, and synthetic Arabic, and replay the base model's own training data to keep its reasoning, agentic, and English abilities. Jais 3 covers Modern Standard Arabic and the major regional dialects, follows instructions with Arabic-specific constraints, and inherits the 512K-token context window of K2 Horizon (all models except the 0.9B). To our knowledge, its 375B model is the largest open Arabic-centric language model to date. For evaluation, we revisit how Arabic models are assessed, moving to fully generative evaluation on audited Arabic benchmarks. Across model sizes, Jais 3 matches or outperforms open-weight models of comparable size on Arabic and agentic benchmarks, with particularly stro",
+  "content_zh": "我们推出 Jais 3，这是一个由六个开放的、以阿拉伯语为核心的智能体语言模型组成的系列，参数规模从 0.9B 到 375B 不等。Jais 3 的构建目标是為阿拉伯语使用者完成任务，而不仅仅是用纯文本回答问题：它经过训练，能够规划多步骤任务、调用工具和 Model Context Protocol (MCP) 服务器、操作终端、搜索网络，以及读取、编辑和生成 PDF、电子表格和演示文件，同时用阿拉伯语与用户交流。我们并非从头预训练，而是通过持续预训练、随后进行监督微调（SFT）、最终 token 偏好优化（FTPO）以及带可验证奖励的强化学习（RLVR），将完全开放的 K2 Horizon 系列中的每个模型适配到阿拉伯语。我们将自然阿拉伯语文本与翻译、音译和合成的阿拉伯语相结合，并回放基础模型自身的训练数据，以保持其推理、智能体和英语能力。Jais 3 涵盖现代标准阿拉伯语和主要地区方言，遵循带有阿拉伯语特定约束的指令，并继承 K2 Horizon 的 512K token 上下文窗口（0.9B 以外的所有模型）。据我们所知，其 375B 模型是迄今为止最大的开放以阿拉伯语为核心的语言模型。在评估方面，我们重新审视了阿拉伯语模型的评估方式，转向在经审计的阿拉伯语基准上进行完全生成式评估。在各个模型规模上，Jais 3 在阿拉伯语和智能体基准上达到或超过同等规模的开源权重模型，尤其在 str",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

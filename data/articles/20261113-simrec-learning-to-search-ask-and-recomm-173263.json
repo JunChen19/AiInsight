@@ -1,0 +1,26 @@
+{
+  "id": "20261113-simrec-learning-to-search-ask-and-recomm-173263",
+  "url": "https://arxiv.org/abs/2611.15426v1",
+  "title_en": "SimRec: Learning to Search, Ask, and Recommend from Simulated Interaction",
+  "title_zh": "SimRec：通过模拟交互学习搜索、询问与推荐",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.15426v1",
+  "published": "2026-11-11T12:53:52Z",
+  "fetched_at": "2026-11-13T03:35:00Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "recommendation",
+    "llm-agent",
+    "user-simulation",
+    "grpo"
+  ],
+  "image": null,
+  "summary_en": "SimRec is a reinforcement learning framework that trains the full interaction policy of a tool-integrated LLM-based recommendation agent, moving beyond hand-designed workflows and isolated component optimization. It introduces a task-anchored user simulator that provides feedback conditioned on the current task need (implemented as an external LLM or via self-play) and a task-aligned reward that optimizes the entire trajectory with GRPO, crediting retrieval quality and valid tool use alongside final hits, with training-only target injection to handle sparse hits. On ESCI and Amazon C4, SimRec improves NDCG@100 of a Qwen3-4B agent from 32.23% to 35.42% and from 22.94% to 24.72%, respectively, outperforming training-free agents on larger backbones and task-aligned baselines. Analysis shows the trained agent verifies candidates, uses preferences, and recovers from rejected recommendations more frequently than its untrained counterpart.",
+  "summary_zh": "SimRec 是一个强化学习框架，用于训练工具集成式 LLM 推荐代理的完整交互策略，超越了手工设计的工作流和孤立组件优化。它引入任务锚定的用户模拟器（基于当前任务需求而非用户画像提供反馈，可由外部 LLM 或自对弈实现）和任务对齐的奖励函数，使用 GRPO 优化整个轨迹，在最终命中之外还奖励自然检索质量和有效工具使用，并通过仅训练时的目标注入处理大目录下的稀疏命中问题。在 ESCI 和 Amazon C4 数据集上，SimRec 将 Qwen3-4B 代理的 NDCG@100 分别从 32.23% 提升至 35.42% 和从 22.94% 提升至 24.72%，优于在更大骨干模型上的免训练代理和任务对齐基线。分析表明，训练后的代理比未训练版本更频繁地验证候选、利用偏好并从被拒绝的推荐中恢复。",
+  "content_en": "LLM-based recommendation agents can search catalogs, inspect products, ask users, and revise rejected recommendations. However, these behaviors are often governed by hand-designed workflows, while existing training methods optimize isolated components such as query rewriting or list ranking rather than the interaction policy as a whole. We present SimRec, a reinforcement learning framework that trains the full interaction policy of a tool-integrated recommendation agent. SimRec introduces two components. A task-anchored user simulator provides feedback on every recommendation: conditioned on the current task need rather than on user profile, and it can be an external LLM or the recommender itself under self-play. A task-aligned reward optimizes the whole trajectory with GRPO, crediting natural retrieval quality and valid tool use alongside the final hit, with training-only target injection to handle sparse hits over large catalogs. On ESCI and Amazon C4, SimRec improves the NDCG@100 of a Qwen3-4B agent from 32.23% to 35.42% and from 22.94% to 24.72%}, outperforming training-free agents on far larger backbones and task-aligned baselines on NDCG. Analysis shows that the trained agent verifies candidates, uses preferences, and recovers from rejected recommendations far more often than its untrained counterpart. Our code is available at https://github.com/ZJU-REAL/SimRec .",
+  "content_zh": "基于大语言模型（LLM）的推荐智能体能够搜索目录、查看商品、询问用户，并对被拒绝的推荐进行修正。然而，这些行为通常由人工设计的工作流所支配，而现有的训练方法仅优化诸如查询重写或列表排序等孤立组件，而非将交互策略作为一个整体进行优化。我们提出 SimRec，一个强化学习框架，用于训练工具集成式推荐智能体的完整交互策略。SimRec 引入了两个组件。一个任务锚定的用户模拟器对每一次推荐提供反馈：它以当前任务需求而非用户画像为条件，并且可以是外部 LLM，也可以在自我对弈下由推荐器自身充当。一个任务对齐的奖励使用 GRPO 优化整个轨迹，在最终命中之外，还对自然的检索质量和有效的工具使用给予奖励，并通过仅训练时使用的目标注入来处理大规模目录下的稀疏命中问题。在 ESCI 和 Amazon C4 上，SimRec 将 Qwen3-4B 智能体的 NDCG@100 从 32.23% 提升至 35.42%，从 22.94% 提升至 24.72%，在 NDCG 上优于参数量大得多的无训练智能体以及任务对齐的基线方法。分析表明，经过训练的智能体比未训练的对应版本更频繁地验证候选、利用偏好，并从被拒绝的推荐中恢复。我们的代码可在 https://github.com/ZJU-REAL/SimRec 获取。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

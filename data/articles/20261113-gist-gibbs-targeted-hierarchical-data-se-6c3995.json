@@ -1,0 +1,26 @@
+{
+  "id": "20261113-gist-gibbs-targeted-hierarchical-data-se-6c3995",
+  "url": "https://arxiv.org/abs/2611.06395v1",
+  "title_en": "GIST: Gibbs-Targeted Hierarchical Data Selection for Offline RLVR",
+  "title_zh": "GIST: 面向离线RLVR的Gibbs目标分层数据选择",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.06395v1",
+  "published": "2026-11-04T12:01:21Z",
+  "fetched_at": "2026-11-13T03:35:24Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlvr",
+    "offline-rl",
+    "data-selection",
+    "kl-divergence",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "Offline reinforcement learning with verifiable rewards (RLVR) trains on a fixed pool of sampled responses and typically supervises every token, although responses and tokens are not equally informative. The authors analyze which responses and tokens to supervise through the Gibbs-optimal policy of KL-regularized RLVR and measure the mismatch between a policy and this target with a bidirectional KL divergence. At the reference policy, this mismatch factorizes exactly: correct responses contribute mainly through the forward term, concentrated on their low-probability tokens, and incorrect responses through the reverse term, concentrated on frequently generated responses and their high-probability tokens. Based on this, they propose GIST, a two-level selection method that uses sampling temperature to select correct responses on-policy and incorrect responses near the policy's mode, and uses the initial policy's token probabilities to supervise only tokens where the mismatch lies. Applied to two offline training objectives, GIST raises average accuracy over GSM8K, MATH-500, and MBPP for all three models under both objectives. In a controlled comparison on Qwen3-0.6B/GSM8K, it outperforms seven selection baselines while supervising only 66.6% of tokens.",
+  "summary_zh": "离线可验证奖励强化学习（RLVR）在固定的采样响应池上训练，通常监督每个响应的每个token，尽管响应和token的信息量并不相同。作者通过KL正则化RLVR的Gibbs最优策略分析了应监督哪些响应和token，并用双向KL散度衡量策略与该目标之间的不匹配。在参考策略下，这种不匹配可精确分解：正确响应主要通过前向项贡献，集中在其低概率token上；错误响应主要通过反向项贡献，集中在策略频繁生成的响应及其高概率token上。基于此，他们提出了GIST（Gibbs目标分层数据选择），一种两级选择方法，利用采样温度在同策略上选择正确响应、在策略众数附近选择错误响应，并利用初始策略的token概率仅监督不匹配所在的token。应用于两个离线训练目标时，GIST在GSM8K、MATH-500和MBPP上提升了所有三个模型在两种目标下的平均准确率。在Qwen3-0.6B/GSM8K的受控比较中，它优于七个从相同候选者中选择的基线，同时仅监督66.6%的token。",
+  "content_en": "Offline reinforcement learning with verifiable rewards (RLVR) trains on a fixed pool of sampled responses and typically supervises every token of every response, although responses and tokens are not equally informative. We study which ones to supervise through the Gibbs-optimal policy of KL-regularized RLVR, which offline training targets, and measure the mismatch between a policy and this target with a bidirectional KL divergence. At the reference policy, this mismatch factorizes exactly and separates the two outcomes: correct responses contribute mainly through the forward term, concentrated on their low-probability tokens, and incorrect responses through the reverse term, concentrated on the responses the policy generates often and on their high-probability tokens. Based on this analysis, we propose GIST (Gibbs-Targeted Hierarchical Data Selection), a two-level selection method that approximates these principles with signals available before training. GIST uses the sampling temperature to select correct responses on-policy and incorrect responses near the policy's mode, and it uses the initial policy's token probabilities to supervise only the tokens where the mismatch lies. Applied to two offline training objectives, GIST raises the average accuracy over GSM8K, MATH-500, and MBPP for all three models under both objectives. In a controlled comparison on Qwen3-0.6B/GSM8K, it outperforms seven selection baselines that choose from the same candidates while supervising 66.6%",
+  "content_zh": "基于可验证奖励的离线强化学习（RLVR）在一个固定的采样响应池上进行训练，并且通常对每个响应的每个 token 都进行监督，尽管响应和 token 的信息量并不相同。我们通过 KL 正则化 RLVR 的 Gibbs 最优策略来研究应当监督哪些响应和 token——离线训练正是以该策略为目标——并用双向 KL 散度衡量策略与该目标之间的失配。在参考策略处，该失配可以精确分解，并将两种结果区分开来：正确响应主要通过前向项产生贡献，且集中在其低概率 token 上；错误响应则通过反向项产生贡献，且集中在策略经常生成的响应及其高概率 token 上。基于这一分析，我们提出 GIST（Gibbs-Targeted Hierarchical Data Selection），一种两级选择方法，它利用训练前可获得的信号来近似上述原则。GIST 使用采样温度在同策略上选择正确响应，并选择接近策略众数的错误响应；同时利用初始策略的 token 概率，仅监督失配所在的 token。将 GIST 应用于两个离线训练目标后，在两种目标下，它均提升了三个模型在 GSM8K、MATH-500 和 MBPP 上的平均准确率。在 Qwen3-0.6B/GSM8K 上的受控比较中，它优于七个从相同候选中进行选择的基线方法，同时仅监督 66.6%",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

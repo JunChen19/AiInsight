@@ -1,0 +1,26 @@
+{
+  "id": "20261113-jhima-webrl-a-joint-hierarchical-multi-a-f40a2b",
+  "url": "https://arxiv.org/abs/2611.05263v1",
+  "title_en": "JHiMA-WebRL: A Joint Hierarchical Multi-Agent Reinforcement Learning Framework for Long-Horizon Web Tasks",
+  "title_zh": "JHiMA-WebRL：面向长时程网页任务的联合分层多智能体强化学习框架",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.05263v1",
+  "published": "2026-11-03T17:49:14Z",
+  "fetched_at": "2026-11-13T03:33:23Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "multi-agent",
+    "web-agent",
+    "grpo",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "JHiMA-WebRL is a joint hierarchical multi-agent reinforcement learning framework for web agents that couples a task decomposer with an actor. The decomposer is trained using structured subtask supervision from a strong teacher model on multimodal GUI trajectories, and both decomposer and actor are fine-tuned with these annotations. Group Relative Policy Optimization (GRPO) is extended to jointly optimize both agents in WebArena via hierarchical rollout grouping and role-specific advantages. On WebArena-Lite-v2, JHiMA-WebRL-14B (7B actor + 7B decomposer) achieves 37.2% average success rate, outperforming ScaleCUA-32B's 24%.",
+  "summary_zh": "JHiMA-WebRL 是一个联合分层多智能体强化学习框架，将任务分解器（decomposer）与执行器（actor）耦合。利用强教师模型从多模态 GUI 轨迹中构建结构化子任务监督，并微调分解器和子任务条件执行器。扩展组相对策略优化（GRPO），通过分层 rollout 分组和角色特定优势在 WebArena 环境中联合优化两者。在 WebArena-Lite-v2 上，JHiMA-WebRL-14B（7B 执行器 + 7B 分解器）平均成功率达 37.2%，超过 ScaleCUA-32B 的 24%。",
+  "content_en": "Multimodal web agents have shown promising capabilities for interacting with websites through graphical user interfaces (GUIs), yet realistic web tasks often require long-horizon, multi-step planning that remains challenging for monolithic policies. Such agents must jointly infer high-level plans, navigate through intermediate states, track progress over extended interaction histories, and execute visually grounded actions. Although prior work has explored modular multi-agent systems with a separate planner, the planner is typically not updated jointly with the actor. We investigate whether explicitly separating and jointly training planning and execution provides a stronger inductive bias for long-horizon web navigation. We introduce JHiMA-WebRL, a joint hierarchical multi-agent reinforcement learning framework for web agents that couples a task decomposer with an actor. To train the decomposer, we use a strong teacher model to construct structured subtask supervision from multimodal GUI trajectories, and use these annotations to fine-tune both the decomposer and the subtask-conditioned actor. We then extend Group Relative Policy Optimization (GRPO) to jointly optimize the decomposer and actor in the interactive WebArena environment through hierarchical rollout grouping and role-specific advantages. On WebArena-Lite-v2, JHiMA-WebRL-14B, consisting of a 7B actor and a 7B decomposer, achieves an average success rate of 37.2%, compared with 24% for a ScaleCUA-32B agent that we",
+  "content_zh": "多模态网页智能体已展现出通过图形用户界面（GUI）与网站交互的良好能力，然而现实中的网页任务往往需要长时程、多步骤的规划，这对单体策略而言仍然具有挑战性。此类智能体必须联合推断高层计划、在中间状态间导航、在扩展的交互历史中跟踪进度，并执行基于视觉的动作。尽管已有工作探索了带有独立规划器的模块化多智能体系统，但规划器通常不与执行器联合更新。我们研究显式分离并联合训练规划与执行能否为长时程网页导航提供更强的归纳偏置。我们提出 JHiMA-WebRL，一个面向网页智能体的联合分层多智能体强化学习框架，它将任务分解器与执行器耦合在一起。为训练分解器，我们使用强教师模型从多模态 GUI 轨迹中构建结构化子任务监督，并利用这些标注对分解器和以子任务为条件的执行器进行微调。随后，我们扩展了组相对策略优化（GRPO），通过分层 rollout 分组和角色特定的优势，在交互式 WebArena 环境中联合优化分解器与执行器。在 WebArena-Lite-v2 上，由 7B 执行器和 7B 分解器组成的 JHiMA-WebRL-14B 取得了 37.2% 的平均成功率，而我们",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

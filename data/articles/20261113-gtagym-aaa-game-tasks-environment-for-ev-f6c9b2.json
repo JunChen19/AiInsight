@@ -1,0 +1,26 @@
+{
+  "id": "20261113-gtagym-aaa-game-tasks-environment-for-ev-f6c9b2",
+  "url": "https://arxiv.org/abs/2611.13028v2",
+  "title_en": "GTAGym: AAA Game Tasks Environment for Evaluation and Reinforcement Learning",
+  "title_zh": "GTAGym：用于评估与强化学习的AAA游戏任务环境",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.13028v2",
+  "published": "2026-11-09T08:59:36Z",
+  "fetched_at": "2026-11-13T03:33:18Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "benchmark",
+    "gta-v",
+    "llm-evaluation",
+    "environment"
+  ],
+  "image": null,
+  "summary_en": "GTAGym is an environment and framework for evaluating and training agents on GTA V tasks. Its benchmark, GTAVBench, includes 103 online tasks across nine task families derived from main-story missions, plus 47 image-based shooting and sniping tasks. A web server enables parallel testing via screenshots and keyboard-mouse actions with automatic outcome checks. Six frontier LLMs were evaluated, with the best configuration achieving 70.9% overall accuracy on GTAVBench-AGI, though aerial navigation, evasion, and interception remain difficult. GTAGym also provides a scalable generator for creating RL environments with automatic reward and termination signals, demonstrated by LoRA RL of Qwen3.8-27B on generated on-foot navigation tasks.",
+  "summary_zh": "GTAGym是一个用于在GTA V任务上评估和训练智能体的环境与框架。其基准GTAVBench包含源自主线任务的103个在线任务（涵盖九个任务族）以及47个基于图像的射击和狙击任务。Web服务器支持通过截图和键鼠操作进行并行测试，并自动检查引擎状态结果。研究评估了六个前沿LLM，最佳配置在GTAVBench-AGI上达到70.9%的整体准确率，但空中导航、躲避和拦截仍然困难。GTAGym还提供了一个可扩展的生成器，可在固定模板下根据用户指定的范围和选项集采样任务参数，批量创建具有自动奖励和终止信号的3D及图像射击环境，并通过在生成的徒步导航任务上对Qwen3.8-27B进行LoRA强化学习进行了演示。",
+  "content_en": "AAA games offer a rich testbed for evaluating agent perception, reasoning, and control. However, evaluating whether agents can complete tasks in AAA games is challenging and often human-annotated because task outcomes are often difficult to verify automatically, let alone applying it for Reinforcement Learning (RL). We introduce GTAGym, an environment and framework for evaluation and RL on GTA V tasks. Its evaluation benchmark, GTAVBench, derived from GTA V main-story missions, contains 103 online tasks reconstructed across nine task families, alongside 47 image-based shooting and sniping tasks using GTA V imagery. A web server provides access to the online environment and evaluation interface, supporting parallel testing through screenshots and keyboard-mouse actions with automatic engine-state outcome checks. We evaluate six frontier LLMs on GTAVBench with textual task instructions and on its GTAVBench-AGI branch, where instructions appear only in the first screenshot and a harness automatically compresses interaction history. The best configuration achieves 70.9% overall accuracy in GTAVBench-AGI, yet aerial navigation, evasion and interception remain difficult. GTAGym also provides a scalable generator that samples task parameters within user-specified ranges and option sets under fixed templates, creating batches of 3D and image-based shooting environments for RL with automatic reward and termination signals. LoRA RL of Qwen3.8-27B on generated on-foot navigation tasks i",
+  "content_zh": "AAA 游戏为评估智能体的感知、推理与控制能力提供了丰富的测试平台。然而，评估智能体能否在 AAA 游戏中完成任务颇具挑战性，且往往依赖人工标注，因为任务结果通常难以自动验证，更不用说将其用于强化学习（RL）。我们推出 GTAGym，这是一个用于 GTA V 任务评估与强化学习的环境和框架。其评估基准 GTAVBench 源自 GTA V 主线故事任务，包含跨九个任务家族重建的 103 个在线任务，以及 47 个使用 GTA V 图像的基于图像的射击和狙击任务。一个 Web 服务器提供对在线环境和评估接口的访问，支持通过截图和键盘鼠标操作进行并行测试，并自动检查引擎状态结果。我们在 GTAVBench 上以文本任务指令评估了六个前沿 LLM，并在其 GTAVBench-AGI 分支上进行评估，该分支中指令仅出现在第一张截图中，且一个测试框架会自动压缩交互历史。最佳配置在 GTAVBench-AGI 中达到 70.9% 的总体准确率，但空中导航、规避和拦截仍然困难。GTAGym 还提供了一个可扩展的生成器，可在固定模板下于用户指定的范围和选项集内采样任务参数，创建用于强化学习的 3D 和基于图像的射击环境批次，并带有自动奖励和终止信号。在生成的徒步导航任务上对 Qwen3.8-27B 进行 LoRA 强化学习 i",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

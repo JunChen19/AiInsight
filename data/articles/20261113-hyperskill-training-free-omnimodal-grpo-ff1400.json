@@ -1,0 +1,26 @@
+{
+  "id": "20261113-hyperskill-training-free-omnimodal-grpo-ff1400",
+  "url": "https://arxiv.org/abs/2611.15178v1",
+  "title_en": "HyperSkill: Training-Free Omnimodal GRPO via Hypergraph-Indexed Skill-Library Evolution",
+  "title_zh": "HyperSkill：基于超图索引技能库进化的免训练全模态GRPO",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.15178v1",
+  "published": "2026-11-11T08:20:21Z",
+  "fetched_at": "2026-11-13T03:32:01Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "training-free",
+    "hypergraph",
+    "omnimodal",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "HyperSkill is a training-free omnimodal GRPO framework that keeps the backbone frozen and replaces gradient updates with auditable edits to a hypergraph-indexed skill library, where skills are advantage-bearing nodes and compositions are hyperedges. It consists of three components: training-time distillation that admits counterfactually checked skills and learns a protocol skill from failures; gated hypergraph retrieval that injects advantage-ranked skills via a per-dataset gate; and an execution protocol that makes the frozen backbone commit to an answer. On 11 text, vision-language, and omnimodal benchmarks, HyperSkill is best or tied on every dataset and outperforms the best baseline by 13.0 average F1 points while keeping the backbone frozen.",
+  "summary_zh": "HyperSkill 是一个免训练的全模态 GRPO 框架，保持主干网络冻结，用对超图索引技能库的可审计编辑替代梯度更新，其中技能是携带优势的节点，组合是超边。它包含三个组件：训练时蒸馏，通过反事实检查接纳技能并从失败中学习协议技能；门控超图检索，通过每个数据集的门控注入按优势排序的技能；以及执行协议，使冻结的主干网络承诺给出答案。在 11 个文本、视觉语言和全模态基准上，HyperSkill 在每个数据集上均最佳或持平，平均 F1 比最佳基线高 13.0 分，同时保持主干冻结。",
+  "content_en": "Reinforcement learning sharpens LLM reasoning, but parameter updates are expensive, forgetful, and opaque; training-free libraries swap gradients for a textual store but still use trajectory-level, correlation-based admission and flat structure. To address both, we propose HyperSkill, a Training-Free Omnimodal GRPO framework that keeps the backbone frozen and replaces gradient updates with auditable edits to a Hypergraph-Indexed Skill-Library, where skills are advantage-bearing nodes and compositions are hyperedges. It has three components: training-time distillation admits counterfactually checked skills and learns a protocol skill from failures; gated hypergraph retrieval injects advantage-ranked skills where a per-dataset gate admits them; and an execution protocol makes the frozen backbone commit to an answer. On 11 text, vision-language, and omnimodal benchmarks, HyperSkill is best or tied on every dataset and beats the best baseline by 13.0 average F1 points while keeping the backbone frozen. Our software and data are publicly available at https://github.com/LHRLAB/HyperSkill.",
+  "content_zh": "强化学习提升了 LLM 的推理能力，但参数更新代价高昂、容易遗忘且不透明；免训练库用文本存储替代梯度，但仍采用轨迹级、基于相关性的准入机制和扁平结构。为同时解决这两个问题，我们提出 HyperSkill，一个免训练的 Omnimodal GRPO 框架，它保持骨干网络冻结，并用对超图索引技能库的可审计编辑替代梯度更新，其中技能是携带优势的节点，组合是超边。它包含三个组件：训练时蒸馏准入经过反事实检查的技能，并从失败中学习协议技能；门控超图检索在逐数据集门控允许的位置注入按优势排序的技能；执行协议使冻结的骨干网络承诺给出答案。在 11 个文本、视觉语言和多模态基准上，HyperSkill 在每个数据集上均取得最佳或并列最佳成绩，并在保持骨干网络冻结的情况下比最佳基线平均高出 13.0 个 F1 点。我们的软件和数据公开于 https://github.com/LHRLAB/HyperSkill。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

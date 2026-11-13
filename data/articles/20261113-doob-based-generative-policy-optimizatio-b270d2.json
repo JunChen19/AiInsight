@@ -1,0 +1,26 @@
+{
+  "id": "20261113-doob-based-generative-policy-optimizatio-b270d2",
+  "url": "https://arxiv.org/abs/2610.28990v1",
+  "title_en": "Doob-Based Generative Policy Optimization",
+  "title_zh": "基于Doob的生成策略优化",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.28990v1",
+  "published": "2026-10-20T23:31:50Z",
+  "fetched_at": "2026-11-13T03:43:11Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "diffusion-policy",
+    "flow-policy",
+    "policy-optimization",
+    "mujoco"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes Doob Policy Optimization (DoobPO), a framework for likelihood-free reinforcement learning fine-tuning of generative policies (diffusion and flow models) using Doob's h-transform. DoobPO separates policy improvement from generative policy learning: it first learns a lightweight ratio model representing the desired policy update, then distills the ratio-tilted target policy into the generative policy via conditional drift matching. This applies uniformly to diffusion and flow policies and supports policy improvement rules like PPO and GRPO. The authors prove that the practical conditional drift matching objective is gradient-equivalent to the ideal Doob drift matching objective, and show the induced diffusion process solves an endpoint-constrained stochastic optimal control problem, achieving minimum-energy modification. Experiments on MuJoCo continuous-control benchmarks show strong performance against competitive diffusion- and flow-policy baselines.",
+  "summary_zh": "本文提出Doob策略优化（DoobPO），一种利用Doob h-变换对生成策略（扩散模型和流模型）进行无似然强化学习微调的框架。DoobPO将策略改进与生成策略学习分离：首先学习一个表示所需策略更新的轻量级比率模型，然后通过条件漂移匹配将比率倾斜的目标策略蒸馏到生成策略中。该形式统一适用于扩散策略和流策略，并支持PPO、GRPO等策略改进规则。作者证明实际的条件漂移匹配目标与理想的Doob漂移匹配目标梯度等价，并表明诱导的扩散过程求解一个端点约束的随机最优控制问题，从而实现所需策略倾斜的最小能量修正。在MuJoCo连续控制基准上，DoobPO相较于有竞争力的扩散策略和流策略基线取得了强劲性能。",
+  "content_en": "Diffusion and flow models provide expressive policy classes for robotic and sequential decision-making systems. However, their action likelihoods are generally intractable, limiting the direct use of widely adopted policy optimization methods such as PPO and GRPO. We propose Doob Policy Optimization (DoobPO), a framework that leverages Doob's $h$-transform for likelihood-free reinforcement learning fine-tuning of generative policies. DoobPO separates policy improvement from generative policy learning. It first learns a lightweight ratio model that represents the desired policy update, and then distills the resulting ratio-tilted target policy into the generative policy via conditional drift matching. This formulation applies uniformly to both diffusion and flow policies and supports a broad family of policy improvement rules, including PPO and GRPO. We prove that the practical conditional drift matching objective is gradient-equivalent to the ideal Doob drift matching objective. We further show that the induced diffusion process solves an endpoint-constrained stochastic optimal control problem. This establishes that it achieves the minimum-energy modification required to realize the desired policy tilt. Across MuJoCo continuous-control benchmarks, DoobPO achieves strong performance against competitive diffusion- and flow-policy baselines, showing a principled and practical route to RL fine-tuning for generative policies.",
+  "content_zh": "扩散模型和流模型为机器人系统和序列决策系统提供了富有表现力的策略类。然而，它们的动作似然通常是难以处理的，这限制了PPO和GRPO等广泛采用的策略优化方法的直接使用。我们提出Doob策略优化（DoobPO），这是一个利用Doob的$h$-变换对生成式策略进行无似然强化学习微调的框架。DoobPO将策略改进与生成式策略学习分离。它首先学习一个轻量级比率模型来表示期望的策略更新，然后通过条件漂移匹配将所得的比率倾斜目标策略蒸馏到生成式策略中。该公式统一适用于扩散策略和流策略，并支持广泛的策略改进规则，包括PPO和GRPO。我们证明了实际的条件漂移匹配目标在梯度上等价于理想的Doob漂移匹配目标。我们进一步表明，所诱导的扩散过程求解了一个端点约束的随机最优控制问题。这确立了它实现了实现期望策略倾斜所需的最小能量修改。在MuJoCo连续控制基准上，DoobPO相对于有竞争力的扩散策略和流策略基线取得了强劲性能，展示了生成式策略RL微调的一条有原则且实用的途径。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

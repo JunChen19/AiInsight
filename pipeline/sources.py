@@ -53,7 +53,16 @@ def _entry_date(entry) -> datetime | None:
     return None
 
 
-def _fetch_feed(source: dict, cutoff: datetime) -> list[dict]:
+def _in_window(pub: datetime | None, cutoff: datetime, upper: datetime | None) -> bool:
+    """cutoff: 下限（更早的丢弃）；upper: 上限（更新的丢弃，回填用）。无日期视为在窗口内。"""
+    if pub and pub < cutoff:
+        return False
+    if upper and pub and pub > upper:
+        return False
+    return True
+
+
+def _fetch_feed(source: dict, cutoff: datetime, upper: datetime | None) -> list[dict]:
     """抓单个 RSS/Atom 源，返回窗口内的候选条目。"""
     try:
         resp = _get(source["url"])
@@ -70,7 +79,7 @@ def _fetch_feed(source: dict, cutoff: datetime) -> list[dict]:
         if not link or not title:
             continue
         pub = _entry_date(entry)
-        if pub and pub < cutoff:
+        if not _in_window(pub, cutoff, upper):
             continue  # 超出时间窗口
         items.append({
             "url": link,
@@ -86,7 +95,7 @@ def _fetch_feed(source: dict, cutoff: datetime) -> list[dict]:
     return items
 
 
-def _fetch_arxiv(cutoff: datetime) -> list[dict]:
+def _fetch_arxiv(cutoff: datetime, upper: datetime | None) -> list[dict]:
     """arXiv API：最近提交的强化学习论文（cs.LG / cs.AI）。"""
     try:
         resp = _get(f"{ARXIV_QUERY}&max_results={config.ARXIV_MAX}")
@@ -99,7 +108,7 @@ def _fetch_arxiv(cutoff: datetime) -> list[dict]:
     items = []
     for entry in feed.entries:
         pub = _entry_date(entry)
-        if pub and pub < cutoff:
+        if not _in_window(pub, cutoff, upper):
             continue
         items.append({
             "url": getattr(entry, "link", ""),
@@ -160,12 +169,14 @@ def keyword_score(item: dict) -> int:
 def gather_candidates(seen_norm_urls: set, seen_titles: list[str]) -> list[dict]:
     """抓全部源 → 时间窗口过滤 → URL/标题去重 → 关键词打分排序，返回候选列表。"""
     cutoff = datetime.now(timezone.utc) - timedelta(hours=config.FETCH_WINDOW_HOURS)
+    upper = (datetime.now(timezone.utc) - timedelta(hours=config.FETCH_UNTIL_HOURS)
+             if config.FETCH_UNTIL_HOURS > 0 else None)
 
     all_items: list[dict] = []
     for source in SOURCES:
-        all_items.extend(_fetch_feed(source, cutoff))
+        all_items.extend(_fetch_feed(source, cutoff, upper))
         time.sleep(0.5)  # 礼貌间隔
-    all_items.extend(_fetch_arxiv(cutoff))
+    all_items.extend(_fetch_arxiv(cutoff, upper))
 
     # URL 去重（含历史）；同批同 URL 保留先出现者（源列表按优先级排序）
     uniq: list[dict] = []

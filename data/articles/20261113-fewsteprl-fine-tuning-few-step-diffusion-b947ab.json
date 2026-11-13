@@ -1,0 +1,26 @@
+{
+  "id": "20261113-fewsteprl-fine-tuning-few-step-diffusion-b947ab",
+  "url": "https://arxiv.org/abs/2611.08240v1",
+  "title_en": "FewStepRL: Fine-tuning Few-step Diffusion Models with Reinforcement Learning",
+  "title_zh": "FewStepRL：用强化学习微调少步扩散模型",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.08240v1",
+  "published": "2026-11-05T16:19:52Z",
+  "fetched_at": "2026-11-13T03:32:50Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "diffusion-models",
+    "few-step",
+    "fine-tuning",
+    "flow-matching"
+  ],
+  "image": null,
+  "summary_en": "This work systematically adapts reinforcement learning (RL) objectives to few-step diffusion models, which model an average velocity over an interval rather than the instantaneous velocity assumed by existing many-step RL objectives. The authors propose a three-phase approach—transformation, decomposition, and adaptation—that expresses objectives in x-space, decomposes gradients into a self-regression term toward a reference plus a reward augmentation, and computes anchors from few-step models along their transport or tangent. This yields few-step versions of FlowGRPO, AWM, DiffusionNFT, DiffusionOPSD, and ReFL in one modular codebase. Experiments show reward-gradient-based methods are most effective when the reward is differentiable.",
+  "summary_zh": "该工作系统性地将强化学习（RL）目标适配到少步扩散模型——这类模型建模的是区间上的平均速度，而现有多步 RL 目标针对的是瞬时速度。作者提出三阶段方法：变换、分解与适配，将各目标统一表达在 x 空间，把梯度分解为向参考的自回归项与奖励增强项，并从少步模型的传输末端或切线方向计算锚点。由此在一个模块化代码库中实现了 FlowGRPO、AWM、DiffusionNFT、DiffusionOPSD 和 ReFL 的少步版本。实验表明，当奖励可微时，基于奖励梯度的方法最为有效。",
+  "content_en": "Reinforcement learning (RL) has become a standard post-training method for diffusion models, but most RL objectives roll out the current policy at every iteration, and with a many-step sampler these rollouts typically dominate the cost of training. Few-step models cut this cost, yet they model an average velocity over an interval, whereas existing RL objectives are built for an instantaneous velocity with a many-step sampler. We adapt RL objectives to few-step models systematically in three phases, namely a transformation, a decomposition and an adaptation. The transformation to $x$-space expresses each objective we consider through a common policy prediction, at the clean end by default and at an explicitly marked level for transition or flow-map objectives, so that objectives stated over densities, velocities or rewards become comparable. The decomposition writes the gradient of each of these objectives as the sum of a self-regression toward a reference and a reward augmentation, so that a method reduces, at the gradient level, to a choice of anchors and weights. The adaptation computes each anchor from a few-step model at the end of its transport or along its tangent, with the instantaneous velocity recovered from the network itself or from an auxiliary network. This yields few-step versions of FlowGRPO, AWM, DiffusionNFT, DiffusionOPSD and ReFL in one modular codebase. In our experiments, reward-gradient-based methods are the most effective when the reward is differentiab",
+  "content_zh": "强化学习（RL）已成为扩散模型的标准后训练方法，但大多数 RL 目标在每次迭代时都会展开当前策略，而在使用多步采样器时，这些展开通常会主导训练成本。少步模型降低了这一成本，但它们建模的是区间上的平均速度，而现有的 RL 目标是为多步采样器下的瞬时速度构建的。我们分三个阶段系统地将 RL 目标适配到少步模型，即变换、分解和适配。到 $x$ 空间的变换通过一个共同的策略预测来表达我们所考虑的每个目标，默认在干净端，对于过渡或流图目标则在明确标记的层级，从而使基于密度、速度或奖励表述的目标变得可比。分解将每个目标的梯度写为向参考的自回归与奖励增强之和，从而在梯度层面上，一种方法归结为对锚点和权重的选择。适配从少步模型在其传输末端或沿其切线计算每个锚点，瞬时速度从网络本身或辅助网络恢复。这在一个模块化代码库中产生了 FlowGRPO、AWM、DiffusionNFT、DiffusionOPSD 和 ReFL 的少步版本。在我们的实验中，当奖励可微时，基于奖励梯度的方法最为有效",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

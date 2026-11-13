@@ -1,0 +1,26 @@
+{
+  "id": "20261113-axion-1-0-open-agent-foundation-models-s-41bb03",
+  "url": "https://arxiv.org/abs/2611.03233v2",
+  "title_en": "Axion 1.0: Open Agent Foundation Models, Simplified",
+  "title_zh": "Axion 1.0：开放智能体基础模型，简化训练流程",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.03233v2",
+  "published": "2026-11-02T14:48:57Z",
+  "fetched_at": "2026-11-13T03:41:02Z",
+  "type": "paper",
+  "category": "model-release",
+  "tags": [
+    "agent-model",
+    "reinforcement-learning",
+    "supervised-fine-tuning",
+    "open-source",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "Axion 1.0 is a fully open agent foundation model trained with a simple three-stage recipe: two lightweight supervised fine-tuning (SFT) stages followed by reinforcement learning, without mid-training, DPO, or on-policy distillation. The first SFT stage builds self-contained reasoning via model-aware data construction that synthesizes challenging problems and adversarially strengthens them based on the base model's own successful strategies. The second stage extends to tool-dependent reasoning using a scalable pipeline for automatically verifiable tasks grounded in real-world data and deterministic computation. Reinforcement learning further strengthens long-horizon reasoning and tool interaction. Despite the compact recipe, Axion 1.0 achieves strong performance across agentic benchmarks and is competitive with leading commercial models on several. The complete recipe—including data construction, generation, filtering, verification, prompts, and training code—is released for reproducibility.",
+  "summary_zh": "Axion 1.0 是一个完全开放的智能体基础模型，采用仅三阶段的简单训练配方：两个轻量级监督微调（SFT）阶段后接强化学习，无需专门的中期训练、直接偏好优化（DPO）或同策略蒸馏（OPD）。第一阶段通过模型感知的数据构建培养强大的自包含推理能力，该构建基于基础模型自身成功的解题策略合成挑战性问题并进行对抗性增强。第二阶段通过可扩展的流水线将能力扩展到工具依赖的推理，该流水线基于真实数据源和确定性计算构建多样化且可自动验证的任务。强化学习进一步增强长程推理以及与外部工具和环境的交互。尽管训练配方紧凑，Axion 1.0 在广泛的智能体基准测试中表现强劲，并在多个基准上与领先的商业模型具有竞争力。同样重要的是，Axion 1.0 的开放不仅限于模型权重：我们发布了完整的配方，包括数据构建、生成、过滤、验证、提示和训练代码，使整个开发过程可复现和扩展。",
+  "content_en": "We introduce Axion 1.0, a fully open agent foundation model that combines strong and broad agentic capabilities with a remarkably simple training recipe. Axion 1.0 is trained in only three stages: two lightweight supervised fine-tuning stages followed by reinforcement learning, without dedicated mid-training, direct preference optimization (DPO), or on-policy distillation (OPD). The first SFT stage develops strong self-contained reasoning through model-aware data construction, where we synthesize challenging problems and adversarially strengthen them based on the base model's own successful solution strategies. The second stage extends these capabilities to tool-dependent reasoning through a scalable pipeline for constructing diverse and automatically verifiable tasks grounded in real-world data sources and deterministic computation. Finally, reinforcement learning further strengthens long-horizon reasoning and interaction with external tools and environments. Despite this compact training recipe, Axion 1.0 achieves strong performance across a broad suite of agentic benchmarks and is competitive with leading commercial models on several of them. Equally importantly, Axion 1.0 is open beyond model weights: we release the complete recipe, including data construction, generation, filtering, verification, prompts, and training code, enabling the entire development process to be reproduced and extended. Axion 1.0 demonstrates that strong agent foundation models can be both open an",
+  "content_zh": "我们推出 Axion 1.0，这是一个完全开放的智能体基础模型，将强大而广泛的智能体能力与极其简单的训练配方结合在一起。Axion 1.0 仅通过三个阶段训练：两个轻量级监督微调阶段，随后是强化学习，没有专门的中期训练、直接偏好优化（DPO）或同策略蒸馏（OPD）。第一个 SFT 阶段通过模型感知的数据构建来培养强大的自包含推理能力，我们在此过程中合成具有挑战性的问题，并基于基础模型自身成功的解题策略对这些问题进行对抗性强化。第二个阶段通过一个可扩展的流水线，将上述能力扩展到依赖工具的推理，该流水线用于构建多样化且可自动验证的任务，这些任务扎根于真实世界数据源和确定性计算。最后，强化学习进一步加强长程推理以及与外部工具和环境的交互。尽管训练配方如此紧凑，Axion 1.0 在广泛的智能体基准套件上仍取得了强劲性能，并在其中若干基准上与领先的商业模型具有竞争力。同样重要的是，Axion 1.0 的开放不止于模型权重：我们发布了完整配方，包括数据构建、生成、过滤、验证、提示词和训练代码，使整个开发过程能够被复现和扩展。Axion 1.0 表明，强大的智能体基础模型既可以开放，也",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

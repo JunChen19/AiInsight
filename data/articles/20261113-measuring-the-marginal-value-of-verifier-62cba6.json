@@ -1,0 +1,26 @@
+{
+  "id": "20261113-measuring-the-marginal-value-of-verifier-62cba6",
+  "url": "https://arxiv.org/abs/2611.07639v1",
+  "title_en": "Measuring the Marginal Value of Verifier-Based RL Beyond Supervised Fine-Tuning",
+  "title_zh": "测量基于验证器的强化学习在监督微调之外的边际价值",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.07639v1",
+  "published": "2026-11-05T08:23:28Z",
+  "fetched_at": "2026-11-13T03:32:56Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlvr",
+    "sft",
+    "grpo",
+    "benchmark",
+    "distribution-shift"
+  ],
+  "image": null,
+  "summary_en": "The paper measures the marginal contribution of reinforcement learning from verifiable rewards (RLVR) beyond supervised fine-tuning (SFT) using a controlled setting. They built gpu-train-debug, a deterministic benchmark of 1,877 synthetic GPU and LLM training failure diagnosis tasks across 30 archetypes, graded by a programmatic verifier with partial credit. A pilot showed that 1,200 gold demonstrations nearly solved the benchmark (SFT 0.785 on hard split), while 15 steps of GRPO from the base model did not improve performance (0.314 vs 0.311 base). At the pre-registered scale (60 GRPO steps, lr 1e-6), RLVR showed no detectable in-distribution improvement (+0.22 points, 95% CI [-0.06, +0.51]) but a modest OOD improvement (+0.33 points, CI [+0.02, +0.68]). SFT accounted for most of the available improvement, and residual errors from SFT are mostly systematic and identical across samples.",
+  "summary_zh": "本文在受控环境中测量了基于可验证奖励的强化学习（RLVR）在监督微调（SFT）之外的边际贡献。作者构建了 gpu-train-debug 基准，包含 1,877 个合成 GPU 和 LLM 训练故障诊断任务，覆盖 30 种原型，由程序化验证器进行部分评分。试点实验显示，1,200 个黄金示范几乎解决了基准（SFT 在困难划分上达到 0.785），而从基础模型进行 15 步 GRPO 并未提升性能（0.314 对比基础 0.311）。在预注册规模下（60 步 GRPO，学习率 1e-6），RLVR 在分布内未检测到显著提升（+0.22 分，95% CI [-0.06, +0.51]），但在分布偏移下有小幅可测量的提升（+0.33 分，CI [+0.02, +0.68]）。SFT 贡献了大部分可用改进，而 RLVR 仅带来适度的额外增益；SFT 留下的残差错误大多是系统性的，在不同样本间相同。",
+  "content_en": "Reinforcement learning from verifiable rewards (RLVR) is usually evaluated as an alternative to supervised fine-tuning (SFT), or as a stage that follows it, with the implicit assumption that the RL stage contributes gains of its own. We measure that contribution directly, in a controlled setting where both stages can be run to completion and compared exactly. We built gpu-train-debug, a deterministic benchmark of 1,877 synthetic GPU and LLM training failure diagnosis tasks across 30 archetypes, graded by a programmatic verifier with partial credit, and calibrated so that a mid-tier model scores in a 0.60 to 0.75 band. A pilot produced a surprise: 1,200 gold demonstrations nearly solved the benchmark (SFT 0.785 on the hard split), while 15 steps of GRPO from the base model did not move it (0.314 vs 0.311 base). We therefore amended the study, in writing and before the full run, to ask the sharper question: what does verifier-based RL add beyond demonstrations? At the pre-registered scale (60 GRPO steps, learning rate 1e-6), the answer is: no detectable improvement in-distribution (+0.22 points, 95% CI [-0.06, +0.51]), and a modest but measurable improvement under distribution shift (+0.33 points on a held-out OOD split, CI [+0.02, +0.68]). SFT accounted for most of the available improvement, while verifier-based RL produced only modest additional gains under distribution shift. The residual errors SFT leaves are mostly systematic, identical across samples, which likely reduces",
+  "content_zh": "基于可验证奖励的强化学习（RLVR）通常被作为监督微调（SFT）的替代方案来评估，或作为其后续阶段，隐含假设是 RL 阶段本身能带来增益。我们在一个受控环境中直接测量这一贡献，其中两个阶段都能完整运行并精确比较。我们构建了 gpu-train-debug，这是一个确定性基准，包含跨 30 种原型的 1,877 个合成 GPU 与 LLM 训练故障诊断任务，由程序化验证器评分并给予部分分数，且经过校准，使中等模型得分落在 0.60 至 0.75 区间。一项试点产生了意外结果：1,200 条黄金示范几乎解决了该基准（SFT 在困难划分上为 0.785），而从基础模型出发的 15 步 GRPO 并未使其改善（0.314 对基础模型 0.311）。因此，我们在完整运行之前以书面形式修订了研究，提出更尖锐的问题：基于验证器的 RL 在示范之外还能增加什么？在预注册规模下（60 步 GRPO，学习率 1e-6），答案是：分布内没有可检测的改进（+0.22 分，95% CI [-0.06, +0.51]），而在分布偏移下则有适度但可测量的改进（在留出的 OOD 划分上 +0.33 分，CI [+0.02, +0.68]）。SFT 占据了大部分可获得的改进，而基于验证器的 RL 仅在分布偏移下产生了适度的额外增益。SFT 留下的残余错误大多是系统性的，在不同样本间完全相同，这很可能降低了",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

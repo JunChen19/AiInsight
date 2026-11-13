@@ -1,0 +1,26 @@
+{
+  "id": "20261113-adafloor-adaptive-floor-planning-and-ran-a54aba",
+  "url": "https://arxiv.org/abs/2611.06984v2",
+  "title_en": "AdaFloor: Adaptive Floor Planning and Rank-Time Reuse for Long-Tail MoE RL Rollouts",
+  "title_zh": "AdaFloor：面向长尾MoE RL Rollout的自适应Floor规划与Rank时间复用",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.06984v2",
+  "published": "2026-11-04T15:36:14Z",
+  "fetched_at": "2026-11-13T03:33:35Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "moe",
+    "rl",
+    "rank-time-reuse",
+    "expert-parallelism",
+    "rollout"
+  ],
+  "image": null,
+  "summary_en": "AdaFloor targets response-length imbalance in synchronous MoE reinforcement-learning post-training, where completed ranks remain blocked on Expert Parallelism (EP) collectives and expert ownership. In a representative 16-accelerator Qwen3-30B-A3B rollout, dummy runs trap 32.83% of rank-time. AdaFloor converts this EP-coupled capacity into bounded leases for auxiliary work, using historical prompt-tail prediction and a calibrated guard to build a KV-safe layout, then selecting the floor-specific safe quorum schedule with the largest predicted release area; at runtime it shrinks the EP group and leases detached ranks until full-world restoration. On DeepScaleR math rollouts across three updated-policy seeds, the capacity-oriented Natural floor2 configuration with TailGuard cuts Vanilla's 29393.9 dummy rank-seconds by 96.15%, leaving 1131.7 rank-seconds. For sidecar reuse, Planned residency floor4 without TailGuard serves 3134 Qwen3-8B GSM8K queries per epoch at 99.46% accuracy with only 2-3% primary throughput loss, while the latency-oriented Planned residency floor4 with TailGuard reduces rollout time by 24.09%.",
+  "summary_zh": "AdaFloor 针对同步 MoE 强化学习后训练中的响应长度不均衡问题：已完成的 rank 仍被 Expert Parallelism（EP）集合通信与专家归属绑定。在具有代表性的 16 加速器 Qwen3-30B-A3B rollout 中，空转运行占用了 32.83% 的 rank 时间。AdaFloor 将这部分与 EP 耦合的容量转化为有界租约以执行辅助工作：利用历史 prompt 尾部预测与校准守卫构建 KV 安全布局，再选择预测释放面积最大的 floor 专属安全 quorum 调度；运行时收缩 EP 组并租出脱离的 rank，直至全量恢复。在 DeepScaleR 数学推理 rollout 的三个更新策略种子上，面向容量的 Natural floor2 + TailGuard 配置将 Vanilla 的 29393.9 rank-秒空转减少 96.15%，剩余 1131.7 rank-秒。在 sidecar 复用方面，Planned residency floor4（无 TailGuard）每 epoch 以 99.46% 准确率服务 3134 条 Qwen3-8B GSM8K 查询，主任务吞吐仅下降 2-3%；面向延迟的 Planned residency floor4 + TailGuard 将 rollout 时间减少 24.09%。",
+  "content_en": "Synchronous MoE reinforcement-learning post-training suffers from response-length imbalance. Existing methods reduce request tails, yet completed ranks remain bound to Expert Parallelism (EP) collectives and expert ownership. In a representative 16-accelerator Qwen3-30B-A3B rollout, this dummy run traps 32.83% of rank-time. AdaFloor converts this EP-coupled capacity into bounded leases for auxiliary work to improve system resource efficiency through rank-time reuse. Historical prompt-tail prediction and a calibrated guard construct the KV-safe layout. AdaFloor then selects the floor-specific safe quorum schedule with the largest predicted release area. Its runtime shrinks the EP group and leases detached ranks until full-world restoration. Across three updated-policy seeds on DeepScaleR mathematical reasoning rollouts, its capacity-oriented Natural floor2 configuration with TailGuard reduces Vanilla's 29393.9 rank-seconds of dummy run by 96.15%. Rollout shortening eliminates 18693.6 rank-seconds, while coordinated exits convert another 9568.6 rank-seconds into reusable capacity, leaving 1131.7 rank-seconds. For sidecar reuse, its Planned residency floor4 configuration without TailGuard serves 3134 Qwen3-8B GSM8K queries per epoch at 99.46% accuracy and incurs only a 2 to 3% primary throughput reduction against the same configuration with sidecar execution disabled. Its latency-oriented Planned residency floor4 configuration with TailGuard reduces rollout time by 24.09% relati",
+  "content_zh": "同步 MoE 强化学习后训练面临响应长度不均衡的问题。现有方法减少了请求尾部，但已完成的 rank 仍受限于专家并行（EP）集合通信与专家归属。在一次具有代表性的 16 加速器 Qwen3-30B-A3B rollout 中，这种空转运行占用了 32.83% 的 rank 时间。AdaFloor 将这种与 EP 耦合的容量转换为有界租约，用于辅助工作，从而通过 rank 时间复用来提升系统资源效率。历史提示尾部预测与校准防护机制共同构建 KV 安全布局。随后，AdaFloor 选择预测释放面积最大的、特定于 floor 的安全法定人数调度方案。其运行时收缩 EP 组，并租出分离的 rank，直到全量恢复。在 DeepScaleR 数学推理 rollout 的三个更新策略种子上，其面向容量的 Natural floor2 配置配合 TailGuard 将 Vanilla 的 29393.9 rank 秒空转运行减少了 96.15%。Rollout 缩短消除了 18693.6 rank 秒，而协同退出又将另外 9568.6 rank 秒转化为可复用容量，剩余 1131.7 rank 秒。对于 sidecar 复用，其不带 TailGuard 的 Planned residency floor4 配置在每个 epoch 以 99.46% 的准确率服务 3134 个 Qwen3-8B GSM8K 查询，并且与禁用 sidecar 执行的相同配置相比，仅带来 2% 至 3% 的主吞吐量下降。其面向延迟的 Planned residency floor4 配置配合 TailGuard 将 rollout 时间减少了 24.09%，相对",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261113-mac-v2-long-horizon-model-based-value-ex-7e6822",
+  "url": "https://arxiv.org/abs/2611.07245v1",
+  "title_en": "MAC-v2: Long-horizon model-based value expansion from pixels",
+  "title_zh": "MAC-v2：基于像素的长视野模型价值扩展",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.07245v1",
+  "published": "2026-11-04T23:51:02Z",
+  "fetched_at": "2026-11-13T03:33:28Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "offline-rl",
+    "model-based-rl",
+    "latent-world-model",
+    "action-chunking",
+    "pixel-based-rl"
+  ],
+  "image": null,
+  "summary_en": "The paper investigates long-horizon model-based value expansion for pixel-based offline reinforcement learning. It introduces MAC-v2, which trains a reconstruction-free latent world model with action chunking to enable long-horizon expansion from pixels. By learning representations from prediction and control objectives, MAC-v2 avoids encoding control-irrelevant visual details, and action chunking reduces recursive model predictions. Experiments on visual OGBench, MMBench2, Robomimic, and LIBERO-10 show strong performance against model-free and model-based offline RL baselines, with analyses confirming the importance of long-horizon expansion, action chunking, and latent learning objectives.",
+  "summary_zh": "本文研究了基于像素的离线强化学习（RL）中长视野模型价值扩展的有效性。提出了MAC-v2，通过训练无重建的潜在世界模型并结合动作分块（action chunking），实现了从像素进行长视野扩展。该方法从预测和控制目标中学习表示，避免编码与控制无关的视觉细节，动作分块减少了递归模型预测次数。在视觉OGBench、MMBench2、Robomimic和LIBERO-10等基准上，MAC-v2相比无模型和基于模型的离线RL基线表现出强劲性能，分析表明长视野扩展、动作分块和潜在学习目标对可靠的长视野潜在想象至关重要。",
+  "content_en": "We study whether \\emph{long-horizon model-based value expansion} can serve as an effective framework in pixel-based offline reinforcement learning (RL). Long-horizon model-based value expansion from pixels is substantially harder than state-based environments, as the agent must learn both the representation and its dynamics, and errors from either can accumulate recursively over imagined trajectories. We introduce MAC-v2, which enables long-horizon model-based expansion from pixels by training a reconstruction-free latent world model with action chunking. By learning representations from prediction and control objectives, MAC-v2 does not need to encode control-irrelevant visual details that can hinder the dynamics prediction. Action chunking further mitigates the prediction error by reducing the number of recursive model predictions required for value expansion. Across diverse visual benchmarks including visual OGBench, MMBench2, Robomimic, and LIBERO-10, MAC-v2 achieves strong performance against model-free and model-based offline RL baselines. Our analyses show that long-horizon model-based value expansion is critical for the performance of MAC-v2, and that both action chunking and latent learning objectives are essential for reliable long-horizon latent imagination.",
+  "content_zh": "我们研究\\emph{长时程基于模型的价值展开}能否作为基于像素的离线强化学习（RL）的有效框架。基于像素的长时程基于模型的价值展开比基于状态的环境困难得多，因为智能体必须同时学习表征及其动力学，而任一方面的误差都可能沿着想象轨迹递归累积。我们提出 MAC-v2，通过使用动作分块训练无重建的潜在世界模型，实现基于像素的长时程基于模型的展开。通过从预测和控制目标中学习表征，MAC-v2 无需编码可能妨碍动力学预测的与控制无关的视觉细节。动作分块通过减少价值展开所需的递归模型预测次数，进一步缓解预测误差。在包括 visual OGBench、MMBench2、Robomimic 和 LIBERO-10 在内的多个视觉基准上，MAC-v2 相较于无模型和基于模型的离线 RL 基线取得了强劲性能。我们的分析表明，长时程基于模型的价值展开对 MAC-v2 的性能至关重要，而动作分块和潜在学习目标对于可靠的长时程潜在想象都是必不可少的。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

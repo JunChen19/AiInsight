@@ -1,0 +1,26 @@
+{
+  "id": "20261113-plug-and-play-verifier-for-decoupling-pr-fcf4d2",
+  "url": "https://arxiv.org/abs/2611.10305v1",
+  "title_en": "Plug-and-Play Verifier for Decoupling Process Reward in Stabilizing Long-Horizon Agentic Reasoning",
+  "title_zh": "即插即用验证器：解耦过程奖励以稳定长程智能体推理",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.10305v1",
+  "published": "2026-11-06T23:06:07Z",
+  "fetched_at": "2026-11-13T03:31:50Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "verifier",
+    "process-reward",
+    "long-horizon-reasoning",
+    "reinforcement-learning",
+    "agent"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes a plug-and-play verifier framework to stabilize long-horizon reasoning in intelligent agents by explicitly verifying intermediate reasoning artifacts. The framework decouples process verification via a unified interface that extracts intermediate artifacts from agent trajectories, evaluates them with domain-specific verifiers, and aggregates scores as bounded process rewards. These dense verified process rewards are combined with sparse outcome rewards through a two-stage post-training schedule. On HotpotQA with Qwen3.5-4B, the method achieves 60.18% accuracy, outperforming standard GRPO.",
+  "summary_zh": "本文提出了一种即插即用验证器框架，通过显式验证中间推理产物来稳定智能体的长程推理。该框架通过统一接口解耦过程验证：从智能体运行轨迹中提取中间推理产物，使用领域特定验证器进行评估，并将验证分数聚合为有界过程奖励。这些密集的验证过程奖励与稀疏的结果奖励通过两阶段后训练计划相结合。在HotpotQA上使用Qwen3.5-4B进行评估，该方法达到了60.18%的准确率，优于标准GRPO。",
+  "content_en": "Stabilizing long-horizon reasoning requires intelligent agents to sustain useful progress across successive reasoning steps and tool interactions. Such agents are typically trained with reinforcement learning (RL), where actor-critic RL uses a learnable critic network to estimate step advantages, while critic-free methods such as GRPO eliminate critic models and rely mostly on the group variants of sparse outcome-only rewards. Both reward types leave partially useful failed trajectories either implicit or indistinguishable from entirely unproductive ones, and as reasoning horizons grow, it becomes difficult to maintain consistent reasoning trajectories. In this work, we propose a \\textit{plug-and-play verifier} framework for stabilizing long-horizon reasoning through explicit verification of intermediate reasoning artifacts. Specifically, the framework decouples process verification through a unified interface that extracts intermediate reasoning artifacts from agent running trajectories, evaluates them using domain-specific verifiers, and aggregates the verification scores as bounded process reward. Then, we combine our dense verified process rewards and the sparse outcome rewards through a two-stage post-training schedule. We showed that with plug-and-play verifiers, we further stabilize the reasoning steps as last-mile self-reflection and self-consistency. Typical evaluation on HotpotQA using Qwen3.5-4B achieves a superior accuracy (60.18\\%), outperforming the standard GRP",
+  "content_zh": "稳定长程推理要求智能体在连续的推理步骤和工具交互中持续取得有效进展。此类智能体通常通过强化学习（RL）训练，其中 actor-critic RL 使用可学习的 critic 网络来估计步骤优势，而 GRPO 等无 critic 方法则省去 critic 模型，主要依赖稀疏的仅结果奖励的组变体。这两类奖励都使部分有用的失败轨迹要么保持隐式，要么与完全无产出的轨迹难以区分，并且随着推理视野的增长，维持一致的推理轨迹变得困难。在本工作中，我们提出了一种\\textit{即插即用验证器}框架，通过显式验证中间推理产物来稳定长程推理。具体而言，该框架通过统一接口解耦过程验证，该接口从智能体运行轨迹中提取中间推理产物，使用领域特定验证器对其进行评估，并将验证分数聚合为有界过程奖励。然后，我们通过两阶段后训练计划，将密集的验证过程奖励与稀疏的结果奖励相结合。我们表明，借助即插即用验证器，我们进一步稳定了推理步骤，作为最后一英里的自我反思与自我一致性。使用 Qwen3.5-4B 在 HotpotQA 上的典型评估达到了更优的准确率（60.18\\%），优于标准 GRP",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

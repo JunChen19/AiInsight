@@ -1,0 +1,26 @@
+{
+  "id": "20261113-discover-online-variance-guided-data-dis-6b11ed",
+  "url": "https://arxiv.org/abs/2611.11145v1",
+  "title_en": "DISCOVER: Online Variance-Guided Data Discovery for Budgeted Multimodal GRPO",
+  "title_zh": "DISCOVER：面向预算受限多模态GRPO的在线方差引导数据发现",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.11145v1",
+  "published": "2026-11-08T05:27:06Z",
+  "fetched_at": "2026-11-13T03:33:02Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "multimodal-rl",
+    "grpo",
+    "data-selection",
+    "vision-language-model",
+    "sample-efficiency"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes DISCOVER, an online data-discovery framework for budgeted multimodal GRPO that dynamically selects the most useful prompts for vision-language model training. DISCOVER clusters the multimodal sample pool, queries a small density-diverse set of representatives for initial reward observations, and transfers sparse reward feedback to estimate the utility of unannotated samples. Because sample utility shifts as the policy evolves, it updates these estimates with recency-weighted rollout observations and selects high-utility prompts for annotation via a policy-conditioned score incorporating reward variance and difficulty; after the discovery budget is exhausted, training continues with utility-based replay. Experiments on ViRL39K and VLAA-Thinking with Qwen3-VL-2B show that under a strict 10% unique-sample budget, DISCOVER substantially improves multimodal mathematical reasoning and outperforms budget-matched random selection, hard-example sampling, full-pool GRPO under the same training-step budget, and online selection baselines.",
+  "summary_zh": "本文提出 DISCOVER，一种面向预算受限多模态 GRPO 的在线数据发现框架，使视觉语言模型能够动态识别对当前策略最有用的提示。DISCOVER 先将多模态样本池组织为语义簇，查询一小批密度多样的代表性样本以获得初始奖励观测，并通过迁移稀疏奖励反馈来估计未标注样本的效用。由于样本效用随策略演化而变化，它使用近期加权 rollout 观测动态更新估计，并依据考虑奖励方差与难度的策略条件分数，仅选择高效用提示进行标注；发现预算耗尽后，训练以基于效用的回放继续。在 ViRL39K 和 VLAA-Thinking 上使用 Qwen3-VL-2B 的实验表明，在严格 10% 唯一样本预算下，DISCOVER 显著提升多模态数学推理，并优于预算匹配的随机选择、难例采样、相同训练步数预算下的全池 GRPO 以及在线选择基线。",
+  "content_en": "Recent advances in reinforcement learning have made verifiable rewards a central post-training paradigm for improving multimodal reasoning. However, methods such as GRPO remain data- and compute-inefficient, spending rollout and annotation budget on prompts that provide little learning signal. We propose DISCOVER, an online data-discovery framework for budgeted multimodal GRPO that enables vision-language models to dynamically identify prompts that are most useful for the current policy. DISCOVER first organizes the multimodal sample pool into semantic clusters and queries a small set of density-diverse representative samples to obtain initial reward observations. During training, it estimates the utility of unannotated samples by transferring sparse reward feedback from queried samples. Since sample utility changes as the policy evolves, DISCOVER dynamically updates these estimates with recency-weighted rollout observations. It then selects only high-utility prompts for annotation using a policy-conditioned score that accounts for reward variance and difficulty. Once the discovery budget is exhausted, DISCOVER continues with utility-based replay. Experiments on ViRL39K and VLAA-Thinking with Qwen3-VL-2B show that DISCOVER substantially improves multimodal mathematical reasoning under a strict 10% unique-sample budget, outperforming budget-matched random selection, hard-example sampling, full-pool GRPO under the same training-step budget, and online selection baselines. Ablat",
+  "content_zh": "强化学习的最新进展使可验证奖励成为提升多模态推理能力的核心后训练范式。然而，GRPO 等方法在数据和计算上仍然低效，将 rollout 和标注预算花费在提供极少学习信号的提示上。我们提出 DISCOVER，一种面向预算受限多模态 GRPO 的在线数据发现框架，使视觉语言模型能够动态识别对当前策略最有用的提示。DISCOVER 首先将多模态样本池组织为语义簇，并查询一小组密度多样的代表性样本以获取初始奖励观测。在训练过程中，它通过迁移来自被查询样本的稀疏奖励反馈来估计未标注样本的效用。由于样本效用随策略演化而变化，DISCOVER 使用近因加权 rollout 观测动态更新这些估计。随后，它使用考虑奖励方差和难度的策略条件评分，仅选择高效用提示进行标注。一旦发现预算耗尽，DISCOVER 继续基于效用的回放。在 ViRL39K 和 VLAA-Thinking 上使用 Qwen3-VL-2B 的实验表明，在严格的 10% 唯一样本预算下，DISCOVER 显著提升了多模态数学推理能力，优于预算匹配的随机选择、难例采样、相同训练步数预算下的全池 GRPO 以及在线选择基线。消融",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

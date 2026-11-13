@@ -1,0 +1,26 @@
+{
+  "id": "20261113-falca-falsification-aware-reinforcement-d830e5",
+  "url": "https://arxiv.org/abs/2610.28361v1",
+  "title_en": "FALCA: Falsification-Aware Reinforcement Learning with Hierarchical Credit Assignment for Long-Horizon Deep Search Agents",
+  "title_zh": "FALCA: 面向长时程深度搜索代理的证伪感知强化学习与分层信用分配",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.28361v1",
+  "published": "2026-10-20T15:24:44Z",
+  "fetched_at": "2026-11-13T03:41:18Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "deep-search",
+    "falsification",
+    "credit-assignment",
+    "llm-agents"
+  ],
+  "image": null,
+  "summary_en": "FALCA is a falsification-aware framework for long-horizon deep search that formulates search as a propose-falsify process. It uses a collaborative Searcher-Falsifier architecture where the Searcher proposes candidates and independent Falsifiers actively seek counterevidence, check constraints, and produce falsification reports for state revision. Training combines SFT warmup on falsification trajectories with agentic RL using parallel rollouts and hierarchical credit assignment over research stages, state transitions, and actions. Experiments on five search benchmarks show improved long-horizon performance over backbone and harness ablations, with reduced confirmation bias and error accumulation.",
+  "summary_zh": "FALCA 是一个面向长时程深度搜索的证伪感知框架，将搜索建模为“提议-证伪”过程。它采用协作式搜索器-证伪器架构：搜索器提出候选答案，独立证伪器主动寻找反证、检查未满足约束并生成证伪报告以修正研究状态。训练结合证伪轨迹上的 SFT 预热与基于并行展开和分层信用分配（覆盖研究阶段、状态转移和动作）的智能体强化学习。在五个搜索基准上的实验表明，FALCA 相比骨干和框架消融提升了长时程深度搜索性能，并通过更有效的证伪和状态修正减少了确认偏差和错误累积。",
+  "content_en": "Long-horizon deep search requires LLM agents to iteratively decompose complex information needs, gather evidence from external sources, and maintain a reliable research state under multiple constraints. A central challenge is that early mistakes can be amplified over the search trajectory: agents may anchor on an incorrect candidate, collect partially supporting evidence, overlook contradictions, and accumulate errors that misguide subsequent reasoning. We propose FALCA, a falsification-aware framework that formulates deep search as a propose-falsify process. FALCA adopts a collaborative Searcher-Falsifier architecture, where the Searcher proposes candidate answers or sub-answers, while independent Falsifiers actively seek counterevidence, check unmet constraints, identify conflicts, and produce concise falsification reports for research-state revision. To strengthen this loop, we introduce falsification-aware training, combining SFT warmup on falsification trajectories with agentic RL based on parallel rollouts and hierarchical credit assignment over research stages, state transitions, and actions. Experiments on five search benchmarks show that FALCA improves long-horizon deep search performance over backbone and harness ablations, while reducing confirmation bias and error accumulation through more effective falsification and research-state revision.",
+  "content_zh": "长程深度搜索要求 LLM 智能体迭代地分解复杂信息需求、从外部来源收集证据，并在多重约束下维护可靠的研究状态。一个核心挑战在于，早期错误会沿搜索轨迹被放大：智能体可能锚定于错误的候选答案、收集部分支持性证据、忽视矛盾，并累积误导后续推理的错误。我们提出 FALCA，一个以证伪为感知的框架，将深度搜索形式化为提议—证伪过程。FALCA 采用协作式 Searcher-Falsifier 架构，其中 Searcher 提出候选答案或子答案，而独立的 Falsifier 主动寻找反证、检查未满足的约束、识别冲突，并生成简洁的证伪报告以用于研究状态修订。为强化这一循环，我们引入证伪感知训练，将对证伪轨迹的 SFT 预热与基于并行 rollout 及研究阶段、状态转移和动作上分层信用分配的智能体 RL 相结合。在五个搜索基准上的实验表明，FALCA 相较骨干模型与 harness 消融提升了长程深度搜索性能，同时通过更有效的证伪与研究状态修订减少了确认偏差和错误累积。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

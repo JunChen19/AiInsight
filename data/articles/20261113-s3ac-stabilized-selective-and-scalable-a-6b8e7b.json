@@ -1,0 +1,26 @@
+{
+  "id": "20261113-s3ac-stabilized-selective-and-scalable-a-6b8e7b",
+  "url": "https://arxiv.org/abs/2610.35518v1",
+  "title_en": "S3AC: Stabilized, Selective, and Scalable Actor-Critic for LLM Reasoning",
+  "title_zh": "S3AC：稳定、选择性和可扩展的演员-评论家方法用于LLM推理",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.35518v1",
+  "published": "2026-10-26T14:38:53Z",
+  "fetched_at": "2026-11-13T03:40:57Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "actor-critic",
+    "llm-reasoning",
+    "prompt-sampling",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "S3AC introduces a stabilized, selective, and scalable actor-critic framework for LLM reasoning, addressing the limitations of critic-free methods in RLVR for long chain-of-thought. It provides a practical critic-training recipe that overcomes insufficient trajectory coverage and early gradient dominance, enabling token-specific advantages and prompt-specific baselines. The method includes Difficulty-Aware Prompt Sampling (DAPS), which uses the prompt-level baseline to estimate difficulty and select prompts before generation, reducing rollout waste without offline initialization. S3AC improves group-rollout performance across dense and mixture-of-experts models from 1.5B to 397B parameters, outperforming GRPO-X. At 35B, it sustains single-rollout training while critic-free baselines deteriorate after initial gains.",
+  "summary_zh": "S3AC提出了一种稳定、选择性和可扩展的演员-评论家框架，用于LLM推理，解决了RLVR中无评论家方法在长链思维推理中的局限性。它提供了一种实用的评论家训练方案，克服了轨迹覆盖不足和早期梯度主导问题，实现了token级优势和提示级基线。该方法包含难度感知提示采样（DAPS），利用提示级基线估计难度并在生成前选择提示，减少rollout浪费且无需离线初始化。S3AC在1.5B到397B参数的密集和混合专家模型上提升了组rollout性能，优于GRPO-X。在35B规模下，它支持单rollout训练，而无评论家基线在初始提升后性能下降。",
+  "content_en": "Critic-free methods are widely used in reinforcement learning with verifiable rewards (RLVR) for long chain-of-thought (CoT) reasoning, avoiding difficult and costly critic training. Common alternatives lack token-level credit assignment and typically rely on grouped rollouts to estimate prompt-specific baselines. A critic can address both limitations, but long-CoT critic training is hindered by insufficient coverage of trajectories with diverse lengths and early gradients dominated by the newly initialized value head. We introduce S3AC (Stabilized, Selective, and Scalable Actor-Critic) for LLM reasoning, built around a practical critic-training recipe. The trained critic provides token-specific advantages and prompt-specific baselines. Using the prompt-level baseline to estimate difficulty, we propose Difficulty-Aware Prompt Sampling (DAPS). DAPS combines this estimate with outcome history to select prompts before generation, reducing rollout waste without offline difficulty initialization. S3AC improves group-rollout performance across dense and mixture-of-experts models from 1.5B to 397B parameters, outperforming a modern GRPO variant (GRPO-X). At 35B, it sustains single-rollout training while tested critic-free baselines deteriorate after initial gains.",
+  "content_zh": "无评论家方法被广泛用于带可验证奖励的强化学习（RLVR）中的长链思维（CoT）推理，以避免困难且昂贵的评论家训练。常见的替代方案缺乏 token 级信用分配，通常依赖分组 rollout 来估计提示特定的基线。评论家可以解决这两个局限，但长 CoT 评论家训练受到对具有多样长度的轨迹覆盖不足以及早期梯度被新初始化的价值头主导的阻碍。我们提出了 S3AC（稳定、选择性和可扩展的演员-评论家）用于 LLM 推理，其围绕一种实用的评论家训练配方构建。训练后的评论家提供 token 特定的优势和提示特定的基线。利用提示级基线来估计难度，我们提出了难度感知提示采样（DAPS）。DAPS 将此估计与结果历史相结合，在生成之前选择提示，减少 rollout 浪费而无需离线难度初始化。S3AC 在从 1.5B 到 397B 参数的密集和专家混合模型中提高了分组 rollout 性能，优于现代 GRPO 变体（GRPO-X）。在 35B 时，它维持单 rollout 训练，而测试的无评论家基线在初始增益后恶化。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

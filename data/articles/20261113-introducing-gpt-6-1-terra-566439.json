@@ -1,0 +1,25 @@
+{
+  "id": "20261113-introducing-gpt-6-1-terra-566439",
+  "url": "https://openai.com/index/introducing-gpt-6-1-terra",
+  "title_en": "Introducing GPT-6.1 Terra",
+  "title_zh": "Introducing GPT-6.1 Terra",
+  "source_name": "OpenAI",
+  "source_url": "https://openai.com/index/introducing-gpt-6-1-terra",
+  "published": "2026-10-26T18:00:00Z",
+  "fetched_at": "2026-11-13T03:36:59Z",
+  "type": "blog",
+  "category": "model-release",
+  "tags": [
+    "model-release",
+    "computer-use",
+    "automation",
+    "ai"
+  ],
+  "image": null,
+  "summary_en": "OpenAI introduced GPT-6.1 Terra, a model designed for fast and capable computer use at scale. The model enables efficient automation of complex computer tasks, though specific performance metrics and technical details were not disclosed in the announcement. It represents a step forward in deploying AI for large-scale computer interaction.",
+  "summary_zh": "OpenAI 推出了 GPT-6.1 Terra，该模型旨在实现快速、强大的大规模计算机使用。该模型能够高效自动化复杂的计算机任务，但公告中未披露具体的性能指标和技术细节。它代表了在部署 AI 进行大规模计算机交互方面迈出的一步。",
+  "content_en": "Delivering fast and capable computer use at scale",
+  "content_zh": "大规模交付快速且强大的计算机使用能力",
+  "content_note": "fallback_snippet",
+  "translation_failed": false
+}

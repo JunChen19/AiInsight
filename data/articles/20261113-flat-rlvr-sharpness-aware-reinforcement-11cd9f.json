@@ -1,0 +1,26 @@
+{
+  "id": "20261113-flat-rlvr-sharpness-aware-reinforcement-11cd9f",
+  "url": "https://arxiv.org/abs/2610.29281v1",
+  "title_en": "Flat-RLVR: Sharpness-Aware Reinforcement Learning with Verifiable Rewards for Reasoning Capacity in LLMs",
+  "title_zh": "Flat-RLVR：基于锐度感知的可验证奖励强化学习提升LLM推理能力",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.29281v1",
+  "published": "2026-10-21T06:35:19Z",
+  "fetched_at": "2026-11-13T03:43:05Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "rlvr",
+    "grpo",
+    "sharpness-aware-minimiza",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "Reinforcement learning with verifiable rewards (RLVR), especially via group-relative policy optimization (GRPO), is key for post-training LLMs but causes distribution sharpening, reducing sample diversity. The authors propose Flat-RLVR, which promotes flat-reward optima to smooth the policy distribution. They theoretically link flat reward RLVR to reduced distribution sharpening and empirically show improved sample diversity while maintaining single-attempt accuracy. Flat-RLVR uses sharpness-aware minimization during post-training and combines with GRPO variants for better trade-offs between sampling efficiency and reasoning capacity.",
+  "summary_zh": "基于可验证奖励的强化学习（RLVR），特别是通过组相对策略优化（GRPO），是大语言模型（LLM）后训练的核心范式，但会导致分布锐化，降低样本多样性。为此，作者提出Flat-RLVR，通过促进平坦奖励最优来平滑策略分布。他们从理论上将平坦奖励RLVR与减少分布锐化联系起来，并实证表明在保持单次尝试准确率的同时提高了样本多样性。Flat-RLVR在LLM后训练中利用锐度感知最小化寻找平坦奖励区域，并与GRPO变体结合，以在采样效率和推理能力之间实现更好的权衡。",
+  "content_en": "Reinforcement learning with verifiable rewards (RLVR), particularly through group-relative policy optimization (GRPO), has emerged as a central paradigm for the post-training of large language models (LLMs). While RLVR is highly effective at enhancing the reasoning capabilities of LLMs, it commonly induces \\textit{distribution sharpening}, whereby the policy distribution becomes excessively peaked and rare-yet-correct trajectories are progressively suppressed, thus diminishing sample diversity. To this end, we promote flat-reward optima in RLVR to smooth the policy distribution. We theoretically link flat reward RLVR to reduced distribution sharpening, and empirically show improved sample diversity while maintaining single-attempt accuracy. Our method, called \\texttt{Flat}-RLVR, searches for flat reward regions via sharpness-aware minimization during LLM post-training, combining this with GRPO variants to achieve better trade-offs between sampling efficiency and reasoning capacity.",
+  "content_zh": "基于可验证奖励的强化学习（RLVR），尤其是通过组相对策略优化（GRPO）实现的强化学习，已成为大语言模型（LLM）后训练的核心范式。尽管 RLVR 在增强 LLM 推理能力方面非常有效，但它通常会引发\\textit{分布锐化}，即策略分布变得过度尖峰，稀有但正确的轨迹被逐步抑制，从而降低样本多样性。为此，我们在 RLVR 中促进平坦奖励最优，以平滑策略分布。我们从理论上将平坦奖励 RLVR 与减少分布锐化联系起来，并在实验上展示了在保持单次尝试准确率的同时提高了样本多样性。我们的方法称为 \\texttt{Flat}-RLVR，在 LLM 后训练期间通过锐度感知最小化搜索平坦奖励区域，并将其与 GRPO 变体相结合，以在采样效率和推理能力之间实现更好的权衡。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

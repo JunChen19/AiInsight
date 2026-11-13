@@ -1,0 +1,26 @@
+{
+  "id": "20261113-the-illusion-of-diversity-aligning-llm-e-7a85e2",
+  "url": "https://arxiv.org/abs/2611.15493v1",
+  "title_en": "The Illusion of Diversity: Aligning LLM Exploration via Effective Entropy",
+  "title_zh": "多样性的幻觉：通过有效熵对齐LLM探索",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.15493v1",
+  "published": "2026-11-11T13:54:20Z",
+  "fetched_at": "2026-11-13T03:31:34Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlvr",
+    "entropy",
+    "exploration",
+    "policy-optimization",
+    "reasoning"
+  ],
+  "image": null,
+  "summary_en": "The paper identifies a disconnect between exploration diversity and reasoning validity in RL with verifiable rewards (RLVR), where blind entropy metrics (token-level or global sequence-level) fail to distinguish effective reasoning from hallucinations, creating an illusion of diversity. It introduces Effective Entropy, a validity-aware entropy concept that quantifies diversity only within the valid subspace and filters out noise from incorrect trajectories. Built on this, the authors propose VEPO (Validity-aware Entropy Policy Optimization), which incorporates effective entropy into RLVR training and induces an adaptive attraction dynamic that raises the probability of under-explored valid trajectories. Experiments on six mathematical reasoning benchmarks with 1.5B and 7B DeepSeek-R1-Distill-Qwen models show consistent aggregate accuracy gains over GRPO and competitive repeated-sampling success.",
+  "summary_zh": "该论文指出，在可验证奖励强化学习（RLVR）中，探索多样性与推理有效性之间存在脱节：现有的“盲目”熵指标（token级或全局序列级熵）无法区分有效推理与潜在幻觉，从而制造出多样性的幻觉。为此，作者提出有效熵（Effective Entropy）概念，仅在有效子空间内量化多样性，并系统过滤错误轨迹的噪声。基于此，他们实例化了VEPO（有效性感知熵策略优化），将有效熵直接纳入RLVR训练，诱导自适应吸引动态，提升探索不足的有效轨迹的概率。在1.5B和7B的DeepSeek-R1-Distill-Qwen模型上，于六个数学推理基准测试中，VEPO相比GRPO取得一致的总体准确率提升，并在重复采样成功率上具有竞争力。",
+  "content_en": "Reinforcement learning with verifiable rewards has shifted the alignment paradigm of large language models from subjective preference to objective correctness, yet a fundamental disconnect persists between exploration diversity and reasoning validity. Existing strategies predominantly rely on \"blind\" entropy metrics, e.g., token-level or global sequence-level entropy, which structurally fail to distinguish between effective reasoning and potential hallucinations. This misalignment creates an illusion of diversity, where high entropy tends to signal chaotic degeneration rather than valuable exploration. To bridge this gap, we introduce Effective Entropy, a validity-aware entropy concept that quantifies diversity exclusively within the valid subspace and systematically filters out the noise of incorrect trajectories. Built on this concept, we instantiate VEPO, a simple Validity-aware Entropy Policy Optimization method that directly incorporates effective entropy into RLVR training. VEPO induces an adaptive attraction dynamic that drives up the probability of under-explored valid trajectories, a mechanism that matches the practical regime of large-scale autoregressive models where sequence probabilities remain extremely small. Experiments on six mathematical reasoning benchmarks with 1.5B and 7B DeepSeek-R1-Distill-Qwen models show consistent aggregate accuracy gains over GRPO and competitive repeated-sampling success. A direct evaluation with matched correct counts finds more d",
+  "content_zh": "基于可验证奖励的强化学习已将大语言模型的对齐范式从主观偏好转向客观正确性，然而探索多样性与推理有效性之间仍存在根本性脱节。现有策略主要依赖“盲目”的熵度量，例如 token 级或全局序列级熵，这些度量在结构上无法区分有效推理与潜在幻觉。这种错位制造了一种多样性的假象，其中高熵往往预示着混乱退化而非有价值的探索。为弥合这一差距，我们引入有效熵（Effective Entropy），一种有效性感知的熵概念，它仅在有效子空间内量化多样性，并系统性地过滤掉错误轨迹的噪声。基于这一概念，我们实例化了 VEPO，一种简单的有效性感知熵策略优化方法，将有效熵直接纳入 RLVR 训练。VEPO 诱导一种自适应吸引动态，提升探索不足的有效轨迹的概率，这一机制契合大规模自回归模型的实践状态，即序列概率保持极低。在六个数学推理基准上，使用 1.5B 和 7B DeepSeek-R1-Distill-Qwen 模型进行的实验表明，相较于 GRPO 具有一致的总体准确率提升，并具备有竞争力的重复采样成功率。在匹配正确计数下的直接评估发现更多 d",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

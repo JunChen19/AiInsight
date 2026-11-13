@@ -1,0 +1,26 @@
+{
+  "id": "20261113-atomicrl-atomic-reinforcement-learning-f-02fd9d",
+  "url": "https://arxiv.org/abs/2610.30097v1",
+  "title_en": "AtomicRL: Atomic Reinforcement Learning for Long-Horizon Robotic Manipulation",
+  "title_zh": "AtomicRL：面向长时程机器人操作的原子强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.30097v1",
+  "published": "2026-10-21T17:45:24Z",
+  "fetched_at": "2026-11-13T03:41:13Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "vla",
+    "robotic-manipulation",
+    "credit-assignment",
+    "sim2real"
+  ],
+  "image": null,
+  "summary_en": "AtomicRL is an RL post-training framework for vision-language-action (VLA) models that exploits atomic task structures to improve credit assignment and exploration in long-horizon robotic manipulation. Its Semantic-Aware Policy Optimization (SAPO) uses semantic-aware gating to block TD residuals from failed atomic subtasks from crossing task boundaries, reducing credit contamination while preserving intra-subtask credit assignment and value bootstrapping. Bottleneck-Adaptive Target Exploration (BATE) dynamically coordinates task sampling and local exploration incentives based on per-subtask mastery, focusing learning on remaining bottlenecks. A Real2Sim2Real pipeline connects online RL in simulation to real-world deployment. On LIBERO-LONG, AtomicRL yields absolute gains of 3.6% and 4.0% over PPO across two VLA architectures, and improves full-task performance on CALVIN ABC-D.",
+  "summary_zh": "AtomicRL 是一个面向视觉-语言-动作（VLA）模型的强化学习后训练框架，利用原子任务结构改善长时程机器人操作中的信用分配与探索。其语义感知策略优化（SAPO）通过语义感知门控阻止失败原子子任务的 TD 残差跨越任务边界传播，在缓解信用污染的同时保留子任务内信用分配与价值自举。瓶颈自适应目标探索（BATE）根据各原子子任务的掌握程度动态协调任务采样与局部探索激励，将学习聚焦于剩余瓶颈。Real2Sim2Real 流水线将仿真中的在线 RL 与真实机器人部署衔接起来。在 LIBERO-LONG 上，AtomicRL 在两种 VLA 架构上相对 PPO 分别取得 3.6% 和 4.0% 的绝对性能提升，并在 CALVIN ABC-D 上提升了全任务性能。",
+  "content_en": "Vision-language-action (VLA) models have shown promise in robotic manipulation, but imitation learning (IL) alone often struggles to master complex long-horizon skills. Reinforcement learning (RL) offers an effective avenue for further improving VLA policies. However, existing VLA-RL methods typically suffer from delayed and biased credit assignment due to trajectory-level sparse rewards, while imbalanced subtask mastery creates bottlenecks that limit overall performance. To address these challenges, we propose AtomicRL, an RL post-training framework that leverages atomic task structures for reliable credit assignment and adaptive exploration. AtomicRL introduces Semantic-Aware Policy Optimization (SAPO), which uses semantic-aware gating to constrain TD residuals from failed atomic subtasks from propagating across task boundaries, mitigating credit contamination while preserving intra-subtask credit assignment and value bootstrapping. In addition, Bottleneck-Adaptive Target Exploration (BATE) dynamically coordinates task sampling and local exploration incentives based on the mastery of individual atomic subtasks, directing learning toward the remaining bottlenecks. Finally, we develop a Real2Sim2Real pipeline that bridges online RL in simulation with real-world deployment, facilitating practical transfer to physical robots. On LIBERO-LONG, AtomicRL achieves absolute performance gains of 3.6% and 4.0% over PPO across two VLA architectures. On CALVIN ABC-D, it improves full-tas",
+  "content_zh": "视觉-语言-动作（VLA）模型在机器人操作中已展现出潜力，但仅靠模仿学习（IL）往往难以掌握复杂的长时程技能。强化学习（RL）为进一步提升 VLA 策略提供了一条有效途径。然而，现有的 VLA-RL 方法通常因轨迹级稀疏奖励而面临延迟且有偏的信用分配问题，同时子任务掌握不均衡会造成瓶颈，限制整体性能。为解决这些挑战，我们提出 AtomicRL，一种利用原子任务结构实现可靠信用分配与自适应探索的 RL 后训练框架。AtomicRL 引入语义感知策略优化（SAPO），通过语义感知门控约束来自失败原子子任务的 TD 残差跨任务边界传播，在缓解信用污染的同时保留子任务内部的信用分配与价值自举。此外，瓶颈自适应目标探索（BATE）根据各原子子任务的掌握程度动态协调任务采样与局部探索激励，将学习导向剩余的瓶颈。最后，我们开发了 Real2Sim2Real 流水线，将仿真中的在线 RL 与真实世界部署相衔接，促进向物理机器人的实际迁移。在 LIBERO-LONG 上，AtomicRL 在两种 VLA 架构上相较 PPO 分别取得 3.6% 和 4.0% 的绝对性能提升。在 CALVIN ABC-D 上，它将全任务",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261113-improving-reasoning-with-rollout-agreeme-ef6e20",
+  "url": "https://arxiv.org/abs/2610.34951v1",
+  "title_en": "Improving Reasoning with Rollout Agreement for Group-Based Policy Optimization",
+  "title_zh": "基于Rollout一致性的组策略优化提升推理能力",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.34951v1",
+  "published": "2026-10-26T07:19:26Z",
+  "fetched_at": "2026-11-13T03:42:38Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "grpo",
+    "reward-model",
+    "reasoning",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper investigates differences among correct-answer rollouts in RLVR-trained models via a blind paired analysis of GRPO, finding low-agreement traces have more spurious reasoning (35% vs. 22%). It proposes RoAR (Rollout-Agreement Reward), which adds reasoning-level agreement to GRPO's rewards for verified-correct rollouts, computed from existing on-policy rollout groups without human rationales or extra sampling. On five math reasoning benchmarks, the 1.5B GRPO-RoAR model achieves 55.5% mean pass@1 zero-shot with 7K training examples, exceeding GRPO and GRPO-CARE by 6.0 and 5.5 points. A blind audit of 100 problems shows spurious rates: GRPO-RoAR 18%, GRPO 32%, GRPO-CARE 27%, DRA-GRPO 37%.",
+  "summary_zh": "本文通过盲配对分析GRPO训练的模型，发现低一致性正确轨迹比高一致性轨迹包含更多虚假推理（35% vs. 22%）。据此提出RoAR（Rollout-Agreement Reward），在GRPO对验证正确rollout的奖励中加入推理级一致性信号，该信号从现有同策略rollout组计算，无需人工理由、额外采样或单独训练的过程评估器。在五个数学推理基准上，1.5B的GRPO-RoAR模型使用7K训练样本在零样本评估下达到55.5%平均pass@1，分别超过GRPO和GRPO-CARE 6.0和5.5个百分点。对100个问题的盲审计显示，GRPO-RoAR的虚假率为18%，GRPO为32%，GRPO-CARE为27%，DRA-GRPO为37%。",
+  "content_en": "Recent methods for Reinforcement Learning with Verifiable Rewards (RLVR) use rollout diversity to improve reasoning performance or training efficiency. Despite these gains, the extent to which differences among correct-answer rollouts reflect useful alternative reasoning or unresolved errors remains poorly understood. We investigate this question through a blind paired analysis of a model trained with Group Relative Policy Optimization (GRPO), comparing the highest- and lowest-agreement correct-answer traces for the same problem. Across 126 pairs, low-agreement traces have more spurious reasoning than high-agreement traces (35% vs. 22%), including internal inconsistencies and misuse of problem conditions. Based on these findings, we propose RoAR (Rollout-Agreement Reward), which adds reasoning-level agreement to GRPO's rewards for verified-correct rollouts. RoAR computes this signal from existing on-policy rollout groups, requiring no human-written rationales, additional sampling, or separately trained process evaluator. On five mathematical reasoning benchmarks, the 1.5B GRPO-RoAR model reaches 55.5% mean pass@1 under zero-shot evaluation using 7K training examples, exceeding GRPO and GRPO-CARE by 6.0 and 5.5 percentage points. A separate blind audit of 100 problems answered correctly by all four 1.5B models finds spurious rates of 18% for GRPO-RoAR, 32% for GRPO, 27% for GRPO-CARE, and 37% for DRA-GRPO. Our findings identify reasoning validity as an important consideration",
+  "content_zh": "近期用于带可验证奖励的强化学习（RLVR）的方法利用 rollout 多样性来提升推理性能或训练效率。尽管取得了这些进展，正确答案 rollout 之间的差异在多大程度上反映了有用的替代推理或未解决的错误，仍然鲜为人知。我们通过对一个使用组相对策略优化（GRPO）训练的模型进行盲法配对分析来研究这个问题，比较同一问题下一致性最高和最低的正确答案轨迹。在 126 对中，低一致性轨迹比高一致性轨迹包含更多虚假推理（35% 对 22%），包括内部不一致和问题条件的误用。基于这些发现，我们提出了 RoAR（Rollout-Agreement Reward），它将推理层面的一致性添加到 GRPO 对验证正确 rollout 的奖励中。RoAR 从现有的同策略 rollout 组中计算该信号，无需人工编写的理由、额外采样或单独训练的过程评估器。在五个数学推理基准上，1.5B GRPO-RoAR 模型在使用 7K 训练样本的零样本评估下达到 55.5% 的平均 pass@1，分别超过 GRPO 和 GRPO-CARE 6.0 和 5.5 个百分点。对四个 1.5B 模型均正确回答的 100 个问题进行的一项单独盲法审计发现，GRPO-RoAR 的虚假率为 18%，GRPO 为 32%，GRPO-CARE 为 27%，DRA-GRPO 为 37%。我们的发现将推理有效性确定为一个重要考虑因素",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

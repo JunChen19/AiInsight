@@ -1,0 +1,26 @@
+{
+  "id": "20261113-aero-adaptive-ensemble-disagreement-rout-93425b",
+  "url": "https://arxiv.org/abs/2611.10750v1",
+  "title_en": "AERO: Adaptive Ensemble-Disagreement Routing for Oracle Feedback in Sample-Efficient Online RLHF",
+  "title_zh": "AERO：面向样本高效在线RLHF的自适应集成分歧路由",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.10750v1",
+  "published": "2026-11-07T14:12:05Z",
+  "fetched_at": "2026-11-13T03:35:18Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlhf",
+    "sample-efficiency",
+    "active-learning",
+    "reward-model",
+    "ensemble"
+  ],
+  "image": null,
+  "summary_en": "AERO is a fully online RLHF algorithm built on a Dyna-style model-based RL architecture that reduces oracle query costs by adaptively routing contexts to either oracle feedback or synthetic labels. It uses an ensemble-based Epistemic Reward Model (ERM) that serves as both a reward posterior for exploration and a learned preference-feedback model for synthetic labeling. The routing decision is based on ensemble vote entropy, a Query-by-Committee disagreement measure, combined with adaptive thresholding to concentrate expensive labels where they are most informative. Empirical results across different model families and scales show that AERO achieves highly competitive alignment performance while reducing the required oracle-query budget compared to online DPO and strong active-exploration baselines.",
+  "summary_zh": "AERO是一种基于Dyna风格模型强化学习架构的完全在线RLHF算法，通过自适应路由上下文到oracle反馈或合成标签来降低oracle查询成本。它使用基于集成的认知奖励模型（ERM），该模型既作为探索的奖励后验，又作为合成标签的学习偏好反馈模型。路由决策基于集成投票熵（一种Query-by-Committee分歧度量）并结合自适应阈值机制，将昂贵的标签集中在信息量最大的地方。在不同模型家族和规模上的实证结果表明，与在线DPO和强主动探索基线相比，AERO在实现极具竞争力的对齐性能的同时减少了所需的oracle查询预算。",
+  "content_en": "Aligning Large Language Models (LLMs) with human preferences via Reinforcement Learning from Human Feedback (RLHF) has driven substantial improvements across a wide range of tasks, but the cost of acquiring preference labels remains the dominant bottleneck in the alignment pipeline. While many recent alignment methods improve sample efficiency through active exploration over candidate responses, they typically query the oracle uniformly across contexts, even for contexts where the learned reward estimates are already reliable enough to provide synthetic labels. We propose Adaptive Ensemble-disagreement Routing for Oracle feedback (AERO), a fully online RLHF algorithm built on a Dyna-style model-based RL architecture, in which an ensemble-based Epistemic Reward Model (ERM) serves both as a reward posterior for exploration and as a learned preference-feedback model for synthetic labeling. AERO uses ensemble vote entropy, a Query-by-Committee disagreement measure, combined with an adaptive thresholding mechanism to decide which contexts require oracle feedback and which can instead receive ERM-based synthetic preference labels, concentrating expensive labels where they are most informative. Empirical results across different model families and scales show that AERO achieves highly competitive alignment performance while reducing the required oracle-query budget compared to online DPO and strong active-exploration baselines.",
+  "content_zh": "通过基于人类反馈的强化学习（RLHF）使大型语言模型（LLMs）与人类偏好对齐，已在广泛任务中带来了显著改进，但获取偏好标签的成本仍然是整个对齐流程中的主要瓶颈。尽管近期许多对齐方法通过对候选回复进行主动探索来提高样本效率，但它们通常在所有上下文上均匀地查询预言机（oracle），即使对于已学习到的奖励估计已经足够可靠、能够提供合成标签的上下文也是如此。我们提出了自适应集成分歧路由预言机反馈（AERO），这是一种完全在线的 RLHF 算法，构建于 Dyna 风格的基于模型的 RL 架构之上，其中基于集成的认知奖励模型（ERM）既作为用于探索的奖励后验，又作为用于合成标注的学习偏好反馈模型。AERO 使用集成投票熵——一种 Query-by-Committee 分歧度量——并结合自适应阈值机制，来决定哪些上下文需要预言机反馈，哪些上下文可以改为接收基于 ERM 的合成偏好标签，从而将昂贵的标签集中在其信息量最大的地方。在不同模型家族和规模上的实证结果表明，与在线 DPO 和强主动探索基线相比，AERO 在实现极具竞争力的对齐性能的同时，降低了所需的预言机查询预算。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

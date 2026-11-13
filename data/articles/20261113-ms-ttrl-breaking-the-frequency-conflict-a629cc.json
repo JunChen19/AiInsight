@@ -1,0 +1,26 @@
+{
+  "id": "20261113-ms-ttrl-breaking-the-frequency-conflict-a629cc",
+  "url": "https://arxiv.org/abs/2610.32234v1",
+  "title_en": "MS-TTRL: Breaking the Frequency Conflict in Multiple-Solution Test-Time Reinforcement Learning",
+  "title_zh": "MS-TTRL：打破多解测试时强化学习中的频率冲突",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2610.32234v1",
+  "published": "2026-10-23T06:44:50Z",
+  "fetched_at": "2026-11-13T03:42:55Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "test-time-training",
+    "multiple-solution-reason",
+    "self-verification",
+    "frequency-conflict"
+  ],
+  "image": null,
+  "summary_en": "The paper identifies a Frequency Conflict in test-time reinforcement learning (TTRL) for multiple-solution reasoning: generation frequency is used both for correctness estimation (favoring frequent outcomes) and for diversity preservation (favoring rare outcomes). To resolve this, they propose MS-TTRL, which decouples these objectives by obtaining frequency-independent correctness estimates via Outcome-Level Self-Verification, while reserving generation frequency solely for diversity preservation. Key components include a Three-State Outcome Cache and Candidate State for verification reuse and confidence-aware handling of ambiguous outcomes, plus Confidence-Gated Inverse Probability Scaling to strengthen learning signals for rare but reliably verified outcomes. Experiments on two benchmarks, four multiple-solution tasks, and three backbone models (five random seeds each) show MS-TTRL improves Recovery Rate by 19.13 percentage points on average over the best label-free baseline and approaches supervised IPS-GRPO performance.",
+  "summary_zh": "该论文指出，在多解推理的测试时强化学习（TTRL）中存在频率冲突：生成频率同时用于正确性估计（偏好高频结果）和多样性保持（偏好低频结果）。为此提出 MS-TTRL，通过结果级自验证（Outcome-Level Self-Verification）获得与频率无关的正确性估计，并将生成频率仅用于多样性保持，从而解耦这两个目标。关键组件包括三态结果缓存（Three-State Outcome Cache）和候选状态（Candidate State），支持重复观察下的验证复用及对模糊结果的置信度感知处理；置信门控逆概率缩放（Confidence-Gated Inverse Probability Scaling）则选择性增强稀有但可靠验证结果的学习信号。在两个基准、四个多解任务和三个骨干模型（每个五个随机种子）上的实验表明，MS-TTRL 的平均恢复率（Recovery Rate）比最佳无标签基线提升 19.13 个百分点，并接近监督式 IPS-GRPO 的性能。",
+  "content_en": "Scientific, engineering, and mathematical reasoning tasks can admit multiple valid solutions, while exhaustive annotation of the full solution set is often prohibitively costly. Test-time reinforcement learning (TTRL) applies reinforcement learning to unlabeled test instances, offering a label-free approach to multiple-solution reasoning. In this setting, generation frequency serves two opposing objectives: correctness estimation favors frequent outcomes, whereas outcome-level diversity preservation favors less frequent outcomes. We term this tension the \\textbf{Frequency Conflict}. To resolve this conflict, we propose MS-TTRL, which obtains frequency-independent correctness estimates through Outcome-Level Self-Verification while reserving generation frequency solely for diversity preservation. Three-State Outcome Cache and the Candidate State support verification reuse across repeated observations and confidence-aware handling of ambiguous outcomes, while Confidence-Gated Inverse Probability Scaling selectively strengthens the learning signals of rare, reliably verified outcomes. Experiments across two benchmarks, four multiple-solution tasks, and three backbone models, each evaluated with five random seeds, show that MS-TTRL improves Recovery Rate by 19.13 percentage points on average over the best-performing label-free baseline and approaches the performance of the supervised IPS-GRPO.",
+  "content_zh": "科学、工程和数学推理任务可能存在多个有效解，而对完整解集进行穷尽标注往往成本高昂得令人望而却步。测试时强化学习（TTRL）将强化学习应用于未标注的测试实例，为多解推理提供了一种无需标签的方法。在此设定下，生成频率服务于两个相互对立的目标：正确性估计偏好高频结果，而结果级多样性保持偏好低频结果。我们将这种张力称为\\textbf{频率冲突}（Frequency Conflict）。为解决这一冲突，我们提出 MS-TTRL，它通过结果级自验证获得与频率无关的正确性估计，同时将生成频率仅保留用于多样性保持。三态结果缓存与候选状态支持跨重复观测的验证复用，以及对模糊结果的置信度感知处理，而置信度门控逆概率缩放则选择性地增强稀有且可靠验证结果的学习信号。在两个基准、四个多解任务和三个骨干模型上的实验（每个实验均以五个随机种子评估）表明，MS-TTRL 相较于表现最佳的无需标签基线，平均将恢复率（Recovery Rate）提升 19.13 个百分点，并接近监督式 IPS-GRPO 的性能。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

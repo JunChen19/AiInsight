@@ -1,0 +1,26 @@
+{
+  "id": "20261113-spectral-and-subspace-dynamics-of-lora-i-a95f4c",
+  "url": "https://arxiv.org/abs/2611.08414v1",
+  "title_en": "Spectral and Subspace Dynamics of LoRA in Supervised Fine-Tuning and Reinforcement Learning",
+  "title_zh": "LoRA在监督微调与强化学习中的谱与子空间动力学",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.08414v1",
+  "published": "2026-11-05T18:17:39Z",
+  "fetched_at": "2026-11-13T03:35:13Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "lora",
+    "sft",
+    "rl",
+    "spectral-dynamics",
+    "fine-tuning"
+  ],
+  "image": null,
+  "summary_en": "The paper investigates how LoRA update dynamics differ between supervised fine-tuning (SFT) and reinforcement learning (RL) on mathematical reasoning tasks. By tracking singular spectrum and subspaces, it finds that RL concentrates the spectrum at all learning rates while SFT expands it at moderate rates, and RL rotates subspaces faster at small learning rates. Group-mean baseline subtraction is identified as the key factor causing these contrasts, with a quadratic multi-index model explaining the mechanism. Guided by these insights, the authors propose stage-specific LoRA configurations: flattening the full update spectrum for SFT and flattening the update outside the current LoRA span for RL, which yield best performance in most evaluations.",
+  "summary_zh": "本文研究了LoRA在监督微调（SFT）和强化学习（RL）中更新动力学的差异，针对数学推理任务追踪奇异谱和子空间。发现RL在所有学习率下都集中谱，而SFT在中等学习率下扩展谱；且RL在低学习率下子空间旋转更快。组均值基线减法被确定为造成这些对比的关键因素，并通过二次多指标模型揭示了其机制。基于这些发现，作者为SFT和RL分别定制了LoRA配置：SFT中展平完整更新的谱，RL中展平当前LoRA跨度外的更新部分，在多数评估中取得了最佳性能。",
+  "content_en": "Low-rank adaptation (LoRA) is commonly used in both supervised fine-tuning (SFT) and reinforcement learning (RL), often under similar optimizer settings. Yet, how the different dynamics of the two stages manifest in the low-rank increment that LoRA optimizes remains unclear. Tracking the singular spectrum and subspaces of LoRA updates on mathematical reasoning tasks, we find that RL concentrates the spectrum at every learning rate, while SFT expands it at moderate learning rates; moreover, RL rotates the singular subspaces much faster than SFT at small learning rates. Interpolating between SFT and RL one ingredient at a time, we pinpoint group-mean baseline subtraction as the source of both contrasts. A quadratic multi-index model updated via LoRA unveils the underlying mechanism: group-mean baseline subtraction tilts the balance between two competing forces, coherent fitting and gradient noise, toward spectral concentration and faster subspace rotation, while forcing the risk-favorable learning rate to be low. Guided by these dynamics, we tailor LoRA updates to each stage: in SFT, we flatten the spectrum of the full update to spread adaptation across singular directions, whereas in RL, we flatten the part of the update outside the current LoRA increment span to promote subspace rotation. Experiments on mathematical reasoning tasks across multiple models show that the respective configurations for SFT and RL yield the best performance among the compared methods in most evalua",
+  "content_zh": "低秩适应（LoRA）通常用于监督微调（SFT）和强化学习（RL）中，且往往在相似的优化器设置下使用。然而，这两个阶段的不同动态如何在 LoRA 所优化的低秩增量中体现，仍不清楚。通过追踪 LoRA 更新在数学推理任务上的奇异谱和子空间，我们发现 RL 在每种学习率下都会集中谱，而 SFT 在中等学习率下会扩展谱；此外，在小学习率下，RL 旋转奇异子空间的速度远快于 SFT。逐一在 SFT 和 RL 之间进行要素插值，我们确定组均值基线减法是这两种对比的根源。通过 LoRA 更新的二次多指标模型揭示了 underlying 机制：组均值基线减法将两种竞争力量——相干拟合和梯度噪声——之间的平衡倾向于谱集中和更快的子空间旋转，同时迫使风险有利的学习率保持在较低水平。在这些动态的指导下，我们为每个阶段定制 LoRA 更新：在 SFT 中，我们展平完整更新的谱，以将适应分散到奇异方向上；而在 RL 中，我们展平当前 LoRA 增量跨度之外的更新部分，以促进子空间旋转。在多个模型上的数学推理任务实验表明，SFT 和 RL 的各自配置在大多数评估中相比对比方法取得了最佳性能。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
