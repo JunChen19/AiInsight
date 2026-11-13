@@ -18,9 +18,10 @@ LLM_TIMEOUT = 180          # 单次调用超时（秒）
 LLM_MAX_RETRIES = 4        # 单次调用重试次数
 
 # ---------- 采集 ----------
-MAX_PER_DAY = int(os.environ.get("MAX_ARTICLES", "9"))   # 每日精选上限（5~10）
-FETCH_WINDOW_HOURS = 48    # 只考虑最近 N 小时内发布的条目
-CANDIDATE_LIMIT = 24       # 送入 LLM 精筛的候选上限
+MAX_PER_DAY = int(os.environ.get("MAX_ARTICLES", "9"))              # 每日精选上限（5~10）
+FETCH_WINDOW_HOURS = int(os.environ.get("FETCH_WINDOW_HOURS", "48"))  # 只考虑最近 N 小时内发布的条目（补历史时可调大）
+CANDIDATE_LIMIT = int(os.environ.get("CANDIDATE_LIMIT", "24"))       # 送入 LLM 精筛的候选上限
+ARXIV_MAX = int(os.environ.get("ARXIV_MAX", "30"))                   # arXiv 单次拉取条数（补历史时可调大）
 MAX_FAILED_ATTEMPTS = 2    # 同一 URL 失败 N 次后放弃
 HTTP_TIMEOUT = 25          # 抓网页超时（秒）
 USER_AGENT = (

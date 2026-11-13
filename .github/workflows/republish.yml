@@ -1,10 +1,14 @@
 name: Republish site
 
-# 手动触发：不重新抓取，只把仓库中现有的 data/ 重新构建并发布到 Pages。
-# 用途：Daily digest 运行成功但 Pages 部署环节瞬时失败时，一键补救。
+# 重新发布：不重新抓取，只把仓库中现有的 data/ 重新构建并发布到 Pages。
+# 触发：手动 / 任何包含 data/ 变更的 push（daily 的 bot 提交带 [skip ci] 不会重复触发）。
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "data/**"
 
 permissions:
   contents: read

@@ -36,7 +36,7 @@ SOURCES = [
 ARXIV_QUERY = (
     'https://export.arxiv.org/api/query?search_query='
     '%28cat:cs.LG+OR+cat:cs.AI%29+AND+%28ti:%22reinforcement+learning%22+OR+abs:%22reinforcement+learning%22%29'
-    '&sortBy=submittedDate&sortOrder=descending&max_results=30'
+    '&sortBy=submittedDate&sortOrder=descending'
 )
 
 
@@ -89,7 +89,7 @@ def _fetch_feed(source: dict, cutoff: datetime) -> list[dict]:
 def _fetch_arxiv(cutoff: datetime) -> list[dict]:
     """arXiv API：最近提交的强化学习论文（cs.LG / cs.AI）。"""
     try:
-        resp = _get(ARXIV_QUERY)
+        resp = _get(f"{ARXIV_QUERY}&max_results={config.ARXIV_MAX}")
         resp.raise_for_status()
         feed = feedparser.parse(resp.content)
     except Exception as e:
