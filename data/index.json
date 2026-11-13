@@ -1,5 +1,159 @@
 [
   {
+    "id": "20261113-llm-gemini-0-37-622d7c",
+    "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
+    "title_en": "llm-gemini 0.37",
+    "title_zh": "llm-gemini 0.37",
+    "source_name": "Simon Willison",
+    "published": "2026-11-12T22:55:19Z",
+    "fetched_at": "2026-11-13T01:44:20Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "pricing",
+      "google",
+      "gemini",
+      "llm"
+    ],
+    "image": "images/20261113-llm-gemini-0-37-622d7c.jpg",
+    "summary_en": "Google launched Gemini 4 Hydrogen, the lowest-cost model in the Gemini 4 family, priced at $1.50 per million input tokens, $0.075 cached input, and $7.50 output. Carbon and Argon are priced identically at $2.00/$0.10/$10.00 until November 30, 2026, then double to $4.00/$0.20/$20.00; Argon offers faster responses and lower token spend per turn. Hydrogen is only 25% cheaper than its peers initially, but after December 1 it becomes 75% cheaper; still, it is 15x more expensive than Claude Haiku 5.5 and GPT-6 Luna ($0.10/$0.50). Hydrogen is the new free tier model and will power AI features in Google Search.",
+    "summary_zh": "Google 推出 Gemini 4 Hydrogen，是 Gemini 4 系列中成本最低的模型，定价为每百万输入 token $1.50、缓存输入 $0.075、输出 $7.50。Carbon 和 Argon 定价相同，在 2026 年 11 月 30 日前为 $2.00/$0.10/$10.00，之后翻倍至 $4.00/$0.20/$20.00；Argon 响应更快且每轮 token 消耗更低。Hydrogen 初期仅比同系列模型便宜 25%，但 12 月 1 日后将便宜 75%；不过它仍比 Claude Haiku 5.5 和 GPT-6 Luna（$0.10/$0.50）贵 15 倍。Hydrogen 是新的免费层级模型，并将为 Google 搜索的 AI 功能提供支持。",
+    "norm_url": "https://simonwillison.net/2026/Nov/12/llm-gemini"
+  },
+  {
+    "id": "20261113-liquid-ai-releases-liquidcodec-a-74m-par-079552",
+    "url": "https://www.marktechpost.com/2026/11/12/liquid-ai-liquidcodec-streaming-audio-codec/",
+    "title_en": "Liquid AI Releases LiquidCodec, a 74M-Parameter Streaming Audio Codec",
+    "title_zh": "Liquid AI 发布 LiquidCodec：74M 参数流式音频编解码器",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-12T22:43:26Z",
+    "fetched_at": "2026-11-13T01:42:46Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "audio-codec",
+      "streaming",
+      "speech-tokenizer",
+      "model-release",
+      "benchmark"
+    ],
+    "image": "images/20261113-liquid-ai-releases-liquidcodec-a-74m-par-079552.jpg",
+    "summary_en": "Liquid AI released LiquidCodec, a ~74M-parameter streaming speech tokenizer used in its LFM3-Audio-2B and LFM3-Omni-2B models. It compresses 24 kHz audio into 12 token streams at 12.5 Hz using grouped finite scalar quantization (GFSQ) instead of RVQ, enabling parallel prediction. On a single CPU thread, it achieves ~361x real-time encoding and ~87x decoding, with encode RTF 0.0028 vs Mimi's 0.0361. It outperforms X-Codec 2, NanoCodec, and Mimi on ViSQOL and mel distance across 8 test sets, and achieves the highest TTS UTMOSv2, though NanoCodec leads on PESQ (WB) in 7 of 8 sets.",
+    "summary_zh": "Liquid AI 发布了 LiquidCodec，一个约 7400 万参数的流式语音分词器，用于其 LFM3-Audio-2B 和 LFM3-Omni-2B 模型。它采用分组有限标量量化（GFSQ）而非 RVQ，将 24 kHz 音频压缩为 12 个 token 流（12.5 Hz 帧率），支持并行预测。在单 CPU 线程上，编码速度达约 361 倍实时，解码约 87 倍实时，编码 RTF 为 0.0028（Mimi 为 0.0361）。在 8 个测试集上，其 ViSQOL 和 mel 距离均优于 X-Codec 2、NanoCodec 和 Mimi，TTS UTMOSv2 得分最高，但 NanoCodec 在 8 个测试集中的 7 个上 PESQ (WB) 更高。",
+    "norm_url": "https://www.marktechpost.com/2026/11/12/liquid-ai-liquidcodec-streaming-audio-codec"
+  },
+  {
+    "id": "20261113-google-s-new-gemini-model-is-better-at-u-9a4263",
+    "url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen",
+    "title_en": "Google’s new Gemini model is better at understanding complicated questions",
+    "title_zh": "Google 新 Gemini 模型更擅长理解复杂问题",
+    "source_name": "The Verge AI",
+    "published": "2026-11-12T21:55:32Z",
+    "fetched_at": "2026-11-13T01:44:34Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "gemini",
+      "model-release",
+      "google",
+      "search",
+      "llm"
+    ],
+    "image": "images/20261113-google-s-new-gemini-model-is-better-at-u-9a4263.jpg",
+    "summary_en": "Google released Gemini 4 Hydrogen, a new model that better handles complex questions by breaking them down and addressing each part, including multi-part queries, typos, and specific requests. It is available in Search, the Gemini app, Google AI Studio, Gemini API, and other services, and is now the default model in AI Mode. The model provides more links via simultaneous queries across subtopics, richer visuals like images and tables, and improved language understanding. It offers thinking levels low, medium, high, and a new 'xhigh' mode, and Google claims it delivers significant leaps in speed and intelligence over Gemini Flash 3.8, matching or outperforming competitors like Claude Sonnet 5.5 and GPT-6.1 Terra.",
+    "summary_zh": "Google 发布了 Gemini 4 Hydrogen 模型，能更好地处理复杂问题，通过分解问题并逐一回答，包括多部分查询、拼写错误和高度具体的请求。该模型已在搜索、Gemini 应用、Google AI Studio、Gemini API 等服务中上线，并成为 AI 模式的默认模型。它通过同时查询相关子主题提供更广泛的链接，并增加图像、对比表格、图表和地图等视觉内容，同时改进了所有支持语言的理解能力。模型提供低、中、高和新的“xhigh”思考级别，Google 称其在速度和智能上相比 Gemini Flash 3.8 有显著提升，并能匹配或超越 Claude Sonnet 5.5 和 GPT-6.1 Terra 等竞品。",
+    "norm_url": "https://www.theverge.com/ai-artificial-intelligence/1032505/google-search-ai-mode-gemini-4-hydrogen"
+  },
+  {
+    "id": "20261113-llmon-an-llm-native-markup-language-now-f052c6",
+    "url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite",
+    "title_en": "LLMON: An LLM-Native Markup Language, now in Granite 4.1 3B and 8B",
+    "title_zh": "LLMON：LLM原生标记语言，现已登陆Granite 4.1 3B和8B",
+    "source_name": "Hugging Face",
+    "published": "2026-11-12T19:07:35Z",
+    "fetched_at": "2026-11-13T01:43:32Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "llm",
+      "markup-language",
+      "prompt-injection",
+      "model-release",
+      "granite"
+    ],
+    "image": "images/20261113-llmon-an-llm-native-markup-language-now-f052c6.jpg",
+    "summary_en": "IBM Research released LLMON (LLM Object Notation), an XML-like markup language that uses reserved special tokens to explicitly mark structure and semantics in LLM context. Two experimental preview models, granite-4.1-3b-LLMON-preview and granite-4.1-8b-LLMON-preview, were trained from Granite 4.1 base checkpoints to consume and generate LLMON. On the OPI benchmark, LLMON models avoid 47% more indirect prompt injection attacks than the best frontier model and 95% more than the best open-source model, while maintaining general capability on par with Granite 4.1 Instruct. The models use a chat template that renders named parts (instruction, data, requirement) into addressable blocks bound by an exec block, and a LoRA can be tuned for custom vocabularies.",
+    "summary_zh": "IBM Research 发布了 LLMON（LLM Object Notation），一种类似 XML 的标记语言，使用保留的特殊 token 显式标记 LLM 上下文中的结构和语义。两个实验性预览模型 granite-4.1-3b-LLMON-preview 和 granite-4.1-8b-LLMON-preview 基于 Granite 4.1 基础检查点训练，能够消费和生成 LLMON。在 OPI 基准上，LLMON 模型比最佳前沿模型多避免 47% 的间接提示注入攻击，比最佳开源模型多避免 95%，同时通用能力与 Granite 4.1 Instruct 持平。模型使用聊天模板将命名部分（指令、数据、要求）渲染为可寻址块，并由 exec 块绑定，还可通过 LoRA 微调自定义词汇表。",
+    "norm_url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
+  },
+  {
+    "id": "20261113-introducing-gemini-4-hydrogen-84f414",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
+    "title_en": "Introducing Gemini 4 Hydrogen",
+    "title_zh": "推出 Gemini 4 Hydrogen",
+    "source_name": "Google DeepMind",
+    "published": "2026-11-12T18:00:50Z",
+    "fetched_at": "2026-11-13T01:43:08Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "gemini",
+      "agentic-workflows",
+      "benchmark",
+      "efficiency"
+    ],
+    "image": "images/20261113-introducing-gemini-4-hydrogen-84f414.jpg",
+    "summary_en": "Google released Gemini 4 Hydrogen, a fast and efficient model for everyday coding and agentic workflows, available across all tiers of Google AI Studio, Gemini API, Gemini app, and Search. It surpasses Gemini 4 Argon on the Artificial Analysis Intelligence Index (51 vs. 50 at default high thinking, up to 54 at xhigh) and is priced at $1.50 per million input tokens and $7.50 per million output tokens for its 1M-token context window. Hydrogen finishes tasks 2.5x faster than Gemini 3.8 Flash and more than triples Terminal-Bench 4.1 scores (57% vs. 18.2%). It introduces four thinking levels (low, medium, high, xhigh) and pairs with Carbon and Argon in multi-model workflows via Orchestrator, which achieves near-Carbon success rates with 24% less quota and 19% faster completion on Terminal-Bench 4.0.",
+    "summary_zh": "Google 发布 Gemini 4 Hydrogen，一款面向日常编码和智能体工作流的高效快速模型，已在 Google AI Studio、Gemini API、Gemini 应用和搜索等全平台上线。在默认高思考级别下，其 Artificial Analysis 智能指数超过 Gemini 4 Argon（51 对 50，最高 xhigh 级别达 54），100 万 token 上下文窗口统一定价为每百万输入 token 1.50 美元、每百万输出 token 7.50 美元。相比 Gemini 3.8 Flash，Hydrogen 完成任务速度提升 2.5 倍，Terminal-Bench 4.1 得分提高两倍以上（57% 对 18.2%）。它提供四个思考级别（低、中、高、xhigh），并通过 Google Antigravity 中的 Orchestrator 与 Carbon、Argon 协同，在 Terminal-Bench 4.0 上以平均减少 24% 配额消耗和加快 19% 的速度达到接近 Carbon 的任务成功率。",
+    "norm_url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen"
+  },
+  {
+    "id": "20261113-aws-releases-aws-emulator-a-local-copy-o-391653",
+    "url": "https://www.marktechpost.com/2026/11/12/aws-emulator-local-aws-api-emulator-ai-agents/",
+    "title_en": "AWS Releases AWS Emulator: A Local Copy of 200+ AWS Services Built by AI Agents",
+    "title_zh": "AWS 发布 AWS Emulator：由 AI 代理构建的 200+ AWS 服务本地副本",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-12T17:26:08Z",
+    "fetched_at": "2026-11-13T01:42:29Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "aws",
+      "emulator",
+      "ai-agents",
+      "local-testing",
+      "fidelity"
+    ],
+    "image": "images/20261113-aws-releases-aws-emulator-a-local-copy-o-391653.jpg",
+    "summary_en": "AWS has released AWS Emulator, a local emulator of AWS APIs that runs on laptops, dev servers, or CI without requiring an AWS account. It was built from 438 AWS API models covering 200+ services, with all code written and reviewed by autonomous AI agents. In release v1.0.322, it passes 24,243 of 42,857 scored fidelity tests (56.6%), with AWS KMS at 93.9% and Amazon SQS at 89.8%, but AWS CloudFormation at only 15.8%. The emulator is free under CC0 license, runs in-memory, and is best for fast local testing, though it lacks IAM evaluation and multi-region support.",
+    "summary_zh": "AWS 发布了 AWS Emulator，这是一个本地 AWS API 模拟器，可在笔记本电脑、开发服务器或 CI 环境中运行，无需 AWS 账户。它基于 438 个 AWS API 模型构建，覆盖 200+ 服务，所有代码均由自主 AI 代理编写和审查。在 v1.0.322 版本中，它通过了 42,857 个评分保真度测试中的 24,243 个（56.6%），其中 AWS KMS 达 93.9%，Amazon SQS 达 89.8%，但 AWS CloudFormation 仅 15.8%。该模拟器以 CC0 许可证免费提供，资源存储在内存中，最适合快速本地测试，但不支持 IAM 评估和多区域。",
+    "norm_url": "https://www.marktechpost.com/2026/11/12/aws-emulator-local-aws-api-emulator-ai-agents"
+  },
+  {
+    "id": "20261113-gemini-decisions-api-529d60",
+    "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+    "title_en": "Gemini Decisions API",
+    "title_zh": "Gemini Decisions API 发布",
+    "source_name": "Simon Willison",
+    "published": "2026-11-11T22:03:25Z",
+    "fetched_at": "2026-11-13T01:44:27Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "decision-model",
+      "multimodal",
+      "api",
+      "google",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "Google has launched the Gemini Decisions API with its \"Gemini Decision 1\" model, entering the decision model category alongside Jev and OpenAI. The API supports yes/no, choice, and rubric-scoring questions, similar to Jev, and is priced at 10 cents per million input tokens with free output. Unlike Jev (text/JSON only) and OpenAI (text and images), Gemini Decision 1 is fully multimodal, handling text, images, audio, video, and PDFs. In a test with a video, it returned probabilistic yes/no answers (e.g., 0.923 for robot presence) instead of binary 1.0/0.0.",
+    "summary_zh": "Google 推出了 Gemini Decisions API，包含“Gemini Decision 1”模型，加入 Jev 和 OpenAI 所在的决策模型类别。该 API 支持是/否、选择和评分标准打分三种问题类型，与 Jev 类似，定价为每百万输入 token 10 美分，输出免费。与仅支持文本/JSON 的 Jev 和支持文本与图像的 OpenAI 不同，Gemini Decision 1 完全多模态，可处理文本、图像、音频、视频和 PDF。在视频测试中，它返回概率性的是/否答案（例如机器人存在的概率为 0.923），而非二元的 1.0/0.0。",
+    "norm_url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api"
+  },
+  {
     "id": "20261112-google-launches-gemini-decisions-api-wit-a22ed1",
     "url": "https://www.marktechpost.com/2026/11/11/google-gemini-decisions-api-gemini-decision-1/",
     "title_en": "Google Launches Gemini Decisions API With Gemini Decision 1 at $0.10/M Tokens",
@@ -86,6 +240,28 @@
     "summary_en": "MBZUAI's Institute of Foundation Models (IFM) released PAN 2, an open 29B-parameter world model for physical AI that simulates scene outcomes from text actions as video. It uses a two-stage architecture: an LLM planner (e.g., Kimi K3) generates structured JSON world states, and a 29B MMDiT diffusion transformer predicts video latents, conditioned by a frozen Qwen3.5-9B encoder. PAN 2 leads 6 tested models on full-plan completion (34.0% vs 32.5% for MiniMax-H3) but trails on single actions and human preference (Elo 1595 vs 1620). Weights, training and inference code are Apache 2.0; it runs on data-center GPUs with each worker holding the full model in BF16.",
     "summary_zh": "MBZUAI的基础模型研究所（IFM）发布了PAN 2，一个开放的29B参数物理AI世界模型，可根据文本动作将场景变化模拟为视频。它采用两阶段架构：LLM规划器（如Kimi K3）生成结构化JSON世界状态，29B的MMDiT扩散Transformer预测视频潜变量，并由冻结的Qwen3.5-9B编码器条件化。PAN 2在6个测试模型的全计划完成率上领先（34.0% vs MiniMax-H3的32.5%），但在单动作和人类偏好上落后（Elo 1595 vs 1620）。权重、训练和推理代码均以Apache 2.0发布；运行于数据中心GPU，每个工作节点以BF16加载完整模型。",
     "norm_url": "https://www.marktechpost.com/2026/11/10/ifm-pan-2-open-world-model"
+  },
+  {
+    "id": "20261113-botpsy-on-device-personal-assistant-with-4c5ef8",
+    "url": "https://huggingface.co/blog/qvac/botpsy",
+    "title_en": "BotPsy: On-Device Personal Assistant with a Sub-Billion-Parameter Agentic Language Model",
+    "title_zh": "BotPsy：基于亚十亿参数智能体语言模型的端侧个人助理",
+    "source_name": "Hugging Face",
+    "published": "2026-11-11T05:01:16Z",
+    "fetched_at": "2026-11-13T01:44:13Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "on-device",
+      "agentic",
+      "function-calling",
+      "small-language-model",
+      "rl"
+    ],
+    "image": "images/20261113-botpsy-on-device-personal-assistant-with-4c5ef8.jpg",
+    "summary_en": "Tether AI Research released BotPsy, a 0.8B-parameter model built on Qwen3.5-0.8B for on-device function calling and agentic workflows. It is post-trained in four stages: SFT, Multi-teacher On-Policy Distillation (MOPD), and two rounds of RL with DAPO, using rule-based rewards with fine-grained partial credit for tool calls. BotPsy roughly doubles its base model's agentic performance (BFCL v4 23.4→44.0, ACEBench 30.1→58.7, τ-bench 23.2→51.5) and outperforms all tested models up to 1.2B parameters, even beating Qwen3.5-2B-Think on five of six benchmarks. It also improves instruction following (IFEval 59.7→90.8, IFBench 22.0→55.9), reduces unsafe responses from 36% to 21%, and cuts reasoning tokens by about 3×. Released under Apache 2.0 in bf16, Q8, and Q4 formats.",
+    "summary_zh": "Tether AI Research 发布了 BotPsy，一个基于 Qwen3.5-0.8B 构建的 0.8B 参数模型，专为端侧函数调用和智能体工作流设计。它经过四阶段后训练：SFT、多教师在线策略蒸馏（MOPD）以及两轮基于 DAPO 的强化学习，采用基于规则的奖励并对工具调用给予细粒度部分分。BotPsy 的智能体性能约为基座模型的两倍（BFCL v4 从 23.4 升至 44.0，ACEBench 从 30.1 升至 58.7，τ-bench 从 23.2 升至 51.5），在测试的所有 ≤1.2B 参数模型中表现最佳，甚至在六项基准中的五项上超越 Qwen3.5-2B-Think。它还提升了指令遵循能力（IFEval 从 59.7 升至 90.8，IFBench 从 22.0 升至 55.9），将不安全响应率从 36% 降至 21%，并将推理 token 数减少约 3 倍。模型以 Apache 2.0 许可证发布，提供 bf16、Q8 和 Q4 三种精度。",
+    "norm_url": "https://huggingface.co/blog/qvac/botpsy"
   },
   {
     "id": "20261112-fish-audio-releases-live-3-a-full-duplex-ded737",

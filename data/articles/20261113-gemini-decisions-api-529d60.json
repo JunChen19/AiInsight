@@ -1,0 +1,26 @@
+{
+  "id": "20261113-gemini-decisions-api-529d60",
+  "url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+  "title_en": "Gemini Decisions API",
+  "title_zh": "Gemini Decisions API 发布",
+  "source_name": "Simon Willison",
+  "source_url": "https://simonwillison.net/2026/Nov/11/gemini-decisions-api/",
+  "published": "2026-11-11T22:03:25Z",
+  "fetched_at": "2026-11-13T01:44:27Z",
+  "type": "blog",
+  "category": "model-release",
+  "tags": [
+    "decision-model",
+    "multimodal",
+    "api",
+    "google",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "Google has launched the Gemini Decisions API with its \"Gemini Decision 1\" model, entering the decision model category alongside Jev and OpenAI. The API supports yes/no, choice, and rubric-scoring questions, similar to Jev, and is priced at 10 cents per million input tokens with free output. Unlike Jev (text/JSON only) and OpenAI (text and images), Gemini Decision 1 is fully multimodal, handling text, images, audio, video, and PDFs. In a test with a video, it returned probabilistic yes/no answers (e.g., 0.923 for robot presence) instead of binary 1.0/0.0.",
+  "summary_zh": "Google 推出了 Gemini Decisions API，包含“Gemini Decision 1”模型，加入 Jev 和 OpenAI 所在的决策模型类别。该 API 支持是/否、选择和评分标准打分三种问题类型，与 Jev 类似，定价为每百万输入 token 10 美分，输出免费。与仅支持文本/JSON 的 Jev 和支持文本与图像的 OpenAI 不同，Gemini Decision 1 完全多模态，可处理文本、图像、音频、视频和 PDF。在视频测试中，它返回概率性的是/否答案（例如机器人存在的概率为 0.923），而非二元的 1.0/0.0。",
+  "content_en": "11th November 2026 - Link Blog\n\n**Gemini Decisions API** (via) Google join Jev and OpenAI in the decision model category with \"Gemini Decision 1\". This new model API is almost identical to Jev: it supports the same three types of questions (yes/no, choice, and rubric-scoring) and even reuses Jev's term \"Noul\" for a yes/no question.\n\nIt's priced the same as the GPT-6 Luna decision model: 10 cents per million input tokens, and output is free. Jev remains the cheapest of the three, at 4.2 cents per million.\n\nJev is text (and JSON) only. OpenAI can handle text and images. Gemini Decision 1 is fully multi-model: it covers text, images, audio, video, and PDFs.\n\nI tested it against video by passing these questions to it along with my Yonkers stomping robot video file:\n\n```\ndragon: Does this video have a dragon in it?\nrobot: Does this video have a robot in it?\nfrance: Is this video set in France?\nusa: Is this video set in the USA?\n```\nJev and OpenAI both return 1.0 or 0.0 for yes/no questions, but Gemini insists on being a little less confident than that:\n\n```\n{\n  \"dragon\": {\n    \"type\": \"yes_no\",\n    \"probability\": 0.04976021841520312\n  },\n  \"robot\": {\n    \"type\": \"yes_no\",\n    \"probability\": 0.9234055387792485\n  },\n  \"france\": {\n    \"type\": \"yes_no\",\n    \"probability\": 0.08329171353166241\n  },\n  \"usa\": {\n    \"type\": \"yes_no\",\n    \"probability\": 0.9230459995157706\n  }\n}\n```\n## Recent articles\n\n- Locating the source of a mysterious beep with Claude - 9th November 2026\n- Hide your slop PR descriptions behind \\<details>\\<summary> - 9th November 2026\n- Qwen 3.8 27B on my laptop can interpret model weights, too - 3rd November 2026\n- The U.S. Census Bureau and “Super Intelligence” - 2nd November 2026",
+  "content_zh": "2026年11月11日 - 链接博客\n\n**Gemini Decisions API**（经由）Google 加入了 Jev 和 OpenAI 的行列，推出“Gemini Decision 1”，进入决策模型类别。这个新的模型 API 与 Jev 几乎完全相同：它支持同样的三种问题类型（是/否、选择、以及评分标准打分），甚至沿用了 Jev 对是/否问题的术语“Noul”。\n\n它的定价与 GPT-6 Luna 决策模型相同：每百万输入 token 10 美分，输出免费。Jev 仍是三者中最便宜的，每百万 4.2 美分。\n\nJev 仅支持文本（和 JSON）。OpenAI 可以处理文本和图像。Gemini Decision 1 则是完全多模态的：它涵盖文本、图像、音频、视频和 PDF。\n\n我通过将以下问题连同我的 Yonkers 踩踏机器人视频文件一起传给视频来测试它：\n\n```\ndragon: Does this video have a dragon in it?\nrobot: Does this video have a robot in it?\nfrance: Is this video set in France?\nusa: Is this video set in the USA?\n```\nJev 和 OpenAI 对是/否问题都返回 1.0 或 0.0，但 Gemini 坚持要比那稍微不那么自信一些：\n\n```\n{\n  \"dragon\": {\n    \"type\": \"yes_no\",\n    \"probability\": 0.04976021841520312\n  },\n  \"robot\": {\n    \"type\": \"yes_no\",\n    \"probability\": 0.9234055387792485\n  },\n  \"france\": {\n    \"type\": \"yes_no\",\n    \"probability\": 0.08329171353166241\n  },\n  \"usa\": {\n    \"type\": \"yes_no\",\n    \"probability\": 0.9230459995157706\n  }\n}\n```\n## 近期文章\n\n- 用 Claude 定位神秘哔声的来源 - 2026年11月9日\n- 把你的垃圾 PR 描述藏在 \\<details>\\<summary> 后面 - 2026年11月9日\n- 我笔记本电脑上的 Qwen 3.8 27B 也能解释模型权重 - 2026年11月3日\n- 美国人口普查局与“超级智能” - 2026年11月2日",
+  "content_note": "fulltext",
+  "translation_failed": false
+}
