@@ -1,0 +1,26 @@
+{
+  "id": "20261114-from-delegation-to-coordination-learning-579f25",
+  "url": "https://arxiv.org/abs/2611.17041v1",
+  "title_en": "From Delegation to Coordination: Learning Efficient Multi-Agent Deep Research",
+  "title_zh": "从委派到协调：学习高效的多智能体深度研究",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.17041v1",
+  "published": "2026-11-12T16:26:27Z",
+  "fetched_at": "2026-11-14T01:20:16Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "multi-agent",
+    "reinforcement-learning",
+    "credit-assignment",
+    "deep-research",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces LEAD-RL, a joint main-agent-subagent training framework for multi-agent deep-research systems that uses contribution-aware credit assignment. A training-time rubric evaluates each subagent report's research utility and gates its inherited team advantage, while final-answer correctness remains the only team reward. Across five benchmarks and two model families, LEAD-RL improves answer quality; on BrowseComp, it improves accuracy by 2.49 percentage points and reduces critical-path cost by 24.5% over joint training with shared team credit. During validation, accuracy increases by 6.78 points at approximately constant critical-path cost.",
+  "summary_zh": "本文提出 LEAD-RL，一种用于多智能体深度研究系统的主-子智能体联合训练框架，采用贡献感知的信用分配。训练时通过评分规则评估每个子智能体报告的研究效用，并据此门控其继承的团队优势，而最终答案正确性仍是唯一的团队奖励。在五个基准和两个模型家族上，LEAD-RL 提升了答案质量；在 BrowseComp 上，相比共享团队信用的联合训练，准确率提升 2.49 个百分点，关键路径成本降低 24.5%。验证期间，准确率提升 6.78 分，关键路径成本基本不变。",
+  "content_en": "Multi-agent deep-research systems use delegation to parallelize search and keep long tool traces out of the main agent's context. Yet delegation helps only when task allocation and subtask execution are coordinated: the main agent must issue useful subtasks, while subagents must return reliable evidence. Existing training either optimizes only the main agent or broadcasts the same team advantage to all agents, which can reward misleading subagent reports and penalize useful ones. We introduce LEAD-RL (Learning Effective Agent Delegation with Reinforcement Learning), a joint main-agent-subagent training framework with contribution-aware credit assignment. A training-time rubric evaluates the research utility of each subagent report and gates its inherited team advantage, while final-answer correctness remains the only team reward; no token, step, or speedup reward is used. Across five benchmarks and two model families, LEAD-RL improves answer quality. On BrowseComp, it improves accuracy by 2.49 percentage points and reduces critical-path cost by 24.5% over joint training with shared team credit. During validation, accuracy increases by 6.78 points at approximately constant critical-path cost. These results show that contribution-aware credit assignment improves the quality-efficiency trade-off of multi-agent deep research.",
+  "content_zh": "多智能体深度研究系统通过委派来并行化搜索，并将冗长的工具调用轨迹排除在主智能体的上下文之外。然而，只有当任务分配和子任务执行得到协调时，委派才能发挥作用：主智能体必须发出有用的子任务，而子智能体必须返回可靠的证据。现有的训练要么只优化主智能体，要么将相同的团队优势广播给所有智能体，这可能会奖励误导性的子智能体报告，并惩罚有用的报告。我们提出 LEAD-RL（Learning Effective Agent Delegation with Reinforcement Learning，即学习有效的智能体委派与强化学习），这是一个联合主智能体-子智能体训练框架，具有贡献感知的信用分配。训练时的评分标准评估每个子智能体报告的研究效用，并对其继承的团队优势进行门控，而最终答案的正确性仍然是唯一的团队奖励；不使用任何 token、步数或加速奖励。在五个基准和两个模型家族上，LEAD-RL 提升了答案质量。在 BrowseComp 上，与共享团队信用的联合训练相比，它将准确率提高了 2.49 个百分点，并将关键路径成本降低了 24.5%。在验证期间，准确率在关键路径成本大致不变的情况下提高了 6.78 个点。这些结果表明，贡献感知的信用分配改善了多智能体深度研究的质量-效率权衡。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

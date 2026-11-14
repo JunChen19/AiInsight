@@ -1,0 +1,26 @@
+{
+  "id": "20261114-statealign-internalizing-state-aware-dec-d8963d",
+  "url": "https://arxiv.org/abs/2611.16304v1",
+  "title_en": "StateAlign: Internalizing State-Aware Decision-Making for Reliable Multi-Turn Tool Agents via Reinforcement Learning",
+  "title_zh": "StateAlign：通过强化学习将状态感知决策内化到可靠的多轮工具智能体中",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.16304v1",
+  "published": "2026-11-12T05:04:43Z",
+  "fetched_at": "2026-11-14T01:20:21Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "tool-use",
+    "multi-turn",
+    "hallucination",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "StateAlign is a method that combines task-state construction with state-contrastive reinforcement learning to improve the reliability of multi-turn tool-using agents. It addresses the issue that better task performance can coincide with increased tool hallucination, where agents execute actions when they should ask for information, retrieve it, or decline infeasible requests. The approach uses outcome rewards to guide task completion and token-level contrasts to compare the same generated reasoning and actions under paired states, training outputs that fit the current state. Experiments across five base models from three families show improvements on BFCL v4 multi-turn, ToolSandbox, and When2Call. On Qwen3-8B, StateAlign improves BFCL v4 multi-turn accuracy from 45.5% to 55.2% and reduces no-tool hallucination on SimpleToolHalluBench from 62.2% (outcome-only training) to 56.1%.",
+  "summary_zh": "StateAlign 是一种结合任务状态构建与状态对比强化学习的方法，旨在提升多轮工具智能体的可靠性。它解决了任务性能提升可能伴随工具幻觉增加的问题，即智能体在应询问信息、检索信息或拒绝不可行请求时却执行了动作。该方法使用结果奖励引导任务完成，并通过 token 级对比在配对状态下比较相同的生成推理和动作，训练出符合当前状态的输出。在来自三个家族的五个基础模型上，实验在 BFCL v4 多轮、ToolSandbox 和 When2Call 上均显示改进。在 Qwen3-8B 上，StateAlign 将 BFCL v4 多轮准确率从 45.5% 提升至 55.2%，并将 SimpleToolHalluBench 上的无工具幻觉从仅结果训练的 62.2% 降低至 56.1%。",
+  "content_en": "Reinforcement learning has improved the tool-use capabilities of large language models. However, better task performance can coincide with increased tool hallucination. Reliable tool use requires decisions to follow the current task state: available information, tool capabilities, and task progress. Our analysis shows that agents sometimes execute when they should ask for information, retrieve it, or decline an infeasible request, even when reasoning identifies missing information. We introduce StateAlign, combining task-state construction with state-contrastive reinforcement learning. The data cover five task conditions and pair states with different action requirements. Outcome rewards guide task completion; token-level contrasts compare the same generated reasoning and actions under paired states to train outputs that fit the current state. Experiments across five base models from three families show improvements on BFCL v4 multi-turn, ToolSandbox, and When2Call. Ablations show that state construction improves performance and reliability under different reward designs. The complete method further reduces tool hallucination across three Qwen3 sizes. On Qwen3-8B, StateAlign improves BFCL v4 multi-turn accuracy from 45.5% to 55.2% and reduces no-tool hallucination on SimpleToolHalluBench from 62.2% under outcome-only training to 56.1%. Behavioral analyses show more consistent decisions, more complete multi-call execution, and stronger recovery after tool errors.",
+  "content_zh": "强化学习提升了大语言模型的工具使用能力。然而，任务表现的提升可能与工具幻觉的增加同时出现。可靠的工具使用要求决策遵循当前任务状态：可用信息、工具能力和任务进展。我们的分析表明，智能体有时在本应请求信息、检索信息或拒绝不可行请求时却执行操作，即使推理过程已经识别出信息缺失。我们提出 StateAlign，将任务状态构建与状态对比强化学习相结合。数据涵盖五种任务条件，并将状态与不同的动作要求配对。结果奖励引导任务完成；token 级对比在配对状态下比较相同的生成推理与动作，以训练出符合当前状态的输出。在来自三个模型家族的五个基础模型上的实验表明，在 BFCL v4 多轮、ToolSandbox 和 When2Call 上均有提升。消融实验表明，状态构建在不同奖励设计下提升了性能和可靠性。完整方法进一步在三个 Qwen3 规模上减少了工具幻觉。在 Qwen3-8B 上，StateAlign 将 BFCL v4 多轮准确率从 45.5% 提升至 55.2%，并将 SimpleToolHalluBench 上的无工具幻觉从仅结果训练下的 62.2% 降低至 56.1%。行为分析表明，决策更加一致，多调用执行更加完整，工具错误后的恢复能力更强。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

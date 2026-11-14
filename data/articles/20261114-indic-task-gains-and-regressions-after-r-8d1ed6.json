@@ -1,0 +1,26 @@
+{
+  "id": "20261114-indic-task-gains-and-regressions-after-r-8d1ed6",
+  "url": "https://arxiv.org/abs/2611.16228v1",
+  "title_en": "Indic-Task Gains and Regressions after Reinforcement Learning",
+  "title_zh": "强化学习后Indic-Task的增益与回退",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.16228v1",
+  "published": "2026-11-12T03:21:07Z",
+  "fetched_at": "2026-11-14T01:19:39Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "grpo",
+    "indic-languages",
+    "benchmark",
+    "reward-model"
+  ],
+  "image": null,
+  "summary_en": "We run reinforcement learning (RL) with GRPO across four environments, starting from a supervised fine-tuned 30B-A3B mixture-of-experts model covering English and eight Indic languages. Comparing before and after RL across 34 benchmarks, MATH improves by 36.07 points and most Indic benchmarks improve, but XQuAD-Indic F1 falls 19.32 points as English answers rise from 8.7% to 91.7%, IndicQA falls 8.64, while English XQuAD gains 11.71 F1. A second RL run from the same initialization adds an Indic environment with language and repetition rewards, improving passage-answering and instruction-following while preserving MATH, but losing ground on reasoning and coding. Several training choices changed together, so the effect of individual reward terms cannot be isolated, and script compliance remains unresolved even with a language reward.",
+  "summary_zh": "我们使用GRPO在四个环境中进行强化学习（RL），起点是一个覆盖英语和八种印度语言的30B-A3B混合专家模型（经监督微调）。在34个基准上对比RL前后的模型，MATH提高36.07分，大多数印度语言基准也有提升。然而，XQuAD-Indic的F1下降19.32分，同时英语回答比例从8.7%升至91.7%；IndicQA下降8.64分，而英语XQuAD的F1提高11.71分。第二次RL运行从相同的监督初始化开始，加入一个印度语言环境以及语言和重复奖励，与已发布模型相比，在段落问答和指令遵循基准上有所提升，并保持MATH性能，但在推理和编码基准上退步。由于多个训练选择同时改变，无法分离任何单个奖励项的效果。脚本合规问题仍未解决，添加语言奖励并未确保使用所要求的文字系统。因此，即使其他基准分数提高，段落问答和脚本合规仍需直接评估。",
+  "content_en": "We run reinforcement learning (RL) with GRPO across four environments, starting from a supervised fine-tuned 30B-A3B mixture-of-experts model covering English and eight Indic languages. We compare the model before and after RL across 34 benchmarks in one evaluation campaign. MATH improves by 36.07 points, and most Indic benchmarks also improve. Yet XQuAD-Indic F1 falls 19.32 points as English answers rise from 8.7% to 91.7%; IndicQA falls 8.64, while English XQuAD gains 11.71 F1. A second RL run from the same supervised initialization adds an Indic environment together with language and repetition rewards. Compared with the released model, it improves both passage-answering and instruction-following benchmarks, along with preserving MATH performance. But it loses ground on reasoning and coding benchmarks. Several training choices changed together, so we cannot isolate the effect of any one of the reward terms. Script compliance remains unresolved. Adding a language reward did not ensure use of the requested script. Passage answering and script compliance therefore need direct evaluation, even when other benchmark scores improve.",
+  "content_zh": "我们使用 GRPO 在四个环境中进行强化学习（RL），起点是一个经过监督微调的 30B-A3B 混合专家模型，覆盖英语和八种印度语言。我们在一次评估活动中，在 34 个基准上比较了 RL 前后的模型。MATH 提升了 36.07 分，大多数印度语言基准也有所提升。然而，随着英语回答从 8.7% 上升到 91.7%，XQuAD-Indic F1 下降了 19.32 分；IndicQA 下降了 8.64，而英语 XQuAD 的 F1 提升了 11.71。从同一监督初始化出发的第二次 RL 运行，加入了一个印度语言环境以及语言和重复奖励。与已发布的模型相比，它在段落问答和指令遵循基准上均有提升，同时保持了 MATH 性能。但它在推理和编码基准上有所退步。若干训练选择同时发生了变化，因此我们无法分离任何一个奖励项的影响。脚本合规性仍未解决。添加语言奖励并不能确保使用所要求的文字系统。因此，即使其他基准分数有所提升，段落问答和脚本合规性仍需要直接评估。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

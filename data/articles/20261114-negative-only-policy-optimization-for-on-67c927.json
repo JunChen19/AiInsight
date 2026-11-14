@@ -1,0 +1,26 @@
+{
+  "id": "20261114-negative-only-policy-optimization-for-on-67c927",
+  "url": "https://arxiv.org/abs/2611.17287v1",
+  "title_en": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
+  "title_zh": "面向单边可验证奖励的负样本策略优化",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.17287v1",
+  "published": "2026-11-12T18:52:33Z",
+  "fetched_at": "2026-11-14T01:20:04Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "policy-optimization",
+    "verifiable-rewards",
+    "one-sided-verifiability",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper formalizes one-sided verifiability (OSV) where verifiers can reliably identify failures but not successes, making standard RLVR unreliable due to false positives. It proposes Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives, using a reference-relative negative suppression loss and a group-level adapter that scales updates by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
+  "summary_zh": "论文形式化了单边可验证性（OSV）场景：验证器能可靠识别失败但无法确认成功，导致标准RLVR因假阳性而不可靠。提出负样本策略优化（NOPO），将已验证正样本视为无标签，仅通过抑制可信负样本来更新策略，结合参考相对负抑制损失和组级适配器（按非证伪响应比例缩放更新）。在单元测试、约束检查和LLM自验证器上，NOPO在无预言奖励时于代码、逻辑和数学基准上提升pass@k。这些增益在推理时缩放和跨基准迁移下持续存在。",
+  "content_en": "Reinforcement learning with verifiable rewards (RLVR) typically relies on a verifier that can reliably judge whether sampled solutions are correct. However, in many realistic settings, complete verification is generally unavailable, while cheap checks can only falsify failures. We formalize this regime as one-sided verifiability (OSV): verified negatives are reliable counterexamples, but verified positives are merely non-falsified candidates and may contain many false positives. This asymmetry makes standard RLVR unreliable, because reinforcing verified positives can directly reward shortcuts that pass partial checks. To address this issue, we propose Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives. Specifically, NOPO combines a reference-relative negative suppression loss with a group-level adapter that scales each update by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
+  "content_zh": "使用可验证奖励的强化学习（RLVR）通常依赖于一个能够可靠判断采样解是否正确 的验证器。然而，在许多现实场景中，完整的验证通常是不可用的，而廉价检查只能证伪失败。我们将这一情形形式化为单侧可验证性（OSV）：已验证的负例是可靠的反例，但已验证的正例仅仅是未被证伪的候选，可能包含大量假阳性。这种不对称性使得标准 RLVR 不可靠，因为强化已验证的正例可能直接奖励那些通过部分检查的捷径。为解决这一问题，我们提出仅负例策略优化（NOPO），它将已验证的正例视为无标签数据，仅通过抑制可信的已验证负例来更新策略。具体而言，NOPO 将参考相对的负例抑制损失与一个组级适配器相结合，后者按未被证伪响应的比例对每次更新进行缩放。在单元测试、约束检查和 LLM 自验证器上，当 oracle 奖励不可用时，NOPO 在代码、逻辑和数学基准上提升了 pass@k，优于基线。这些增益在推理时扩展和跨基准迁移下依然保持。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261114-experience-handoff-reinforcement-learnin-6eeb40",
+  "url": "https://arxiv.org/abs/2611.16409v1",
+  "title_en": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
+  "title_zh": "经验传递强化学习实现递归自我改进",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.16409v1",
+  "published": "2026-11-12T07:18:30Z",
+  "fetched_at": "2026-11-14T01:19:45Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "llm",
+    "agent",
+    "experience-handoff",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "Training LLMs for agentic tasks with RL from scalar rewards discards fine-grained environment information like error logs. Recent works use a harness that refines inputs via reflection or compaction and hands past experience to future rollouts, but the construction of handed-off artifacts (e.g., a playbook) is not learned. The authors fix the Agentic Context Engineering (ACE) harness and train one model to act, reflect, and curate task-local playbooks. Their method, ACE-RL, evaluates candidate experience-handoff artifacts by their downstream effect on future actor rollouts and co-optimizes role-specific behaviors (action generator, insight reflector, playbook curator) under a fixed scaffold. Across agentic benchmarks, ACE-RL achieves higher held-out performance than baselines, suggesting agent training should optimize both current actions and the model-written experience inherited by future rollouts.",
+  "summary_zh": "使用标量奖励的强化学习训练LLM执行智能体任务时，会丢弃环境中的细粒度信息（如错误日志）。近期工作通过一个封装框架，利用反思或压缩来精炼输入，并将过往经验传递给未来的 rollout，但传递的产物（如 playbook）的构建本身并未被学习。作者固定 Agentic Context Engineering (ACE) 框架，训练一个模型来行动、反思和整理任务本地的 playbook。其方法 ACE-RL 通过候选经验传递产物对未来 actor rollout 的下游影响来评估它们，并在固定脚手架下协同优化角色特定行为（动作生成器、洞察反思器和 playbook 整理器）。在智能体基准测试中，ACE-RL 的留出性能优于基线方法，表明智能体训练不仅应优化当前 rollout 中的动作，还应优化未来 rollout 继承的模型生成经验。",
+  "content_en": "It is common to train Large Language Models (LLMs) for agentic tasks with Reinforcement Learning (RL) from scalar rewards. However, this throws away the fine-grained information about the environment that the agent experienced during the trial (e.g., error logs). To utilize this rich information, recent works wrap the agent in a harness that refines its own inputs through reflection or compaction and hands past experience to future rollouts, but the construction of the handed-off artifacts (e.g., a playbook) is itself not learned. We want the best of both worlds: gradient updates from a scalar reward, while also utilizing environment information to hand off experience. As a concrete testbed, we fix the Agentic Context Engineering (\\ace{}) harness and train one model to act, reflect, and curate task-local playbooks. Our method, \\acerl{}, evaluates candidate experience-handoff artifacts by their downstream effect on future actor rollouts, and co-optimizes the role-specific behaviors (action generator, insight reflector, and playbook curator) under a fixed scaffold. Across agentic benchmarks, \\acerl{} achieves higher held-out performance than baseline methods. The results suggest that agent training should optimize not only the actions in the current rollout, but also the model-written experience that future rollouts inherit.",
+  "content_zh": "使用标量奖励通过强化学习（RL）训练大型语言模型（LLMs）执行智能体任务是一种常见做法。然而，这种做法丢弃了智能体在试验过程中所经历的环境的细粒度信息（例如错误日志）。为了利用这些丰富的信息，近期的工作将智能体包裹在一个执行框架中，该框架通过反思或压缩来精炼自身的输入，并将过往经验传递给未来的 rollout，但传递产物（例如 playbook）的构建本身并未被学习。我们希望兼得两者之长：既从标量奖励中进行梯度更新，又利用环境信息来传递经验。作为一个具体的测试平台，我们固定 Agentic Context Engineering（\\ace{}）框架，并训练一个模型来执行行动、反思以及策划任务本地的 playbook。我们的方法 \\acerl{} 通过候选经验传递产物对未来 actor rollout 的下游影响来评估它们，并在固定脚手架下协同优化角色特定的行为（行动生成器、洞察反思器和 playbook 策划器）。在多个智能体基准上，\\acerl{} 取得了比基线方法更高的留出性能。结果表明，智能体训练不仅应优化当前 rollout 中的行动，还应优化未来 rollout 所继承的模型编写的经验。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

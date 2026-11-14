@@ -1,0 +1,26 @@
+{
+  "id": "20261114-safety-as-a-budget-calibrating-the-contr-e6baaa",
+  "url": "https://arxiv.org/abs/2611.16628v1",
+  "title_en": "Safety as a Budget: Calibrating the Control Channel of Constrained GRPO for Vision-Language Models",
+  "title_zh": "安全作为预算：校准约束GRPO的控制通道用于视觉语言模型",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.16628v1",
+  "published": "2026-11-12T11:00:14Z",
+  "fetched_at": "2026-11-14T01:20:11Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "vision-language-models",
+    "safety",
+    "grpo",
+    "constrained-optimization"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes treating safety as budgets on harmful assistance and over-refusal rates, enforced by Lagrange multipliers in GRPO. However, standard GRPO fails because the multiplier compares the scorer's mean with the budget, and ranking-oriented scorers have biased means, causing the multiplier to settle, saturate, or switch off incorrectly. Also, GRPO's standardization cancels the multiplier before the gradient. Two-channel constrained GRPO fixes this by keeping raw scores for within-group comparison, passing penalty and constraint estimates through a monotone map fitted on judge-labeled data, and preserving the multiplier in the advantage. On Qwen3-VL-2B with a 4B scorer, held-out harm on 1,037 adversarial prompts drops from 8.9% (standard GRPO) to 4.8% (uncalibrated budget: 7.6%), with over-refusal ≤2% on 400 benign queries and unchanged MMBench. Gains are largest when intent is in the image (10.1%→5.1%) and on HADES (28.9%→12.8%).",
+  "summary_zh": "本文提出将安全性视为对有害协助率和过度拒绝率的预算，并通过GRPO中的拉格朗日乘子来实施。然而，标准GRPO存在两个问题：乘子比较评分器的均值与预算，而面向排序的评分器均值有偏差，导致乘子错误地稳定、饱和或关闭；此外，GRPO的标准化在梯度前抵消了乘子。双通道约束GRPO通过保留原始分数用于组内比较、将惩罚和约束估计通过基于法官标注数据拟合的单调映射传递、并在优势函数中保留乘子来解决这些问题。在Qwen3-VL-2B策略上，使用4B评分器，在1,037个对抗性提示上的有害率从标准GRPO的8.9%降至4.8%（未校准预算为7.6%），在400个良性查询上过度拒绝率不超过2%，MMBench不变。当意图在图像中时增益最大（10.1%→5.1%），在未见过的HADES基准上也有提升（28.9%→12.8%）。",
+  "content_en": "Reinforcement learning can teach vision-language models (VLMs) to decline harmful image-text requests, but how safe the result becomes is set indirectly, through reward weights found by trial runs. Stating safety as budgets on the rate of harmful assistance and the rate of over-refusal, enforced by Lagrange multipliers inside GRPO with an off-the-shelf scorer as the cost, is the natural fix, and it fails twice. The multiplier compares the scorer's mean with the budget, and scorers built for ranking get the mean wrong: a fixed-point analysis shows that the mean bias, not the budget, then decides whether the multiplier settles, saturates or switches off. And standard GRPO standardizes the penalized reward within each group, which cancels the multiplier before it reaches the gradient. Two-channel constrained GRPO repairs both: the base reward keeps the raw score for the within-group comparison, the penalty and the constraint estimate pass through a monotone map fitted on judge-labeled training responses, and the advantage keeps the multiplier. On a Qwen3-VL-2B policy with a training-free readout of an open 4B model as the scorer, held-out harm on 1,037 adversarial prompts falls from 8.9% under standard GRPO to 4.8%, lower in every seed, where the uncalibrated budget gives 7.6%; over-refusal stays at most 2% on 400 benign queries and MMBench is unchanged. The gain is largest where the intent sits in the image (10.1% -> 5.1%) and grows on the unseen HADES benchmark (28.9% -> 12.8%",
+  "content_zh": "强化学习可以教会视觉语言模型（VLM）拒绝有害的图像-文本请求，但最终能达到多安全，是通过试运行找到的奖励权重间接设定的。将安全性表述为有害协助率和过度拒绝率上的预算，并由 GRPO 内部的 Lagrange 乘子强制执行、以现成的评分器作为代价，是自然的修复方案，但它会两次失败。乘子将评分器的均值与预算进行比较，而为排序构建的评分器会把均值算错：不动点分析表明，决定乘子是收敛、饱和还是关闭的，是均值偏差而非预算。而标准 GRPO 会在每个组内对受惩罚的奖励做标准化，这会在乘子到达梯度之前将其抵消。双通道约束 GRPO 修复了这两个问题：基础奖励保留原始分数用于组内比较，惩罚项和约束估计通过一个在裁判标注的训练响应上拟合的单调映射传递，而优势函数保留乘子。在一个 Qwen3-VL-2B 策略上，以开放 4B 模型的免训练读出作为评分器，在 1,037 条对抗性提示上的留出危害率从标准 GRPO 下的 8.9% 降至 4.8%，在每个随机种子下都更低，而未校准的预算给出 7.6%；在 400 条良性查询上过度拒绝率最多保持在 2%，且 MMBench 保持不变。增益在意图位于图像中时最大（10.1% -> 5.1%），并在未见过的 HADES 基准上继续增长（28.9% -> 12.8%）",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

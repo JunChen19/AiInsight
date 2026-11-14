@@ -1,5 +1,27 @@
 [
   {
+    "id": "20261114-google-releases-gemini-4-hydrogen-2-5x-f-d411d6",
+    "url": "https://www.marktechpost.com/2026/11/13/google-gemini-4-hydrogen/",
+    "title_en": "Google Releases Gemini 4 Hydrogen: 2.5x Faster Than Gemini 3.8 Flash",
+    "title_zh": "Google 发布 Gemini 4 Hydrogen：比 Gemini 3.8 Flash 快 2.5 倍",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-13T09:45:48Z",
+    "fetched_at": "2026-11-14T01:19:59Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "agent",
+      "benchmark",
+      "google",
+      "llm"
+    ],
+    "image": "images/20261114-google-releases-gemini-4-hydrogen-2-5x-f-d411d6.jpg",
+    "summary_en": "Google released Gemini 4 Hydrogen, a proprietary model from Google DeepMind designed for coding and agentic workflows. It features a 1,048,576-token unified context window and four thinking levels (low, medium, high, xhigh), with high as default. It scores 51 on the Artificial Analysis Intelligence Index at high (54 at xhigh), achieves 57% on Terminal-Bench 4.1 versus 18.2% for Gemini 3.8 Flash, and runs 2.5x faster than 3.8 Flash. Pricing is $1.50/$7.50 per 1M input/output tokens, flat across the full context window.",
+    "summary_zh": "Google 发布了 Gemini 4 Hydrogen，这是一款由 Google DeepMind 开发的专有模型，专为编码和智能体工作流设计。它拥有 1,048,576 token 的统一上下文窗口和四个思考级别（low、medium、high、xhigh），默认使用 high。在 Artificial Analysis 智能指数上，high 级别得分为 51（xhigh 为 54），在 Terminal-Bench 4.1 上达到 57%，而 Gemini 3.8 Flash 仅为 18.2%，且运行速度比 3.8 Flash 快 2.5 倍。定价为每百万输入/输出 token 1.50/7.50 美元，在整个上下文窗口内统一。",
+    "norm_url": "https://www.marktechpost.com/2026/11/13/google-gemini-4-hydrogen"
+  },
+  {
     "id": "20261113-llm-gemini-0-37-622d7c",
     "url": "https://simonwillison.net/2026/Nov/12/llm-gemini/",
     "title_en": "llm-gemini 0.37",
@@ -88,6 +110,28 @@
     "norm_url": "https://huggingface.co/blog/ibm-granite/llmon-an-llm-native-markup-language-now-in-granite"
   },
   {
+    "id": "20261114-negative-only-policy-optimization-for-on-67c927",
+    "url": "https://arxiv.org/abs/2611.17287v1",
+    "title_en": "Negative-Only Policy Optimization for One-Sided Verifiable Rewards",
+    "title_zh": "面向单边可验证奖励的负样本策略优化",
+    "source_name": "arXiv",
+    "published": "2026-11-12T18:52:33Z",
+    "fetched_at": "2026-11-14T01:20:04Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "policy-optimization",
+      "verifiable-rewards",
+      "one-sided-verifiability",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper formalizes one-sided verifiability (OSV) where verifiers can reliably identify failures but not successes, making standard RLVR unreliable due to false positives. It proposes Negative-Only Policy Optimization (NOPO), which treats verified positives as unlabeled and updates the policy only by suppressing trusted verified negatives, using a reference-relative negative suppression loss and a group-level adapter that scales updates by the proportion of non-falsified responses. Across unit-test, constraint-check, and LLM self-verifiers, NOPO improves pass@k over baselines on code, logic, and math benchmarks when oracle rewards are unavailable. These gains persist under inference-time scaling and cross-benchmark transfer.",
+    "summary_zh": "论文形式化了单边可验证性（OSV）场景：验证器能可靠识别失败但无法确认成功，导致标准RLVR因假阳性而不可靠。提出负样本策略优化（NOPO），将已验证正样本视为无标签，仅通过抑制可信负样本来更新策略，结合参考相对负抑制损失和组级适配器（按非证伪响应比例缩放更新）。在单元测试、约束检查和LLM自验证器上，NOPO在无预言奖励时于代码、逻辑和数学基准上提升pass@k。这些增益在推理时缩放和跨基准迁移下持续存在。",
+    "norm_url": "https://arxiv.org/abs/2611.17287v1"
+  },
+  {
     "id": "20261113-introducing-gemini-4-hydrogen-84f414",
     "url": "https://deepmind.google/blog/introducing-gemini-4-hydrogen/",
     "title_en": "Introducing Gemini 4 Hydrogen",
@@ -130,6 +174,160 @@
     "summary_en": "AWS has released AWS Emulator, a local emulator of AWS APIs that runs on laptops, dev servers, or CI without requiring an AWS account. It was built from 438 AWS API models covering 200+ services, with all code written and reviewed by autonomous AI agents. In release v1.0.322, it passes 24,243 of 42,857 scored fidelity tests (56.6%), with AWS KMS at 93.9% and Amazon SQS at 89.8%, but AWS CloudFormation at only 15.8%. The emulator is free under CC0 license, runs in-memory, and is best for fast local testing, though it lacks IAM evaluation and multi-region support.",
     "summary_zh": "AWS 发布了 AWS Emulator，这是一个本地 AWS API 模拟器，可在笔记本电脑、开发服务器或 CI 环境中运行，无需 AWS 账户。它基于 438 个 AWS API 模型构建，覆盖 200+ 服务，所有代码均由自主 AI 代理编写和审查。在 v1.0.322 版本中，它通过了 42,857 个评分保真度测试中的 24,243 个（56.6%），其中 AWS KMS 达 93.9%，Amazon SQS 达 89.8%，但 AWS CloudFormation 仅 15.8%。该模拟器以 CC0 许可证免费提供，资源存储在内存中，最适合快速本地测试，但不支持 IAM 评估和多区域。",
     "norm_url": "https://www.marktechpost.com/2026/11/12/aws-emulator-local-aws-api-emulator-ai-agents"
+  },
+  {
+    "id": "20261114-from-delegation-to-coordination-learning-579f25",
+    "url": "https://arxiv.org/abs/2611.17041v1",
+    "title_en": "From Delegation to Coordination: Learning Efficient Multi-Agent Deep Research",
+    "title_zh": "从委派到协调：学习高效的多智能体深度研究",
+    "source_name": "arXiv",
+    "published": "2026-11-12T16:26:27Z",
+    "fetched_at": "2026-11-14T01:20:16Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "multi-agent",
+      "reinforcement-learning",
+      "credit-assignment",
+      "deep-research",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces LEAD-RL, a joint main-agent-subagent training framework for multi-agent deep-research systems that uses contribution-aware credit assignment. A training-time rubric evaluates each subagent report's research utility and gates its inherited team advantage, while final-answer correctness remains the only team reward. Across five benchmarks and two model families, LEAD-RL improves answer quality; on BrowseComp, it improves accuracy by 2.49 percentage points and reduces critical-path cost by 24.5% over joint training with shared team credit. During validation, accuracy increases by 6.78 points at approximately constant critical-path cost.",
+    "summary_zh": "本文提出 LEAD-RL，一种用于多智能体深度研究系统的主-子智能体联合训练框架，采用贡献感知的信用分配。训练时通过评分规则评估每个子智能体报告的研究效用，并据此门控其继承的团队优势，而最终答案正确性仍是唯一的团队奖励。在五个基准和两个模型家族上，LEAD-RL 提升了答案质量；在 BrowseComp 上，相比共享团队信用的联合训练，准确率提升 2.49 个百分点，关键路径成本降低 24.5%。验证期间，准确率提升 6.78 分，关键路径成本基本不变。",
+    "norm_url": "https://arxiv.org/abs/2611.17041v1"
+  },
+  {
+    "id": "20261114-safety-as-a-budget-calibrating-the-contr-e6baaa",
+    "url": "https://arxiv.org/abs/2611.16628v1",
+    "title_en": "Safety as a Budget: Calibrating the Control Channel of Constrained GRPO for Vision-Language Models",
+    "title_zh": "安全作为预算：校准约束GRPO的控制通道用于视觉语言模型",
+    "source_name": "arXiv",
+    "published": "2026-11-12T11:00:14Z",
+    "fetched_at": "2026-11-14T01:20:11Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "vision-language-models",
+      "safety",
+      "grpo",
+      "constrained-optimization"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes treating safety as budgets on harmful assistance and over-refusal rates, enforced by Lagrange multipliers in GRPO. However, standard GRPO fails because the multiplier compares the scorer's mean with the budget, and ranking-oriented scorers have biased means, causing the multiplier to settle, saturate, or switch off incorrectly. Also, GRPO's standardization cancels the multiplier before the gradient. Two-channel constrained GRPO fixes this by keeping raw scores for within-group comparison, passing penalty and constraint estimates through a monotone map fitted on judge-labeled data, and preserving the multiplier in the advantage. On Qwen3-VL-2B with a 4B scorer, held-out harm on 1,037 adversarial prompts drops from 8.9% (standard GRPO) to 4.8% (uncalibrated budget: 7.6%), with over-refusal ≤2% on 400 benign queries and unchanged MMBench. Gains are largest when intent is in the image (10.1%→5.1%) and on HADES (28.9%→12.8%).",
+    "summary_zh": "本文提出将安全性视为对有害协助率和过度拒绝率的预算，并通过GRPO中的拉格朗日乘子来实施。然而，标准GRPO存在两个问题：乘子比较评分器的均值与预算，而面向排序的评分器均值有偏差，导致乘子错误地稳定、饱和或关闭；此外，GRPO的标准化在梯度前抵消了乘子。双通道约束GRPO通过保留原始分数用于组内比较、将惩罚和约束估计通过基于法官标注数据拟合的单调映射传递、并在优势函数中保留乘子来解决这些问题。在Qwen3-VL-2B策略上，使用4B评分器，在1,037个对抗性提示上的有害率从标准GRPO的8.9%降至4.8%（未校准预算为7.6%），在400个良性查询上过度拒绝率不超过2%，MMBench不变。当意图在图像中时增益最大（10.1%→5.1%），在未见过的HADES基准上也有提升（28.9%→12.8%）。",
+    "norm_url": "https://arxiv.org/abs/2611.16628v1"
+  },
+  {
+    "id": "20261114-experience-handoff-reinforcement-learnin-6eeb40",
+    "url": "https://arxiv.org/abs/2611.16409v1",
+    "title_en": "Experience-Handoff Reinforcement Learning for Recursive Self-Improvement",
+    "title_zh": "经验传递强化学习实现递归自我改进",
+    "source_name": "arXiv",
+    "published": "2026-11-12T07:18:30Z",
+    "fetched_at": "2026-11-14T01:19:45Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "llm",
+      "agent",
+      "experience-handoff",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "Training LLMs for agentic tasks with RL from scalar rewards discards fine-grained environment information like error logs. Recent works use a harness that refines inputs via reflection or compaction and hands past experience to future rollouts, but the construction of handed-off artifacts (e.g., a playbook) is not learned. The authors fix the Agentic Context Engineering (ACE) harness and train one model to act, reflect, and curate task-local playbooks. Their method, ACE-RL, evaluates candidate experience-handoff artifacts by their downstream effect on future actor rollouts and co-optimizes role-specific behaviors (action generator, insight reflector, playbook curator) under a fixed scaffold. Across agentic benchmarks, ACE-RL achieves higher held-out performance than baselines, suggesting agent training should optimize both current actions and the model-written experience inherited by future rollouts.",
+    "summary_zh": "使用标量奖励的强化学习训练LLM执行智能体任务时，会丢弃环境中的细粒度信息（如错误日志）。近期工作通过一个封装框架，利用反思或压缩来精炼输入，并将过往经验传递给未来的 rollout，但传递的产物（如 playbook）的构建本身并未被学习。作者固定 Agentic Context Engineering (ACE) 框架，训练一个模型来行动、反思和整理任务本地的 playbook。其方法 ACE-RL 通过候选经验传递产物对未来 actor rollout 的下游影响来评估它们，并在固定脚手架下协同优化角色特定行为（动作生成器、洞察反思器和 playbook 整理器）。在智能体基准测试中，ACE-RL 的留出性能优于基线方法，表明智能体训练不仅应优化当前 rollout 中的动作，还应优化未来 rollout 继承的模型生成经验。",
+    "norm_url": "https://arxiv.org/abs/2611.16409v1"
+  },
+  {
+    "id": "20261114-bait-mitigating-harmful-agentic-reinforc-2c5eab",
+    "url": "https://arxiv.org/abs/2611.16369v1",
+    "title_en": "Bait: Mitigating Harmful Agentic Reinforcement Learning via Probing Reward Function",
+    "title_zh": "Bait：通过探测奖励函数缓解有害的智能体强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-12T06:34:34Z",
+    "fetched_at": "2026-11-14T01:20:32Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "agentic-rl",
+      "safety",
+      "reward-function",
+      "defense",
+      "llm"
+    ],
+    "image": null,
+    "summary_en": "The paper exposes a safety vulnerability in agentic reinforcement-learning-as-a-service, showing that for as low as $20, an attacker can completely subvert the safety alignment of a large language model (e.g., Inkling) through harmful agentic RL using a toxic environment. Attackers can then use the safety-degraded model to assist real-world harmful activities like exploiting software vulnerabilities and code re-use attacks. To mitigate this, the authors propose Bait, a defense that proactively probes the reward function. Experiments show Bait sufficiently mitigates learning from harmful reward functions while still enabling learning from benign ones, and theoretical analysis indicates adaptive attackers cannot perfectly subvert it due to a systematic challenge.",
+    "summary_zh": "本文揭示了智能体强化学习即服务（agentic RL-as-a-service）中的安全漏洞：攻击者仅需20美元即可通过有害的智能体强化学习（使用有毒环境）完全颠覆大语言模型（如Inkling）的安全对齐。攻击者随后可利用安全性降低的模型协助现实世界的有害活动，例如利用软件漏洞和发起代码重用攻击。为缓解此问题，作者提出Bait防御方法，通过主动探测奖励函数来减轻攻击。实验表明，Bait能充分缓解从有害奖励函数中学习，同时仍能从促进良性智能体任务的奖励函数中学习；理论分析表明，自适应攻击者因系统性挑战无法完全颠覆Bait。",
+    "norm_url": "https://arxiv.org/abs/2611.16369v1"
+  },
+  {
+    "id": "20261114-statealign-internalizing-state-aware-dec-d8963d",
+    "url": "https://arxiv.org/abs/2611.16304v1",
+    "title_en": "StateAlign: Internalizing State-Aware Decision-Making for Reliable Multi-Turn Tool Agents via Reinforcement Learning",
+    "title_zh": "StateAlign：通过强化学习将状态感知决策内化到可靠的多轮工具智能体中",
+    "source_name": "arXiv",
+    "published": "2026-11-12T05:04:43Z",
+    "fetched_at": "2026-11-14T01:20:21Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "tool-use",
+      "multi-turn",
+      "hallucination",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "StateAlign is a method that combines task-state construction with state-contrastive reinforcement learning to improve the reliability of multi-turn tool-using agents. It addresses the issue that better task performance can coincide with increased tool hallucination, where agents execute actions when they should ask for information, retrieve it, or decline infeasible requests. The approach uses outcome rewards to guide task completion and token-level contrasts to compare the same generated reasoning and actions under paired states, training outputs that fit the current state. Experiments across five base models from three families show improvements on BFCL v4 multi-turn, ToolSandbox, and When2Call. On Qwen3-8B, StateAlign improves BFCL v4 multi-turn accuracy from 45.5% to 55.2% and reduces no-tool hallucination on SimpleToolHalluBench from 62.2% (outcome-only training) to 56.1%.",
+    "summary_zh": "StateAlign 是一种结合任务状态构建与状态对比强化学习的方法，旨在提升多轮工具智能体的可靠性。它解决了任务性能提升可能伴随工具幻觉增加的问题，即智能体在应询问信息、检索信息或拒绝不可行请求时却执行了动作。该方法使用结果奖励引导任务完成，并通过 token 级对比在配对状态下比较相同的生成推理和动作，训练出符合当前状态的输出。在来自三个家族的五个基础模型上，实验在 BFCL v4 多轮、ToolSandbox 和 When2Call 上均显示改进。在 Qwen3-8B 上，StateAlign 将 BFCL v4 多轮准确率从 45.5% 提升至 55.2%，并将 SimpleToolHalluBench 上的无工具幻觉从仅结果训练的 62.2% 降低至 56.1%。",
+    "norm_url": "https://arxiv.org/abs/2611.16304v1"
+  },
+  {
+    "id": "20261114-indic-task-gains-and-regressions-after-r-8d1ed6",
+    "url": "https://arxiv.org/abs/2611.16228v1",
+    "title_en": "Indic-Task Gains and Regressions after Reinforcement Learning",
+    "title_zh": "强化学习后Indic-Task的增益与回退",
+    "source_name": "arXiv",
+    "published": "2026-11-12T03:21:07Z",
+    "fetched_at": "2026-11-14T01:19:39Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "grpo",
+      "indic-languages",
+      "benchmark",
+      "reward-model"
+    ],
+    "image": null,
+    "summary_en": "We run reinforcement learning (RL) with GRPO across four environments, starting from a supervised fine-tuned 30B-A3B mixture-of-experts model covering English and eight Indic languages. Comparing before and after RL across 34 benchmarks, MATH improves by 36.07 points and most Indic benchmarks improve, but XQuAD-Indic F1 falls 19.32 points as English answers rise from 8.7% to 91.7%, IndicQA falls 8.64, while English XQuAD gains 11.71 F1. A second RL run from the same initialization adds an Indic environment with language and repetition rewards, improving passage-answering and instruction-following while preserving MATH, but losing ground on reasoning and coding. Several training choices changed together, so the effect of individual reward terms cannot be isolated, and script compliance remains unresolved even with a language reward.",
+    "summary_zh": "我们使用GRPO在四个环境中进行强化学习（RL），起点是一个覆盖英语和八种印度语言的30B-A3B混合专家模型（经监督微调）。在34个基准上对比RL前后的模型，MATH提高36.07分，大多数印度语言基准也有提升。然而，XQuAD-Indic的F1下降19.32分，同时英语回答比例从8.7%升至91.7%；IndicQA下降8.64分，而英语XQuAD的F1提高11.71分。第二次RL运行从相同的监督初始化开始，加入一个印度语言环境以及语言和重复奖励，与已发布模型相比，在段落问答和指令遵循基准上有所提升，并保持MATH性能，但在推理和编码基准上退步。由于多个训练选择同时改变，无法分离任何单个奖励项的效果。脚本合规问题仍未解决，添加语言奖励并未确保使用所要求的文字系统。因此，即使其他基准分数提高，段落问答和脚本合规仍需直接评估。",
+    "norm_url": "https://arxiv.org/abs/2611.16228v1"
+  },
+  {
+    "id": "20261114-turning-multi-agent-communication-into-t-3ea351",
+    "url": "https://arxiv.org/abs/2611.16206v1",
+    "title_en": "Turning Multi-Agent Communication into Token-Level Credit with On Policy Self Distillation",
+    "title_zh": "将多智能体通信转化为Token级信用：基于On Policy Self Distillation的OPSD4MAS方法",
+    "source_name": "arXiv",
+    "published": "2026-11-12T02:57:08Z",
+    "fetched_at": "2026-11-14T01:20:26Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "multi-agent",
+      "reinforcement-learning",
+      "credit-assignment",
+      "self-distillation",
+      "llm"
+    ],
+    "image": null,
+    "summary_en": "OPSD4MAS converts future communication into fine-grained token-level credit via On Policy Self Distillation (OPSD) to improve multi-agent LLM systems. An external model extracts facts and assesses trajectory relations for coarse-grained filtering, followed by leave-one-out filtering of target-token influence against agent-wise outcome advantages. The fact-conditioned policy supplies token-level credit, combined with GRPO through a linearly annealed joint objective. It improves mathematical pass@4 over GRPO by up to 20.00 percentage points. Ablations support complete filtering, and frozen-history injection diagnostics support fact utility.",
+    "summary_zh": "OPSD4MAS通过On Policy Self Distillation (OPSD)将未来通信转化为细粒度的Token级信用，以改进多智能体LLM系统。外部模型提取事实并评估其轨迹关系进行粗粒度过滤，随后针对智能体结果优势对目标Token影响进行留一法细粒度过滤。事实条件策略提供Token级信用，并通过线性退火联合目标与GRPO结合。该方法在数学pass@4上比GRPO提升高达20.00个百分点。消融实验支持完整过滤，冻结历史注入诊断支持事实效用。",
+    "norm_url": "https://arxiv.org/abs/2611.16206v1"
   },
   {
     "id": "20261113-gemini-decisions-api-529d60",

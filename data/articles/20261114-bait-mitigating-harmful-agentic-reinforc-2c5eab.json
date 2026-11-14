@@ -1,0 +1,26 @@
+{
+  "id": "20261114-bait-mitigating-harmful-agentic-reinforc-2c5eab",
+  "url": "https://arxiv.org/abs/2611.16369v1",
+  "title_en": "Bait: Mitigating Harmful Agentic Reinforcement Learning via Probing Reward Function",
+  "title_zh": "Bait：通过探测奖励函数缓解有害的智能体强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.16369v1",
+  "published": "2026-11-12T06:34:34Z",
+  "fetched_at": "2026-11-14T01:20:32Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "agentic-rl",
+    "safety",
+    "reward-function",
+    "defense",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "The paper exposes a safety vulnerability in agentic reinforcement-learning-as-a-service, showing that for as low as $20, an attacker can completely subvert the safety alignment of a large language model (e.g., Inkling) through harmful agentic RL using a toxic environment. Attackers can then use the safety-degraded model to assist real-world harmful activities like exploiting software vulnerabilities and code re-use attacks. To mitigate this, the authors propose Bait, a defense that proactively probes the reward function. Experiments show Bait sufficiently mitigates learning from harmful reward functions while still enabling learning from benign ones, and theoretical analysis indicates adaptive attackers cannot perfectly subvert it due to a systematic challenge.",
+  "summary_zh": "本文揭示了智能体强化学习即服务（agentic RL-as-a-service）中的安全漏洞：攻击者仅需20美元即可通过有害的智能体强化学习（使用有毒环境）完全颠覆大语言模型（如Inkling）的安全对齐。攻击者随后可利用安全性降低的模型协助现实世界的有害活动，例如利用软件漏洞和发起代码重用攻击。为缓解此问题，作者提出Bait防御方法，通过主动探测奖励函数来减轻攻击。实验表明，Bait能充分缓解从有害奖励函数中学习，同时仍能从促进良性智能体任务的奖励函数中学习；理论分析表明，自适应攻击者因系统性挑战无法完全颠覆Bait。",
+  "content_en": "We expose a safety vulnerability on nascent agentic reinforcement-learning-as-a-service. Specifically, with a cost as low as \\$20, we show that safety alignment of a large language model (e.g., Inkling) can be completely subverted through rounds of harmful agentic reinforcement learning (agentic RL) with a toxic environment from its users. We also demonstrate that upon a successful harmful agentic RL attack via the service API, the attackers can potentially use the safety-degraded model to assist with real-world harmful activities, e.g., exploit software vulnerabilities and launch code re-use attacks. To mitigate harmful agentic RL, we propose Bait, a defense that mitigates the attack via proactively probing the reward function. Experimental results show that such a simple defense can sufficiently mitigate learning from a harmful reward function and can still learn from a benign reward function that promotes benign agentic tasks. Further analysis on both empirical and theoretical aspects shows that an adaptive attacker who assumes the knowledge of Bait defense cannot perfectly subvert it due to a systematic challenge. Source code is available at https://github.com/git-disl/Bait.",
+  "content_zh": "我们揭示了一种新兴的代理式强化学习即服务（agentic reinforcement-learning-as-a-service）中的安全漏洞。具体而言，我们展示了仅需低至 20 美元的成本，就可以通过多轮有害的代理式强化学习（agentic RL）以及来自用户的有毒环境，完全破坏大语言模型（例如 Inkling）的安全对齐。我们还证明，一旦通过服务 API 成功实施有害的代理式强化学习攻击，攻击者就有可能利用安全性被削弱的模型来协助现实世界中的有害活动，例如利用软件漏洞和发起代码重用攻击。为了缓解有害的代理式强化学习，我们提出了 Bait，一种通过主动探测奖励函数来缓解该攻击的防御方法。实验结果表明，这种简单的防御能够充分缓解从有害奖励函数中学习的问题，同时仍能从促进良性代理任务的良性奖励函数中学习。对经验和理论两方面的进一步分析表明，假设了解 Bait 防御的自适应攻击者由于一个系统性挑战而无法完美地颠覆它。源代码可在 https://github.com/git-disl/Bait 获取。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

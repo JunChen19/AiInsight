@@ -1,0 +1,26 @@
+{
+  "id": "20261114-turning-multi-agent-communication-into-t-3ea351",
+  "url": "https://arxiv.org/abs/2611.16206v1",
+  "title_en": "Turning Multi-Agent Communication into Token-Level Credit with On Policy Self Distillation",
+  "title_zh": "将多智能体通信转化为Token级信用：基于On Policy Self Distillation的OPSD4MAS方法",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.16206v1",
+  "published": "2026-11-12T02:57:08Z",
+  "fetched_at": "2026-11-14T01:20:26Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "multi-agent",
+    "reinforcement-learning",
+    "credit-assignment",
+    "self-distillation",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "OPSD4MAS converts future communication into fine-grained token-level credit via On Policy Self Distillation (OPSD) to improve multi-agent LLM systems. An external model extracts facts and assesses trajectory relations for coarse-grained filtering, followed by leave-one-out filtering of target-token influence against agent-wise outcome advantages. The fact-conditioned policy supplies token-level credit, combined with GRPO through a linearly annealed joint objective. It improves mathematical pass@4 over GRPO by up to 20.00 percentage points. Ablations support complete filtering, and frozen-history injection diagnostics support fact utility.",
+  "summary_zh": "OPSD4MAS通过On Policy Self Distillation (OPSD)将未来通信转化为细粒度的Token级信用，以改进多智能体LLM系统。外部模型提取事实并评估其轨迹关系进行粗粒度过滤，随后针对智能体结果优势对目标Token影响进行留一法细粒度过滤。事实条件策略提供Token级信用，并通过线性退火联合目标与GRPO结合。该方法在数学pass@4上比GRPO提升高达20.00个百分点。消融实验支持完整过滤，冻结历史注入诊断支持事实效用。",
+  "content_en": "Reinforcement learning improves problem solving in large language model multi-agent systems. Existing approaches overlook communication knowledge or compress it into scalar rewards, leaving coarse credit with little guidance on which decisions each agent should reinforce or revise. OPSD4MAS converts future communication into fine-grained token-level credit through On Policy Self Distillation (OPSD). An external model extracts facts and assesses their trajectory relations for coarse-grained filtering, followed by fine-grained leave-one-out filtering of target-token influence against agent-wise outcome advantages. The fact-conditioned policy supplies token-level credit, combined with GRPO through a linearly annealed joint objective. Our method improves mathematical pass@4 over GRPO by up to 20.00 percentage points. Ablations support complete filtering, while frozen-history injection diagnostics support fact utility. Together, these results support combining agent-level outcome guidance with communication-derived token-level credit. Code is available at https://github.com/Camel-Prince/OPSD4MAS.",
+  "content_zh": "强化学习提升了大型语言模型多智能体系统的问题求解能力。现有方法忽视通信知识，或将其压缩为标量奖励，导致信用分配粗糙，对各智能体应强化或修正哪些决策缺乏指导。OPSD4MAS 通过同策略自蒸馏（On Policy Self Distillation，OPSD）将未来通信转化为细粒度的 token 级信用。外部模型提取事实并评估其轨迹关系以进行粗粒度过滤，随后针对智能体级结果优势对目标 token 影响进行细粒度的留一法过滤。事实条件策略提供 token 级信用，并通过线性退火的联合目标与 GRPO 结合。我们的方法在数学 pass@4 上较 GRPO 提升最多 20.00 个百分点。消融实验支持完整过滤，而冻结历史注入诊断支持事实效用。综上，这些结果支持将智能体级结果引导与通信衍生的 token 级信用相结合。代码见 https://github.com/Camel-Prince/OPSD4MAS。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
