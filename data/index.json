@@ -1,5 +1,115 @@
 [
   {
+    "id": "20261115-cmpnd-releases-dspy-wsp-weight-space-pro-be0518",
+    "url": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
+    "title_en": "Cmpnd Releases dspy-wsp: Weight-Space Programming Comes to DSPy",
+    "title_zh": "Cmpnd 发布 dspy-wsp：权重空间编程进入 DSPy",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-14T16:45:48Z",
+    "fetched_at": "2026-11-15T00:51:12Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "weight-space-programming",
+      "dspy",
+      "optimizer",
+      "llm",
+      "benchmark"
+    ],
+    "image": "images/20261115-cmpnd-releases-dspy-wsp-weight-space-pro-be0518.jpg",
+    "summary_en": "Cmpnd released dspy-wsp, a prototype optimizer that brings weight-space programming to DSPy, allowing a frontier LLM (e.g., GPT-6-Astra) to directly edit a student model's weights without gradients or training data. The package provides a WeightSpace optimizer that integrates with any DSPy program and metric. In tests on decision models from 0.6B to 9B parameters, WeightSpace alone improved performance by 1.9 to 16.1 points on the Typed Decisions benchmark, and combined with ReAnchor, gains reached 6.5 to 20.0 points. The best result was d1-omni-600M rising from 50.9% to 69.1% (+18.3), while the 9B Clef-Flash gained only +1.9 from WeightSpace alone. Each run costs $5.42 to $7.63 and takes 78 to 167 minutes.",
+    "summary_zh": "Cmpnd 发布了 dspy-wsp，一个将权重空间编程引入 DSPy 的原型优化器，允许前沿大语言模型（如 GPT-6-Astra）直接编辑学生模型的权重，无需梯度或训练数据。该包提供 WeightSpace 优化器，可与任何 DSPy 程序和指标集成。在 0.6B 到 9B 参数的决策模型测试中，WeightSpace 单独在 Typed Decisions 基准上带来 1.9 到 16.1 分的提升，与 ReAnchor 结合后提升达 6.5 到 20.0 分。最佳结果为 d1-omni-600M 从 50.9% 升至 69.1%（+18.3），而 9B 的 Clef-Flash 单独使用 WeightSpace 仅提升 +1.9。每次运行成本 5.42 至 7.63 美元，耗时 78 至 167 分钟。",
+    "norm_url": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming"
+  },
+  {
+    "id": "20261115-stanford-research-open-sources-memorilla-4e8838",
+    "url": "https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens/",
+    "title_en": "Stanford Research Open-Sources Memorilla, a Latent Memory Module for Frozen LLMs",
+    "title_zh": "斯坦福开源Memorilla：为冻结LLM提供潜在记忆模块",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-14T10:21:21Z",
+    "fetched_at": "2026-11-15T00:50:20Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "memory-module",
+      "llm",
+      "open-source",
+      "benchmark",
+      "compression"
+    ],
+    "image": "images/20261115-stanford-research-open-sources-memorilla-4e8838.jpg",
+    "summary_en": "Stanford researchers have open-sourced Memorilla, a 194M-parameter trainable memory module that compresses an entire document collection into just 16 memory tokens for a frozen LLM. The module uses a frozen Qwen3-Embedding-4B encoder and a frozen Qwen3-8B decoder, with only the memory module trained in three stages. On FactKG, a frozen Qwen3-8B with Memorilla achieved 84.33% accuracy versus 80.43% with full context, using 108x fewer document tokens. It achieved the highest average score of 49.68 across 8 benchmarks, with a peak compression of 4,212x on NarrativeQA. Code, training recipes, and checkpoints are released under Apache 2.0.",
+    "summary_zh": "斯坦福研究人员开源了Memorilla，一个194M参数的可训练记忆模块，可将整个文档集合压缩为仅16个记忆token供冻结LLM使用。该模块使用冻结的Qwen3-Embedding-4B编码器和冻结的Qwen3-8B解码器，仅记忆模块分三阶段训练。在FactKG上，冻结的Qwen3-8B配合Memorilla达到84.33%准确率，而全上下文为80.43%，且文档token减少108倍。在8个基准测试中平均得分最高达49.68，在NarrativeQA上压缩比峰值达4,212倍。代码、训练配方和检查点以Apache 2.0协议开源。",
+    "norm_url": "https://www.marktechpost.com/2026/11/14/stanford-memorilla-memory-system-16-memory-tokens"
+  },
+  {
+    "id": "20261115-perplexity-releases-decider-v1-3-open-we-27e156",
+    "url": "https://www.marktechpost.com/2026/11/13/perplexity-decider-v1-3-open-weight-decision-models-locate/",
+    "title_en": "Perplexity Releases Decider v1.3: Open-Weight Decision Models Add Locate",
+    "title_zh": "Perplexity 发布 Decider v1.3：开放权重决策模型新增 Locate 功能",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-13T16:10:02Z",
+    "fetched_at": "2026-11-15T00:50:47Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "decision-model",
+      "open-weight",
+      "benchmark",
+      "llm"
+    ],
+    "image": "images/20261115-perplexity-releases-decider-v1-3-open-we-27e156.jpg",
+    "summary_en": "Perplexity released pplx-decider-v1.3 and pplx-decider-flash-v1.3, open-weight decision models that return probabilities instead of generated text for yes/no, multiple-choice, and score questions. The main addition is Locate, which extracts exact text spans by type or instruction using a new <|locate|> token and span head. The models are 27B and 4B parameters (Hugging Face lists 26B and 5B), under Apache 2.0, and run on ~49 GiB and ~8.5 GiB BF16 weights respectively. Self-reported benchmarks show 91.6% mean accuracy on 63 query-classification tasks, 83.99 nDCG@10 on retrieval, and 0.27% answer-flip rate under reorder/relabel transformations.",
+    "summary_zh": "Perplexity 发布了 pplx-decider-v1.3 和 pplx-decider-flash-v1.3 开放权重决策模型，返回概率而非生成文本，用于回答是/否、多选和评分问题。主要新增 Locate 功能，通过新的 <|locate|> token 和 span head 按类型或指令提取精确文本片段。模型规模为 27B 和 4B 参数（Hugging Face 列出 26B 和 5B），采用 Apache 2.0 许可，分别需要约 49 GiB 和 8.5 GiB 的 BF16 权重。自报基准显示，在 63 个查询分类任务上平均准确率 91.6%，检索 nDCG@10 为 83.99，在重排序或重标签变换下答案翻转率仅 0.27%。",
+    "norm_url": "https://www.marktechpost.com/2026/11/13/perplexity-decider-v1-3-open-weight-decision-models-locate"
+  },
+  {
+    "id": "20261115-llama-cpp-v1-0-0-a-stronger-foundation-f-1f7618",
+    "url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1",
+    "title_en": "llama.cpp v1.0.0 : A stronger foundation for the local AI ecosystem",
+    "title_zh": "llama.cpp v1.0.0：为本地 AI 生态奠定更坚实基础",
+    "source_name": "Hugging Face",
+    "published": "2026-11-13T14:05:22Z",
+    "fetched_at": "2026-11-15T00:50:31Z",
+    "type": "blog",
+    "category": "performance",
+    "tags": [
+      "llama.cpp",
+      "model-release",
+      "api-stability",
+      "ggml",
+      "local-ai"
+    ],
+    "image": "images/20261115-llama-cpp-v1-0-0-a-stronger-foundation-f-1f7618.jpg",
+    "summary_en": "llama.cpp has released version 1.0.0 of its libraries libllama and libggml, marking a commitment to API/ABI stability for downstream developers. The project now follows semantic versioning: major bumps for breaking C API changes, minor for backward-compatible features and model support, and patch for bug fixes. Distribution expands to pre-release artifacts, Docker, Debian, Homebrew, conda-forge, MacPorts, Winget, and XCFramework across Linux, macOS, Windows, Android, and iOS. The ggml engine supports over 150 model architectures and all mainstream speculative decoding methods, with backends compiled as dynamic libraries. CI infrastructure leverages HF Buckets and HF Jobs with hardware from NVIDIA, AMD, Qualcomm, Arm, IBM, and Intel.",
+    "summary_zh": "llama.cpp 发布了 libllama 和 libggml 的 v1.0.0 版本，强调对下游开发者的 API/ABI 稳定性承诺。项目采用语义化版本控制：主版本号对应公共 C API 的破坏性变更，次版本号对应向后兼容的功能、后端更新或模型支持，修订号对应无 API 变更的错误修复。分发渠道扩展至预发布构件、Docker、Debian、Homebrew、conda-forge、MacPorts、Winget 和 XCFramework，覆盖 Linux、macOS、Windows、Android 和 iOS。ggml 引擎支持超过 150 种模型架构及所有主流推测解码方法，后端可编译为动态库。CI 基础设施利用 HF Buckets 和 HF Jobs，并获得 NVIDIA、AMD、Qualcomm、Arm、IBM 和 Intel 的硬件支持。",
+    "norm_url": "https://huggingface.co/blog/ggml-org/llama-cpp-v1"
+  },
+  {
+    "id": "20261115-google-releases-tpu-sync-open-source-kv-bd128a",
+    "url": "https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library/",
+    "title_en": "Google Releases TPU Sync: Open-Source KV Cache Transfer for TPUs",
+    "title_zh": "Google 发布 TPU Sync：面向 TPU 的开源 KV 缓存传输库",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-13T10:32:26Z",
+    "fetched_at": "2026-11-15T00:50:04Z",
+    "type": "blog",
+    "category": "performance",
+    "tags": [
+      "tpu",
+      "kv-cache",
+      "open-source",
+      "inference-optimization",
+      "model-serving"
+    ],
+    "image": "images/20261115-google-releases-tpu-sync-open-source-kv-bd128a.jpg",
+    "summary_en": "Google Cloud released TPU Sync, an open-source C++ library for moving KV caches and model weights across TPU HBM, host DRAM, shared storage, and data center network. It uses layout-preserving direct DMA with asynchronous transfers, achieving up to 223 GB/s per Ironwood host and over 90% lower KV transfer latency on 235B-480B MoE models. Benchmarks show Qwen3 235B KV transfer latency dropping from several seconds to ~230 ms, with average TTFT reduced by up to 90% for 480B models. The library integrates with PyTorch and JAX, and is used in vLLM-TorchTPU, SGLang-TorchTPU, and llm-d on GKE. RL weight transfer and storage tiering are experimental, and all numbers are self-reported.",
+    "summary_zh": "Google Cloud 发布了 TPU Sync，一个开源 C++ 库，用于在 TPU HBM、主机 DRAM、共享存储和数据中心网络之间移动 KV 缓存和模型权重。它采用保持布局的直接 DMA 和异步传输，在 Ironwood 主机上实现高达 223 GB/s 的带宽，并在 235B-480B MoE 模型上将 KV 传输延迟降低 90% 以上。基准测试显示，Qwen3 235B 的 KV 传输延迟从数秒降至约 230 毫秒，480B 模型的平均 TTFT 降低高达 90%。该库与 PyTorch 和 JAX 集成，并用于 vLLM-TorchTPU、SGLang-TorchTPU 和 GKE 上的 llm-d。RL 权重传输和存储分层仍处于实验阶段，所有数据均为自报。",
+    "norm_url": "https://www.marktechpost.com/2026/11/13/google-tpu-sync-kv-cache-transfer-library"
+  },
+  {
     "id": "20261114-google-releases-gemini-4-hydrogen-2-5x-f-d411d6",
     "url": "https://www.marktechpost.com/2026/11/13/google-gemini-4-hydrogen/",
     "title_en": "Google Releases Gemini 4 Hydrogen: 2.5x Faster Than Gemini 3.8 Flash",
