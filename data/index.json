@@ -1,5 +1,27 @@
 [
   {
+    "id": "20261116-bland-launches-tofu-1-a-full-duplex-spee-9de076",
+    "url": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/",
+    "title_en": "Bland Launches Tofu-1, a Full-Duplex Speech-to-Speech Model for Calls",
+    "title_zh": "Bland 推出 Tofu-1：面向通话的全双工语音到语音模型",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-15T10:06:21Z",
+    "fetched_at": "2026-11-16T00:48:59Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "speech-to-speech",
+      "full-duplex",
+      "model-release",
+      "voice-ai",
+      "research-preview"
+    ],
+    "image": "images/20261116-bland-launches-tofu-1-a-full-duplex-spee-9de076.jpg",
+    "summary_en": "Bland, a San Francisco voice-AI company, has released Tofu-1, a full-duplex speech-to-speech model in research preview. Tofu-1 processes audio input and output directly without an intermediate transcript, targeting noisy call environments like moving cars and hospital rooms. It features speaker tracking, noise separation, and paralinguistics understanding, and can listen while speaking and reason while talking. The model is closed-weight and Bland has not disclosed parameters, latency, or pricing; the only performance claim is that over 92% of people could not identify it in screenings. Access is limited to enterprise research preview in sectors like banking, healthcare, insurance, and government.",
+    "summary_zh": "Bland 是一家旧金山语音 AI 公司，发布了 Tofu-1，一个全双工语音到语音模型的研究预览版。Tofu-1 直接处理音频输入和输出，无需中间转录文本，针对行驶中的汽车、医院病房等嘈杂通话环境。它具备说话人跟踪、噪声分离和副语言理解能力，可以边听边说、边推理边对话。该模型为闭源，Bland 未披露参数量、延迟或定价；唯一性能声明是在筛选中超过 92% 的人无法识别它。访问权限仅限于银行、医疗、保险和政府等行业的企业研究预览。",
+    "norm_url": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model"
+  },
+  {
     "id": "20261115-cmpnd-releases-dspy-wsp-weight-space-pro-be0518",
     "url": "https://www.marktechpost.com/2026/11/14/cmpnd-dspy-wsp-weight-space-programming/",
     "title_en": "Cmpnd Releases dspy-wsp: Weight-Space Programming Comes to DSPy",
