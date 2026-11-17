@@ -35,6 +35,7 @@ body {
   font-family: var(--sans);
   font-size: 16px;
   line-height: 1.75;
+  -webkit-tap-highlight-color: transparent; /* 移动端去除系统点按高亮，用自定义反馈 */
 }
 
 ::selection { background: var(--accent-soft); color: var(--accent-deep); }
@@ -125,10 +126,17 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   align-items: center;
   gap: 4px;
   padding: 10px 0;
+}
+.cat-tabs {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  min-width: 0;
   overflow-x: auto;
   scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
 }
-.filterbar-inner::-webkit-scrollbar { display: none; }
+.cat-tabs::-webkit-scrollbar { display: none; }
 
 .cat-tab {
   font-family: var(--sans);
@@ -143,6 +151,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   transition: background 0.15s, color 0.15s;
 }
 .cat-tab:hover { background: #EDEBE4; color: var(--ink); }
+.cat-tab:active { background: #E4E1D8; }
 .cat-tab[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent-deep); font-weight: 600; }
 .cat-tab .n { font-family: var(--mono); font-size: 11.5px; color: var(--ink-3); margin-left: 4px; }
 .cat-tab[aria-pressed="true"] .n { color: var(--accent); }
@@ -217,9 +226,11 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   line-height: 1.42;
   margin: 0 0 8px;
   color: var(--ink);
+  overflow-wrap: break-word; /* 超长英文词/型号名不断行保护 */
 }
 .item-title a { color: inherit; }
 .item-title a:hover { color: var(--accent-deep); text-decoration: none; }
+.item-title a:active { color: var(--accent-deep); }
 
 .item-summary { font-size: 14.5px; color: var(--ink-2); margin: 0 0 12px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
 
@@ -233,7 +244,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
 .state-box p { margin: 4px 0; font-size: 14.5px; }
 
 /* ---------------- 页脚 ---------------- */
-.site-footer { border-top: 2px solid var(--ink); padding: 26px 0 40px; font-size: 13px; color: var(--ink-3); }
+.site-footer { border-top: 2px solid var(--ink); padding: 26px 0 40px; font-size: 13px; color: var(--ink-3); padding-bottom: max(40px, env(safe-area-inset-bottom)); /* iPhone 底部安全区 */ }
 .site-footer .cols { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; }
 .site-footer p { margin: 4px 0; }
 
@@ -254,6 +265,7 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   font-weight: 700;
   line-height: 1.35;
   margin: 0 0 14px;
+  overflow-wrap: break-word;
 }
 .art-title .alt {
   display: block;
@@ -365,9 +377,19 @@ a:hover { text-decoration: underline; text-underline-offset: 3px; }
   .item.is-rl::before { display: none; }
   .item.is-rl .chip.is-rl { box-shadow: 0 0 0 1.5px var(--accent); }
   .item-title { font-size: 18.5px; }
-  .searchbox { width: 100%; margin: 8px 0 2px; }
-  .searchbox input, .searchbox input:focus { width: 100%; }
-  .filterbar-inner { flex-wrap: wrap; }
+
+  /* 筛选栏：手机上不再吸附顶部（两行吸附会吃掉 1/6 屏），标签单行横滑，搜索框独立成行 */
+  .filterbar { position: static; }
+  .filterbar-inner { flex-direction: column; align-items: stretch; gap: 8px; padding: 10px 0 12px; }
+  .searchbox { width: 100%; margin: 0; }
+  .searchbox input, .searchbox input:focus { width: 100%; font-size: 16px; padding: 9px 16px; } /* 16px 防止 iOS 聚焦时整页放大 */
+
+  /* 触控目标加大（对齐 44px 推荐的最小可点击尺寸） */
+  .cat-tab { padding: 9px 15px; font-size: 14.5px; }
+  .lang-switch button { padding: 9px 16px; font-size: 14px; }
+  .mini-switch button { padding: 7px 14px; font-size: 13px; }
+  .backlink { font-size: 15px; padding: 6px 0; }
+
   .brief-body { padding: 20px 18px 22px; }
   .md-body { font-size: 15.5px; }
 }
