@@ -49,6 +49,10 @@ def main() -> int:
         c["cid"] = hash8(c["norm_url"])
 
     kept = llm.curate(candidates)[: config.MAX_PER_DAY]
+    # 产量不足保底：对剩余候选补一轮精筛（LLM 只会加回它认可的，不会硬凑数）
+    if len(kept) < config.MIN_PER_DAY and len(candidates) > config.CANDIDATE_LIMIT:
+        log.info("首轮流筛仅 %d 篇（保底 %d），对剩余候选补筛", len(kept), config.MIN_PER_DAY)
+        kept = (kept + llm.curate(candidates[config.CANDIDATE_LIMIT:]))[: config.MAX_PER_DAY]
     if not kept:
         log.info("LLM 精筛后无入选文章，结束")
         return 0

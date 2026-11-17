@@ -95,15 +95,21 @@ def curate(candidates: list[dict]) -> list[dict]:
         batch = candidates[i:i + batch_size]
         payload = [{"id": c.get("cid"), "source": c["source_name"], "title": c["title"],
                     "snippet": c["snippet"][:400]} for c in batch]
-        try:
-            out = _chat(
-                [{"role": "system", "content": CURATE_SYSTEM},
-                 {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
-                json_mode=True, max_tokens=4000,
-            )
-            results = _parse_json(out).get("results", [])
-        except Exception as e:
-            log.error("精筛批次失败，跳过 %d 条: %s", len(batch), e)
+        results = None
+        for attempt in (1, 2):  # 批次级重试：_chat 内部已有调用级重试，这里防 JSON 解析等偶发问题
+            try:
+                out = _chat(
+                    [{"role": "system", "content": CURATE_SYSTEM},
+                     {"role": "user", "content": json.dumps(payload, ensure_ascii=False)}],
+                    json_mode=True, max_tokens=4000,
+                )
+                results = _parse_json(out).get("results", [])
+                break
+            except Exception as e:
+                log.warning("精筛批次失败(第%d次): %s", attempt, e)
+                time.sleep(3)
+        if results is None:
+            log.error("精筛批次两次失败，跳过 %d 条", len(batch))
             continue
 
         by_id = {r.get("id"): r for r in results if isinstance(r, dict)}
@@ -155,6 +161,7 @@ TRANSLATE_SYSTEM = """将用户给出的英文技术文章片段翻译成简体�
 - 代码块内容不翻译
 - 模型名、产品名、基准名（如 MMLU、GSM8K）、专有缩写保留英文
 - 数字、单位、版本号严格保持原样
+- 原文的 TL;DR / TLDR / Key Takeaways 等速览性英文小标题译为「要点速览」，其余标题正常翻译
 - 直接输出译文，不要任何解释或原文"""
 
 

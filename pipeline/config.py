@@ -19,6 +19,7 @@ LLM_MAX_RETRIES = 4        # 单次调用重试次数
 
 # ---------- 采集 ----------
 MAX_PER_DAY = int(os.environ.get("MAX_ARTICLES", "9"))              # 每日精选上限（5~10）
+MIN_PER_DAY = int(os.environ.get("MIN_ARTICLES", "5"))              # 每日保底（低于此值时对剩余候选补一轮精筛）
 FETCH_WINDOW_HOURS = int(os.environ.get("FETCH_WINDOW_HOURS", "48"))  # 只考虑最近 N 小时内发布的条目（补历史时可调大）
 FETCH_UNTIL_HOURS = int(os.environ.get("FETCH_UNTIL_HOURS", "0"))     # >0 时只收发布时间早于 N 小时前的旧闻（回填历史用，绕开新内容挤占候选池）
 CANDIDATE_LIMIT = int(os.environ.get("CANDIDATE_LIMIT", "24"))       # 送入 LLM 精筛的候选上限

@@ -199,4 +199,5 @@ def gather_candidates(seen_norm_urls: set, seen_titles: list[str]) -> list[dict]
             scored.append(it)
     scored.sort(key=lambda x: x["score"], reverse=True)
     log.info("候选：抓到 %d → 去重后 %d → 初筛后 %d", len(all_items), len(uniq), len(scored))
-    return scored[: config.CANDIDATE_LIMIT]
+    # 返回 2 倍候选：正常只精筛前 CANDIDATE_LIMIT 条，产量不足保底时用后半部分补筛
+    return scored[: config.CANDIDATE_LIMIT * 2]
