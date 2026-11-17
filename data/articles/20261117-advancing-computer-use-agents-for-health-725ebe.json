@@ -1,0 +1,25 @@
+{
+  "id": "20261117-advancing-computer-use-agents-for-health-725ebe",
+  "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+  "title_en": "Advancing computer-use agents for healthcare teams",
+  "title_zh": "推进医疗团队计算机使用代理的发展",
+  "source_name": "OpenAI",
+  "source_url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+  "published": "2026-11-16T06:00:00Z",
+  "fetched_at": "2026-11-17T03:28:38Z",
+  "type": "blog",
+  "category": "technique",
+  "tags": [
+    "healthcare",
+    "computer-use",
+    "ai-agents",
+    "automation"
+  ],
+  "image": null,
+  "summary_en": "The article discusses advancing computer-use agents for healthcare teams, focusing on the development of AI agents that can interact with computer interfaces to assist healthcare professionals. It likely covers the technical challenges, such as understanding complex medical workflows and ensuring safety and reliability, and may include performance metrics or precision numbers if provided. The content emphasizes the potential of these agents to streamline administrative tasks and improve efficiency in healthcare settings.",
+  "summary_zh": "本文探讨了推进医疗团队计算机使用代理的发展，重点在于开发能够与计算机界面交互以协助医疗专业人员的AI代理。文章可能涵盖了技术挑战，如理解复杂的医疗工作流程以及确保安全性和可靠性，并可能包含性能指标或精确数字（如有提供）。内容强调了这些代理在简化行政任务和提高医疗环境效率方面的潜力。",
+  "content_en": "",
+  "content_zh": "",
+  "content_note": "fallback_snippet",
+  "translation_failed": false
+}

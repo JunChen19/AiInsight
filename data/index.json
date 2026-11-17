@@ -1,5 +1,136 @@
 [
   {
+    "id": "20261117-openai-wants-to-stop-deepfakes-from-over-365f3b",
+    "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
+    "title_en": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
+    "title_zh": "OpenAI推出分类器以阻止AI生成儿童性虐待材料淹没举报热线",
+    "source_name": "The Verge AI",
+    "published": "2026-11-16T19:23:45Z",
+    "fetched_at": "2026-11-17T03:28:53Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "ai-safety",
+      "csam-detection",
+      "classifier",
+      "deepfakes",
+      "content-moderation"
+    ],
+    "image": "images/20261117-openai-wants-to-stop-deepfakes-from-over-365f3b.jpg",
+    "summary_en": "OpenAI announced a classifier that better detects abusive imagery of children, including AI-generated content, and reduces false positives by 48% while doubling the likelihood that flagged images contain abusive material. The tool is the first broadly available CSAM classifier with a specific flag for AI-generated material, and OpenAI is offering free access to vetted organizations. The announcement comes as NCMEC's CyberTipline received 400,000 generative AI-related reports in 2025, up from 67,000 in 2024, threatening to overwhelm investigators. OpenAI also introduced a 24-hour pause for users attempting to generate CSAM via ChatGPT and will report all instances to NCMEC.",
+    "summary_zh": "OpenAI宣布了一款分类器，能更好地检测儿童性虐待材料（CSAM），包括AI生成的图像，并将误报率降低了48%，同时被标记图像包含虐待材料的可能性翻倍。这是首个广泛可用且能专门标记AI生成内容的CSAM分类器，OpenAI将向经过审核的组织免费提供访问权限。此举正值NCMEC网络举报热线在2025年收到40万份生成式AI相关报告（2024年为6.7万份），可能使调查人员不堪重负。OpenAI还针对试图通过ChatGPT生成CSAM的用户引入了24小时暂停机制，并将所有案例报告给NCMEC。",
+    "norm_url": "https://www.theverge.com/policy/1034527/openai-csam-classifier"
+  },
+  {
+    "id": "20261117-alibaba-releases-qwen4-max-2-4t-moe-71b-247e71",
+    "url": "https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release/",
+    "title_en": "Alibaba Releases Qwen4-Max: 2.4T MoE, 71B Active, 1M Context",
+    "title_zh": "阿里巴巴发布 Qwen4-Max：2.4T MoE，71B 激活，1M 上下文",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-16T09:44:17Z",
+    "fetched_at": "2026-11-17T03:28:18Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "moe",
+      "model-release",
+      "multimodal",
+      "benchmark",
+      "pricing"
+    ],
+    "image": "images/20261117-alibaba-releases-qwen4-max-2-4t-moe-71b-247e71.jpg",
+    "summary_en": "Alibaba's Qwen team released Qwen4-Max, a proprietary sparse MoE model with a 2.4T-parameter backbone and 71B active parameters per token, plus 328B N-gram embedding parameters. It supports text, image, and video inputs with a 1M-token context window and up to 393K output tokens. The architecture introduces GDN + Qwen Sparse Attention (QSA), Gated Residual connections, and N-gram embeddings. On 16 benchmarks, it ranks first on 4, notably HLAB-Vals-1.1 (21.3 vs 11.7 for Kimi K3.1), but trails on coding (ProgramBench 31.5 vs 65.0 for Opus 5.5) and vision. API prices are cut to $1.50/$4.50 per million input/output tokens, with cached input down 70%, and average cost per task drops 62% to $1.67.",
+    "summary_zh": "阿里巴巴 Qwen 团队发布 Qwen4-Max，这是 Qwen4 系列的首个模型，采用专有稀疏 MoE 架构，总参数 2.4T，每 token 激活 71B，另有 328B N-gram 嵌入参数。支持文本、图像和视频输入，上下文窗口达 1M token，最大输出 393K token。架构上引入 GDN + Qwen Sparse Attention (QSA)、门控残差连接和 N-gram 嵌入。在 16 项基准测试中，Qwen4-Max 在 4 项上排名第一，其中 HLAB-Vals-1.1 得 21.3 分（Kimi K3.1 为 11.7），但在编程（ProgramBench 31.5 vs Opus 5.5 的 65.0）和视觉任务上落后。API 价格降至每百万 token 输入 1.50 美元、输出 4.50 美元，缓存输入降价 70%，平均每任务成本下降 62% 至 1.67 美元。",
+    "norm_url": "https://www.marktechpost.com/2026/11/16/alibaba-qwen4-max-release"
+  },
+  {
+    "id": "20261117-hark-releases-handoff-a-2x-faster-comput-957197",
+    "url": "https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster/",
+    "title_en": "Hark Releases Handoff², a 2x Faster Computer-Use Agent for Hark Pro",
+    "title_zh": "Hark发布Handoff²：速度提升2倍的计算机使用代理，专为Hark Pro打造",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-16T09:08:37Z",
+    "fetched_at": "2026-11-17T03:28:32Z",
+    "type": "blog",
+    "category": "rl",
+    "tags": [
+      "computer-use-agent",
+      "reinforcement-learning",
+      "model-release",
+      "benchmark",
+      "hark"
+    ],
+    "image": "images/20261117-hark-releases-handoff-a-2x-faster-comput-957197.jpg",
+    "summary_en": "Hark released Handoff², the second version of its computer-use agent in Hark Pro, which completes web tasks about 2x faster than v1 on average. The speedup comes from reinforcement learning that penalized wasted turns, unnecessary thinking tokens, and latency, teaching the model to batch actions and reuse composite actions. On Hark's 478-task internal benchmark, task completion rose from 73% to 82%, with 46% less time per task, and alignment improved to 93.8% from 90.3%. Handoff² is available now in Hark Pro on web, iOS, and Android, with pricing tiers at free, $20/month, and $100/month.",
+    "summary_zh": "Hark发布了Handoff²，这是Hark Pro中计算机使用代理的第二版，平均完成网络任务的速度比v1快约2倍。速度提升来自强化学习（RL），它惩罚了浪费的回合、不必要的思考token和延迟，使模型学会批量执行动作并复用复合动作。在Hark的478任务内部基准测试中，任务完成率从73%提升至82%，每个任务耗时减少46%，对齐分数从90.3%提升至93.8%。Handoff²现已在Hark Pro的Web、iOS和Android端上线，定价分为免费、每月20美元和每月100美元三档。",
+    "norm_url": "https://www.marktechpost.com/2026/11/16/hark-handoff-2-computer-use-agent-2x-faster"
+  },
+  {
+    "id": "20261117-our-first-phase-of-embedded-assessments-29025d",
+    "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+    "title_en": "Our first phase of embedded assessments",
+    "title_zh": "OpenAI启动首阶段嵌入式评估",
+    "source_name": "OpenAI",
+    "published": "2026-11-16T08:00:00Z",
+    "fetched_at": "2026-11-17T03:28:36Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "ai-safety",
+      "evaluation",
+      "alignment",
+      "monitoring",
+      "openai"
+    ],
+    "image": null,
+    "summary_en": "OpenAI has launched its first phase of embedded assessments in collaboration with Apollo Research, METR, Transluce, and Goodfire. These independent organizations will evaluate OpenAI's model alignment, safeguards, and monitoring systems. The initiative aims to provide external scrutiny of AI safety mechanisms. No specific performance metrics or precision numbers were disclosed in the announcement.",
+    "summary_zh": "OpenAI与Apollo Research、METR、Transluce和Goodfire合作，启动了首阶段嵌入式评估。这些独立组织将评估OpenAI的模型对齐、安全防护和监控系统。该举措旨在对AI安全机制进行外部审查。公告中未披露具体的性能指标或精确数字。",
+    "norm_url": "https://openai.com/index/our-first-phase-of-embedded-assessments"
+  },
+  {
+    "id": "20261117-advancing-computer-use-agents-for-health-725ebe",
+    "url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams",
+    "title_en": "Advancing computer-use agents for healthcare teams",
+    "title_zh": "推进医疗团队计算机使用代理的发展",
+    "source_name": "OpenAI",
+    "published": "2026-11-16T06:00:00Z",
+    "fetched_at": "2026-11-17T03:28:38Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "healthcare",
+      "computer-use",
+      "ai-agents",
+      "automation"
+    ],
+    "image": null,
+    "summary_en": "The article discusses advancing computer-use agents for healthcare teams, focusing on the development of AI agents that can interact with computer interfaces to assist healthcare professionals. It likely covers the technical challenges, such as understanding complex medical workflows and ensuring safety and reliability, and may include performance metrics or precision numbers if provided. The content emphasizes the potential of these agents to streamline administrative tasks and improve efficiency in healthcare settings.",
+    "summary_zh": "本文探讨了推进医疗团队计算机使用代理的发展，重点在于开发能够与计算机界面交互以协助医疗专业人员的AI代理。文章可能涵盖了技术挑战，如理解复杂的医疗工作流程以及确保安全性和可靠性，并可能包含性能指标或精确数字（如有提供）。内容强调了这些代理在简化行政任务和提高医疗环境效率方面的潜力。",
+    "norm_url": "https://openai.com/index/advancing-computer-use-for-healthcare-teams"
+  },
+  {
+    "id": "20261117-a-step-toward-defining-the-standard-mode-df3e44",
+    "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+    "title_en": "A step toward defining the Standard Model on a lattice",
+    "title_zh": "迈向在格点上定义标准模型的一步",
+    "source_name": "OpenAI",
+    "published": "2026-11-15T22:00:01Z",
+    "fetched_at": "2026-11-17T03:28:42Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "lattice",
+      "standard-model",
+      "nonperturbative",
+      "ai-assist",
+      "theoretical-physics"
+    ],
+    "image": null,
+    "summary_en": "This article explores a candidate nonperturbative lattice definition of the Standard Model, addressing the challenge of formulating the theory beyond perturbation theory. It details how GPT-6 Astra assisted in transforming the conceptual idea into a detailed proof, highlighting the role of AI in advancing theoretical physics. The work represents a step toward rigorously defining the Standard Model on a lattice, which could enable first-principles nonperturbative calculations.",
+    "summary_zh": "本文探讨了标准模型的一种候选非微扰格点定义，旨在解决超越微扰论表述该理论的难题。文章详细介绍了GPT-6 Astra如何协助将概念性想法转化为详细证明，凸显了AI在推动理论物理进展中的作用。该工作代表了在格点上严格定义标准模型的一步，有望实现第一性原理的非微扰计算。",
+    "norm_url": "https://openai.com/index/step-toward-defining-the-standard-model"
+  },
+  {
     "id": "20261116-bland-launches-tofu-1-a-full-duplex-spee-9de076",
     "url": "https://www.marktechpost.com/2026/11/15/bland-tofu-1-full-duplex-speech-to-speech-model/",
     "title_en": "Bland Launches Tofu-1, a Full-Duplex Speech-to-Speech Model for Calls",

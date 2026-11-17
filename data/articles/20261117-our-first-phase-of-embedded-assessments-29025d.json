@@ -1,0 +1,26 @@
+{
+  "id": "20261117-our-first-phase-of-embedded-assessments-29025d",
+  "url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+  "title_en": "Our first phase of embedded assessments",
+  "title_zh": "OpenAI启动首阶段嵌入式评估",
+  "source_name": "OpenAI",
+  "source_url": "https://openai.com/index/our-first-phase-of-embedded-assessments",
+  "published": "2026-11-16T08:00:00Z",
+  "fetched_at": "2026-11-17T03:28:36Z",
+  "type": "blog",
+  "category": "technique",
+  "tags": [
+    "ai-safety",
+    "evaluation",
+    "alignment",
+    "monitoring",
+    "openai"
+  ],
+  "image": null,
+  "summary_en": "OpenAI has launched its first phase of embedded assessments in collaboration with Apollo Research, METR, Transluce, and Goodfire. These independent organizations will evaluate OpenAI's model alignment, safeguards, and monitoring systems. The initiative aims to provide external scrutiny of AI safety mechanisms. No specific performance metrics or precision numbers were disclosed in the announcement.",
+  "summary_zh": "OpenAI与Apollo Research、METR、Transluce和Goodfire合作，启动了首阶段嵌入式评估。这些独立组织将评估OpenAI的模型对齐、安全防护和监控系统。该举措旨在对AI安全机制进行外部审查。公告中未披露具体的性能指标或精确数字。",
+  "content_en": "OpenAI begins embedded assessments with Apollo Research, METR, and Transluce, and Goodfire to independently evaluate model alignment, safeguards, and monitoring systems.",
+  "content_zh": "OpenAI 开始与 Apollo Research、METR、Transluce 和 Goodfire 开展嵌入式评估，以独立评估模型对齐、防护措施和监控系统。",
+  "content_note": "fallback_snippet",
+  "translation_failed": false
+}

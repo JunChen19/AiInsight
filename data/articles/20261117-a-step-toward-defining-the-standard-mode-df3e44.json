@@ -1,0 +1,26 @@
+{
+  "id": "20261117-a-step-toward-defining-the-standard-mode-df3e44",
+  "url": "https://openai.com/index/step-toward-defining-the-standard-model",
+  "title_en": "A step toward defining the Standard Model on a lattice",
+  "title_zh": "迈向在格点上定义标准模型的一步",
+  "source_name": "OpenAI",
+  "source_url": "https://openai.com/index/step-toward-defining-the-standard-model",
+  "published": "2026-11-15T22:00:01Z",
+  "fetched_at": "2026-11-17T03:28:42Z",
+  "type": "blog",
+  "category": "technique",
+  "tags": [
+    "lattice",
+    "standard-model",
+    "nonperturbative",
+    "ai-assist",
+    "theoretical-physics"
+  ],
+  "image": null,
+  "summary_en": "This article explores a candidate nonperturbative lattice definition of the Standard Model, addressing the challenge of formulating the theory beyond perturbation theory. It details how GPT-6 Astra assisted in transforming the conceptual idea into a detailed proof, highlighting the role of AI in advancing theoretical physics. The work represents a step toward rigorously defining the Standard Model on a lattice, which could enable first-principles nonperturbative calculations.",
+  "summary_zh": "本文探讨了标准模型的一种候选非微扰格点定义，旨在解决超越微扰论表述该理论的难题。文章详细介绍了GPT-6 Astra如何协助将概念性想法转化为详细证明，凸显了AI在推动理论物理进展中的作用。该工作代表了在格点上严格定义标准模型的一步，有望实现第一性原理的非微扰计算。",
+  "content_en": "Explore a candidate nonperturbative lattice definition of the Standard Model and how GPT-6 Astra helped turn the idea into a detailed proof.",
+  "content_zh": "探索标准模型的一个候选非微扰格点定义，以及 GPT-6 Astra 如何帮助将该想法转化为详细证明。",
+  "content_note": "fallback_snippet",
+  "translation_failed": false
+}
