@@ -1,5 +1,93 @@
 [
   {
+    "id": "20261118-openai-releases-gpt-6-2-astra-and-sol-wi-2ec43a",
+    "url": "https://www.marktechpost.com/2026/11/17/openai-gpt-6-2-astra-sol-release/",
+    "title_en": "OpenAI Releases GPT-6.2 Astra and Sol With a 20% Cheaper Astra API",
+    "title_zh": "OpenAI 发布 GPT-6.2 Astra 与 Sol，Astra API 价格降低 20%",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-17T22:07:30Z",
+    "fetched_at": "2026-11-18T02:46:34Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "openai",
+      "llm",
+      "benchmark",
+      "api-pricing"
+    ],
+    "image": "images/20261118-openai-releases-gpt-6-2-astra-and-sol-wi-2ec43a.jpg",
+    "summary_en": "OpenAI released GPT-6.2 Astra and GPT-6.2 Sol, two closed models for professional and agentic work. Astra is the frontier tier for long-horizon tasks, while Sol is the efficient everyday tier. Both support a 1,050,000-token context window and are available via API as gpt-6.2-astra and gpt-6.2-sol. Astra scores 62 on the Artificial Analysis Intelligence Index (second to Claude Fable 5.2's 65) and ranks #1 on AA-3D with 1,318 Elo. Astra's API prices are 20% lower than GPT-6 Astra at $8/$40 per 1M input/output tokens, with cached input at $0.40.",
+    "summary_zh": "OpenAI 发布了 GPT-6.2 Astra 和 GPT-6.2 Sol 两款闭源模型，分别面向专业长周期任务和高效日常任务。两者均支持 1,050,000 token 上下文窗口，并通过 API 以 gpt-6.2-astra 和 gpt-6.2-sol 提供。Astra 在 Artificial Analysis 智能指数上得 62 分，仅次于 Claude Fable 5.2 的 65 分，并在 AA-3D 上以 1,318 Elo 排名第一。Astra 的 API 价格较 GPT-6 Astra 降低 20%，输入/输出分别为每百万 token 8 美元和 40 美元，缓存输入为 0.40 美元。",
+    "norm_url": "https://www.marktechpost.com/2026/11/17/openai-gpt-6-2-astra-sol-release"
+  },
+  {
+    "id": "20261118-introducing-gpt-6-2-astra-and-sol-b02ac3",
+    "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+    "title_en": "Introducing GPT-6.2 Astra and Sol",
+    "title_zh": "GPT-6.2 Astra 与 Sol 发布",
+    "source_name": "OpenAI",
+    "published": "2026-11-17T17:45:00Z",
+    "fetched_at": "2026-11-18T02:46:01Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "llm",
+      "coding",
+      "computer-use",
+      "efficiency"
+    ],
+    "image": null,
+    "summary_en": "OpenAI introduced GPT-6.2 Astra and Sol, two new model variants aimed at professional outputs, coding, computer use, and efficiency. The models are available across ChatGPT Work, Codex, and the API. They deliver improved performance in these areas at lower cost. No specific benchmark or precision numbers were disclosed in the announcement.",
+    "summary_zh": "OpenAI 发布 GPT-6.2 Astra 与 Sol 两个新模型版本，重点提升专业输出、编程、计算机操作（computer use）与效率。模型已在 ChatGPT Work、Codex 和 API 中上线。官方称其在上述能力上表现更好，同时成本更低。公告未披露具体基准或精度数字。",
+    "norm_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+  },
+  {
+    "id": "20261118-what-rl-on-expert-built-tasks-teaches-ne-84b072",
+    "url": "https://arxiv.org/abs/2611.22161v1",
+    "title_en": "What RL on Expert-Built Tasks Teaches Nemotron 3.5 Super",
+    "title_zh": "Nemotron 3.5 Super 的专家任务强化学习实践",
+    "source_name": "arXiv",
+    "published": "2026-11-17T03:48:06Z",
+    "fetched_at": "2026-11-18T02:46:21Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "model-release",
+      "lora",
+      "benchmark",
+      "nvidia"
+    ],
+    "image": null,
+    "summary_en": "NVIDIA post-trains Nemotron 3.5 Super (120B total, 12B active) with reinforcement learning on five expert-built task datasets: software engineering, complex constraints, long-horizon tool use, chart understanding, and document reasoning. Each run trains a fresh rank-32 LoRA adapter using CISPO on Tinker without supervised stages, and adapters are compared to the base model on identical tasks. On twelve benchmarks, gains range from +4.5 points on IFBench to +13.8 on GDP_pdf (10.4% to 24.2%); SWE-bench Pro V2 rises from 86.9% to 92.1%, Terminal-Bench 2.1 from 63.9% to 70.3%, MultiChallenge from 58.3% to 66.6%, AutomationBench from 14.8% to 27.5%, and Chartography from 39.4% to 50.6%. The document adapter, trained without API tools, also gains +8.0 points on AutomationBench. Analysis shows each adapter addresses specific failure modes of the base model, such as finding data and rules before acting, writing test files, carrying context, measuring marks in code, and reading spreadsheets.",
+    "summary_zh": "NVIDIA 对 Nemotron 3.5 Super（总参数 120B，激活参数 12B）进行强化学习后训练，使用五个专家构建的任务数据集：真实软件工程、复杂约束、长视野工具使用、专业图表理解和文档推理。每次训练使用 CISPO 在 Tinker 上训练新的 rank-32 LoRA 适配器，无监督阶段，并在相同任务、测试框架和设置下与基础模型比较。在十二个基准测试中，增益从 IFBench 的 +4.5 分到 GDP_pdf 的 +13.8 分（10.4% 升至 24.2%）；SWE-bench Pro V2 从 86.9% 升至 92.1%，Terminal-Bench 2.1 从 63.9% 升至 70.3%，MultiChallenge 从 58.3% 升至 66.6%，AutomationBench 从 14.8% 升至 27.5%，Chartography 从 39.4% 升至 50.6%。文档适配器虽未使用 API 工具训练，但在 AutomationBench 上仍获得 +8.0 分。分析表明，每个适配器针对基础模型的具体失败模式进行改进，例如先查找数据和规则再行动、编写测试文件、携带上下文、用代码测量标记以及读取电子表格。",
+    "norm_url": "https://arxiv.org/abs/2611.22161v1"
+  },
+  {
+    "id": "20261118-ridex-reward-informed-directional-explor-af182f",
+    "url": "https://arxiv.org/abs/2611.22052v1",
+    "title_en": "RiDEx: Reward-Informed Directional Exploration for Diffusion Reinforcement Learning",
+    "title_zh": "RiDEx：奖励引导的方向性探索用于扩散强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-17T01:27:10Z",
+    "fetched_at": "2026-11-18T02:46:54Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "diffusion-rl",
+      "reward-model",
+      "exploration",
+      "stable-diffusion",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "RiDEx introduces reward-informed directional exploration for diffusion reinforcement learning, concentrating local exploration in reward-relevant subspaces of the denoising velocity field. It uses conditional residuals or differentiable reward gradients to propose the subspace, and measures terminal reward response via equal-and-opposite perturbations at the same generation state. The reward difference provides signed local supervision in explored coordinates, while all generated images contribute to global DiffusionNFT learning. On Stable Diffusion 3.5 Medium, RiDEx achieves the highest peak rewards on four alignment and preference tasks, with its gradient-direction instantiation achieving 15x and 29x target-attainment speedups over DiffusionNFT on HPSv2 and PickScore, measured in H200 GPU hours.",
+    "summary_zh": "RiDEx 为扩散强化学习引入了奖励引导的方向性探索，将局部探索集中在去噪速度场中与奖励相关的子空间。它通过条件残差或可微奖励梯度提出子空间，并在同一生成状态下使用等大反向扰动来测量终端奖励响应。奖励差异在探索坐标中提供带符号的局部监督，同时所有生成的图像都贡献于全局 DiffusionNFT 学习。在 Stable Diffusion 3.5 Medium 上，RiDEx 在四个对齐和偏好任务中取得了最高的峰值奖励，其梯度方向实例在 HPSv2 和 PickScore 上相比 DiffusionNFT 分别实现了 15 倍和 29 倍的目标达成加速（以 H200 GPU 小时计）。",
+    "norm_url": "https://arxiv.org/abs/2611.22052v1"
+  },
+  {
     "id": "20261117-openai-wants-to-stop-deepfakes-from-over-365f3b",
     "url": "https://www.theverge.com/policy/1034527/openai-csam-classifier",
     "title_en": "OpenAI wants to stop deepfakes from overwhelming child abuse tiplines",
@@ -20,6 +108,116 @@
     "summary_en": "OpenAI announced a classifier that better detects abusive imagery of children, including AI-generated content, and reduces false positives by 48% while doubling the likelihood that flagged images contain abusive material. The tool is the first broadly available CSAM classifier with a specific flag for AI-generated material, and OpenAI is offering free access to vetted organizations. The announcement comes as NCMEC's CyberTipline received 400,000 generative AI-related reports in 2025, up from 67,000 in 2024, threatening to overwhelm investigators. OpenAI also introduced a 24-hour pause for users attempting to generate CSAM via ChatGPT and will report all instances to NCMEC.",
     "summary_zh": "OpenAI宣布了一款分类器，能更好地检测儿童性虐待材料（CSAM），包括AI生成的图像，并将误报率降低了48%，同时被标记图像包含虐待材料的可能性翻倍。这是首个广泛可用且能专门标记AI生成内容的CSAM分类器，OpenAI将向经过审核的组织免费提供访问权限。此举正值NCMEC网络举报热线在2025年收到40万份生成式AI相关报告（2024年为6.7万份），可能使调查人员不堪重负。OpenAI还针对试图通过ChatGPT生成CSAM的用户引入了24小时暂停机制，并将所有案例报告给NCMEC。",
     "norm_url": "https://www.theverge.com/policy/1034527/openai-csam-classifier"
+  },
+  {
+    "id": "20261118-regularized-score-centering-81be01",
+    "url": "https://arxiv.org/abs/2611.21791v1",
+    "title_en": "Regularized Score Centering",
+    "title_zh": "正则化分数中心化 (Regularized Score Centering)",
+    "source_name": "arXiv",
+    "published": "2026-11-16T19:12:50Z",
+    "fetched_at": "2026-11-18T02:46:47Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "asynchronous-rl",
+      "kl-regularization",
+      "importance-sampling",
+      "agentic-tasks"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces Regularized Score Centering (RSC) to stabilize asynchronous reinforcement learning, which suffers from stale policies and numerical mismatch. RSC adds a reverse KL penalty to score centering (SC) to keep the learner's next-token distribution close to the behavior policy, and works with or without truncated importance sampling (TIS). Theoretical analysis shows KL regularization improves convergence guarantees. Evaluated on dense and mixture-of-experts models across six agentic tasks, RSC with TIS substantially improves sample efficiency, achieving top performance with 14.3% improvement on AppWorld and 9.9 times the strongest baseline's score on BabyAI.",
+    "summary_zh": "本文提出了正则化分数中心化（RSC）以稳定异步强化学习，该方法解决了陈旧策略和训练-推理数值不匹配的问题。RSC在分数中心化（SC）的基础上加入反向KL惩罚，使学习器的下一词元分布靠近行为策略的分布，并且可与截断重要性采样（TIS）结合使用。理论分析表明KL正则化能改善收敛保证。在六个智能体任务上对稠密和混合专家模型进行评估，RSC结合TIS显著提升了样本效率，在AppWorld上提升14.3%，在BabyAI上达到最强基线得分的9.9倍。",
+    "norm_url": "https://arxiv.org/abs/2611.21791v1"
+  },
+  {
+    "id": "20261118-vira-toward-ultra-high-resolution-visual-ddcb13",
+    "url": "https://arxiv.org/abs/2611.21605v1",
+    "title_en": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+    "title_zh": "ViRA：通过跨输入相对策略优化实现超高分辨率视觉智能体",
+    "source_name": "arXiv",
+    "published": "2026-11-16T18:59:04Z",
+    "fetched_at": "2026-11-18T02:46:08Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "visual-agents",
+      "ultra-high-resolution",
+      "contrastive-learning",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes Cross-Input Relative Policy Optimization (CrossRPO) to train visual agents for ultra-high-resolution images. CrossRPO uses contrast sets—multiple versions of an image differing only in a small evidence region with different answers—so agents must read the evidence to solve the whole set. The authors prove CrossRPO does not reinforce common-sense guessing. They build ViRA-Train and ViRA-Bench (21–120 megapixels) and ViRA-Bench-Real with real changes, then train ViRA-9B and ViRA-27B on ~3,500 items each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at max resolution vs. 59.3% for GRPO; ViRA-9B is the most accurate open model of its size, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna on most benchmarks.",
+    "summary_zh": "本文提出跨输入相对策略优化（CrossRPO），用于训练超高分辨率图像的视觉智能体。CrossRPO 使用对比集——同一图像的多版本仅在小证据区域不同且答案不同——因此智能体必须阅读证据才能解决整个集合。作者证明 CrossRPO 不会强化基于常识的猜测。他们构建了 ViRA-Train 和 ViRA-Bench（21–120 百万像素）以及包含真实变化的 ViRA-Bench-Real，并在约 3,500 个 ViRA-Train 样本上训练了 ViRA-9B 和 ViRA-27B。CrossRPO 在最大分辨率下于 ViRA-Bench 上达到 63.3% 的集合准确率，而 GRPO 为 59.3%；ViRA-9B 是同规模中最准确的开源模型，ViRA-27B 在大多数基准上优于 Claude Haiku 5.5 和 GPT-6-Luna（均为最高思考水平）。",
+    "norm_url": "https://arxiv.org/abs/2611.21605v1"
+  },
+  {
+    "id": "20261118-optimistic-verifiers-get-hacked-reward-h-b5f371",
+    "url": "https://arxiv.org/abs/2611.21538v1",
+    "title_en": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
+    "title_zh": "乐观验证器被攻击：精确过程Oracle下的奖励黑客行为",
+    "source_name": "arXiv",
+    "published": "2026-11-16T18:25:42Z",
+    "fetched_at": "2026-11-18T02:46:41Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reward-hacking",
+      "rl",
+      "verifier",
+      "process-reward",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper constructs a setting where the true reward is exactly computable at the process level using executable authorization policies over 124,416 contexts, providing an oracle for minimal sufficient reasons. By degrading the verifier along seven realistic axes and training against each, four phenotypes emerge: optimistic verifiers are hacked by padding (sufficiency proxy ends at 0.940 while true faithfulness falls from 0.731 to 0.667), outcome-only verifiers saturate, noise dilutes, and ranking-preserving gaps do no harm. A model-free audit of the verifier's selection error and gap sign, plus a saturation pilot, predicts the phenotype. Across nine configurations, phenotypes recur, with sufficiency damage positive in all 10 replication cells and beyond two standard errors.",
+    "summary_zh": "本文构建了一个在过程级别可精确计算真实奖励的环境：基于124,416个上下文的可执行授权策略，提供了一个能列出每个决策所有最小充分理由的Oracle。通过沿七个现实维度（仅结果、充分性、仅召回、提取噪声、粗粒度分类、过时策略、LLM评判）降低验证器质量并分别训练，出现了四种表型：乐观验证器因填充而被黑客攻击（充分性代理最终为0.940，而真实忠实度从0.731降至0.667），仅结果验证器饱和，噪声稀释，保持排序的差距无害。对验证器选择误差和差距符号的无模型审计，加上短暂的饱和试点，可以预测运行将产生哪种表型。在涵盖两个框架、两个模型供应商、两种适配器大小、三种精度、两种初始化和两个种子的九种配置中，这些表型反复出现，充分性损害在所有10个复制单元中均为正且超过两个标准误差。",
+    "norm_url": "https://arxiv.org/abs/2611.21538v1"
+  },
+  {
+    "id": "20261118-conflict-aware-multi-teacher-on-policy-d-fcd391",
+    "url": "https://arxiv.org/abs/2611.21094v1",
+    "title_en": "Conflict-Aware Multi-Teacher On-Policy Distillation in Aligned Action Spaces for Cross-Game Generalization",
+    "title_zh": "面向跨游戏泛化的对齐动作空间冲突感知多教师在线蒸馏",
+    "source_name": "arXiv",
+    "published": "2026-11-16T13:40:17Z",
+    "fetched_at": "2026-11-18T02:47:01Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "multi-teacher distillati",
+      "vision-language model",
+      "cross-game generalizatio",
+      "policy conflict",
+      "on-policy distillation"
+    ],
+    "image": null,
+    "summary_en": "The paper addresses zero-shot cross-game generalization by consolidating source-game experts into a single vision-language model (VLM) that controls unseen games from raw pixels without target-game updates. It identifies two bottlenecks in scaling multi-teacher on-policy distillation (MOPD) to autoregressive VLMs: token-to-action misalignment due to subword length bias, and multi-teacher policy conflict from incompatible dynamics causing negative transfer. The proposed CAMOPD framework uses complete-action alignment to normalize command completion likelihoods over legal action sets, forming a calibrated categorical policy for reliable uncertainty margins and visual specialist probes. Conflict-aware multi-teacher consolidation cross-evaluates specialists across source games to upweight compatible teachers and suppress conflicting corrections, evaluated on GameWorld.",
+    "summary_zh": "本文研究零样本跨游戏泛化，旨在将多个源游戏专家整合为一个视觉语言模型（VLM），无需目标游戏参数更新即可从原始像素控制未见游戏。文章指出将多教师在线蒸馏（MOPD）扩展到自回归VLM面临两个瓶颈：子词长度偏差导致的token到动作不对齐，以及源教师在不兼容动态下产生矛盾闭环纠正引发的多教师策略冲突和负迁移。提出的CAMOPD框架通过对齐语义动作空间中的完整动作对齐，将命令完成似然归一化到每个游戏合法动作集上，形成校准的分类策略以提供可靠的不确定性边界和视觉专家探针。冲突感知多教师整合通过跨源游戏交叉评估专家，提升兼容教师的权重并抑制冲突纠正，在GameWorld上进行了评估。",
+    "norm_url": "https://arxiv.org/abs/2611.21094v1"
+  },
+  {
+    "id": "20261118-k2-horizon-a-frontier-fleet-of-open-sour-cc5567",
+    "url": "https://arxiv.org/abs/2611.21003v1",
+    "title_en": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+    "title_zh": "K2-Horizon：开源语言模型前沿舰队",
+    "source_name": "arXiv",
+    "published": "2026-11-16T12:28:03Z",
+    "fetched_at": "2026-11-18T02:46:14Z",
+    "type": "paper",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "moe",
+      "open-source",
+      "llm",
+      "agentic"
+    ],
+    "image": null,
+    "summary_en": "K2-Horizon is a fleet of six fully open language models ranging from 0.9B dense to 375B-A23B MoE, designed for general reasoning and agentic tasks. The models introduce Mixture-of-Value Attention (MoVA) and softplus attention gating, enabling a 36B-A4B model to nearly match a 32B dense model with one-seventh the active parameters. Uno, lossless diffusion adapters, speed up decoding by up to 2.2x without a draft model. The release follows LLM360 open-source standards, providing full development history, intermediate checkpoints, pre-training data, training logs, and all code, including the xLLM framework and RL360 RL stack. Detailed data pipelines are documented, producing roughly 10T synthetic pre-training tokens.",
+    "summary_zh": "K2-Horizon 是一个包含六个完全开源语言模型的系列，从 0.9B 密集模型到 375B-A23B MoE，专为通用推理和智能体任务设计。模型引入了混合价值注意力（MoVA）和 softplus 注意力门控，使 36B-A4B 模型以七分之一的激活参数几乎匹配同数据训练的 32B 密集模型。Uno 无损扩散适配器无需单独草稿模型即可将解码速度提升高达 2.2 倍。发布遵循 LLM360 开源标准，提供完整开发历史、中间检查点、预训练数据、训练日志及所有代码，包括 xLLM 框架和 RL360 强化学习栈。详细记录了数据管道，生成了约 10T 合成预训练 token。",
+    "norm_url": "https://arxiv.org/abs/2611.21003v1"
   },
   {
     "id": "20261117-alibaba-releases-qwen4-max-2-4t-moe-71b-247e71",

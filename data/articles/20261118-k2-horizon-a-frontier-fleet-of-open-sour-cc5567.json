@@ -1,0 +1,26 @@
+{
+  "id": "20261118-k2-horizon-a-frontier-fleet-of-open-sour-cc5567",
+  "url": "https://arxiv.org/abs/2611.21003v1",
+  "title_en": "K2-Horizon: A Frontier Fleet of Open Source Language Models",
+  "title_zh": "K2-Horizon：开源语言模型前沿舰队",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.21003v1",
+  "published": "2026-11-16T12:28:03Z",
+  "fetched_at": "2026-11-18T02:46:14Z",
+  "type": "paper",
+  "category": "model-release",
+  "tags": [
+    "model-release",
+    "moe",
+    "open-source",
+    "llm",
+    "agentic"
+  ],
+  "image": null,
+  "summary_en": "K2-Horizon is a fleet of six fully open language models ranging from 0.9B dense to 375B-A23B MoE, designed for general reasoning and agentic tasks. The models introduce Mixture-of-Value Attention (MoVA) and softplus attention gating, enabling a 36B-A4B model to nearly match a 32B dense model with one-seventh the active parameters. Uno, lossless diffusion adapters, speed up decoding by up to 2.2x without a draft model. The release follows LLM360 open-source standards, providing full development history, intermediate checkpoints, pre-training data, training logs, and all code, including the xLLM framework and RL360 RL stack. Detailed data pipelines are documented, producing roughly 10T synthetic pre-training tokens.",
+  "summary_zh": "K2-Horizon 是一个包含六个完全开源语言模型的系列，从 0.9B 密集模型到 375B-A23B MoE，专为通用推理和智能体任务设计。模型引入了混合价值注意力（MoVA）和 softplus 注意力门控，使 36B-A4B 模型以七分之一的激活参数几乎匹配同数据训练的 32B 密集模型。Uno 无损扩散适配器无需单独草稿模型即可将解码速度提升高达 2.2 倍。发布遵循 LLM360 开源标准，提供完整开发历史、中间检查点、预训练数据、训练日志及所有代码，包括 xLLM 框架和 RL360 强化学习栈。详细记录了数据管道，生成了约 10T 合成预训练 token。",
+  "content_en": "We present K2-Horizon, a fleet of six fully open language models, from a 0.9B dense model to a 375B-A23B MoE, built for general-purpose reasoning and agentic work across math and science, software engineering, deep research, office automation, and beyond. The models lead or are competitive with strong open models of their size on agentic and coding benchmarks. On the modeling side, to strengthen reasoning, we introduce Mixture-of-Value Attention (MoVA), applying MoE to attention value projections, and softplus attention gating, a more flexible, theoretically motivated gate. Our 36B-A4B model uses both and nearly matches a 32B dense model trained on the same data, with one-seventh the active parameters. We also introduce Uno, lossless diffusion adapters that speed up decoding by up to 2.2x without a separate draft model. Our release follows the LLM360 definition of open source for transparency and reproducibility: the full development history, including intermediate checkpoints from every training stage, pre-training data, training logs, and all training, evaluation, and infrastructure code, notably our production-scale xLLM framework for dense and MoE training and the RL360 reinforcement-learning stack. Beyond the data itself, we release and document in detail every pipeline that built it, the part of model development that open releases most rarely disclose. These pipelines produced roughly 10T synthetic pre-training tokens, showing that synthetic data can be a major ingredi",
+  "content_zh": "我们推出 K2-Horizon，一组六个完全开放的语言模型，从 0.9B 稠密模型到 375B-A23B MoE，面向数学与科学、软件工程、深度研究、办公自动化等领域的通用推理与智能体工作而构建。这些模型在智能体和编程基准上领先或与同规模强力开放模型相当。在建模方面，为增强推理能力，我们引入了 Mixture-of-Value Attention (MoVA)，将 MoE 应用于注意力值投影，以及 softplus attention gating，一种更灵活、更具理论依据的门控机制。我们的 36B-A4B 模型同时使用两者，在相同数据训练下几乎匹配 32B 稠密模型，而激活参数仅为其七分之一。我们还引入了 Uno，无损扩散适配器，无需单独的草稿模型即可将解码速度提升最高 2.2 倍。我们的发布遵循 LLM360 的开源定义以确保透明性和可复现性：完整开发历史，包括每个训练阶段的中间检查点、预训练数据、训练日志，以及所有训练、评估和基础设施代码，特别是我们用于稠密和 MoE 训练的生产级 xLLM 框架和 RL360 强化学习栈。除数据本身外，我们发布并详细记录了构建它的每个流水线——这是模型开发中开放发布最鲜少披露的部分。这些流水线产生了约 10T 合成预训练 token，表明合成数据可以成为主要成分",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

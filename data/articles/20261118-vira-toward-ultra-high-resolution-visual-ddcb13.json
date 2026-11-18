@@ -1,0 +1,26 @@
+{
+  "id": "20261118-vira-toward-ultra-high-resolution-visual-ddcb13",
+  "url": "https://arxiv.org/abs/2611.21605v1",
+  "title_en": "ViRA: Toward Ultra-High-Resolution Visual Agents via Cross-Input Relative Policy Optimization",
+  "title_zh": "ViRA：通过跨输入相对策略优化实现超高分辨率视觉智能体",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.21605v1",
+  "published": "2026-11-16T18:59:04Z",
+  "fetched_at": "2026-11-18T02:46:08Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "visual-agents",
+    "ultra-high-resolution",
+    "contrastive-learning",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes Cross-Input Relative Policy Optimization (CrossRPO) to train visual agents for ultra-high-resolution images. CrossRPO uses contrast sets—multiple versions of an image differing only in a small evidence region with different answers—so agents must read the evidence to solve the whole set. The authors prove CrossRPO does not reinforce common-sense guessing. They build ViRA-Train and ViRA-Bench (21–120 megapixels) and ViRA-Bench-Real with real changes, then train ViRA-9B and ViRA-27B on ~3,500 items each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at max resolution vs. 59.3% for GRPO; ViRA-9B is the most accurate open model of its size, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna on most benchmarks.",
+  "summary_zh": "本文提出跨输入相对策略优化（CrossRPO），用于训练超高分辨率图像的视觉智能体。CrossRPO 使用对比集——同一图像的多版本仅在小证据区域不同且答案不同——因此智能体必须阅读证据才能解决整个集合。作者证明 CrossRPO 不会强化基于常识的猜测。他们构建了 ViRA-Train 和 ViRA-Bench（21–120 百万像素）以及包含真实变化的 ViRA-Bench-Real，并在约 3,500 个 ViRA-Train 样本上训练了 ViRA-9B 和 ViRA-27B。CrossRPO 在最大分辨率下于 ViRA-Bench 上达到 63.3% 的集合准确率，而 GRPO 为 59.3%；ViRA-9B 是同规模中最准确的开源模型，ViRA-27B 在大多数基准上优于 Claude Haiku 5.5 和 GPT-6-Luna（均为最高思考水平）。",
+  "content_en": "Visual agents answer questions about ultra-high-resolution photos by zooming into the relevant regions. However, existing agents often answer from common sense instead of reading the evidence. Reinforcement learning (RL) on the final answer cannot correct this, because a guess earns the same reward as reading. We propose Cross-Input Relative Policy Optimization (CrossRPO), which trains agents on contrast sets. A contrast set asks one question about several versions of an image that differ only in a small region with the evidence and have different answers, so only reading the evidence solves the whole set. CrossRPO rewards solving the whole set, and we prove that it does not reinforce a set answered from common sense. We build contrast sets for training (ViRA-Train) and evaluation (ViRA-Bench) by editing one small object in images of 21 to 120 megapixels, and we photograph further sets with real changes (ViRA-Bench-Real) to exclude editing traces. We train two Visual Reasoning Agents, ViRA-9B and ViRA-27B, with CrossRPO on only about 3,500 items of ViRA-Train each. CrossRPO achieves 63.3% set accuracy on ViRA-Bench at the maximum resolution, against 59.3% for GRPO. ViRA-9B is the most accurate open model of its size on all benchmarks, and ViRA-27B outperforms Claude Haiku 5.5 and GPT-6-Luna, both at their highest thinking level, on most benchmarks.",
+  "content_zh": "视觉智能体通过放大相关区域来回答关于超高分辨率照片的问题。然而，现有智能体往往凭常识作答，而非阅读证据。仅对最终答案进行强化学习（RL）无法纠正这一点，因为猜测与阅读获得相同的奖励。我们提出跨输入相对策略优化（CrossRPO），在对比集上训练智能体。对比集针对同一图像的多个版本提出同一个问题，这些版本仅在一个包含证据的小区域上有所不同，且答案各不相同，因此只有阅读证据才能解出整个集合。CrossRPO 奖励解出整个集合，并且我们证明它不会强化凭常识作答的集合。我们通过编辑 21 至 120 百万像素图像中的一个小物体，构建了用于训练的对比集（ViRA-Train）和用于评估的对比集（ViRA-Bench），并进一步拍摄了具有真实变化的集合（ViRA-Bench-Real），以排除编辑痕迹。我们仅使用约 3,500 条 ViRA-Train 数据，通过 CrossRPO 训练了两个视觉推理智能体：ViRA-9B 和 ViRA-27B。在最大分辨率下，CrossRPO 在 ViRA-Bench 上达到 63.3% 的集合准确率，而 GRPO 为 59.3%。ViRA-9B 在所有基准上都是同规模开源模型中准确率最高的，而 ViRA-27B 在大多数基准上优于 Claude Haiku 5.5 和 GPT-6-Luna（两者均处于最高思考水平）。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

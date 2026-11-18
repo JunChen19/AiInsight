@@ -1,0 +1,26 @@
+{
+  "id": "20261118-optimistic-verifiers-get-hacked-reward-h-b5f371",
+  "url": "https://arxiv.org/abs/2611.21538v1",
+  "title_en": "Optimistic Verifiers Get Hacked: Reward Hacking Under an Exact Process Oracle",
+  "title_zh": "乐观验证器被攻击：精确过程Oracle下的奖励黑客行为",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.21538v1",
+  "published": "2026-11-16T18:25:42Z",
+  "fetched_at": "2026-11-18T02:46:41Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reward-hacking",
+    "rl",
+    "verifier",
+    "process-reward",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper constructs a setting where the true reward is exactly computable at the process level using executable authorization policies over 124,416 contexts, providing an oracle for minimal sufficient reasons. By degrading the verifier along seven realistic axes and training against each, four phenotypes emerge: optimistic verifiers are hacked by padding (sufficiency proxy ends at 0.940 while true faithfulness falls from 0.731 to 0.667), outcome-only verifiers saturate, noise dilutes, and ranking-preserving gaps do no harm. A model-free audit of the verifier's selection error and gap sign, plus a saturation pilot, predicts the phenotype. Across nine configurations, phenotypes recur, with sufficiency damage positive in all 10 replication cells and beyond two standard errors.",
+  "summary_zh": "本文构建了一个在过程级别可精确计算真实奖励的环境：基于124,416个上下文的可执行授权策略，提供了一个能列出每个决策所有最小充分理由的Oracle。通过沿七个现实维度（仅结果、充分性、仅召回、提取噪声、粗粒度分类、过时策略、LLM评判）降低验证器质量并分别训练，出现了四种表型：乐观验证器因填充而被黑客攻击（充分性代理最终为0.940，而真实忠实度从0.731降至0.667），仅结果验证器饱和，噪声稀释，保持排序的差距无害。对验证器选择误差和差距符号的无模型审计，加上短暂的饱和试点，可以预测运行将产生哪种表型。在涵盖两个框架、两个模型供应商、两种适配器大小、三种精度、两种初始化和两个种子的九种配置中，这些表型反复出现，充分性损害在所有10个复制单元中均为正且超过两个标准误差。",
+  "content_en": "Reinforcement learning from verifiable rewards inherits whatever its verifier gets wrong. Outside mathematics and code the verifier is a proxy, a rubric, a learned judge or a hand-written checker, and its distance from the true objective is never measured, so a rising reward cannot be told apart from a hack. We build a setting where the true reward is exactly computable at the process level: executable authorization policies over 124,416 contexts admit an oracle that lists every minimal sufficient reason for every decision. We compile these policies into exact process rewards, degrade the verifier along seven realistic axes (outcome-only, sufficiency, recall-only, extraction noise, coarse taxonomy, stale policy, LLM judge), and train against each while the exact verifier scores every rollout. Four phenotypes appear. Optimistic verifiers are hacked by padding: the sufficiency proxy ends at 0.940 while true faithfulness falls from 0.731 to 0.667 on 96 held-out episodes. Outcome-only verifiers saturate and stop teaching, noise dilutes, and ranking-preserving gaps do no harm. A model-free audit of the verifier, its selection error and gap sign, together with a short saturation pilot, anticipates which phenotype a run will produce. Across nine configurations spanning two frameworks, two model vendors, two adapter sizes, three precisions, two initialisations and two seeds, the phenotypes recur, sufficiency damage is positive in all 10 replication cells and beyond two standard error",
+  "content_zh": "基于可验证奖励的强化学习会继承其验证器的所有错误。在数学和代码之外，验证器是一种代理——评分标准、学习得到的评判器或手写检查器——其与真实目标之间的距离从未被测量，因此奖励上升与奖励作弊无法区分。我们构建了一个真实奖励可在过程层面精确计算的环境：针对124,416个上下文的可执行授权策略提供了一个预言机，能够列出每个决策的每一个最小充分理由。我们将这些策略编译为精确的过程奖励，沿七个现实维度退化验证器（仅结果、充分性、仅召回、提取噪声、粗粒度分类、过期策略、LLM评判器），并针对每种退化进行训练，同时由精确验证器对每个 rollout 打分。出现了四种表型。乐观验证器被填充所作弊：充分性代理最终达到0.940，而真实忠实度在96个留出回合上从0.731降至0.667。仅结果验证器饱和并停止教学，噪声稀释，保序差距不造成损害。对验证器的无模型审计——其选择误差和差距符号——连同简短的饱和试点，可以预判一次运行将产生哪种表型。在跨越两个框架、两个模型供应商、两种适配器规模、三种精度、两种初始化和两个种子的九种配置中，这些表型反复出现，充分性损害在所有10个复制单元中均为正，且超过两个标准误",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261118-conflict-aware-multi-teacher-on-policy-d-fcd391",
+  "url": "https://arxiv.org/abs/2611.21094v1",
+  "title_en": "Conflict-Aware Multi-Teacher On-Policy Distillation in Aligned Action Spaces for Cross-Game Generalization",
+  "title_zh": "面向跨游戏泛化的对齐动作空间冲突感知多教师在线蒸馏",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.21094v1",
+  "published": "2026-11-16T13:40:17Z",
+  "fetched_at": "2026-11-18T02:47:01Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "multi-teacher distillati",
+    "vision-language model",
+    "cross-game generalizatio",
+    "policy conflict",
+    "on-policy distillation"
+  ],
+  "image": null,
+  "summary_en": "The paper addresses zero-shot cross-game generalization by consolidating source-game experts into a single vision-language model (VLM) that controls unseen games from raw pixels without target-game updates. It identifies two bottlenecks in scaling multi-teacher on-policy distillation (MOPD) to autoregressive VLMs: token-to-action misalignment due to subword length bias, and multi-teacher policy conflict from incompatible dynamics causing negative transfer. The proposed CAMOPD framework uses complete-action alignment to normalize command completion likelihoods over legal action sets, forming a calibrated categorical policy for reliable uncertainty margins and visual specialist probes. Conflict-aware multi-teacher consolidation cross-evaluates specialists across source games to upweight compatible teachers and suppress conflicting corrections, evaluated on GameWorld.",
+  "summary_zh": "本文研究零样本跨游戏泛化，旨在将多个源游戏专家整合为一个视觉语言模型（VLM），无需目标游戏参数更新即可从原始像素控制未见游戏。文章指出将多教师在线蒸馏（MOPD）扩展到自回归VLM面临两个瓶颈：子词长度偏差导致的token到动作不对齐，以及源教师在不兼容动态下产生矛盾闭环纠正引发的多教师策略冲突和负迁移。提出的CAMOPD框架通过对齐语义动作空间中的完整动作对齐，将命令完成似然归一化到每个游戏合法动作集上，形成校准的分类策略以提供可靠的不确定性边界和视觉专家探针。冲突感知多教师整合通过跨源游戏交叉评估专家，提升兼容教师的权重并抑制冲突纠正，在GameWorld上进行了评估。",
+  "content_en": "Zero-shot cross-game generalization aims to consolidate accessible source-game experts into a single vision-language model (VLM) that controls unseen games from raw pixels without target-game parameter updates. While multi-teacher on-policy distillation (MOPD) mitigates offline exposure bias and single-game reinforcement learning (RL) overfitting, scaling it to autoregressive VLMs faces two bottlenecks. First, token-to-action misalignment from subword length bias distorts discrete action probabilities and uncertainty margins. Second, multi-teacher policy conflict arises as source teachers under incompatible dynamics issue contradictory closed-loop corrections, causing negative transfer. We propose CAMOPD (Conflict-Aware Multi-Teacher On-Policy Distillation), a post-training framework that resolves multi-teacher policy conflict within an aligned semantic action space. CAMOPD first uses complete-action alignment to normalize command completion likelihoods over each game's legal action set, forming a calibrated categorical policy that provides reliable uncertainty margins for selective on-policy retention and visual specialist probes that can be evaluated across source games. To resolve policy conflict without target-game data, conflict-aware multi-teacher consolidation cross-evaluates these specialists across source games to capture both visual identifiability and inter-teacher compatibility, upweighting compatible teachers while suppressing conflicting corrections. On GameWorl",
+  "content_zh": "零样本跨游戏泛化旨在将可获取的源游戏专家整合为单一视觉语言模型（VLM），使其无需目标游戏参数更新即可从原始像素控制未见过的游戏。尽管多教师同策略蒸馏（MOPD）缓解了离线暴露偏差和单游戏强化学习（RL）过拟合问题，但将其扩展到自回归VLM面临两个瓶颈。第一，子词长度偏差导致的token到动作错位会扭曲离散动作概率和不确定性边际。第二，多教师策略冲突会出现，因为不兼容动力学下的源教师发出相互矛盾的闭环修正，导致负迁移。我们提出CAMOPD（冲突感知多教师同策略蒸馏），这是一个在对齐语义动作空间内解决多教师策略冲突的后训练框架。CAMOPD首先使用完整动作对齐，在每个游戏的合法动作集上归一化命令补全似然，形成校准的分类策略，为选择性同策略保留和可跨源游戏评估的视觉专家探针提供可靠的不确定性边际。为在没有目标游戏数据的情况下解决策略冲突，冲突感知多教师整合会跨源游戏交叉评估这些专家，以捕获视觉可识别性和教师间兼容性，提高兼容教师的权重，同时抑制冲突修正。在GameWorl",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

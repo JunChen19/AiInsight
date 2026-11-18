@@ -1,0 +1,26 @@
+{
+  "id": "20261118-introducing-gpt-6-2-astra-and-sol-b02ac3",
+  "url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+  "title_en": "Introducing GPT-6.2 Astra and Sol",
+  "title_zh": "GPT-6.2 Astra 与 Sol 发布",
+  "source_name": "OpenAI",
+  "source_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol",
+  "published": "2026-11-17T17:45:00Z",
+  "fetched_at": "2026-11-18T02:46:01Z",
+  "type": "blog",
+  "category": "model-release",
+  "tags": [
+    "model-release",
+    "llm",
+    "coding",
+    "computer-use",
+    "efficiency"
+  ],
+  "image": null,
+  "summary_en": "OpenAI introduced GPT-6.2 Astra and Sol, two new model variants aimed at professional outputs, coding, computer use, and efficiency. The models are available across ChatGPT Work, Codex, and the API. They deliver improved performance in these areas at lower cost. No specific benchmark or precision numbers were disclosed in the announcement.",
+  "summary_zh": "OpenAI 发布 GPT-6.2 Astra 与 Sol 两个新模型版本，重点提升专业输出、编程、计算机操作（computer use）与效率。模型已在 ChatGPT Work、Codex 和 API 中上线。官方称其在上述能力上表现更好，同时成本更低。公告未披露具体基准或精度数字。",
+  "content_en": "Introducing GPT‑6.2 Astra and Sol, with better professional outputs, coding, computer use, and efficiency at lower cost across ChatGPT Work, Codex, and the API.",
+  "content_zh": "隆重推出 GPT‑6.2 Astra 和 Sol，在 ChatGPT Work、Codex 和 API 中提供更出色的专业输出、编码、计算机使用和更高效率，同时成本更低。",
+  "content_note": "fallback_snippet",
+  "translation_failed": false
+}
