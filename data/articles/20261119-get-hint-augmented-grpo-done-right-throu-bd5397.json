@@ -1,0 +1,26 @@
+{
+  "id": "20261119-get-hint-augmented-grpo-done-right-throu-bd5397",
+  "url": "https://arxiv.org/abs/2611.23124v1",
+  "title_en": "Get Hint-Augmented GRPO Done Right Through Activation Steering",
+  "title_zh": "通过激活引导正确实现提示增强的GRPO",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.23124v1",
+  "published": "2026-11-17T17:43:28Z",
+  "fetched_at": "2026-11-19T02:20:47Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "grpo",
+    "activation-steering",
+    "llm",
+    "hint-augmented"
+  ],
+  "image": null,
+  "summary_en": "Hint-Augmented GRPO (HA-GRPO) extends GRPO to provide gradient signals when questions exceed model capability by adding hints, but suffers from training-inference mismatch since hints are unavailable at inference. The authors reinterpret hinting as steering model behavior rather than reducing difficulty, and propose ASH (Activation Steering for Hinting). During training, the model sees both hinted and plain questions while a trainable steering vector is optimized to widen the margin between generation probabilities for responses to hinted vs. plain versions, capturing the question-agnostic behavioral shift. At inference, the steering vector is injected into activations to reproduce hint-conditioned behavior without hints.",
+  "summary_zh": "提示增强的GRPO（HA-GRPO）通过在上下文中添加提示来降低问题难度，从而在基础模型能力不足时提供梯度信号，但存在训练-推理不匹配问题：推理时无法获得提示。作者将提示的作用重新解释为引导模型行为而非降低难度，并提出ASH（Activation Steering for Hinting）方法。训练时模型同时看到带提示和不带提示的问题，并优化一个可训练引导向量，以扩大带提示版本相对于无提示版本生成响应的概率边际，从而捕捉提示引发的与问题无关的行为变化。推理时，将训练好的引导向量直接注入模型激活，无需提示即可复现提示条件下的行为。",
+  "content_en": "GRPO has become the dominant reinforcement learning method for eliciting reasoning capability in LLMs using verifiable rewards. However, it suffers from a fundamental failure mode: when a training question exceeds the base model's current capability, all generated responses fail and receive zero reward, yielding no gradient signal and stalling further capability expansion. An emerging class of GRPO extensions, termed Hint-Augmented GRPO (HA-GRPO), adds a \"hint\" to the context to reduce the difficulty of the question, thereby producing a usable gradient signal. Nevertheless, existing HA-GRPO methods share a key issue: no hint is available at inference time to append to the question, creating a training-inference context mismatch that leads to inconsistent performance gains. In this work, we reinterpret the function of hinting -- not as reducing question difficulty, but as steering model behavior -- and propose ASH (Activation Steering for Hinting), a novel HA-GRPO method built on this view. During training, the model is presented with both hinted and plain questions, while a trainable steering vector is optimized to widen the margins between the model's generation probabilities for responses to the hinted version relative to the plain version, thereby capturing the question-agnostic component of the behavioral shift induced by the hint. During inference, the trained steering vector is directly injected into the model's activation, reproducing the hint-conditioned behavior with",
+  "content_zh": "GRPO 已成为利用可验证奖励激发 LLMs 推理能力的主流强化学习方法。然而，它存在一个根本性的失效模式：当训练问题超出基座模型当前能力时，所有生成的回答都会失败并获得零奖励，从而不产生梯度信号，使能力扩展停滞。一类新兴的 GRPO 扩展方法被称为 Hint-Augmented GRPO（HA-GRPO），它在上下文中添加“提示”以降低问题难度，从而产生可用的梯度信号。然而，现有的 HA-GRPO 方法都有一个关键问题：在推理时无法获得可附加到问题上的提示，造成训练-推理上下文不匹配，进而导致性能提升不稳定。在本工作中，我们重新诠释了提示的作用——不是降低问题难度，而是引导模型行为——并基于这一观点提出了 ASH（Activation Steering for Hinting），一种新颖的 HA-GRPO 方法。在训练期间，模型同时接收带提示和普通的问题，同时优化一个可训练的引导向量，以扩大模型对带提示版本回答相对于普通版本回答的生成概率差距，从而捕捉提示所诱导行为变化中与问题无关的成分。在推理期间，训练好的引导向量被直接注入模型的激活中，以复现提示条件下的行为，",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

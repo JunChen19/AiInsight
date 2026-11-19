@@ -1,0 +1,26 @@
+{
+  "id": "20261119-remarl-learning-to-unmask-and-remask-in-f23e1d",
+  "url": "https://arxiv.org/abs/2611.22576v1",
+  "title_en": "ReMaRL: Learning to Unmask and Remask in Frozen Diffusion Language Models",
+  "title_zh": "ReMaRL：在冻结扩散语言模型中学习解掩码与重掩码",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.22576v1",
+  "published": "2026-11-17T11:01:15Z",
+  "fetched_at": "2026-11-19T02:21:37Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "diffusion-language-model",
+    "reinforcement-learning",
+    "grpo",
+    "remasking",
+    "llada"
+  ],
+  "image": null,
+  "summary_en": "Masked diffusion language models generate tokens in parallel, and the unmasking order affects final-answer accuracy. Existing methods learn unmasking policies from task rewards but cannot remask earlier predictions, while heuristic or supervised remaskers do not directly optimize for final-answer correctness. ReMaRL introduces a lightweight ~0.3M-parameter policy trained with Group Relative Policy Optimization (GRPO) from final-answer rewards, keeping the diffusion model frozen, to learn which tokens to unmask, retain, or remask. With LLaDA-8B-Instruct, ReMaRL achieves the highest scores among compared unmasking and remasking policies within inference budgets of 4-32 model calls on math and 8-16 calls on code.",
+  "summary_zh": "掩码扩散语言模型并行生成 token，解掩码顺序影响最终答案准确率。现有方法从任务奖励学习解掩码策略，但无法重掩码早期预测；启发式或监督式重掩码器也未直接优化最终答案正确性。ReMaRL 引入一个约 0.3M 参数的轻量策略，使用组相对策略优化（GRPO）从最终答案奖励训练，同时保持扩散模型冻结，学习哪些 token 应解掩码、保留或重掩码。在 LLaDA-8B-Instruct 上，ReMaRL 在数学任务 4-32 次模型调用和代码任务 8-16 次调用的推理预算内，相比对比的解掩码与重掩码策略取得最高分数。",
+  "content_en": "Masked diffusion language models generate tokens in parallel, and the order in which tokens are unmasked affects final-answer accuracy. Several methods learn unmasking policies from task rewards, but these policies cannot remask earlier predictions. Remasking lets the model correct those predictions using newly generated context. Heuristic rules guide both unmasking and remasking, while supervised remaskers learn to detect token errors. Neither approach directly optimizes these decisions for final-answer correctness. To address this gap, we introduce ReMaRL (Remasking with Reinforcement Learning), a lightweight policy that learns which tokens to unmask, retain, or remask. We train this roughly 0.3M-parameter policy with Group Relative Policy Optimization (GRPO) from final-answer rewards while keeping the diffusion model frozen. With LLaDA-8B-Instruct, ReMaRL achieves the highest scores among the compared unmasking and remasking policies within the tested inference budgets of 4-32 model calls on math and 8-16 calls on code.",
+  "content_zh": "掩码扩散语言模型并行生成 token，而 token 被解除掩码的顺序会影响最终答案的准确率。已有若干方法从任务奖励中学习解除掩码策略，但这些策略无法重新掩码此前的预测。重新掩码使模型能够利用新生成的上下文纠正这些预测。启发式规则同时指导解除掩码与重新掩码，而监督式重新掩码器则学习检测 token 错误。这两类方法都没有直接针对最终答案的正确性来优化这些决策。为填补这一空白，我们提出 ReMaRL（Remasking with Reinforcement Learning），一种轻量级策略，学习哪些 token 应当解除掩码、保留或重新掩码。我们使用 Group Relative Policy Optimization（GRPO）以最终答案奖励训练这个约 0.3M 参数的策略，同时保持扩散模型冻结。在 LLaDA-8B-Instruct 上，在数学任务 4-32 次模型调用、代码任务 8-16 次调用的测试推理预算内，ReMaRL 在所比较的解除掩码与重新掩码策略中取得了最高分数。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261119-option-grpo-hierarchical-rl-against-ai-s-c3d835",
+  "url": "https://arxiv.org/abs/2611.23633v1",
+  "title_en": "Option-GRPO: Hierarchical RL Against AI Slop in Code Generation for Unseen SDKs",
+  "title_zh": "Option-GRPO：面向未见SDK代码生成的分层强化学习框架",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.23633v1",
+  "published": "2026-11-17T23:52:34Z",
+  "fetched_at": "2026-11-19T02:20:39Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "code-generation",
+    "grpo",
+    "hierarchical-rl",
+    "sdk-adaptation"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces Option-GRPO, a hierarchical reinforcement learning framework that adapts a code LLM to an unseen SDK using only its source code, without human-written usage examples or test cases. The key insight is that SDK source code encodes compositional structure defining a hierarchy of reusable code patterns (code options) that serve both as curriculum building blocks and as the action space for policy optimization. The authors show code options induce a valid semi-Markov decision process, derive conditional bounds linking shorter option description length to more concise and API-efficient programs, and analyze how the hierarchy improves credit assignment by a factor of sqrt(T/K). Using GRPO with execution-based rewards at each curriculum level, Option-GRPO discovers SDK idioms, composes them into patterns, and assembles complete programs, achieving 61.4% pass@1 on 12 unseen SDKs with a 32B-parameter base model.",
+  "summary_zh": "本文提出 Option-GRPO，一个分层强化学习框架，仅凭 SDK 源代码即可让代码大模型适配训练截止后发布的未见 SDK，无需人工编写的用法示例或测试用例，并同时优化功能正确性与代码优雅度。核心洞察是 SDK 源码蕴含组合结构，可定义可复用代码模式（code options）的层级，这些模式既构成课程学习的构建单元，又充当策略优化的动作空间。作者证明 code options 可诱导有效的半马尔可夫决策过程，给出条件性界：更短的 option 描述长度意味着更简洁、期望上更 API 高效的程序，并分析该层级在给定假设下将信用分配改善约 sqrt(T/K) 倍。Option-GRPO 在每个课程层级使用基于执行反馈奖励的 GRPO，先发现 SDK 惯用法，再组合为模式，最终组装成完整程序；在 12 个未见 SDK 上使用 32B 参数基座模型取得 61.4% pass@1。",
+  "content_en": "Large language models increasingly produce AI slop in generated code: verbose, redundant, non-idiomatic implementations that pass functional checks but bloat codebases. The problem compounds on SDKs released after the model's training cutoff, where the model has neither idiomatic priors nor compositional understanding. We present Option-GRPO, a hierarchical reinforcement learning framework that adapts a code LLM to an unseen SDK from its source code alone, without human-written usage examples or test cases, and that explicitly optimizes for both functional correctness and code elegance. Our key insight is that SDK source code contains compositional structure that defines a hierarchy of reusable code patterns (code options) which simultaneously serve as the building blocks of a curriculum and the action space for efficient policy optimization. We show that code options induce a valid semi-Markov decision process, give conditional bounds under which shorter option description length implies more concise and, in expectation, more API-efficient programs, and analyze under stated assumptions how the option hierarchy improves credit assignment by a factor of $\\sqrt{T/K}$. Using Group Relative Policy Optimization (GRPO) with execution-based rewards at each curriculum level, Option-GRPO discovers SDK idioms, composes them into patterns, and assembles patterns into complete programs. Experiments on 12 unseen SDKs with a 32B-parameter base model demonstrate 61.4% pass@1, outperforming",
+  "content_zh": "大型语言模型在生成代码时越来越多地产生 AI slop：冗长、冗余、不符合语言习惯的实现，它们能通过功能检查，却使代码库膨胀。当面对模型训练截止日期之后发布的 SDK 时，这一问题会进一步加剧，因为模型既不具备符合语言习惯的先验知识，也不具备组合式理解能力。我们提出 Option-GRPO，这是一个分层强化学习框架，仅凭 SDK 的源代码就能使代码 LLM 适应一个未见过的 SDK，无需人工编写的使用示例或测试用例，并且显式地同时优化功能正确性和代码优雅性。我们的关键洞见是，SDK 源代码包含组合结构，该结构定义了一组可复用代码模式（代码选项）的层次体系，这些代码选项同时充当课程的学习单元和高效策略优化的动作空间。我们证明代码选项诱导出一个有效的半马尔可夫决策过程，给出在特定条件下更短的选项描述长度意味着更简洁、且期望上更 API 高效的程序的条件界，并在明确假设下分析选项层次如何将信用分配提升 $\\sqrt{T/K}$ 倍。通过在每个课程层级使用基于执行奖励的 Group Relative Policy Optimization (GRPO)，Option-GRPO 发现 SDK 惯用法，将其组合为模式，再将模式组装为完整程序。在 12 个未见过的 SDK 上使用 32B 参数基础模型的实验表明，pass@1 达到 61.4%，优于",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

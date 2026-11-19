@@ -1,0 +1,26 @@
+{
+  "id": "20261119-eyes-in-the-update-learning-where-reward-0c9fc2",
+  "url": "https://arxiv.org/abs/2611.22438v1",
+  "title_en": "Eyes in the Update? Learning Where Rewards Land in Multimodal Reasoning",
+  "title_zh": "更新中的视线？学习多模态推理中奖励的落点",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.22438v1",
+  "published": "2026-11-17T09:11:42Z",
+  "fetched_at": "2026-11-19T02:21:44Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "multimodal-rl",
+    "reward-allocation",
+    "policy-optimization",
+    "vision-language",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper addresses the limitation in multimodal reinforcement learning where outcome rewards are assigned to entire generated trajectories despite visual evidence being used only at sparse positions. It proposes Gaze-RL, a representation-driven policy optimization method that redistributes completion-level advantage through a latent reward landing field computed from internal cross-modal geometry and local predictive uncertainty. This field assigns larger update weights to positions that are visually anchored and decision-bearing while maintaining a mean of one, preserving total rollout credit. Gaze-RL requires no process supervision, auxiliary perception module, or architectural modification, and improves Qwen2.5-VL and InternVL3.5 across image and video benchmarks.",
+  "summary_zh": "本文针对多模态强化学习中结果奖励被分配给整个生成轨迹、而视觉证据仅用于稀疏位置的问题，提出Gaze-RL——一种表示驱动的策略优化方法。该方法通过由内部跨模态几何和局部预测不确定性计算得到的潜在奖励落点场，重新分配完成级优势，使视觉锚定且决策关键的位置获得更大更新权重，同时保持均值为一以保留总信用。Gaze-RL无需过程监督、辅助感知模块或架构修改，并在多个图像和视频基准上提升了Qwen2.5-VL和InternVL3.5的性能。",
+  "content_en": "Multimodal post-training has moved from broad instruction tuning toward reinforcement learning for image and video reasoning, where outcome rewards can improve final-answer accuracy. Yet these rewards are assigned to complete generated trajectories, while visual evidence is used only at sparse and uneven positions inside the response. Recent work has begun to make multimodal RL more token-sensitive through grounding signals or external token-level weighting. We ask a more specific question: can the allocation of the same trajectory-level reward be inferred from the model's own multimodal computation, rather than from an auxiliary annotator, perception module, or process label? We propose Gaze-RL, a representation-driven policy optimization method that redistributes completion-level advantage through a latent reward landing field. The field is computed from internal cross-modal geometry and local predictive uncertainty, assigning larger update weight to positions that are both visually anchored and decision-bearing while remaining mean-one, so the total credit of each rollout is preserved and only its positionwise allocation changes. Gaze-RL requires no process supervision, auxiliary perception module, or architectural modification, and improves both Qwen2.5-VL and InternVL3.5 across a broad range of image and video benchmarks.",
+  "content_zh": "多模态后训练已从广泛的指令微调转向面向图像与视频推理的强化学习，其中结果奖励可以提升最终答案的准确率。然而，这些奖励被分配给完整的生成轨迹，而视觉证据仅在回复中稀疏且不均匀的位置被使用。近期工作已开始通过 grounding 信号或外部 token 级加权，使多模态 RL 更具 token 敏感性。我们提出一个更具体的问题：同一轨迹级奖励的分配，能否从模型自身的多模态计算中推断出来，而不是来自辅助标注器、感知模块或过程标签？我们提出 Gaze-RL，一种表征驱动的策略优化方法，它通过潜在奖励落点场重新分配完成级优势。该场由内部跨模态几何与局部预测不确定性计算得到，为既具有视觉锚定又承载决策的位置分配更大的更新权重，同时保持均值为一，从而保留每次 rollout 的总信用，仅改变其逐位置分配。Gaze-RL 无需过程监督、辅助感知模块或架构修改，并在广泛的图像与视频基准上同时提升了 Qwen2.5-VL 和 InternVL3.5。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

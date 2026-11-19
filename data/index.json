@@ -1,5 +1,71 @@
 [
   {
+    "id": "20261119-introducing-gemini-4-neon-1780b9",
+    "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
+    "title_en": "Introducing Gemini 4 Neon",
+    "title_zh": "Gemini 4 Neon 正式发布",
+    "source_name": "Google DeepMind",
+    "published": "2026-11-18T21:35:43Z",
+    "fetched_at": "2026-11-19T02:21:16Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "llm",
+      "benchmark",
+      "agent",
+      "safety"
+    ],
+    "image": "images/20261119-introducing-gemini-4-neon-1780b9.jpg",
+    "summary_en": "Google introduced Gemini 4 Neon, a frontier-level model optimized for fast end-to-end task completion in software engineering, knowledge work, and science. It scores 61 on the Artificial Analysis Intelligence Index (xhigh thinking level, #3 overall) and ranks #2 on the Vals Index (70.9%). Priced at $3 per million input tokens ($0.15 cached) and $15 per million output tokens, with a 1M-token context window. Neon achieves state-of-the-art results on multiple benchmarks, including #1 on Legal Research Bench, Tax Agent Bench, AutomationBench (56.3%), and Vending-Bench 2 ($16,843), and 65.2% on Terminal-Bench 4.1. It also features improved safety with 0.0% attack success rate on Gray Swan's IPI benchmark and reduced fabrication rates.",
+    "summary_zh": "Google 推出 Gemini 4 Neon，一款面向软件工程、知识工作和科学工作流的前沿模型，强调快速端到端任务完成。在 Artificial Analysis 智能指数上以 xhigh 思考级别得分 61（总排名第 3），在 Vals 指数上排名第 2（70.9%）。定价为每百万输入 token 3 美元（缓存输入 0.15 美元），每百万输出 token 15 美元，上下文窗口 100 万 token。Neon 在多项基准测试中表现领先，包括 Legal Research Bench、Tax Agent Bench、AutomationBench（56.3%）和 Vending-Bench 2（16,843 美元）均排名第 1，Terminal-Bench 4.1 得分 65.2%。安全方面，在 Gray Swan 的 IPI 基准上实现 0.0% 攻击成功率，并降低了捏造率。",
+    "norm_url": "https://deepmind.google/blog/introducing-gemini-4-neon"
+  },
+  {
+    "id": "20261119-new-lora-adapter-lifts-qwen3-8-coding-su-477e70",
+    "url": "https://www.marktechpost.com/2026/11/18/hugging-face-qwen3-8-27b-pi-adapted-lora/",
+    "title_en": "New LoRA Adapter Lifts Qwen3.8 Coding Success From 39% to 65%",
+    "title_zh": "新LoRA适配器将Qwen3.8编码成功率从39%提升至65%",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-18T16:07:50Z",
+    "fetched_at": "2026-11-19T02:20:30Z",
+    "type": "blog",
+    "category": "rl",
+    "tags": [
+      "lora",
+      "rl",
+      "coding-agent",
+      "benchmark",
+      "model-release"
+    ],
+    "image": "images/20261119-new-lora-adapter-lifts-qwen3-8-coding-su-477e70.jpg",
+    "summary_en": "Hugging Face's harness-hub team released Qwen3.8-27B-pi-adapted, a LoRA adapter (rank 32, alpha 64) for Qwen3.8-27B, trained with reinforcement learning (AsyncGRPO) to operate within the pi coding agent. It boosts SWE-bench Pro (hard 51) pass@1 from 39.2% to 64.7% and Terminal-Bench 2.1 from 39.5% to 55.8% with thinking off, while reducing median turns from 59 to 23 on SWE-bench Pro and using about 4.5x fewer tokens than the base model with thinking. The adapter matches the base model's thinking-mode accuracy (64.7% on SWE-bench Pro) without long reasoning traces. It is Apache-2.0 licensed, deployable via vLLM, llama.cpp, or merged BF16 checkpoint (~54 GB).",
+    "summary_zh": "Hugging Face的harness-hub团队发布了Qwen3.8-27B-pi-adapted，这是一个针对Qwen3.8-27B的LoRA适配器（rank 32，alpha 64），通过强化学习（AsyncGRPO）训练，专为pi编码代理设计。在关闭思考模式的情况下，它将SWE-bench Pro（hard 51）的pass@1从39.2%提升至64.7%，Terminal-Bench 2.1从39.5%提升至55.8%，同时在SWE-bench Pro上将中位轮次从59降至23，且比基础模型开启思考时少用约4.5倍的token。该适配器达到了基础模型思考模式的准确率（SWE-bench Pro上64.7%），但无需长推理链。采用Apache-2.0许可，可通过vLLM、llama.cpp部署，或合并为BF16检查点（约54 GB）。",
+    "norm_url": "https://www.marktechpost.com/2026/11/18/hugging-face-qwen3-8-27b-pi-adapted-lora"
+  },
+  {
+    "id": "20261119-option-grpo-hierarchical-rl-against-ai-s-c3d835",
+    "url": "https://arxiv.org/abs/2611.23633v1",
+    "title_en": "Option-GRPO: Hierarchical RL Against AI Slop in Code Generation for Unseen SDKs",
+    "title_zh": "Option-GRPO：面向未见SDK代码生成的分层强化学习框架",
+    "source_name": "arXiv",
+    "published": "2026-11-17T23:52:34Z",
+    "fetched_at": "2026-11-19T02:20:39Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "code-generation",
+      "grpo",
+      "hierarchical-rl",
+      "sdk-adaptation"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces Option-GRPO, a hierarchical reinforcement learning framework that adapts a code LLM to an unseen SDK using only its source code, without human-written usage examples or test cases. The key insight is that SDK source code encodes compositional structure defining a hierarchy of reusable code patterns (code options) that serve both as curriculum building blocks and as the action space for policy optimization. The authors show code options induce a valid semi-Markov decision process, derive conditional bounds linking shorter option description length to more concise and API-efficient programs, and analyze how the hierarchy improves credit assignment by a factor of sqrt(T/K). Using GRPO with execution-based rewards at each curriculum level, Option-GRPO discovers SDK idioms, composes them into patterns, and assembles complete programs, achieving 61.4% pass@1 on 12 unseen SDKs with a 32B-parameter base model.",
+    "summary_zh": "本文提出 Option-GRPO，一个分层强化学习框架，仅凭 SDK 源代码即可让代码大模型适配训练截止后发布的未见 SDK，无需人工编写的用法示例或测试用例，并同时优化功能正确性与代码优雅度。核心洞察是 SDK 源码蕴含组合结构，可定义可复用代码模式（code options）的层级，这些模式既构成课程学习的构建单元，又充当策略优化的动作空间。作者证明 code options 可诱导有效的半马尔可夫决策过程，给出条件性界：更短的 option 描述长度意味着更简洁、期望上更 API 高效的程序，并分析该层级在给定假设下将信用分配改善约 sqrt(T/K) 倍。Option-GRPO 在每个课程层级使用基于执行反馈奖励的 GRPO，先发现 SDK 惯用法，再组合为模式，最终组装成完整程序；在 12 个未见 SDK 上使用 32B 参数基座模型取得 61.4% pass@1。",
+    "norm_url": "https://arxiv.org/abs/2611.23633v1"
+  },
+  {
     "id": "20261118-openai-releases-gpt-6-2-astra-and-sol-wi-2ec43a",
     "url": "https://www.marktechpost.com/2026/11/17/openai-gpt-6-2-astra-sol-release/",
     "title_en": "OpenAI Releases GPT-6.2 Astra and Sol With a 20% Cheaper Astra API",
@@ -42,6 +108,138 @@
     "summary_en": "OpenAI introduced GPT-6.2 Astra and Sol, two new model variants aimed at professional outputs, coding, computer use, and efficiency. The models are available across ChatGPT Work, Codex, and the API. They deliver improved performance in these areas at lower cost. No specific benchmark or precision numbers were disclosed in the announcement.",
     "summary_zh": "OpenAI 发布 GPT-6.2 Astra 与 Sol 两个新模型版本，重点提升专业输出、编程、计算机操作（computer use）与效率。模型已在 ChatGPT Work、Codex 和 API 中上线。官方称其在上述能力上表现更好，同时成本更低。公告未披露具体基准或精度数字。",
     "norm_url": "https://openai.com/index/introducing-gpt-6-2-astra-sol"
+  },
+  {
+    "id": "20261119-get-hint-augmented-grpo-done-right-throu-bd5397",
+    "url": "https://arxiv.org/abs/2611.23124v1",
+    "title_en": "Get Hint-Augmented GRPO Done Right Through Activation Steering",
+    "title_zh": "通过激活引导正确实现提示增强的GRPO",
+    "source_name": "arXiv",
+    "published": "2026-11-17T17:43:28Z",
+    "fetched_at": "2026-11-19T02:20:47Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "grpo",
+      "activation-steering",
+      "llm",
+      "hint-augmented"
+    ],
+    "image": null,
+    "summary_en": "Hint-Augmented GRPO (HA-GRPO) extends GRPO to provide gradient signals when questions exceed model capability by adding hints, but suffers from training-inference mismatch since hints are unavailable at inference. The authors reinterpret hinting as steering model behavior rather than reducing difficulty, and propose ASH (Activation Steering for Hinting). During training, the model sees both hinted and plain questions while a trainable steering vector is optimized to widen the margin between generation probabilities for responses to hinted vs. plain versions, capturing the question-agnostic behavioral shift. At inference, the steering vector is injected into activations to reproduce hint-conditioned behavior without hints.",
+    "summary_zh": "提示增强的GRPO（HA-GRPO）通过在上下文中添加提示来降低问题难度，从而在基础模型能力不足时提供梯度信号，但存在训练-推理不匹配问题：推理时无法获得提示。作者将提示的作用重新解释为引导模型行为而非降低难度，并提出ASH（Activation Steering for Hinting）方法。训练时模型同时看到带提示和不带提示的问题，并优化一个可训练引导向量，以扩大带提示版本相对于无提示版本生成响应的概率边际，从而捕捉提示引发的与问题无关的行为变化。推理时，将训练好的引导向量直接注入模型激活，无需提示即可复现提示条件下的行为。",
+    "norm_url": "https://arxiv.org/abs/2611.23124v1"
+  },
+  {
+    "id": "20261119-when-anchors-shift-the-target-advantage-3672ea",
+    "url": "https://arxiv.org/abs/2611.23038v1",
+    "title_en": "When Anchors Shift the Target: Advantage-Gated Adaptation for Diffusion Reinforcement Learning",
+    "title_zh": "当锚点偏移目标：扩散强化学习中的优势门控自适应（AGA）",
+    "source_name": "arXiv",
+    "published": "2026-11-17T16:37:36Z",
+    "fetched_at": "2026-11-19T02:21:25Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "diffusion-rl",
+      "advantage-gating",
+      "reward-model",
+      "preference-alignment",
+      "text-rendering"
+    ],
+    "image": null,
+    "summary_en": "The paper identifies a conflict called anchor coupling in forward-process reinforcement learning for diffusion and flow-matching models: moving-anchor rules used to stabilize training with cached predictions from a moving policy copy cannot eliminate negative curvature while preserving all positive regression targets. It proposes Advantage-Gated Adaptation (AGA), which keeps standard target fitting for positive samples and uses the first-order tangent of the concave objective at the moving-policy prediction for negative samples, preserving local repulsion with a prediction-independent gradient. Within the quadratic-anchor family, these requirements uniquely determine the parameter-free gate ω(a)=max(-a,0). AGA delegates long-horizon behavior preservation to a frozen pretrained reference regularized at its operating classifier-free guidance scale, interpreted via an implicit-reward lens. Experiments across compositional generation, text rendering, and preference alignment show benefits from displacing the moving anchor's role.",
+    "summary_zh": "本文指出，扩散与流匹配模型的前向过程强化学习存在“锚点耦合”（anchor coupling）冲突：用移动策略副本的缓存预测作为移动锚点来稳定训练，虽能抑制负曲率，却会改变正反馈所拟合的目标；在分离冻结参考正则项后，仿射移动锚点规则无法同时消除负曲率并保留全部正回归目标。为此提出优势门控自适应（Advantage-Gated Adaptation, AGA）：正样本保留标准目标拟合，其自限更新在观测目标处消失且与移动锚点无关；负样本改用凹目标在移动策略预测处的一阶切线，以与预测无关的梯度保留局部排斥方向。在二次锚点族内，这些要求唯一确定无参数门控 ω(a)=max(-a,0)。AGA 将长时程行为保持交给冻结的预训练参考模型，并在其工作时的无分类器引导（classifier-free guidance）尺度上正则化，通过隐式奖励视角加以解释。在组合生成、文本渲染与偏好对齐实验中，移动锚点角色的置换带来了性能提升。",
+    "norm_url": "https://arxiv.org/abs/2611.23038v1"
+  },
+  {
+    "id": "20261119-outcome-balanced-ppo-and-policy-induced-62f2d0",
+    "url": "https://arxiv.org/abs/2611.22878v1",
+    "title_en": "Outcome-Balanced PPO and Policy-Induced Flow Rectification for Flow-Based VLA Policies",
+    "title_zh": "Outcome-Balanced PPO 与策略诱导流矫正用于基于流的 VLA 策略",
+    "source_name": "arXiv",
+    "published": "2026-11-17T14:52:57Z",
+    "fetched_at": "2026-11-19T02:21:31Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "vla",
+      "ppo",
+      "flow-matching",
+      "manipulation"
+    ],
+    "image": null,
+    "summary_en": "This paper introduces an RL framework for post-training flow-based vision-language-action (VLA) policies, addressing two challenges: policy updates altering the velocity-field geometry and uneven learning signals from sparse multi-task rollouts. The framework combines Outcome-Balanced PPO, which reweights positive advantages using task success-rate estimates and rescales positive/negative advantages while preserving signs, with policy-induced flow rectification that periodically fits a linear-bridge flow to ODE endpoint pairs from the current policy. Evaluated on simulated manipulation benchmarks and a Real2Sim2Real task, the framework improves success rates over baselines.",
+    "summary_zh": "本文提出了一种用于基于流的视觉-语言-动作（VLA）策略后训练的强化学习框架，解决两个挑战：策略更新改变速度场几何结构，以及稀疏多任务 rollout 导致学习信号不均。该框架结合了 Outcome-Balanced PPO（利用任务成功率估计对正优势重加权，并在保持符号的同时缩放正负优势）和策略诱导流矫正（定期对当前策略生成的 ODE 端点对拟合线性桥流）。在模拟操作基准和 Real2Sim2Real 任务上评估，该框架相比基线提高了成功率。",
+    "norm_url": "https://arxiv.org/abs/2611.22878v1"
+  },
+  {
+    "id": "20261119-remarl-learning-to-unmask-and-remask-in-f23e1d",
+    "url": "https://arxiv.org/abs/2611.22576v1",
+    "title_en": "ReMaRL: Learning to Unmask and Remask in Frozen Diffusion Language Models",
+    "title_zh": "ReMaRL：在冻结扩散语言模型中学习解掩码与重掩码",
+    "source_name": "arXiv",
+    "published": "2026-11-17T11:01:15Z",
+    "fetched_at": "2026-11-19T02:21:37Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "diffusion-language-model",
+      "reinforcement-learning",
+      "grpo",
+      "remasking",
+      "llada"
+    ],
+    "image": null,
+    "summary_en": "Masked diffusion language models generate tokens in parallel, and the unmasking order affects final-answer accuracy. Existing methods learn unmasking policies from task rewards but cannot remask earlier predictions, while heuristic or supervised remaskers do not directly optimize for final-answer correctness. ReMaRL introduces a lightweight ~0.3M-parameter policy trained with Group Relative Policy Optimization (GRPO) from final-answer rewards, keeping the diffusion model frozen, to learn which tokens to unmask, retain, or remask. With LLaDA-8B-Instruct, ReMaRL achieves the highest scores among compared unmasking and remasking policies within inference budgets of 4-32 model calls on math and 8-16 calls on code.",
+    "summary_zh": "掩码扩散语言模型并行生成 token，解掩码顺序影响最终答案准确率。现有方法从任务奖励学习解掩码策略，但无法重掩码早期预测；启发式或监督式重掩码器也未直接优化最终答案正确性。ReMaRL 引入一个约 0.3M 参数的轻量策略，使用组相对策略优化（GRPO）从最终答案奖励训练，同时保持扩散模型冻结，学习哪些 token 应解掩码、保留或重掩码。在 LLaDA-8B-Instruct 上，ReMaRL 在数学任务 4-32 次模型调用和代码任务 8-16 次调用的推理预算内，相比对比的解掩码与重掩码策略取得最高分数。",
+    "norm_url": "https://arxiv.org/abs/2611.22576v1"
+  },
+  {
+    "id": "20261119-eyes-in-the-update-learning-where-reward-0c9fc2",
+    "url": "https://arxiv.org/abs/2611.22438v1",
+    "title_en": "Eyes in the Update? Learning Where Rewards Land in Multimodal Reasoning",
+    "title_zh": "更新中的视线？学习多模态推理中奖励的落点",
+    "source_name": "arXiv",
+    "published": "2026-11-17T09:11:42Z",
+    "fetched_at": "2026-11-19T02:21:44Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "multimodal-rl",
+      "reward-allocation",
+      "policy-optimization",
+      "vision-language",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper addresses the limitation in multimodal reinforcement learning where outcome rewards are assigned to entire generated trajectories despite visual evidence being used only at sparse positions. It proposes Gaze-RL, a representation-driven policy optimization method that redistributes completion-level advantage through a latent reward landing field computed from internal cross-modal geometry and local predictive uncertainty. This field assigns larger update weights to positions that are visually anchored and decision-bearing while maintaining a mean of one, preserving total rollout credit. Gaze-RL requires no process supervision, auxiliary perception module, or architectural modification, and improves Qwen2.5-VL and InternVL3.5 across image and video benchmarks.",
+    "summary_zh": "本文针对多模态强化学习中结果奖励被分配给整个生成轨迹、而视觉证据仅用于稀疏位置的问题，提出Gaze-RL——一种表示驱动的策略优化方法。该方法通过由内部跨模态几何和局部预测不确定性计算得到的潜在奖励落点场，重新分配完成级优势，使视觉锚定且决策关键的位置获得更大更新权重，同时保持均值为一以保留总信用。Gaze-RL无需过程监督、辅助感知模块或架构修改，并在多个图像和视频基准上提升了Qwen2.5-VL和InternVL3.5的性能。",
+    "norm_url": "https://arxiv.org/abs/2611.22438v1"
+  },
+  {
+    "id": "20261119-mcts-is-counting-the-wrong-thing-learnin-07a625",
+    "url": "https://arxiv.org/abs/2611.22301v1",
+    "title_en": "MCTS Is Counting the Wrong Thing: Learning Exploration Counts for LLM Reasoning",
+    "title_zh": "MCTS 计数错误：学习探索计数以提升 LLM 推理",
+    "source_name": "arXiv",
+    "published": "2026-11-17T06:57:40Z",
+    "fetched_at": "2026-11-19T02:21:51Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "mcts",
+      "llm-reasoning",
+      "exploration",
+      "reinforcement-learning",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper identifies a bottleneck in Monte Carlo tree search (MCTS) for LLM reasoning: standard UCT assigns independent visit counts to textual branches, causing count fragmentation where different formulations of the same reasoning strategy repeatedly receive exploration bonuses. Theoretical analysis shows this impairs exploration efficiency, quantified by increased cumulative regret. The authors propose Learned Pseudo-Count MCTS (LPC-MCTS), which modifies only the exploration statistic in UCT by adding a lightweight Coin-Flipping Network head on the policy's hidden representations to estimate representation coverage, enabling related branches to share exploration evidence. Experiments across 5 mathematical-reasoning and 7 search benchmarks show consistent improvements over strong MCTS baselines. Replacing standard MCTS counts at inference improves average mean@16 accuracy by 3.79 percentage points on Qwen2.5-7B and 2.71 points on Qwen3-4B; applying LPC-MCTS during both training and inference yields gains of 4.96 and 4.37 points, respectively.",
+    "summary_zh": "该论文指出蒙特卡洛树搜索（MCTS）在 LLM 推理中的一个瓶颈：标准 UCT 为文本分支分配独立的访问计数，导致同一推理策略的不同表述重复获得探索奖励，这种计数碎片化会降低探索效率（以累积遗憾增加量化）。作者提出 Learned Pseudo-Count MCTS（LPC-MCTS），仅修改 UCT 中的探索统计量，通过在策略隐藏表示上添加轻量级 Coin-Flipping Network 头来估计表示覆盖度，使相关分支共享探索证据。在 5 个数学推理和 7 个搜索基准上，LPC-MCTS 一致优于强 MCTS 基线。在推理时替换标准 MCTS 计数，平均 mean@16 准确率在 Qwen2.5-7B 上提升 3.79 个百分点，在 Qwen3-4B 上提升 2.71 个百分点；在训练和推理中均应用 LPC-MCTS 则分别提升 4.96 和 4.37 个百分点。",
+    "norm_url": "https://arxiv.org/abs/2611.22301v1"
   },
   {
     "id": "20261118-what-rl-on-expert-built-tasks-teaches-ne-84b072",

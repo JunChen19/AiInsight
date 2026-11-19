@@ -1,0 +1,26 @@
+{
+  "id": "20261119-mcts-is-counting-the-wrong-thing-learnin-07a625",
+  "url": "https://arxiv.org/abs/2611.22301v1",
+  "title_en": "MCTS Is Counting the Wrong Thing: Learning Exploration Counts for LLM Reasoning",
+  "title_zh": "MCTS 计数错误：学习探索计数以提升 LLM 推理",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.22301v1",
+  "published": "2026-11-17T06:57:40Z",
+  "fetched_at": "2026-11-19T02:21:51Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "mcts",
+    "llm-reasoning",
+    "exploration",
+    "reinforcement-learning",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper identifies a bottleneck in Monte Carlo tree search (MCTS) for LLM reasoning: standard UCT assigns independent visit counts to textual branches, causing count fragmentation where different formulations of the same reasoning strategy repeatedly receive exploration bonuses. Theoretical analysis shows this impairs exploration efficiency, quantified by increased cumulative regret. The authors propose Learned Pseudo-Count MCTS (LPC-MCTS), which modifies only the exploration statistic in UCT by adding a lightweight Coin-Flipping Network head on the policy's hidden representations to estimate representation coverage, enabling related branches to share exploration evidence. Experiments across 5 mathematical-reasoning and 7 search benchmarks show consistent improvements over strong MCTS baselines. Replacing standard MCTS counts at inference improves average mean@16 accuracy by 3.79 percentage points on Qwen2.5-7B and 2.71 points on Qwen3-4B; applying LPC-MCTS during both training and inference yields gains of 4.96 and 4.37 points, respectively.",
+  "summary_zh": "该论文指出蒙特卡洛树搜索（MCTS）在 LLM 推理中的一个瓶颈：标准 UCT 为文本分支分配独立的访问计数，导致同一推理策略的不同表述重复获得探索奖励，这种计数碎片化会降低探索效率（以累积遗憾增加量化）。作者提出 Learned Pseudo-Count MCTS（LPC-MCTS），仅修改 UCT 中的探索统计量，通过在策略隐藏表示上添加轻量级 Coin-Flipping Network 头来估计表示覆盖度，使相关分支共享探索证据。在 5 个数学推理和 7 个搜索基准上，LPC-MCTS 一致优于强 MCTS 基线。在推理时替换标准 MCTS 计数，平均 mean@16 准确率在 Qwen2.5-7B 上提升 3.79 个百分点，在 Qwen3-4B 上提升 2.71 个百分点；在训练和推理中均应用 LPC-MCTS 则分别提升 4.96 和 4.37 个百分点。",
+  "content_en": "Monte Carlo tree search (MCTS) has powered landmark successes in reinforcement learning, yet its gains in LLM reasoning can remain modest despite substantial search effort. We identify an overlooked bottleneck: what MCTS counts. Standard UCT assigns independent visit counts to textual branches, allowing different formulations of the same reasoning strategy to repeatedly receive exploration bonuses. Our theoretical analysis shows that this count fragmentation can impair exploration efficiency, as quantified by increased cumulative regret. To address this problem, we introduce Learned Pseudo-Count MCTS (LPC-MCTS), which changes only the exploration statistic in UCT. A lightweight Coin-Flipping Network head on the policy's hidden representations estimates representation coverage, enabling related branches to share exploration evidence. Across 5 mathematical-reasoning and 7 search benchmarks, LPC-MCTS consistently outperforms strong MCTS baselines. Holding each LPC-MCTS-trained policy fixed, replacing standard MCTS counts at inference improves average mean@16 accuracy across 5 mathematical benchmarks by 3.79 percentage points on Qwen2.5-7B and 2.71 points on Qwen3-4B. Applying LPC-MCTS during both training and inference yields gains of 4.96 and 4.37 points over standard MCTS, respectively. Together, our theory and experiments show that changing what MCTS counts can substantially improve its exploration efficiency and reasoning performance.",
+  "content_zh": "蒙特卡洛树搜索（MCTS）曾推动强化学习取得里程碑式的成功，然而尽管投入了大量搜索努力，其在 LLM 推理中的收益仍可能较为有限。我们发现了一个被忽视的瓶颈：MCTS 在计数什么。标准 UCT 为文本分支分配独立的访问计数，使得同一推理策略的不同表述反复获得探索奖励。我们的理论分析表明，这种计数碎片化会损害探索效率，具体表现为累积遗憾的增加。为解决这一问题，我们提出了学习伪计数 MCTS（LPC-MCTS），它仅改变 UCT 中的探索统计量。在策略隐藏表示之上添加一个轻量级的抛硬币网络头来估计表示覆盖度，使相关分支能够共享探索证据。在 5 个数学推理基准和 7 个搜索基准上，LPC-MCTS 始终优于强 MCTS 基线。在保持每个经 LPC-MCTS 训练的策略固定不变的情况下，于推理时替换标准 MCTS 计数，可在 5 个数学基准上将平均 mean@16 准确率在 Qwen2.5-7B 上提升 3.79 个百分点，在 Qwen3-4B 上提升 2.71 个百分点。在训练和推理阶段均应用 LPC-MCTS，相较于标准 MCTS 分别带来 4.96 和 4.37 个百分点的提升。我们的理论与实验共同表明，改变 MCTS 的计数对象可以显著提升其探索效率和推理性能。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

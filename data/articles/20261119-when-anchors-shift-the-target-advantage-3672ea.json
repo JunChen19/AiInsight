@@ -1,0 +1,26 @@
+{
+  "id": "20261119-when-anchors-shift-the-target-advantage-3672ea",
+  "url": "https://arxiv.org/abs/2611.23038v1",
+  "title_en": "When Anchors Shift the Target: Advantage-Gated Adaptation for Diffusion Reinforcement Learning",
+  "title_zh": "当锚点偏移目标：扩散强化学习中的优势门控自适应（AGA）",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.23038v1",
+  "published": "2026-11-17T16:37:36Z",
+  "fetched_at": "2026-11-19T02:21:25Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "diffusion-rl",
+    "advantage-gating",
+    "reward-model",
+    "preference-alignment",
+    "text-rendering"
+  ],
+  "image": null,
+  "summary_en": "The paper identifies a conflict called anchor coupling in forward-process reinforcement learning for diffusion and flow-matching models: moving-anchor rules used to stabilize training with cached predictions from a moving policy copy cannot eliminate negative curvature while preserving all positive regression targets. It proposes Advantage-Gated Adaptation (AGA), which keeps standard target fitting for positive samples and uses the first-order tangent of the concave objective at the moving-policy prediction for negative samples, preserving local repulsion with a prediction-independent gradient. Within the quadratic-anchor family, these requirements uniquely determine the parameter-free gate ω(a)=max(-a,0). AGA delegates long-horizon behavior preservation to a frozen pretrained reference regularized at its operating classifier-free guidance scale, interpreted via an implicit-reward lens. Experiments across compositional generation, text rendering, and preference alignment show benefits from displacing the moving anchor's role.",
+  "summary_zh": "本文指出，扩散与流匹配模型的前向过程强化学习存在“锚点耦合”（anchor coupling）冲突：用移动策略副本的缓存预测作为移动锚点来稳定训练，虽能抑制负曲率，却会改变正反馈所拟合的目标；在分离冻结参考正则项后，仿射移动锚点规则无法同时消除负曲率并保留全部正回归目标。为此提出优势门控自适应（Advantage-Gated Adaptation, AGA）：正样本保留标准目标拟合，其自限更新在观测目标处消失且与移动锚点无关；负样本改用凹目标在移动策略预测处的一阶切线，以与预测无关的梯度保留局部排斥方向。在二次锚点族内，这些要求唯一确定无参数门控 ω(a)=max(-a,0)。AGA 将长时程行为保持交给冻结的预训练参考模型，并在其工作时的无分类器引导（classifier-free guidance）尺度上正则化，通过隐式奖励视角加以解释。在组合生成、文本渲染与偏好对齐实验中，移动锚点角色的置换带来了性能提升。",
+  "content_en": "Forward-process reinforcement learning adapts diffusion and flow-matching models by re-noising rewarded generations into regression targets. Because negative advantages induce concave updates with unbounded repulsive gradients, existing methods stabilize training using cached predictions from a moving policy copy, yet these anchors also alter what positive feedback teaches the model to fit. We formalize this conflict as anchor coupling: after separating frozen-reference regularizers, affine moving-anchor rules cannot eliminate negative curvature while preserving every positive regression target. We propose Advantage-Gated Adaptation (AGA) to decouple these roles. Positive samples retain standard target fitting, whose self-limiting update vanishes at the observed target independently of the moving anchor. Negative samples instead use the first-order tangent of the concave objective at the moving-policy prediction, preserving the local repulsion direction with a prediction-independent gradient. Within the quadratic-anchor family, these requirements uniquely determine the parameter-free gate $ω(a)=\\max(-a,0)$. Because the moving copy provides local linearization rather than retention, AGA assigns long-horizon behavior preservation to a frozen pretrained reference regularized at its operating classifier-free guidance scale, interpreted through an implicit-reward lens. Across compositional generation, text rendering, and preference alignment, our experiments show that displacing p",
+  "content_zh": "前向过程强化学习通过将获得奖励的生成结果重新加噪为回归目标，来适配扩散模型和流匹配模型。由于负优势会引入具有无界排斥梯度的凹更新，现有方法使用来自移动策略副本的缓存预测来稳定训练，但这些锚点也会改变正反馈教给模型拟合的内容。我们将这一冲突形式化为锚点耦合：在分离冻结参考正则项之后，仿射移动锚点规则无法在保留每一个正回归目标的同时消除负曲率。我们提出优势门控适配（Advantage-Gated Adaptation, AGA）来解耦这些角色。正样本保留标准的目标拟合，其自限更新在观测目标处消失，且与移动锚点无关。负样本则使用凹目标在移动策略预测处的一阶切线，以与预测无关的梯度保留局部排斥方向。在二次锚点族内，这些要求唯一确定了无参数门控 $ω(a)=\\max(-a,0)$。由于移动副本提供的是局部线性化而非保持，AGA 将长时程行为保持分配给一个冻结的预训练参考，并在其运行的无分类器引导尺度上进行正则化，通过隐式奖励视角加以解释。在组合生成、文本渲染和偏好对齐方面，我们的实验表明，将 p",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
