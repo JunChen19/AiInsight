@@ -1,5 +1,49 @@
 [
   {
+    "id": "20261120-meta-fair-self-improving-memory-hits-56-92af19",
+    "url": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
+    "title_en": "Meta FAIR Self-Improving Memory Hits 56.0 on Continual Learning Bench",
+    "title_zh": "Meta FAIR 自改进记忆在持续学习基准上达到 56.0",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-19T21:46:22Z",
+    "fetched_at": "2026-11-20T02:03:43Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "meta-fair",
+      "memory",
+      "continual-learning",
+      "distillation",
+      "lora"
+    ],
+    "image": "images/20261120-meta-fair-self-improving-memory-hits-56-92af19.jpg",
+    "summary_en": "Meta FAIR, with UW and JHU, introduced Self-Improving Memory, a two-stage method where a Kimi-K2.6 agent (1T-parameter MoE, 32B active) first discovers its own memory prompts (LOAD/OFFLOAD) via a meta-agent search, then distills those skills into LoRA rank-64 adapters on attention projections. On the Continual Learning Bench (Database, Codebase, Spectrum), optimized prompts average 56.0 versus 44.6 for the best human-written harness, with Codebase reaching 64.3 (+20.6). After distillation, the model using generic prompts averages 43.1, a 5.5-point (14.6%) gain over SFT on generic trajectories (37.6). Search was noisy: 37 of 44 meta-agent revisions failed to beat the previous best.",
+    "summary_zh": "Meta FAIR 联合华盛顿大学和约翰霍普金斯大学提出 Self-Improving Memory 两阶段方法：基于 Kimi-K2.6（1T 参数 MoE，32B 激活）的智能体先通过元智能体搜索发现自身的记忆提示（LOAD/OFFLOAD），再将技能蒸馏到注意力投影层的 LoRA（rank 64）适配器中。在持续学习基准（Database、Codebase、Spectrum）上，优化提示平均得分 56.0，优于最佳人工编写 harness 的 44.6，其中 Codebase 提升最大达 64.3（+20.6）。蒸馏后模型使用通用提示平均 43.1，相比在通用轨迹上做 SFT 的 37.6 提升 5.5 分（14.6%）。搜索过程噪声较大：44 次元智能体修订中有 37 次未能超越此前最佳。",
+    "norm_url": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation"
+  },
+  {
+    "id": "20261120-google-deepmind-releases-gemini-4-neon-1-91875f",
+    "url": "https://www.marktechpost.com/2026/11/18/google-gemini-4-neon-release/",
+    "title_en": "Google DeepMind Releases Gemini 4 Neon: 1M Context, #1 on AA Coding Agent Index",
+    "title_zh": "Google DeepMind 发布 Gemini 4 Neon：1M 上下文，AA 编码代理指数第一",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-19T06:52:26Z",
+    "fetched_at": "2026-11-20T02:03:23Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "llm",
+      "coding-agent",
+      "long-context",
+      "benchmark"
+    ],
+    "image": "images/20261120-google-deepmind-releases-gemini-4-neon-1-91875f.jpg",
+    "summary_en": "Google DeepMind released Gemini 4 Neon, a reasoning model positioned between Gemini 4 Carbon and Hydrogen, targeting coding agents, knowledge work, and science workflows. It features a 1M-token unified context, 64K default output (up to 1M via background long decode), and multiple thinking levels. Neon scores 61 on the AA Intelligence Index, ahead of Claude Opus 5.5 (59) and GPT-6.2 Sol (57), and ranks #1 on the AA Coding Agent Index at 58.6. It achieves 95.2% on GraphWalks (256K to 1M context) but trails Opus 5.5 on Terminal-bench 4.1 (65.2% vs 65.8%) and FrontierCode 2.0 (46.2% vs 47.3%). Pricing is $3 per 1M input tokens and $15 per 1M output tokens, with closed weights and Google-hosted only.",
+    "summary_zh": "Google DeepMind 发布了 Gemini 4 Neon，这是一款介于 Gemini 4 Carbon 和 Hydrogen 之间的推理模型，面向编码代理、知识工作和科学工作流。它具备 1M token 统一上下文，默认输出 64K（通过后台长解码可达 1M），并提供多个思考层级。Neon 在 AA 智能指数上得分为 61，领先于 Claude Opus 5.5（59）和 GPT-6.2 Sol（57），并在 AA 编码代理指数上以 58.6 分排名第一。它在 GraphWalks（256K 至 1M 上下文）上达到 95.2%，但在 Terminal-bench 4.1（65.2% vs 65.8%）和 FrontierCode 2.0（46.2% vs 47.3%）上落后于 Opus 5.5。定价为每 1M 输入 token 3 美元、每 1M 输出 token 15 美元，权重闭源且仅由 Google 托管。",
+    "norm_url": "https://www.marktechpost.com/2026/11/18/google-gemini-4-neon-release"
+  },
+  {
     "id": "20261119-introducing-gemini-4-neon-1780b9",
     "url": "https://deepmind.google/blog/introducing-gemini-4-neon/",
     "title_en": "Introducing Gemini 4 Neon",
@@ -22,6 +66,72 @@
     "norm_url": "https://deepmind.google/blog/introducing-gemini-4-neon"
   },
   {
+    "id": "20261120-daisyrose-27b-pushing-the-frontier-of-po-2d3bb8",
+    "url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin",
+    "title_en": "DaisyRose-27B: Pushing the Frontier of Post-Training Efficiency",
+    "title_zh": "DaisyRose-27B：推动后训练效率的前沿",
+    "source_name": "Hugging Face",
+    "published": "2026-11-18T19:54:56Z",
+    "fetched_at": "2026-11-20T02:04:05Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "rl",
+      "model-release",
+      "agent",
+      "post-training",
+      "benchmark"
+    ],
+    "image": "images/20261120-daisyrose-27b-pushing-the-frontier-of-po-2d3bb8.jpg",
+    "summary_en": "RadixArk released DaisyRose-27B, a model built on Qwen3.8-27B and trained with reinforcement learning using Miles on long-horizon agent tasks with sessions up to 1M tokens. Training used only 1,200 curated tasks over 18 days on 144 H200 GPUs, improving Terminal-Bench 4.1 pass@1 from 5.6% to 12.0% and showing gains on other reasoning, instruction following, and coding benchmarks. The model retains Qwen3.8-27B's architecture and 256K-token context window, and checkpoints are available under Apache 2.0. Key efficiency gains include 57% lower training cost via higher MFU (37% vs 16% for open-source trainer) and 2x faster end-to-end training, supported by a robust sandbox service that ran ~944,000 sandboxes with 99% success rate.",
+    "summary_zh": "RadixArk 发布了 DaisyRose-27B，该模型基于 Qwen3.8-27B，使用 Miles 框架通过强化学习在长视野智能体任务上训练，会话长度可达 100 万 token。训练仅使用 1200 个精选任务，在 144 块 H200 GPU 上耗时 18 天，将 Terminal-Bench 4.1 的 pass@1 从 5.6% 提升至 12.0%，并在其他推理、指令遵循和编码基准上也有提升。模型保留了 Qwen3.8-27B 的架构和 256K token 上下文窗口，检查点以 Apache 2.0 许可发布。关键效率提升包括：训练成本降低 57%（MFU 达 37%，开源训练器为 16%），端到端训练速度提升 2 倍，并依托稳健的沙箱服务运行了约 94.4 万个沙箱，成功率 99%。",
+    "norm_url": "https://huggingface.co/blog/RadixArk/daisyrose-27b-pushing-the-frontier-of-post-trainin"
+  },
+  {
+    "id": "20261120-why-your-fine-tuning-job-takes-longer-th-5095af",
+    "url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time",
+    "title_en": "Why your fine-tuning job takes longer than the FLOPs say",
+    "title_zh": "为什么你的微调任务比FLOPs计算耗时更长",
+    "source_name": "Hugging Face",
+    "published": "2026-11-18T18:53:43Z",
+    "fetched_at": "2026-11-20T02:04:52Z",
+    "type": "blog",
+    "category": "performance",
+    "tags": [
+      "fine-tuning",
+      "duration-prediction",
+      "catboost",
+      "gpu-cluster",
+      "scheduling"
+    ],
+    "image": "images/20261120-why-your-fine-tuning-job-takes-longer-th-5095af.jpg",
+    "summary_en": "The article compares analytical FLOP-based estimates with learned predictors for end-to-end fine-tuning duration using 272 production supervised fine-tuning (SFT) jobs on NVIDIA H200 GPUs (7,382 GPU-hours). A FLOP baseline explains little variance (R²=0.31, MAE 12.41h), while a CatBoost regressor using only pre-dispatch features achieves R²=0.98, MAE 1.71h, and median error 0.51h in 5-fold cross-validation. The improvement comes from incorporating training-specific signals like evaluation cadence, checkpoint policy, per-GPU load, and fine-tuning regime, and learning their nonlinear interactions. The model's feature importance highlights evaluation and checkpoint variables, and errors remain low up to 60 hours but widen for longer runs due to data scarcity.",
+    "summary_zh": "文章基于272个生产环境中的监督微调（SFT）任务（总计7,382 GPU小时，使用NVIDIA H200 GPU），比较了基于FLOP的解析估计与学习型预测器对端到端微调时长的预测效果。FLOP基线解释力有限（R²=0.31，MAE 12.41小时），而仅使用调度前特征的CatBoost回归器在5折交叉验证中达到R²=0.98，MAE 1.71小时，中位误差0.51小时。性能提升源于纳入了评估频率、检查点策略、每GPU负载和微调模式等训练特定信号，并学习了它们之间的非线性交互。特征重要性显示评估和检查点变量影响显著，且误差在60小时以内保持较低，更长任务因数据稀疏误差增大。",
+    "norm_url": "https://huggingface.co/blog/Dharma-AI/predicting-fine-tuning-time"
+  },
+  {
+    "id": "20261120-genie-4-is-now-available-8f3619",
+    "url": "https://deepmind.google/blog/genie-4-is-now-available/",
+    "title_en": "Genie 4 is now available",
+    "title_zh": "Genie 4 现已发布",
+    "source_name": "Google DeepMind",
+    "published": "2026-11-18T18:13:42Z",
+    "fetched_at": "2026-11-20T02:04:21Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "world-model",
+      "genie",
+      "google",
+      "multimodal",
+      "interactive"
+    ],
+    "image": "images/20261120-genie-4-is-now-available-8f3619.jpg",
+    "summary_en": "Google released Genie 4, its most realistic and interactive world model, available to eligible Google AI Ultra subscribers through Project Genie. Genie 4 enables mid-session prompt-based world editing and introduces real-time native audio that adapts to scenes. Genie 3 receives updates including extended sessions up to 3 minutes, world chaining, 360-degree panorama grounding, and real-time in-world events. A new Project Genie agent orchestrates multimodal models to create interactive experiences from natural language, and a community gallery allows users to discover, explore, and remix worlds. All generated content includes SynthID watermarking and safety screenings.",
+    "summary_zh": "Google 发布了 Genie 4，这是其迄今为止最逼真、最具交互性的世界模型，符合条件的 Google AI Ultra 订阅用户可通过 Project Genie 体验。Genie 4 支持在会话中通过提示实时编辑世界，并首次引入随场景变化的实时原生音频。Genie 3 获得多项更新，包括单次生成时长延长至 3 分钟、世界链接、360 度全景图基础生成以及实时世界内事件。新的 Project Genie 智能体可编排多模态模型，通过自然语言创建交互体验，社区画廊则允许用户发现、探索和混搭世界。所有生成内容均包含 SynthID 水印并经过安全筛查。",
+    "norm_url": "https://deepmind.google/blog/genie-4-is-now-available"
+  },
+  {
     "id": "20261119-new-lora-adapter-lifts-qwen3-8-coding-su-477e70",
     "url": "https://www.marktechpost.com/2026/11/18/hugging-face-qwen3-8-27b-pi-adapted-lora/",
     "title_en": "New LoRA Adapter Lifts Qwen3.8 Coding Success From 39% to 65%",
@@ -42,6 +152,49 @@
     "summary_en": "Hugging Face's harness-hub team released Qwen3.8-27B-pi-adapted, a LoRA adapter (rank 32, alpha 64) for Qwen3.8-27B, trained with reinforcement learning (AsyncGRPO) to operate within the pi coding agent. It boosts SWE-bench Pro (hard 51) pass@1 from 39.2% to 64.7% and Terminal-Bench 2.1 from 39.5% to 55.8% with thinking off, while reducing median turns from 59 to 23 on SWE-bench Pro and using about 4.5x fewer tokens than the base model with thinking. The adapter matches the base model's thinking-mode accuracy (64.7% on SWE-bench Pro) without long reasoning traces. It is Apache-2.0 licensed, deployable via vLLM, llama.cpp, or merged BF16 checkpoint (~54 GB).",
     "summary_zh": "Hugging Face的harness-hub团队发布了Qwen3.8-27B-pi-adapted，这是一个针对Qwen3.8-27B的LoRA适配器（rank 32，alpha 64），通过强化学习（AsyncGRPO）训练，专为pi编码代理设计。在关闭思考模式的情况下，它将SWE-bench Pro（hard 51）的pass@1从39.2%提升至64.7%，Terminal-Bench 2.1从39.5%提升至55.8%，同时在SWE-bench Pro上将中位轮次从59降至23，且比基础模型开启思考时少用约4.5倍的token。该适配器达到了基础模型思考模式的准确率（SWE-bench Pro上64.7%），但无需长推理链。采用Apache-2.0许可，可通过vLLM、llama.cpp部署，或合并为BF16检查点（约54 GB）。",
     "norm_url": "https://www.marktechpost.com/2026/11/18/hugging-face-qwen3-8-27b-pi-adapted-lora"
+  },
+  {
+    "id": "20261120-research-acceleration-the-jagged-frontie-32f46a",
+    "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+    "title_en": "Research acceleration: The jagged frontier",
+    "title_zh": "研究加速：参差不齐的前沿",
+    "source_name": "OpenAI",
+    "published": "2026-11-18T08:00:00Z",
+    "fetched_at": "2026-11-20T02:04:57Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "coding-agents",
+      "ai-research",
+      "recursive-self-improveme",
+      "evaluation"
+    ],
+    "image": null,
+    "summary_en": "OpenAI evaluated coding agents on their ability to accelerate AI research tasks. The results reveal a jagged frontier: agents perform well on some research subtasks but poorly on others, showing uneven capability. This unevenness has implications for recursive self-improvement, as agents cannot yet reliably automate the full research loop. The article discusses where performance is strong versus weak and what this means for AI-driven AI progress.",
+    "summary_zh": "OpenAI 评估了编码智能体（coding agents）加速 AI 研究任务的能力。结果揭示了一个“参差不齐的前沿”：智能体在某些研究子任务上表现良好，但在其他任务上表现不佳，能力分布不均。这种不均衡对递归自我改进（recursive self-improvement）具有启示意义，因为智能体尚不能可靠地自动化完整的研究循环。文章讨论了性能强弱的具体领域及其对 AI 驱动 AI 进展的意义。",
+    "norm_url": "https://openai.com/index/research-acceleration-jagged-frontier"
+  },
+  {
+    "id": "20261120-sid-ai-releases-sid-2-agentic-search-mod-d3b536",
+    "url": "https://www.marktechpost.com/2026/11/17/sid-ai-sid-2-agentic-search-swarm/",
+    "title_en": "SID AI Releases SID-2 Agentic Search Model With 0.720 NDCG Swarm Mode",
+    "title_zh": "SID AI 发布 SID-2 智能搜索模型，Swarm 模式达 0.720 NDCG",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-18T07:10:53Z",
+    "fetched_at": "2026-11-20T02:02:59Z",
+    "type": "blog",
+    "category": "rl",
+    "tags": [
+      "agentic-search",
+      "model-release",
+      "rl",
+      "benchmark",
+      "retrieval"
+    ],
+    "image": "images/20261120-sid-ai-releases-sid-2-agentic-search-mod-d3b536.jpg",
+    "summary_en": "SID AI released SID-2, an agentic search model that replaces fixed RAG pipelines by iteratively searching, reading results, and returning ranked document IDs. It offers low/medium/high reasoning effort and Metric Steering for NDCG, F1, or Recall@k, and was trained with 2-stage RL including a latency penalty. On SID's 506-question benchmark, SID-2 Medium scores 0.585 NDCG in 3.11s, matching Claude Opus 5.5 (0.577 in 25.1s), while SID-2 Swarm with 12 agents reaches 0.720 NDCG, above GPT-6 Astra's 0.704. Pricing starts at $0.25 per million input tokens, with no reindexing required.",
+    "summary_zh": "SID AI 发布了 SID-2 智能搜索模型，它通过迭代搜索、阅读结果并返回排序后的文档 ID，取代了固定的 RAG 流程。该模型提供低/中/高推理努力和 Metric Steering 功能，可针对 NDCG、F1 或 Recall@k 进行优化，并采用两阶段强化学习训练，包含延迟惩罚。在 SID 的 506 问题基准上，SID-2 Medium 以 3.11 秒获得 0.585 NDCG，与 Claude Opus 5.5（25.1 秒内 0.577）相当；而 12 个智能体的 SID-2 Swarm 达到 0.720 NDCG，超过 GPT-6 Astra 的 0.704。定价为每百万输入 token 0.25 美元起，且无需重建索引。",
+    "norm_url": "https://www.marktechpost.com/2026/11/17/sid-ai-sid-2-agentic-search-swarm"
   },
   {
     "id": "20261119-option-grpo-hierarchical-rl-against-ai-s-c3d835",

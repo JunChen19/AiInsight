@@ -1,0 +1,25 @@
+{
+  "id": "20261120-research-acceleration-the-jagged-frontie-32f46a",
+  "url": "https://openai.com/index/research-acceleration-jagged-frontier",
+  "title_en": "Research acceleration: The jagged frontier",
+  "title_zh": "研究加速：参差不齐的前沿",
+  "source_name": "OpenAI",
+  "source_url": "https://openai.com/index/research-acceleration-jagged-frontier",
+  "published": "2026-11-18T08:00:00Z",
+  "fetched_at": "2026-11-20T02:04:57Z",
+  "type": "blog",
+  "category": "technique",
+  "tags": [
+    "coding-agents",
+    "ai-research",
+    "recursive-self-improveme",
+    "evaluation"
+  ],
+  "image": null,
+  "summary_en": "OpenAI evaluated coding agents on their ability to accelerate AI research tasks. The results reveal a jagged frontier: agents perform well on some research subtasks but poorly on others, showing uneven capability. This unevenness has implications for recursive self-improvement, as agents cannot yet reliably automate the full research loop. The article discusses where performance is strong versus weak and what this means for AI-driven AI progress.",
+  "summary_zh": "OpenAI 评估了编码智能体（coding agents）加速 AI 研究任务的能力。结果揭示了一个“参差不齐的前沿”：智能体在某些研究子任务上表现良好，但在其他任务上表现不佳，能力分布不均。这种不均衡对递归自我改进（recursive self-improvement）具有启示意义，因为智能体尚不能可靠地自动化完整的研究循环。文章讨论了性能强弱的具体领域及其对 AI 驱动 AI 进展的意义。",
+  "content_en": "OpenAI measures how coding agents are accelerating AI research, where their performance remains uneven, and what this signals about recursive self-improvement.",
+  "content_zh": "OpenAI 衡量编程智能体如何加速 AI 研究、其表现仍在哪些方面参差不齐，以及这对递归自我改进意味着什么。",
+  "content_note": "fallback_snippet",
+  "translation_failed": false
+}
