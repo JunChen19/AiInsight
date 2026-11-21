@@ -1,0 +1,26 @@
+{
+  "id": "20261121-decision-focused-reinforcement-learning-132c73",
+  "url": "https://arxiv.org/abs/2611.25597v1",
+  "title_en": "Decision-Focused Reinforcement Learning for LLM Post-Training",
+  "title_zh": "面向决策的强化学习用于LLM后训练",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.25597v1",
+  "published": "2026-11-19T06:44:35Z",
+  "fetched_at": "2026-11-21T02:00:53Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "llm-post-training",
+    "decision-focused-learnin",
+    "reward-design",
+    "optimization"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes Decision-Focused Reinforcement Learning (DFRL), a framework for post-training LLMs to predict optimization parameters using negative downstream decision regret as reward. DFRL trains LLM predictors to minimize decision costs without requiring downstream convexity or differentiability, and integrates into existing RL post-training frameworks. To address expensive reward evaluation, the authors develop heuristic warm-starting (using approximate rewards initially) and reward correction (combining estimates with randomized exact evaluations to preserve expected policy gradient). Experiments on three synthetic optimization problems show improvements over prediction-loss baselines, and a larger knapsack experiment shows faster early improvement under short training budgets. On inventory planning with H&M transactions and product descriptions, the best configuration (LLM reasoning before predicting) reduces regret by 31.4% relative.",
+  "summary_zh": "本文提出决策聚焦强化学习（DFRL）框架，用于LLM后训练，以负的下游决策遗憾作为奖励来预测优化参数。DFRL训练LLM预测器以最小化其预测所诱导决策的成本，无需下游问题具有凸性或可微性，且易于集成到现有RL后训练框架中。为解决奖励评估昂贵的问题，作者开发了两种方法：启发式热启动（初始阶段使用廉价近似奖励，后切换为精确奖励）和奖励校正（结合廉价估计与随机精确评估，在保持期望策略梯度的同时减少每次更新的精确求解次数）。在三个合成优化问题上的实验表明，该方法优于预测损失基线；在更大规模的背包实验中，短训练预算下早期改进更快。在基于H&M交易和产品描述的库存规划任务中，最佳配置（LLM先推理再预测）将遗憾相对降低了31.4%。",
+  "content_en": "Large language models (LLMs) have shown promise as predictors across various tasks, benefiting from their ability to use information from unstructured context. However, when predictions serve as parameters of downstream optimization problems, higher prediction accuracy does not necessarily translate into lower decision costs. We propose decision-focused reinforcement learning (DFRL), a framework for post-training LLMs to predict optimization parameters using negative downstream decision regret as reward. DFRL trains LLM predictors to minimize the costs of the decisions induced by their predictions, without requiring downstream convexity or differentiability, and integrates readily into existing RL post-training frameworks. To address expensive reward evaluation, we develop two approaches. Heuristic warm-starting uses inexpensive approximate rewards during an initial phase before switching to refinement with exact rewards. Reward correction combines inexpensive estimates with randomized exact evaluations, preserving the expected policy gradient while reducing the expected number of exact solves per update. Experiments on three synthetic optimization problems demonstrate improvements over prediction-loss baselines, while a larger knapsack experiment shows faster early improvement under short training budgets. On inventory planning with H&M transactions and product descriptions, our best configuration, in which the LLM reasons before predicting, reduces regret by 31.4% relative",
+  "content_zh": "大型语言模型（LLMs）已展现出作为跨任务预测器的潜力，这得益于其利用非结构化上下文信息的能力。然而，当预测结果作为下游优化问题的参数时，更高的预测精度并不必然转化为更低决策成本。我们提出决策聚焦强化学习（DFRL），这是一个通过将负的下游决策遗憾作为奖励，对LLM进行后训练以预测优化参数的框架。DFRL训练LLM预测器以最小化其预测所诱导决策的成本，无需下游问题具备凸性或可微性，且可便捷地集成到现有RL后训练框架中。为应对昂贵的奖励评估，我们开发了两种方法。启发式热启动在初始阶段使用廉价的近似奖励，随后切换为精确奖励进行精化。奖励校正将廉价估计与随机精确评估相结合，在保持期望策略梯度的同时减少每次更新所需的精确求解次数。在三个合成优化问题上的实验表明，相较于预测损失基线有所改进；而一个更大规模的背包实验显示，在较短训练预算下早期改进更快。在基于H&M交易记录和产品描述的库存规划任务中，我们最佳配置（LLM在预测前进行推理）将遗憾降低了31.4%，相对",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

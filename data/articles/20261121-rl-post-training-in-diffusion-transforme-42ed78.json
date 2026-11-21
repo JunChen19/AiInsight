@@ -1,0 +1,26 @@
+{
+  "id": "20261121-rl-post-training-in-diffusion-transforme-42ed78",
+  "url": "https://arxiv.org/abs/2611.26627v1",
+  "title_en": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+  "title_zh": "扩散Transformer中的RL后训练本质上是激活引导",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.26627v1",
+  "published": "2026-11-19T18:59:53Z",
+  "fetched_at": "2026-11-21T02:01:04Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "diffusion-transformers",
+    "activation-steering",
+    "post-training",
+    "lora"
+  ],
+  "image": null,
+  "summary_en": "Reinforcement learning (RL) post-training improves diffusion transformers' visual quality, text rendering, and compositional accuracy. The authors hypothesize that these gains may largely be explained by an input-independent shift rather than complex input-dependent transformations. They probe RL-tuned models with a fixed set of steering vectors added to block outputs of the frozen base model, using 65x fewer parameters than the RL-tuned LoRA on SD3.5-M (0.29M vs 18.8M). Fitted to match velocity predictions of public RL-tuned checkpoints without reward in the objective, these vectors recover 90.0-96.3% of reward gains on six image models and 89.8% and 111.9% on two video models. Initialized at zero and trained with online RL, the vectors alone exceed weight-based RL gains on text rendering (OCR) and human preference (PickScore) on SD3.5-M.",
+  "summary_zh": "强化学习（RL）后训练能显著提升扩散Transformer的视觉质量、文本渲染和组合准确性。作者假设这些提升可能主要源于与输入无关的偏移，而非复杂的输入依赖变换。他们通过向冻结基础模型的块输出添加一组固定引导向量来探测RL调优模型，在SD3.5-M上参数量比RL调优的LoRA少65倍（0.29M vs 18.8M）。这些向量通过匹配公开RL调优检查点的速度预测来拟合，目标函数中不含奖励，尽管对所有提示、token和采样种子都相同，却能恢复六个图像模型90.0-96.3%的奖励增益，以及两个视频模型89.8%和111.9%的增益。从零初始化并用在线RL训练，这些向量单独在SD3.5-M的文本渲染（OCR）和人类偏好（PickScore）上就超过了基于权重的RL增益。",
+  "content_en": "Reinforcement learning (RL) post-training substantially improves the visual quality, text rendering, and compositional accuracy of diffusion transformers. Because capabilities such as rendering requested text or composing multiple objects are inherently prompt-dependent, a natural hypothesis is that improving them requires learning complex, input-dependent transformations. To isolate how much of these gains an input-independent shift explains, we probe each RL-tuned model with a deliberately simple parameterization: a fixed set of steering vectors added to the block outputs of the frozen base model. On SD3.5-M, these vectors hold 65x fewer parameters than the RL-tuned LoRA (0.29M against 18.8M). We fit them to match the velocity predictions of public RL-tuned checkpoints, with no reward in the objective. Although the vectors are identical for every prompt, token, and sampling seed, they recover 90.0-96.3% of the reward gains of six RL-tuned image models, and 89.8% and 111.9% on two RL-tuned video models. Initialized at zero and trained with online RL, the vectors alone exceed the reward gains of weight-based RL on text rendering (OCR) and human preference (PickScore) on SD3.5-M. A constant shift thus suffices for most of the gain of policy-gradient RL post-training: without new input-dependent transformations, it steers the pretrained generator toward what it can already compute.",
+  "content_zh": "强化学习（RL）后训练显著提升了扩散 Transformer 的视觉质量、文本渲染和组合准确性。由于渲染指定文本或组合多个物体等能力本质上依赖于提示词，一个自然的假设是：要提升这些能力，需要学习复杂的、依赖输入的变换。为了厘清其中有多少收益可由一个与输入无关的偏移来解释，我们用一种刻意简单的参数化方式来探测每个经 RL 调优的模型：在冻结基座模型的模块输出上加上一组固定的引导向量。在 SD3.5-M 上，这些向量的参数量比经 RL 调优的 LoRA 少 65 倍（0.29M 对 18.8M）。我们拟合这些向量，使其匹配公开的 RL 调优检查点的速度预测，目标函数中不含奖励。尽管这些向量对每个提示词、token 和采样种子都完全相同，它们仍恢复了六个 RL 调优图像模型 90.0–96.3% 的奖励增益，在两个 RL 调优视频模型上分别恢复了 89.8% 和 111.9%。以零初始化并用在线 RL 训练，这些向量本身在 SD3.5-M 上的文本渲染（OCR）和人类偏好（PickScore）上超过了基于权重的 RL 的奖励增益。因此，一个恒定偏移就足以获得策略梯度 RL 后训练的大部分收益：无需新的依赖输入的变换，它就能将预训练生成器引导向它本已能够计算的内容。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

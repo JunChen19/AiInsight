@@ -1,0 +1,26 @@
+{
+  "id": "20261121-silicongym-a-versatile-reinforcement-lea-75b8e3",
+  "url": "https://arxiv.org/abs/2611.25658v1",
+  "title_en": "SiliconGym: A Versatile Reinforcement Learning Environment for Agentic EDA",
+  "title_zh": "SiliconGym: 面向智能体 EDA 的多功能强化学习环境",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.25658v1",
+  "published": "2026-11-19T07:40:52Z",
+  "fetched_at": "2026-11-21T02:00:58Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "eda",
+    "hardware-design",
+    "benchmark",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "SiliconGym is introduced as the first versatile, cross-task and cross-toolchain reinforcement learning environment for hardware design and verification. It decouples versioned workspaces, budgeted execution, and acceptance-gated scoring to scale from module-level RTL, testbench, and PPA tasks to multi-round repository repair and full-hierarchy SoC flows. Streaming dispatch overlaps tool checks with generation, finishing a 256-answer RL batch 21.9% faster than native ChipSeek. Using interchangeable open-source and commercial backends, the authors show that open-source-trained functional correctness transfers cleanly to commercial simulation, and paired netlist evaluation reveals when open-source PPA gains survive commercial synthesis.",
+  "summary_zh": "SiliconGym 是首个面向硬件设计与验证的多功能、跨任务、跨工具链的强化学习环境。它通过解耦版本化工作区、预算化执行和验收门控评分，支持从模块级 RTL、测试平台和 PPA 任务扩展到多轮仓库修复和全层次 SoC 流程。流式调度将工具检查与生成重叠，完成 256 个答案的 RL 批次比原生 ChipSeek 快 21.9%。使用可互换的开源和商业后端，作者表明开源训练的功能正确性可以干净地迁移到商业仿真，并且成对的网表评估揭示了开源 PPA 增益在商业综合中何时得以保留。",
+  "content_en": "Reinforcement learning (RL) with electronic design automation (EDA) feedback is advancing large language models for hardware design and verification. Extending these gains to hardware-engineering agents requires environments that span tasks, preserve state across tool calls, and support large hierarchies alongside parallel rollouts. We present SiliconGym, the first versatile, cross-task and cross-toolchain RL environment for hardware design and verification. By decoupling versioned workspaces, budgeted execution, and acceptance-gated scoring, SiliconGym scales from module-level RTL, testbench, and PPA tasks to multi-round repository repair and full-hierarchy SoC flows. Streaming dispatch overlaps tool checks with generation, finishing a 256-answer RL batch 21.9% faster than native ChipSeek. Using interchangeable open-source and commercial backends, we show that open-source-trained functional correctness transfers cleanly to commercial simulation, while paired netlist evaluation reveals when open-source PPA gains survive commercial synthesis.",
+  "content_zh": "基于电子设计自动化（EDA）反馈的强化学习（RL）正在推动面向硬件设计与验证的大语言模型发展。要将这些收益扩展到硬件工程智能体，需要能够覆盖多类任务、在工具调用之间保持状态，并支持大规模层次结构与并行 rollout 的环境。我们提出 SiliconGym，这是首个面向硬件设计与验证的多功能、跨任务、跨工具链的 RL 环境。通过解耦版本化工作区、带预算的执行和接受门控评分，SiliconGym 可从模块级 RTL、testbench 和 PPA 任务扩展到多轮仓库修复和完整层次化 SoC 流程。流式调度将工具检查与生成重叠执行，使 256 个答案的 RL 批次完成速度比原生 ChipSeek 快 21.9%。使用可互换的开源和商业后端，我们表明开源训练的功能正确性可干净地迁移到商业仿真，而配对的网表评估揭示了开源 PPA 收益何时能在商业综合中保留。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

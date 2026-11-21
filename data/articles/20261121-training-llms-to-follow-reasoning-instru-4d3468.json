@@ -1,0 +1,26 @@
+{
+  "id": "20261121-training-llms-to-follow-reasoning-instru-4d3468",
+  "url": "https://arxiv.org/abs/2611.26342v1",
+  "title_en": "Training LLMs to Follow Reasoning Instructions with Minimal Edits",
+  "title_zh": "通过最小编辑训练LLM遵循推理指令",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.26342v1",
+  "published": "2026-11-19T16:18:25Z",
+  "fetched_at": "2026-11-21T02:01:10Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "llm",
+    "reasoning",
+    "instruction-following",
+    "supervised-fine-tuning",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes edit-based training, a framework that learns from a model's own trajectories via localized textual corrections. For a sampled completion, an editor identifies the first point of failure under a given criterion and proposes a minimal replacement span; the model is supervised only on these edited spans, concentrating supervision where reasoning first breaks down while preserving existing reasoning patterns elsewhere. The method works both offline and online, with the online variant continually adapting to evolving failure modes. Instantiated on reasoning instruction following with Qwen3-32B on the ReasonIF benchmark, edit-based training substantially improves compliance with the reasoning instruction compared to full-trajectory imitation and trajectory-level RL baselines, while largely preserving skills on untargeted tasks.",
+  "summary_zh": "论文提出基于编辑的训练框架（edit-based training），利用模型自身轨迹上的局部文本修正进行学习。对采样得到的补全，编辑器按指定标准定位首个失败点，并给出最小替换片段，模型仅在这些编辑片段上接受监督，从而把监督集中在推理首次出错处，同时尽量保留其他部分的既有推理模式。该方法支持离线与在线两种模式，在线模式可持续适应模型不断变化的失败模式。作者在ReasonIF基准上用Qwen3-32B实例化该方法，相比全轨迹模仿和轨迹级强化学习基线，显著提升了模型对推理指令的遵循度，同时基本保留了模型在未针对任务上的能力。",
+  "content_en": "Large language models increasingly rely on extended reasoning traces, yet the training signals used to shape this behavior remain coarse. Supervised fine-tuning on full trajectories forces the model to imitate an entire demonstration, overconstraining its output distribution, while trajectory-level reinforcement learning provides only weak credit assignment, rewarding or penalizing whole completions without identifying where they succeed or fail. We propose edit-based training, a general framework for learning from a model's own trajectories via localized textual corrections. Given a sampled completion, an editor identifies the first point of failure under a specified criterion and proposes a minimal replacement span. The model is then supervised only on these edited spans. By design, this concentrates supervision where the model's reasoning first breaks down and aims to preserve its existing reasoning patterns elsewhere. The method applies both offline and online, with the latter continually adapting supervision to the model's evolving failure modes. We instantiate this approach on reasoning instruction following with Qwen3-32B on the ReasonIF benchmark. Compared to full-trajectory imitation and trajectory-level reinforcement learning baselines, edit-based training substantially improves compliance with the reasoning instruction while largely preserving the model's skills on untargeted tasks. These results suggest that localized correction is an effective complement to these",
+  "content_zh": "大型语言模型日益依赖扩展推理轨迹，然而用于塑造这一行为的训练信号仍然粗糙。对完整轨迹进行监督微调迫使模型模仿整个示范，过度约束了其输出分布；而轨迹级强化学习仅提供微弱的信用分配，对整个完成结果给予奖励或惩罚，却无法识别其成功或失败之处。我们提出基于编辑的训练，这是一个通过局部文本修正从模型自身轨迹中学习的通用框架。给定一个采样得到的完成结果，编辑器在指定标准下识别出首个失败点，并提出一个最小替换片段。随后，模型仅在这些编辑后的片段上接受监督。通过设计，这将监督集中在模型推理首次崩溃之处，并旨在保留其在其他位置已有的推理模式。该方法可离线应用，也可在线应用，后者会持续调整监督以适应模型不断演化的失败模式。我们在 ReasonIF 基准上以 Qwen3-32B 实例化了这一方法，用于推理指令遵循。与全轨迹模仿和轨迹级强化学习基线相比，基于编辑的训练在显著提升对推理指令的遵循度的同时，基本保留了模型在非目标任务上的技能。这些结果表明，局部修正是对这些",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261121-reference-free-humanoid-skateboarding-vi-66b797",
+  "url": "https://arxiv.org/abs/2611.26054v1",
+  "title_en": "Reference-Free Humanoid Skateboarding via Termination-Shaped Reinforcement Learning",
+  "title_zh": "基于终止塑形强化学习的无参考人形机器人滑板",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.26054v1",
+  "published": "2026-11-19T12:59:43Z",
+  "fetched_at": "2026-11-21T02:01:14Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "humanoid-robot",
+    "skateboarding",
+    "model-free",
+    "termination-shaping"
+  ],
+  "image": null,
+  "summary_en": "This paper introduces a deep reinforcement learning framework for humanoid skateboarding that does not rely on human demonstrations or analytic steering models. The method combines task rewards with exploit-blocking terminations, including constraints on losing the planted board foot, standing with both feet on the board, excessive twisting, separation from the board, and unstable board motion. The changing prevalence of these terminations during training produces an implicit progression from stance control to sustained robot-board locomotion. The approach enables the K1 humanoid to learn skateboarding via model-free learning.",
+  "summary_zh": "本文提出一种深度强化学习框架，使人形机器人无需人类演示或解析转向模型即可学习滑板。该方法将任务奖励与防利用终止条件结合，约束包括失去踩板脚、双脚站板、过度扭转、与板分离及板运动不稳定等行为。训练中这些终止条件出现频率的变化，隐式地引导机器人从站立控制过渡到持续的机器人-滑板运动。该方法使K1人形机器人通过无模型学习掌握滑板技能。",
+  "content_en": "Humanoid locomotion research has advanced rapidly on walking and running, but \\emph {object-mediated} locomotion, in which a robot must coordinate its body with a passive external object, remains difficult. One challenging task is skateboarding, which requires simultaneous interaction with the ground and a passive but movable platform to achieve forward motion. Current methods for tackling skateboarding with humanoid robots either require human demonstrations or utilise analytic steering models that require system identification. In this paper, we introduce a deep reinforcement learning framework that does not rely on prior data such as demonstrations and enables robots such as the K1 humanoid to learn to skateboard using model-free learning. The method combines task rewards with exploit-blocking terminations. We introduce a number of constraints restricting behaviours such as losing the planted board foot, standing with both feet on the board, excessive twisting, separation from the board, and unstable board motion. Their changing prevalence during training produces an implicit progression from stance control towards sustained robot--board locomotion.",
+  "content_zh": "人形机器人运动研究在行走和奔跑方面已取得快速进展，但\\emph{物体介导}运动——即机器人必须与被动外部物体协调身体——仍然困难。一项具有挑战性的任务是滑板，它要求同时与地面以及一个被动但可移动的平台交互以实现前进运动。当前用人形机器人应对滑板任务的方法要么需要人类演示，要么利用需要系统辨识的解析转向模型。在本文中，我们引入一个深度强化学习框架，该框架不依赖演示等先验数据，并使K1人形机器人等机器人能够使用无模型学习学会滑板。该方法将任务奖励与阻止利用的终止条件相结合。我们引入了若干限制某些行为的约束，例如失去踩板脚、双脚站在板上、过度扭转、与板分离以及板运动不稳定。这些约束在训练过程中变化的发生频率产生了一种从站立控制到持续机器人—板运动的隐式进展。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

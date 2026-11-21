@@ -1,5 +1,49 @@
 [
   {
+    "id": "20261121-radixark-ships-daisyrose-27b-a-27b-agent-fdebc6",
+    "url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/",
+    "title_en": "RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model Trained With Reinforcement Learning Only",
+    "title_zh": "RadixArk 发布 DaisyRose-27B：仅用强化学习训练的 27B 智能体编程模型",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-20T17:42:29Z",
+    "fetched_at": "2026-11-21T02:00:20Z",
+    "type": "blog",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "model-release",
+      "agentic-coding",
+      "llm",
+      "benchmark"
+    ],
+    "image": "images/20261121-radixark-ships-daisyrose-27b-a-27b-agent-fdebc6.jpg",
+    "summary_en": "RadixArk released DaisyRose-27B, its first open-weight agentic coding model post-trained from Qwen3.8-27B using reinforcement learning only, with no SFT or distillation. Training used about 1,200 curated tasks on 144 H200 GPUs for 18 days via the Miles RL framework, achieving 37% MFU and a 2.0x end-to-end speedup. Terminal Bench 4.1 pass@1 more than doubled from 5.6 to 12.0, with smaller gains on DeepSWE v1.1 (+4.0), SWE Bench Pro v2 (+3.4), and IFBench (82.4). The 27.8B dense model supports 262,144-token context and runs on a single GPU (52 GB BF16, 23 GB NVFP4), released under Apache 2.0.",
+    "summary_zh": "RadixArk 发布了其首个开放权重模型 DaisyRose-27B，这是一个基于 Qwen3.8-27B 仅通过强化学习（RL）后训练的智能体编程模型，未使用 SFT 或蒸馏。训练使用约 1,200 个精选任务，在 144 块 H200 GPU 上通过 Miles RL 框架运行 18 天，达到 37% MFU 和 2.0 倍端到端加速。Terminal Bench 4.1 pass@1 从 5.6 翻倍至 12.0，DeepSWE v1.1 提升 4.0，SWE Bench Pro v2 提升 3.4，IFBench 达 82.4。该 27.8B 稠密模型支持 262,144 token 上下文，单 GPU 可运行（BF16 约 52 GB，NVFP4 约 23 GB），以 Apache 2.0 许可发布。",
+    "norm_url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model"
+  },
+  {
+    "id": "20261121-nvidia-ai-releases-nemotron-labs-sigma-a-fd455b",
+    "url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model/",
+    "title_en": "NVIDIA AI Releases Nemotron-Labs-Sigma, a Continuous Diffusion Language Model with 14 checkpoints at 3B/8B",
+    "title_zh": "NVIDIA 发布 Nemotron-Labs-Sigma：连续扩散语言模型，14 个 3B/8B 检查点",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-20T14:44:52Z",
+    "fetched_at": "2026-11-21T02:00:47Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "diffusion-model",
+      "language-model",
+      "nvidia",
+      "model-release",
+      "benchmark"
+    ],
+    "image": "images/20261121-nvidia-ai-releases-nemotron-labs-sigma-a-fd455b.jpg",
+    "summary_en": "NVIDIA released Nemotron-Labs-Sigma, a family of continuous diffusion language models with 14 open checkpoints at 3B and 8B scales. Unlike discrete diffusion models like LLaDA and Dream, Sigma denoises text in a learned 16-D embedding space, enabling practical few-step distillation and trajectory steering. The 8B base model averages 71.16 on NVIDIA's 6-task suite, outperforming NLD-8B (70.22), and the 8-step distilled 8B retains a 70.34 average. The self-speculative 8B checkpoint achieves 3.46x faster decoding than autoregressive models on average. Weaknesses include low AIME25 score (17.00) and GPU-only inference.",
+    "summary_zh": "NVIDIA 发布了 Nemotron-Labs-Sigma，一个包含 14 个开放检查点的连续扩散语言模型系列，规模为 3B 和 8B。与 LLaDA、Dream 等离散扩散模型不同，Sigma 在学习的 16 维嵌入空间中对文本去噪，使少步蒸馏和轨迹引导变得实用。8B 基础模型在 NVIDIA 的 6 任务套件上平均得分 71.16，超过 NLD-8B（70.22），而 8 步蒸馏的 8B 模型仍保持 70.34 的平均分。自推测 8B 检查点在平均解码速度上比自回归模型快 3.46 倍。弱点包括 AIME25 得分低（17.00）和仅支持 GPU 推理。",
+    "norm_url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model"
+  },
+  {
     "id": "20261120-meta-fair-self-improving-memory-hits-56-92af19",
     "url": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation/",
     "title_en": "Meta FAIR Self-Improving Memory Hits 56.0 on Continual Learning Bench",
@@ -22,6 +66,138 @@
     "norm_url": "https://www.marktechpost.com/2026/11/19/meta-fair-self-improving-memory-harness-distillation"
   },
   {
+    "id": "20261121-rl-post-training-in-diffusion-transforme-42ed78",
+    "url": "https://arxiv.org/abs/2611.26627v1",
+    "title_en": "RL Post-Training in Diffusion Transformers Is Activation Steering",
+    "title_zh": "扩散Transformer中的RL后训练本质上是激活引导",
+    "source_name": "arXiv",
+    "published": "2026-11-19T18:59:53Z",
+    "fetched_at": "2026-11-21T02:01:04Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "diffusion-transformers",
+      "activation-steering",
+      "post-training",
+      "lora"
+    ],
+    "image": null,
+    "summary_en": "Reinforcement learning (RL) post-training improves diffusion transformers' visual quality, text rendering, and compositional accuracy. The authors hypothesize that these gains may largely be explained by an input-independent shift rather than complex input-dependent transformations. They probe RL-tuned models with a fixed set of steering vectors added to block outputs of the frozen base model, using 65x fewer parameters than the RL-tuned LoRA on SD3.5-M (0.29M vs 18.8M). Fitted to match velocity predictions of public RL-tuned checkpoints without reward in the objective, these vectors recover 90.0-96.3% of reward gains on six image models and 89.8% and 111.9% on two video models. Initialized at zero and trained with online RL, the vectors alone exceed weight-based RL gains on text rendering (OCR) and human preference (PickScore) on SD3.5-M.",
+    "summary_zh": "强化学习（RL）后训练能显著提升扩散Transformer的视觉质量、文本渲染和组合准确性。作者假设这些提升可能主要源于与输入无关的偏移，而非复杂的输入依赖变换。他们通过向冻结基础模型的块输出添加一组固定引导向量来探测RL调优模型，在SD3.5-M上参数量比RL调优的LoRA少65倍（0.29M vs 18.8M）。这些向量通过匹配公开RL调优检查点的速度预测来拟合，目标函数中不含奖励，尽管对所有提示、token和采样种子都相同，却能恢复六个图像模型90.0-96.3%的奖励增益，以及两个视频模型89.8%和111.9%的增益。从零初始化并用在线RL训练，这些向量单独在SD3.5-M的文本渲染（OCR）和人类偏好（PickScore）上就超过了基于权重的RL增益。",
+    "norm_url": "https://arxiv.org/abs/2611.26627v1"
+  },
+  {
+    "id": "20261121-beam-model-technical-report-522a1d",
+    "url": "https://arxiv.org/abs/2611.26358v1",
+    "title_en": "Beam Model Technical Report",
+    "title_zh": "Beam 模型技术报告",
+    "source_name": "arXiv",
+    "published": "2026-11-19T16:28:23Z",
+    "fetched_at": "2026-11-21T02:00:25Z",
+    "type": "paper",
+    "category": "model-release",
+    "tags": [
+      "moe",
+      "rl",
+      "model-release",
+      "quantization",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "Beam is a sparse Mixture-of-Experts (MoE) model with 501.3B total parameters and 23.4B active parameters, optimized for coding, reasoning, and agentic workloads. It was pretrained on 23.8T tokens and features a 1M-token context window via a novel two-stage midtraining phase. Post-training involved a large-scale asynchronous RL campaign across 10.5K GB300 GPUs, generating over 100M rollouts in 4 weeks. Beam achieves frontier-level reasoning with 3-4x less inference compute than comparable models, and includes FP8/NVFP4 quantization and a 1.93B-parameter speculative decoding drafter (DFlash 2). It refuses or pivots on 88.9% of harmful requests while complying with 81.5% of harmless requests.",
+    "summary_zh": "Beam 是一个稀疏混合专家（MoE）模型，总参数 501.3B，激活参数 23.4B，专为编码、推理和智能体工作负载优化。它基于 23.8T 高质量 token 预训练，通过新颖的两阶段中期训练实现 1M token 上下文窗口。后训练采用大规模异步强化学习（RL），在 10.5K 块 GB300 GPU 上运行 4 周，生成超过 1 亿次 rollout。Beam 以比同类模型少 3-4 倍的推理计算量达到前沿推理水平，并集成 FP8/NVFP4 量化和 1.93B 参数的推测解码器（DFlash 2）。在有害请求上拒绝或转移率为 88.9%，在无害请求上合规率为 81.5%。",
+    "norm_url": "https://arxiv.org/abs/2611.26358v1"
+  },
+  {
+    "id": "20261121-training-llms-to-follow-reasoning-instru-4d3468",
+    "url": "https://arxiv.org/abs/2611.26342v1",
+    "title_en": "Training LLMs to Follow Reasoning Instructions with Minimal Edits",
+    "title_zh": "通过最小编辑训练LLM遵循推理指令",
+    "source_name": "arXiv",
+    "published": "2026-11-19T16:18:25Z",
+    "fetched_at": "2026-11-21T02:01:10Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "llm",
+      "reasoning",
+      "instruction-following",
+      "supervised-fine-tuning",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes edit-based training, a framework that learns from a model's own trajectories via localized textual corrections. For a sampled completion, an editor identifies the first point of failure under a given criterion and proposes a minimal replacement span; the model is supervised only on these edited spans, concentrating supervision where reasoning first breaks down while preserving existing reasoning patterns elsewhere. The method works both offline and online, with the online variant continually adapting to evolving failure modes. Instantiated on reasoning instruction following with Qwen3-32B on the ReasonIF benchmark, edit-based training substantially improves compliance with the reasoning instruction compared to full-trajectory imitation and trajectory-level RL baselines, while largely preserving skills on untargeted tasks.",
+    "summary_zh": "论文提出基于编辑的训练框架（edit-based training），利用模型自身轨迹上的局部文本修正进行学习。对采样得到的补全，编辑器按指定标准定位首个失败点，并给出最小替换片段，模型仅在这些编辑片段上接受监督，从而把监督集中在推理首次出错处，同时尽量保留其他部分的既有推理模式。该方法支持离线与在线两种模式，在线模式可持续适应模型不断变化的失败模式。作者在ReasonIF基准上用Qwen3-32B实例化该方法，相比全轨迹模仿和轨迹级强化学习基线，显著提升了模型对推理指令的遵循度，同时基本保留了模型在未针对任务上的能力。",
+    "norm_url": "https://arxiv.org/abs/2611.26342v1"
+  },
+  {
+    "id": "20261121-reference-free-humanoid-skateboarding-vi-66b797",
+    "url": "https://arxiv.org/abs/2611.26054v1",
+    "title_en": "Reference-Free Humanoid Skateboarding via Termination-Shaped Reinforcement Learning",
+    "title_zh": "基于终止塑形强化学习的无参考人形机器人滑板",
+    "source_name": "arXiv",
+    "published": "2026-11-19T12:59:43Z",
+    "fetched_at": "2026-11-21T02:01:14Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "humanoid-robot",
+      "skateboarding",
+      "model-free",
+      "termination-shaping"
+    ],
+    "image": null,
+    "summary_en": "This paper introduces a deep reinforcement learning framework for humanoid skateboarding that does not rely on human demonstrations or analytic steering models. The method combines task rewards with exploit-blocking terminations, including constraints on losing the planted board foot, standing with both feet on the board, excessive twisting, separation from the board, and unstable board motion. The changing prevalence of these terminations during training produces an implicit progression from stance control to sustained robot-board locomotion. The approach enables the K1 humanoid to learn skateboarding via model-free learning.",
+    "summary_zh": "本文提出一种深度强化学习框架，使人形机器人无需人类演示或解析转向模型即可学习滑板。该方法将任务奖励与防利用终止条件结合，约束包括失去踩板脚、双脚站板、过度扭转、与板分离及板运动不稳定等行为。训练中这些终止条件出现频率的变化，隐式地引导机器人从站立控制过渡到持续的机器人-滑板运动。该方法使K1人形机器人通过无模型学习掌握滑板技能。",
+    "norm_url": "https://arxiv.org/abs/2611.26054v1"
+  },
+  {
+    "id": "20261121-roam-grpo-enforcing-reasoning-diversity-521f49",
+    "url": "https://arxiv.org/abs/2611.25926v1",
+    "title_en": "ROAM-GRPO: Enforcing Reasoning Diversity in GRPO via Routed Off-mode Approach Mining",
+    "title_zh": "ROAM-GRPO：通过路由式非模式方法挖掘强制GRPO中的推理多样性",
+    "source_name": "arXiv",
+    "published": "2026-11-19T11:09:34Z",
+    "fetched_at": "2026-11-21T02:00:30Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "grpo",
+      "diversity",
+      "llm",
+      "reasoning"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes ROAM-GRPO, an augmentation to the GRPO algorithm that addresses the low-diversity mode collapse in LLM post-training for reasoning tasks. ROAM-GRPO detects well-solved problems during training and transfers them to an \"off-mode\" track, where the model is prompted to produce distinct solution strategies. These strategies are verified for logical validity and distinctness by an LLM judge and then self-distilled into the policy. Training Qwen3.5-2b on a 1,000-problem subset of MATH level 5, ROAM-GRPO increases peak pass@16 by 4.7% and correct embedding cosine distance by approximately 1.5-2x on a difficult evaluation set.",
+    "summary_zh": "本文提出ROAM-GRPO，一种对GRPO算法的增强，旨在解决LLM推理任务后训练中策略坍缩为低多样性模式的问题。ROAM-GRPO在训练中检测已充分解决的问题，并将其转移到“非模式”轨道，提示模型生成不同的解题策略。这些策略由LLM评判器验证逻辑有效性和差异性，随后自蒸馏到策略中。在MATH 5级数据集的1000题子集上训练Qwen3.5-2b，ROAM-GRPO在困难评估集上将峰值pass@16提高了4.7%，并将正确嵌入余弦距离提升约1.5-2倍。",
+    "norm_url": "https://arxiv.org/abs/2611.25926v1"
+  },
+  {
+    "id": "20261121-silicongym-a-versatile-reinforcement-lea-75b8e3",
+    "url": "https://arxiv.org/abs/2611.25658v1",
+    "title_en": "SiliconGym: A Versatile Reinforcement Learning Environment for Agentic EDA",
+    "title_zh": "SiliconGym: 面向智能体 EDA 的多功能强化学习环境",
+    "source_name": "arXiv",
+    "published": "2026-11-19T07:40:52Z",
+    "fetched_at": "2026-11-21T02:00:58Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "eda",
+      "hardware-design",
+      "benchmark",
+      "llm"
+    ],
+    "image": null,
+    "summary_en": "SiliconGym is introduced as the first versatile, cross-task and cross-toolchain reinforcement learning environment for hardware design and verification. It decouples versioned workspaces, budgeted execution, and acceptance-gated scoring to scale from module-level RTL, testbench, and PPA tasks to multi-round repository repair and full-hierarchy SoC flows. Streaming dispatch overlaps tool checks with generation, finishing a 256-answer RL batch 21.9% faster than native ChipSeek. Using interchangeable open-source and commercial backends, the authors show that open-source-trained functional correctness transfers cleanly to commercial simulation, and paired netlist evaluation reveals when open-source PPA gains survive commercial synthesis.",
+    "summary_zh": "SiliconGym 是首个面向硬件设计与验证的多功能、跨任务、跨工具链的强化学习环境。它通过解耦版本化工作区、预算化执行和验收门控评分，支持从模块级 RTL、测试平台和 PPA 任务扩展到多轮仓库修复和全层次 SoC 流程。流式调度将工具检查与生成重叠，完成 256 个答案的 RL 批次比原生 ChipSeek 快 21.9%。使用可互换的开源和商业后端，作者表明开源训练的功能正确性可以干净地迁移到商业仿真，并且成对的网表评估揭示了开源 PPA 增益在商业综合中何时得以保留。",
+    "norm_url": "https://arxiv.org/abs/2611.25658v1"
+  },
+  {
     "id": "20261120-google-deepmind-releases-gemini-4-neon-1-91875f",
     "url": "https://www.marktechpost.com/2026/11/18/google-gemini-4-neon-release/",
     "title_en": "Google DeepMind Releases Gemini 4 Neon: 1M Context, #1 on AA Coding Agent Index",
@@ -42,6 +218,28 @@
     "summary_en": "Google DeepMind released Gemini 4 Neon, a reasoning model positioned between Gemini 4 Carbon and Hydrogen, targeting coding agents, knowledge work, and science workflows. It features a 1M-token unified context, 64K default output (up to 1M via background long decode), and multiple thinking levels. Neon scores 61 on the AA Intelligence Index, ahead of Claude Opus 5.5 (59) and GPT-6.2 Sol (57), and ranks #1 on the AA Coding Agent Index at 58.6. It achieves 95.2% on GraphWalks (256K to 1M context) but trails Opus 5.5 on Terminal-bench 4.1 (65.2% vs 65.8%) and FrontierCode 2.0 (46.2% vs 47.3%). Pricing is $3 per 1M input tokens and $15 per 1M output tokens, with closed weights and Google-hosted only.",
     "summary_zh": "Google DeepMind 发布了 Gemini 4 Neon，这是一款介于 Gemini 4 Carbon 和 Hydrogen 之间的推理模型，面向编码代理、知识工作和科学工作流。它具备 1M token 统一上下文，默认输出 64K（通过后台长解码可达 1M），并提供多个思考层级。Neon 在 AA 智能指数上得分为 61，领先于 Claude Opus 5.5（59）和 GPT-6.2 Sol（57），并在 AA 编码代理指数上以 58.6 分排名第一。它在 GraphWalks（256K 至 1M 上下文）上达到 95.2%，但在 Terminal-bench 4.1（65.2% vs 65.8%）和 FrontierCode 2.0（46.2% vs 47.3%）上落后于 Opus 5.5。定价为每 1M 输入 token 3 美元、每 1M 输出 token 15 美元，权重闭源且仅由 Google 托管。",
     "norm_url": "https://www.marktechpost.com/2026/11/18/google-gemini-4-neon-release"
+  },
+  {
+    "id": "20261121-decision-focused-reinforcement-learning-132c73",
+    "url": "https://arxiv.org/abs/2611.25597v1",
+    "title_en": "Decision-Focused Reinforcement Learning for LLM Post-Training",
+    "title_zh": "面向决策的强化学习用于LLM后训练",
+    "source_name": "arXiv",
+    "published": "2026-11-19T06:44:35Z",
+    "fetched_at": "2026-11-21T02:00:53Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "llm-post-training",
+      "decision-focused-learnin",
+      "reward-design",
+      "optimization"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes Decision-Focused Reinforcement Learning (DFRL), a framework for post-training LLMs to predict optimization parameters using negative downstream decision regret as reward. DFRL trains LLM predictors to minimize decision costs without requiring downstream convexity or differentiability, and integrates into existing RL post-training frameworks. To address expensive reward evaluation, the authors develop heuristic warm-starting (using approximate rewards initially) and reward correction (combining estimates with randomized exact evaluations to preserve expected policy gradient). Experiments on three synthetic optimization problems show improvements over prediction-loss baselines, and a larger knapsack experiment shows faster early improvement under short training budgets. On inventory planning with H&M transactions and product descriptions, the best configuration (LLM reasoning before predicting) reduces regret by 31.4% relative.",
+    "summary_zh": "本文提出决策聚焦强化学习（DFRL）框架，用于LLM后训练，以负的下游决策遗憾作为奖励来预测优化参数。DFRL训练LLM预测器以最小化其预测所诱导决策的成本，无需下游问题具有凸性或可微性，且易于集成到现有RL后训练框架中。为解决奖励评估昂贵的问题，作者开发了两种方法：启发式热启动（初始阶段使用廉价近似奖励，后切换为精确奖励）和奖励校正（结合廉价估计与随机精确评估，在保持期望策略梯度的同时减少每次更新的精确求解次数）。在三个合成优化问题上的实验表明，该方法优于预测损失基线；在更大规模的背包实验中，短训练预算下早期改进更快。在基于H&M交易和产品描述的库存规划任务中，最佳配置（LLM先推理再预测）将遗憾相对降低了31.4%。",
+    "norm_url": "https://arxiv.org/abs/2611.25597v1"
   },
   {
     "id": "20261119-introducing-gemini-4-neon-1780b9",
