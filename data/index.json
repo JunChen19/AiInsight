@@ -1,5 +1,93 @@
 [
   {
+    "id": "20261122-meet-thinking-machines-inkling-2-mini-26-0e7d7e",
+    "url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
+    "title_en": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac",
+    "title_zh": "Thinking Machines 发布 Inkling 2 Mini：26B 循环 MoE 模型可在 32GB Mac 上运行",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-21T12:13:50Z",
+    "fetched_at": "2026-11-22T00:59:37Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "moe",
+      "looped-transformer",
+      "benchmark",
+      "local-inference"
+    ],
+    "image": "images/20261122-meet-thinking-machines-inkling-2-mini-26-0e7d7e.jpg",
+    "summary_en": "Thinking Machines Lab released Inkling 2 Mini, an open-weight looped transformer with 26.4B total parameters (3.4B active, 5.4B effective per token) that reuses its middle layers 3 times, keeping the checkpoint near 20GB for 32GB Macs or one NVIDIA DGX Spark. It scores 79.2% on SWE-bench Verified (bash only) and 20.1 on the Artificial Analysis Index, tied with Qwen3.8-27B. Looping the middle layers yielded a 1.51x to 1.91x compute-equivalent gain and won 27 of 28 evaluations. Weak spots include knowledge recall (15.2% on HLE-Diamond) and multi-turn instruction following (50.0% on MultiChallenge).",
+    "summary_zh": "Thinking Machines Lab 发布开源权重模型 Inkling 2 Mini，采用循环 Transformer 架构，总参数 26.4B（激活 3.4B，每 token 有效 5.4B），中间层复用 3 次，检查点约 20GB，可在 32GB Mac 或单台 NVIDIA DGX Spark 上运行。模型在 SWE-bench Verified（仅 bash）上得分 79.2%，在 Artificial Analysis Index 上得 20.1，与 Qwen3.8-27B 持平。中间层循环带来 1.51 倍至 1.91 倍的计算等效增益，在 28 项评估中胜出 27 项。短板包括知识召回（HLE-Diamond 仅 15.2%）和多轮指令遵循（MultiChallenge 50.0%）。",
+    "norm_url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer"
+  },
+  {
+    "id": "20261122-openai-ships-gpt-live-1-1-for-voice-agen-0e8667",
+    "url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode/",
+    "title_en": "OpenAI Ships GPT-Live-1.1 for Voice Agents, Cuts Idle Cost to $0.02/Min",
+    "title_zh": "OpenAI 发布 GPT-Live-1.1 语音代理模型，待机成本降至 $0.02/分钟",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-21T11:46:17Z",
+    "fetched_at": "2026-11-22T01:00:28Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "voice-model",
+      "openai",
+      "api-release",
+      "pricing",
+      "full-duplex"
+    ],
+    "image": "images/20261122-openai-ships-gpt-live-1-1-for-voice-agen-0e8667.jpg",
+    "summary_en": "OpenAI released GPT-Live-1.1, a full-duplex speech model for multilingual conversations, available via API as `gpt-live-1.1`. It improves accent consistency, transcription accuracy, letter/number handling, and task completion over GPT-Live-1, though no benchmark scores were published. The model supports a 128K-token context window and runs only on OpenAI's cloud via WebRTC or WebSocket. A new standby billing state cuts idle WebRTC time to $0.02 per minute (60% lower than the $0.05 active rate), with configurable idle timeout from 5 to 60 seconds. Backend reasoning and tool usage are billed separately.",
+    "summary_zh": "OpenAI 发布了 GPT-Live-1.1，这是一个全双工语音模型，支持多语言对话，可通过 API 以 `gpt-live-1.1` 调用。相比 GPT-Live-1，它在口音一致性、转录准确性、字母和数字处理以及任务完成可靠性方面有所提升，但未公布基准测试分数。该模型支持 128K token 的默认上下文窗口，仅通过 WebRTC 或 WebSocket 在 OpenAI 云上运行。新增的待机计费状态将空闲 WebRTC 时间降至每分钟 $0.02（比活跃状态的 $0.05 低 60%），空闲超时可配置为 5 到 60 秒。后端推理和工具使用单独计费。",
+    "norm_url": "https://www.marktechpost.com/2026/11/21/openai-gpt-live-1-1-api-standby-mode"
+  },
+  {
+    "id": "20261122-baseten-releases-bison-1-and-groundhog-1-9d0198",
+    "url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models/",
+    "title_en": "Baseten Releases Bison-1 and Groundhog-1, Topping Decision Model Index",
+    "title_zh": "Baseten 发布 Bison-1 和 Groundhog-1，登顶决策模型指数",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-21T04:01:04Z",
+    "fetched_at": "2026-11-22T00:59:53Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "decision-model",
+      "model-release",
+      "gemma",
+      "benchmark",
+      "calibration"
+    ],
+    "image": "images/20261122-baseten-releases-bison-1-and-groundhog-1-9d0198.jpg",
+    "summary_en": "Baseten released bison-1 and groundhog-1, two open-weight decision models built on Google's Gemma 4 that return calibrated probabilities for yes/no, choice, and score questions. bison-1 is a 31B dense model scoring 76 on the Artificial Analysis Decision Index v2.1, ranking #1 of 19, while groundhog-1 is a 26B MoE with ~4B active parameters. Both extend context from 16k to 128k tokens and accept images, with bison-1 achieving a Brier score of 0.14. The models are available on Baseten Model APIs and Hugging Face with BF16 weights, priced at $0.10 and $0.035 per 1M input tokens respectively.",
+    "summary_zh": "Baseten 发布了 bison-1 和 groundhog-1 两个基于 Google Gemma 4 的开源权重决策模型，它们为是/否、选择和评分问题返回校准后的概率。bison-1 是 31B 稠密模型，在 Artificial Analysis Decision Index v2.1 上得分 76，在 19 个模型中排名第一；groundhog-1 是 26B MoE 模型，约 4B 激活参数。两者上下文从 16k 扩展到 128k tokens，并支持图像输入，bison-1 的 Brier 分数为 0.14。模型已在 Baseten Model APIs 和 Hugging Face 上提供 BF16 权重，输入价格分别为每 1M tokens 0.10 美元和 0.035 美元。",
+    "norm_url": "https://www.marktechpost.com/2026/11/20/baseten-bison-1-groundhog-1-gemma-4-decision-models"
+  },
+  {
+    "id": "20261122-the-most-misunderstood-graph-in-ai-just-2ee989",
+    "url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update/",
+    "title_en": "The most misunderstood graph in AI just got a major update",
+    "title_zh": "AI领域最被误解的图表迎来重大更新",
+    "source_name": "MIT Tech Review AI",
+    "published": "2026-11-20T18:15:15Z",
+    "fetched_at": "2026-11-22T01:00:11Z",
+    "type": "blog",
+    "category": "performance",
+    "tags": [
+      "ai-evaluation",
+      "metr",
+      "time-horizon",
+      "reinforcement-learning",
+      "benchmark"
+    ],
+    "image": "images/20261122-the-most-misunderstood-graph-in-ai-just-2ee989.jpg",
+    "summary_en": "METR's updated time horizon plot adds more tasks, including open-ended and judgment-heavy ones, to its original evaluation of AI capabilities. The original plot showed that the length of tasks frontier models could complete doubled every four months, but it focused on verifiable tasks where success can be automatically checked. The new report finds that models still excel at coding and math but fall short on tasks requiring judgment, such as designing AI evaluations or scoring philosophical arguments. For example, none of the AI-designed evaluations were considered useful by METR employees, and models performed below human level on the philosophy task. However, newer models like Opus 5.5 show 'borderline above the bar' performance on evaluation design, a year after all models scored 'clearly below the bar'. Experts welcome the inclusion of open-ended tasks but note that scoring remains difficult and trends are hard to establish.",
+    "summary_zh": "METR更新的时间跨度图增加了更多任务，包括开放式和需要判断的任务，以补充原先对AI能力的评估。原图显示前沿模型能完成的任务长度每四个月翻一番，但主要关注可自动验证成功与否的任务。新报告发现，模型在编程和数学方面依然出色，但在需要判断的任务上表现不足，例如设计AI评估或评分哲学论证。例如，AI设计的评估没有一个被METR员工认为对其研究有用，模型在哲学任务上的表现也低于人类水平。然而，像Opus 5.5这样的新模型在评估设计任务上表现出“临界高于标准”的水平，而一年前所有模型都“明显低于标准”。专家欢迎纳入开放式任务，但指出评分仍然困难，趋势难以确立。",
+    "norm_url": "https://www.technologyreview.com/2026/11/20/1149399/the-most-misunderstood-graph-in-ai-just-got-a-major-update"
+  },
+  {
     "id": "20261121-radixark-ships-daisyrose-27b-a-27b-agent-fdebc6",
     "url": "https://www.marktechpost.com/2026/11/20/radixark-daisyrose-27b-agentic-model/",
     "title_en": "RadixArk Ships DaisyRose-27B, a 27B Agentic Coding Model Trained With Reinforcement Learning Only",
@@ -42,6 +130,28 @@
     "summary_en": "NVIDIA released Nemotron-Labs-Sigma, a family of continuous diffusion language models with 14 open checkpoints at 3B and 8B scales. Unlike discrete diffusion models like LLaDA and Dream, Sigma denoises text in a learned 16-D embedding space, enabling practical few-step distillation and trajectory steering. The 8B base model averages 71.16 on NVIDIA's 6-task suite, outperforming NLD-8B (70.22), and the 8-step distilled 8B retains a 70.34 average. The self-speculative 8B checkpoint achieves 3.46x faster decoding than autoregressive models on average. Weaknesses include low AIME25 score (17.00) and GPU-only inference.",
     "summary_zh": "NVIDIA 发布了 Nemotron-Labs-Sigma，一个包含 14 个开放检查点的连续扩散语言模型系列，规模为 3B 和 8B。与 LLaDA、Dream 等离散扩散模型不同，Sigma 在学习的 16 维嵌入空间中对文本去噪，使少步蒸馏和轨迹引导变得实用。8B 基础模型在 NVIDIA 的 6 任务套件上平均得分 71.16，超过 NLD-8B（70.22），而 8 步蒸馏的 8B 模型仍保持 70.34 的平均分。自推测 8B 检查点在平均解码速度上比自回归模型快 3.46 倍。弱点包括 AIME25 得分低（17.00）和仅支持 GPU 推理。",
     "norm_url": "https://www.marktechpost.com/2026/11/20/nvidia-nemotron-labs-sigma-continuous-diffusion-language-model"
+  },
+  {
+    "id": "20261122-combatting-adversarial-distillation-7121ba",
+    "url": "https://openai.com/index/combatting-adversarial-distillation",
+    "title_en": "Combatting adversarial distillation",
+    "title_zh": "对抗对抗性蒸馏：OpenAI 如何防御模型能力窃取",
+    "source_name": "OpenAI",
+    "published": "2026-11-20T10:00:00Z",
+    "fetched_at": "2026-11-22T01:00:54Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "adversarial-distillation",
+      "ai-safety",
+      "reasoning-trace",
+      "red-teaming",
+      "model-protection"
+    ],
+    "image": "images/20261122-combatting-adversarial-distillation-7121ba.jpg",
+    "summary_en": "OpenAI details its defenses against adversarial distillation, where attackers use a frontier model's outputs to train another model without safeguards. The approach combines adversarial training, classifiers, API-level protections, and campaign-level investigations. In internal adaptive red-teaming, the average attack success rate for recovering protected reasoning dropped from 54.0% against GPT-6 Astra to 0.2% against GPT-6.2 Astra with updated safeguards. OpenAI also found that exact reasoning traces transfer more cyber capability than summaries, and it enforces against thousands of accounts involved in distillation campaigns.",
+    "summary_zh": "OpenAI 详细介绍了其对抗对抗性蒸馏（adversarial distillation）的防御措施，即防止攻击者利用前沿模型的输出训练另一个缺乏安全防护的模型。其方法结合了对抗训练、分类器、API 级保护和活动级调查。在内部自适应红队测试中，恢复受保护推理的平均攻击成功率从针对 GPT-6 Astra 的 54.0% 降至针对 GPT-6.2 Astra 的 0.2%。OpenAI 还发现，精确推理轨迹比摘要传递更多网络能力，并对涉及蒸馏活动的数千个账户采取了执法行动。",
+    "norm_url": "https://openai.com/index/combatting-adversarial-distillation"
   },
   {
     "id": "20261120-meta-fair-self-improving-memory-hits-56-92af19",
