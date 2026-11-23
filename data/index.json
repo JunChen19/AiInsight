@@ -1,5 +1,93 @@
 [
   {
+    "id": "20261123-nvidia-releases-alpamayo-2-edge-a-2b-rea-efe2c4",
+    "url": "https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor/",
+    "title_en": "NVIDIA Releases Alpamayo 2 Edge: A 2B Reasoning VLA for DRIVE Thor",
+    "title_zh": "NVIDIA 发布 Alpamayo 2 Edge：面向 DRIVE Thor 的 2B 推理 VLA 模型",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-22T18:37:57Z",
+    "fetched_at": "2026-11-23T01:27:14Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "vla",
+      "autonomous-driving",
+      "nvidia",
+      "edge-ai",
+      "model-release"
+    ],
+    "image": "images/20261123-nvidia-releases-alpamayo-2-edge-a-2b-rea-efe2c4.jpg",
+    "summary_en": "NVIDIA released Alpamayo 2 Edge, a 2B-parameter reasoning vision-language-action (VLA) model for autonomous driving that runs on NVIDIA DRIVE AGX Thor. It uses a 2.45B backbone (1.96B language model + 0.41B SigLIP2 encoder) plus a 0.2B diffusion action expert, and outputs a 6.4-second trajectory (64 waypoints) with adaptive Chain-of-Causation reasoning via <NOMINAL> tokens. With the FP8 + TensorRT Edge-LLM recipe, it achieves 160-190 ms pixel-to-trajectory latency on Thor. In AlpaSim closed-loop driving, it covers 15.15 km per at-fault incident, about 60x Qwen-Drive-1.0 4B (0.25 km), but scores lower on LingoQA (75.2 vs 79.2 for Alpamayo 2 Super).",
+    "summary_zh": "NVIDIA 发布了 Alpamayo 2 Edge，一个面向自动驾驶的 2B 参数推理视觉-语言-动作（VLA）模型，可在 NVIDIA DRIVE AGX Thor 上运行。它采用 2.45B 主干（1.96B 语言模型 + 0.41B SigLIP2 编码器）加 0.2B 扩散动作专家，输出 6.4 秒轨迹（64 个路点），并通过 <NOMINAL> token 实现自适应因果链推理。借助 FP8 + TensorRT Edge-LLM 方案，在 Thor 上实现 160-190 毫秒的像素到轨迹延迟。在 AlpaSim 闭环驾驶中，每起责任事故行驶 15.15 公里，约为 Qwen-Drive-1.0 4B（0.25 公里）的 60 倍，但 LingoQA 得分较低（75.2，Alpamayo 2 Super 为 79.2）。",
+    "norm_url": "https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor"
+  },
+  {
+    "id": "20261123-google-ai-previews-tool-retrieval-in-the-98fbde",
+    "url": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval/",
+    "title_en": "Google AI Previews Tool Retrieval in the Gemini API for Large Tool Libraries",
+    "title_zh": "Google 在 Gemini API 中预览工具检索功能，支持大型工具库",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-22T10:03:54Z",
+    "fetched_at": "2026-11-23T01:27:39Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "gemini-api",
+      "tool-retrieval",
+      "llm",
+      "api",
+      "mcp"
+    ],
+    "image": "images/20261123-google-ai-previews-tool-retrieval-in-the-98fbde.jpg",
+    "summary_en": "Google has launched Tool Retrieval in the Gemini API (preview in the Interactions API), allowing agents to defer loading tool parameter schemas until needed. By adding a tool_search entry and setting defer_loading: true, the model sees only tool names and short descriptions initially, then retrieves full schemas on demand. Server-side retrieval resolves search, schema load, and function call in one API request, while client-side mode supports custom registries at the cost of one extra round trip per search. There is no separate fee, but loaded schemas remain billed as input tokens for the rest of the conversation. Google published no token savings data, whereas Anthropic reports 85% savings and OpenAI 47% on their respective tests.",
+    "summary_zh": "Google 在 Gemini API 中推出了工具检索功能（Interactions API 预览版），允许智能体延迟加载工具参数模式（schema）直到需要时。通过添加 tool_search 条目并设置 defer_loading: true，模型初始仅看到工具名称和简短描述，按需检索完整模式。服务器端检索在单个 API 请求中完成搜索、模式加载和函数调用，客户端模式支持自定义注册表但每次搜索增加一次额外往返。无单独费用，但已加载的模式在对话剩余部分仍按输入令牌计费。Google 未公布令牌节省数据，而 Anthropic 报告节省 85%，OpenAI 报告节省 47%。",
+    "norm_url": "https://www.marktechpost.com/2026/11/22/google-gemini-api-tool-retrieval"
+  },
+  {
+    "id": "20261123-a-team-of-researchers-from-columbia-and-06b9a1",
+    "url": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels/",
+    "title_en": "A Team of Researchers from Columbia and CertiK Introduce TensorLean for Formal Verification of GPU Kernels",
+    "title_zh": "Columbia与CertiK推出TensorLean：PTX级GPU内核形式化验证框架",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-22T01:51:43Z",
+    "fetched_at": "2026-11-23T01:27:26Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "formal-verification",
+      "gpu-kernels",
+      "lean",
+      "ptx",
+      "bug-detection"
+    ],
+    "image": "images/20261123-a-team-of-researchers-from-columbia-and-06b9a1.jpg",
+    "summary_en": "Researchers from Columbia University and CertiK have introduced TensorLean, a Lean-based formal verification framework for GPU kernels at the PTX level. TensorLean proves that compiled kernels match a tensor-level mathematical specification, checking properties such as race freedom, termination, output correctness within tolerance, and memory safety. The team verified 149 kernel instances, including all kernels from FlashAttention-2, -3, -4, and DeepGEMM, proving 83 correct and uncovering 38 bugs across 6 projects. Notably, it detected a FlashAttention-4 data race that never appeared in 17,760 test runs. The framework uses a 1.8K-line PTX parser, symbolic execution, and SMT solvers (Z3, cvc5) to scale verification, with specs about 15x smaller than kernel source.",
+    "summary_zh": "来自Columbia大学和CertiK的研究人员推出了TensorLean，一个基于Lean的GPU内核形式化验证框架，在PTX级别证明编译后的内核与张量级数学规范一致。TensorLean检查四个属性：无数据竞争、终止性、输出在容差内正确以及内存安全。团队验证了149个内核实例，包括FlashAttention-2、-3、-4和DeepGEMM的所有内核，证明其中83个正确，并在6个项目中发现了38个bug。值得注意的是，它检测到一个在17,760次测试运行中从未出现的FlashAttention-4数据竞争。该框架使用1.8K行的PTX解析器、符号执行和SMT求解器（Z3、cvc5）来扩展验证，规范大小约为内核源代码的1/15。",
+    "norm_url": "https://www.marktechpost.com/2026/11/21/columbia-certik-tensorlean-formal-verification-gpu-kernels"
+  },
+  {
+    "id": "20261123-perplexity-and-intelligence-d2fc1e",
+    "url": "https://openai.com/index/perplexity-and-intelligence",
+    "title_en": "Perplexity and Intelligence",
+    "title_zh": "困惑度与智能",
+    "source_name": "OpenAI",
+    "published": "2026-11-22T00:00:00Z",
+    "fetched_at": "2026-11-23T01:28:04Z",
+    "type": "blog",
+    "category": "performance",
+    "tags": [
+      "perplexity",
+      "pretraining",
+      "ai-safety",
+      "emergent-abilities",
+      "benchmark"
+    ],
+    "image": "images/20261123-perplexity-and-intelligence-d2fc1e.jpg",
+    "summary_en": "OpenAI argues for using perplexity (cross-entropy loss) as a shared metric to track AI progress and inform safety standards. The post traces how lower perplexity on held-out data correlates with emergent capabilities: GPT-2 (~coherent paragraphs), GPT-3 (in-context learning), GPT-3.5 (log-perplexity ~0.99, fluent conversation), GPT-4 (~0.91, chain-of-thought reasoning), and below 0.8 (cybersecurity and math breakthroughs). OpenAI discloses its internal perplexity measurements, noting challenges like cross-lab comparability and detachment from actionable evaluations, and proposes common limits on development until monitoring milestones are met.",
+    "summary_zh": "OpenAI 主张将困惑度（交叉熵损失）作为共享指标，以追踪 AI 进展并制定安全标准。文章指出，在留出数据上更低的困惑度与涌现能力相关：GPT-2（连贯段落）、GPT-3（上下文学习）、GPT-3.5（对数困惑度约 0.99，流畅对话）、GPT-4（约 0.91，思维链推理），以及低于 0.8 时在网络安全和数学领域的突破。OpenAI 公开了内部困惑度测量值，同时指出跨实验室比较困难、与可操作评估脱节等挑战，并提议在达到监控里程碑前设置开发共同限制。",
+    "norm_url": "https://openai.com/index/perplexity-and-intelligence"
+  },
+  {
     "id": "20261122-meet-thinking-machines-inkling-2-mini-26-0e7d7e",
     "url": "https://www.marktechpost.com/2026/11/21/thinking-machines-inkling-2-mini-looped-transformer/",
     "title_en": "Meet Thinking Machines Inkling 2 Mini: 26B Looped MoE Runs on a 32GB Mac",
