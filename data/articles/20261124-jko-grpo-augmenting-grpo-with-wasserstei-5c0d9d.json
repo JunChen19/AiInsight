@@ -1,0 +1,26 @@
+{
+  "id": "20261124-jko-grpo-augmenting-grpo-with-wasserstei-5c0d9d",
+  "url": "https://arxiv.org/abs/2611.29646v1",
+  "title_en": "JKO-GRPO: Augmenting GRPO with Wasserstein Proximal Steps for Flow-Matching VLAs",
+  "title_zh": "JKO-GRPO：用Wasserstein近端步骤增强GRPO以优化流匹配VLA",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.29646v1",
+  "published": "2026-11-22T17:49:43Z",
+  "fetched_at": "2026-11-24T05:10:44Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "flow-matching",
+    "vision-language-action",
+    "wasserstein-proximal",
+    "policy-optimization"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes JKO-GRPO, which augments Flow-GRPO with Wasserstein proximal steps for flow-matching vision-language-action (VLA) models like π0 and π0.5. At each state, the group of sampled actions is treated as an empirical distribution, and policy improvement is formulated as a Jordan-Kinderlehrer-Otto (JKO) step. A soft discrete c-transform constructs transport targets from group-relative advantages, combined with shared-noise regression of the deterministic flow sampler and the clipped Flow-GRPO objective without KL regularization. The method is extended to sequential VLA control via random-time branching, selecting action-chunk indices along old-policy trajectories and applying group-level JKO updates using candidate continuations.",
+  "summary_zh": "本文提出JKO-GRPO，通过Wasserstein近端步骤增强Flow-GRPO，用于流匹配视觉-语言-动作（VLA）模型（如π0、π0.5）。在每个状态，将采样的动作组视为经验分布，并将策略改进建模为Jordan-Kinderlehrer-Otto（JKO）步骤。利用软离散c变换从组相对优势构建传输目标，结合确定性流采样器的共享噪声回归，并与无KL正则化的裁剪Flow-GRPO目标结合。该方法通过随机时间分支扩展到序列VLA控制：沿旧策略轨迹选择一个或多个动作块索引，并利用对应状态的候选延续独立应用组级JKO更新。",
+  "content_en": "Flow-based vision-language-action (VLA) models such as $π_0,π_{0.5}$ generate continuous action chunks by flow matching, and online reinforcement learning (RL) can improve them beyond supervised fine-tuning. Existing methods, such as Flow-GRPO and $π_{\\mathrm{RL}}$, optimize likelihood ratios of stochastic denoising transitions, which reweight the sampled actions by their advantages but do not use the distances between them. We propose JKO-GRPO, which augments Flow-GRPO with Wasserstein proximal steps, with two contributions: (1) At each state, we treat the group of sampled actions as an empirical distribution and formulate policy improvement as a Jordan-Kinderlehrer-Otto (JKO) step. We use a soft discrete $c$-transform to construct transport targets from group-relative advantages and combine shared-noise regression of the deterministic flow sampler onto these targets and combined with the clipped Flow-GRPO objective without Kullback-Leibler (KL) regularization. (2) We extend this approach to sequential VLA control through random-time branching: we select one or multiple action-chunk indices along old-policy trajectories and independently apply group-level JKO updates using candidate continuations from the corresponding states.",
+  "content_zh": "基于流的视觉-语言-动作（VLA）模型，如 $π_0,π_{0.5}$，通过流匹配生成连续的动作块，而在线强化学习（RL）可以使其超越监督微调。现有方法，如 Flow-GRPO 和 $π_{\\mathrm{RL}}$，优化随机去噪转移的似然比，这通过优势对采样的动作重新加权，但没有利用它们之间的距离。我们提出 JKO-GRPO，它在 Flow-GRPO 的基础上增加了 Wasserstein 近端步骤，有两项贡献：(1) 在每个状态，我们将采样动作组视为经验分布，并将策略改进表述为 Jordan-Kinderlehrer-Otto（JKO）步骤。我们使用软离散 $c$-变换从组相对优势构造传输目标，并将确定性流采样器的共享噪声回归组合到这些目标上，并与无 Kullback-Leibler（KL）正则化的裁剪 Flow-GRPO 目标相结合。(2) 我们通过随机时间分支将此方法扩展到序列 VLA 控制：我们沿旧策略轨迹选择一个或多个动作块索引，并使用来自相应状态的候选延续独立应用组级 JKO 更新。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

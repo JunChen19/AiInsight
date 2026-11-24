@@ -1,0 +1,26 @@
+{
+  "id": "20261124-reinforcement-learning-from-llm-generate-4cda92",
+  "url": "https://arxiv.org/abs/2611.29732v1",
+  "title_en": "Reinforcement Learning from LLM-Generated (Suboptimal) Demonstrations",
+  "title_zh": "基于LLM生成（次优）演示的强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.29732v1",
+  "published": "2026-11-22T19:56:10Z",
+  "fetched_at": "2026-11-24T05:11:20Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "llm",
+    "demonstrations",
+    "warmstart",
+    "dqn"
+  ],
+  "image": null,
+  "summary_en": "This work uses a large language model (LLM) to generate an advice policy that produces demonstration data at no human cost, which is used to warmstart a DQN agent and guide exploration during training. Because LLM-generated advice is often suboptimal, the authors introduce a value warmstart method that initializes the agent to recognize promising states from the advice policy's behavior without directly copying its actions. They systematically perturb individual sub-skills of an LLM-generated advice policy for a long-horizon, sparse-reward task. Results show that even degraded advice meaningfully accelerates learning relative to unaided baselines, suggesting LLM-generated advice can be a cheap alternative to costly human demonstrations.",
+  "summary_zh": "本文利用大语言模型（LLM）生成建议策略，以零人力成本产生演示数据，用于热启动DQN智能体并在训练中引导探索。由于LLM生成的建议往往次优，作者引入价值热启动方法，使智能体从建议策略的行为中识别有希望的状态，而不直接复制其动作。他们在长时程、稀疏奖励任务中系统性地扰动LLM建议策略的各个子技能。结果表明，即使建议质量下降，也能相对无辅助基线显著加速学习，表明LLM生成的建议可作为昂贵人类演示的廉价替代。",
+  "content_en": "Reinforcement learning (RL) has achieved substantial progress across many domains, but training an agent \\textit{tabula rasa} remains highly sample-inefficient. A common remedy is to initialize the agent using a neural network pretrained on demonstrations. However, collecting demonstrations is expensive, and the demonstrations themselves can be suboptimal. In this work, we use a large language model (LLM) to generate an advice policy that produces demonstration data with effectively no human cost. We use this data to warmstart a DQN agent, and use the advice policy itself to guide exploration during training. Because LLM-generated advice is often suboptimal, we further introduce a value warmstart method that initializes the agent to recognize promising states from the advice policy's behavior, without directly copying its actions. To characterize the robustness of this method, we systematically perturb individual sub-skills of an LLM-generated advice policy for a long-horizon, sparse-reward task. Degraded advice still meaningfully accelerates learning relative to unaided baselines. These results suggest that LLM-generated advice, though suboptimal, can be a cheap alternative to costly human demonstrations.",
+  "content_zh": "强化学习（RL）在许多领域取得了实质性进展，但从头训练智能体（\\textit{tabula rasa}）仍然样本效率极低。一种常见的补救方法是使用在演示数据上预训练的神经网络来初始化智能体。然而，收集演示数据成本高昂，且演示本身也可能次优。在本工作中，我们使用大语言模型（LLM）生成一个建议策略，以几乎零人力成本产生演示数据。我们利用这些数据对 DQN 智能体进行热启动，并在训练过程中利用建议策略本身引导探索。由于 LLM 生成的建议往往次优，我们进一步引入一种价值热启动方法，使智能体从建议策略的行为中识别有希望的状态，而不直接复制其动作。为刻画该方法的鲁棒性，我们针对一个长时程、稀疏奖励任务，系统性地扰动 LLM 生成建议策略的各个子技能。相较于无辅助基线，退化的建议仍能显著加速学习。这些结果表明，LLM 生成的建议虽然次优，但可以作为昂贵人类演示的低成本替代方案。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261124-verifiable-on-policy-distillation-88ccc7",
+  "url": "https://arxiv.org/abs/2611.30325v1",
+  "title_en": "Verifiable On-Policy Distillation",
+  "title_zh": "可验证的在线策略蒸馏 (VOPD)",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.30325v1",
+  "published": "2026-11-23T09:04:36Z",
+  "fetched_at": "2026-11-24T05:10:55Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "distillation",
+    "verifiable-rewards",
+    "llm",
+    "reasoning"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces Verifiable On-Policy Distillation (VOPD), a method that transfers sparse verifier feedback from reinforcement learning with verifiable rewards (RLVR) into dense, verifier-grounded supervision for language model reasoning. VOPD leverages the implicit-reward view of on-policy distillation (OPD) to place teacher supervision and verifier feedback in a common reward space, then projects verifier preference onto the teacher's implicit-reward direction and Rao-Blackwellizes the signal over the full vocabulary. This propagates verifier-grounded supervision to actions that were never sampled, and the objective can be interpreted as adaptively extrapolating the distillation target based on teacher-verifier agreement. Experiments across two teacher-student configurations and eight mathematical reasoning benchmarks show that VOPD consistently improves performance.",
+  "summary_zh": "本文提出了可验证的在线策略蒸馏（VOPD），将来自可验证奖励强化学习（RLVR）的稀疏验证器反馈转化为密集的、基于验证器的监督信号，用于语言模型推理。VOPD 利用在线策略蒸馏（OPD）的隐式奖励视角，将教师监督和验证器反馈置于同一奖励空间，然后将验证器偏好投影到教师的隐式奖励方向，并对整个词汇表进行 Rao-Blackwell 化，从而将基于验证器的监督传播到从未采样的动作上。该目标还可解释为根据教师与验证器的一致性自适应地外推蒸馏目标。在两个教师-学生配置和八个数学推理基准上的实验表明，VOPD 始终能提升性能。",
+  "content_en": "Reinforcement learning with verifiable rewards (RLVR) has become a powerful approach for improving language-model reasoning, but its supervision is inherently sparse: a sequence-level verifier reward is propagated only through sampled trajectories and provides no direct signal for alternative actions. On-policy distillation (OPD) offers a complementary form of supervision by providing dense teacher feedback over the full next-token distribution, but this signal is not grounded in verified task outcomes. Simply co-optimizing the two objectives does not couple these signals: verifier feedback remains sparse and does not inform the dense teacher supervision. We introduce Verifiable On-Policy Distillation (VOPD), which transfers sparse verifier feedback into dense, verifier-grounded supervision. Our key observation is that the implicit-reward view of OPD places teacher supervision and verifier feedback in a common reward space while retaining a reward signal available for every next-token action. Under this view, VOPD projects verifier preference onto the teacher's implicit-reward direction and Rao--Blackwellizes the resulting signal over the full vocabulary, propagating verifier-grounded supervision to actions that were never sampled. The resulting objective can also be interpreted as adaptively extrapolating the distillation target according to teacher--verifier agreement. Across two teacher--student configurations and eight mathematical reasoning benchmarks, VOPD consistently",
+  "content_zh": "基于可验证奖励的强化学习（RLVR）已成为提升语言模型推理能力的有力方法，但其监督信号本质上是稀疏的：序列级的验证器奖励仅通过采样轨迹进行传播，无法为其他备选动作提供直接信号。同策略蒸馏（OPD）通过在整个下一词元分布上提供密集的教师反馈，构成了一种互补的监督形式，但该信号并不以经过验证的任务结果为依托。简单地对两个目标进行协同优化并不能将这两种信号耦合起来：验证器反馈仍然稀疏，且无法为密集的教师监督提供信息。我们提出了可验证同策略蒸馏（VOPD），它将稀疏的验证器反馈转化为密集的、以验证器为依据的监督信号。我们的关键观察是，OPD 的隐式奖励视角将教师监督与验证器反馈置于一个共同的奖励空间中，同时保留了对每个下一词元动作都可用的奖励信号。在此视角下，VOPD 将验证器偏好投影到教师的隐式奖励方向上，并对所得信号在整个词表上进行 Rao--Blackwell 化，从而将以验证器为依据的监督传播到从未被采样的动作上。由此得到的目标函数也可以被解释为根据教师与验证器的一致性对蒸馏目标进行自适应外推。在两种教师--学生配置和八个数学推理基准上，VOPD 一致地",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

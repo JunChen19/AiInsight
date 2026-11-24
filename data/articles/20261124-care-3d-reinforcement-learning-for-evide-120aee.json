@@ -1,0 +1,26 @@
+{
+  "id": "20261124-care-3d-reinforcement-learning-for-evide-120aee",
+  "url": "https://arxiv.org/abs/2611.29969v1",
+  "title_en": "CARE-3D: Reinforcement Learning for Evidence Grounded Agentic Reasoning in Situated 3D Scenes",
+  "title_zh": "CARE-3D：面向情境3D场景中证据接地智能体推理的强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.29969v1",
+  "published": "2026-11-23T03:36:02Z",
+  "fetched_at": "2026-11-24T05:11:36Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "3d-reasoning",
+    "grpo",
+    "grounding",
+    "spatial-reasoning"
+  ],
+  "image": null,
+  "summary_en": "CARE-3D is a reinforcement post-training framework for adaptive grounded reasoning in situated 3D scenes. It first uses supervised fine-tuning (SFT) on grounding instructions to establish valid interactions, then applies Group Relative Policy Optimization (GRPO) while keeping the 3D grounding module frozen. The framework introduces Counterfactual Attribution of Returned Evidence for evidence-sensitive credit assignment and Group Coverage Sampling to preserve tool coverage. Experiments on MSQA and Beacon3D show consistent gains over SFT and GRPO using only answer and format rewards, especially in spatial reasoning and grounding answer coherence.",
+  "summary_zh": "CARE-3D 是一个用于情境3D场景中自适应接地推理的强化后训练框架。它首先通过接地指令的监督微调（SFT）建立有效交互，然后应用组相对策略优化（GRPO），同时保持3D接地模块冻结。该框架引入了返回证据的反事实归因以实现证据敏感的信用分配，以及组覆盖采样以保持工具覆盖。在MSQA和Beacon3D上的实验表明，仅使用答案和格式奖励时，相比SFT和GRPO，在空间推理和接地答案连贯性方面取得了持续改进。",
+  "content_en": "Situated 3D reasoning requires embodied agents to interpret objects, scene geometry, and viewpoint dependent spatial relations. Existing methods learn grounded interactions from supervised traces, but largely imitate prescribed evidence acquisition patterns rather than optimizing the support that the returned evidence provides for the correct answer. Moreover, outcome rewards provide limited credit for intermediate tool choices and may leave infrequent tools underexplored. An effective agent should instead adaptively decide what to ground, which tool to invoke, and how to assess the utility of returned evidence. To this end, this paper presents CARE-3D, a reinforcement post-training framework for adaptive grounded reasoning. Supervised fine-tuning (SFT) on grounding instructions first establishes valid interactions, after which Group Relative Policy Optimization (GRPO) optimizes the agent while keeping the 3D grounding module frozen. CARE-3D combines Counterfactual Attribution of Returned Evidence for evidence sensitive credit assignment, and Group Coverage Sampling to preserve tool coverage. Experiments on MSQA and Beacon3D show consistent gains over SFT and GRPO using only answer and format rewards, especially in spatial reasoning and grounding answer coherence. Our code is available at \\href{https://github.com/xiaoqian-UQ/CARE-3D}{CARE-3D}.",
+  "content_zh": "具身智能体需解读物体、场景几何以及与视点相关的空间关系，方能进行情境化 3D 推理。现有方法从监督轨迹中学习有依据的交互，但很大程度上只是模仿预设的证据获取模式，而非优化所返回证据对正确答案的支撑作用。此外，结果奖励对中间工具选择的贡献有限，可能导致不常用工具探索不足。有效的智能体应当自适应地决定依据什么、调用哪个工具，以及如何评估返回证据的效用。为此，本文提出 CARE-3D，一个用于自适应有依据推理的强化后训练框架。首先在 grounding 指令上进行监督微调（SFT），以建立有效的交互，随后在保持 3D grounding 模块冻结的情况下，使用 Group Relative Policy Optimization（GRPO）优化智能体。CARE-3D 结合了返回证据的反事实归因（Counterfactual Attribution of Returned Evidence）以实现证据敏感的信用分配，以及 Group Coverage Sampling 以保持工具覆盖。在 MSQA 和 Beacon3D 上的实验表明，相较于仅使用答案和格式奖励的 SFT 与 GRPO，本方法取得了持续提升，尤其是在空间推理和 grounding 答案一致性方面。我们的代码可在 \\href{https://github.com/xiaoqian-UQ/CARE-3D}{CARE-3D} 获取。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

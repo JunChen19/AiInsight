@@ -1,0 +1,26 @@
+{
+  "id": "20261124-sparse-hodge-preference-optimization-fin-e50f83",
+  "url": "https://arxiv.org/abs/2611.30135v1",
+  "title_en": "Sparse Hodge Preference Optimization: Fine-Tuning Language Models toward Alignment beyond Transitive Preferences",
+  "title_zh": "稀疏Hodge偏好优化：面向超越传递性偏好的语言模型微调",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.30135v1",
+  "published": "2026-11-23T06:44:15Z",
+  "fetched_at": "2026-11-24T05:11:31Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "preference-optimization",
+    "dpo",
+    "hodge-decomposition",
+    "llm-alignment",
+    "fine-tuning"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes Sparse Hodge Preference Optimization (SHPO), an extension of Direct Preference Optimization (DPO) that incorporates a sparse antisymmetric curl residual inspired by combinatorial Hodge decomposition. SHPO addresses DPO's inability to capture intransitivity or cyclic structures in human preference data due to its reliance on the Bradley-Terry model. The authors prove that SHPO strictly enlarges DPO's hypothesis class on comparison graphs containing at least one triangle, and provide a theoretical guarantee for l1-regularized estimation of curl coefficients. Qualitative studies on three preference datasets under the same QLoRA budget show that SHPO-aligned LLMs achieve satisfactory performance in preference accuracy, cyclic structure recovery, and GPT-4o-judged generation quality.",
+  "summary_zh": "本文提出稀疏Hodge偏好优化（SHPO），在直接偏好优化（DPO）基础上引入受组合Hodge分解启发的稀疏反对称旋度残差，以解决DPO因依赖Bradley-Terry模型而无法有效捕捉人类偏好数据中非传递性或循环结构的问题。作者证明，在响应表示满足一定正则条件下，SHPO在包含至少一个三角形的比较图上严格扩大了DPO的假设类，并为固定策略和表示下旋度系数的l1正则化估计提供了理论保证。在相同QLoRA预算下，对三个偏好数据集的定性研究表明，SHPO对齐的大语言模型在偏好准确率、循环结构恢复以及GPT-4o评判的生成质量上均取得满意表现。",
+  "content_en": "The growing adoption of Direct Preference Optimization (DPO), which leverages pairwise preference data, reflects its great success in fine-tuning large language models to align with human expectations. It directly optimizes the policy from human preferences without explicit reward modeling or the complexities of reinforcement learning-based approaches. However, the classic DPO relies on the Bradley--Terry sampling model and cannot effectively capture intransitivity or cyclic structures in aggregated human preference data. In this article, we propose Sparse Hodge Preference Optimization (SHPO), a preference optimization algorithm that augments DPO with a sparse antisymmetric curl residual motivated by the combinatorial Hodge decomposition. We prove that SHPO strictly enlarges DPO's hypothesis class on comparison graphs containing at least one triangle, under some mild regularity conditions on the response representations. We further establish a theoretical guarantee for $\\ell_1$-regularized estimation of the curl coefficients under fixed policy and representations. Qualitative studies on three preference datasets under the same QLoRA budget, SHPO-aligned LLM achieves satisfactory performances in preference accuracy, cyclic structure recovery, and GPT-4o-judged generation quality.",
+  "content_zh": "直接偏好优化（Direct Preference Optimization, DPO）利用成对偏好数据，其日益广泛的应用反映出它在微调大语言模型以对齐人类期望方面取得了巨大成功。它直接从人类偏好中优化策略，无需显式的奖励建模，也避免了基于强化学习的方法的复杂性。然而，经典 DPO 依赖于 Bradley--Terry 采样模型，无法有效捕捉聚合人类偏好数据中的非传递性或循环结构。本文提出稀疏 Hodge 偏好优化（Sparse Hodge Preference Optimization, SHPO），一种受组合 Hodge 分解启发、在 DPO 基础上引入稀疏反对称旋度残差的偏好优化算法。我们证明，在响应表示满足若干温和正则性条件下，SHPO 在包含至少一个三角形的比较图上严格扩大了 DPO 的假设类。我们进一步在固定策略和表示下，为旋度系数的 $\\ell_1$ 正则化估计建立了理论保证。在相同 QLoRA 预算下对三个偏好数据集的定性研究表明，SHPO 对齐的大语言模型在偏好准确率、循环结构恢复以及 GPT-4o 评判的生成质量方面均取得了令人满意的表现。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

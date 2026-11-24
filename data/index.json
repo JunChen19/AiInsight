@@ -1,5 +1,181 @@
 [
   {
+    "id": "20261124-z-ai-releases-glm-5-4-a-750b-loop-transf-3f7381",
+    "url": "https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/",
+    "title_en": "Z AI Releases GLM-5.4: A 750B Loop Transformer That Runs 28 Layers Twice",
+    "title_zh": "Z.ai 发布 GLM-5.4：750B 循环 Transformer，28 层运行两次",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-23T19:11:40Z",
+    "fetched_at": "2026-11-24T05:11:10Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "loop-transformer",
+      "model-release",
+      "llm",
+      "benchmark",
+      "z-ai"
+    ],
+    "image": "images/20261124-z-ai-releases-glm-5-4-a-750b-loop-transf-3f7381.jpg",
+    "summary_en": "Z.ai released GLM-5.4, a 750B-scale Loop Transformer that runs 28 shared GLM-5 layers for 2 iterations, adapted from the pre-trained GLM-5 base via continued training. Key innovations include gated progressive updates, hybrid KV cache (second loop reuses sparse KV from pass 1 and keeps new KV only in a sliding window), and sparse attention index reuse. A 30B iso-parameter ablation showed gains of +11.3 on AIME25, +8.7 on GPQA-Diamond, +7.3 on AA-LCR, +3.4 on MMLU-Pro, and +3.3 on IFBench, with ~10% more training compute and shorter outputs on most tasks. No flagship benchmark scores, public API, or weights are available yet; access is via Z.ai's Coding Plan, ZCode, and Z.ai Chat.",
+    "summary_zh": "Z.ai 发布了 GLM-5.4，一个 750B 规模的循环 Transformer（Loop Transformer），将 28 个共享的 GLM-5 层运行 2 次，基于预训练的 GLM-5 基座通过继续训练适配而成。关键技术包括门控渐进更新、混合 KV 缓存（第二次循环复用第一次的稀疏 KV，新 KV 仅保留在滑动窗口内）以及稀疏注意力索引复用。30B 等参数消融实验显示：AIME25 提升 11.3 分、GPQA-Diamond 提升 8.7 分、AA-LCR 提升 7.3 分、MMLU-Pro 提升 3.4 分、IFBench 提升 3.3 分，训练计算量增加约 10%，多数任务输出长度缩短。目前尚无旗舰基准分数、公开 API 或模型权重；可通过 Z.ai 的 Coding Plan、ZCode 和 Z.ai Chat 使用。",
+    "norm_url": "https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer"
+  },
+  {
+    "id": "20261124-verifiable-on-policy-distillation-88ccc7",
+    "url": "https://arxiv.org/abs/2611.30325v1",
+    "title_en": "Verifiable On-Policy Distillation",
+    "title_zh": "可验证的在线策略蒸馏 (VOPD)",
+    "source_name": "arXiv",
+    "published": "2026-11-23T09:04:36Z",
+    "fetched_at": "2026-11-24T05:10:55Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "distillation",
+      "verifiable-rewards",
+      "llm",
+      "reasoning"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces Verifiable On-Policy Distillation (VOPD), a method that transfers sparse verifier feedback from reinforcement learning with verifiable rewards (RLVR) into dense, verifier-grounded supervision for language model reasoning. VOPD leverages the implicit-reward view of on-policy distillation (OPD) to place teacher supervision and verifier feedback in a common reward space, then projects verifier preference onto the teacher's implicit-reward direction and Rao-Blackwellizes the signal over the full vocabulary. This propagates verifier-grounded supervision to actions that were never sampled, and the objective can be interpreted as adaptively extrapolating the distillation target based on teacher-verifier agreement. Experiments across two teacher-student configurations and eight mathematical reasoning benchmarks show that VOPD consistently improves performance.",
+    "summary_zh": "本文提出了可验证的在线策略蒸馏（VOPD），将来自可验证奖励强化学习（RLVR）的稀疏验证器反馈转化为密集的、基于验证器的监督信号，用于语言模型推理。VOPD 利用在线策略蒸馏（OPD）的隐式奖励视角，将教师监督和验证器反馈置于同一奖励空间，然后将验证器偏好投影到教师的隐式奖励方向，并对整个词汇表进行 Rao-Blackwell 化，从而将基于验证器的监督传播到从未采样的动作上。该目标还可解释为根据教师与验证器的一致性自适应地外推蒸馏目标。在两个教师-学生配置和八个数学推理基准上的实验表明，VOPD 始终能提升性能。",
+    "norm_url": "https://arxiv.org/abs/2611.30325v1"
+  },
+  {
+    "id": "20261124-what-makes-good-data-for-training-coding-9df10e",
+    "url": "https://arxiv.org/abs/2611.30207v1",
+    "title_en": "What Makes Good Data for Training Coding Agents? A Systematic Study on SWE-Gym",
+    "title_zh": "什么才是训练编码代理的好数据？基于 SWE-Gym 的系统性研究",
+    "source_name": "arXiv",
+    "published": "2026-11-23T07:45:13Z",
+    "fetched_at": "2026-11-24T05:11:16Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "coding-agents",
+      "data-quality",
+      "reward-labeling",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "This study investigates what makes a good training task for coding agents in reinforcement learning, focusing on the correctness of reward labels. Auditing SWE-Gym with two LLM families and execution-based verification, the authors find that 74% of tasks a 9B base model never solves have false-negative tests that reject correct fixes, versus 20% for sometimes-solved tasks. Repairing or removing these mislabeled tasks yields policies that score 2.4 and 2.7 points higher on SWE-bench Verified and SWE-bench Pro held-out tasks at equal size and matched difficulty, while simply dropping never-solved tasks shows no gain. They also find false positives constitute about a quarter of passing patches, and new tests catching a quarter of them do not detectably change held-out scores. The authors release SWE-Gym-Verified with 1,087 audited tasks, verdicts with executed evidence, training sets, and the audit pipeline.",
+    "summary_zh": "本研究探讨了强化学习训练编码代理时，什么样的任务才是好的训练数据，重点关注奖励标签的正确性。作者使用两个LLM系列对SWE-Gym进行审计，并通过执行验证确认错误。他们发现，9B基础模型从未解决的任务中，74%存在拒绝正确修复的假阴性测试，而有时解决的任务中这一比例为20%。修复或移除这些错误标记的任务后，在相同规模和匹配难度下，训练出的策略在SWE-bench Verified和SWE-bench Pro的留出任务上分别高出2.4和2.7分，而仅丢弃从未解决的任务则没有这种提升。他们还发现，假阳性约占所有通过补丁的四分之一，而能捕获其中四分之一的新测试并未显著改变留出分数。作者发布了包含1,087个审计任务的SWE-Gym-Verified、带有执行证据的判定、训练集以及完整的审计流程。",
+    "norm_url": "https://arxiv.org/abs/2611.30207v1"
+  },
+  {
+    "id": "20261124-sparse-hodge-preference-optimization-fin-e50f83",
+    "url": "https://arxiv.org/abs/2611.30135v1",
+    "title_en": "Sparse Hodge Preference Optimization: Fine-Tuning Language Models toward Alignment beyond Transitive Preferences",
+    "title_zh": "稀疏Hodge偏好优化：面向超越传递性偏好的语言模型微调",
+    "source_name": "arXiv",
+    "published": "2026-11-23T06:44:15Z",
+    "fetched_at": "2026-11-24T05:11:31Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "preference-optimization",
+      "dpo",
+      "hodge-decomposition",
+      "llm-alignment",
+      "fine-tuning"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes Sparse Hodge Preference Optimization (SHPO), an extension of Direct Preference Optimization (DPO) that incorporates a sparse antisymmetric curl residual inspired by combinatorial Hodge decomposition. SHPO addresses DPO's inability to capture intransitivity or cyclic structures in human preference data due to its reliance on the Bradley-Terry model. The authors prove that SHPO strictly enlarges DPO's hypothesis class on comparison graphs containing at least one triangle, and provide a theoretical guarantee for l1-regularized estimation of curl coefficients. Qualitative studies on three preference datasets under the same QLoRA budget show that SHPO-aligned LLMs achieve satisfactory performance in preference accuracy, cyclic structure recovery, and GPT-4o-judged generation quality.",
+    "summary_zh": "本文提出稀疏Hodge偏好优化（SHPO），在直接偏好优化（DPO）基础上引入受组合Hodge分解启发的稀疏反对称旋度残差，以解决DPO因依赖Bradley-Terry模型而无法有效捕捉人类偏好数据中非传递性或循环结构的问题。作者证明，在响应表示满足一定正则条件下，SHPO在包含至少一个三角形的比较图上严格扩大了DPO的假设类，并为固定策略和表示下旋度系数的l1正则化估计提供了理论保证。在相同QLoRA预算下，对三个偏好数据集的定性研究表明，SHPO对齐的大语言模型在偏好准确率、循环结构恢复以及GPT-4o评判的生成质量上均取得满意表现。",
+    "norm_url": "https://arxiv.org/abs/2611.30135v1"
+  },
+  {
+    "id": "20261124-care-3d-reinforcement-learning-for-evide-120aee",
+    "url": "https://arxiv.org/abs/2611.29969v1",
+    "title_en": "CARE-3D: Reinforcement Learning for Evidence Grounded Agentic Reasoning in Situated 3D Scenes",
+    "title_zh": "CARE-3D：面向情境3D场景中证据接地智能体推理的强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-23T03:36:02Z",
+    "fetched_at": "2026-11-24T05:11:36Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "3d-reasoning",
+      "grpo",
+      "grounding",
+      "spatial-reasoning"
+    ],
+    "image": null,
+    "summary_en": "CARE-3D is a reinforcement post-training framework for adaptive grounded reasoning in situated 3D scenes. It first uses supervised fine-tuning (SFT) on grounding instructions to establish valid interactions, then applies Group Relative Policy Optimization (GRPO) while keeping the 3D grounding module frozen. The framework introduces Counterfactual Attribution of Returned Evidence for evidence-sensitive credit assignment and Group Coverage Sampling to preserve tool coverage. Experiments on MSQA and Beacon3D show consistent gains over SFT and GRPO using only answer and format rewards, especially in spatial reasoning and grounding answer coherence.",
+    "summary_zh": "CARE-3D 是一个用于情境3D场景中自适应接地推理的强化后训练框架。它首先通过接地指令的监督微调（SFT）建立有效交互，然后应用组相对策略优化（GRPO），同时保持3D接地模块冻结。该框架引入了返回证据的反事实归因以实现证据敏感的信用分配，以及组覆盖采样以保持工具覆盖。在MSQA和Beacon3D上的实验表明，仅使用答案和格式奖励时，相比SFT和GRPO，在空间推理和接地答案连贯性方面取得了持续改进。",
+    "norm_url": "https://arxiv.org/abs/2611.29969v1"
+  },
+  {
+    "id": "20261124-saepo-sparse-autoencoder-guided-credit-a-a3c552",
+    "url": "https://arxiv.org/abs/2611.29936v1",
+    "title_en": "SAEPO: Sparse-Autoencoder-Guided Credit Assignment for Policy Optimization",
+    "title_zh": "SAEPO：稀疏自编码器引导的策略优化信用分配",
+    "source_name": "arXiv",
+    "published": "2026-11-23T02:54:19Z",
+    "fetched_at": "2026-11-24T05:10:49Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "credit-assignment",
+      "sparse-autoencoder",
+      "policy-optimization",
+      "llm"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces SAEPO, a Sparse AutoEncoder (SAE)-guided token-level credit assignment method for outcome-supervised Policy Optimization in RLVR. Instead of using only sequence-level correctness signals, SAEPO leverages a pretrained SAE to build token-level semantic representations within reasoning trajectories and scores each token based on SAE concepts (e.g., penalizing wrong final-answer tokens while rewarding correct reasoning-process tokens) learned unsupervised, enabling fine-grained credit assignment. SAEPO is a plug-in advantage-shaping module compatible with various policy optimization algorithms, instantiated with GRPO and GSPO to cover token-ratio and sequence-ratio policy-gradient objectives. Evaluated across three LLM backbones on six math and two code benchmarks, SAEPO improves both math and code benchmark averages over matched baselines.",
+    "summary_zh": "本文提出 SAEPO，一种面向结果监督策略优化的稀疏自编码器（SAE）引导的 token 级信用分配方法，用于强化学习可验证奖励（RLVR）场景。SAEPO 不再仅将正确性视为序列级信号，而是利用预训练 SAE 在推理轨迹中构建 token 级语义表示，并基于无监督学习得到的 SAE 概念为每个 token 打分（例如惩罚错误的“最终答案”token、奖励正确的“推理过程”token），从而实现细粒度信用分配。SAEPO 是一个即插即用的优势塑形模块，兼容多种策略优化算法，作者将其与 GRPO 和 GSPO 结合，覆盖 token 比率与序列比率的策略梯度目标。在三个 LLM 主干模型、六个数学和两个代码基准上的实验表明，SAEPO 在数学与代码基准平均值上均优于对应基线。",
+    "norm_url": "https://arxiv.org/abs/2611.29936v1"
+  },
+  {
+    "id": "20261124-into-my-arms-structured-reinforcement-le-8e8ead",
+    "url": "https://arxiv.org/abs/2611.29771v1",
+    "title_en": "Into My Arms: Structured reinforcement learning for autonomous transport of objects and humans",
+    "title_zh": "Into My Arms：用于自主搬运物体和人类的结构化强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-22T21:03:09Z",
+    "fetched_at": "2026-11-24T05:11:26Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "humanoid-robotics",
+      "manipulation",
+      "transport",
+      "structured-rl"
+    ],
+    "image": null,
+    "summary_en": "The paper addresses the trilemma of high-dimensional state-action spaces, contact-rich environments, and long task horizons in whole-body humanoid manipulation with three structured RL contributions: Sparse Interaction Edges (SIE) for whole-body manipulation, Interaction Gated Transport (IGT) for sustained transport over long horizons, and a Hinted Object Path (HOP) to resolve collision and search complexity bottlenecks. The policy remains free to discover its own manipulation strategy. The method generalizes from rigid object to human transport, demonstrating the first bed-to-wheelchair transfer of a medical mannequin by a humanoid robot with no human intervention during execution. For human transfer, a single policy adapts across variations in body mass, size, and random force perturbations, training on a single GPU in under an hour.",
+    "summary_zh": "本文针对全身人形机器人操作中高维状态-动作空间、富接触环境和长任务视野的三难问题，提出三种结构化强化学习（RL）贡献：用于全身操作的稀疏交互边（SIE）、用于长视野持续运输的交互门控运输（IGT），以及解决碰撞和搜索复杂度瓶颈的提示物体路径（HOP）。策略仍可自由发现自身的操作策略。该方法从刚性物体泛化到人体运输，首次展示了人形机器人在执行过程中无人工干预的情况下完成医疗假人的床到轮椅转移。在人体转移方面，单一策略可适应体重、体型和随机力扰动的显著变化，且在单块GPU上训练不到一小时。",
+    "norm_url": "https://arxiv.org/abs/2611.29771v1"
+  },
+  {
+    "id": "20261124-reinforcement-learning-from-llm-generate-4cda92",
+    "url": "https://arxiv.org/abs/2611.29732v1",
+    "title_en": "Reinforcement Learning from LLM-Generated (Suboptimal) Demonstrations",
+    "title_zh": "基于LLM生成（次优）演示的强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-22T19:56:10Z",
+    "fetched_at": "2026-11-24T05:11:20Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "llm",
+      "demonstrations",
+      "warmstart",
+      "dqn"
+    ],
+    "image": null,
+    "summary_en": "This work uses a large language model (LLM) to generate an advice policy that produces demonstration data at no human cost, which is used to warmstart a DQN agent and guide exploration during training. Because LLM-generated advice is often suboptimal, the authors introduce a value warmstart method that initializes the agent to recognize promising states from the advice policy's behavior without directly copying its actions. They systematically perturb individual sub-skills of an LLM-generated advice policy for a long-horizon, sparse-reward task. Results show that even degraded advice meaningfully accelerates learning relative to unaided baselines, suggesting LLM-generated advice can be a cheap alternative to costly human demonstrations.",
+    "summary_zh": "本文利用大语言模型（LLM）生成建议策略，以零人力成本产生演示数据，用于热启动DQN智能体并在训练中引导探索。由于LLM生成的建议往往次优，作者引入价值热启动方法，使智能体从建议策略的行为中识别有希望的状态，而不直接复制其动作。他们在长时程、稀疏奖励任务中系统性地扰动LLM建议策略的各个子技能。结果表明，即使建议质量下降，也能相对无辅助基线显著加速学习，表明LLM生成的建议可作为昂贵人类演示的廉价替代。",
+    "norm_url": "https://arxiv.org/abs/2611.29732v1"
+  },
+  {
     "id": "20261123-nvidia-releases-alpamayo-2-edge-a-2b-rea-efe2c4",
     "url": "https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor/",
     "title_en": "NVIDIA Releases Alpamayo 2 Edge: A 2B Reasoning VLA for DRIVE Thor",
@@ -20,6 +196,28 @@
     "summary_en": "NVIDIA released Alpamayo 2 Edge, a 2B-parameter reasoning vision-language-action (VLA) model for autonomous driving that runs on NVIDIA DRIVE AGX Thor. It uses a 2.45B backbone (1.96B language model + 0.41B SigLIP2 encoder) plus a 0.2B diffusion action expert, and outputs a 6.4-second trajectory (64 waypoints) with adaptive Chain-of-Causation reasoning via <NOMINAL> tokens. With the FP8 + TensorRT Edge-LLM recipe, it achieves 160-190 ms pixel-to-trajectory latency on Thor. In AlpaSim closed-loop driving, it covers 15.15 km per at-fault incident, about 60x Qwen-Drive-1.0 4B (0.25 km), but scores lower on LingoQA (75.2 vs 79.2 for Alpamayo 2 Super).",
     "summary_zh": "NVIDIA 发布了 Alpamayo 2 Edge，一个面向自动驾驶的 2B 参数推理视觉-语言-动作（VLA）模型，可在 NVIDIA DRIVE AGX Thor 上运行。它采用 2.45B 主干（1.96B 语言模型 + 0.41B SigLIP2 编码器）加 0.2B 扩散动作专家，输出 6.4 秒轨迹（64 个路点），并通过 <NOMINAL> token 实现自适应因果链推理。借助 FP8 + TensorRT Edge-LLM 方案，在 Thor 上实现 160-190 毫秒的像素到轨迹延迟。在 AlpaSim 闭环驾驶中，每起责任事故行驶 15.15 公里，约为 Qwen-Drive-1.0 4B（0.25 公里）的 60 倍，但 LingoQA 得分较低（75.2，Alpamayo 2 Super 为 79.2）。",
     "norm_url": "https://www.marktechpost.com/2026/11/22/nvidia-alpamayo-2-edge-2b-reasoning-vla-drive-thor"
+  },
+  {
+    "id": "20261124-jko-grpo-augmenting-grpo-with-wasserstei-5c0d9d",
+    "url": "https://arxiv.org/abs/2611.29646v1",
+    "title_en": "JKO-GRPO: Augmenting GRPO with Wasserstein Proximal Steps for Flow-Matching VLAs",
+    "title_zh": "JKO-GRPO：用Wasserstein近端步骤增强GRPO以优化流匹配VLA",
+    "source_name": "arXiv",
+    "published": "2026-11-22T17:49:43Z",
+    "fetched_at": "2026-11-24T05:10:44Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "flow-matching",
+      "vision-language-action",
+      "wasserstein-proximal",
+      "policy-optimization"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes JKO-GRPO, which augments Flow-GRPO with Wasserstein proximal steps for flow-matching vision-language-action (VLA) models like π0 and π0.5. At each state, the group of sampled actions is treated as an empirical distribution, and policy improvement is formulated as a Jordan-Kinderlehrer-Otto (JKO) step. A soft discrete c-transform constructs transport targets from group-relative advantages, combined with shared-noise regression of the deterministic flow sampler and the clipped Flow-GRPO objective without KL regularization. The method is extended to sequential VLA control via random-time branching, selecting action-chunk indices along old-policy trajectories and applying group-level JKO updates using candidate continuations.",
+    "summary_zh": "本文提出JKO-GRPO，通过Wasserstein近端步骤增强Flow-GRPO，用于流匹配视觉-语言-动作（VLA）模型（如π0、π0.5）。在每个状态，将采样的动作组视为经验分布，并将策略改进建模为Jordan-Kinderlehrer-Otto（JKO）步骤。利用软离散c变换从组相对优势构建传输目标，结合确定性流采样器的共享噪声回归，并与无KL正则化的裁剪Flow-GRPO目标结合。该方法通过随机时间分支扩展到序列VLA控制：沿旧策略轨迹选择一个或多个动作块索引，并利用对应状态的候选延续独立应用组级JKO更新。",
+    "norm_url": "https://arxiv.org/abs/2611.29646v1"
   },
   {
     "id": "20261123-google-ai-previews-tool-retrieval-in-the-98fbde",

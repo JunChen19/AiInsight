@@ -1,0 +1,26 @@
+{
+  "id": "20261124-saepo-sparse-autoencoder-guided-credit-a-a3c552",
+  "url": "https://arxiv.org/abs/2611.29936v1",
+  "title_en": "SAEPO: Sparse-Autoencoder-Guided Credit Assignment for Policy Optimization",
+  "title_zh": "SAEPO：稀疏自编码器引导的策略优化信用分配",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.29936v1",
+  "published": "2026-11-23T02:54:19Z",
+  "fetched_at": "2026-11-24T05:10:49Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "credit-assignment",
+    "sparse-autoencoder",
+    "policy-optimization",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces SAEPO, a Sparse AutoEncoder (SAE)-guided token-level credit assignment method for outcome-supervised Policy Optimization in RLVR. Instead of using only sequence-level correctness signals, SAEPO leverages a pretrained SAE to build token-level semantic representations within reasoning trajectories and scores each token based on SAE concepts (e.g., penalizing wrong final-answer tokens while rewarding correct reasoning-process tokens) learned unsupervised, enabling fine-grained credit assignment. SAEPO is a plug-in advantage-shaping module compatible with various policy optimization algorithms, instantiated with GRPO and GSPO to cover token-ratio and sequence-ratio policy-gradient objectives. Evaluated across three LLM backbones on six math and two code benchmarks, SAEPO improves both math and code benchmark averages over matched baselines.",
+  "summary_zh": "本文提出 SAEPO，一种面向结果监督策略优化的稀疏自编码器（SAE）引导的 token 级信用分配方法，用于强化学习可验证奖励（RLVR）场景。SAEPO 不再仅将正确性视为序列级信号，而是利用预训练 SAE 在推理轨迹中构建 token 级语义表示，并基于无监督学习得到的 SAE 概念为每个 token 打分（例如惩罚错误的“最终答案”token、奖励正确的“推理过程”token），从而实现细粒度信用分配。SAEPO 是一个即插即用的优势塑形模块，兼容多种策略优化算法，作者将其与 GRPO 和 GSPO 结合，覆盖 token 比率与序列比率的策略梯度目标。在三个 LLM 主干模型、六个数学和两个代码基准上的实验表明，SAEPO 在数学与代码基准平均值上均优于对应基线。",
+  "content_en": "Reinforcement Learning with Verifiable Rewards (RLVR) has demonstrated strong performance in improving large language model (LLM) reasoning, yet its credit-assignment signal remains coarse. Outcome verifiers provide scalable supervision by judging whether a completed response is correct, but they do not directly indicate which intermediate reasoning tokens contribute to success or failure. As a result, policy optimization can be inefficient, especially when training base models directly from sparse outcome feedback. In this paper, we introduce SAEPO, a Sparse AutoEncoder-guided token-level credit assignment method for outcome-supervised Policy Optimization. Rather than treating correctness only as a rollout-level (sequence-level) signal, SAEPO uses a pretrained sparse autoencoder (SAE) to build token-level semantic representations within reasoning trajectories; it scores each token based on the SAE concepts (e.g., penalizing wrong \"final-answer\" tokens but rewarding correct \"reasoning-process\" tokens), learned in an unsupervised manner, to achieve fine-grained credit assignment. SAEPO is a plug-in advantage-shaping module compatible with various policy optimization algorithms. We instantiate SAEPO with both GRPO and GSPO, covering token-ratio and sequence-ratio policy-gradient objectives, and evaluate SAEPO across three LLM backbones on six math and two code benchmarks. Empirical results show that SAEPO improves both the math and code benchmark averages over the matched basel",
+  "content_zh": "基于可验证奖励的强化学习（RLVR）在提升大语言模型（LLM）推理能力方面已展现出强劲性能，但其信用分配信号仍然较为粗糙。结果验证器通过判断完整回答是否正确来提供可扩展的监督，但它们并不直接指示哪些中间推理 token 对成功或失败有所贡献。因此，策略优化可能效率低下，尤其是在仅从稀疏结果反馈直接训练基础模型时。本文提出 SAEPO，一种由稀疏自编码器引导的 token 级信用分配方法，用于结果监督的策略优化。SAEPO 并非仅将正确性视为 rollout 级（序列级）信号，而是使用预训练的稀疏自编码器（SAE）在推理轨迹中构建 token 级语义表示；它基于以无监督方式学习到的 SAE 概念对每个 token 进行评分（例如，惩罚错误的“最终答案”token，但奖励正确的“推理过程”token），以实现细粒度的信用分配。SAEPO 是一个即插即用的优势塑造模块，可与多种策略优化算法兼容。我们分别以 GRPO 和 GSPO 实例化 SAEPO，覆盖 token 比率和序列比率的策略梯度目标，并在六个数学基准和两个代码基准上对三个 LLM 主干模型评估 SAEPO。实证结果表明，相较于匹配的基线，SAEPO 提升了数学和代码基准的平均表现",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

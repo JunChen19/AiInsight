@@ -1,0 +1,26 @@
+{
+  "id": "20261124-what-makes-good-data-for-training-coding-9df10e",
+  "url": "https://arxiv.org/abs/2611.30207v1",
+  "title_en": "What Makes Good Data for Training Coding Agents? A Systematic Study on SWE-Gym",
+  "title_zh": "什么才是训练编码代理的好数据？基于 SWE-Gym 的系统性研究",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.30207v1",
+  "published": "2026-11-23T07:45:13Z",
+  "fetched_at": "2026-11-24T05:11:16Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "coding-agents",
+    "data-quality",
+    "reward-labeling",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "This study investigates what makes a good training task for coding agents in reinforcement learning, focusing on the correctness of reward labels. Auditing SWE-Gym with two LLM families and execution-based verification, the authors find that 74% of tasks a 9B base model never solves have false-negative tests that reject correct fixes, versus 20% for sometimes-solved tasks. Repairing or removing these mislabeled tasks yields policies that score 2.4 and 2.7 points higher on SWE-bench Verified and SWE-bench Pro held-out tasks at equal size and matched difficulty, while simply dropping never-solved tasks shows no gain. They also find false positives constitute about a quarter of passing patches, and new tests catching a quarter of them do not detectably change held-out scores. The authors release SWE-Gym-Verified with 1,087 audited tasks, verdicts with executed evidence, training sets, and the audit pipeline.",
+  "summary_zh": "本研究探讨了强化学习训练编码代理时，什么样的任务才是好的训练数据，重点关注奖励标签的正确性。作者使用两个LLM系列对SWE-Gym进行审计，并通过执行验证确认错误。他们发现，9B基础模型从未解决的任务中，74%存在拒绝正确修复的假阴性测试，而有时解决的任务中这一比例为20%。修复或移除这些错误标记的任务后，在相同规模和匹配难度下，训练出的策略在SWE-bench Verified和SWE-bench Pro的留出任务上分别高出2.4和2.7分，而仅丢弃从未解决的任务则没有这种提升。他们还发现，假阳性约占所有通过补丁的四分之一，而能捕获其中四分之一的新测试并未显著改变留出分数。作者发布了包含1,087个审计任务的SWE-Gym-Verified、带有执行证据的判定、训练集以及完整的审计流程。",
+  "content_en": "Reinforcement learning (RL) trains coding agents on software tasks whose hidden tests decide the reward, yet task collections check these tests only against the reference fix. We ask what makes a task good training data, focusing on the correctness of its reward labels. We audit SWE-Gym with two LLM families, and a suspected error counts only if execution reproduces it. We find that unsolved often means mislabelled: 74% of the tasks that a 9B base model never solves have a test that rejects correct fixes (a false negative), versus 20% of those it sometimes solves. We repair or remove such tasks, and the audited tasks that remain train better policies. At equal size and matched difficulty, models trained on them score 2.4 and 2.7 points higher on held-out tasks from SWE-bench Verified and SWE-bench Pro than models trained on the original tasks, whereas simply dropping the never-solved tasks shows no such gain. We further find that wrong patches that pass (false positives) make up about a quarter of all passing patches, and that new tests that catch a quarter of them do not change held-out scores detectably. A pass rate shows whether a task yields reward, not whether that reward is right, so the reward labels themselves must be checked. To this end, we release SWE-Gym-Verified with its 1,087 audited tasks, every verdict with its executed evidence, our training sets, and the full audit pipeline.",
+  "content_zh": "强化学习（RL）在软件任务上训练编码智能体，这些任务的隐藏测试决定奖励，然而任务集合仅用参考修复来校验这些测试。我们探究是什么使一个任务成为好的训练数据，重点关注其奖励标签的正确性。我们用两个 LLM 系列审计 SWE-Gym，只有当执行能够复现某个疑似错误时，该错误才被计入。我们发现，未解决往往意味着被错误标注：一个 9B 基础模型从未解决的任务中，有 74% 存在拒绝正确修复的测试（假阴性），而在它有时能解决的任务中这一比例为 20%。我们修复或移除这类任务，保留下来的经审计任务能训练出更好的策略。在同等规模和匹配难度下，用这些任务训练的模型在 SWE-bench Verified 和 SWE-bench Pro 的留出任务上，比用原始任务训练的模型分别高 2.4 分和 2.7 分，而仅仅丢弃从未解决的任务则没有这样的增益。我们进一步发现，通过测试的错误补丁（假阳性）约占所有通过补丁的四分之一，而能捕获其中四分之一的新测试并未可察觉地改变留出分数。通过率表明一个任务是否产生奖励，而非该奖励是否正确，因此奖励标签本身必须被检查。为此，我们发布 SWE-Gym-Verified，包含其 1,087 个经审计任务、每个判定及其执行证据、我们的训练集，以及完整的审计流水线。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
