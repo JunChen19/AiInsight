@@ -1,0 +1,26 @@
+{
+  "id": "20261125-to-critic-or-not-to-critic-1855a8",
+  "url": "https://arxiv.org/abs/2611.32013v1",
+  "title_en": "To Critic Or Not To Critic",
+  "title_zh": "To Critic Or Not To Critic：PPO与GRPO的偏差-方差权衡",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.32013v1",
+  "published": "2026-11-24T05:58:02Z",
+  "fetched_at": "2026-11-25T03:59:01Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "ppo",
+    "grpo",
+    "bias-variance",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "The paper investigates when a critic improves reinforcement learning efficiency for large language models, comparing PPO (with a critic) and GRPO (without a critic). It analyzes the bias-variance tradeoff by measuring gradient alignment with the true policy gradient as batch size grows. Across over 1,200 training runs (including 96 with LLMs) in control tasks, short-horizon math, and long-horizon terminal agents, PPO leads at small batch sizes, while GRPO overtakes heavily bootstrapped PPO and reaches parity with lightly bootstrapped PPO at larger batches. At longer horizons and in more complex domains, GRPO requires larger batches to match PPO, and critics are beneficial at small compute budgets but their returns diminish at larger budgets.",
+  "summary_zh": "本文研究了在大型语言模型处理长时复杂任务时，批评家（critic）何时能提升强化学习效率，对比了带批评家的PPO与无批评家的GRPO。通过测量梯度方向与真实策略梯度的对齐程度，分析了批次大小增长下的偏差-方差权衡。在超过1200次训练运行（包括96次LLM实验）中，涵盖控制任务、短时程数学和长时程终端智能体，发现PPO在小批次下通常领先，而GRPO在较大批次下常超越重度自举的PPO并与轻度自举的PPO持平。在更长时程和更复杂领域，GRPO需要更大批次才能赶上PPO；考虑训练计算量，批评家在小预算下有益，但收益随预算增大而递减。",
+  "content_en": "As large language models tackle longer and more complex tasks, understanding when a critic improves the efficiency of reinforcement learning (RL) becomes increasingly important. Proximal Policy Optimization (PPO) trains a critic to reduce variance and provide fine-grained credit assignment, while Group Relative Policy Optimization (GRPO) drops the critic and avoids the bias of bootstrapping from the critic's value estimates. Although recent critic-based methods have reported strong performance relative to GRPO, it remains unclear when each approach is preferable. We argue that there is no universal answer; instead, the choice depends on several interacting factors, including batch size, critic reliance, and task complexity. We study the bias-variance tradeoff in terms of gradient direction, measuring how closely each method's gradient estimates align with the true policy gradient as batch size grows. Under a shared actor objective, we compare GRPO with PPO in control tasks, short-horizon math, and long-horizon terminal agents. Across more than 1,200 training runs, including 96 with LLMs, we find that PPO generally leads at small batch sizes, while GRPO often overtakes heavily bootstrapped PPO and reaches parity with lightly bootstrapped PPO at larger batches. At longer horizons and in more complex domains, GRPO needs larger batches to catch up to PPO's performance. Accounting for training compute, critics pay off at small budgets, but their returns diminish at larger budgets.",
+  "content_zh": "随着大语言模型处理更长、更复杂的任务，理解评判器（critic）何时能提升强化学习（RL）的效率变得愈发重要。近端策略优化（PPO）训练一个评判器来降低方差并提供细粒度的信用分配，而组相对策略优化（GRPO）则舍弃评判器，避免从评判器的价值估计中进行自举所带来的偏差。尽管近期基于评判器的方法相较于 GRPO 报告了强劲的性能，但每种方法何时更可取仍不明确。我们认为不存在普适的答案；相反，这一选择取决于若干相互作用的因素，包括批量大小、对评判器的依赖程度以及任务复杂度。我们从梯度方向的角度研究偏差-方差权衡，衡量随着批量增大，每种方法的梯度估计与真实策略梯度的接近程度。在共享演员（actor）目标的前提下，我们在控制任务、短时程数学任务和长时程终端智能体任务中比较了 GRPO 与 PPO。在超过 1,200 次训练运行（其中 96 次使用 LLM）中，我们发现 PPO 通常在小批量下占优，而 GRPO 往往能超越重度自举的 PPO，并在较大批量下与轻度自举的 PPO 达到相当水平。在更长的时程和更复杂的领域中，GRPO 需要更大的批量才能赶上 PPO 的性能。考虑训练计算量后，评判器在小预算下具有收益，但其回报在较大预算下递减。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261125-retraq-manifold-constrained-critic-guida-dcde1c",
+  "url": "https://arxiv.org/abs/2611.32148v1",
+  "title_en": "RetraQ: Manifold-Constrained Critic Guidance for Flow Policies in RL",
+  "title_zh": "RetraQ：用于流策略的流形约束评论家引导",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.32148v1",
+  "published": "2026-11-24T08:04:42Z",
+  "fetched_at": "2026-11-25T03:59:33Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "flow-matching",
+    "critic-guidance",
+    "manifold-constraint",
+    "policy-distillation"
+  ],
+  "image": null,
+  "summary_en": "RetraQ is a method that improves pretrained flow-matching policies by steering actions using a learned critic while constraining guidance to the data-supported manifold. It uses a single velocity evaluation of the frozen flow to define a denoising map, filters the critic gradient with the map's Jacobian, and applies the map to correct the updated action, approximating tangent filtering and retraction. The same update guides actions at test time and provides targets for policy distillation and online RL. In controlled studies, RetraQ improves true return while keeping actions close to the data region, and distillation targets are more stable than raw critic ascent. On LIBERO and OGBench offline-to-online training, RetraQ achieves higher mean final success than critic-guidance baselines; on a real-world plug-insertion task, test-time RetraQ improves success rate of a behavior-cloned π_{0.5} policy from 55.0% to 76.7%.",
+  "summary_zh": "RetraQ 是一种通过学习的评论家引导改进预训练流匹配策略的方法，同时将引导约束在数据支持的流形上。它利用冻结流的一次速度评估定义去噪映射，用该映射的雅可比矩阵过滤评论家梯度，并应用映射本身校正更新后的动作，从而近似切空间过滤和回缩。相同的更新在测试时引导动作，并为策略蒸馏和在线强化学习提供目标。在控制实验中，RetraQ 提高了真实回报，同时使动作保持在数据支持区域附近，且蒸馏目标比原始评论家上升更稳定。在 LIBERO 和 OGBench 的离线到在线训练中，RetraQ 的平均最终成功率高于评估的评论家引导基线；在真实世界的插拔任务中，测试时的 RetraQ 将行为克隆的 π_{0.5} 策略的成功率从 55.0% 提高到 76.7%。",
+  "content_en": "A learned critic can improve a pretrained flow-matching policy by steering sampled actions toward higher predicted value. However, even a critic that fits the behavior data well can provide misleading action gradients. Gradient components pointing away from the data-supported region are weakly constrained by behavior data and can lead guidance to exploit critic extrapolation errors. We introduce RetraQ (Retraction-based Q-guidance), which uses geometry encoded by the pretrained flow to constrain both the direction and the destination of critic guidance. A single velocity evaluation of the frozen flow defines a denoising map. RetraQ filters the critic gradient with the map's Jacobian and applies the map itself to correct the updated action. Our analysis characterizes when these operations approximate tangent filtering and retraction onto the behavior manifold. The same update guides actions at test time and provides targets for policy distillation and online reinforcement learning. In controlled studies, RetraQ improves true return while keeping refined actions close to the data-supported region, and its distillation targets remain more stable than those of raw critic ascent. In offline-to-online training on LIBERO and OGBench, RetraQ achieves higher mean final success than the evaluated critic-guidance baselines. On a real-world plug-insertion task, test-time RetraQ improves the success rate of a behavior-cloned $π_{0.5}$ policy from 55.0% to 76.7%. Online training further in",
+  "content_zh": "学习到的评论器可以通过将采样动作引导向更高预测价值来改进预训练的流匹配策略。然而，即使评论器很好地拟合了行为数据，也可能提供误导性的动作梯度。指向数据支持区域之外的梯度分量受行为数据约束较弱，可能导致引导利用评论器的外推误差。我们提出 RetraQ（基于回缩的 Q 引导），它利用预训练流所编码的几何结构来约束评论器引导的方向和目的地。对冻结流的一次速度评估定义了一个去噪映射。RetraQ 用该映射的雅可比矩阵过滤评论器梯度，并应用映射本身来校正更新后的动作。我们的分析刻画了这些操作在何时近似于切空间过滤和回缩到行为流形上。相同的更新在测试时引导动作，并为策略蒸馏和在线强化学习提供目标。在受控研究中，RetraQ 提高了真实回报，同时使精炼后的动作保持在数据支持区域附近，并且其蒸馏目标比原始评论器上升的目标更稳定。在 LIBERO 和 OGBench 上的离线到在线训练中，RetraQ 取得了比所评估的评论器引导基线更高的平均最终成功率。在真实世界的插头插入任务中，测试时的 RetraQ 将行为克隆的 $π_{0.5}$ 策略的成功率从 55.0% 提高到 76.7%。在线训练进一步在",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261125-anchorcredit-output-anchored-credit-assi-4f6643",
+  "url": "https://arxiv.org/abs/2611.30881v1",
+  "title_en": "AnchorCredit: Output-Anchored Credit Assignment for Structured Generation with Multiple Verifiable Rewards",
+  "title_zh": "AnchorCredit：面向多可验证奖励结构化生成的输出锚定信用分配",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.30881v1",
+  "published": "2026-11-23T15:48:19Z",
+  "fetched_at": "2026-11-25T03:58:55Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlvr",
+    "credit-assignment",
+    "grpo",
+    "benchmark",
+    "structured-generation"
+  ],
+  "image": null,
+  "summary_en": "The paper identifies cross-component credit misassignment in RLVR with multiple verifiable rewards, where GRPO broadcasts a single response-level advantage to all tokens, penalizing well-performing components. It proposes AnchorCredit, which uses the policy model's attention from output anchors to preceding reasoning sentences to estimate sentence-component associations and assign component-specific advantages without extra annotations or a discriminator. The authors construct ProductAttr, a benchmark of 7,200 real product image-text samples, and show AnchorCredit outperforms baselines on it, with further validation on Nutrition5k.",
+  "summary_zh": "本文指出，在多可验证奖励的RLVR中，GRPO等方法将响应级优势广播到所有token，导致跨组件信用误分配，表现良好的组件被低奖励组件惩罚。为此提出AnchorCredit，利用策略模型从输出锚点到前文推理句的注意力估计句子-组件关联，为相关推理分配组件特定优势，无需额外相关性标注或独立判别器。作者构建了包含7,200个真实产品图文样本的ProductAttr基准，实验表明AnchorCredit在该基准上优于现有基线，并在公开Nutrition5k数据集上进一步验证了有效性。",
+  "content_en": "In Reinforcement Learning with Verifiable Rewards (RLVR), Group Relative Policy Optimization (GRPO) and related methods typically compute group-relative advantages from response rewards and broadcast the same advantage to every generated token in a response to guide policy updates. However, we identify a systematic problem of cross-component credit misassignment in tasks with multiple verifiable results, such as joint multi-attribute prediction: low rewards for some components can penalize a well-performing component and its associated reasoning. To address this problem, we propose AnchorCredit. The method uses the policy model's attention from output anchors to preceding reasoning sentences to estimate sentence-component associations and assign component-specific advantages to the relevant reasoning, without additional relevance annotations or a separate relevance discriminator. To support the study of credit assignment with multiple verifiable rewards, we construct ProductAttr, a benchmark of 7,200 real product image-text samples. Experiments show that AnchorCredit outperforms existing baselines on this benchmark. Experiments on the public Nutrition5k dataset further support the method's effectiveness in this setting.",
+  "content_zh": "在可验证奖励强化学习（RLVR）中，组相对策略优化（GRPO）及相关方法通常根据响应奖励计算组相对优势，并将同一优势广播至响应中的每个生成 token，以指导策略更新。然而，我们发现在具有多个可验证结果的任务（如联合多属性预测）中，存在跨组件信用错配的系统性问题：某些组件的低奖励可能会惩罚表现良好的组件及其相关推理。为解决该问题，我们提出 AnchorCredit。该方法利用策略模型从输出锚点到前序推理句子的注意力来估计句子-组件关联，并将组件特定的优势分配给相关推理，无需额外的相关性标注或单独的相关性判别器。为支持多可验证奖励下的信用分配研究，我们构建了 ProductAttr，一个包含 7,200 个真实产品图文样本的基准。实验表明，AnchorCredit 在该基准上优于现有基线。在公开的 Nutrition5k 数据集上的实验进一步支持了该方法在此设定下的有效性。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

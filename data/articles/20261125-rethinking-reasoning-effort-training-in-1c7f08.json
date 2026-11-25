@@ -1,0 +1,26 @@
+{
+  "id": "20261125-rethinking-reasoning-effort-training-in-1c7f08",
+  "url": "https://arxiv.org/abs/2611.32131v1",
+  "title_en": "Rethinking Reasoning Effort Training in Large Language Models: On-Policy Distillation or Reinforcement Learning?",
+  "title_zh": "重新审视大语言模型中的推理努力训练：同策略蒸馏还是强化学习？",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.32131v1",
+  "published": "2026-11-24T07:45:23Z",
+  "fetched_at": "2026-11-25T03:59:06Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "on-policy-distillation",
+    "reasoning-effort",
+    "llm",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "This paper systematically compares reinforcement learning (RL) and on-policy distillation (OPD) for controlling reasoning effort in large language models. Length-penalized RL reliably compresses a single policy, cutting AIME25 thinking by 70% without accuracy loss, but collapses effort tiers when trained jointly. Multi-teacher OPD separates tiers: across 33 benchmarks, low and medium tiers use 58% and 43% fewer thinking tokens than high, while high improves over the reference policy by 3.1 points. The authors attribute this to the training signal: sequence-level rewards cannot distinguish tier-specific from shared behavior, whereas OPD provides a tier-specific target at every visited state, including the stop decision. They further show a single token-level KL anchor on the high tier suffices to learn separated tiers within one RL stage, and that natural-language effort instructions make separation emerge from the start of training, matching multi-teacher OPD at equal thinking length. However, the separation built by dense targets holds only on training-seen states and does not transfer to unseen agentic tasks.",
+  "summary_zh": "本文系统比较了强化学习（RL）与同策略蒸馏（OPD）在控制大语言模型推理努力方面的效果。带长度惩罚的 RL 能可靠压缩单一策略，在 AIME25 上减少 70% 思考量且不损失准确率，但联合训练多个努力层级时会导致层级坍缩。多教师 OPD 则能分离层级：在 33 个基准上，低、中层级比高层级分别少用 58% 和 43% 的思考 token，同时高层级较参考策略提升 3.1 分。作者将差异归因于训练信号：序列级奖励无法区分层级特定行为与共享行为，而 OPD 在每个访问状态（包括停止决策）提供层级特定目标。进一步表明，仅在高层级加一个 token 级 KL 锚点即可在单阶段 RL 中学习分离层级，且自然语言努力指令能让分离从训练初期就出现，在相同思考长度下达到与多教师 OPD 竞争的策略。但由稠密目标建立的分离仅在训练见过的状态上有效，无法迁移到未见过的智能体任务。",
+  "content_en": "Large language models have shown strong capabilities on complex tasks, yet how to control their reasoning effort remains a significant challenge for practical deployment. This paper provides a systematic investigation of reasoning-effort training, contrasting reinforcement learning (RL) with on-policy distillation (OPD). We find that compressing reasoning and separating effort tiers are governed by different signals. Length-penalized RL reliably compresses a single policy, reducing thinking on AIME25 by 70\\% without accuracy loss, but collapses the tiers when they are trained jointly. Multi-teacher OPD separates them: across 33 benchmarks, low and medium use 58\\% and 43\\% fewer thinking tokens than high, while high improves on the reference policy by 3.1 points. We trace this difference to the training signal. A sequence-level reward cannot tell tier-specific behavior from shared behavior, whereas OPD supplies a tier-specific target at every visited state, including the decision to stop. Building on this analysis, we show that a single token-level KL anchor on the high tier is sufficient to learn separated tiers within one RL stage, and that natural-language effort instructions make this separation emerge from the start of training, yielding a policy competitive with multi-teacher OPD at matched thinking length. Finally, the separation built by dense targets holds only on the states seen in training: it does not carry over to unseen agentic tasks, where effort acts mainly thr",
+  "content_zh": "大型语言模型在复杂任务上展现出强大能力，但如何控制其推理投入仍是实际部署中的重大挑战。本文对推理投入训练进行了系统性研究，对比了强化学习（RL）与同策略蒸馏（OPD）。我们发现，压缩推理与分离投入层级受不同信号支配。带长度惩罚的 RL 能可靠地压缩单一策略，在 AIME25 上减少 70\\% 的思考量且不损失准确率，但在联合训练各层级时会导致层级坍缩。多教师 OPD 则能将它们分离：在 33 个基准上，低档和中档分别比高档少用 58\\% 和 43\\% 的思考 token，同时高档在参考策略基础上提升 3.1 分。我们将这一差异归因于训练信号。序列级奖励无法区分层级特定行为与共享行为，而 OPD 在每个访问到的状态上都提供层级特定的目标，包括停止决策。基于这一分析，我们进一步表明，在高档上施加单个 token 级 KL 锚点，就足以在一个 RL 阶段内学到分离的层级；并且自然语言投入指令能使这种分离从训练伊始就显现出来，在匹配思考长度下产生与多教师 OPD 相竞争的策略。最后，由稠密目标构建的分离仅在训练中见过的状态上成立：它无法迁移到未见过的智能体任务，在这些任务中投入主要起",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

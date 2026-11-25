@@ -1,0 +1,26 @@
+{
+  "id": "20261125-reinforcing-diffusion-models-by-instanta-3b84e9",
+  "url": "https://arxiv.org/abs/2611.30986v1",
+  "title_en": "Reinforcing Diffusion Models by Instantaneous Trajectory Distribution Matching",
+  "title_zh": "通过瞬时轨迹分布匹配强化扩散模型",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.30986v1",
+  "published": "2026-11-23T16:42:40Z",
+  "fetched_at": "2026-11-25T03:59:19Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "diffusion-models",
+    "reinforcement-learning",
+    "reward-weighted-regressi",
+    "trajectory-distribution-",
+    "baseline-invariance"
+  ],
+  "image": null,
+  "summary_en": "The paper reveals that existing forward diffusion reinforcement learning methods rely on signed reward-weighted regression, which suffers from behavior-policy mismatch and baseline-induced gradient drift under classifier-free guidance, offline/off-policy updates, and imperfect online self-consistency. To address this, they propose Instantaneous Trajectory Distribution Matching (iTDM), which takes the infinitesimal limit of Trajectory Distribution Matching to yield a sample-level gradient anchored at the behavior velocity without learning an additional reward-tilted target score. iTDM tracks this velocity with an online auxiliary denoiser, guaranteeing exact baseline invariance at the auxiliary optimum and suppressing baseline drift in both online and offline RL. Experiments on compositional generation, text rendering, and preference alignment demonstrate the effectiveness of iTDM.",
+  "summary_zh": "论文揭示了现有前向扩散强化学习方法依赖于带符号的奖励加权回归，在无分类器引导（CFG）采样、离线/离策略更新以及不完美的在线自一致性下，存在行为-策略不匹配和基线诱导的梯度漂移问题。为此，作者提出瞬时轨迹分布匹配（iTDM），通过后验得分恒等式取轨迹分布匹配的无穷小极限，得到以行为速度为锚点的样本级梯度，而无需学习额外的奖励倾斜目标得分。iTDM 使用在线辅助去噪器跟踪该速度，在辅助最优处保证精确的基线不变性，从而在在线和离线强化学习中有效抑制基线漂移。在组合生成、文本渲染和偏好对齐上的实验证明了 iTDM 的有效性。",
+  "content_en": "Forward diffusion reinforcement learning (RL)---enabling deterministic ODE sampling without trajectory backpropagation---has grown increasingly popular for efficiently aligning diffusion models. However, we reveal that existing methods essentially rely on signed reward-weighted regression (RWR), regressing the \\emph{trainable policy} velocity onto rollouts from a \\emph{behavior distribution}. Unbiased baseline subtraction implicitly assumes that the policy velocity equals the behavior marginal velocity---an idealized assumption violated under classifier-free guidance (CFG) rollouts, offline/off-policy updates, and imperfect online self-consistency. This \\emph{behavior--policy mismatch} breaks baseline invariance and injects \\emph{baseline-induced gradient drift}, destabilizing training. To resolve this issue, we propose \\textbf{I}nstantaneous \\textbf{T}rajectory \\textbf{D}istribution \\textbf{M}atching (\\textbf{iTDM}), taking the infinitesimal limit of Trajectory Distribution Matching toward a time-local reward-guided target via the posterior-score identity to yield a sample-level gradient anchored at the behavior velocity without learning an additional reward-tilted target score. Tracking this velocity with an online auxiliary denoiser guarantees exact baseline invariance at the auxiliary optimum, effectively suppressing baseline drift across both online and offline RL. Extensive experiments across compositional generation, text rendering, and preference alignment show that i",
+  "content_zh": "前向扩散强化学习（RL）——无需轨迹反向传播即可实现确定性 ODE 采样——在高效对齐扩散模型方面日益流行。然而，我们揭示出现有方法本质上依赖于带符号的奖励加权回归（RWR），即将\\emph{可训练策略}的速度回归到来自\\emph{行为分布}的 rollout 上。无偏基线减去隐含地假设策略速度等于行为边缘速度——这一理想化假设在无分类器引导（CFG）rollout、离线/离策略更新以及不完美的在线自一致性下会被违背。这种\\emph{行为--策略不匹配}破坏了基线不变性，并注入了\\emph{基线诱导的梯度漂移}，从而使训练不稳定。为解决这一问题，我们提出了\\textbf{瞬}时\\textbf{轨}迹\\textbf{分}布\\textbf{匹}配（\\textbf{iTDM}），通过后验得分恒等式取轨迹分布匹配的无穷小极限，朝向时间局部奖励引导的目标，从而产生一个锚定在行为速度上的样本级梯度，而无需学习额外的奖励倾斜目标得分。利用在线辅助去噪器跟踪该速度，可在辅助最优解处保证精确的基线不变性，从而有效抑制在线和离线 RL 中的基线漂移。在组合生成、文本渲染和偏好对齐方面的大量实验表明，i",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

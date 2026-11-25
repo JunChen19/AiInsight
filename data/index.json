@@ -1,5 +1,137 @@
 [
   {
+    "id": "20261125-retraq-manifold-constrained-critic-guida-dcde1c",
+    "url": "https://arxiv.org/abs/2611.32148v1",
+    "title_en": "RetraQ: Manifold-Constrained Critic Guidance for Flow Policies in RL",
+    "title_zh": "RetraQ：用于流策略的流形约束评论家引导",
+    "source_name": "arXiv",
+    "published": "2026-11-24T08:04:42Z",
+    "fetched_at": "2026-11-25T03:59:33Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "flow-matching",
+      "critic-guidance",
+      "manifold-constraint",
+      "policy-distillation"
+    ],
+    "image": null,
+    "summary_en": "RetraQ is a method that improves pretrained flow-matching policies by steering actions using a learned critic while constraining guidance to the data-supported manifold. It uses a single velocity evaluation of the frozen flow to define a denoising map, filters the critic gradient with the map's Jacobian, and applies the map to correct the updated action, approximating tangent filtering and retraction. The same update guides actions at test time and provides targets for policy distillation and online RL. In controlled studies, RetraQ improves true return while keeping actions close to the data region, and distillation targets are more stable than raw critic ascent. On LIBERO and OGBench offline-to-online training, RetraQ achieves higher mean final success than critic-guidance baselines; on a real-world plug-insertion task, test-time RetraQ improves success rate of a behavior-cloned π_{0.5} policy from 55.0% to 76.7%.",
+    "summary_zh": "RetraQ 是一种通过学习的评论家引导改进预训练流匹配策略的方法，同时将引导约束在数据支持的流形上。它利用冻结流的一次速度评估定义去噪映射，用该映射的雅可比矩阵过滤评论家梯度，并应用映射本身校正更新后的动作，从而近似切空间过滤和回缩。相同的更新在测试时引导动作，并为策略蒸馏和在线强化学习提供目标。在控制实验中，RetraQ 提高了真实回报，同时使动作保持在数据支持区域附近，且蒸馏目标比原始评论家上升更稳定。在 LIBERO 和 OGBench 的离线到在线训练中，RetraQ 的平均最终成功率高于评估的评论家引导基线；在真实世界的插拔任务中，测试时的 RetraQ 将行为克隆的 π_{0.5} 策略的成功率从 55.0% 提高到 76.7%。",
+    "norm_url": "https://arxiv.org/abs/2611.32148v1"
+  },
+  {
+    "id": "20261125-ars-vlm-visually-aligned-augmented-rando-6d04fc",
+    "url": "https://arxiv.org/abs/2611.32147v1",
+    "title_en": "ARS-VLM: Visually Aligned Augmented Random Search for Vision-Language Models",
+    "title_zh": "ARS-VLM: 面向视觉语言模型的视觉对齐增强随机搜索",
+    "source_name": "arXiv",
+    "published": "2026-11-24T08:02:52Z",
+    "fetched_at": "2026-11-25T03:59:24Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "vision-language-models",
+      "zeroth-order-optimizatio",
+      "reinforcement-learning",
+      "post-training",
+      "augmented-random-search"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes ARS-VLM, a visually aligned Augmented Random Search framework for forward-only post-training of Vision-Language Models (VLMs). Standard zeroth-order methods like Evolution Strategies (ES) and vanilla ARS suffer from patch-grid overfitting and catastrophic forgetting when applied to VLMs. ARS-VLM addresses these issues by (1) extracting a contrastive visual basis from bilinearly paired cross-grid views to focus perturbations on shared visual signals, (2) anchoring shallow visual-fusion layers with a soft subspace prior while freeing deep reasoning layers to restrain policy drift without a reference model, and (3) scoring perturbations on paired views to discard view-fragile directions during top-k selection. Evaluated on Qwen3, ARS-VLM improves performance while avoiding the memory and system overhead of first-order methods like GRPO.",
+    "summary_zh": "本文提出了 ARS-VLM，一种面向视觉语言模型（VLM）的视觉对齐增强随机搜索框架，用于仅前向的 VLM 后训练。标准的零阶方法（如进化策略 ES 和原始 ARS）直接应用于 VLM 时存在两个根本问题：块网格过拟合（拟合脆弱的网格特定视觉 token 伪影而忽略空间不变性）和灾难性遗忘（由于无界的高秩参数和策略漂移导致通用感知和分布外任务性能下降）。ARS-VLM 通过以下方式解决这些问题：(1) 从双线性配对的跨网格视图中提取对比视觉基，将扰动集中在共享视觉信号上并抑制块偏移伪影；(2) 用软子空间先验锚定浅层视觉融合层，同时释放深层推理层，从而在没有参考模型的情况下限制策略漂移；(3) 在 top-k 选择中对配对视图上的扰动进行评分，以丢弃视图脆弱的方向。在 Qwen3 上的评估表明，ARS-VLM 在避免 GRPO 等一阶方法的内存和系统开销的同时提升了性能。",
+    "norm_url": "https://arxiv.org/abs/2611.32147v1"
+  },
+  {
+    "id": "20261125-rethinking-reasoning-effort-training-in-1c7f08",
+    "url": "https://arxiv.org/abs/2611.32131v1",
+    "title_en": "Rethinking Reasoning Effort Training in Large Language Models: On-Policy Distillation or Reinforcement Learning?",
+    "title_zh": "重新审视大语言模型中的推理努力训练：同策略蒸馏还是强化学习？",
+    "source_name": "arXiv",
+    "published": "2026-11-24T07:45:23Z",
+    "fetched_at": "2026-11-25T03:59:06Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "on-policy-distillation",
+      "reasoning-effort",
+      "llm",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "This paper systematically compares reinforcement learning (RL) and on-policy distillation (OPD) for controlling reasoning effort in large language models. Length-penalized RL reliably compresses a single policy, cutting AIME25 thinking by 70% without accuracy loss, but collapses effort tiers when trained jointly. Multi-teacher OPD separates tiers: across 33 benchmarks, low and medium tiers use 58% and 43% fewer thinking tokens than high, while high improves over the reference policy by 3.1 points. The authors attribute this to the training signal: sequence-level rewards cannot distinguish tier-specific from shared behavior, whereas OPD provides a tier-specific target at every visited state, including the stop decision. They further show a single token-level KL anchor on the high tier suffices to learn separated tiers within one RL stage, and that natural-language effort instructions make separation emerge from the start of training, matching multi-teacher OPD at equal thinking length. However, the separation built by dense targets holds only on training-seen states and does not transfer to unseen agentic tasks.",
+    "summary_zh": "本文系统比较了强化学习（RL）与同策略蒸馏（OPD）在控制大语言模型推理努力方面的效果。带长度惩罚的 RL 能可靠压缩单一策略，在 AIME25 上减少 70% 思考量且不损失准确率，但联合训练多个努力层级时会导致层级坍缩。多教师 OPD 则能分离层级：在 33 个基准上，低、中层级比高层级分别少用 58% 和 43% 的思考 token，同时高层级较参考策略提升 3.1 分。作者将差异归因于训练信号：序列级奖励无法区分层级特定行为与共享行为，而 OPD 在每个访问状态（包括停止决策）提供层级特定目标。进一步表明，仅在高层级加一个 token 级 KL 锚点即可在单阶段 RL 中学习分离层级，且自然语言努力指令能让分离从训练初期就出现，在相同思考长度下达到与多教师 OPD 竞争的策略。但由稠密目标建立的分离仅在训练见过的状态上有效，无法迁移到未见过的智能体任务。",
+    "norm_url": "https://arxiv.org/abs/2611.32131v1"
+  },
+  {
+    "id": "20261125-to-critic-or-not-to-critic-1855a8",
+    "url": "https://arxiv.org/abs/2611.32013v1",
+    "title_en": "To Critic Or Not To Critic",
+    "title_zh": "To Critic Or Not To Critic：PPO与GRPO的偏差-方差权衡",
+    "source_name": "arXiv",
+    "published": "2026-11-24T05:58:02Z",
+    "fetched_at": "2026-11-25T03:59:01Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rl",
+      "ppo",
+      "grpo",
+      "bias-variance",
+      "llm"
+    ],
+    "image": null,
+    "summary_en": "The paper investigates when a critic improves reinforcement learning efficiency for large language models, comparing PPO (with a critic) and GRPO (without a critic). It analyzes the bias-variance tradeoff by measuring gradient alignment with the true policy gradient as batch size grows. Across over 1,200 training runs (including 96 with LLMs) in control tasks, short-horizon math, and long-horizon terminal agents, PPO leads at small batch sizes, while GRPO overtakes heavily bootstrapped PPO and reaches parity with lightly bootstrapped PPO at larger batches. At longer horizons and in more complex domains, GRPO requires larger batches to match PPO, and critics are beneficial at small compute budgets but their returns diminish at larger budgets.",
+    "summary_zh": "本文研究了在大型语言模型处理长时复杂任务时，批评家（critic）何时能提升强化学习效率，对比了带批评家的PPO与无批评家的GRPO。通过测量梯度方向与真实策略梯度的对齐程度，分析了批次大小增长下的偏差-方差权衡。在超过1200次训练运行（包括96次LLM实验）中，涵盖控制任务、短时程数学和长时程终端智能体，发现PPO在小批次下通常领先，而GRPO在较大批次下常超越重度自举的PPO并与轻度自举的PPO持平。在更长时程和更复杂领域，GRPO需要更大批次才能赶上PPO；考虑训练计算量，批评家在小预算下有益，但收益随预算增大而递减。",
+    "norm_url": "https://arxiv.org/abs/2611.32013v1"
+  },
+  {
+    "id": "20261125-two-stage-post-training-for-flow-based-e-0e9c75",
+    "url": "https://arxiv.org/abs/2611.31850v1",
+    "title_en": "Two-Stage Post-Training for Flow-Based Embodied Foundation Models",
+    "title_zh": "基于流匹配的具身基础模型两阶段后训练框架",
+    "source_name": "arXiv",
+    "published": "2026-11-24T02:49:16Z",
+    "fetched_at": "2026-11-25T03:59:28Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "embodied-ai",
+      "post-training",
+      "flow-matching",
+      "reinforcement-learning",
+      "distillation"
+    ],
+    "image": null,
+    "summary_en": "The paper proposes a two-stage post-training framework for flow-based embodied foundation models, building distillation objectives from the velocity regression formulation of conditional flow matching. Stage 1 consolidates expert capabilities via multi-teacher on-policy distillation (MOPD). Stage 2 combines reinforcement learning (RL) with teacher distillation that weights velocity errors according to sampling noise, restricting distillation to failed trajectories to provide dense guidance without constraining successful behaviors. Experiments across multiple models and benchmarks show the framework outperforms joint SFT and exceeds the aggregate success rates of corresponding teachers, achieving higher success rates than direct RL with fewer environment interactions.",
+    "summary_zh": "本文提出了一种基于流匹配的具身基础模型两阶段后训练框架，从条件流匹配的速度回归形式构建蒸馏目标。第一阶段通过多教师同策略蒸馏（MOPD）高效整合专家能力。第二阶段将强化学习（RL）与教师蒸馏结合，根据采样噪声对速度误差加权，且蒸馏仅限制在失败轨迹上，以密集指导补充稀疏奖励而不直接约束成功行为。在多个模型和基准上的实验表明，该框架优于联合SFT，并超过相应教师的总体成功率；样本效率比较显示，与直接RL相比，在更少的环境交互下获得更高的成功率。",
+    "norm_url": "https://arxiv.org/abs/2611.31850v1"
+  },
+  {
+    "id": "20261125-glm-5-4-toward-generalized-coding-with-o-8a1cab",
+    "url": "https://simonwillison.net/2026/Nov/23/glm-54/",
+    "title_en": "GLM-5.4: Toward Generalized Coding with Our First Loop Transformer",
+    "title_zh": "GLM-5.4：采用首个循环Transformer架构，迈向通用编码",
+    "source_name": "Simon Willison",
+    "published": "2026-11-23T23:40:49Z",
+    "fetched_at": "2026-11-25T03:59:13Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "looped-transformer",
+      "model-release",
+      "glm",
+      "coding",
+      "api"
+    ],
+    "image": "images/20261125-glm-5-4-toward-generalized-coding-with-o-8a1cab.jpg",
+    "summary_en": "Chinese AI lab Z.ai released GLM-5.4, its first model using a looped transformer architecture where weight-shared layers run multiple iterations to refine hidden states, increasing depth without adding parameters. The model is not yet open-weight, with plans to open-source after safety hardening. It is accessible via Z.ai's Coding Plan subscription through an OpenAI-compatible Responses API. The author built an llm-glm plugin but notes an existing llm-zai plugin lacks support for the new model. Pelican test images show GLM-5.4's style is more comparable to OpenAI/Anthropic models than earlier GLM generations.",
+    "summary_zh": "中国AI实验室Z.ai发布了GLM-5.4，这是其首个采用循环Transformer（Loop Transformer）架构的模型，其中权重共享的层会多次迭代运行以细化隐藏状态，从而在不增加参数量的情况下加深网络。该模型尚未开放权重，计划在完成安全加固后开源。目前可通过Z.ai的Coding Plan订阅经OpenAI兼容的Responses API访问。作者构建了llm-glm插件，但指出已有的llm-zai插件尚不支持新模型。Pelican测试图像显示，GLM-5.4的风格与OpenAI/Anthropic模型更为接近，不同于早期GLM世代。",
+    "norm_url": "https://simonwillison.net/2026/Nov/23/glm-54"
+  },
+  {
     "id": "20261124-z-ai-releases-glm-5-4-a-750b-loop-transf-3f7381",
     "url": "https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer/",
     "title_en": "Z AI Releases GLM-5.4: A 750B Loop Transformer That Runs 28 Layers Twice",
@@ -20,6 +152,72 @@
     "summary_en": "Z.ai released GLM-5.4, a 750B-scale Loop Transformer that runs 28 shared GLM-5 layers for 2 iterations, adapted from the pre-trained GLM-5 base via continued training. Key innovations include gated progressive updates, hybrid KV cache (second loop reuses sparse KV from pass 1 and keeps new KV only in a sliding window), and sparse attention index reuse. A 30B iso-parameter ablation showed gains of +11.3 on AIME25, +8.7 on GPQA-Diamond, +7.3 on AA-LCR, +3.4 on MMLU-Pro, and +3.3 on IFBench, with ~10% more training compute and shorter outputs on most tasks. No flagship benchmark scores, public API, or weights are available yet; access is via Z.ai's Coding Plan, ZCode, and Z.ai Chat.",
     "summary_zh": "Z.ai 发布了 GLM-5.4，一个 750B 规模的循环 Transformer（Loop Transformer），将 28 个共享的 GLM-5 层运行 2 次，基于预训练的 GLM-5 基座通过继续训练适配而成。关键技术包括门控渐进更新、混合 KV 缓存（第二次循环复用第一次的稀疏 KV，新 KV 仅保留在滑动窗口内）以及稀疏注意力索引复用。30B 等参数消融实验显示：AIME25 提升 11.3 分、GPQA-Diamond 提升 8.7 分、AA-LCR 提升 7.3 分、MMLU-Pro 提升 3.4 分、IFBench 提升 3.3 分，训练计算量增加约 10%，多数任务输出长度缩短。目前尚无旗舰基准分数、公开 API 或模型权重；可通过 Z.ai 的 Coding Plan、ZCode 和 Z.ai Chat 使用。",
     "norm_url": "https://www.marktechpost.com/2026/11/23/zai-glm-5-4-loop-transformer"
+  },
+  {
+    "id": "20261125-co-graft-attributing-reinforcement-learn-74fcc8",
+    "url": "https://arxiv.org/abs/2611.31185v1",
+    "title_en": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+    "title_zh": "CO-GRAFT：通过角色级策略嫁接归因搜索智能体中的强化学习增益",
+    "source_name": "arXiv",
+    "published": "2026-11-23T18:38:53Z",
+    "fetched_at": "2026-11-25T03:58:50Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "attribution",
+      "search-agents",
+      "shapley-values",
+      "llm"
+    ],
+    "image": null,
+    "summary_en": "Reinforcement learning (RL) improves large language model search agents by up to 32 exact-match (EM) points over pre-RL initializations, but overall accuracy gains do not reveal which functional capabilities improve or interact. CO-GRAFT is a reward-agnostic interventional attribution framework where an RL-trained agent and its pre-RL initialization jointly generate a single trajectory under closed-loop execution with live retrieval. Each policy controls a mutually exclusive subset of four functional roles: intermediate reasoning, search-or-answer decision, search query generation, and final answer extraction. Evaluating all 2^4=16 role assignments without weight modification or retraining defines a cooperative game whose Shapley values decompose the total RL gain across roles, while Möbius interaction terms distinguish standalone improvements from multi-role coupling. Applied to Search-R1 agents across Qwen2.5 and Llama-3.2 models (two sizes, base and instruction-tuned initializations, GRPO and PPO optimizers, NQ and HotpotQA datasets), query generation never exceeds 15% of the total gain; instead, gains are governed by pre-RL answer validity, search retention, model scale, and fixed task-level search budgets, shifting credit from reasoning toward answer extraction in larger or well-formatted answer response checkpoints while smaller base models rely on reasoning-decision coupling.",
+    "summary_zh": "强化学习（RL）可将大型语言模型搜索智能体的精确匹配（EM）分数较RL前初始化提升最多32分，但总体准确率增益无法揭示哪些功能能力在训练中改善或交互。CO-GRAFT是一个与奖励无关的干预归因框架，其中RL训练后的智能体与其RL前初始化在闭环执行和实时检索下共同生成单条轨迹。每个策略控制四个功能角色中互斥的子集：中间推理、搜索或回答决策、搜索查询生成和最终答案提取。在不修改权重或重新训练的情况下评估所有2^4=16种角色分配，定义了一个合作博弈，其Shapley值将总RL增益分解到各角色，而Möbius交互项区分独立角色改进与多角色耦合。将CO-GRAFT应用于Qwen2.5和Llama-3.2模型（涵盖两种规模、基础和指令微调初始化、GRPO和PPO优化器以及NQ和HotpotQA数据集）的Search-R1智能体，结果表明查询生成从未超过总增益的15%；相反，增益受RL前答案有效性、搜索保留、模型规模和固定任务级搜索预算支配，在更大或格式良好的答案响应检查点中，信用从推理转向答案提取，而较小的基础模型依赖推理-决策耦合。",
+    "norm_url": "https://arxiv.org/abs/2611.31185v1"
+  },
+  {
+    "id": "20261125-reinforcing-diffusion-models-by-instanta-3b84e9",
+    "url": "https://arxiv.org/abs/2611.30986v1",
+    "title_en": "Reinforcing Diffusion Models by Instantaneous Trajectory Distribution Matching",
+    "title_zh": "通过瞬时轨迹分布匹配强化扩散模型",
+    "source_name": "arXiv",
+    "published": "2026-11-23T16:42:40Z",
+    "fetched_at": "2026-11-25T03:59:19Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "diffusion-models",
+      "reinforcement-learning",
+      "reward-weighted-regressi",
+      "trajectory-distribution-",
+      "baseline-invariance"
+    ],
+    "image": null,
+    "summary_en": "The paper reveals that existing forward diffusion reinforcement learning methods rely on signed reward-weighted regression, which suffers from behavior-policy mismatch and baseline-induced gradient drift under classifier-free guidance, offline/off-policy updates, and imperfect online self-consistency. To address this, they propose Instantaneous Trajectory Distribution Matching (iTDM), which takes the infinitesimal limit of Trajectory Distribution Matching to yield a sample-level gradient anchored at the behavior velocity without learning an additional reward-tilted target score. iTDM tracks this velocity with an online auxiliary denoiser, guaranteeing exact baseline invariance at the auxiliary optimum and suppressing baseline drift in both online and offline RL. Experiments on compositional generation, text rendering, and preference alignment demonstrate the effectiveness of iTDM.",
+    "summary_zh": "论文揭示了现有前向扩散强化学习方法依赖于带符号的奖励加权回归，在无分类器引导（CFG）采样、离线/离策略更新以及不完美的在线自一致性下，存在行为-策略不匹配和基线诱导的梯度漂移问题。为此，作者提出瞬时轨迹分布匹配（iTDM），通过后验得分恒等式取轨迹分布匹配的无穷小极限，得到以行为速度为锚点的样本级梯度，而无需学习额外的奖励倾斜目标得分。iTDM 使用在线辅助去噪器跟踪该速度，在辅助最优处保证精确的基线不变性，从而在在线和离线强化学习中有效抑制基线漂移。在组合生成、文本渲染和偏好对齐上的实验证明了 iTDM 的有效性。",
+    "norm_url": "https://arxiv.org/abs/2611.30986v1"
+  },
+  {
+    "id": "20261125-anchorcredit-output-anchored-credit-assi-4f6643",
+    "url": "https://arxiv.org/abs/2611.30881v1",
+    "title_en": "AnchorCredit: Output-Anchored Credit Assignment for Structured Generation with Multiple Verifiable Rewards",
+    "title_zh": "AnchorCredit：面向多可验证奖励结构化生成的输出锚定信用分配",
+    "source_name": "arXiv",
+    "published": "2026-11-23T15:48:19Z",
+    "fetched_at": "2026-11-25T03:58:55Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rlvr",
+      "credit-assignment",
+      "grpo",
+      "benchmark",
+      "structured-generation"
+    ],
+    "image": null,
+    "summary_en": "The paper identifies cross-component credit misassignment in RLVR with multiple verifiable rewards, where GRPO broadcasts a single response-level advantage to all tokens, penalizing well-performing components. It proposes AnchorCredit, which uses the policy model's attention from output anchors to preceding reasoning sentences to estimate sentence-component associations and assign component-specific advantages without extra annotations or a discriminator. The authors construct ProductAttr, a benchmark of 7,200 real product image-text samples, and show AnchorCredit outperforms baselines on it, with further validation on Nutrition5k.",
+    "summary_zh": "本文指出，在多可验证奖励的RLVR中，GRPO等方法将响应级优势广播到所有token，导致跨组件信用误分配，表现良好的组件被低奖励组件惩罚。为此提出AnchorCredit，利用策略模型从输出锚点到前文推理句的注意力估计句子-组件关联，为相关推理分配组件特定优势，无需额外相关性标注或独立判别器。作者构建了包含7,200个真实产品图文样本的ProductAttr基准，实验表明AnchorCredit在该基准上优于现有基线，并在公开Nutrition5k数据集上进一步验证了有效性。",
+    "norm_url": "https://arxiv.org/abs/2611.30881v1"
   },
   {
     "id": "20261124-verifiable-on-policy-distillation-88ccc7",

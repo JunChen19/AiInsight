@@ -1,0 +1,26 @@
+{
+  "id": "20261125-co-graft-attributing-reinforcement-learn-74fcc8",
+  "url": "https://arxiv.org/abs/2611.31185v1",
+  "title_en": "CO-GRAFT: Attributing Reinforcement Learning Gains in Search Agents via Role-Level Policy Grafting",
+  "title_zh": "CO-GRAFT：通过角色级策略嫁接归因搜索智能体中的强化学习增益",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.31185v1",
+  "published": "2026-11-23T18:38:53Z",
+  "fetched_at": "2026-11-25T03:58:50Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "attribution",
+    "search-agents",
+    "shapley-values",
+    "llm"
+  ],
+  "image": null,
+  "summary_en": "Reinforcement learning (RL) improves large language model search agents by up to 32 exact-match (EM) points over pre-RL initializations, but overall accuracy gains do not reveal which functional capabilities improve or interact. CO-GRAFT is a reward-agnostic interventional attribution framework where an RL-trained agent and its pre-RL initialization jointly generate a single trajectory under closed-loop execution with live retrieval. Each policy controls a mutually exclusive subset of four functional roles: intermediate reasoning, search-or-answer decision, search query generation, and final answer extraction. Evaluating all 2^4=16 role assignments without weight modification or retraining defines a cooperative game whose Shapley values decompose the total RL gain across roles, while Möbius interaction terms distinguish standalone improvements from multi-role coupling. Applied to Search-R1 agents across Qwen2.5 and Llama-3.2 models (two sizes, base and instruction-tuned initializations, GRPO and PPO optimizers, NQ and HotpotQA datasets), query generation never exceeds 15% of the total gain; instead, gains are governed by pre-RL answer validity, search retention, model scale, and fixed task-level search budgets, shifting credit from reasoning toward answer extraction in larger or well-formatted answer response checkpoints while smaller base models rely on reasoning-decision coupling.",
+  "summary_zh": "强化学习（RL）可将大型语言模型搜索智能体的精确匹配（EM）分数较RL前初始化提升最多32分，但总体准确率增益无法揭示哪些功能能力在训练中改善或交互。CO-GRAFT是一个与奖励无关的干预归因框架，其中RL训练后的智能体与其RL前初始化在闭环执行和实时检索下共同生成单条轨迹。每个策略控制四个功能角色中互斥的子集：中间推理、搜索或回答决策、搜索查询生成和最终答案提取。在不修改权重或重新训练的情况下评估所有2^4=16种角色分配，定义了一个合作博弈，其Shapley值将总RL增益分解到各角色，而Möbius交互项区分独立角色改进与多角色耦合。将CO-GRAFT应用于Qwen2.5和Llama-3.2模型（涵盖两种规模、基础和指令微调初始化、GRPO和PPO优化器以及NQ和HotpotQA数据集）的Search-R1智能体，结果表明查询生成从未超过总增益的15%；相反，增益受RL前答案有效性、搜索保留、模型规模和固定任务级搜索预算支配，在更大或格式良好的答案响应检查点中，信用从推理转向答案提取，而较小的基础模型依赖推理-决策耦合。",
+  "content_en": "Reinforcement learning (RL) improves large language model search agents by up to 32 exact-match (EM) points over their pre-RL initializations, yet overall accuracy gains do not identify which underlying functional capabilities improve or interact during training. We introduce CO-GRAFT, a reward-agnostic interventional attribution framework in which an RL-trained agent and its pre-RL initialization jointly generate a single trajectory under closed-loop execution with live retrieval. Each policy controls a mutually exclusive subset of four functional roles: intermediate reasoning, search-or-answer decision, search query generation, and final answer extraction. Evaluating all 2^4=16 role assignments without modifying weights or retraining defines a cooperative game whose Shapley values decompose the total RL gain across roles, while M\"obius interaction terms distinguish standalone role improvements from multi-role coupling. Applying CO-GRAFT to Search-R1 agents across Qwen2.5 and Llama-3.2 models (spanning two sizes, base and instruction-tuned initializations, GRPO and PPO optimizers, and NQ and HotpotQA datasets), we show that query generation never exceeds 15% of the total gain; instead, gains are governed by pre-RL answer validity, search retention, model scale, and fixed task-level search budgets, shifting credit from reasoning toward answer extraction in larger or well-formatted answer response checkpoints while smaller base models rely on reasoning--decision coupling.",
+  "content_zh": "强化学习（RL）可将大型语言模型搜索智能体的精确匹配（EM）分数较其 RL 前的初始化提升最多 32 分，但整体准确率增益无法识别训练过程中哪些底层功能能力得到提升或发生交互。我们提出 CO-GRAFT，一种与奖励无关的干预式归因框架，其中经 RL 训练的智能体与其 RL 前初始化在带实时检索的闭环执行下联合生成单条轨迹。每个策略控制四个功能角色中互斥的一个子集：中间推理、搜索或回答决策、搜索查询生成、最终答案抽取。在不修改权重、不重新训练的情况下评估全部 2^4=16 种角色分配，定义了一个合作博弈，其 Shapley 值将总 RL 增益分解到各角色上，而 M\"obius 交互项则区分独立角色改进与多角色耦合。将 CO-GRAFT 应用于跨 Qwen2.5 和 Llama-3.2 模型（涵盖两种规模、base 与指令微调初始化、GRPO 与 PPO 优化器、NQ 与 HotpotQA 数据集）的 Search-R1 智能体，我们表明查询生成从未超过总增益的 15%；相反，增益由 RL 前的答案有效性、搜索保留、模型规模以及固定的任务级搜索预算所主导，在更大或格式良好的答案响应检查点中，功劳从推理转向答案抽取，而较小的 base 模型则依赖推理—决策耦合。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261125-ars-vlm-visually-aligned-augmented-rando-6d04fc",
+  "url": "https://arxiv.org/abs/2611.32147v1",
+  "title_en": "ARS-VLM: Visually Aligned Augmented Random Search for Vision-Language Models",
+  "title_zh": "ARS-VLM: 面向视觉语言模型的视觉对齐增强随机搜索",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.32147v1",
+  "published": "2026-11-24T08:02:52Z",
+  "fetched_at": "2026-11-25T03:59:24Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "vision-language-models",
+    "zeroth-order-optimizatio",
+    "reinforcement-learning",
+    "post-training",
+    "augmented-random-search"
+  ],
+  "image": null,
+  "summary_en": "The paper proposes ARS-VLM, a visually aligned Augmented Random Search framework for forward-only post-training of Vision-Language Models (VLMs). Standard zeroth-order methods like Evolution Strategies (ES) and vanilla ARS suffer from patch-grid overfitting and catastrophic forgetting when applied to VLMs. ARS-VLM addresses these issues by (1) extracting a contrastive visual basis from bilinearly paired cross-grid views to focus perturbations on shared visual signals, (2) anchoring shallow visual-fusion layers with a soft subspace prior while freeing deep reasoning layers to restrain policy drift without a reference model, and (3) scoring perturbations on paired views to discard view-fragile directions during top-k selection. Evaluated on Qwen3, ARS-VLM improves performance while avoiding the memory and system overhead of first-order methods like GRPO.",
+  "summary_zh": "本文提出了 ARS-VLM，一种面向视觉语言模型（VLM）的视觉对齐增强随机搜索框架，用于仅前向的 VLM 后训练。标准的零阶方法（如进化策略 ES 和原始 ARS）直接应用于 VLM 时存在两个根本问题：块网格过拟合（拟合脆弱的网格特定视觉 token 伪影而忽略空间不变性）和灾难性遗忘（由于无界的高秩参数和策略漂移导致通用感知和分布外任务性能下降）。ARS-VLM 通过以下方式解决这些问题：(1) 从双线性配对的跨网格视图中提取对比视觉基，将扰动集中在共享视觉信号上并抑制块偏移伪影；(2) 用软子空间先验锚定浅层视觉融合层，同时释放深层推理层，从而在没有参考模型的情况下限制策略漂移；(3) 在 top-k 选择中对配对视图上的扰动进行评分，以丢弃视图脆弱的方向。在 Qwen3 上的评估表明，ARS-VLM 在避免 GRPO 等一阶方法的内存和系统开销的同时提升了性能。",
+  "content_en": "First-order reinforcement learning, such as Group Relative Policy Optimization (GRPO), is widely used to post-train Vision-Language Models (VLMs) for multimodal reasoning. However, it incurs heavy memory and system overhead from backpropagation, optimizer states, and a reference model. Forward-only zeroth-order (ZO) methods, such as Evolution Strategies (ES) and its top-k variant Augmented Random Search (ARS), avoid these overheads via reward-guided weight perturbations, yet remain unexplored for VLM reasoning. We find that directly applying standard ES or vanilla ARS to VLMs suffers from two fundamental failure modes: (i) patch-grid overfitting, fitting fragile grid-specific visual token artifacts while ignoring spatial invariants, and (ii) catastrophic forgetting, degrading general perception and out-of-distribution (OOD) tasks due to unbounded high-rank parameter and policy drift. We propose ARS-VLM, a visually aligned Augmented Random Search framework for forward-only VLM post-training. First, ARS-VLM extracts a contrastive visual basis from bilinearly paired cross-grid views, concentrating perturbations on shared visual signals while suppressing patch-shift artifacts. Second, ARS-VLM anchors shallow visual-fusion layers with a soft subspace prior while freeing deep reasoning layers, restraining policy drift without a reference model. Third, ARS-VLM scores perturbations on paired views to discard view-fragile directions during top-k selection. We evaluate ARS-VLM on Qwen3",
+  "content_zh": "一阶强化学习，例如组相对策略优化（GRPO），被广泛用于对视觉语言模型（VLM）进行后训练以支持多模态推理。然而，它因反向传播、优化器状态和参考模型而带来沉重的内存和系统开销。仅前向的零阶（ZO）方法，例如进化策略（ES）及其 top-k 变体增强随机搜索（ARS），通过奖励引导的权重扰动避免了这些开销，但尚未在 VLM 推理中得到探索。我们发现，将标准 ES 或原始 ARS 直接应用于 VLM 会遭遇两种根本性失败模式：（i）图块网格过拟合，即拟合脆弱的网格特定视觉 token 伪影而忽略空间不变性；（ii）灾难性遗忘，即由于无界的高秩参数和策略漂移而损害通用感知和分布外（OOD）任务。我们提出 ARS-VLM，一个用于仅前向 VLM 后训练的视觉对齐增强随机搜索框架。首先，ARS-VLM 从双线性配对的跨网格视图中提取对比视觉基，将扰动集中在共享视觉信号上，同时抑制图块偏移伪影。其次，ARS-VLM 用软子空间先验锚定浅层视觉融合层，同时释放深层推理层，在没有参考模型的情况下约束策略漂移。第三，ARS-VLM 对配对视图上的扰动进行评分，以在 top-k 选择期间丢弃视图脆弱方向。我们在 Qwen3 上评估 ARS-VLM",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
