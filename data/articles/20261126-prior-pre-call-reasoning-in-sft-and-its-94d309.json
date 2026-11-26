@@ -1,0 +1,26 @@
+{
+  "id": "20261126-prior-pre-call-reasoning-in-sft-and-its-94d309",
+  "url": "https://arxiv.org/abs/2611.33648v1",
+  "title_en": "PRIOR: Pre-Call Reasoning in SFT and Its Influence on Tool-Use Retention under RL",
+  "title_zh": "PRIOR: SFT中的调用前推理及其对RL下工具使用保留的影响",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.33648v1",
+  "published": "2026-11-25T02:14:13Z",
+  "fetched_at": "2026-11-26T03:25:36Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "sft",
+    "tool-use",
+    "reasoning",
+    "retention"
+  ],
+  "image": null,
+  "summary_en": "The paper studies why tool-use behaviors learned during supervised fine-tuning (SFT) are not always retained during reinforcement learning (RL). By constructing Low, Medium, and High SFT datasets with matched token budgets but different tool-call depths, the authors find that under the same RL recipe, tool initiation increases in Low, declines in Medium, and collapses in High. They observe that High trajectories contain considerably less pre-call reasoning, hypothesizing that pre-call reasoning affects tool-use calibration and retention. An idealized theoretical analysis provides a selective-retention view, and guided by it, they filter High trajectories by average pre-call reasoning length, which improves post-RL accuracy and tool-conditioned final-answer success.",
+  "summary_zh": "本文研究了监督微调（SFT）中学到的工具使用行为在强化学习（RL）中为何不总能保留。通过构建token预算相近但工具调用深度不同的低、中、高SFT数据集，作者发现在相同RL配方下，工具启动在低深度数据集中增加，中深度中下降，高深度中崩溃。他们观察到高深度轨迹包含的调用前推理明显更少，假设调用前推理影响工具使用的校准及保留。理想化理论分析提供了选择性保留视角，据此按平均调用前推理长度过滤高深度轨迹，提升了RL后的准确率和工具条件最终答案成功率。",
+  "content_en": "Tool use learned during supervised fine-tuning (SFT) is not always retained during reinforcement learning (RL). We study how properties of SFT data may affect this retention by constructing Low, Medium, and High SFT datasets with approximately matched token budgets but different tool-call depths. Under the same RL recipe, the three initializations reach similar RL training accuracy yet exhibit markedly different tool-use dynamics: tool initiation increases in Low, declines in Medium, and collapses in High. We observe that these datasets also differ substantially in the amount of reasoning preceding each tool call. In particular, High trajectories contain considerably less pre-call reasoning, motivating the hypothesis that pre-call reasoning may affect how well tool use is calibrated and, consequently, whether the corresponding behaviors are retained during RL. An idealized theoretical analysis provides a selective-retention view of this process: advantages in overall and tool-conditioned accuracy can be preserved under outcome-only optimization, while tool initiation increases only when tool-using trajectories are more successful than the tool-free alternative. Guided by this analysis, we rank the original High trajectories by average pre-call reasoning length and retain the highest-ranked examples while approximately matching cumulative SFT token exposure. This simple filtering strategy improves post-RL accuracy and tool-conditioned final-answer success without consistently",
+  "content_zh": "在监督微调（SFT）阶段学到的工具使用能力，在强化学习（RL）阶段并不总能被保留下来。我们通过构建 token 预算大致匹配但工具调用深度不同的 Low、Medium 和 High SFT 数据集，研究了 SFT 数据的属性如何影响这种保留。在相同的 RL 配方下，三种初始化达到相似的 RL 训练准确率，却表现出显著不同的工具使用动态：工具发起在 Low 中上升，在 Medium 中下降，在 High 中崩溃。我们观察到，这些数据集在每次工具调用之前的推理量上也存在显著差异。特别是，High 轨迹包含的调用前推理明显更少，这促使我们提出假设：调用前推理可能影响工具使用的校准程度，进而影响相应行为在 RL 期间是否被保留。一项理想化的理论分析为这一过程提供了选择性保留的视角：在仅基于结果的优化下，整体准确率和工具条件准确率的优势可以被保留，而工具发起只有在使用工具的轨迹比不使用工具的替代方案更成功时才会增加。在这一分析的指导下，我们按平均调用前推理长度对原始 High 轨迹进行排序，并在大致匹配累计 SFT token 暴露量的前提下保留排名最高的样本。这一简单的过滤策略提升了 RL 后的准确率和工具条件下的最终答案成功率，且没有一致地",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

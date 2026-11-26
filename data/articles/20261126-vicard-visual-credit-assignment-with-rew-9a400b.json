@@ -1,0 +1,26 @@
+{
+  "id": "20261126-vicard-visual-credit-assignment-with-rew-9a400b",
+  "url": "https://arxiv.org/abs/2611.33437v1",
+  "title_en": "ViCARD: Visual Credit Assignment with Reward-Gated Distillation for Multimodal Reasoning",
+  "title_zh": "ViCARD：基于奖励门控蒸馏的视觉信用分配用于多模态推理",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.33437v1",
+  "published": "2026-11-24T21:04:02Z",
+  "fetched_at": "2026-11-26T03:25:30Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "multimodal-reasoning",
+    "distillation",
+    "credit-assignment",
+    "reinforcement-learning",
+    "visual-reasoning"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces ViCARD (Visual Credit Assignment with Reward-Gated Distillation), a method that combines per-token visual supervision with verified correctness rewards for multimodal reasoning. For each rollout group, a teacher model receives the image cropped to the relevant visual region and provides per-token distillation supervision to the student while correctness is also valued. When all sampled rollouts fail, ViCARD samples an additional crop-teacher answer and activates on-policy distillation only if that answer is correct, supplying a learning signal for otherwise uninformative all-fail groups. Experiments across model scales show ViCARD improves fine-grained visual reasoning over RL and distillation baselines while retaining broad visual reasoning capability.",
+  "summary_zh": "本文提出 ViCARD（Visual Credit Assignment with Reward-Gated Distillation），将逐 token 的视觉监督与经过验证的正确性奖励相结合，用于多模态推理。对每个 rollout 组，教师模型接收裁剪到相关视觉区域的图像，向学生提供逐 token 蒸馏监督，同时兼顾答案正确性。当所有采样 rollout 均失败时，ViCARD 额外采样一个裁剪教师答案，仅在该答案正确时激活 on-policy 蒸馏，从而为原本无信息量的全失败组提供学习信号。跨模型规模的广泛实验表明，ViCARD 在细粒度视觉推理上优于 RL 与蒸馏基线，同时保留广泛的视觉推理能力。",
+  "content_en": "Visual reasoning requires models to identify relevant visual evidence and use it to derive correct answers. Outcomebased reinforcement learning (RL) faces two key challenges in this regime: it yields no learning signal when perceptual errors cause all sampled responses to fail, and it broadcasts a uniform advantage across every token within a response. Conversely, while visual self-distillation offers dense guidance from evidence-centered image crops, student learning from token distributions alone often fails to elicit correct final answers. Motivated by an audit of training rollouts that exposes these complementary failure modes, we introduce ViCARD (Visual Credit Assignment with RewardGated Distillation), which integrates per-token visual supervision with verified correctness rewards. For each rollout group, we leverage a teacher with its input image cropped to the relevant visual area, and use this to provide per-token supervision to the student while also valuing correctness. If all sampled rollouts fail, ViCARD samples an additional crop-teacher answer and activates on-policy distillation only if that answer is correct. Together, these mechanisms provide fine-grained visual credit within informative reward groups and a learning signal for otherwise uninformative all-fail groups. Extensive comparisons across model scales demonstrate that ViCARD improves fine-grained visual reasoning performance over RL and distillation baselines, while retaining broad visual reasoning ca",
+  "content_zh": "视觉推理要求模型识别相关的视觉证据，并利用这些证据推导出正确答案。基于结果的强化学习（RL）在这一范式中面临两个关键挑战：当感知错误导致所有采样回答均失败时，它无法产生学习信号；并且它在一条回答内的每个 token 上广播均匀的优势值。相反，尽管视觉自蒸馏能够从以证据为中心的图像裁剪中提供密集指导，但学生仅从 token 分布中学习往往无法得出正确的最终答案。受一项对训练 rollout 的审计启发——该审计揭示了这些互补的失败模式——我们提出了 ViCARD（Visual Credit Assignment with RewardGated Distillation），它将逐 token 的视觉监督与经过验证的正确性奖励相结合。对于每个 rollout 组，我们利用一个教师模型，将其输入图像裁剪至相关视觉区域，并以此为学生提供逐 token 的监督，同时兼顾正确性。如果所有采样的 rollout 均失败，ViCARD 会额外采样一个裁剪-教师答案，并且仅当该答案正确时才激活同策略蒸馏。这些机制共同在有信息量的奖励组内提供细粒度的视觉信用，并为原本无信息量的全失败组提供学习信号。跨模型规模的广泛比较表明，ViCARD 在细粒度视觉推理性能上优于 RL 和蒸馏基线，同时保留了广泛的视觉推理能力",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

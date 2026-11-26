@@ -1,0 +1,26 @@
+{
+  "id": "20261126-temporal-selective-exploration-for-reinf-c213b9",
+  "url": "https://arxiv.org/abs/2611.33417v1",
+  "title_en": "Temporal Selective Exploration for Reinforcement Learning-Guided Continuous-Discrete Flow Matching in 3D Molecular Design",
+  "title_zh": "面向3D分子设计的强化学习引导连续-离散流匹配的时间选择性探索",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.33417v1",
+  "published": "2026-11-24T20:41:30Z",
+  "fetched_at": "2026-11-26T03:25:42Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "flow-matching",
+    "molecular-design",
+    "multi-objective-optimiza",
+    "drug-discovery"
+  ],
+  "image": null,
+  "summary_en": "This paper proposes an RL-guided continuous-discrete flow matching framework with temporal selective exploration for 3D de novo molecular design. The method jointly optimizes continuous and discrete flow matching for atomic coordinates and molecular identities, restricting exploration to timesteps that primarily contribute to target properties to reduce ineffective exploration. A reward-based advantage calibration mechanism is introduced to mitigate objective dominance in multi-objective optimization. Applied to design inhibitors for EGFR and Pin1, the framework identifies novel candidate inhibitors supported by in silico validation.",
+  "summary_zh": "本文提出了一种具有时间选择性探索的强化学习引导连续-离散流匹配框架，用于3D从头分子设计。该方法联合优化原子坐标的连续流匹配和分子身份的离散流匹配，并将探索限制在对目标性质有主要贡献的时间步上，以减少无效探索。引入基于奖励的优势校准机制，以缓解多目标优化中的目标主导问题。该框架应用于设计EGFR和Pin1蛋白的抑制剂，识别出一些新的候选抑制剂，并得到计算机验证的支持。",
+  "content_en": "Flow matching has shown strong potential in generative tasks, while its optimization via Reinforcement Learning (RL) remains underexplored, especially in continuous-discrete mixed settings. Moreover, flow matching is formulated as an Ordinary Differential Equation (ODE), whose deterministic trajectories do not naturally support RL optimization. Introducing stochasticity by converting the entire trajectory into a Stochastic Differential Equation (SDE) is a common practice. Nevertheless, not all timesteps contribute to the final outcomes, and redundant exploration introduces additional noise. Furthermore, in multi-objective settings, some objectives may dominate the optimization while others receive insufficient updates. In this study, we propose an RL-guided continuous-discrete flow matching framework with temporal selective exploration for 3D de novo molecular design. Specifically, our method jointly optimizes continuous and discrete flow matching for atomic coordinates and molecular identities, respectively, while restricting exploration to timesteps that primarily contribute to target properties, reducing ineffective exploration. We also introduce a reward-based advantage calibration mechanism to mitigate objective dominance in multi-objective optimization. The framework is applied to design inhibitors for both the well-studied target protein EGFR and the challenging Pin1 protein. We identify some novel candidate inhibitors, supported by in silico validation.",
+  "content_zh": "流匹配在生成任务中展现出强大潜力，而通过强化学习（RL）对其进行优化仍未被充分探索，尤其是在连续-离散混合设定下。此外，流匹配被表述为常微分方程（ODE），其确定性轨迹天然不支持 RL 优化。通过将整个轨迹转换为随机微分方程（SDE）来引入随机性是一种常见做法。然而，并非所有时间步都对最终结果有贡献，冗余探索会引入额外噪声。此外，在多目标设定中，某些目标可能主导优化，而其他目标获得的更新不足。在本研究中，我们提出了一个 RL 引导的连续-离散流匹配框架，并带有时间选择性探索，用于 3D 从头分子设计。具体而言，我们的方法分别针对原子坐标和分子身份联合优化连续与离散流匹配，同时将探索限制在对目标性质有主要贡献的时间步上，从而减少无效探索。我们还引入了一种基于奖励的优势校准机制，以缓解多目标优化中的目标主导问题。该框架被应用于为研究充分的靶蛋白 EGFR 以及具有挑战性的 Pin1 蛋白设计抑制剂。我们识别出了一些新的候选抑制剂，并得到了计算机验证的支持。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

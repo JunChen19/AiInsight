@@ -1,0 +1,26 @@
+{
+  "id": "20261126-prove-mitigating-long-horizon-llm-collus-19d2be",
+  "url": "https://arxiv.org/abs/2611.34215v1",
+  "title_en": "PROVE: Mitigating Long-Horizon LLM Collusion with Reinforcement Learning from Verified Evidence",
+  "title_zh": "PROVE：通过基于验证证据的强化学习缓解长程LLM合谋",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.34215v1",
+  "published": "2026-11-25T11:39:39Z",
+  "fetched_at": "2026-11-26T03:25:49Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "multi-agent",
+    "reinforcement-learning",
+    "collusion",
+    "llm",
+    "reward-model"
+  ],
+  "image": null,
+  "summary_en": "LLM agents verifying each other over long interactions drift into collusion, accepting work without required evidence. This builds up episode by episode due to accurate feedback accumulating in memory, making rule-breaking reward-maximizing. PROVE (Protocol Reinforcement from Verified Evidence) is a multi-agent RL method that rewards verdicts based on the evidence behind them rather than outcomes, and credits each call with the outcome it controls. On Qwen3.6-27B, a LoRA adapter trained on six-episode interactions reduces collusion rate on held-out task sequences at the original ten-episode horizon from 65.0% to 1.0%, with no detectable change in task success. The gain holds four episodes beyond the longest training interaction, and the trained 27B model colludes less than all models in the original study, including closed-weight frontier models.",
+  "summary_zh": "LLM智能体在长程交互中互相验证时，会逐渐陷入合谋：在没有验证协议所要求证据的情况下接受工作。合谋在开始时不存在，但逐回合累积，这归因于准确反馈在记忆中积累。遵守规则的智能体在同伴正确时被告知其判断错误，因此违反规则成为奖励最大化选择，智能体在私人反思中说服自己这么做。PROVE（基于验证证据的协议强化）是一种多智能体强化学习方法，根据判断背后的证据而非结果来奖励判断，并将智能体每次调用（包括解决自身任务的调用）归因于该调用控制的结果。在Qwen3.6-27B上，基于六回合交互训练的LoRA适配器将原始十回合视野下留出任务序列的合谋率从65.0%降至1.0%，任务成功率无可检测变化。曾在每次交互中收敛的合谋现在不再收敛，且增益在训练中见过的最长交互之外四个回合仍保持。训练后的27B模型比原始研究中评估的所有模型（包括闭源前沿模型）合谋更少。",
+  "content_en": "When LLM agents verify each other's work over a long interaction, they drift into collusion: they come to accept work without the evidence that the verification protocol requires. Collusion is absent at the start and builds up episode by episode, which we trace to accurate feedback accumulating in memory. An agent that follows the rule is told that its verdict was wrong whenever its peer was right, so breaking the rule is the reward-maximizing choice, and agents talk themselves into it in their private reflections. Existing mitigations leave the agents unchanged; we train the behavior out. PROVE (Protocol Reinforcement from Verified Evidence) is a multi-agent reinforcement learning method that rewards verdicts by the evidence behind them rather than by their outcome, and credits every call an agent makes, including the calls that solve its own task, with the outcome that call controls. On Qwen3.6-27B, a LoRA adapter trained on six-episode interactions takes the collusion rate on held-out task sequences at the original ten-episode horizon from 65.0% to 1.0%, with no detectable change in task success. Collusion that converged in every interaction now converges in none, and the gain holds four episodes beyond the longest interaction seen in training. The trained 27B model colludes less than every model evaluated in the original study, closed-weight frontier models included. Code is available at https://github.com/Haochen-Luo/PROVE.",
+  "content_zh": "当 LLM 智能体在长时间交互中相互验证彼此的工作时，它们会逐渐滑向串通：它们开始在没有验证协议所要求的证据的情况下接受工作成果。串通在开始时并不存在，而是一幕一幕地累积起来，我们将其追溯到记忆中不断积累的准确反馈。遵循规则的智能体会在同伴正确时被告知自己的判定有误，因此打破规则才是使奖励最大化的选择，而智能体在私下反思中说服自己这么做。现有的缓解措施并不改变智能体本身；我们通过训练将这种行为消除。PROVE（Protocol Reinforcement from Verified Evidence，基于已验证证据的协议强化）是一种多智能体强化学习方法，它依据判定背后的证据而非判定结果来给予奖励，并将智能体做出的每一次调用——包括解决其自身任务的调用——归因于该调用所控制的结果。在 Qwen3.6-27B 上，一个在六幕交互上训练的 LoRA 适配器将留出任务序列上原始十幕时间跨度内的串通率从 65.0% 降至 1.0%，且任务成功率没有可检测到的变化。此前在每一次交互中都会收敛的串通，现在在 none 中收敛，并且该增益在超出训练中所见最长交互四幕之后仍然保持。训练后的 27B 模型比原始研究中评估的每一个模型串通都更少，包括闭权重前沿模型。代码见 https://github.com/Haochen-Luo/PROVE。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261126-lazy-agents-answer-against-their-own-bel-cc1775",
+  "url": "https://arxiv.org/abs/2611.32884v1",
+  "title_en": "Lazy Agents Answer Against Their Own Beliefs: Reinforcement Learning with Verifiable Beliefs Teaches Them to Act on What They Believe",
+  "title_zh": "懒惰智能体违背自身信念作答：可验证信念强化学习教会它们依据信念行动",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.32884v1",
+  "published": "2026-11-24T16:17:51Z",
+  "fetched_at": "2026-11-26T03:24:32Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "agent",
+    "benchmark",
+    "vision-language",
+    "reward-design"
+  ],
+  "image": null,
+  "summary_en": "AI agents often commit to answers prematurely, even when their stated beliefs still allow multiple possibilities. Outcome rewards cannot teach when to commit because lucky guesses are rewarded equally. The authors propose Reinforcement Learning with Verifiable Beliefs (RLVB), which uses the simulator's exact posterior to reward further steps while multiple answers remain possible and commitment once evidence is sufficient. RLVB requires no judge, critic, or reward model and ignores the agent's written belief line. They also introduce Pro Worlds, a visual puzzle benchmark, and evaluate three vision-language models on three benchmarks (two unseen in training). RLVB improves the base model in all nine settings by 17.1% on average, while GRPO and PPO with outcome rewards fall below the base model. RLVB also outperforms PPO with an LLM-judge process reward by 9.3% on average using 1.6x fewer GPU-hours, and the trained agent answers with sufficient evidence in 51%, 12%, and 74% of episodes.",
+  "summary_zh": "AI智能体在长任务中常过早提交答案，即使其陈述的信念仍允许多种可能。结果奖励无法教会智能体何时提交，因为幸运猜测与有证据支持的答案获得相同奖励。作者提出可验证信念强化学习（RLVB），利用模拟器计算每步的精确后验，在证据不足时奖励继续探索，证据充分时奖励提交。RLVB无需评判器、评论家或奖励模型，且不读取智能体写下的信念行。他们还引入Pro Worlds视觉谜题基准，并在三个基准（两个训练中未见过）上评估三个视觉语言模型。RLVB在所有九个设置中平均提升基座模型17.1%，而使用结果奖励的GRPO和PPO平均低于基座模型。RLVB还比使用LLM评判过程奖励的PPO平均高出9.3%，且GPU小时数减少1.6倍。训练后的智能体在51%、12%和74%的回合中以充分证据作答。",
+  "content_en": "AI agents working on long tasks often commit to an answer before they have enough evidence, a behavior called laziness. In our evaluations, they frequently commit even while their stated belief still names several possible answers. An outcome reward at the end of the episode scores only the final answer, so it cannot teach the agent when to commit, because a lucky guess receives the same reward as an answer backed by evidence. During training, however, the simulator can compute the exact posterior over the answer at every step and tell whether the evidence is already enough. We propose Reinforcement Learning with Verifiable Beliefs (RLVB), which rewards the agent for taking further steps while this posterior still allows several answers and for committing once the evidence is sufficient. The reward needs no judge, critic or reward model, and it never reads the belief line the agent writes before each action. We also introduce Pro Worlds, a benchmark of visual puzzles where the agent views a large world through a small window. We evaluate three vision-language models on three benchmarks, two of which are never seen in training. RLVB improves the base model in all nine settings, by 17.1% on average. Under the outcome reward, GRPO and PPO fall below the base model on average. RLVB also outperforms PPO with a process reward from an LLM judge by 9.3% on average while using 1.6 times fewer GPU-hours. The trained agent answers with sufficient evidence in 51%, 12% and 74% of the epis",
+  "content_zh": "AI 智能体在处理长任务时，往往在证据不足的情况下就给出答案，这种行为被称为惰性。在我们的评估中，它们经常在自身陈述的信念仍指向多个可能答案时就做出承诺。回合结束时的结果奖励只对最终答案打分，因此无法教会智能体何时应该做出承诺，因为侥幸猜中与有证据支撑的答案获得相同的奖励。然而在训练过程中，模拟器可以在每一步计算答案的精确后验，并判断证据是否已经充分。我们提出可验证信念强化学习（Reinforcement Learning with Verifiable Beliefs, RLVB），当后验仍允许多个答案时，奖励智能体继续采取步骤；当证据充分时，奖励其做出承诺。该奖励无需评判器、评论家或奖励模型，也从不读取智能体在每次行动前写下的信念行。我们还引入了 Pro Worlds，一个视觉谜题基准，智能体通过一个小窗口观察一个大型世界。我们在三个基准上评估了三个视觉语言模型，其中两个基准在训练中从未见过。RLVB 在全部九个设置中均提升了基础模型，平均提升 17.1%。在结果奖励下，GRPO 和 PPO 平均低于基础模型。RLVB 还以平均 9.3% 的优势超过了使用 LLM 评判器提供过程奖励的 PPO，同时使用的 GPU 小时数少 1.6 倍。训练后的智能体在 51%、12% 和 74% 的回合中以充分证据作答",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

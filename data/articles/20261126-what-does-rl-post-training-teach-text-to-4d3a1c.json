@@ -1,0 +1,26 @@
+{
+  "id": "20261126-what-does-rl-post-training-teach-text-to-4d3a1c",
+  "url": "https://arxiv.org/abs/2611.33316v1",
+  "title_en": "What Does RL Post-Training Teach Text-to-Image Models? A Skill-Wise Analysis of Flow-GRPO",
+  "title_zh": "RL后训练对文本到图像模型究竟教了什么？Flow-GRPO的技能级分析",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.33316v1",
+  "published": "2026-11-24T19:06:14Z",
+  "fetched_at": "2026-11-26T03:24:39Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rl",
+    "text-to-image",
+    "flow-grpo",
+    "benchmark",
+    "post-training"
+  ],
+  "image": null,
+  "summary_en": "This paper analyzes how much of the improvement from RL post-training (Flow-GRPO) on text-to-image flow models is due to sharpening existing capabilities versus unlocking new ones. Using pass@k over shared noise seeds on unseen prompts, they find that on four of GenEval's six skills, the gain is sharpening: one post-trained sample equals 4-10 base samples, and pass@32 barely changes. On spatial relations, it is unlocking: pass@32 rises from 0.69 to 1.00, and prompts never solved by 32 base samples are solved 93% of the time after RL. The benchmark average of 31 base samples per post-trained sample hides this skill-wise variation; relations account for 35% of the gain, and selecting among 8 base samples with the reward model's judge recovers 90% of the remaining 65%. The authors propose an account: within a prompt, group-relative updates re-weight existing outcomes without widening noise; across prompts, shared parameters allow successes to repair common deficits.",
+  "summary_zh": "本文分析了RL后训练（Flow-GRPO）对文本到图像流模型的提升中，有多少是锐化已有能力，多少是解锁新能力。通过在未见提示上使用共享噪声种子的pass@k测量，他们发现GenEval六项技能中的四项上，增益是锐化：一个后训练样本相当于4-10个基础样本，pass@32几乎不变。在空间关系上则是解锁：pass@32从0.69升至1.00，基础模型32个样本从未解决的提示，RL后解决率达93%。基准平均的每个后训练样本相当于31个基础样本掩盖了这种技能差异；关系贡献了35%的增益，其余65%中，用奖励模型背后的评判器在8个基础样本中选择可恢复九成。作者提出解释：在单个提示内，组相对更新仅重新加权样本中已有的结果，流策略无法拓宽产生它们的噪声；跨提示时，共享参数让某些提示的成功修复许多提示共有的缺陷。",
+  "content_en": "Reinforcement learning (RL) post-training has become a standard way to improve text-to-image flow models: Flow-GRPO lifts the GenEval score of SD3.5-M from 0.63 to 0.95, a gain read as the model having learned compositional generation. We ask how much of that gain the base model's own samples already contained, by measuring pass@k over shared noise seeds, one skill at a time, before and after RL, on prompts never used in training. The answer differs by skill. On four of GenEval's six skills, where 32 base samples already solve almost every prompt, the gain is sharpening: one post-trained sample is worth 4 to 10 base samples, and pass@32 barely moves. On spatial relations it is unlocking: pass@32 rises from 0.69 to 1.00, 128 base samples do not match one post-trained sample, and prompts the base model never solved in 32 samples are solved 93% of the time, as often as those it solved. The benchmark average, 31 base samples per post-trained sample, describes no skill. Relations carry 35% of the gain; of the other 65%, selecting among 8 base samples with the judge behind the reward recovers nine tenths. We propose an account of when each occurs: within a prompt, a group-relative update re-weights only the outcomes its samples contain, and a flow policy cannot widen the noise that produces them; across prompts, shared parameters let successes on some prompts repair a deficit common to many. The same anatomy applies to a text-rendering checkpoint. The account's predictions are test",
+  "content_zh": "强化学习（RL）后训练已成为改进文本到图像流模型的标准方法：Flow-GRPO 将 SD3.5-M 的 GenEval 分数从 0.63 提升到 0.95，这一增益被解读为模型学会了组合式生成。我们通过共享噪声种子上的 pass@k、逐项技能、在 RL 前后、在训练中从未使用过的提示上测量，来追问这一增益中有多少已包含在基础模型自身的样本中。答案因技能而异。在 GenEval 六项技能中的四项上，32 个基础样本已几乎解决所有提示，增益是锐化：一个后训练样本相当于 4 到 10 个基础样本，而 pass@32 几乎不变。在空间关系上，增益是解锁：pass@32 从 0.69 升至 1.00，128 个基础样本也抵不上一个后训练样本，而基础模型在 32 个样本中从未解决的提示有 93% 的概率被解决，与其已解决提示的解决频率相当。基准平均值——每个后训练样本对应 31 个基础样本——无法描述任何单项技能。关系承载了 35% 的增益；在其余 65% 中，用奖励背后的评判器在 8 个基础样本中进行选择可恢复十分之九。我们提出一个关于两者各自何时发生的解释：在单个提示内，组相对更新仅重新加权其样本所包含的结果，而流策略无法拓宽产生这些结果的噪声；跨提示时，共享参数让某些提示上的成功修复许多提示共有的缺陷。同样的解剖结构适用于一个文本渲染检查点。该解释的预测经过检验",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}
