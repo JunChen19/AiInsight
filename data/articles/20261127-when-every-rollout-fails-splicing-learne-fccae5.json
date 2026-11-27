@@ -1,0 +1,26 @@
+{
+  "id": "20261127-when-every-rollout-fails-splicing-learne-fccae5",
+  "url": "https://arxiv.org/abs/2611.34777v1",
+  "title_en": "When Every Rollout Fails: Splicing Learner-Conditioned Options into Long-Horizon Agent RL",
+  "title_zh": "当所有轨迹都失败时：将学习者条件选项拼接进长时程智能体强化学习",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.34777v1",
+  "published": "2026-11-25T17:38:00Z",
+  "fetched_at": "2026-11-27T03:31:38Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "long-horizon",
+    "agent",
+    "swe-bench",
+    "browsecomp"
+  ],
+  "image": null,
+  "summary_en": "Group-based reinforcement learning with verifiable rewards often yields all-fail groups on long-horizon agent tasks, where every sampled trajectory receives zero reward, leaving no reward-based policy gradient. The paper introduces SPLICE, which constructs local training targets from failed current-policy trajectories online: for each all-fail group, a proposal model selects a splice point and generates bounded options, whose values are estimated via repeated current-policy continuations and converted into return-weighted local targets for policy fitting. Evaluated on Software Engineering (SWE-bench Verified) and Deep Research (BrowseComp-Plus) across two policy families, SPLICE outperforms GRPO and full-trajectory guidance baselines in all four settings, improving over GRPO by 2.8–9.8 percentage points and raising GRPO's graduation rate on initially failed SWE tasks by 10.8 percentage points, while reducing proposal-model computation.",
+  "summary_zh": "基于可验证奖励的组强化学习在长时程智能体任务中常出现全失败组，即所有采样轨迹奖励为零，导致组相对方法无法获得基于奖励的策略梯度。本文提出 SPLICE，在线从失败的当前策略轨迹中构建局部训练目标：对每个全失败组，提案模型选择拼接点并生成若干有界选项，通过重复当前策略延续估计每个选项的价值，将正估计转换为回报加权的局部目标并用于拟合当前策略。在软件工程（SWE-bench Verified）和深度研究（BrowseComp-Plus）两个长时程任务上，跨两种策略族评估，SPLICE 在全部四种设置中优于 GRPO 和全轨迹引导基线，比 GRPO 提升 2.8–9.8 个百分点，在初始失败的 SWE 任务上将 GRPO 的毕业率提高 10.8 个百分点，同时减少昂贵的提案模型计算。",
+  "content_en": "Group-based reinforcement learning with verifiable rewards often yields all-fail groups on long-horizon agent tasks: every sampled trajectory receives zero reward, leaving group-relative methods without a reward-based policy gradient. A common remedy supplies complete solutions from a stronger model, but full trajectories are expensive and expose the learner to long off-policy histories. We introduce SPLICE, which constructs local training targets from failed current-policy trajectories online. For each all-fail group, a proposal model selects a splice point in a current-policy trajectory and generates several bounded options from that point. We estimate each option's value using repeated current-policy continuations, convert positive estimates into a return-weighted local target, and fit the current policy on the options. We evaluate SPLICE across two policy families on two long-horizon agent tasks, Software Engineering with SWE-bench Verified and Deep Research with BrowseComp-Plus. SPLICE outperforms GRPO and full-trajectory guidance baselines in all four settings, improving over GRPO by 2.8--9.8 percentage points. On initially failed SWE tasks, it raises GRPO's graduation rate by 10.8 percentage points. Further experiments show that SPLICE improves performance while reducing costly proposal-model computation.",
+  "content_zh": "基于可验证奖励的分组强化学习在长时程智能体任务上常常产生全失败组：每条采样轨迹都获得零奖励，使分组相对方法缺少基于奖励的策略梯度。一种常见的补救措施是从更强的模型提供完整解，但完整轨迹代价高昂，且会使学习器暴露于较长的离策略历史。我们提出 SPLICE，它在线地从失败的当前策略轨迹中构建局部训练目标。对于每个全失败组，一个提议模型在当前策略轨迹中选择一个拼接点，并从该点生成若干有界选项。我们使用重复的当前策略延续来估计每个选项的价值，将正估计转换为回报加权的局部目标，并在这些选项上拟合当前策略。我们在两个长时程智能体任务上跨两个策略家族评估 SPLICE：使用 SWE-bench Verified 的软件工程，以及使用 BrowseComp-Plus 的深度研究。SPLICE 在所有四种设置中均优于 GRPO 和完整轨迹引导基线，相较 GRPO 提升 2.8--9.8 个百分点。在初始失败的 SWE 任务上，它将 GRPO 的毕业率提高了 10.8 个百分点。进一步实验表明，SPLICE 在提升性能的同时减少了昂贵的提议模型计算。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

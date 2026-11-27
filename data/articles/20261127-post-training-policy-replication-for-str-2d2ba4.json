@@ -1,0 +1,26 @@
+{
+  "id": "20261127-post-training-policy-replication-for-str-2d2ba4",
+  "url": "https://arxiv.org/abs/2611.34035v1",
+  "title_en": "Post-Training Policy Replication for Strategy-Following Multi-Agent Deep Reinforcement Learning across Team Sizes",
+  "title_zh": "面向策略跟随的多智能体深度强化学习：跨团队规模的后训练策略复制",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.34035v1",
+  "published": "2026-11-25T09:18:04Z",
+  "fetched_at": "2026-11-27T03:32:31Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "multi-agent",
+    "deep-reinforcement-learn",
+    "policy-replication",
+    "transfer-learning",
+    "warm-start"
+  ],
+  "image": null,
+  "summary_en": "The paper addresses the high training cost and poor transferability of the strategy-following distributed attentional actor architecture (sfDA7-X) in multi-agent deep reinforcement learning, where instruction combinations scale exponentially with team size. It introduces a team-size-independent observation architecture and reconstructs collective behavior by replicating a single trained policy across agents in teams of different sizes, eliminating the need to train from scratch. Warm-start retraining is also evaluated by initializing policy networks with a pre-trained policy to reduce computational overhead. In an object collection game, a policy trained in a four-agent team is deployed to teams of three to eight agents. Experiments show that the aggregated observation matrix achieves performance comparable to sfDA7-X, policy replication preserves performance without substantial degradation in three- and five-agent teams, and warm-start retraining outperforms training from scratch while reducing required training episodes by up to 90%. Deployments to six- and eight-agent teams further confirm effective spatial region allocation following given instructions.",
+  "summary_zh": "本文针对多智能体深度强化学习中策略跟随分布式注意力演员架构（sfDA7-X）因指令组合随团队和指令规模指数增长而导致训练成本高昂、迁移性差的问题，提出了一种与团队规模无关的观测架构，并通过在不同规模团队中复制单个已训练策略来重构集体行为，从而无需从头训练。同时评估了使用预训练策略初始化策略网络的热启动重训练以显著降低计算开销。在物品收集游戏中，将四智能体团队训练的策略部署到三至八智能体团队。实验表明，使用所提出的聚合观测矩阵训练的性能与基线方法sfDA7-X相当；策略复制在三和五智能体团队中保持性能且无显著下降；热启动重训练优于从头训练，并将所需训练回合减少高达90%。部署到六和八智能体团队进一步证实了根据给定指令的有效空间区域分配。",
+  "content_en": "Although multi-agent deep reinforcement learning enables coordinated behavior, aligning it with managerial intent remains difficult due to complex agent interactions. Although the strategy-following distributed attentional actor architecture (sfDA7-X) improves controllability via regional instructions, instruction combinations scale exponentially with team and instruction sizes, leading to prohibitive training costs and poor transferability. To reduce this computational cost, we introduce a team-size-independent observation architecture and reconstruct collective behavior by replicating a single trained policy across agents in teams of different sizes, thereby eliminating the need to train from scratch. Additionally, we evaluate warm-start retraining by initializing policy networks with a pre-trained policy to significantly lower computational overhead. In an object collection game, a policy trained in a four-agent team is deployed to teams of three to eight agents. Experiments demonstrate that training with the proposed aggregated observation matrix achieves performance comparable to that of the baseline method, sfDA7-X. Furthermore, policy replication preserves performance without substantial degradation in three- and five-agent teams, and warm-start retraining outperforms training from scratch while reducing required training episodes by up to 90%. Deployments to six- and eight-agent teams further confirm effective spatial region allocation following given instructions. Th",
+  "content_zh": "尽管多智能体深度强化学习能够实现协调行为，但由于智能体之间复杂的交互，使其与管理意图保持一致仍然困难。尽管策略遵循型分布式注意力演员架构（sfDA7-X）通过区域指令提升了可控性，但指令组合会随团队规模和指令规模呈指数级增长，导致训练成本过高且迁移性较差。为降低这一计算成本，我们引入了一种与团队规模无关的观测架构，并通过在不同规模团队中复制单个已训练策略来重构集体行为，从而无需从头训练。此外，我们评估了热启动再训练，即使用预训练策略初始化策略网络，以显著降低计算开销。在一个物体收集游戏中，将在四智能体团队中训练的策略部署到三至八智能体团队。实验表明，使用所提出的聚合观测矩阵进行训练可达到与基线方法 sfDA7-X 相当的性能。此外，策略复制在三智能体和五智能体团队中保持了性能且未出现显著退化，而热启动再训练优于从头训练，同时将所需训练回合数最多减少 90%。部署到六智能体和八智能体团队进一步证实了按照给定指令进行有效的空间区域分配。Th",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

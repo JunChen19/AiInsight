@@ -1,0 +1,26 @@
+{
+  "id": "20261127-briar-martingale-belief-smoothing-on-bif-431c27",
+  "url": "https://arxiv.org/abs/2611.34746v1",
+  "title_en": "BRIAR: Martingale Belief Smoothing on Bifurcation-Guided Reasoning Trees",
+  "title_zh": "BRIAR：基于分叉引导推理树的鞅信念平滑",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.34746v1",
+  "published": "2026-11-25T17:23:23Z",
+  "fetched_at": "2026-11-27T03:31:51Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "rlvr",
+    "tree-search",
+    "martingale",
+    "credit-assignment",
+    "reasoning"
+  ],
+  "image": null,
+  "summary_en": "BRIAR is a tree-structured RLVR framework that addresses blind credit assignment in long-chain reasoning by leveraging the martingale property of prefix pass probability. It expands reasoning trees along an upper-confidence outcome-bifurcation frontier to avoid absorbed rumination, and models latent node values with boundary-scaled heteroscedastic edge variances. Exact global posteriors are computed in linear O(|V|) time via two-pass Rauch-Tung-Striebel tree belief smoothing, eliminating O(m^3) matrix inversions and gating out spurious boundary noise. The method also detects minimal absorbed frontier nodes to further guide rollouts.",
+  "summary_zh": "BRIAR 是一个树结构 RLVR 框架，利用前缀通过概率的鞅性质解决长链推理中的盲目信用分配问题。它沿上置信结果分叉前沿扩展推理树，避免吸收式反复思考，并用边界缩放异方差边方差建模潜在节点值。通过两遍 Rauch-Tung-Striebel 树信念平滑，在 O(|V|) 线性时间内计算精确全局后验，消除 O(m^3) 矩阵求逆并门控虚假边界噪声。该方法还检测最小吸收前沿节点以进一步引导 rollout。",
+  "content_en": "Reinforcement learning with verifiable rewards (RLVR) has rapidly advanced long-chain reasoning, yet standard policy optimizers distribute rollout compute and gradient credit blindly across a trajectory. On hard problems, an early misstep derails the remaining trace, whereas on solvable problems, the policy keeps generating redundant verification long after the answer is already determined. We trace both pathologies to a single structural fact: under an on-policy verifier, the true prefix pass probability $V^π(u)$ along a reasoning trace forms a $[0,1]$-bounded Doob martingale whose learnable credit variance is strictly conserved and bounded above by $V^π(u)(1-V^π(u))$, vanishing at both the derailed ($V^π\\to 0$) and absorbed ($V^π\\to 1$) boundaries. We introduce BRIAR (Bifurcation-guided Rollout and Inference on Adaptive Reasoning trees), a tree-structured RLVR framework built directly around this martingale geometry. First, BRIAR expands discourse-aligned reasoning trees along an upper-confidence outcome-bifurcation frontier, steering rollouts away from absorbed rumination and toward unresolved decision points. Second, it models latent node values with boundary-scaled heteroscedastic edge variances and computes exact global posteriors in linear $\\mathcal{O}(|V|)$ time via two-pass Rauch--Tung--Striebel (RTS) tree belief smoothing, eliminating $\\mathcal{O}(m^3)$ matrix inversions while gating out spurious boundary noise. Third, BRIAR detects minimal absorbed frontier nodes a",
+  "content_zh": "带可验证奖励的强化学习（RLVR）已迅速推动了长链推理的发展，然而标准的策略优化器会在整条轨迹上盲目地分配 rollout 计算量和梯度信用。在困难问题上，早期的一次失误会使剩余的推理轨迹偏离正轨；而在可解决的问题上，策略在答案早已确定之后仍会继续生成冗余的验证内容。我们将这两种病态现象追溯到同一个结构性事实：在 on-policy 验证器下，沿推理轨迹的真实前缀通过概率 $V^π(u)$ 构成一个取值于 $[0,1]$ 的 Doob 鞅，其可学习信用的方差严格守恒，且上界为 $V^π(u)(1-V^π(u))$，并在脱轨（$V^π\\to 0$）与吸收（$V^π\\to 1$）两个边界处消失。我们提出 BRIAR（Bifurcation-guided Rollout and Inference on Adaptive Reasoning trees，即自适应推理树上的分叉引导 rollout 与推理），这是一个直接围绕该鞅几何结构构建的树结构 RLVR 框架。首先，BRIAR 沿上置信度的结果分叉前沿扩展与话语对齐的推理树，引导 rollout 远离已吸收的反复思虑，转向尚未解决的决策点。其次，它用边界缩放后的异方差边方差对潜在节点值建模，并通过两遍 Rauch--Tung--Striebel（RTS）树置信平滑在 $\\mathcal{O}(|V|)$ 线性时间内计算精确的全局后验，从而消除 $\\mathcal{O}(m^3)$ 矩阵求逆，同时门控掉虚假的边界噪声。第三，BRIAR 检测最小的已吸收前沿节点 a",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

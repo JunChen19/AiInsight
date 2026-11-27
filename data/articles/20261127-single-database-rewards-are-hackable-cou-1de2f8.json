@@ -1,0 +1,26 @@
+{
+  "id": "20261127-single-database-rewards-are-hackable-cou-1de2f8",
+  "url": "https://arxiv.org/abs/2611.34363v1",
+  "title_en": "Single-Database Rewards Are Hackable: Counterfactual Execution for Trustworthy Text-to-SQL RL",
+  "title_zh": "单数据库奖励可被攻击：面向可信Text-to-SQL强化学习的反事实执行",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.34363v1",
+  "published": "2026-11-25T13:30:26Z",
+  "fetched_at": "2026-11-27T03:32:02Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "text-to-sql",
+    "reinforcement-learning",
+    "reward-hacking",
+    "counterfactual-execution",
+    "grpo"
+  ],
+  "image": null,
+  "summary_en": "The paper studies a counterfactual-database (CF) reward for text-to-SQL RL that runs the final query on hidden, code-generated copies of the database and pays only if all results match (strict form) or by the share matched (mean form). On 1,302 synthetic audit questions, the strict form reduces the share of buggy queries paid in full from 29.5% to 16.8% and reward hacks from 54.1% to 1.9%, while rejecting 0 of 2,847 correct queries. A controlled GRPO comparison on a 3.35B model shows that training with the mean form does not improve in-domain accuracy (8.4% vs 11.7%) because the two rewards disagree on only 5-7% of rollouts, but gains 1.6 points on Spider. One seed reverses both signs, indicating that single-seed reward comparisons can be misleading.",
+  "summary_zh": "本文研究了一种用于text-to-SQL强化学习的反事实数据库（CF）奖励，该奖励在隐藏的、代码生成的数据库副本上运行最终查询，仅当所有结果匹配（严格形式）或按匹配比例支付（平均形式）。在1,302个合成审计问题上，严格形式将完全支付的有缺陷查询比例从29.5%降至16.8%，将奖励攻击从54.1%降至1.9%，同时未拒绝2,847个正确查询中的任何一个。在3.35B模型上进行的受控GRPO比较表明，使用平均形式训练并未提高域内准确率（8.4% vs 11.7%），因为两种奖励仅在5-7%的rollout上不一致，但在Spider上获得了1.6个百分点的提升。一个种子逆转了两个符号，表明单种子奖励比较可能产生误导。",
+  "content_en": "Reinforcement learning (RL) for text-to-SQL agents pays a query when its result matches the reference on one database. However, a wrong query can match by luck when the data lack the rows that expose its bug. We study a counterfactual-database (CF) reward that also runs the final query on a few hidden, code-generated copies of the database and pays only if all results match (strict form) or by the share matched (mean form). On 1,302 synthetic audit questions, the strict form lowers the share of buggy queries paid in full from 29.5% to 16.8% and of reward hacks from 54.1% to 1.9%, rejecting 0 of 2,847 correct queries; copies from a family-blind generator do about as well. In a controlled GRPO comparison on a 3.35B model with three seeds per arm, training on the mean form did not improve in-domain accuracy (8.4% vs 11.7%), because the two rewards disagreed on only 5-7% of rollouts; on Spider it gained 1.6 points. One seed reverses both signs, so single-seed reward comparisons mislead. Code: https://github.com/RishiiGamer2201/counterfactual-sql-rewards ; data, models, demo: https://huggingface.co/counterfactual-sql",
+  "content_zh": "针对文本到 SQL 智能体的强化学习（RL）会在查询结果与参考结果在某一数据库上匹配时给予奖励。然而，当数据缺少能暴露其缺陷的行时，错误查询可能靠运气匹配。我们研究了一种反事实数据库（CF）奖励，它还会在若干隐藏的、由代码生成的数据库副本上运行最终查询，并且仅当所有结果都匹配时才给予奖励（严格形式），或按匹配比例给予奖励（均值形式）。在 1,302 个合成审计问题上，严格形式将获得全额奖励的有缺陷查询占比从 29.5% 降至 16.8%，将奖励黑客行为从 54.1% 降至 1.9%，并且在 2,847 个正确查询中拒绝了 0 个；来自家族盲生成器的副本表现大致相同。在一项针对 3.35B 模型的受控 GRPO 比较中，每组三个种子，使用均值形式训练并未提升域内准确率（8.4% 对 11.7%），因为两种奖励仅在 5-7% 的 rollout 上不一致；在 Spider 上它提升了 1.6 个百分点。有一个种子逆转了两个符号，因此单种子奖励比较会产生误导。代码：https://github.com/RishiiGamer2201/counterfactual-sql-rewards ；数据、模型、演示：https://huggingface.co/counterfactual-sql",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

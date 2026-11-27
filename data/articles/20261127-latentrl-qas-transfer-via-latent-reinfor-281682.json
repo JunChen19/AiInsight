@@ -1,0 +1,26 @@
+{
+  "id": "20261127-latentrl-qas-transfer-via-latent-reinfor-281682",
+  "url": "https://arxiv.org/abs/2611.34634v1",
+  "title_en": "LatentRL-QAS: Transfer via Latent Reinforcement Learning for Quantum Architecture Search",
+  "title_zh": "LatentRL-QAS：通过潜在强化学习实现量子架构搜索的迁移",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.34634v1",
+  "published": "2026-11-25T16:20:02Z",
+  "fetched_at": "2026-11-27T03:32:25Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "quantum-architecture-sea",
+    "reinforcement-learning",
+    "transfer-learning",
+    "variational-autoencoder",
+    "ame-states"
+  ],
+  "image": null,
+  "summary_en": "LatentRL-QAS introduces a latent space transfer and refresh framework for reinforcement learning-based quantum architecture search (QAS), enabling transfer across different qubit counts. A circuit variational autoencoder encodes circuits as one token per gate into a shared latent space, so the RL agent's state, actions, and network size remain constant regardless of qubit number. The latent space is periodically refreshed with new discoveries and grown from smaller-system solutions, transferring circuit representations rather than network weights. For absolutely maximally entangled (AME) states, LatentRL-QAS discovers five- and six-qubit AME states without being shown them and prepares them in 89-99% of evaluation episodes, while baseline RL-QAS fails even with a 10-17x larger network. It also remains robust under depolarizing noise.",
+  "summary_zh": "LatentRL-QAS 提出了一种用于基于强化学习（RL）的量子架构搜索（QAS）的潜在空间迁移与刷新框架，实现了跨不同量子比特数的迁移。电路变分自编码器将电路编码为每个门一个 token，并将任意量子比特数的电路映射到同一潜在空间，因此 RL 代理的状态、动作和网络规模在任何量子比特数下都保持不变。潜在空间会定期用代理的新发现刷新，并针对更大系统从较小系统的解中生长，从而迁移的是电路表示而非网络权重或过往经验。在绝对最大纠缠（AME）态任务中，LatentRL-QAS 在未展示目标态的情况下发现了五和六量子比特的 AME 态，并在 89-99% 的评估回合中成功制备，而基线 RL-QAS 即使使用大 10 到 17 倍的网络也无法在相同预算下找到它们。此外，LatentRL-QAS 在去极化噪声下仍保持鲁棒性。",
+  "content_en": "Reinforcement learning (RL) emerges as a prominent approach to quantum architecture search (QAS), the automated design of quantum circuits. However, transferring what an agent has learned from one number of qubits to another is still weakly explored: the state, the action space and the neural network of a state-of-the-art RL-QAS agent all grow with the number of qubits, which makes transfer learning across qubit counts prohibitive. We make this transfer possible by introducing LatentRL-QAS, a latent space transfer and refresh framework for RL-based QAS. At its core, a circuit variational autoencoder encodes a circuit as one token per gate and maps circuits on any number of qubits into the same latent space. An RL agent navigates this space instead of adding gates, so its state, actions and network have the same size at every qubit count. The latent space is periodically refreshed with the agent's new discoveries and, for a larger system, grown from the solutions of the smaller one, so what is transferred is the representation of circuits, not network weights or past experience. To show transfer, we consider absolutely maximally entangled (AME) states, a resource for quantum error correction. LatentRL-QAS discovers the five- and six-qubit AME states without being shown them and prepares them in 89-99% of evaluation episodes, whereas the baseline RL-QAS fails to find them with the same budget, even with a network 10 to 17 times larger. LatentRL-QAS remains robust under depolari",
+  "content_zh": "强化学习（RL）已成为量子架构搜索（QAS）——即量子电路的自动化设计——的一种重要方法。然而，将一个智能体从一种量子比特数所学到的知识迁移到另一种量子比特数，这方面的探索仍然不足：最先进的 RL-QAS 智能体的状态、动作空间和神经网络都随量子比特数增长，这使得跨量子比特数的迁移学习难以实现。我们通过引入 LatentRL-QAS——一个面向基于 RL 的 QAS 的潜在空间迁移与刷新框架——使这种迁移成为可能。其核心是一个电路变分自编码器，它将电路编码为每个门一个 token，并将任意量子比特数上的电路映射到同一潜在空间。RL 智能体在该空间中导航，而不是添加门，因此其状态、动作和网络在每个量子比特数下都具有相同的大小。潜在空间会定期用智能体的新发现进行刷新，并且对于更大的系统，会从较小系统的解中生长出来，因此被迁移的是电路的表示，而不是网络权重或过往经验。为了展示迁移，我们考虑绝对最大纠缠（AME）态，这是一种用于量子纠错的资源。LatentRL-QAS 在未被告知的情况下发现了五量子比特和六量子比特 AME 态，并在 89-99% 的评估回合中制备了它们，而基线 RL-QAS 在相同预算下未能找到它们，即使使用大 10 到 17 倍的网络也是如此。LatentRL-QAS 在去极化",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

@@ -1,0 +1,26 @@
+{
+  "id": "20261127-maco-rl-scaling-agent-capabilities-with-e0eea3",
+  "url": "https://arxiv.org/abs/2611.34703v1",
+  "title_en": "Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning",
+  "title_zh": "Maco-RL：通过混合任务强化学习扩展智能体能力",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.34703v1",
+  "published": "2026-11-25T16:59:27Z",
+  "fetched_at": "2026-11-27T03:31:44Z",
+  "type": "paper",
+  "category": "rl",
+  "tags": [
+    "reinforcement-learning",
+    "mixed-task",
+    "agent",
+    "benchmark",
+    "post-training"
+  ],
+  "image": null,
+  "summary_en": "Maco-RL is proposed to scale mixed-task reinforcement learning (MixRL), which trains a unified policy across domains without separate specialists or distillation. It employs a quota-based scheduler for asynchronous rollouts across task domains to stabilize training by balancing gradient contributions and mitigating off-policy effects, and introduces Tri-Buffer Sampling (TBS) to allocate compute among samples with varying mastery levels, promoting frontier exploration while preserving acquired capabilities. Experiments on five benchmarks show Maco-RL raises Qwen3.5-27B's overall score from 43.6 to 54.2, and to 60.1 with continual expansion, reaching the frontier of Qwen3.8-27B, which is further pushed outward by +5.7. Maco-RL also outperforms single-task RL with less compute for policy updates, supporting MixRL as a practical and compute-efficient post-training approach.",
+  "summary_zh": "Maco-RL 被提出用于扩展混合任务强化学习（MixRL），该方法跨领域训练统一策略，无需单独专家或蒸馏阶段。它采用基于配额的调度器跨任务领域异步展开，通过平衡梯度贡献和减轻离策略效应来稳定训练，并引入 Tri-Buffer 采样（TBS）在不同掌握程度的样本间分配计算，促进前沿探索同时保留已获得的能力。在五个基准上的实验表明，Maco-RL 将 Qwen3.5-27B 的总分从 43.6 提升至 54.2，并通过持续扩展达到 60.1，达到 Qwen3.8-27B 的前沿水平，并进一步将其推高 +5.7。Maco-RL 在策略更新计算量更少的情况下也优于单任务强化学习，支持 MixRL 作为一种实用且计算高效的后训练方法。",
+  "content_en": "Mixed-task reinforcement learning (MixRL) directly trains a unified policy across domains to continually expand agent capabilities without training separate specialists or requiring an extra distillation stage. Despite its appeal, scaling MixRL poses significant challenges in achieving stable and efficient mixed-task learning, effectively allocating rollout compute, and supporting continual domain expansion. To address these challenges, we propose Maco-RL, an approach that effectively scales MixRL. Specifically, Maco-RL employs a quota-based scheduler for asynchronous rollouts across multiple task domains, thereby stabilizing training by balancing gradient contributions and mitigating off-policy effects. Along an orthogonal axis, Maco-RL further introduces Tri-Buffer Sampling (TBS) to allocate compute among samples with varying levels of mastery, promoting sustained frontier exploration while preserving acquired capabilities. Experiments on five benchmarks show Maco-RL raises Qwen3.5-27B's overall score from 43.6 to 54.2 and then to 60.1 with continual expansion, reaching the frontier held by Qwen3.8-27B, which is further pushed outward by +5.7. Maco-RL also outperforms single-task RL with less compute for policy updates. These results support MixRL as a practical and compute-efficient post-training approach with substantial potential to strengthen general agent capabilities.",
+  "content_zh": "混合任务强化学习（MixRL）直接跨领域训练统一策略，以持续扩展智能体能力，无需训练单独的专家模型，也无需额外的蒸馏阶段。尽管其颇具吸引力，但扩展 MixRL 在实现稳定高效的混合任务学习、有效分配 rollout 计算资源以及支持持续领域扩展方面仍面临重大挑战。为应对这些挑战，我们提出 Maco-RL，一种能够有效扩展 MixRL 的方法。具体而言，Maco-RL 采用基于配额的调度器，在多个任务领域间进行异步 rollout，从而通过平衡梯度贡献和缓解离策略效应来稳定训练。在另一正交方向上，Maco-RL 进一步引入 Tri-Buffer Sampling（TBS），在掌握程度不同的样本之间分配计算资源，在保持已获得能力的同时促进持续的前沿探索。在五个基准上的实验表明，Maco-RL 将 Qwen3.5-27B 的总体得分从 43.6 提升至 54.2，并随着持续扩展进一步提升至 60.1，达到 Qwen3.8-27B 所保持的前沿水平，并进一步将其推高 +5.7。Maco-RL 在策略更新的计算量更少的情况下也优于单任务强化学习。这些结果支持将 MixRL 作为一种实用且计算高效的后训练方法，具有显著潜力来增强通用智能体能力。",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

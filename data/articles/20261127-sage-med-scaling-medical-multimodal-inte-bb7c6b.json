@@ -1,0 +1,26 @@
+{
+  "id": "20261127-sage-med-scaling-medical-multimodal-inte-bb7c6b",
+  "url": "https://arxiv.org/abs/2611.34575v1",
+  "title_en": "Sage-Med: Scaling Medical Multimodal Intelligence",
+  "title_zh": "Sage-Med：医疗多模态智能的规模化",
+  "source_name": "arXiv",
+  "source_url": "https://arxiv.org/abs/2611.34575v1",
+  "published": "2026-11-25T15:39:45Z",
+  "fetched_at": "2026-11-27T03:32:20Z",
+  "type": "paper",
+  "category": "model-release",
+  "tags": [
+    "medical-mllm",
+    "model-release",
+    "scaling",
+    "reinforcement-learning",
+    "benchmark"
+  ],
+  "image": null,
+  "summary_en": "The paper introduces Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built via stage-specific curation over 322.7 million candidate records and a progressive training curriculum (medical pretraining, staged supervised fine-tuning, adaptive reinforcement learning). Evaluated on 238 clinical tasks across 61 public and 13 private multi-center benchmarks covering over 40 modalities, it achieves an average score of 58.26% on 31 public multimodal benchmarks. This outperforms the open-source medical model Hulu-Med-235B-A22B (50.99%) and the general scientific model Intern-S2-Preview (52.24%), approaching proprietary models. The work highlights that scaling model size alone improves text but not multimodal perception, and reasoning modes fail to close the visual gap.",
+  "summary_zh": "本文介绍了Sage-Med-Preview，一个拥有350亿参数、激活参数为30亿的医疗多模态模型，通过针对3.227亿候选记录的阶段特异性筛选和渐进式训练课程（包括医疗预训练、分阶段监督微调和自适应强化学习）构建。在涵盖40多种模态的61个公开和13个私有多中心基准的238项临床任务上评估，该模型在31个公开多模态基准上平均得分为58.26%。这超过了开源医疗模型Hulu-Med-235B-A22B（50.99%）和通用科学模型Intern-S2-Preview（52.24%），并接近专有模型。该工作强调，仅扩大模型规模能提升文本能力而非多模态感知，且推理模式无法弥合视觉差距。",
+  "content_en": "Establishing effective scaling laws for medical multimodal large language models (MLLMs) remains a persistent and fundamental challenge. Our systematic evaluation shows that existing medical MLLMs tend to underperform frontier general-purpose MLLMs across a range of medical tasks, while scaling model size primarily improves text capabilities rather than multimodal perception, and enabling reasoning modes fails to close this visual gap. To investigate how medical multimodal intelligence scales in practice, we introduce Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built by combining stage-specific curation over 322.7 million candidate records with a progressive training curriculum spanning medical pretraining, staged supervised fine-tuning, and adaptive reinforcement learning. Across this curriculum, progressive supervised refinement and adaptive reinforcement learning yield consistent stage-wise gains, substantially advancing both specialized visual understanding and medical language capabilities. Evaluated against 77 competing models across 238 clinical tasks spanning 61 public and 13 private multi-center benchmarks in more than 40 modalities, Sage-Med-Preview achieves an average score of 58.26% on the 31 public multimodal benchmarks. It outperforms the state-of-the-art open-source medical model Hulu-Med-235B-A22B at 50.99% and the general scientific model Intern-S2-Preview at 52.24%, and approaches the advanced proprietary model GP",
+  "content_zh": "为医学多模态大语言模型（MLLMs）建立有效的缩放定律仍然是一项持续存在且根本性的挑战。我们的系统性评估表明，现有的医学 MLLMs 在一系列医学任务上往往不如前沿的通用 MLLMs，而扩大模型规模主要提升的是文本能力而非多模态感知能力，并且启用推理模式也无法弥合这一视觉差距。为了探究医学多模态智能在实践中如何缩放，我们推出了 Sage-Med-Preview，这是一个拥有 350 亿参数、激活参数为 30 亿的医学多模态模型，其构建方式是将针对 3.227 亿条候选记录的阶段特定数据整理与涵盖医学预训练、分阶段监督微调和自适应强化学习的渐进式训练课程相结合。在这一课程中，渐进式监督精炼和自适应强化学习带来了持续的分阶段增益，大幅推进了专业化视觉理解和医学语言能力。在涵盖 40 多种模态、61 个公开和 13 个私立多中心基准的 238 项临床任务上，与 77 个竞争模型进行对比评估，Sage-Med-Preview 在 31 个公开多模态基准上取得了 58.26% 的平均分。它超越了最先进的开源医学模型 Hulu-Med-235B-A22B 的 50.99% 和通用科学模型 Intern-S2-Preview 的 52.24%，并接近先进的专有模型 GP",
+  "content_note": "arxiv_abstract",
+  "translation_failed": false
+}

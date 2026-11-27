@@ -1,5 +1,181 @@
 [
   {
+    "id": "20261127-sakana-ai-releases-namazu-small-a-30b-mo-6c0ed0",
+    "url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano/",
+    "title_en": "Sakana AI Releases Namazu Small, a 30B Model Built on Nemotron 3 Nano",
+    "title_zh": "Sakana AI 发布 Namazu Small：基于 Nemotron 3 Nano 的 30B 模型",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-26T22:06:40Z",
+    "fetched_at": "2026-11-27T03:32:15Z",
+    "type": "blog",
+    "category": "model-release",
+    "tags": [
+      "model-release",
+      "reasoning",
+      "benchmark",
+      "llm",
+      "sakana-ai"
+    ],
+    "image": "images/20261127-sakana-ai-releases-namazu-small-a-30b-mo-6c0ed0.jpg",
+    "summary_en": "Sakana AI released Sakana Namazu Small, a 30B-parameter reasoning model built on NVIDIA Nemotron 3 Nano. The model was trained in-house with continued pretraining and post-training, starting from Nemotron 3 Nano's pretrained base. It achieves a 60.1 average on a 25-benchmark suite, outperforming NVIDIA's 120B Nemotron 3 Super (56.2) and Nano (50.2). Notably, it scores 73.5 on BrowseComp, about double Super's 36.1, but lags in closed-book knowledge with SimpleQA Verified at 6.8.",
+    "summary_zh": "Sakana AI 发布了 Sakana Namazu Small，这是一个基于 NVIDIA Nemotron 3 Nano 构建的 30B 参数推理模型。该模型从 Nemotron 3 Nano 的预训练基础开始，在内部进行了持续预训练和后训练。在 25 个基准测试套件上，它平均得分 60.1，超过了 NVIDIA 的 120B Nemotron 3 Super（56.2）和 Nano（50.2）。值得注意的是，它在 BrowseComp 上得分 73.5，约为 Super 36.1 的两倍，但在闭卷知识方面落后，SimpleQA Verified 得分为 6.8。",
+    "norm_url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano"
+  },
+  {
+    "id": "20261127-when-every-rollout-fails-splicing-learne-fccae5",
+    "url": "https://arxiv.org/abs/2611.34777v1",
+    "title_en": "When Every Rollout Fails: Splicing Learner-Conditioned Options into Long-Horizon Agent RL",
+    "title_zh": "当所有轨迹都失败时：将学习者条件选项拼接进长时程智能体强化学习",
+    "source_name": "arXiv",
+    "published": "2026-11-25T17:38:00Z",
+    "fetched_at": "2026-11-27T03:31:38Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "long-horizon",
+      "agent",
+      "swe-bench",
+      "browsecomp"
+    ],
+    "image": null,
+    "summary_en": "Group-based reinforcement learning with verifiable rewards often yields all-fail groups on long-horizon agent tasks, where every sampled trajectory receives zero reward, leaving no reward-based policy gradient. The paper introduces SPLICE, which constructs local training targets from failed current-policy trajectories online: for each all-fail group, a proposal model selects a splice point and generates bounded options, whose values are estimated via repeated current-policy continuations and converted into return-weighted local targets for policy fitting. Evaluated on Software Engineering (SWE-bench Verified) and Deep Research (BrowseComp-Plus) across two policy families, SPLICE outperforms GRPO and full-trajectory guidance baselines in all four settings, improving over GRPO by 2.8–9.8 percentage points and raising GRPO's graduation rate on initially failed SWE tasks by 10.8 percentage points, while reducing proposal-model computation.",
+    "summary_zh": "基于可验证奖励的组强化学习在长时程智能体任务中常出现全失败组，即所有采样轨迹奖励为零，导致组相对方法无法获得基于奖励的策略梯度。本文提出 SPLICE，在线从失败的当前策略轨迹中构建局部训练目标：对每个全失败组，提案模型选择拼接点并生成若干有界选项，通过重复当前策略延续估计每个选项的价值，将正估计转换为回报加权的局部目标并用于拟合当前策略。在软件工程（SWE-bench Verified）和深度研究（BrowseComp-Plus）两个长时程任务上，跨两种策略族评估，SPLICE 在全部四种设置中优于 GRPO 和全轨迹引导基线，比 GRPO 提升 2.8–9.8 个百分点，在初始失败的 SWE 任务上将 GRPO 的毕业率提高 10.8 个百分点，同时减少昂贵的提案模型计算。",
+    "norm_url": "https://arxiv.org/abs/2611.34777v1"
+  },
+  {
+    "id": "20261127-briar-martingale-belief-smoothing-on-bif-431c27",
+    "url": "https://arxiv.org/abs/2611.34746v1",
+    "title_en": "BRIAR: Martingale Belief Smoothing on Bifurcation-Guided Reasoning Trees",
+    "title_zh": "BRIAR：基于分叉引导推理树的鞅信念平滑",
+    "source_name": "arXiv",
+    "published": "2026-11-25T17:23:23Z",
+    "fetched_at": "2026-11-27T03:31:51Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "rlvr",
+      "tree-search",
+      "martingale",
+      "credit-assignment",
+      "reasoning"
+    ],
+    "image": null,
+    "summary_en": "BRIAR is a tree-structured RLVR framework that addresses blind credit assignment in long-chain reasoning by leveraging the martingale property of prefix pass probability. It expands reasoning trees along an upper-confidence outcome-bifurcation frontier to avoid absorbed rumination, and models latent node values with boundary-scaled heteroscedastic edge variances. Exact global posteriors are computed in linear O(|V|) time via two-pass Rauch-Tung-Striebel tree belief smoothing, eliminating O(m^3) matrix inversions and gating out spurious boundary noise. The method also detects minimal absorbed frontier nodes to further guide rollouts.",
+    "summary_zh": "BRIAR 是一个树结构 RLVR 框架，利用前缀通过概率的鞅性质解决长链推理中的盲目信用分配问题。它沿上置信结果分叉前沿扩展推理树，避免吸收式反复思考，并用边界缩放异方差边方差建模潜在节点值。通过两遍 Rauch-Tung-Striebel 树信念平滑，在 O(|V|) 线性时间内计算精确全局后验，消除 O(m^3) 矩阵求逆并门控虚假边界噪声。该方法还检测最小吸收前沿节点以进一步引导 rollout。",
+    "norm_url": "https://arxiv.org/abs/2611.34746v1"
+  },
+  {
+    "id": "20261127-maco-rl-scaling-agent-capabilities-with-e0eea3",
+    "url": "https://arxiv.org/abs/2611.34703v1",
+    "title_en": "Maco-RL: Scaling Agent Capabilities with Mixed-Task Reinforcement Learning",
+    "title_zh": "Maco-RL：通过混合任务强化学习扩展智能体能力",
+    "source_name": "arXiv",
+    "published": "2026-11-25T16:59:27Z",
+    "fetched_at": "2026-11-27T03:31:44Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "reinforcement-learning",
+      "mixed-task",
+      "agent",
+      "benchmark",
+      "post-training"
+    ],
+    "image": null,
+    "summary_en": "Maco-RL is proposed to scale mixed-task reinforcement learning (MixRL), which trains a unified policy across domains without separate specialists or distillation. It employs a quota-based scheduler for asynchronous rollouts across task domains to stabilize training by balancing gradient contributions and mitigating off-policy effects, and introduces Tri-Buffer Sampling (TBS) to allocate compute among samples with varying mastery levels, promoting frontier exploration while preserving acquired capabilities. Experiments on five benchmarks show Maco-RL raises Qwen3.5-27B's overall score from 43.6 to 54.2, and to 60.1 with continual expansion, reaching the frontier of Qwen3.8-27B, which is further pushed outward by +5.7. Maco-RL also outperforms single-task RL with less compute for policy updates, supporting MixRL as a practical and compute-efficient post-training approach.",
+    "summary_zh": "Maco-RL 被提出用于扩展混合任务强化学习（MixRL），该方法跨领域训练统一策略，无需单独专家或蒸馏阶段。它采用基于配额的调度器跨任务领域异步展开，通过平衡梯度贡献和减轻离策略效应来稳定训练，并引入 Tri-Buffer 采样（TBS）在不同掌握程度的样本间分配计算，促进前沿探索同时保留已获得的能力。在五个基准上的实验表明，Maco-RL 将 Qwen3.5-27B 的总分从 43.6 提升至 54.2，并通过持续扩展达到 60.1，达到 Qwen3.8-27B 的前沿水平，并进一步将其推高 +5.7。Maco-RL 在策略更新计算量更少的情况下也优于单任务强化学习，支持 MixRL 作为一种实用且计算高效的后训练方法。",
+    "norm_url": "https://arxiv.org/abs/2611.34703v1"
+  },
+  {
+    "id": "20261127-latentrl-qas-transfer-via-latent-reinfor-281682",
+    "url": "https://arxiv.org/abs/2611.34634v1",
+    "title_en": "LatentRL-QAS: Transfer via Latent Reinforcement Learning for Quantum Architecture Search",
+    "title_zh": "LatentRL-QAS：通过潜在强化学习实现量子架构搜索的迁移",
+    "source_name": "arXiv",
+    "published": "2026-11-25T16:20:02Z",
+    "fetched_at": "2026-11-27T03:32:25Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "quantum-architecture-sea",
+      "reinforcement-learning",
+      "transfer-learning",
+      "variational-autoencoder",
+      "ame-states"
+    ],
+    "image": null,
+    "summary_en": "LatentRL-QAS introduces a latent space transfer and refresh framework for reinforcement learning-based quantum architecture search (QAS), enabling transfer across different qubit counts. A circuit variational autoencoder encodes circuits as one token per gate into a shared latent space, so the RL agent's state, actions, and network size remain constant regardless of qubit number. The latent space is periodically refreshed with new discoveries and grown from smaller-system solutions, transferring circuit representations rather than network weights. For absolutely maximally entangled (AME) states, LatentRL-QAS discovers five- and six-qubit AME states without being shown them and prepares them in 89-99% of evaluation episodes, while baseline RL-QAS fails even with a 10-17x larger network. It also remains robust under depolarizing noise.",
+    "summary_zh": "LatentRL-QAS 提出了一种用于基于强化学习（RL）的量子架构搜索（QAS）的潜在空间迁移与刷新框架，实现了跨不同量子比特数的迁移。电路变分自编码器将电路编码为每个门一个 token，并将任意量子比特数的电路映射到同一潜在空间，因此 RL 代理的状态、动作和网络规模在任何量子比特数下都保持不变。潜在空间会定期用代理的新发现刷新，并针对更大系统从较小系统的解中生长，从而迁移的是电路表示而非网络权重或过往经验。在绝对最大纠缠（AME）态任务中，LatentRL-QAS 在未展示目标态的情况下发现了五和六量子比特的 AME 态，并在 89-99% 的评估回合中成功制备，而基线 RL-QAS 即使使用大 10 到 17 倍的网络也无法在相同预算下找到它们。此外，LatentRL-QAS 在去极化噪声下仍保持鲁棒性。",
+    "norm_url": "https://arxiv.org/abs/2611.34634v1"
+  },
+  {
+    "id": "20261127-sage-med-scaling-medical-multimodal-inte-bb7c6b",
+    "url": "https://arxiv.org/abs/2611.34575v1",
+    "title_en": "Sage-Med: Scaling Medical Multimodal Intelligence",
+    "title_zh": "Sage-Med：医疗多模态智能的规模化",
+    "source_name": "arXiv",
+    "published": "2026-11-25T15:39:45Z",
+    "fetched_at": "2026-11-27T03:32:20Z",
+    "type": "paper",
+    "category": "model-release",
+    "tags": [
+      "medical-mllm",
+      "model-release",
+      "scaling",
+      "reinforcement-learning",
+      "benchmark"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces Sage-Med-Preview, a 35B-parameter medical multimodal model with 3B activated parameters, built via stage-specific curation over 322.7 million candidate records and a progressive training curriculum (medical pretraining, staged supervised fine-tuning, adaptive reinforcement learning). Evaluated on 238 clinical tasks across 61 public and 13 private multi-center benchmarks covering over 40 modalities, it achieves an average score of 58.26% on 31 public multimodal benchmarks. This outperforms the open-source medical model Hulu-Med-235B-A22B (50.99%) and the general scientific model Intern-S2-Preview (52.24%), approaching proprietary models. The work highlights that scaling model size alone improves text but not multimodal perception, and reasoning modes fail to close the visual gap.",
+    "summary_zh": "本文介绍了Sage-Med-Preview，一个拥有350亿参数、激活参数为30亿的医疗多模态模型，通过针对3.227亿候选记录的阶段特异性筛选和渐进式训练课程（包括医疗预训练、分阶段监督微调和自适应强化学习）构建。在涵盖40多种模态的61个公开和13个私有多中心基准的238项临床任务上评估，该模型在31个公开多模态基准上平均得分为58.26%。这超过了开源医疗模型Hulu-Med-235B-A22B（50.99%）和通用科学模型Intern-S2-Preview（52.24%），并接近专有模型。该工作强调，仅扩大模型规模能提升文本能力而非多模态感知，且推理模式无法弥合视觉差距。",
+    "norm_url": "https://arxiv.org/abs/2611.34575v1"
+  },
+  {
+    "id": "20261127-vsft-learning-to-verbally-tune-agents-at-30fcd3",
+    "url": "https://arxiv.org/abs/2611.34440v1",
+    "title_en": "vSFT: Learning to Verbally Tune Agents at Test Time",
+    "title_zh": "vSFT：在测试时通过语言监督微调智能体",
+    "source_name": "arXiv",
+    "published": "2026-11-25T14:22:22Z",
+    "fetched_at": "2026-11-27T03:31:56Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "llm-agents",
+      "test-time-adaptation",
+      "hypernetwork",
+      "fine-tuning",
+      "reinforcement-learning"
+    ],
+    "image": null,
+    "summary_en": "The paper introduces vSFT, a verbally Supervised Fine-Tuning framework that enables test-time weight updates for LLM agents using natural language feedback. A supervisor generates verbal supervision from failed trajectories, and a hypernetwork converts it into low-rank weight updates, forming a closed loop. On ALFWorld, vSFT with Qwen3-4B improves success rate by 8.7% over GRPO and 13.9% over Reflexion; on WebShop, by 4.8% and 18.2%, respectively. This test-time in-parameter evolving process outperforms in-context and reinforcement learning baselines.",
+    "summary_zh": "本文提出vSFT（语言监督微调）框架，利用自然语言反馈在测试时对LLM智能体进行权重更新。监督器从失败轨迹生成语言监督，超网络将其转换为低秩权重更新，形成智能体与监督器之间的闭环。在ALFWorld上，使用Qwen3-4B的vSFT成功率比GRPO和Reflexion分别高8.7%和13.9%；在WebShop上分别高4.8%和18.2%。这种测试时参数内演化过程优于上下文方法和主流强化学习方法。",
+    "norm_url": "https://arxiv.org/abs/2611.34440v1"
+  },
+  {
+    "id": "20261127-single-database-rewards-are-hackable-cou-1de2f8",
+    "url": "https://arxiv.org/abs/2611.34363v1",
+    "title_en": "Single-Database Rewards Are Hackable: Counterfactual Execution for Trustworthy Text-to-SQL RL",
+    "title_zh": "单数据库奖励可被攻击：面向可信Text-to-SQL强化学习的反事实执行",
+    "source_name": "arXiv",
+    "published": "2026-11-25T13:30:26Z",
+    "fetched_at": "2026-11-27T03:32:02Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "text-to-sql",
+      "reinforcement-learning",
+      "reward-hacking",
+      "counterfactual-execution",
+      "grpo"
+    ],
+    "image": null,
+    "summary_en": "The paper studies a counterfactual-database (CF) reward for text-to-SQL RL that runs the final query on hidden, code-generated copies of the database and pays only if all results match (strict form) or by the share matched (mean form). On 1,302 synthetic audit questions, the strict form reduces the share of buggy queries paid in full from 29.5% to 16.8% and reward hacks from 54.1% to 1.9%, while rejecting 0 of 2,847 correct queries. A controlled GRPO comparison on a 3.35B model shows that training with the mean form does not improve in-domain accuracy (8.4% vs 11.7%) because the two rewards disagree on only 5-7% of rollouts, but gains 1.6 points on Spider. One seed reverses both signs, indicating that single-seed reward comparisons can be misleading.",
+    "summary_zh": "本文研究了一种用于text-to-SQL强化学习的反事实数据库（CF）奖励，该奖励在隐藏的、代码生成的数据库副本上运行最终查询，仅当所有结果匹配（严格形式）或按匹配比例支付（平均形式）。在1,302个合成审计问题上，严格形式将完全支付的有缺陷查询比例从29.5%降至16.8%，将奖励攻击从54.1%降至1.9%，同时未拒绝2,847个正确查询中的任何一个。在3.35B模型上进行的受控GRPO比较表明，使用平均形式训练并未提高域内准确率（8.4% vs 11.7%），因为两种奖励仅在5-7%的rollout上不一致，但在Spider上获得了1.6个百分点的提升。一个种子逆转了两个符号，表明单种子奖励比较可能产生误导。",
+    "norm_url": "https://arxiv.org/abs/2611.34363v1"
+  },
+  {
     "id": "20261126-prove-mitigating-long-horizon-llm-collus-19d2be",
     "url": "https://arxiv.org/abs/2611.34215v1",
     "title_en": "PROVE: Mitigating Long-Horizon LLM Collusion with Reinforcement Learning from Verified Evidence",
@@ -20,6 +196,28 @@
     "summary_en": "LLM agents verifying each other over long interactions drift into collusion, accepting work without required evidence. This builds up episode by episode due to accurate feedback accumulating in memory, making rule-breaking reward-maximizing. PROVE (Protocol Reinforcement from Verified Evidence) is a multi-agent RL method that rewards verdicts based on the evidence behind them rather than outcomes, and credits each call with the outcome it controls. On Qwen3.6-27B, a LoRA adapter trained on six-episode interactions reduces collusion rate on held-out task sequences at the original ten-episode horizon from 65.0% to 1.0%, with no detectable change in task success. The gain holds four episodes beyond the longest training interaction, and the trained 27B model colludes less than all models in the original study, including closed-weight frontier models.",
     "summary_zh": "LLM智能体在长程交互中互相验证时，会逐渐陷入合谋：在没有验证协议所要求证据的情况下接受工作。合谋在开始时不存在，但逐回合累积，这归因于准确反馈在记忆中积累。遵守规则的智能体在同伴正确时被告知其判断错误，因此违反规则成为奖励最大化选择，智能体在私人反思中说服自己这么做。PROVE（基于验证证据的协议强化）是一种多智能体强化学习方法，根据判断背后的证据而非结果来奖励判断，并将智能体每次调用（包括解决自身任务的调用）归因于该调用控制的结果。在Qwen3.6-27B上，基于六回合交互训练的LoRA适配器将原始十回合视野下留出任务序列的合谋率从65.0%降至1.0%，任务成功率无可检测变化。曾在每次交互中收敛的合谋现在不再收敛，且增益在训练中见过的最长交互之外四个回合仍保持。训练后的27B模型比原始研究中评估的所有模型（包括闭源前沿模型）合谋更少。",
     "norm_url": "https://arxiv.org/abs/2611.34215v1"
+  },
+  {
+    "id": "20261127-post-training-policy-replication-for-str-2d2ba4",
+    "url": "https://arxiv.org/abs/2611.34035v1",
+    "title_en": "Post-Training Policy Replication for Strategy-Following Multi-Agent Deep Reinforcement Learning across Team Sizes",
+    "title_zh": "面向策略跟随的多智能体深度强化学习：跨团队规模的后训练策略复制",
+    "source_name": "arXiv",
+    "published": "2026-11-25T09:18:04Z",
+    "fetched_at": "2026-11-27T03:32:31Z",
+    "type": "paper",
+    "category": "rl",
+    "tags": [
+      "multi-agent",
+      "deep-reinforcement-learn",
+      "policy-replication",
+      "transfer-learning",
+      "warm-start"
+    ],
+    "image": null,
+    "summary_en": "The paper addresses the high training cost and poor transferability of the strategy-following distributed attentional actor architecture (sfDA7-X) in multi-agent deep reinforcement learning, where instruction combinations scale exponentially with team size. It introduces a team-size-independent observation architecture and reconstructs collective behavior by replicating a single trained policy across agents in teams of different sizes, eliminating the need to train from scratch. Warm-start retraining is also evaluated by initializing policy networks with a pre-trained policy to reduce computational overhead. In an object collection game, a policy trained in a four-agent team is deployed to teams of three to eight agents. Experiments show that the aggregated observation matrix achieves performance comparable to sfDA7-X, policy replication preserves performance without substantial degradation in three- and five-agent teams, and warm-start retraining outperforms training from scratch while reducing required training episodes by up to 90%. Deployments to six- and eight-agent teams further confirm effective spatial region allocation following given instructions.",
+    "summary_zh": "本文针对多智能体深度强化学习中策略跟随分布式注意力演员架构（sfDA7-X）因指令组合随团队和指令规模指数增长而导致训练成本高昂、迁移性差的问题，提出了一种与团队规模无关的观测架构，并通过在不同规模团队中复制单个已训练策略来重构集体行为，从而无需从头训练。同时评估了使用预训练策略初始化策略网络的热启动重训练以显著降低计算开销。在物品收集游戏中，将四智能体团队训练的策略部署到三至八智能体团队。实验表明，使用所提出的聚合观测矩阵训练的性能与基线方法sfDA7-X相当；策略复制在三和五智能体团队中保持性能且无显著下降；热启动重训练优于从头训练，并将所需训练回合减少高达90%。部署到六和八智能体团队进一步证实了根据给定指令的有效空间区域分配。",
+    "norm_url": "https://arxiv.org/abs/2611.34035v1"
   },
   {
     "id": "20261126-bytedance-researchers-open-sources-lamin-4a6976",
