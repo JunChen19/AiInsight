@@ -1,5 +1,49 @@
 [
   {
+    "id": "20261128-tencent-open-sources-dfly2-speculative-d-f5a1d0",
+    "url": "https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models/",
+    "title_en": "Tencent Open-Sources DFly2: Speculative Decoding That Reuses the Target’s Sparse KV Cache",
+    "title_zh": "腾讯开源 DFly2：复用目标模型稀疏 KV 缓存的投机解码",
+    "source_name": "MarkTechPost",
+    "published": "2026-11-27T03:31:30Z",
+    "fetched_at": "2026-11-28T03:08:12Z",
+    "type": "blog",
+    "category": "performance",
+    "tags": [
+      "speculative-decoding",
+      "sparse-attention",
+      "kv-cache",
+      "llm",
+      "model-release"
+    ],
+    "image": "images/20261128-tencent-open-sources-dfly2-speculative-d-f5a1d0.jpg",
+    "summary_en": "Tencent has open-sourced DFly2, a speculative decoding drafter for natively sparse LLMs like DeepSeek-V4.1-Flash, GLM-5.3-Flash, and Hy4 flash. DFly2 eliminates the drafter's own KV cache by sharing the target model's sparse KV cache and indexer selections, keeping drafting cost flat at any context length. It achieves higher draft acceptance than DFlash and DSpark, with up to 81% more throughput on DeepSeek-V4.1-Flash at 64K context at matched per-user speed. The 0.85B-parameter drafter ships with Hy4 flash and is supported in vLLM and SGLang.",
+    "summary_zh": "腾讯开源了 DFly2，一种针对原生稀疏 LLM（如 DeepSeek-V4.1-Flash、GLM-5.3-Flash 和 Hy4 flash）的投机解码草稿模型。DFly2 通过共享目标模型的稀疏 KV 缓存和索引器选择，消除了草稿模型自身的 KV 缓存，使草稿成本在任何上下文长度下保持恒定。其草稿接受长度高于 DFlash 和 DSpark，在 DeepSeek-V4.1-Flash 的 64K 上下文下，匹配每用户速度时吞吐量提升高达 81%。该 0.85B 参数草稿模型随 Hy4 flash 发布，并已在 vLLM 和 SGLang 中支持。",
+    "norm_url": "https://www.marktechpost.com/2026/11/26/tencent-dfly2-speculative-decoding-sparse-models"
+  },
+  {
+    "id": "20261128-taking-trainium3-to-the-track-generating-0f9e45",
+    "url": "https://huggingface.co/blog/video-trainium3",
+    "title_en": "Taking Trainium3 to the Track: Generating Videos with LTX-2.5",
+    "title_zh": "Trainium3 实战：用 LTX-2.5 生成视频",
+    "source_name": "Hugging Face",
+    "published": "2026-11-27T00:00:00Z",
+    "fetched_at": "2026-11-28T03:09:04Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "video-generation",
+      "trainium",
+      "ltx-2.5",
+      "diffusers",
+      "performance-optimization"
+    ],
+    "image": "images/20261128-taking-trainium3-to-the-track-generating-0f9e45.jpg",
+    "summary_en": "The article describes generating videos with sound using the LTX-2.5 model on an AWS Trainium3 instance (trn3.48xlarge, 64 NeuronCores). After optimization, a 10-second 2048×1024 clip with sound takes 22-23 seconds on half the machine, matching or slightly beating LTX's online API (23.7s for 1080p). Key optimizations include tensor parallelism to fit the transformer on 4 cores, sequence parallelism to split across 32 cores, and host-side fixes like running the pipeline on rank 0 only and pinning threads. The film generation pipeline uses JSON shot lists with 'from' and 'to' keys to chain shots and maintain subject consistency, achieving byte-for-byte reproducibility.",
+    "summary_zh": "文章介绍了在 AWS Trainium3 实例（trn3.48xlarge，64 个 NeuronCores）上使用 LTX-2.5 模型生成带声音的视频。经过优化，在半个机器上生成 10 秒 2048×1024 带声音的视频仅需 22-23 秒，与 LTX 在线 API（1080p 需 23.7 秒）相当甚至略快。关键优化包括：通过张量并行将 transformer 拆分到 4 个核心，通过序列并行扩展到 32 个核心，以及主机端优化如仅在 rank 0 上运行管道和绑定线程。电影生成管道使用 JSON 镜头列表，通过 'from' 和 'to' 键链接镜头以保持主题一致性，并实现逐字节可复现。",
+    "norm_url": "https://huggingface.co/blog/video-trainium3"
+  },
+  {
     "id": "20261127-sakana-ai-releases-namazu-small-a-30b-mo-6c0ed0",
     "url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano/",
     "title_en": "Sakana AI Releases Namazu Small, a 30B Model Built on Nemotron 3 Nano",
@@ -20,6 +64,50 @@
     "summary_en": "Sakana AI released Sakana Namazu Small, a 30B-parameter reasoning model built on NVIDIA Nemotron 3 Nano. The model was trained in-house with continued pretraining and post-training, starting from Nemotron 3 Nano's pretrained base. It achieves a 60.1 average on a 25-benchmark suite, outperforming NVIDIA's 120B Nemotron 3 Super (56.2) and Nano (50.2). Notably, it scores 73.5 on BrowseComp, about double Super's 36.1, but lags in closed-book knowledge with SimpleQA Verified at 6.8.",
     "summary_zh": "Sakana AI 发布了 Sakana Namazu Small，这是一个基于 NVIDIA Nemotron 3 Nano 构建的 30B 参数推理模型。该模型从 Nemotron 3 Nano 的预训练基础开始，在内部进行了持续预训练和后训练。在 25 个基准测试套件上，它平均得分 60.1，超过了 NVIDIA 的 120B Nemotron 3 Super（56.2）和 Nano（50.2）。值得注意的是，它在 BrowseComp 上得分 73.5，约为 Super 36.1 的两倍，但在闭卷知识方面落后，SimpleQA Verified 得分为 6.8。",
     "norm_url": "https://www.marktechpost.com/2026/11/26/sakana-ai-namazu-small-30b-nemotron-3-nano"
+  },
+  {
+    "id": "20261128-introducing-the-llama-cpp-benchmark-dash-bacf13",
+    "url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench",
+    "title_en": "Introducing the llama.cpp benchmark dashboard for AMD Ryzen and Radeon",
+    "title_zh": "llama.cpp 基准测试仪表板登陆 AMD Ryzen 和 Radeon",
+    "source_name": "Hugging Face",
+    "published": "2026-11-26T11:37:17Z",
+    "fetched_at": "2026-11-28T03:08:21Z",
+    "type": "blog",
+    "category": "performance",
+    "tags": [
+      "llama.cpp",
+      "benchmark",
+      "amd",
+      "local-inference",
+      "hugging-face"
+    ],
+    "image": "images/20261128-introducing-the-llama-cpp-benchmark-dash-bacf13.jpg",
+    "summary_en": "The llama.cpp × AMD Benchmark dashboard is now available on Hugging Face, allowing developers to track prompt processing (PP512) and text generation (TG128) performance across llama.cpp builds, models, and quantizations on AMD Ryzen and Radeon hardware. The dashboard offers Overview, Build history, and Context scaling tabs for comparing quantizations and monitoring performance over time. Benchmarks are run weekly on Radeon 8060S (gfx1151) and Radeon AI Pro R9700S (gfx1201) using prebuilt binaries from llama-install.sh, with Flash Attention on/off and 10 repetitions per configuration. The model set includes Inkling 2 Mini, Qwen, Gemma, gpt-oss, and LFM, covering dense and mixture-of-experts architectures, with GGUF formats like Q4_K_M, Q8_0, BF16, and F16. Results are publicly stored in the ggml-org/install.sh-benches-data bucket on Hugging Face for inspection and reuse.",
+    "summary_zh": "llama.cpp × AMD 基准测试仪表板现已在 Hugging Face 上线，开发者可追踪 llama.cpp 构建、模型和量化方式在 AMD Ryzen 和 Radeon 硬件上的提示处理（PP512）和文本生成（TG128）性能。仪表板提供概览、构建历史和上下文扩展三个标签页，用于比较量化方式并监控性能随时间的变化。基准测试每周在 Radeon 8060S (gfx1151) 和 Radeon AI Pro R9700S (gfx1201) 上运行，使用 llama-install.sh 的预构建二进制文件，开启/关闭 Flash Attention，每种配置重复 10 次。模型集包括 Inkling 2 Mini、Qwen、Gemma、gpt-oss 和 LFM，涵盖密集和混合专家架构，GGUF 格式包括 Q4_K_M、Q8_0、BF16 和 F16。结果公开存储在 Hugging Face 的 ggml-org/install.sh-benches-data 存储桶中，可供检查与复用。",
+    "norm_url": "https://huggingface.co/blog/ggml-org/llamacpp-amd-bench"
+  },
+  {
+    "id": "20261128-building-on-nemotron-3-5-parse-open-data-1fcdba",
+    "url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin",
+    "title_en": "Building on Nemotron 3.5 Parse: Open Data, Fine-Tuning, and Faster Inference",
+    "title_zh": "基于 Nemotron 3.5 Parse 的构建：开放数据、微调与更快推理",
+    "source_name": "Hugging Face",
+    "published": "2026-11-26T05:05:36Z",
+    "fetched_at": "2026-11-28T03:08:37Z",
+    "type": "blog",
+    "category": "technique",
+    "tags": [
+      "document-parsing",
+      "reinforcement-learning",
+      "fine-tuning",
+      "inference-optimization",
+      "synthetic-data"
+    ],
+    "image": "images/20261128-building-on-nemotron-3-5-parse-open-data-1fcdba.jpg",
+    "summary_en": "NVIDIA released Nemotron 3.5 Parse, a compact document model that converts page images into structured data for RAG and agents. The model was trained with supervised fine-tuning (SFT) followed by reinforcement learning with verifiable rewards (RLVR) using GRPO, improving overall score from 66.24 to 71.38 and reducing loop-flagged outputs by 77%. Three synthetic datasets (Synthetic Charts V1, Synthetic Tables V1, OCR Synthetic Multilingual v2) are open-sourced for fine-tuning. Inference is accelerated via NaViT preprocessing, GQA-8, and a DFlash2 speculator that proposes up to 32 tokens ahead, achieving 7.62x throughput at concurrency 1 and 1.52x at concurrency 512 compared to Parse 3.5 without speculation. A fine-tuning recipe using NeMo Automodel and NeMo RL is shared, with a dental form example showing pass@1 improving from 0.00% to 96.58% after RLVR.",
+    "summary_zh": "NVIDIA 发布了 Nemotron 3.5 Parse，这是一个紧凑的文档模型，可将页面图像转换为结构化数据，用于检索增强生成（RAG）和智能体。该模型通过监督微调（SFT）和基于可验证奖励的强化学习（RLVR，使用 GRPO）两阶段训练，总体得分从 66.24 提升至 71.38，循环标记输出减少 77%。开源了三个合成数据集（Synthetic Charts V1、Synthetic Tables V1、OCR Synthetic Multilingual v2）用于微调。推理加速方面，采用 NaViT 预处理、GQA-8 和 DFlash2 推测器（可前瞻最多 32 个 token），在并发 1 时吞吐量提升 7.62 倍，并发 512 时提升 1.52 倍。还分享了使用 NeMo Automodel 和 NeMo RL 的微调配方，牙科表单示例显示 RLVR 后 pass@1 从 0.00% 提升至 96.58%。",
+    "norm_url": "https://huggingface.co/blog/nvidia/building-on-nemotron-35-parse-open-data-fine-tunin"
   },
   {
     "id": "20261127-when-every-rollout-fails-splicing-learne-fccae5",
